@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-08",
+  "split": "development_tune",
+  "configuration": {
+    "method": "reciprocal_rank_fusion",
+    "rank_constant": 60,
+    "input_depth_per_retriever": 10,
+    "weights": "equal",
+    "tie_break": "ascending_physical_page_id",
+    "top_ks": [1, 3, 5, 10]
+  },
+  "question_count": 239,
+  "macro": {
+    "1": {"any": 0.5397489540, "complete": 0.1966527197, "mrr": 0.5397489540, "ndcg": 0.5397489540},
+    "3": {"any": 0.7782426778, "complete": 0.4979079498, "mrr": 0.6485355649, "ndcg": 0.5972593014},
+    "5": {"any": 0.8661087866, "complete": 0.6066945607, "mrr": 0.6686192469, "ndcg": 0.6399433895},
+    "10": {"any": 0.9456066946, "complete": 0.7740585774, "mrr": 0.6791276483, "ndcg": 0.6910994264}
+  },
+  "baseline_comparison_at_10": {
+    "bm25": {"any": 0.8953974895, "complete": 0.7071129707, "mrr": 0.6119429501, "ndcg": 0.6257570516},
+    "dense_256_0": {"any": 0.9372384937, "complete": 0.7405857741, "mrr": 0.6810021917, "ndcg": 0.6799270646},
+    "rrf": {"any": 0.9456066946, "complete": 0.7740585774, "mrr": 0.6791276483, "ndcg": 0.6910994264}
+  },
+  "transition_from_dense_at_10": {
+    "any": {"both": 221, "dense_only": 3, "rrf_only": 5, "neither": 10},
+    "complete": {"both": 167, "dense_only": 10, "rrf_only": 18, "neither": 44}
+  },
+  "sha256": {
+    "configuration": "948c67837f21ecdeccccf83188b110988d3e2e4637ce521916d00a5bae2af038",
+    "result": "c07458da4073f8f10ed9859f89cb547e35aa996979f1279f612fd64a46884b9b",
+    "dense_transition_audit": "4a4c5005b221ce7cce126479f6ae3222bbac314516b18e08506090f41187382e"
+  },
+  "decision": "Adopt this RRF configuration as the failure-driven text-retrieval improvement at K=10. Keep downstream C1 page-budget selection separate because gains at K=3 and K=5 are small.",
+  "paid_api_cost_usd": 0
+}
