@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-08",
+  "split": "development_tune",
+  "left": "bm25_page_v0",
+  "right": "B2_dense_bge_small_en_v1_5_256_0_v0",
+  "question_count": 239,
+  "at_10": {
+    "any_evidence_outcomes": {
+      "both": 208,
+      "bm25_only": 6,
+      "dense_only": 16,
+      "neither": 9
+    },
+    "complete_evidence_outcomes": {
+      "both": 151,
+      "bm25_only": 18,
+      "dense_only": 26,
+      "neither": 44
+    },
+    "union_candidate_pool": {
+      "any_evidence_recall": 0.9623430962,
+      "complete_evidence_recall": 0.8242677824,
+      "micro_evidence_page_recall": 0.7806215722,
+      "mean_unique_pages": 14.5606694561,
+      "maximum_unique_pages": 20
+    }
+  },
+  "complete_outcome_slices_at_10": {
+    "bm25_only": {
+      "question_count": 18,
+      "multi_page": 17,
+      "table": 4,
+      "mixed": 8
+    },
+    "dense_only": {
+      "question_count": 26,
+      "multi_page": 20,
+      "table": 10,
+      "mixed": 7
+    },
+    "neither": {
+      "question_count": 44,
+      "multi_page": 42,
+      "text_layer_missing": 6,
+      "mixed": 22
+    }
+  },
+  "sha256": {
+    "bm25_result": "8dd53c91a53d517065e36609d984dca8c798b4fe9cba72aaeb5fe2dd4b5793c7",
+    "dense_result": "57e6e9444e82f3eb6337ae41dd4079a350efd0ea930d88fc7b56410ee97f1ca4",
+    "paired_audit": "ac3cd3c4121aefae9b19300a8713442c86a21e8e5a5fcbb7a55033e6266844a1"
+  },
+  "decision": "Observed query-level complementarity satisfies the protocol gate for one minimal rank-fusion experiment. Predeclare deterministic RRF on development_tune; do not adopt hybrid unless its fixed Top-K metrics beat the frozen individual baselines.",
+  "paid_api_cost_usd": 0
+}
