@@ -1,0 +1,44 @@
+{
+  "benchmark_exact_accuracy": 0.6666666666666666,
+  "citation_contract_valid_rate": 1.0,
+  "date": "2026-09-08",
+  "evidence_complete_rate": 1.0,
+  "observed_cost_usd": 0.011465,
+  "records": [
+    {
+      "answer_summary": "18 years old",
+      "benchmark_answer": "18 years old",
+      "benchmark_exact_correct": true,
+      "cited_pages": [12],
+      "evidence_complete": true,
+      "input_pages": [12, 17],
+      "question_id": "urnuuid0812e9ac-6f30-4624-9c78-6f4176467918::q2",
+      "result_sha256": "15178514c8abc9d3393a2541fc87b757eb7a6a57eede2813b4e77aa4a1bdb1db",
+      "smoke_id": "smoke_01"
+    },
+    {
+      "answer_summary": "91,330",
+      "benchmark_answer": "91,330",
+      "benchmark_exact_correct": true,
+      "cited_pages": [19],
+      "evidence_complete": true,
+      "input_pages": [12, 19],
+      "question_id": "urnuuid111476ed-6700-4be2-85cc-3fc17696167e::q1",
+      "result_sha256": "e10810d964570900b3cd681b7167ec03535aca772fd384f092ae034299680066",
+      "smoke_id": "smoke_02"
+    },
+    {
+      "answer_summary": "6.0 hours",
+      "benchmark_answer": "6.01 hours",
+      "benchmark_exact_correct": false,
+      "cited_pages": [21],
+      "evidence_complete": true,
+      "input_pages": [21, 55],
+      "question_id": "urnuuid111476ed-6700-4be2-85cc-3fc17696167e::q3",
+      "result_sha256": "435779bd96085866449e4244846f9898b481d05b2d5fda43fe22437d7a59536b",
+      "smoke_id": "smoke_03"
+    }
+  ],
+  "request_count": 3,
+  "schema_version": 1
+}
