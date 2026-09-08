@@ -38,6 +38,6 @@
     }
   ],
   "paid_request_count_if_executed": 9,
-  "execution_status": "inputs_built_and_dry_run_passed; paid_execution_pending",
-  "paid_api_cost_usd_so_far": 0
+  "execution_status": "paid_execution_complete_and_strict_scoring_recorded",
+  "paid_api_cost_usd_so_far": 0.0876065
 }
