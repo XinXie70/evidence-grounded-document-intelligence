@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-08",
+  "split": "development_tune",
+  "retrieval_result": "data/derived/hybrid_rrf_bm25_dense_v0_tune_results.json",
+  "page_budgets": [3, 5, 10],
+  "selection_policy": "One deterministic, human-interpretable question from each Complete-Evidence transition bucket. All selected gold pages have usable native text. Gold answers were not used for selection and must not appear in model inputs.",
+  "questions": [
+    {
+      "smoke_id": "smoke_01",
+      "question_id": "urnuuid0812e9ac-6f30-4624-9c78-6f4176467918::q2",
+      "bucket": "complete_at_3",
+      "question": "What specific age threshold does the document define for distinguishing between a child and an adult research participant under POPIA?",
+      "gold_pages": [12],
+      "rrf_top_10": [12, 17, 18, 22, 19, 47, 8, 26, 49, 16],
+      "evidence_type": "text",
+      "page_span": "single"
+    },
+    {
+      "smoke_id": "smoke_02",
+      "question_id": "urnuuid111476ed-6700-4be2-85cc-3fc17696167e::q1",
+      "bucket": "newly_complete_at_5",
+      "question": "According to the population distribution table broken down by district, what is the difference in total population between the most populous and least populous districts?",
+      "gold_pages": [19],
+      "rrf_top_10": [12, 13, 11, 10, 19, 9, 3, 8, 7, 20],
+      "evidence_type": "table",
+      "page_span": "single"
+    },
+    {
+      "smoke_id": "smoke_03",
+      "question_id": "urnuuid111476ed-6700-4be2-85cc-3fc17696167e::q3",
+      "bucket": "newly_complete_at_10",
+      "question": "According to the weekday main-activity table by sex, how many more hours do males spend on personal care than females spend on housework and family care?",
+      "gold_pages": [21, 55],
+      "rrf_top_10": [9, 21, 22, 38, 10, 55, 7, 56, 8, 60],
+      "evidence_type": "table",
+      "page_span": "multi"
+    }
+  ],
+  "paid_request_count_if_executed": 9,
+  "execution_status": "inputs_built_and_dry_run_passed; paid_execution_pending",
+  "paid_api_cost_usd_so_far": 0
+}

@@ -1,0 +1,62 @@
+{
+  "condition": "real_retrieval",
+  "doc_id": "urnuuid111476ed-6700-4be2-85cc-3fc17696167e",
+  "evidence_pages": [
+    9,
+    21,
+    22
+  ],
+  "model_input": {
+    "evidence": [
+      {
+        "page": 9,
+        "text": "ix SUMMARY Overall women and men show similar patterns in the way they use time. However there are a number of key differences in they way they spend time on some ac tivities. There are also marked differences in time- use between different socio-economic groups. Addi tionally, individuals’ use of time often varies considerably between weekdays and the weekend-days. Women and men devote almost half of their time to sleep, eating and other personal care. People sleep between 8.6 and 8.9 hours every day on average and devo te between 2.4 and 2.8 hours to meals and other personal care. On average, females sleep a little longer than males whist during weekend-days, people sleep about 18 minutes more. On the other hand people who are gainfully occupied sleep an average of 72 minutes less than other groups during weekdays. Females spend more time washing and dressing than males across most age groups, especially during weekends. In fact, females spend an average of 11.6 minutes more than males on this activity. This applies especially for teenagers and people in their early 20’s where females spend an average of 1.5 hours per day on this activity, this being half an hour more than their male counterparts. On weekend-days people allocate an average of 1 additi onal hour to free time activities. On weekdays, people spend almost 20 per cent (4.7 hours) of their day on free time activities whilst this proportion goes up to 24.0 per cent (5.7 hours) on weekend-days. Over all, men have more free time than women, these differences reaching 30 minutes during weekdays and exceeding 1 hour on Saturdays and Sundays. Amongst free time activities, watching television is the most popular pursuit for both men and women, amounting to 1.7 hours a day during weekdays while men exceed slightly the 2 hours during weekend-days. For both sexes mass media (television in particular) occupies an important share of their free time, with males and females spending almost 45 per cent of their free time on this activity. However, males watch TV more and participate more in sports when compared with females. Unmarried persons spend an average of about 100 minutes more each day on free time activities than married persons normally do. Significantly, it is the youngest and oldest groups who spend most time on mass media, with teenagers aged between 10 to 14 years spending an average of 190.6 minutes a day during weekdays. When it comes to travelling, it se ems that on weekend-days people prefer using their personal cars in around half their travel time. On the other hand, men prefer travelling on foot on a quarter of the time which is allocated to travel, compared with 34.1 per cent for females. Conversely, during weekdays some remarkable differences are noticeable. Generally, most women travel on foot whenever they need to (41.8 per cent of time) whist the majority of men travel by car (53.4 per cent of time). Moreover, on 11.5 per cent of the time whenever a female needs to travel during the weekdays, she chooses a bus or a coach as a means of travel, compared with 5.7 per cent for males. These proportions go down to 5.0 and 4.0 per cent respectively during the weekend-days. Conversation and socialising amount to 19.2 and 28. 3 per cent of the total free time on weekdays and weekend-days respectively. However on most of th e time these activities are performed whilst people are simultaneously engaged in other activities. Gainful work or study of all persons aged 10 years or older makes up just 1 hour on a weekend-day compared to an average of 3 hours on a weekday. Persons who are employed have more of their time pre- determined and they also have shorter sleeping time (72 minutes less than other persons). Employed persons have also less free time available. They allocate an average of 3.3 hours to free time activities during weekdays, which is 108 minutes less than for the remainder of the population. This accounts to 13.8 per cent of an average weekday of a gainfully occupied person, whilst this proportion increases to 22.9 per cent during weekend-days. Howeve r for this group, the share of time they devote to social life and entertainment is actually higher than fo r the rest of the population. In fact, people who are gainfully occupied spend 25.3 per cent of their free time on socialising during weekdays. Domestic work (housework, errands, do-it-yourself, care of children/adults, etc.) takes up more time than gainful work or study. On average, 13.7 per cent of weekdays is dedicated to housework and family care whilst 12.5 per cent of it is spent on gainful work or study. These proportions go down to 11.7 and 4.2 per cent respectively on Saturdays and Sundays. For women and men the division of the time between thes e two activities differs si gnificantly. Usually men devote more time to gainful work or study than to domestic work. On the other hand, when all the persons aged 10 years or older are considered, it was found that the average time spent on domestic work by females is more than the time men spend on gainful work or study."
+      },
+      {
+        "page": 21,
+        "text": "5 Table 5. Distribution of average time spent on main activity per weekday by sex Males Females Total Personal care 10.8 11.2 11.0 Gainful work and study 4.5 1.7 3.0 Housework and family care 1.7 4.8 3.3 Volunteer work and meetings 0.2 0.4 0.4 Free time activities 5.0 4.5 4.7 Travel and unspecified time use 1.8 1.4 1.6 Total 24.0 24.0 24.0 Personal care 45.0 47.6 45.8 Gainful work and study 18.8 7.1 12.5 Housework and family care 7.1 20.0 13.7 Volunteer work and meetings 0.8 1.7 1.7 Free time activities 20.8 18.8 19.6 Travel and unspecified time use 7.5 5.8 6.7 Total 100.0 100.0 100.0 hours Type of activity percentage"
+      },
+      {
+        "page": 22,
+        "text": "6 Table 6. Distribution of average time spent on main activity per weekend-day by sex Males Females Total Personal care 11.6 11.8 11.7 Gainful work and study 1.5 0.5 1.0 Housework and family care 1.7 3.8 2.8 Volunteer work and meetings 0.8 0.8 0.8 Free time activities 6.3 5.2 5.7 Travel and unspecified time use 2.1 1.9 2.0 Total 24.0 24.0 24.0 Personal care 48.3 49.2 48.7 Gainful work and study 6.2 2.1 4.2 Housework and family care 7.2 15.8 11.7 Volunteer work and meetings 3.2 3.3 3.3 Free time activities 26.3 21.7 23.8 Travel and unspecified time use 8.8 7.9 8.3 Total 100.0 100.0 100.0 Type of activity hours percentage Chart 1. Average time spent on main activity by sex and day of week 0369 1 2 1 5 1 8 2 1 2 4 Weekend-day Weekday Weekend-day Weekday males females hours/day personal care gainful work and study housework and family care volunteer work and meetings free time activities travel and unspecified time use"
+      }
+    ],
+    "instructions": "Answer the question. When document evidence is supplied, use only that evidence. When no document evidence is supplied, answer only from your existing knowledge and do not claim or imply document support. If the available basis does not adequately support an answer, return status='insufficient_evidence' and answer=null. Cite only supplied 1-based physical PDF page numbers; when no document evidence is supplied, cited_pages must be empty. Return one object matching response_schema.",
+    "question": "According to the weekday main-activity table by sex, how many more hours do males spend on personal care than females spend on housework and family care?",
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "answer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cited_pages": {
+          "items": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "answerable",
+            "insufficient_evidence"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "answer",
+        "cited_pages",
+        "status"
+      ],
+      "type": "object"
+    }
+  },
+  "page_budget": 3,
+  "question_id": "urnuuid111476ed-6700-4be2-85cc-3fc17696167e::q3",
+  "retriever": "hybrid_rrf_bm25_dense_v0",
+  "schema_version": 1
+}

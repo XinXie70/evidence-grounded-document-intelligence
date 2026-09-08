@@ -1,0 +1,62 @@
+{
+  "condition": "real_retrieval",
+  "doc_id": "urnuuid0812e9ac-6f30-4624-9c78-6f4176467918",
+  "evidence_pages": [
+    12,
+    17,
+    18
+  ],
+  "model_input": {
+    "evidence": [
+      {
+        "page": 12,
+        "text": "11 behaviour that reveals a past, present or future physical or mental health status; administrative documents that reveal health status such as medical certificates, forms concerning sick leave or the reimbursement of medical expenses; inherited characteristics or genetic data. • Sex life: For example, information about a research participant's sexual activity, relationships, sexual orientation, or sexual proclivities. • Biometric information: The information that results from specific technical processing relating to the physical, physiological, or behavioural characteristics of a research participant, such as facial images or dactyloscopic or genetic data when it is linked with other personal information to identify a data subject. • Criminal behaviour of a data subject relating to the alleged commission of an offence or proceedings relating to an alleged offence (Criminal convictions are not special personal information.) The personal information of a child also has extra requirements under POPIA. POPIA defines a child as anyone under the age of 18 who is not legally competent to take any action or decision for themselves without the assistance of a competent person. Make sure to indicate if you use the personal information of a child. 3.2. Privacy impact assessments Your research institution will have a Personal Information Impact Assessment (PIIA) in place that you need to complete to ensure that you manage the risk to research participants appropriately by including appropriate safeguards. Read more about the PIIA in section 4.4 and ask your research organisation if you do not know how to access the PIIA. 3.3. Having a legal justification POPIA provides only six legal grounds for processing personal information, and at least one must apply for the processing to be lawful. There are stricter justifications if you are processing special personal information or the personal information of a child. What does POPIA say? Section 11 says that personal information can be processed if the: • data subject consents; • processing is necessary in terms of a contract; • processing complies with an obligation imposed by law on the responsible party; • processing protects a legitimate interest of the data subject;"
+      },
+      {
+        "page": 17,
+        "text": "16 community, or specific population (as opposed to a few individuals or a single entity).3 • It is impossible or would require a disproportionate effort to get POPIA consent POPIA consent is not required if obtaining it is impossible or would require a disproportionate effort. However, given the inherent sensitivity of special personal information, it must be virtually impossible, as opposed to merely impractical or costly, to obtain POPIA consent before this legal justification applies.4 • The research participant has deliberately made the personal information public For this legal justification to apply, the following requirements must be met: ✓ The personal information must have been made public: There must be no impediment (for example, a paywall or a data wall) to the accessibility of the personal information.5 ✓ By the research participant: If someone else published the personal information, this legal justification does not apply. You must be able to prove who published the personal information. ✓ Deliberately: There must be evidence of an unmistakably deliberate and affirmative action by the research participant. 3.3.6. When your research includes personal information of a child Section 34 - Prohibition on processing of personal information of children Section 35 - General authorisation concerning personal information of children NB: You are responsible for verifying the age of research participants to ensure that you apply the correct legal justifications. For instance, you cannot use ‘legitimate interest’ as a legal justification to process the personal information of a child. When you verify the age of the research participant, you should not process more information than necessary to determine their age, and the processing must be proportionate to the nature and risks involved in the research. 3 Information Regulator Guidance Note on Processing of Special Personal Information, available at https://www.justice.gov.za/inforeg/docs/InfoRegSA-GuidanceNote-Processing- SpecialPersonalInformation-20210628.pdf (last accessed on 30 March 2022). 4 This interpretation is consistent with how similar provisions have been interpreted in the courts in the EU and New Zealand. 5 This interpretation is based on how similar provisions in the New Zealand Privacy Act of 1999 has been interpreted. See Case Note 100413 [2007] NZ PrivCr 20, available at https://www.privacy.org.nz/publications/case-notes-and-court-decisions/case-note-100413- 2007-nz-privcmr-20-google-search-reveals-personal-information-on-law-firm-website/ (last accessed on 31 March 2022)."
+      },
+      {
+        "page": 18,
+        "text": "17 • The research participant’s parent or guardian (competent person), is asked for POPIA consent on behalf of the child If you want to rely on POPIA consent to justify the processing of personal information, you must obtain the POPIA consent from a ‘competent person’. In terms of POPIA, this will be a person with parental responsibilities in terms of the Children’s Act 38 of 2005. The same guidance regarding asking for consent discussed in section 3.6.1 applies. A parent or legal guardian is a competent person who can provide consent on behalf of a child. The High Court of South Africa is the upper guardian of all children. For children who do not have parents or a legal guardian, the court will step in and fulfil that role. You must make sure that the person who provides consent is the parent or legal guardian of the child and you must have measures in place to verify this. What measures are reasonable may depend on the risks inherent in the processing as well as the available technology. In low-risk cases, you could verify this via email and in high-risk cases it would be appropriate for you to ask for more proof. When you rely on the consent of a competent person and the child becomes an adult, you must obtain new consent from the child once they have become an adult to continue processing their personal information. A competent person means any person who is legally competent to consent to any action or decision being taken in respect of any matter concerning a child. • The research is necessary for the establishment, exercise, or defence of a right or obligation in law This authorisation allows you to process special personal information where it is necessary to exercise a right or claim it has in terms of South African law. • The research is necessary to comply with an obligation of international public law Public international law has three main sources, namely customary international law, treaties, and conventions. • The research is in the public interest AND you can provide sufficient guarantees that the processing does not adversely affect the individual privacy of the child to a disproportionate extent What constitutes public interest varies across jurisdictions and should be assessed on a case-by-case basis. Research is in the public interest if the research process or outcome widely and generally benefits the public at large or a group,"
+      }
+    ],
+    "instructions": "Answer the question. When document evidence is supplied, use only that evidence. When no document evidence is supplied, answer only from your existing knowledge and do not claim or imply document support. If the available basis does not adequately support an answer, return status='insufficient_evidence' and answer=null. Cite only supplied 1-based physical PDF page numbers; when no document evidence is supplied, cited_pages must be empty. Return one object matching response_schema.",
+    "question": "What specific age threshold does the document define for distinguishing between a child and an adult research participant under POPIA?",
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "answer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cited_pages": {
+          "items": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "answerable",
+            "insufficient_evidence"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "answer",
+        "cited_pages",
+        "status"
+      ],
+      "type": "object"
+    }
+  },
+  "page_budget": 3,
+  "question_id": "urnuuid0812e9ac-6f30-4624-9c78-6f4176467918::q2",
+  "retriever": "hybrid_rrf_bm25_dense_v0",
+  "schema_version": 1
+}
