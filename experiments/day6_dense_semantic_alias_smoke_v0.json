@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-08",
+  "split": "development_tune",
+  "purpose": "Test whether the pinned dense baseline recovers an observed BM25 semantic-alias failure.",
+  "question_id": "urnuuid83d3c72c-a70d-422f-9c0b-992de5e5770e::q5",
+  "doc_id": "urnuuid83d3c72c-a70d-422f-9c0b-992de5e5770e",
+  "question": "How many distinct industry sectors are listed in the fund's detailed investment holdings table?",
+  "gold_pages": [13, 14],
+  "bm25": {
+    "k1": 1.2,
+    "b": 0.75,
+    "top_10_pages": [4, 5, 9, 24, 33, 19, 10, 12, 11, 29],
+    "gold_page_ranks": {"13": null, "14": null},
+    "any_evidence_recall_at_10": 0,
+    "complete_evidence_recall_at_10": 0
+  },
+  "dense": {
+    "model_id": "BAAI/bge-small-en-v1.5",
+    "model_revision": "baab320e3049c6c62dd63560765566dd9083985e",
+    "chunk_tokens": 256,
+    "overlap_tokens": 0,
+    "page_aggregation": "maximum_chunk_score",
+    "top_10": [
+      {"page": 5, "score": 0.7081, "best_chunk_index": 0},
+      {"page": 4, "score": 0.6888, "best_chunk_index": 2},
+      {"page": 25, "score": 0.6722, "best_chunk_index": 4},
+      {"page": 13, "score": 0.6670, "best_chunk_index": 6},
+      {"page": 8, "score": 0.6616, "best_chunk_index": 0},
+      {"page": 14, "score": 0.6611, "best_chunk_index": 0},
+      {"page": 24, "score": 0.6607, "best_chunk_index": 3},
+      {"page": 7, "score": 0.6462, "best_chunk_index": 1},
+      {"page": 16, "score": 0.6461, "best_chunk_index": 6},
+      {"page": 9, "score": 0.6285, "best_chunk_index": 0}
+    ],
+    "gold_page_ranks": {"13": 4, "14": 6},
+    "any_evidence_recall_at_10": 1,
+    "complete_evidence_recall_at_10": 1
+  },
+  "sha256": {
+    "config": "9dd613b7c7d6016d44ae273426c4b857d5c52730865fbddb9fe3aa02f3ca91f3",
+    "input": "6d4501491d915b5c014cf8704a34ee46d14570946fc4d9b51ed9fe31393649d1",
+    "page_records": "7eb9bff143173304fabd2a85d63ae6a3e0bebb5bd1691a3485cdda1229562e6b"
+  },
+  "interpretation": "Dense recovered both gold pages at K=10 while BM25 recovered neither. This single-question smoke test supports running the preregistered development-tune comparison but is not evidence that dense is globally superior.",
+  "paid_api_cost_usd": 0
+}

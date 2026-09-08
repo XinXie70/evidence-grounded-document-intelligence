@@ -170,7 +170,14 @@ class SentenceTransformerBgeEncoder:
         self.tokenizer = self.model.tokenizer
 
     def split_text(self, text: str, chunk_tokens: int, overlap_tokens: int) -> list[str]:
-        token_ids = self.tokenizer.encode(text, add_special_tokens=False)
+        token_ids = self.tokenizer(
+            text,
+            add_special_tokens=False,
+            truncation=False,
+            return_attention_mask=False,
+            return_token_type_ids=False,
+            verbose=False,
+        )["input_ids"]
         if not token_ids:
             return [""]
         step = chunk_tokens - overlap_tokens
