@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-08",
+  "split": "development_tune",
+  "configuration": {
+    "model_id": "BAAI/bge-small-en-v1.5",
+    "model_revision": "baab320e3049c6c62dd63560765566dd9083985e",
+    "device": "cpu",
+    "chunk_tokens": 256,
+    "overlap_tokens": 64,
+    "page_aggregation": "maximum_chunk_score"
+  },
+  "counts": {
+    "eligible_questions": 239,
+    "excluded_questions": 17,
+    "evaluated_documents": 81,
+    "chunks": 10334
+  },
+  "macro": {
+    "1": {"any": 0.5439330544, "complete": 0.1966527197, "mrr": 0.5439330544, "ndcg": 0.5439330544},
+    "3": {"any": 0.7656903766, "complete": 0.4937238494, "mrr": 0.6443514644, "ndcg": 0.5888613967},
+    "5": {"any": 0.8661087866, "complete": 0.6025104603, "mrr": 0.6671548117, "ndcg": 0.6344306371},
+    "10": {"any": 0.9288702929, "complete": 0.7322175732, "mrr": 0.6749086803, "ndcg": 0.6786454089}
+  },
+  "comparison_to_256_0_at_10": {
+    "any_transition": {"retained_success": 220, "gained": 2, "lost": 4, "retained_failure": 13},
+    "complete_transition": {"retained_success": 172, "gained": 3, "lost": 5, "retained_failure": 59},
+    "chunk_increase_fraction": 0.2575149203,
+    "build_time_increase_fraction": 0.2292908646,
+    "embedding_mib": 30.28,
+    "baseline_256_0_embedding_mib": 24.07
+  },
+  "sha256": {
+    "result": "ea77fb7152905513353f50a5b1cceae2f2e56c0963ba803db5ba594d3cc99a98",
+    "config": "e04b3ec090c7076c0faf46e56245f62d7a412067593bb918edb3036307c396cb"
+  },
+  "decision": "Do not prefer 64-token overlap at the 256-token chunk size. Continue the predeclared 512-token runs before freezing the dense configuration.",
+  "paid_api_cost_usd": 0
+}
