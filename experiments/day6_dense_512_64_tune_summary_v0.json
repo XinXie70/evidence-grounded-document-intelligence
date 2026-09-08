@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-08",
+  "split": "development_tune",
+  "configuration": {
+    "model_id": "BAAI/bge-small-en-v1.5",
+    "model_revision": "baab320e3049c6c62dd63560765566dd9083985e",
+    "device": "cpu",
+    "chunk_tokens": 512,
+    "overlap_tokens": 64,
+    "page_aggregation": "maximum_chunk_score"
+  },
+  "counts": {
+    "corpus_documents": 82,
+    "evaluated_documents": 81,
+    "all_questions": 256,
+    "eligible_questions": 239,
+    "excluded_questions": 17,
+    "chunks": 5602
+  },
+  "macro": {
+    "1": {"any": 0.5439330544, "complete": 0.1924686192, "mrr": 0.5439330544, "ndcg": 0.5439330544},
+    "3": {"any": 0.7489539749, "complete": 0.4644351464, "mrr": 0.6324965132, "ndcg": 0.5697580745},
+    "5": {"any": 0.8535564854, "complete": 0.5857740586, "mrr": 0.6571827057, "ndcg": 0.6215540514},
+    "10": {"any": 0.9246861925, "complete": 0.7405857741, "mrr": 0.6660955038, "ndcg": 0.6672347183}
+  },
+  "comparison_to_256_0_at_10": {
+    "any_transition": {"both": 219, "baseline_256_0_only": 5, "candidate_512_64_only": 2, "neither": 13},
+    "complete_transition": {"both": 170, "baseline_256_0_only": 7, "candidate_512_64_only": 7, "neither": 55}
+  },
+  "runtime": {
+    "total_index_build_seconds": 253.08,
+    "mean_query_milliseconds": 12.04,
+    "median_query_milliseconds": 11.93,
+    "embedding_mib": 16.41
+  },
+  "sha256": {
+    "result": "b6e12b65d988b93b46524501ed98643e7ac14f4980cf047cf84945929e24324b",
+    "config": "e04b3ec090c7076c0faf46e56245f62d7a412067593bb918edb3036307c396cb",
+    "corpus_manifest": "634705896e8e796fa15c44b3e22968b0806797ba115cf5b7d3bde9eb7c1c2556"
+  },
+  "decision": "Do not select 512 tokens with 64-token overlap. Freeze the simpler 256-token zero-overlap condition as the B2 Dense baseline.",
+  "paid_api_cost_usd": 0
+}
