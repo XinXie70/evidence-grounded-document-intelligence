@@ -1,0 +1,17 @@
+{
+  "candidate_depth": 10,
+  "candidate_source": "hybrid_rrf_bm25_dense_v0",
+  "change_control": "single failure-driven diagnostic; no parameter sweep",
+  "chunk_tokens": 256,
+  "device": "cpu",
+  "evaluation_split_access": "locked",
+  "experiment_id": "dense_candidate_rerank_rrf_top10_v0",
+  "method": "dense_candidate_rerank",
+  "model_id": "BAAI/bge-small-en-v1.5",
+  "model_revision": "baab320e3049c6c62dd63560765566dd9083985e",
+  "overlap_tokens": 0,
+  "page_aggregation": "maximum_chunk_score",
+  "schema_version": 1,
+  "selection_split": "development_tune",
+  "top_ks": [1, 2, 3, 5, 10]
+}

@@ -144,6 +144,39 @@ class PageDenseIndex:
         self.chunk_embeddings = _normalized_rows(embeddings)
 
     def search(self, query: str, top_k: int) -> list[DenseResult]:
+        return self._search(query, top_k=top_k, allowed_pages=None)
+
+    def search_candidates(
+        self,
+        query: str,
+        candidate_pages: Sequence[int],
+        *,
+        top_k: int,
+    ) -> list[DenseResult]:
+        """Rerank a label-free candidate pool from one indexed document."""
+        doc_ids = {record.doc_id for record in self.records}
+        if len(doc_ids) != 1:
+            raise ValueError("candidate-page reranking requires a single-document index")
+        if not candidate_pages or any(
+            isinstance(page, bool) or not isinstance(page, int) or page < 1
+            for page in candidate_pages
+        ):
+            raise ValueError("candidate_pages must contain positive integers")
+        if len(candidate_pages) != len(set(candidate_pages)):
+            raise ValueError("candidate_pages must be unique")
+        available = {record.page for record in self.records}
+        missing = sorted(set(candidate_pages) - available)
+        if missing:
+            raise ValueError(f"candidate pages are absent from the index: {missing}")
+        return self._search(query, top_k=top_k, allowed_pages=set(candidate_pages))
+
+    def _search(
+        self,
+        query: str,
+        *,
+        top_k: int,
+        allowed_pages: set[int] | None,
+    ) -> list[DenseResult]:
         if isinstance(top_k, bool) or not isinstance(top_k, int) or top_k < 1:
             raise ValueError("top_k must be a positive integer")
         if not isinstance(query, str):
@@ -157,6 +190,8 @@ class PageDenseIndex:
         chunk_scores = self.chunk_embeddings @ query_embedding
         best_by_page: dict[tuple[str, int], tuple[DenseChunk, float]] = {}
         for chunk, score_value in zip(self.chunks, chunk_scores, strict=True):
+            if allowed_pages is not None and chunk.page not in allowed_pages:
+                continue
             score = float(score_value)
             identity = (chunk.doc_id, chunk.page)
             previous = best_by_page.get(identity)

@@ -89,6 +89,14 @@ class PageDenseIndexTests(unittest.TestCase):
     def test_empty_query_returns_no_results(self):
         self.assertEqual(self.index.search("  ", top_k=3), [])
 
+    def test_candidate_search_reranks_only_supplied_pages(self):
+        results = self.index.search_candidates("investment", [2, 1], top_k=2)
+        self.assertEqual([result.page for result in results], [1, 2])
+        with self.assertRaisesRegex(ValueError, "unique"):
+            self.index.search_candidates("investment", [1, 1], top_k=1)
+        with self.assertRaisesRegex(ValueError, "absent"):
+            self.index.search_candidates("investment", [99], top_k=1)
+
     def test_rejects_invalid_inputs_and_embedding_shapes(self):
         with self.assertRaises(ValueError):
             PageDenseIndex([], FakeDenseEncoder())
