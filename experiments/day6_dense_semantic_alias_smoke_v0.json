@@ -18,6 +18,7 @@
   "dense": {
     "model_id": "BAAI/bge-small-en-v1.5",
     "model_revision": "baab320e3049c6c62dd63560765566dd9083985e",
+    "device": "cpu",
     "chunk_tokens": 256,
     "overlap_tokens": 0,
     "page_aggregation": "maximum_chunk_score",
@@ -38,7 +39,7 @@
     "complete_evidence_recall_at_10": 1
   },
   "sha256": {
-    "config": "ada5f35f486a3dc4b5c1d368d77d02a5c74a460907a1e804023ec0afb1ffdcc4",
+    "config": "e04b3ec090c7076c0faf46e56245f62d7a412067593bb918edb3036307c396cb",
     "input": "6d4501491d915b5c014cf8704a34ee46d14570946fc4d9b51ed9fe31393649d1",
     "page_records": "7eb9bff143173304fabd2a85d63ae6a3e0bebb5bd1691a3485cdda1229562e6b"
   },

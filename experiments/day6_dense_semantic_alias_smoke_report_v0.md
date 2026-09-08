@@ -14,6 +14,7 @@ baseline did not place either gold page in its Top-10.
 
 - dense model: `BAAI/bge-small-en-v1.5`
 - revision: `baab320e3049c6c62dd63560765566dd9083985e`
+- device: CPU
 - within-page chunk size: 256 model-input tokens, including special tokens
 - overlap: 0 tokens
 - chunk-to-page aggregation: maximum chunk score

@@ -157,7 +157,7 @@ class PageDenseIndex:
 class SentenceTransformerBgeEncoder:
     """Pinned BGE-small encoder with tokenizer-aligned deterministic chunks."""
 
-    def __init__(self, cache_folder: str | None = None):
+    def __init__(self, cache_folder: str | None = None, *, device: str = "cpu"):
         try:
             from sentence_transformers import SentenceTransformer
         except ImportError as error:  # pragma: no cover - environment-specific message
@@ -166,6 +166,7 @@ class SentenceTransformerBgeEncoder:
             BGE_SMALL_EN_V1_5_MODEL_ID,
             revision=BGE_SMALL_EN_V1_5_REVISION,
             cache_folder=cache_folder,
+            device=device,
         )
         self.tokenizer = self.model.tokenizer
 

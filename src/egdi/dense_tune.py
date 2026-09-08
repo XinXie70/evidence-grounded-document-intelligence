@@ -7,7 +7,7 @@ import json
 import time
 from collections import Counter
 from pathlib import Path
-from typing import Any, Sequence
+from typing import Any, Callable, Sequence
 
 from .dense import (
     BGE_SMALL_EN_V1_5_MODEL_ID,
@@ -38,6 +38,7 @@ def evaluate_dense_tune(
     chunk_tokens: int,
     overlap_tokens: int,
     ks: Sequence[int] = DEFAULT_KS,
+    progress_callback: Callable[[int, int, dict[str, Any]], None] | None = None,
 ) -> dict[str, Any]:
     """Build one index per document and aggregate frozen evidence-page metrics."""
     if not questions:
@@ -59,7 +60,10 @@ def evaluate_dense_tune(
 
     indexed_results: list[tuple[int, dict[str, Any]]] = []
     index_runs: list[dict[str, Any]] = []
-    for doc_id, indexed_questions in eligible_by_doc.items():
+    total_documents = len(eligible_by_doc)
+    for document_number, (doc_id, indexed_questions) in enumerate(
+        eligible_by_doc.items(), start=1
+    ):
         records = corpora[doc_id]
         build_started = time.perf_counter()
         index = PageDenseIndex(
@@ -69,15 +73,14 @@ def evaluate_dense_tune(
             overlap_tokens=overlap_tokens,
         )
         build_ms = (time.perf_counter() - build_started) * 1000
-        index_runs.append(
-            {
-                "doc_id": doc_id,
-                "page_count": len(records),
-                "chunk_count": len(index.chunks),
-                "embedding_bytes": int(index.chunk_embeddings.nbytes),
-                "build_latency_ms": build_ms,
-            }
-        )
+        index_run = {
+            "doc_id": doc_id,
+            "page_count": len(records),
+            "chunk_count": len(index.chunks),
+            "embedding_bytes": int(index.chunk_embeddings.nbytes),
+            "build_latency_ms": build_ms,
+        }
+        index_runs.append(index_run)
         for ordinal, question in indexed_questions:
             query_started = time.perf_counter()
             result = evaluate_question(index, question, ks)
@@ -90,6 +93,8 @@ def evaluate_dense_tune(
                 "extract_class": str(question.get("extract_class", "unknown")),
             }
             indexed_results.append((ordinal, result))
+        if progress_callback is not None:
+            progress_callback(document_number, total_documents, index_run)
 
     per_question = [result for _, result in sorted(indexed_results)]
     slice_fields = ("page_span", "gold_text_status", "evidence_type", "extract_class")
@@ -169,7 +174,18 @@ def main() -> None:
 
     questions, document_ids = load_tune_questions(args.benchmark, args.split_manifest)
     corpora = load_verified_corpora(args.corpus_manifest, args.corpus_dir, document_ids)
-    encoder = SentenceTransformerBgeEncoder(cache_folder=str(args.model_cache))
+    device = config.get("device")
+    if device != "cpu":
+        raise ValueError("config device must be cpu for the frozen dense baseline")
+    encoder = SentenceTransformerBgeEncoder(cache_folder=str(args.model_cache), device=device)
+
+    def report_progress(number: int, total: int, run: dict[str, Any]) -> None:
+        print(
+            f"[{number}/{total}] {run['doc_id']} pages={run['page_count']} "
+            f"chunks={run['chunk_count']} build_ms={run['build_latency_ms']:.1f}",
+            flush=True,
+        )
+
     result = evaluate_dense_tune(
         questions,
         corpora,
@@ -177,6 +193,7 @@ def main() -> None:
         chunk_tokens=chunk_tokens,
         overlap_tokens=overlap_tokens,
         ks=ks,
+        progress_callback=report_progress,
     )
     result["model_id"] = BGE_SMALL_EN_V1_5_MODEL_ID
     result["model_revision"] = BGE_SMALL_EN_V1_5_REVISION
