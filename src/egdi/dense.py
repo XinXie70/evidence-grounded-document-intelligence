@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from dataclasses import asdict, dataclass
+from pathlib import Path
 from typing import Protocol, Sequence
 
 import numpy as np
@@ -14,6 +15,30 @@ from .text import PageRecord
 BGE_SMALL_EN_V1_5_MODEL_ID = "BAAI/bge-small-en-v1.5"
 BGE_SMALL_EN_V1_5_REVISION = "baab320e3049c6c62dd63560765566dd9083985e"
 BGE_QUERY_INSTRUCTION = "Represent this sentence for searching relevant passages: "
+
+
+def resolve_bge_model_source(
+    cache_folder: str | None,
+    *,
+    local_files_only: bool,
+) -> str:
+    """Resolve the pinned local snapshot without performing a network lookup."""
+    if not local_files_only:
+        return BGE_SMALL_EN_V1_5_MODEL_ID
+    if cache_folder is None:
+        raise RuntimeError("offline dense loading requires cache_folder")
+    cache_root = Path(cache_folder)
+    repository = "models--BAAI--bge-small-en-v1.5"
+    candidates = (
+        cache_root / "hub" / repository / "snapshots" / BGE_SMALL_EN_V1_5_REVISION,
+        cache_root / repository / "snapshots" / BGE_SMALL_EN_V1_5_REVISION,
+    )
+    for candidate in candidates:
+        if (candidate / "modules.json").is_file():
+            return str(candidate)
+    raise RuntimeError(
+        "pinned BGE snapshot is not available in the configured local model cache"
+    )
 
 
 class DenseEncoder(Protocol):
@@ -157,16 +182,31 @@ class PageDenseIndex:
 class SentenceTransformerBgeEncoder:
     """Pinned BGE-small encoder with tokenizer-aligned deterministic chunks."""
 
-    def __init__(self, cache_folder: str | None = None, *, device: str = "cpu"):
+    def __init__(
+        self,
+        cache_folder: str | None = None,
+        *,
+        device: str = "cpu",
+        local_files_only: bool = True,
+    ):
         try:
             from sentence_transformers import SentenceTransformer
         except ImportError as error:  # pragma: no cover - environment-specific message
             raise RuntimeError("sentence-transformers is required for dense retrieval") from error
+        model_source = resolve_bge_model_source(
+            cache_folder,
+            local_files_only=local_files_only,
+        )
+        model_kwargs = {
+            "cache_folder": cache_folder,
+            "device": device,
+            "local_files_only": local_files_only,
+        }
+        if model_source == BGE_SMALL_EN_V1_5_MODEL_ID:
+            model_kwargs["revision"] = BGE_SMALL_EN_V1_5_REVISION
         self.model = SentenceTransformer(
-            BGE_SMALL_EN_V1_5_MODEL_ID,
-            revision=BGE_SMALL_EN_V1_5_REVISION,
-            cache_folder=cache_folder,
-            device=device,
+            model_source,
+            **model_kwargs,
         )
         self.tokenizer = self.model.tokenizer
 

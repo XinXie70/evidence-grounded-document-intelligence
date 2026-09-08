@@ -1,0 +1,78 @@
+{
+  "candidate_rerank": {
+    "candidate_page_count": 10,
+    "chunk_tokens": 256,
+    "overlap_tokens": 0,
+    "page_aggregation": "maximum_chunk_score",
+    "ranking": [
+      {
+        "best_chunk_index": 0,
+        "page": 12,
+        "score": 0.6692793430788766
+      },
+      {
+        "best_chunk_index": 1,
+        "page": 19,
+        "score": 0.6686202443495067
+      }
+    ],
+    "reasoning_evidence_scope": "full_selected_physical_pages",
+    "source_input": "experiments/day6_rrf_page_budget_smoke_inputs_v0/smoke_02/k10.json",
+    "source_input_sha256": "dbeae9a6f45f225ecf7309bb2186082ec569aa0ef6c4246d4bf0c5c377f5563a"
+  },
+  "condition": "real_retrieval",
+  "doc_id": "urnuuid111476ed-6700-4be2-85cc-3fc17696167e",
+  "evidence_pages": [
+    12,
+    19
+  ],
+  "model_input": {
+    "evidence": [
+      {
+        "page": 12,
+        "text": "xii Response Two hundred and ninety-five households, or 788 individuals, accepted to participate in the survey. This yielded a response rate of 59.0 per cent. The followi ng two tables present the sample distribution by gender, age group and district of the participants. Table III. Sample by sex and age group Age group Males Females Total 10 - 14 28 31 59 15 - 24 71 54 125 25 - 34 52 67 119 35 - 44 64 64 128 45 - 54 79 67 146 55 - 64 58 63 121 65+ 41 49 90 Total 393 395 788 Table IV. Sample by sex and district District Males Females Total Southern Harbour 67 78 145 Northern Harbour 120 121 241 South Eastern 35 42 77 Western 65 60 125 Northern 68 56 124 Gozo and Comino 38 38 76 Total 393 395 788 Grossing up In general, since population units may be sampled with different selection probabilities and since the response and coverage rates may vary across populati ons, different responding units represent different number of units in the population. The use of weights compensates for this differential representation, thus producing estimates that relate to the target population. Two set of weights, one for households and the othe r for individuals were produced. For individuals a posteriori stratification was performed by gender, age gr oup and district whilst a similar procedure by household size and district was applied for households. In this way, upon grossing up, the sample estimates reflected the real characteristics of the population. Quality control All the data that was collected was subject to a series of quality checks by vetters. In addition, the data entry program used to convert the information in electr onic format for computer analysis had a number of in- built validation rules in order to minimise data entry errors. Whenever was feasible those households which had provided incomplete information were contacted again in order to collect the missing information whereas special codes were assigned to missing activity codes in the diaries."
+      },
+      {
+        "page": 19,
+        "text": "3 Males Females Total 0 - 9 24,730 20,610 45,340 10 - 14 15,420 16,320 31,740 15 - 24 30,360 29,400 59,760 25 - 34 26,150 25,010 51,160 35 - 44 26,300 26,080 52,380 45 - 54 32,340 31,930 64,270 55 - 64 19,130 20,840 39,960 65+ 20,360 28,070 48,430 Total 194,780 198,260 393,040 0 - 9 12.7 10.4 11.5 10 - 14 7.9 8.2 8.1 15 - 24 15.6 14.8 15.2 25 - 34 13.4 12.6 13.0 35 - 44 13.5 13.2 13.3 45 - 54 16.6 16.1 16.4 55 - 64 9.8 10.5 10.2 65+ 10.5 14.2 12.3 Total 100.0 100.0 100.0 Males Females Total Southern Harbour 42,480 42,840 85,310 Northern Harbour 59,750 62,190 121,950 South Eastern 26,780 27,160 53,930 Western 26,630 26,880 53,510 Northern 24,080 23,650 47,720 Gozo and Comino 15,070 15,550 30,620 Total 194,780 198,260 393,040 Southern Harbour 21.8 21.6 21.7 Northern Harbour 30.7 31.4 31.1 South Eastern 13.7 13.7 13.7 Western 13.7 13.6 13.6 Northern 12.4 11.9 12.1 Gozo and Comino 7.7 7.8 7.8 Total 100.0 100.0 100.0 percentage percentage number Table 1. Distribution of all persons by sex and age group District number Table 2. Distribution of all persons by sex and district Age group"
+      }
+    ],
+    "instructions": "Answer the question. When document evidence is supplied, use only that evidence. When no document evidence is supplied, answer only from your existing knowledge and do not claim or imply document support. If the available basis does not adequately support an answer, return status='insufficient_evidence' and answer=null. Cite only supplied 1-based physical PDF page numbers; when no document evidence is supplied, cited_pages must be empty. Return one object matching response_schema.",
+    "question": "According to the population distribution table broken down by district, what is the difference in total population between the most populous and least populous districts?",
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "answer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cited_pages": {
+          "items": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "answerable",
+            "insufficient_evidence"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "answer",
+        "cited_pages",
+        "status"
+      ],
+      "type": "object"
+    }
+  },
+  "page_budget": 2,
+  "question_id": "urnuuid111476ed-6700-4be2-85cc-3fc17696167e::q1",
+  "retriever": "hybrid_rrf_top10_dense_candidate_rerank_v0",
+  "schema_version": 1
+}

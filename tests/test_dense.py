@@ -1,8 +1,16 @@
+import tempfile
 import unittest
+from pathlib import Path
 
 import numpy as np
 
-from egdi.dense import PageDenseIndex, SentenceTransformerBgeEncoder
+from egdi.dense import (
+    BGE_SMALL_EN_V1_5_MODEL_ID,
+    BGE_SMALL_EN_V1_5_REVISION,
+    PageDenseIndex,
+    SentenceTransformerBgeEncoder,
+    resolve_bge_model_source,
+)
 from egdi.text import build_page_record
 
 
@@ -100,6 +108,32 @@ class PageDenseIndexTests(unittest.TestCase):
         self.assertEqual(chunks, ["0 1 2", "2 3 4", "4 5 6", "6"])
         with self.assertRaisesRegex(ValueError, "special tokens"):
             encoder.split_text("a", chunk_tokens=2, overlap_tokens=0)
+
+    def test_offline_model_source_resolves_pinned_snapshot(self):
+        with tempfile.TemporaryDirectory() as directory:
+            snapshot = (
+                Path(directory)
+                / "hub"
+                / "models--BAAI--bge-small-en-v1.5"
+                / "snapshots"
+                / BGE_SMALL_EN_V1_5_REVISION
+            )
+            snapshot.mkdir(parents=True)
+            (snapshot / "modules.json").write_text("{}", encoding="utf-8")
+
+            self.assertEqual(
+                resolve_bge_model_source(directory, local_files_only=True),
+                str(snapshot),
+            )
+            self.assertEqual(
+                resolve_bge_model_source(None, local_files_only=False),
+                BGE_SMALL_EN_V1_5_MODEL_ID,
+            )
+
+    def test_offline_model_source_rejects_missing_snapshot(self):
+        with tempfile.TemporaryDirectory() as directory:
+            with self.assertRaisesRegex(RuntimeError, "pinned BGE snapshot"):
+                resolve_bge_model_source(directory, local_files_only=True)
 
 
 if __name__ == "__main__":
