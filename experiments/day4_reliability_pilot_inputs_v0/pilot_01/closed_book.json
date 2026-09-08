@@ -1,0 +1,43 @@
+{
+  "condition": "closed_book",
+  "doc_id": "urnuuid4873f4f3-f4eb-4931-97f5-ae4f1951f07e",
+  "evidence_pages": [],
+  "model_input": {
+    "evidence": [],
+    "instructions": "Answer the question. When document evidence is supplied, use only that evidence. When no document evidence is supplied, answer only from your existing knowledge and do not claim or imply document support. If the available basis does not adequately support an answer, return status='insufficient_evidence' and answer=null. Cite only supplied 1-based physical PDF page numbers; when no document evidence is supplied, cited_pages must be empty. Return one object matching response_schema.",
+    "question": "According to the chart showing annual fund flows into global climate funds by category, which climate strategy category had the highest positive inflows in YTD 2024?",
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "answer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cited_pages": {
+          "items": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "answerable",
+            "insufficient_evidence"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "answer",
+        "cited_pages",
+        "status"
+      ],
+      "type": "object"
+    }
+  },
+  "question_id": "urnuuid4873f4f3-f4eb-4931-97f5-ae4f1951f07e::q1",
+  "schema_version": 1
+}

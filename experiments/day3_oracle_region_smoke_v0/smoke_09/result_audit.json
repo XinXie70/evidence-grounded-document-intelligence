@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "case_id": "smoke_09",
+  "question_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba::q1",
+  "condition": "oracle_region",
+  "audit_status": "complete",
+  "result_path": "results/day3_oracle_region_smoke_v0/smoke_09.json",
+  "result_sha256": "21c6a7319cd0aae90123a145427bc5e00ac4eec1dc9626ae3ac11cb13e4ac5a9",
+  "benchmark_answer": "father of #11 and #12",
+  "model_answer": "Example: “father of #1 and #12.”",
+  "answer_correct_strict_benchmark": false,
+  "answer_semantically_close": true,
+  "citation_pages_within_supplied_context": true,
+  "answer_supported_by_cited_region": false,
+  "grounded_correct": false,
+  "observed_error": "The model omitted one digit from #11 and returned #1 while correctly reading the remainder of the relation example.",
+  "classification": "visual_character_recognition_near_miss_on_rotated_small_text",
+  "diagnostic_conclusion": "C3 restored access to visual content that was absent from the C2 text adapter, but the visual model did not transcribe the key identifier exactly. This is evidence of a perception or representation bottleneck, not a reasoning success and not merely a BM25 retrieval failure.",
+  "next_action": "Do not retry unchanged. Inspect a deterministic orientation or resolution intervention only because this observed failure motivates it."
+}

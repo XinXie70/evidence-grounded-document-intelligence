@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "incident_date": "2026-09-07",
+  "status": "contained_no_retry",
+  "experiment_id": "day5_visual_recovery_pilot18_v0",
+  "approved_cap_usd": 0.03,
+  "recorded_estimated_cost_usd": 0.037224,
+  "recorded_excess_usd": 0.007224,
+  "recorded_excess_fraction": 0.2408,
+  "request_count": 1,
+  "retries": 0,
+  "root_cause": "The single-request runner treated the USD cap in selection_status as descriptive metadata and had no executable preflight hard-cap guard for multimodal requests.",
+  "containment": [
+    "No retry was sent.",
+    "No further paid visual request is permitted until the runner enforces a machine-readable cap before network execution."
+  ],
+  "required_corrective_actions": [
+    "Represent the approved cap as a machine-readable configuration or budget field.",
+    "Compute a conservative preflight request-cost upper bound including image inputs and maximum output tokens.",
+    "Refuse execution when the preflight upper bound exceeds the approved cap.",
+    "Add tests proving rejection occurs before the API client is called."
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "condition": "real_retrieval",
+  "doc_id": "urnuuid4873f4f3-f4eb-4931-97f5-ae4f1951f07e",
+  "evidence_pages": [
+    34,
+    26,
+    11
+  ],
+  "model_input": {
+    "evidence": [
+      {
+        "page": 34,
+        "text": "Morningstar Sustainalytics | 34 R E S T OF W O R L D L A N D S C A P E Flows Plummet As Low Carbon Bore the Brunt Annual Flows into Climate Funds in the Rest of the World Leaders and Laggards Climate Funds in the Rest of the World ➢ The funds with the highest inflows include four Climate Solutions funds from South Korea and one Taiwanese ESG fund, the Capital Tip Customized Taiwan ESG Low Carbon 50 ETF. Among the South Korean funds, the Samsung KODEX Secondary Battery Industry ETF leads with inflows of USD 255 million, offering exposure to companies across the secondary battery value chain, including production, innovation, and supporting technologies. These trends underscore the growing investor focus on sustainable investment opportunities in Asia, particularly those aligned with energy transition and low-carbon initiatives. ➢ In line with the outflow trend in the Asian-Pacific region, flows into climate funds in the Rest of the World group have slid to just USD 100 million since January. While Climate Transition and Green Bond funds registered inflows, the figures proved trivial. ➢ Low Carbon funds bore the brunt of investor withdrawal, which totaled USD 530 million. The redemptions from Climate Solutions strategies have extended into 2024, albeit reduced to USD 230 million from USD 700 million almost nine months ago. Name Climate Category AUM (USD bn) Net Flows (USD mn) Samsung KODEX Secondary Battery Industry ETF Climate Solutions 0.93 255 MiraeAsset TIGER Secondary Cell ETF Climate Solutions 0.93 120 MiraeAsset TIGER Secondary Battery TOP10 ETF Climate Solutions 0.30 119 KIM ACE Tesla Value Chain Active ETF Climate Solutions 0.29 100 Capital Tip Customized Taiwan ESG Low Carbon 50 ETF Low Carbon 0.57 93 Russell Investments Low Carbon Global Shares Fund Low Carbon 0.29 -374 Cathay Global Autonomous and Electric Vehicles ETF Climate Solutions 0.41 -333 Russell Investments Low Carbon Global Shares Fund Class AUDH Low Carbon 0.32 -303 MiraeAsset TIGER China Electric Vehicle Solactive ETF Climate Solutions 1.34 -197 KIM Global Electric Car & Battery Equity Climate Solutions 1.01 -101 Source: Morningstar Direct and Morningstar Sustainalytics. Data as of September 2024. -2 -1 -1 0 1 1 2 2 3 3 4 2018 2019 2020 2021 2022 2023 YTD 2024 USD Billions Low Carbon Climate Transition Green Bond Climate Solutions Clean Energy/Tech"
+      },
+      {
+        "page": 26,
+        "text": "Morningstar Sustainalytics | 26 C H I N E S E L A N D S C A P E First Time Redemptions All Categories Where Climate Solutions and Clean Energy/Tech Bled Most Annual Flows Into Chinese Climate Funds Launches of Chinese Climate Funds Source: Morningstar Direct and Morningstar Sustainalytics. Data as of September 2024. ➢ For the first time, Chinese climate funds recorded redemptions across almost all climate fund categories. As of September 2024, outflows of Chinese climate funds totaled over USD billion, wiping out last year’s inflows of USD . billion. ➢ Flows into Chinese climate funds continue to exhibit greater volatility, as new subscriptions are often driven by the speculative behavior of local retail investors. Clean Energy/Tech and Climate Solutions took up almost the entirety of the outflows. ➢ With a struggling stock market, beleaguered by weak economic indictors, the development of new Chinese climate strategies plunged to a new low. There have been only five new launches so far this year, all of which are under the Climate Solutions category. ➢ Renewable energy and carbon neutrality remain the dominant themes. The GF Carbon Neutral Thematic Mixed International Fund stands out as the only allocation strategy focused on companies involved in the supply chains of renewable energy generation, decarbonization and other pollution reduction technologies, clean transport, and green construction materials. 0 10 20 30 40 50 60 70 2018 2019 2020 2021 2022 2023 YTD 2024 Low Carbon Climate Transition Green Bond -6 -4 -2 0 2 4 6 8 10 12 14 2018 2019 2020 2021 2022 2023 YTD 2024 USD Billions Low Carbon Climate Transition Green Bond"
+      },
+      {
+        "page": 11,
+        "text": "Morningstar Sustainalytics | 11 A G L O B A L O V E R V I E W Global Flows Are Negative Year to Date; Climate Solutions and Clean Energy/Tech Funds Suffer the Most ➢ Global climate funds are likely to see their first annual outflows on record. Total redemptions amounted to almost USD 24 billion from January to September 2024. This is in stark contrast with the USD 345 billion of combined inflows registered during the previous four years. ➢ Investors have pulled the most money from Climate Solutions and Clean Energy/Tech funds globally, which have registered withdrawals of USD 15 billion and USD 10.3 billion, respectively. Renewable energy stocks are still facing headwinds, such as high financing costs, materials inflation, and project delays. ➢ Meanwhile, Climate Transition, a popular climate strategy grouping in the past, has experienced small outflows of USD 530 million. ➢ Green Bond funds (USD 1.7 billion) and Low Carbon funds (USD 260 million) are the only two categories registering inflows. Source: Morningstar Direct and Morningstar Sustainalytics. Data as of September 2024. . -40 -20 0 20 40 60 80 100 120 140 160 2018 2019 2020 2021 2022 2023 YTD 2024 USD Billions Low Carbon Climate Transition Green Bond Climate Solutions Clean Energy/Tech Annual Flows Into Global Climate Funds"
+      }
+    ],
+    "instructions": "Answer the question. When document evidence is supplied, use only that evidence. When no document evidence is supplied, answer only from your existing knowledge and do not claim or imply document support. If the available basis does not adequately support an answer, return status='insufficient_evidence' and answer=null. Cite only supplied 1-based physical PDF page numbers; when no document evidence is supplied, cited_pages must be empty. Return one object matching response_schema.",
+    "question": "According to the chart showing annual fund flows into global climate funds by category, which climate strategy category had the highest positive inflows in YTD 2024?",
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "answer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cited_pages": {
+          "items": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "answerable",
+            "insufficient_evidence"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "answer",
+        "cited_pages",
+        "status"
+      ],
+      "type": "object"
+    }
+  },
+  "question_id": "urnuuid4873f4f3-f4eb-4931-97f5-ae4f1951f07e::q1",
+  "schema_version": 1
+}

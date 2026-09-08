@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "experiment_id": "day5_visual_routing_smoke_v0",
+  "split": "development_tune",
+  "paid_request_sent": false,
+  "uses_gold_or_answer_labels": false,
+  "router_path": "src/egdi/visual_routing.py",
+  "router_sha256": "f3e6c9dabfda4ea15460b6d273cfef54978b2ea758e6ada7fec8dc19b54a9e07",
+  "case_count": 4,
+  "records": [
+    {
+      "pilot_id": "pilot_06",
+      "doc_id": "urnuuidc94c212d-21aa-4dbe-a75f-6d8888002f6a",
+      "question_input_sha256": "74db4125d066833bddd8375aae8d3efa6d7929a5c6628b49baab305e3e296b30",
+      "page_records_sha256": "35b18641da2aef8f41de52faa753e06e2e5289b5ca82dd8606d63d10f26ac830",
+      "route": "r1_local_visual",
+      "reason": "question_explicitly_mentions_visual_structure",
+      "matched_signal": "bar chart",
+      "document_page_count": 50,
+      "nonempty_page_count": 49,
+      "text_coverage_ratio": 0.98
+    },
+    {
+      "pilot_id": "pilot_16",
+      "doc_id": "urnuuid45a0a8e5-e31b-4e74-9663-f27ab82db68f",
+      "question_input_sha256": "7ef832b25b3beae60b8415595279a564125c7214e91902a50d0e63bf4d41936e",
+      "page_records_sha256": "d98011e3cbf83649a224e94101e4f753fb8e7cc25cd725ca56026ac3d5921d08",
+      "route": "r2_scanned_document",
+      "reason": "document_has_zero_native_text_pages",
+      "matched_signal": "zero_native_text_pages",
+      "document_page_count": 37,
+      "nonempty_page_count": 0,
+      "text_coverage_ratio": 0.0
+    },
+    {
+      "pilot_id": "pilot_17",
+      "doc_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba",
+      "question_input_sha256": "e5ae3d4ebb363a3e003bab872ce97afd3bef581b4d70b716463cb7ae512de289",
+      "page_records_sha256": "f845d8df97df4f6663020e9b345b85d06f46ce3ca769cfc3d2fdca0bd5475512",
+      "route": "r2_scanned_document",
+      "reason": "document_has_zero_native_text_pages",
+      "matched_signal": "zero_native_text_pages",
+      "document_page_count": 51,
+      "nonempty_page_count": 0,
+      "text_coverage_ratio": 0.0
+    },
+    {
+      "pilot_id": "pilot_18",
+      "doc_id": "urnuuid808e4631-8567-495d-a904-0c702dbe784e",
+      "question_input_sha256": "878d53b56034de68574ca6a7cfa8f2c5d3f3e95f28a3df5fec201799f854da88",
+      "page_records_sha256": "d11a5c6ea56dece9222900314c9110594e13c37dfa98cae9a68f53af96e3c89f",
+      "route": "r3_document_global",
+      "reason": "question_requires_document_complete_coverage",
+      "matched_signal": "across the entire document",
+      "document_page_count": 42,
+      "nonempty_page_count": 42,
+      "text_coverage_ratio": 1.0
+    }
+  ],
+  "result": "all_four_audited_cases_matched_the_frozen_routing_hypothesis",
+  "scope_note": "This is a four-case smoke validation, not a routing-accuracy estimate."
+}

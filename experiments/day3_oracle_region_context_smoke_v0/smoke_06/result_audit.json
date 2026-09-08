@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "case_id": "smoke_06",
+  "question_id": "urnuuid111476ed-6700-4be2-85cc-3fc17696167e::q3",
+  "condition": "oracle_region_context",
+  "audit_status": "complete",
+  "result_path": "results/day3_oracle_region_context_smoke_v0/smoke_06.json",
+  "result_sha256": "da40736ec3a5849468f38233d80870bda5b9191d7884e896d90927807911bd48",
+  "benchmark_answer": "6.01 hours",
+  "model_answer": null,
+  "model_status": "insufficient_evidence",
+  "answer_correct": false,
+  "citation_chain_complete": false,
+  "grounded_correct": false,
+  "supplied_evidence_manually_verified_as_sufficient": true,
+  "reliability_behavior_given_context": "over_abstention",
+  "classification": "failure_after_contextual_table_representation",
+  "diagnostic_conclusion": "The contextual C3 input visibly and textually supplies Males -> Personal care -> 10.8 hours and Females -> Total -> 287.4 minutes, yet the model abstained. Retrieval and missing table headers no longer explain the failure. A fact-level Oracle condition is required to separate table perception/cross-page association from unit conversion and arithmetic reasoning.",
+  "next_action": "Construct a no-answer-leakage C4 Oracle Facts input from the two benchmark facts and run a dry run before requesting any paid execution."
+}

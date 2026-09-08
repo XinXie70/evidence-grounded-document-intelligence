@@ -1,0 +1,60 @@
+{
+  "condition": "real_retrieval",
+  "doc_id": "urnuuidad6e69ed-3343-4297-85d8-96b02e6bd925",
+  "evidence_pages": [
+    31,
+    9,
+    3
+  ],
+  "model_input": {
+    "evidence": [
+      {
+        "page": 31,
+        "text": "The Church of Jesus Christ of Latter-day Saints $181,000 cash assistance grant – Interfaith Refugee & Immigrant Services, Los Angeles, CA 680 clients served through caseworkers, low-bono legal services • 20 legal consultations • 11 applications for individuals’ Employment Authorization Card 10 clients served through household goods and rent Interfaith Refugee & Immigration Service (IRIS) in Los Angeles, CA, welcomed a single parent with her two children to the U.S. The family was supposed to stay with other family members, but a month after arrival they were told they would no longer have living accommodations. With assistance from The Church of Jesus Christ of Latter-day Saints grant, IRIS was able to find an affordable rental place and pay the deposit and first month’s rent. IRIS was also able to purchase essential items for the family to welcome them to a clean and safe space. United Thank Offering $8,152.10 EMM and UTO partnered for a fundraising initiative called the Great EpisGOpal Race. This virtual event offered multiple fun ways—run, bike, swim, hike, paddle board, and more— for individuals to participate and raise funds to support refugee resettlement. Airbnb $350,000 Anonymous $100,000 to support Afghan Special Immigrant Visa (SIV) holders Fundraising $226,698.90 raised for EMM general fund $244,903.74 raised for Afghan Allies Fund $27,421.18 raised for Ukrainian Fund"
+      },
+      {
+        "page": 9,
+        "text": "Affiliate Highlight: IRIS, Los Angeles, CA Among other programs, IRIS- LA works with families from El Salvador, Guatemala, and Honduras, to provide a safe, legal pathway for children to join their parents or guardians in the United States. In order to better understand the perils that unaccompanied minors from Central America face as they travel to the U.S. border, and to strengthen partnerships with organizations who provide shelter and support to these particularly vulnerable migrants, a group of Episcopalians from southern California made a weeklong journey through Guatemala and Mexico in January 2022, as guests of the Anglican Dioceses of Guatemala, Southeast Mexico and Western Mexico. Troy Elder (then Migration Missioner for the Diocese of San Diego) explained that through this pilgrimage, “We hoped to deepen our fellow Episcopalians’ understanding of the human dimensions of the crisis and become more effective advocates for Christ-centered U.S. policies.” Being on the ground and meeting with migrants and people who support them enabled the travelers to see “the migratory ‘pull’ of the United States” – where demand for labor and relative safety surpass those available to asylum seekers in Mexico. Since August 2022, Elder has served as Executive Director of IRIS-LA, and notes that as a result of the affiliate’s work with unaccompanied minors and families seeking reunification, “IRIS is in a period of mutual discernment with the Diocese of Guatemala about how best to provide in-country application support to CAM beneficiaries.” Read the entire story on the EMM blog at episcopalmigrationministries. org/reunitingfamilies"
+      },
+      {
+        "page": 3,
+        "text": "Dear Friends and Colleagues, I write this letter as we enter a new year of providing welcome and hope to individuals and families from across the world. I feel privileged to witness the dedication and commitment of our staff, our local affiliates, our congregational partners, volunteers, and donors. In the latter part of 2022, I joined Episcopal Migration Ministries as Operations Director, succeeding Demetrio Alvero who retired after 17 years with EMM. This year brought forth many changes in our work as we expanded our affiliate network, welcomed new team members, and actively recruited new partners to expand our outreach. The world continues to face record numbers of displaced people, with only a small fraction of those individuals offered the opportunity for resettlement. We continue to advocate for the protection and rights of all those forced to flee home in search of safety and security for their families. This ministry of The Episcopal Church is foundational to our faith and belief that we are called to build a longer table where all of God’s children are welcome. Thank you for your ongoing support, dedication, energy, donations, and time. We could not do this work without our volunteers, donors, and supporters. Your support of EMM’s ministry is vital to our success. We look forward to finding even more ways we can partner together to welcome our newest neighbors. Faithfully, Sarah Shipman Operations Director Episcopal Migration Ministries"
+      }
+    ],
+    "instructions": "Answer the question. When document evidence is supplied, use only that evidence. When no document evidence is supplied, answer only from your existing knowledge and do not claim or imply document support. If the available basis does not adequately support an answer, return status='insufficient_evidence' and answer=null. Cite only supplied 1-based physical PDF page numbers; when no document evidence is supplied, cited_pages must be empty. Return one object matching response_schema.",
+    "question": "The organization that donated $350,000 (listed among the major donors on the fundraising page) also appears in the list of thanked organizations, dioceses, and parishes. In which city and state is that organization located according to the organizational thank-you list?",
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "answer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cited_pages": {
+          "items": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "answerable",
+            "insufficient_evidence"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "answer",
+        "cited_pages",
+        "status"
+      ],
+      "type": "object"
+    }
+  },
+  "question_id": "urnuuidad6e69ed-3343-4297-85d8-96b02e6bd925::q1",
+  "schema_version": 1
+}

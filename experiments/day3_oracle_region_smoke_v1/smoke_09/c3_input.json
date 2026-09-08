@@ -1,0 +1,73 @@
+{
+  "condition": "oracle_region",
+  "doc_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba",
+  "evidence_pages": [
+    14
+  ],
+  "evidence_regions": [
+    {
+      "bbox": [
+        167.7,
+        68,
+        260.9,
+        447.2
+      ],
+      "element_type": "table",
+      "evidence_local_id": "e1",
+      "image_sha256": "7c94c32609a7a0ee688a95f60df9ab32f49732088bc15d1d5b07b6591e5b3e06",
+      "page": 14
+    }
+  ],
+  "model_input": {
+    "evidence": [
+      {
+        "bbox": [
+          167.7,
+          68,
+          260.9,
+          447.2
+        ],
+        "evidence_local_id": "e1",
+        "image_path": "e1_page_0014_upright.png",
+        "image_sha256": "7c94c32609a7a0ee688a95f60df9ab32f49732088bc15d1d5b07b6591e5b3e06",
+        "page": 14,
+        "text": ""
+      }
+    ],
+    "instructions": "Answer the question using only the supplied document evidence. If the evidence does not adequately support an answer, return status='insufficient_evidence' and answer=null. Cite only supplied 1-based physical PDF page numbers. Return one object matching response_schema.",
+    "question": "The bird species registration table in the application form includes a column for tracking how birds are related to one another. What example is given in that column?",
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "answer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cited_pages": {
+          "items": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "answerable",
+            "insufficient_evidence"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "answer",
+        "cited_pages",
+        "status"
+      ],
+      "type": "object"
+    }
+  },
+  "question_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba::q1",
+  "schema_version": 1
+}

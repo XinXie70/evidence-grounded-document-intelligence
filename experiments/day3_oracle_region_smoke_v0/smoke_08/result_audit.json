@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "case_id": "smoke_08",
+  "question_id": "urnuuid0d4da810-0b76-4979-a774-0f8bd6fae742::q1",
+  "condition": "oracle_region",
+  "audit_status": "complete",
+  "result_path": "results/day3_oracle_region_smoke_v0/smoke_08.json",
+  "result_sha256": "02ebc0a196da14be487a47145a3442458096b206d18d9ac067cf068bb3586bc4",
+  "benchmark_answer": "4",
+  "model_answer": "4",
+  "answer_correct_strict_benchmark": true,
+  "visual_classification_correct": true,
+  "cited_pages": [31, 34, 35, 38],
+  "required_evidence_pages": [30, 31, 34, 35, 38, 40],
+  "missing_required_citation_pages": [30, 40],
+  "citation_chain_complete": false,
+  "grounded_correct": false,
+  "classification": "correct_visual_count_with_incomplete_chapter_boundary_citations",
+  "diagnostic_conclusion": "Supplying gold-region pixels resolves the text-only representation failure and the model correctly distinguishes four actual-house photographs from two chapter-boundary regions. However, it cites only the four photograph pages and omits pages 30 and 40 that establish the chapter boundaries, so the strict evidence chain is incomplete.",
+  "scope_note": "This is one controlled smoke case and does not establish population-level visual-count performance."
+}

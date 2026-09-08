@@ -1,0 +1,60 @@
+{
+  "condition": "real_retrieval",
+  "doc_id": "urnuuid808e4631-8567-495d-a904-0c702dbe784e",
+  "evidence_pages": [
+    36,
+    23,
+    34
+  ],
+  "model_input": {
+    "evidence": [
+      {
+        "page": 36,
+        "text": "Moravian College Notes to Financial Statements June 30, 2011 and 2010 23 Funds with Deficiencies The fair value of assets associated with individual donor-restricted endowment funds may fall below the level that the donor or the relevant state law requires the College to retain as a fund of perpetual duration. In accordance with authoritative guidance, these deficiencies are reported as unrestricted net assets. There were no such deficiencies reported at June 30, 2011 or 2010. Return Objectives and Risk Parameters The College has adopted investment and spending policies for endowment assets that attempt to provide a predictable stream of funding to programs supported by its endowments while seeking to maintain the purchasing power of the endowment assets. Endowment assets include those assets of donor-restricted funds that the College must hold in perpetuity or for a donor-specified period as well as board-designated funds. Under this policy, as approved by the Board of Trustees, the endowment assets are invested in a manner that is intended to produce results that exceed the spending policy rate plus the expected inflation rate. The College expects its endowment fund, over time, to provide an average rate of return of approximately 9% annua lly. Actual returns in any given year may vary from this amount. Strategies Employed for Achieving Objectives The College relies on a total return strategy in which investment returns are achieved through both capital appreciation (realized and unrealized) and current yield (interest and dividends). The College targets a diversified asset allocation that places a greater emphasis on equity-based investments to achieve its long-term return objectives within prudent risk constraints. Endowment Spending Policy and How the Investment Objectives Relate to the Spending Policy The College has a total return policy of appropriating for distribution each year a percent of its endowment fund’s average fair value over the past twelve calendar quarters. This percentage was 4.5% for 2011 and 2010. If the spending policy distribution amount exceeds the actual earnings of the endowment funds in any one year, then the amount needed to fund such excess will be taken from accumulated excess earnings and net capital gains from prior years. Conversely, any undistributed income after the allocation of the spending policy distribution is added back to the temporarily restricted endowment fund balance. In establishing this policy, the College considered the long-term expected return on its endowment. Accordingly, over the long term, t he College expects to allow its endowment to return an average rate of 4.5% annually prior to any distributions (spending policy). This is consistent with the College’s objective to maintain the purchasing power of the endowment assets held in perpetuity or for a specified term as well as to provide additional real growth through new gifts and investment return."
+      },
+      {
+        "page": 23,
+        "text": "Moravian College Notes to Financial Statements June 30, 2011 and 2010 10 The College’s investments are comprised of a variety of financial instruments and are managed by investment advisors. The fair val ues reported in the statement of financial position are exposed to various risks including changes in the equity markets, the interest rate environment, and general economic conditions. Due to the level of risk associated with certain investment securities and the level of uncertainty related to changes in the fair value of investment securities, it is reasonably possible that the amounts reported in the accompanying financial statements could change materially in the near term. All realized gains and losses arising from the sale of investments and ordinary income from investments are reported as changes in unrestricted net assets unless their use is temporarily or permanently restricted by explicit donor-imposed stipulations. Deferred Financing Costs Costs incurred in connection with debt financing are deferred and amortized over the term of the related debt using the straight-line method, which approximates the interest method. Amortization expense was $59,166 and $57,425 in 2011 and 2010, respectively. Fixed Assets and Depreciation Land, buildings and equipment are stated at an estimated of original cost, based on independent appraisals, or at cost, less accumulated depreciation, computed on a straight-line basis over the estimated useful lives of buildings (50 years), land improvements (20 years), equipment and library books (10 years), automotive equipment (5 years) and certain computer equipment (3-5 years). Maintenance and repairs are charged to expense as incurred; replacements and betterments are capitalized. Contributed property and equipment is recorded at fair value at the date of donation. If donors stipulate how long the assets must be used, the contributions are recorded as restricted support. In the absence of such stipulations, contributions of property and equipment are recorded as unrestricted support. The College reports expirations of donor restrictions when the donated or required long-lived assets are placed in service. Collection items, such as works of art, are capitalized at cost, if purchased, or at their appraised or fair value, if contributed. Gains or losses from deaccessions of these items are reflected on the statement of activities as a change in the appropriate net asset class, depending on the existence and type of donor-imposed restriction. Impairment of Long-Lived Assets Management of the College reviews long-lived assets (including property and equipment and other assets) for impairment whenever events or changes in circumstances indicate that the carrying amount of an asset may not be recoverable. Management considers the undiscounted cash flow expected to be generated by the use of the asset and its eventual disposition to determine when, and if, an impai rment has occurred. An impairment loss is recognized to the extent that the carrying value of assets exceeds their fair value. Any write- downs due to impairment are charged to operations at the time impairment is identified. No such write-downs were required during the years ended June 30, 2011 and 2010."
+      },
+      {
+        "page": 34,
+        "text": "Moravian College Notes to Financial Statements June 30, 2011 and 2010 21 Interpretation of Relevant Law The College’s policy is to require the preservation of the fair value of the original gift as of the gift date of the donor-rest ricted endowment funds absent any explicit donor stipulations to the contrary. As a result of this interp retation, the College clas sifies as permanently restricted net assets (a) the original value of gifts donated to the permanent endowment, (b) the original value of subsequent gifts to the permanent endowment and (c) accumulations to the permanent endowment made in accordance with the direction of the applicable donor gift instrument at the time the accumulation is added to the fund. The remaining portion of the donor-restricted endowment fund that is not classified in permanently restricted net assets is classified as temporarily restricted net assets until those amounts are appropriated for expenditure by the College in a manner consistent with the standard of prudence prescribed by the relevant state law. Unless specifically defined, a donor-restricted endowment fund that is required by donor stipulation to accumulate or appropriate endowment funds, the College considers the following factors: 1. The duration and preservation of the fund. 2. The purposes of the organization an d the donor-restricted endowment fund. 3. General economic conditions. 4. The possible effect of inflation and deflation. 5. The expected total return from income and appreciation of investments. 6. The investment policies of the College. The following schedule represents the endowment net asset composition by type of endowment fund as of June 30, 2011: Unrestricted Temporarily Restricted Permanently Restricted Total (In Thousands) Donor restricted endowment funds $- $ 16,732 $ 51,219 $ 67,951 Board-designated endowment funds 16,120 - - 16,120 $ 16,120 $ 16,732 $ 51,219 $ 84,071"
+      }
+    ],
+    "instructions": "Answer the question. When document evidence is supplied, use only that evidence. When no document evidence is supplied, answer only from your existing knowledge and do not claim or imply document support. If the available basis does not adequately support an answer, return status='insufficient_evidence' and answer=null. Cite only supplied 1-based physical PDF page numbers; when no document evidence is supplied, cited_pages must be empty. Return one object matching response_schema.",
+    "question": "How many distinct stacked bar charts appear across the entire document?",
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "answer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cited_pages": {
+          "items": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "answerable",
+            "insufficient_evidence"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "answer",
+        "cited_pages",
+        "status"
+      ],
+      "type": "object"
+    }
+  },
+  "question_id": "urnuuid808e4631-8567-495d-a904-0c702dbe784e::q3",
+  "schema_version": 1
+}

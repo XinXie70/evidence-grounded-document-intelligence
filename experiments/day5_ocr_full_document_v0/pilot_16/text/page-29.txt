@@ -1,0 +1,26 @@
+. SEQUOIA ANALYTICAL
+
+1900 Bates Avenue @ Suite LM e Concord, California 94520
+(415) 686-9600 © FAX (415) 686-9689
+
+. San Leandro
+
+QUALITY CONTROL DATA REPORT
+
+SURROGATE
+Method: EPA 8015 EPA 8015
+Analyst: A. Tuzon A Tuzon
+Reporting Units: ug/L pg/L
+Date Analyzed: Aug 27, 1991 Aug 27, 1991
+Sample #: 108-0880 C Blank
+Surrogate
+% Recovery: 120 4120
+SEQUOIA ANALYTICAL % Recovery Cone of MS - Cone of Sample x 100
+} “4 j f Spike Cone Added
+Al a)
+4 \ ; Hud L/ TS Relatwe % Difference Conc of MS - Conc of MSD x 100
+M
+
+UME /
+Julla R erstein (Conc of MS + Conc of MSD) /2
+Peden Manager 1080879 KEL <6>

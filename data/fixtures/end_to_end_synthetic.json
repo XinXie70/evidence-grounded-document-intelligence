@@ -1,0 +1,29 @@
+{
+  "answer": {
+    "answer_text": "42",
+    "is_answerable": true
+  },
+  "evidences": [
+    {
+      "bbox": [100.0, 200.0, 300.0, 260.0],
+      "element_type": "table",
+      "local_id": "e1",
+      "page": 7
+    }
+  ],
+  "facts": [
+    {
+      "evidence_local_id": "e1",
+      "local_id": "f1",
+      "text_description": "Synthetic fixture fact: the reported value is 42."
+    }
+  ],
+  "fixture_notice": "Synthetic schema fixture; contains no DocScope benchmark content.",
+  "id": "synthetic-doc-001::q1",
+  "pdf": {
+    "doc_id_str": "synthetic-doc-001"
+  },
+  "question": "What is the synthetic reported value?",
+  "split": "fixture"
+}
+

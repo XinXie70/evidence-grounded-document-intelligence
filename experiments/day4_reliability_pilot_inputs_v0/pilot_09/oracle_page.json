@@ -1,0 +1,70 @@
+{
+  "condition": "oracle_page",
+  "doc_id": "urnuuid425f7a17-aa57-4cca-b56e-612fe270751d",
+  "evidence_pages": [
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "model_input": {
+    "evidence": [
+      {
+        "page": 8,
+        "text": "Group income statement Quarter Quarter Quarter Six months Six months ended ended ended ended ended June March June June June 2012 2012 2011 2012 2011 US Dollar million Notes Reviewed Reviewed Reviewed Reviewed Reviewed Revenue 2 1,684 1,794 1,704 3,478 3,193 Gold income 1,619 1,706 1,576 3,325 2,998 Cost of sales 3 (986) (989) (947) (1,975) (1,873) Loss on non-hedge derivatives and other commodity contracts - -( 2 ) - - Gross profit 633 717 627 1,350 1,125 Corporate administration, marketing and other expenses (69) (67) (66) (135) (132) Exploration costs (87) (75) (63) (163) (120) Other operating expenses 4 (29) (8) (8) (37) (21) Special items 5 8 17 29 25 30 Operating profit 456 584 519 1,040 882 Interest received 9 12 11 21 19 Exchange gain (loss) 8 (2) (6) 6 (5) Fair value adjustment on option component of convertible bonds 24 43 73 67 88 Finance costs and unwinding of obligations 6 (49) (49) (50) (98) (99) Fair value adjustment on mandatory convertible bonds 29 79 64 108 87 Share of equity-accounted investments' (loss) profit (6) 22 21 16 32 Profit before taxation 471 689 632 1,160 1,004 Taxation 7 (186) (111) (149) (297) (273) Profit for the period 285 578 483 863 731 Allocated as follows: Equity shareholders 287 563 470 850 711 Non-controlling interests (2) 15 13 13 20 285 578 483 863 731 Basic earnings per ordinary share (cents) 1 74 146 122 220 184 Diluted earnings per ordinary share (cents) 2 61 110 85 171 138 1 Calculated on the basic weighted average number of ordinary shares. Rounding of figures may result in computational discrepancies. 2 Calculated on the diluted weighted average number of ordinary shares. The reviewed financial statements for the quarter and six months ended 30 June 2012 have been prepared by the corporate accounting staff of AngloGold Ashanti Limited headed by Mr John Edwin Staples, the Group's Chief Accounting Officer. This process was supervised by Mr Mark Cutifani, the Group's Chief Executive Officer and Mr Srinivasan Venkatakrishnan, the Group's Chief Financial Officer. The financial statements for the quarter ended 30 June 2012 were reviewed, but not audited, by the Group's statutory auditors, Ernst & Young Inc. A copy of their unmodified review report is available for inspection at the company's head office. 4XDUWHUO\\\u00035HSRUW\u0003-XQH\u0003\u0015\u0013\u0014\u0015\u0003\u0010\u0003ZZZ\u0011$QJOR*ROG$VKDQWL\u0011FRP\u0019"
+      },
+      {
+        "page": 9,
+        "text": "Group statement of comprehensive income Quarter Quarter Quarter Six months Six months ended ended ended ended ended June March June June June 2012 2012 2011 2012 2011 US Dollar million Reviewed Reviewed Reviewed Reviewed Reviewed Profit for the period 285 578 483 863 731 Exchange differences on translation of foreign operations (128) 95 25 (33) (23) Share of equity-accounted investments' other comprehensive loss - - (1) - (1) Net (loss) gain on available-for-sale financial assets (12) 1 (27) (11) (29) Release on disposal and impairment of available-for-sale financial assets - 1212 Deferred taxation thereon 5 -- 5- (7) 2( 2 5 ) ( 5 ) ( 2 7 ) Deferred taxation rate change on actuarial losses - (9) - (9) - Other comprehensive (loss) income for the period net of tax (135) 88 (1) (47) (51) Total comprehensive income for the period net of tax 150 666 482 816 680 Allocated as follows: Equity shareholders 152 651 469 803 660 Non-controlling interests (2) 15 13 13 20 150 666 482 816 680 Rounding of figures may result in computational discrepancies. 4XDUWHUO\\\u00035HSRUW\u0003-XQH\u0003\u0015\u0013\u0014\u0015\u0003\u0010\u0003ZZZ\u0011$QJOR*ROG$VKDQWL\u0011FRP\u001a"
+      },
+      {
+        "page": 10,
+        "text": "Group statement of financial position As at As at As at As at June March December June 2012 2012 2011 2011 US Dollar million Note Reviewed Reviewed Audited Reviewed ASSETS Non-current assets Tangible assets 6,789 6,763 6,525 6,271 Intangible assets 243 228 210 201 Investments in associates and equity-accounted joint ventures 835 765 702 661 Other investments 178 196 186 226 Inventories 454 421 410 419 Trade and other receivables 81 80 76 157 Deferred taxation 61 55 79 21 Cash restricted for use 24 24 23 25 Other non-current assets 9 10 9 10 8,674 8,542 8,220 7,991 Current assets Inventories 1,138 1,083 1,064 934 Trade and other receivables 460 409 350 286 Current portion of other non-current assets - -- 3 Cash restricted for use 32 54 35 31 Cash and cash equivalents 987 1,216 1,112 839 2,617 2,762 2,561 2,093 Non-current assets held for sale 2 22 1 2 2,619 2,764 2,582 2,095 TOTAL ASSETS 11,293 11,306 10,802 10,086 EQUITY AND LIABILITIES Share capital and premium 10 6,711 6,695 6,689 6,648 Retained earnings and other reserves (1,135) (1,103) (1,660) (2,000) Shareholders' equity 5,576 5,592 5,029 4,648 Non-controlling interests 61 154 137 137 Total equity 5,637 5,746 5,166 4,785 Non-current liabilities Borrowings 2,492 2,382 2,456 2,451 Environmental rehabilitation and other provisions 795 796 782 637 Provision for pension and post-retirement benefits 217 206 195 189 Trade, other payables and deferred income 14 14 14 20 Derivatives 26 50 93 88 Deferred taxation 1,149 1,132 1,158 1,050 4,693 4,580 4,698 4,435 Current liabilities Current portion of borrowings 32 53 32 30 Trade, other payables and deferred income 732 720 751 703 Taxation 199 207 155 133 963 980 938 866 Total liabilities 5,656 5,560 5,636 5,301 TOTAL EQUITY AND LIABILITIES 11,293 11,306 10,802 10,086 Rounding of figures may result in computational discrepancies. 4XDUWHUO\\\u00035HSRUW\u0003-XQH\u0003\u0015\u0013\u0014\u0015\u0003\u0010\u0003ZZZ\u0011$QJOR*ROG$VKDQWL\u0011FRP\u001b"
+      },
+      {
+        "page": 11,
+        "text": "Group statement of cash flows Quarter Quarter Quarter Six months Six months ended ended ended ended ended June March June June June 2012 2012 2011 2012 2011 US Dollar million Reviewed Reviewed Reviewed Reviewed Reviewed Cash flows from operating activities Receipts from customers 1,691 1,758 1,641 3,449 3,092 Payments to suppliers and employees (1,106) (1,085) (926) (2,190) (1,876) Cash generated from operations 585 673 715 1,259 1,216 Dividends received from equity-accounted joint ventures 20 20 14 40 44 Taxation refund - -7 3 - 9 5 Taxation paid (143) (112) (167) (255) (207) Net cash inflow from operating activities 462 581 635 1,044 1,148 Cash flows from investing activities Capital expenditure (374) (312) (323) (686) (556) Interest capitalised and paid (2) (2) - (4) - Expenditure on intangible assets (20) (7) - (28) - Proceeds from disposal of tangible assets 1 17 2 8 Other investments acquired (23) (39) (31) (62) (62) Proceeds from disposal of investments 19 36 27 55 42 Investment in associates and equity-accounted joint ventures (66) (45) (25) (111) (49) Proceeds from disposal of equity-accounted joint venture - 20 - 20 - Loans advanced to associates and equity-accounted joint ventures (48) (15) (2) (63) (2) Loans repaid by associates and equity-accounted joint ventures 1 --1 - Dividends received from associate 1 --1 - Proceeds from disposal of subsidiary - -- - 9 Cash in subsidiary disposed - -- - ( 1 1 ) Decrease (increase) in cash restricted for use 20 (18) (18) 2 (13) Interest received 8 10 10 18 18 Repayment of loans advanced - -1 - 1 Net cash outflow from investing activities (483) (371) (354) (855) (615) Cash flows from financing activities Proceeds from issue of share capital - --1 1 Proceeds from borrowings 150 - 6 150 6 Repayment of borrowings (4) (4) (3) (8) (155) Finance costs paid (57) (15) (57) (72) (75) Acquisition of non-controlling interest (220) - - (220) - Revolving credit facility transaction costs - (8) - (8) - Dividends paid (61) (101) (11) (163) (54) Net cash outflow from financing activities (192) (128) (65) (320) (277) Net (decrease) increase in cash and cash equivalents (213) 82 216 (131) 256 Translation (16) 22 4 6 (3) Cash and cash equivalents at beginning of period 1,216 1,112 619 1,112 586 Cash and cash equivalents at end of period 987 1,216 839 987 839 Cash generated from operations Profit before taxation 471 689 632 1,160 1,004 Adjusted for: Movement on non-hedge derivatives and other commodity contracts - -2 - - Amortisation of tangible assets 195 190 188 386 373 Finance costs and unwinding of obligations 49 49 50 98 99 Environmental, rehabilitation and other expenditure 5 (5) 35 - 35 Special items 2 21 4 3 2 1 Amortisation of intangible assets 1 11 2 1 Deferred stripping 2 (7) 6 (5) 26 Fair value adjustment on option component of convertible bonds (24) (43) (73) (67) (88) Fair value adjustment on mandatory convertible bonds (29) (79) (64) (108) (87) Interest received (9) (12) (11) (21) (19) Share of equity-accounted investments' loss (profit) 6 (22) (21) (16) (32) Other non-cash movements 27 22 14 50 22 Movements in working capital (111) (112) (58) (223) (139) 585 673 715 1,259 1,216 Movements in working capital Increase in inventories (92) (30) (92) (122) (109) Increase in trade and other receivables (37) (54) (15) (91) (81) Increase (decrease) in trade and other payables 18 (28) 49 (10) 51 (111) (112) (58) (223) (139) Rounding of figures may result in computational discrepancies. 4XDUWHUO\\\u00035HSRUW\u0003-XQH\u0003\u0015\u0013\u0014\u0015\u0003\u0010\u0003ZZZ\u0011$QJOR*ROG$VKDQWL\u0011FRP"
+      },
+      {
+        "page": 12,
+        "text": "Group statement of changes in equity Share Cash Available Foreign capital Other flow for Actuarial currency Non- and capital Retained hedge sale (losses) translation contro lling Total US Dollar million premium reserves earnings reserve reserve gains reserve Total interests equity Balance at 31 December 2010 6,627 194 (2,750) (2) 86 (62) (104) 3,989 124 4,113 Profit for the period 711 711 20 731 Other comprehensive loss (1) (27) (23) (51) (51) Total comprehensive (loss) income - (1) 711 - (27) - (23) 660 20 680 Shares issued 21 21 21 Share-based payment for share awards net of exercised 19 19 19 Dividends paid (43) (43) (43) Dividends of subsidiaries - (5) (5) Translation (4) 5 1 2 (2) - Balance at 30 June 2011 6,648 208 (2,077) (2) 59 (61) (127) 4,648 137 4,785 Balance at 31 December 2011 6,689 171 (1,300) (2) 18 (78) (469) 5,029 137 5,166 Profit for the period 850 850 13 863 Other comprehensive loss (5) (9) (33) (47) (47) Total comprehensive income (loss) - - 850 - (5) (9) (33) 803 13 816 Shares issued 22 22 22 Share-based payment for share awards net of exercised 12 12 12 Acquisition of non-controlling interest (144) (144) (71) (215) Dividends paid (147) (147) (147) Dividends of subsidiaries - (17) (17) Translation (3) 2 2 1 (1) - Balance at 30 June 2012 6,711 180 (739) (2) 13 (85) (502) 5,576 61 5,637 Rounding of figures may result in computational discrepancies. Equity holders of the parent 4XDUWHUO\\\u00035HSRUW\u0003-XQH\u0003\u0015\u0013\u0014\u0015\u0003\u0010\u0003ZZZ\u0011$QJOR*ROG$VKDQWL\u0011FRP\u0014\u0013"
+      }
+    ],
+    "instructions": "Answer the question. When document evidence is supplied, use only that evidence. When no document evidence is supplied, answer only from your existing knowledge and do not claim or imply document support. If the available basis does not adequately support an answer, return status='insufficient_evidence' and answer=null. Cite only supplied 1-based physical PDF page numbers; when no document evidence is supplied, cited_pages must be empty. Return one object matching response_schema.",
+    "question": "How many primary group financial statement tables appear in the report?",
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "answer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cited_pages": {
+          "items": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "answerable",
+            "insufficient_evidence"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "answer",
+        "cited_pages",
+        "status"
+      ],
+      "type": "object"
+    }
+  },
+  "question_id": "urnuuid425f7a17-aa57-4cca-b56e-612fe270751d::q5",
+  "schema_version": 1
+}

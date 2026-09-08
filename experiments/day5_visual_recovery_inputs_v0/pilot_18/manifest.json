@@ -1,0 +1,329 @@
+{
+  "benchmark_path": "data/raw/docscope/benchmark.json",
+  "benchmark_sha256": "ad07c6dfc43e5275ae92b894bf69f151c3dd9467ed79f5b12df904438c5ecb8e",
+  "coordinate_space": "cropbox_pixels_at_144_dpi_top_left_origin",
+  "crops": [
+    {
+      "bbox": [
+        45,
+        133,
+        592,
+        506
+      ],
+      "doc_id": "urnuuid808e4631-8567-495d-a904-0c702dbe784e",
+      "element_type": "chart",
+      "evidence_local_id": "e1",
+      "output_height_pixels": 373,
+      "output_png": "e1_page_0001.png",
+      "output_png_sha256": "53ff5c5340761ffebc4c8b127e2da152d0a7c2ced96ba4f2d5c71284003da032",
+      "output_width_pixels": 547,
+      "page": 1,
+      "pixel_crop": [
+        45,
+        133,
+        592,
+        506
+      ],
+      "question": "How many distinct stacked bar charts appear across the entire document?",
+      "question_id": "urnuuid808e4631-8567-495d-a904-0c702dbe784e::q3"
+    },
+    {
+      "bbox": [
+        64,
+        152,
+        605,
+        499
+      ],
+      "doc_id": "urnuuid808e4631-8567-495d-a904-0c702dbe784e",
+      "element_type": "chart",
+      "evidence_local_id": "e2",
+      "output_height_pixels": 347,
+      "output_png": "e2_page_0004.png",
+      "output_png_sha256": "91305b193ee5aac905fe8e82a92f4eb182cd3f7a26c7cb1962514140ea92a5a7",
+      "output_width_pixels": 541,
+      "page": 4,
+      "pixel_crop": [
+        64,
+        152,
+        605,
+        499
+      ],
+      "question": "How many distinct stacked bar charts appear across the entire document?",
+      "question_id": "urnuuid808e4631-8567-495d-a904-0c702dbe784e::q3"
+    },
+    {
+      "bbox": [
+        59,
+        648,
+        596,
+        975
+      ],
+      "doc_id": "urnuuid808e4631-8567-495d-a904-0c702dbe784e",
+      "element_type": "chart",
+      "evidence_local_id": "e3",
+      "output_height_pixels": 327,
+      "output_png": "e3_page_0004.png",
+      "output_png_sha256": "701c9d1008a0d03714d2a6d04e828d58660c88c0fa3fedce492eed346564ff4c",
+      "output_width_pixels": 537,
+      "page": 4,
+      "pixel_crop": [
+        59,
+        648,
+        596,
+        975
+      ],
+      "question": "How many distinct stacked bar charts appear across the entire document?",
+      "question_id": "urnuuid808e4631-8567-495d-a904-0c702dbe784e::q3"
+    },
+    {
+      "bbox": [
+        38,
+        1112,
+        601,
+        1461
+      ],
+      "doc_id": "urnuuid808e4631-8567-495d-a904-0c702dbe784e",
+      "element_type": "chart",
+      "evidence_local_id": "e4",
+      "output_height_pixels": 349,
+      "output_png": "e4_page_0004.png",
+      "output_png_sha256": "e83829b2449b8cc532db0ab72d7ea2e1792b84d8c5fe3aa2b066e1c49dbc9936",
+      "output_width_pixels": 563,
+      "page": 4,
+      "pixel_crop": [
+        38,
+        1112,
+        601,
+        1461
+      ],
+      "question": "How many distinct stacked bar charts appear across the entire document?",
+      "question_id": "urnuuid808e4631-8567-495d-a904-0c702dbe784e::q3"
+    },
+    {
+      "bbox": [
+        61,
+        124,
+        596,
+        461
+      ],
+      "doc_id": "urnuuid808e4631-8567-495d-a904-0c702dbe784e",
+      "element_type": "chart",
+      "evidence_local_id": "e5",
+      "output_height_pixels": 337,
+      "output_png": "e5_page_0005.png",
+      "output_png_sha256": "d44a445b55c25761b16867fa34cc6a1cd7131fb01970b884f7dec34774cd854f",
+      "output_width_pixels": 535,
+      "page": 5,
+      "pixel_crop": [
+        61,
+        124,
+        596,
+        461
+      ],
+      "question": "How many distinct stacked bar charts appear across the entire document?",
+      "question_id": "urnuuid808e4631-8567-495d-a904-0c702dbe784e::q3"
+    },
+    {
+      "bbox": [
+        52,
+        656,
+        603,
+        919
+      ],
+      "doc_id": "urnuuid808e4631-8567-495d-a904-0c702dbe784e",
+      "element_type": "chart",
+      "evidence_local_id": "e6",
+      "output_height_pixels": 263,
+      "output_png": "e6_page_0005.png",
+      "output_png_sha256": "82d0f6f456e2b02bce4fef5f342b96800f6e416e0daed839fd8c094d72d1c35a",
+      "output_width_pixels": 551,
+      "page": 5,
+      "pixel_crop": [
+        52,
+        656,
+        603,
+        919
+      ],
+      "question": "How many distinct stacked bar charts appear across the entire document?",
+      "question_id": "urnuuid808e4631-8567-495d-a904-0c702dbe784e::q3"
+    },
+    {
+      "bbox": [
+        55,
+        1146,
+        608,
+        1497
+      ],
+      "doc_id": "urnuuid808e4631-8567-495d-a904-0c702dbe784e",
+      "element_type": "chart",
+      "evidence_local_id": "e7",
+      "output_height_pixels": 351,
+      "output_png": "e7_page_0005.png",
+      "output_png_sha256": "62ac0170a8dd036a184900347337fd1724a1544c12075aba065fe1e671cc8219",
+      "output_width_pixels": 553,
+      "page": 5,
+      "pixel_crop": [
+        55,
+        1146,
+        608,
+        1497
+      ],
+      "question": "How many distinct stacked bar charts appear across the entire document?",
+      "question_id": "urnuuid808e4631-8567-495d-a904-0c702dbe784e::q3"
+    },
+    {
+      "bbox": [
+        71,
+        122,
+        628,
+        523
+      ],
+      "doc_id": "urnuuid808e4631-8567-495d-a904-0c702dbe784e",
+      "element_type": "chart",
+      "evidence_local_id": "e8",
+      "output_height_pixels": 401,
+      "output_png": "e8_page_0006.png",
+      "output_png_sha256": "2c77599557f5bf0d5e4f210d64faaf17066627629d3892b6d32b97c2e0ba81d6",
+      "output_width_pixels": 557,
+      "page": 6,
+      "pixel_crop": [
+        71,
+        122,
+        628,
+        523
+      ],
+      "question": "How many distinct stacked bar charts appear across the entire document?",
+      "question_id": "urnuuid808e4631-8567-495d-a904-0c702dbe784e::q3"
+    },
+    {
+      "bbox": [
+        60,
+        653,
+        638,
+        1028
+      ],
+      "doc_id": "urnuuid808e4631-8567-495d-a904-0c702dbe784e",
+      "element_type": "chart",
+      "evidence_local_id": "e9",
+      "output_height_pixels": 375,
+      "output_png": "e9_page_0006.png",
+      "output_png_sha256": "84824fe8ce388c53589ff3453140471fa49f2d6a4a0ff8cb8dbccfc3823a1693",
+      "output_width_pixels": 578,
+      "page": 6,
+      "pixel_crop": [
+        60,
+        653,
+        638,
+        1028
+      ],
+      "question": "How many distinct stacked bar charts appear across the entire document?",
+      "question_id": "urnuuid808e4631-8567-495d-a904-0c702dbe784e::q3"
+    },
+    {
+      "bbox": [
+        54,
+        1132,
+        642,
+        1539
+      ],
+      "doc_id": "urnuuid808e4631-8567-495d-a904-0c702dbe784e",
+      "element_type": "chart",
+      "evidence_local_id": "e10",
+      "output_height_pixels": 407,
+      "output_png": "e10_page_0006.png",
+      "output_png_sha256": "d56689a7550da60ac6f817cd7c1687fa7a1caebc3fd918aaa5fbc127b046da01",
+      "output_width_pixels": 588,
+      "page": 6,
+      "pixel_crop": [
+        54,
+        1132,
+        642,
+        1539
+      ],
+      "question": "How many distinct stacked bar charts appear across the entire document?",
+      "question_id": "urnuuid808e4631-8567-495d-a904-0c702dbe784e::q3"
+    },
+    {
+      "bbox": [
+        68,
+        122,
+        616,
+        524
+      ],
+      "doc_id": "urnuuid808e4631-8567-495d-a904-0c702dbe784e",
+      "element_type": "chart",
+      "evidence_local_id": "e11",
+      "output_height_pixels": 402,
+      "output_png": "e11_page_0007.png",
+      "output_png_sha256": "1e16c6831cc601a6cf7b3cea278bb29fbc50e832dfdb2df936de1fe4552b8795",
+      "output_width_pixels": 548,
+      "page": 7,
+      "pixel_crop": [
+        68,
+        122,
+        616,
+        524
+      ],
+      "question": "How many distinct stacked bar charts appear across the entire document?",
+      "question_id": "urnuuid808e4631-8567-495d-a904-0c702dbe784e::q3"
+    },
+    {
+      "bbox": [
+        78,
+        126,
+        618,
+        459
+      ],
+      "doc_id": "urnuuid808e4631-8567-495d-a904-0c702dbe784e",
+      "element_type": "chart",
+      "evidence_local_id": "e12",
+      "output_height_pixels": 333,
+      "output_png": "e12_page_0008.png",
+      "output_png_sha256": "4497d40193e1f36b0004f9761d660460240d936e689e9ccaa11bc1b1202d6503",
+      "output_width_pixels": 540,
+      "page": 8,
+      "pixel_crop": [
+        78,
+        126,
+        618,
+        459
+      ],
+      "question": "How many distinct stacked bar charts appear across the entire document?",
+      "question_id": "urnuuid808e4631-8567-495d-a904-0c702dbe784e::q3"
+    },
+    {
+      "bbox": [
+        80,
+        1141,
+        642,
+        1481
+      ],
+      "doc_id": "urnuuid808e4631-8567-495d-a904-0c702dbe784e",
+      "element_type": "chart",
+      "evidence_local_id": "e13",
+      "output_height_pixels": 340,
+      "output_png": "e13_page_0008.png",
+      "output_png_sha256": "314e123bf32f881f30e59558b960a976ce9b74b61001d8f04a99bffbc48a8af9",
+      "output_width_pixels": 562,
+      "page": 8,
+      "pixel_crop": [
+        80,
+        1141,
+        642,
+        1481
+      ],
+      "question": "How many distinct stacked bar charts appear across the entire document?",
+      "question_id": "urnuuid808e4631-8567-495d-a904-0c702dbe784e::q3"
+    }
+  ],
+  "doc_id": "urnuuid808e4631-8567-495d-a904-0c702dbe784e",
+  "question": "How many distinct stacked bar charts appear across the entire document?",
+  "question_id": "urnuuid808e4631-8567-495d-a904-0c702dbe784e::q3",
+  "render_dpi": 144,
+  "rounding_rule": "floor x1/y1 and ceil x2/y2",
+  "schema_version": 1,
+  "source_pdf": "data/raw/docscope/pdfs/urnuuid808e4631-8567-495d-a904-0c702dbe784e.pdf",
+  "source_pdf_sha256": "410e164068e5e3e946607c6405e94414a21609d915978efc5f2636e82d23f05b",
+  "status": "manual_review_required",
+  "use_pdf_cropbox": true
+}

@@ -1,0 +1,74 @@
+{
+  "condition": "oracle_region",
+  "doc_id": "urnuuidc94c212d-21aa-4dbe-a75f-6d8888002f6a",
+  "evidence_pages": [
+    30
+  ],
+  "evidence_regions": [
+    {
+      "bbox": [
+        112,
+        1046,
+        970,
+        1531
+      ],
+      "element_type": "chart",
+      "evidence_local_id": "e1",
+      "image_sha256": "ad70b5c51f6d295345e13b7f7e6d258495076acb9b0b1e6cfb174a723c0418db",
+      "page": 30
+    }
+  ],
+  "model_input": {
+    "evidence": [
+      {
+        "bbox": [
+          112,
+          1046,
+          970,
+          1531
+        ],
+        "evidence_local_id": "e1",
+        "image_path": "e1_page_0030.png",
+        "image_sha256": "ad70b5c51f6d295345e13b7f7e6d258495076acb9b0b1e6cfb174a723c0418db",
+        "page": 30,
+        "text": "",
+        "text_scope": "image_only"
+      }
+    ],
+    "instructions": "Answer the question. When document evidence is supplied, use only that evidence. When no document evidence is supplied, answer only from your existing knowledge and do not claim or imply document support. If the available basis does not adequately support an answer, return status='insufficient_evidence' and answer=null. Cite only supplied 1-based physical PDF page numbers; when no document evidence is supplied, cited_pages must be empty. Return one object matching response_schema.",
+    "question": "In the bar chart showing how frequently residents visited a leisure fortress/venue in the last 12 months, what percentage of adults living in households with dependent children had not visited at all?",
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "answer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cited_pages": {
+          "items": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "answerable",
+            "insufficient_evidence"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "answer",
+        "cited_pages",
+        "status"
+      ],
+      "type": "object"
+    }
+  },
+  "question_id": "urnuuidc94c212d-21aa-4dbe-a75f-6d8888002f6a::q2",
+  "schema_version": 1
+}

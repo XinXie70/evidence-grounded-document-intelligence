@@ -1,0 +1,34 @@
+£4) SEQUOIA ANALYTICAL
+
+1900 Bates Avenue e Suite LM e Concord, California 94520
+. Kf (415) 686-9600 © FAX (415) 686-9689
+
+prealian Engineering, Inc. Client Project ID: Unocal, 1300 Davis $t., San Leandro .
+
+enicia, CA 94510
+enti Kapr
+
+iC Sample Group: 1080879-81
+
+__.Reported: Aug 30, 1991
+
+QUALITY CONTROL DATA REPORT
+
+SURROGATE
+Method: EPA 8010 EPA 8010 EPA 8010 EPA 8010
+Analyst: sb SL SL SL
+Reporting Units: ppb ppb ppb ppb
+Date Analyzed: Aug 28, 1991 Aug 28, 1991 Aug 28, 1991 Aug 28, 1991
+Sample #: 108-0879 DE 108-0880 EF 108-0881 DE Blank
+Surrogate #1
+% Recovery: 100 110 120 87
+Surrogate #2
+% Recovery: 110 110 110 120
+SEQUOIA ANALYTICAL % Recovery Cone of MS - Cone of Sample x 100
+: 7) 7 4 f Spike Conc Added
+mt 4
+4 Vo A U \ ly? — Relative % Diterence Cone of MS - Conc of MSD x 100
+| JulaR Malerstein (Conc of MS + Conc of MSD} /2
+
+\ Project Manager 1080879 KEI <13>
+i

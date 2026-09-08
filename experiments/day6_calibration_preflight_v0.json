@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "preflight_id": "day6_development_calibration_preflight_v0",
+  "date": "2026-09-08",
+  "status": "not_ready_for_calibration_execution",
+  "scope": "label_free_input_and_route_inventory_only",
+  "data_boundary": {
+    "split": "development_calibration",
+    "question_count": 132,
+    "document_count": 35,
+    "benchmark_fields_used": [
+      "id",
+      "question",
+      "pdf.doc_id_str"
+    ],
+    "answer_fields_used": false,
+    "evidence_fields_used": false,
+    "locked_test_accessed": false
+  },
+  "input_integrity": {
+    "pdfs_checksum_verified": 35,
+    "pdfs_openable_from_day1_audit": 35,
+    "total_pdf_pages": 1832,
+    "text_layer_missing_pages": 61,
+    "low_text_pages_excluding_missing": 66,
+    "existing_calibration_page_record_files": 0
+  },
+  "frozen_router_output": {
+    "question_counts": {
+      "r0_text": 99,
+      "r1_local_visual": 29,
+      "r2_scanned_document": 1,
+      "r3_document_global": 3
+    },
+    "distinct_document_counts": {
+      "r0_text": 32,
+      "r1_local_visual": 13,
+      "r2_scanned_document": 1,
+      "r3_document_global": 3
+    },
+    "note": "Distinct-document counts overlap because one document can contain questions assigned to different routes."
+  },
+  "local_preparation_estimate": {
+    "native_page_records_to_generate": 1832,
+    "full_document_ocr_documents": 1,
+    "full_document_ocr_pages": 50,
+    "api_cost_usd": 0.0
+  },
+  "paid_evaluation_boundary": {
+    "approved_hard_cap_per_request_usd": 1.0,
+    "reminder_required_before_each_paid_run": true,
+    "paid_requests_authorized_by_this_preflight": 0,
+    "c1_request_count_if_run_once_per_question": 132,
+    "absolute_cap_if_every_c1_request_reached_the_per_request_limit_usd": 132.0,
+    "note": "This is an absolute safety ceiling, not an expected bill. A real batch budget must be estimated after evidence packages exist and approved before execution."
+  },
+  "gate_findings": [
+    {
+      "route": "r0_text",
+      "status": "implementation_available",
+      "finding": "The deterministic native-text Page Record and BM25 path exists."
+    },
+    {
+      "route": "r1_local_visual",
+      "status": "not_frozen_for_population_evaluation",
+      "finding": "Tune diagnostics demonstrated visual recovery, but a deterministic batch localisation and evidence-package policy has not yet been frozen."
+    },
+    {
+      "route": "r2_scanned_document",
+      "status": "frozen_tune_candidate_v2",
+      "finding": "One 50-page calibration document would use the frozen OCR, orientation recovery, BM25, and window policy."
+    },
+    {
+      "route": "r3_document_global",
+      "status": "safe_abstention_boundary_available",
+      "finding": "Three questions require document-complete coverage; the current safe boundary is to abstain unless a separately frozen full-document method is available."
+    }
+  ],
+  "gate_decision": "Do not execute or score development_calibration yet. Finish and freeze R1 using development_tune only, preserve the R2 v2 freeze, explicitly freeze the R3 abstention policy, then regenerate the calibration budget and execute once without tuning on its outcomes."
+}

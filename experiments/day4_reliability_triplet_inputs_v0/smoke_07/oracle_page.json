@@ -1,0 +1,50 @@
+{
+  "condition": "oracle_page",
+  "doc_id": "urnuuid2ec9537c-589c-47f0-81ae-8e02e2d85414",
+  "evidence_pages": [
+    31
+  ],
+  "model_input": {
+    "evidence": [
+      {
+        "page": 31,
+        "text": "Cost of deposits & Yield on advances Cost of Deposits and Yield on Advances 11.00 10.85 11.32 12.82 13.46 13.04 12.47 13.56 8.37 13.49 13.43 13.28 31 6.08 5.75 5.95 7.23 7.98 7.73 6.94 8.11 8.44 8.24 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 Sep-14 Spread between cost of deposits and yield on advances of our bank maintained in the last 10 years"
+      }
+    ],
+    "instructions": "Answer the question. When document evidence is supplied, use only that evidence. When no document evidence is supplied, answer only from your existing knowledge and do not claim or imply document support. If the available basis does not adequately support an answer, return status='insufficient_evidence' and answer=null. Cite only supplied 1-based physical PDF page numbers; when no document evidence is supplied, cited_pages must be empty. Return one object matching response_schema.",
+    "question": "What is the spread, in percentage points, between the yield on advances and the cost of deposits for Sep-14?",
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "answer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cited_pages": {
+          "items": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "answerable",
+            "insufficient_evidence"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "answer",
+        "cited_pages",
+        "status"
+      ],
+      "type": "object"
+    }
+  },
+  "question_id": "urnuuid2ec9537c-589c-47f0-81ae-8e02e2d85414::q2",
+  "schema_version": 1
+}

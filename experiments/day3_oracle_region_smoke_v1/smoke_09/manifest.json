@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "experiment_id": "day3_grounded_reasoning_c3_smoke_v1",
+  "question_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba::q1",
+  "doc_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba",
+  "question": "The bird species registration table in the application form includes a column for tracking how birds are related to one another. What example is given in that column?",
+  "intervention": "rotate_oracle_region_clockwise_90_degrees",
+  "controlled_variables": {
+    "source_region_unchanged": true,
+    "bbox_unchanged": true,
+    "page_unchanged": true,
+    "question_unchanged": true,
+    "model_and_prompt_to_remain_unchanged": true
+  },
+  "source_image": {
+    "path": "experiments/day3_oracle_region_smoke_v0/smoke_09/e1_page_0014.png",
+    "sha256": "17591263549832e78c2729cae1c8dcdf6442241aa8e2d6add996fad6dbe9a372",
+    "width_px": 94,
+    "height_px": 380
+  },
+  "transformation": {
+    "tool": "sips-316",
+    "operation": "rotate",
+    "degrees_clockwise": 90
+  },
+  "crops": [
+    {
+      "bbox": [167.7, 68, 260.9, 447.2],
+      "doc_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba",
+      "element_type": "table",
+      "evidence_local_id": "e1",
+      "output_height_pixels": 94,
+      "output_png": "e1_page_0014_upright.png",
+      "output_png_sha256": "7c94c32609a7a0ee688a95f60df9ab32f49732088bc15d1d5b07b6591e5b3e06",
+      "output_width_pixels": 380,
+      "page": 14,
+      "question": "The bird species registration table in the application form includes a column for tracking how birds are related to one another. What example is given in that column?",
+      "question_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba::q1"
+    }
+  ],
+  "status": "manual_review_confirmed",
+  "paid_request_sent": false
+}

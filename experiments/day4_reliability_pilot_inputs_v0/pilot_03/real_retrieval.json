@@ -1,0 +1,60 @@
+{
+  "condition": "real_retrieval",
+  "doc_id": "urnuuid44ff3ab7-6cd7-40f9-8abc-28680be05c68",
+  "evidence_pages": [
+    32,
+    10,
+    13
+  ],
+  "model_input": {
+    "evidence": [
+      {
+        "page": 32,
+        "text": "32 R&D Expenses: SG&A Expenses (Billions of yen) Business Innovation Materials Imaging Healthcare Corporate 17.4 16.4 6.7 6.1 28.2 25.2 28.4 30.8 30.0 33.4 110.7 111.9 0.0 20.0 40.0 60.0 80.0 100.0 120.0 FY2020 FY2021 (Billions of yen) FY2020 FY2021 FY2020 FY2021 FY2020 FY2021 (Forecast) Healthcare 9.9 10.7 30.0 33.4 Materials 9.9 10.3 28.4 30.8 Business Innovation 9.3 7.9 28.2 25.2 Imaging 2.1 2.0 6.7 6.1 Corporate 5.1 5.2 17.4 16.4 R&D Expenses 36.3 36.1 110.7 111.9 152.2 160.0 6.3% 5.5% 7.0% 6.0% 6.9% 6.4% 153.4 163.4 419.7 486.1 552.0 26.6% 24.9% 26.7% 26.2% 25.3% <Ratio to revenue> Q3 9 months Full Year <Ratio to revenue> SG&A Expenses"
+      },
+      {
+        "page": 10,
+        "text": "73.3 88.5 72.6 108.6 242.2 379.6 388.1 576.7 36.2 75.3 0.0 10.0 20.0 30.0 40.0 50.0 60.0 70.0 80.0 90.0 100.0 0.0 100.0 200.0 300.0 400.0 500.0 600.0 FY2020 9 months FY2021 9 months Medical Systems Bio CDMO (13.1%) (9.3%) Medical systems Bio CDMO Life sciences Operating income (margin) Medical systems: Revenue ¥379.6 billion (up 56.7% YoY) • In addition to turning FUJIFILM Healthcare into a consolidated subsidiary, steady demand for ultraportable digital X-ray imaging systems and ultrasound diagnostic devices, both useful for pneumonia diagnosis, and strong sales of endoscopes contributed to a surge in revenue. • PMI is progressing well, such as the integration of manufacturing subsidiaries in Japan and sales subsidiaries in the U.S. of both Fujifilm and FUJIFILM Healthcare Bio CDMO: Revenue ¥108.6 billion (up 49.7% YoY) • Favorable performance of contract process development and manufacturing of biopharmaceuticals and manufacture of drug substances for COVID-19 vaccine candidates at the U.S. site resulted in a surge in revenue. Life sciences*: Revenue ¥88.5 billion (up 20.7% YoY) • In the life sciences business, solid sales of cell culture media for biopharmaceutical manufacturing led to a surge in revenue. • In the consumer healthcare business, favorable sales of the Metabarrier EX and other supplements and steady sales of new cosmetic products contributed to higher revenue. *Life sciences: Disclosure segment consisting of life sciences business (iPS cells, cell culture media, reagents), pharmaceutical business and consumer healthcare business (cosmetics, supplements) Significant year-over-year increase of 48.6% in revenue and a 2.1 times increase in operating income contributed by the consolidation of FUJIFILM Healthcare in the medical systems business in addition to organic growth in all sub-segments. 10 (Billions of yen) FY2020 9 months FY2021 9 months Business Summary: Healthcare"
+      },
+      {
+        "page": 13,
+        "text": "74.3 87.2 144.3 173.0 218.6 260.2 14.1 34.7 FY2020 9 months FY2021 9 months (13.3%) (6.5%) 13 Performance rose sharply as revenue surged 19.0% year-over-year and operating income increased by 2.5 times year-over-year. This was due to strong sales of newly launched instant photo systems and digital cameras, in addition to a steady sales recovery of color photographic paper as well as broadcast and cinema lens from COVID-19 impact. Consumer imaging: Revenue ¥173.0 billion (up 19.8% YoY) • In addition to the recovery from COVID-19 impact, revenues surged YoY on solid sales of instant photo systems and dry minilabs / materials for retailers in the U.S. • New products launched in 2021 include the instax mini 40 in April, the instax Link WIDE smartphone printer for use with wide-format film in October and a flagship model instax mini Evo in December. All new products were well received in the market and boosted sales. Professional imaging: Revenue ¥87.2 billion (up 17.4% YoY) • Sales of the large-format mirrorless digital camera FUJIFILM GFX100S fared well as it gained a high reputation in the market for realizing the highest resolution of about 100 million pixels. Additionally, the FUJIFILM GFX50S II equipped with 50 million-pixel image sensor was released as a brother model in September 2021, which resulted in the GFX user base expansion. • In November 2021, we launched the FUJIFILM X-T30 II mirrorless digital camera, the latest model of the X Series, which delivers premium image quality despite being compact and lightweight. • Revenue climbed as sales of broadcast and cinema lenses, which had been hit by a drop in demand due to the COVID-19 pandemic, began to pick up. Sales in the monitoring / measurement field, including long-range surveillance cameras and machine vision lenses, also fared well. (Billions of yen) Consumer imaging Professional imaging Operating income (margin) FY2020 9 months FY2021 9 months Business Summary: Imaging"
+      }
+    ],
+    "instructions": "Answer the question. When document evidence is supplied, use only that evidence. When no document evidence is supplied, answer only from your existing knowledge and do not claim or imply document support. If the available basis does not adequately support an answer, return status='insufficient_evidence' and answer=null. Cite only supplied 1-based physical PDF page numbers; when no document evidence is supplied, cited_pages must be empty. Return one object matching response_schema.",
+    "question": "In the table showing R&D and SG&A expenses, what is the 9-month FY2021 R&D expense ratio to revenue?",
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "answer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cited_pages": {
+          "items": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "answerable",
+            "insufficient_evidence"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "answer",
+        "cited_pages",
+        "status"
+      ],
+      "type": "object"
+    }
+  },
+  "question_id": "urnuuid44ff3ab7-6cd7-40f9-8abc-28680be05c68::q3",
+  "schema_version": 1
+}

@@ -1,0 +1,62 @@
+{
+  "candidates": [
+    {
+      "confidence_mass": 3751.665314,
+      "high_confidence_word_count": 14,
+      "mean_confidence": 35.73014584761905,
+      "preference_rank": 0,
+      "rotation_degrees_clockwise": 0,
+      "word_count": 105
+    },
+    {
+      "confidence_mass": 7832.866984,
+      "high_confidence_word_count": 71,
+      "mean_confidence": 75.3160286923077,
+      "preference_rank": 1,
+      "rotation_degrees_clockwise": 90,
+      "word_count": 104
+    },
+    {
+      "confidence_mass": 8261.373206,
+      "high_confidence_word_count": 77,
+      "mean_confidence": 74.42678563963965,
+      "preference_rank": 2,
+      "rotation_degrees_clockwise": 180,
+      "word_count": 111
+    },
+    {
+      "confidence_mass": 1521.882468,
+      "high_confidence_word_count": 5,
+      "mean_confidence": 49.09298283870968,
+      "preference_rank": 3,
+      "rotation_degrees_clockwise": 270,
+      "word_count": 31
+    }
+  ],
+  "inputs": [
+    {
+      "path": "experiments/day5_r2_orientation_diagnostic_v0/pilot_17_page_14/page-0014-original.tsv",
+      "rotation_degrees_clockwise": 0,
+      "sha256": "c32c525db106c9f3ea9bccd805ce70ac53bbc6fa91ffa8c662a8bf34cdc7bfee"
+    },
+    {
+      "path": "experiments/day5_r2_orientation_diagnostic_v0/pilot_17_page_14/page-0014-rotated-90.tsv",
+      "rotation_degrees_clockwise": 90,
+      "sha256": "0a1910bb9106c51f3cf66ae4982c8f846439b25828e30fe59d9a5dfb805554ba"
+    },
+    {
+      "path": "experiments/day5_r2_orientation_diagnostic_v0/pilot_17_page_14/page-0014-rotated-180.tsv",
+      "rotation_degrees_clockwise": 180,
+      "sha256": "2a6744cb03934e7d00a6a210db1ee04f6f537c3443849cc6dc38418136fe2359"
+    },
+    {
+      "path": "experiments/day5_r2_orientation_diagnostic_v0/pilot_17_page_14/page-0014-rotated-270.tsv",
+      "rotation_degrees_clockwise": 270,
+      "sha256": "e2381f8af2196dd43259d08314a7bf1dd703b38214e29144cf50009241d9b053"
+    }
+  ],
+  "selected_rotation_degrees_clockwise": 180,
+  "selection_metric": "recognized_word_confidence_mass",
+  "tie_break": "mean_confidence_then_word_count_then_rotation_preference",
+  "uses_gold_or_answer_labels": false
+}

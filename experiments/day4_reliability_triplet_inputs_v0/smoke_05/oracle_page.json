@@ -1,0 +1,50 @@
+{
+  "condition": "oracle_page",
+  "doc_id": "urnuuid1c0499a9-36ad-4968-bf6f-d86fcd55e596",
+  "evidence_pages": [
+    11
+  ],
+  "model_input": {
+    "evidence": [
+      {
+        "page": 11,
+        "text": "Participant ID: Form date: / / Visit #: NATIONAL ALZHEIMER’S COORDINATIN G CENTER | naccmail@uw.edu | naccdata.org UDSv4.0, Initial Visit Packet, Form C2: Neuropsychological Battery Scores , January 2025 Page 1 1 of 40 Number Span Test: Backward SAY: “I am going to ask you to repeat some numbers for me but to reverse them from the way I say them. Wait until I finish saying the numbers and then repeat them in reverse order, or backward. For example, if I say 3–7–4, you would say 4–7–3. If I say 7–3–6, what would you say?” If the participant gives the wrong answer, say, “Actually, you would 6–3–7. ” SAY: “Repeat only the numbers I say each time, backward, in reverse order. ” Then start with the test items. Before each item, say, “Ready?” Stop testing after two consecutive failures of the same span length. Span length Response Response code incorrect = 0 correct = 1 2 2 - 5 4 - 7 3 2 - 9 - 6 3 - 7 - 4 4 7 - 1 - 8 - 6 5 - 1 - 6 - 3 5 5 - 2 - 4 - 9 - 1 9 - 1 - 7 - 3 - 6 6 6 - 8 - 5 - 7 - 9 - 2 8 - 1 - 6 - 3 - 5 - 9 7 1 - 5 - 2 - 9 - 7 - 3 - 8 7 - 3 - 1 - 6 - 8 - 5 - 2 8 3 - 6 - 4 - 9 - 5 - 2 - 7 - 1 6 - 3 - 5 - 7 - 1 - 8 - 2 - 9 Total correct: Length of longest correct series: Reproduced by permission of the author, Joel Kramer, PsyD; do not copy or distribute without author’s permission. Form created as part of the Uniform Data Set of the National Alzheimer’s Coordinating Center, copyright ©2013 University of Washington."
+      }
+    ],
+    "instructions": "Answer the question. When document evidence is supplied, use only that evidence. When no document evidence is supplied, answer only from your existing knowledge and do not claim or imply document support. If the available basis does not adequately support an answer, return status='insufficient_evidence' and answer=null. Cite only supplied 1-based physical PDF page numbers; when no document evidence is supplied, cited_pages must be empty. Return one object matching response_schema.",
+    "question": "What is the starting span length for the Number Span Test: Backward?",
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "answer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cited_pages": {
+          "items": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "answerable",
+            "insufficient_evidence"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "answer",
+        "cited_pages",
+        "status"
+      ],
+      "type": "object"
+    }
+  },
+  "question_id": "urnuuid1c0499a9-36ad-4968-bf6f-d86fcd55e596::q2",
+  "schema_version": 1
+}

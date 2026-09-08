@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "experiment_id": "day6_r1_page_window_ablation_v0",
+  "date": "2026-09-08",
+  "split": "development_tune",
+  "question_count": 64,
+  "base_representation_policy": "Use native Page Records unless the frozen greater-than-5-percent control-character trigger selects the verified OCR corpus.",
+  "variants": [
+    {
+      "id": "A_top10",
+      "policy": "BM25 Top 10",
+      "mean_pages": 10.0,
+      "maximum_pages": 10,
+      "any_evidence_recall": 0.9375,
+      "complete_evidence_recall": 0.828125,
+      "macro_page_recall": 0.8820684523809523,
+      "incomplete_question_count": 11
+    },
+    {
+      "id": "B_3x3_replacement",
+      "policy": "Replace Top 10 with three non-overlapping three-page anchor-centred windows",
+      "mean_pages": 9.0,
+      "any_evidence_recall": 0.875,
+      "complete_evidence_recall": 0.6875,
+      "macro_page_recall": 0.7786458333333334,
+      "incomplete_question_count": 20
+    },
+    {
+      "id": "C_4x3_replacement",
+      "policy": "Replace Top 10 with four non-overlapping three-page anchor-centred windows",
+      "mean_pages": 11.8125,
+      "any_evidence_recall": 0.90625,
+      "complete_evidence_recall": 0.6875,
+      "macro_page_recall": 0.7970610119047619,
+      "incomplete_question_count": 20
+    },
+    {
+      "id": "D_3x5_replacement",
+      "policy": "Replace Top 10 with three non-overlapping five-page anchor-centred windows",
+      "mean_pages": 14.53125,
+      "any_evidence_recall": 0.953125,
+      "complete_evidence_recall": 0.796875,
+      "macro_page_recall": 0.8761160714285714,
+      "incomplete_question_count": 13
+    },
+    {
+      "id": "E_top10_plus_top1_radius1",
+      "mean_pages": 11.0625,
+      "maximum_pages": 12,
+      "any_evidence_recall": 0.953125,
+      "complete_evidence_recall": 0.84375,
+      "macro_page_recall": 0.8976934523809523,
+      "incomplete_question_count": 10,
+      "new_failures": 0
+    },
+    {
+      "id": "F_top10_plus_top3_radius1",
+      "mean_pages": 13.109375,
+      "maximum_pages": 16,
+      "any_evidence_recall": 0.953125,
+      "complete_evidence_recall": 0.859375,
+      "macro_page_recall": 0.9116443452380952,
+      "incomplete_question_count": 9,
+      "new_failures": 0
+    },
+    {
+      "id": "G_top10_plus_top5_radius1",
+      "mean_pages": 15.515625,
+      "maximum_pages": 20,
+      "any_evidence_recall": 0.953125,
+      "complete_evidence_recall": 0.875,
+      "macro_page_recall": 0.9177827380952381,
+      "incomplete_question_count": 8,
+      "new_failures": 0
+    },
+    {
+      "id": "H_top10_plus_top3_radius2",
+      "mean_pages": 15.6875,
+      "maximum_pages": 22,
+      "any_evidence_recall": 0.96875,
+      "complete_evidence_recall": 0.890625,
+      "macro_page_recall": 0.9350818452380952,
+      "incomplete_question_count": 7,
+      "new_failures": 0
+    }
+  ],
+  "findings": [
+    "Replacing Top 10 with a small number of contiguous windows loses dispersed high-ranking pages and is rejected.",
+    "Keeping Top 10 and adding neighbours improves coverage monotonically without introducing a retrieval regression.",
+    "The strongest bounded supplement still misses seven questions and can require 22 page images, so it is not frozen as the final R1 policy."
+  ],
+  "label_boundary": {
+    "candidate_pages_selected_before_gold_access": true,
+    "gold_pages_used_only_for_development_tune_scoring": true,
+    "calibration_labels_used": false,
+    "locked_test_accessed": false
+  },
+  "api_cost_usd": 0.0,
+  "decision": "Retain Top 10 as the candidate backbone. Do not freeze a neighbour radius yet; inspect the seven residual failures before choosing a page and image budget."
+}

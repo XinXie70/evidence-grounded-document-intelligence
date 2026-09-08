@@ -1,0 +1,13 @@
+{
+  "b": 0.75,
+  "document_representation": "one normalized PageRecord text field per physical PDF page",
+  "experiment_stage": "formal development_tune baseline; no calibration or locked-test access",
+  "k1": 1.2,
+  "page_score": "BM25 score of the full page text",
+  "parser": "pypdf==6.10.0 PdfReader(strict=False).pages[].extract_text()",
+  "retrieval_scope": "pages within the question's known PDF document",
+  "schema_version": 1,
+  "text_normalization": "collapse Unicode whitespace only",
+  "tokenizer": "Unicode letters and numbers; casefolded; punctuation/underscore boundaries; keep stopwords and repetitions",
+  "top_ks": [1, 3, 5, 10]
+}

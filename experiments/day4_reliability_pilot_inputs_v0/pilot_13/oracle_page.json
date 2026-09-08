@@ -1,0 +1,55 @@
+{
+  "condition": "oracle_page",
+  "doc_id": "urnuuid83d3c72c-a70d-422f-9c0b-992de5e5770e",
+  "evidence_pages": [
+    13,
+    14
+  ],
+  "model_input": {
+    "evidence": [
+      {
+        "page": 13,
+        "text": "FRANKLIN TEMPLETON VARIABLE INSURANCE PRODUCTS TRUST Schedule of Investments, December 31, 2023 Templeton Foreign VIP Fund franklintempleton.com The accompanying notes are an integral part of these financial statements. Annual Report 11 I a a Country Shares a Value a a a a a a Common Stocks 92.0% Aerospace & Defense 3.6% Dassault Aviation SA ................................... France 75,298 $14,920,833 aRolls-Royce Holdings plc ............................... United Kingdom 4,479,310 17,087,757 32,008,590 Automobile Components 6.2% Continental AG ....................................... Germany 250,136 21,247,293 aForvia SE ........................................... France 817,984 18,532,103 Valeo SE............................................ France 995,953 15,395,164 55,174,560 Automobiles 1.8% Honda Motor Co. Ltd. .................................. Japan 1,538,100 15,868,650 Banks 17.6% HDFC Bank Ltd. ...................................... India 968,461 19,829,335 ING Groep NV ....................................... Netherlands 1,672,501 25,081,801 KB Financial Group, Inc., ADR ........................... South Korea 410,906 16,999,181 Lloyds Banking Group plc ............................... United Kingdom 48,328,052 29,316,202 Shinhan Financial Group Co. Ltd. ......................... South Korea 586,529 18,086,767 Standard Chartered plc ................................. United Kingdom 3,080,961 26,148,550 Sumitomo Mitsui Financial Group, Inc. ...................... Japan 444,300 21,623,402 157,085,238 Broadline Retail 4.5% bAlibaba Group Holding Ltd. .............................. China 2,229,600 21,475,480 Prosus NV .......................................... China 616,743 18,375,326 39,850,806 Chemicals 3.5% cAlbemarle Corp. ...................................... United States 101,297 14,635,390 a,dCovestro AG, 144A, Reg S .............................. Germany 280,659 16,356,748 30,992,138 Commercial Services & Supplies 1.4% Securitas AB, B ....................................... Sweden 1,244,483 12,203,324 Construction Materials 2.3% CRH plc ............................................ United States 302,965 20,852,285 Containers & Packaging 2.6% cSmurfit Kappa Group plc ................................ Ireland 589,342 23,364,989 Electric Utilities 0.5% dOrsted A/S, 144A, Reg S ................................ Denmark 88,542 4,909,265 Energy Equipment & Services 2.1% SBM Offshore NV ..................................... Netherlands 1,373,635 18,874,329 Financial Services 1.5% EXOR NV ........................................... Netherlands 138,611 13,876,524 Household Durables 5.5% Barratt Developments plc ............................... United Kingdom 2,686,685 19,248,359 Persimmon plc ....................................... United Kingdom 1,113,334 19,681,802 Sony Group Corp. ..................................... Japan 104,400 9,881,428 48,811,589 Industrial Conglomerates 0.1% CK Hutchison Holdings Ltd. .............................. United Kingdom 207,000 1,112,065 Insurance 3.2% AIA Group Ltd. ....................................... Hong Kong 1,687,200 14,682,657"
+      },
+      {
+        "page": 14,
+        "text": "FRANKLIN TEMPLETON VARIABLE INSURANCE PRODUCTS TRUST SCHEDULE OF INVESTMENTS Templeton Foreign VIP Fund (continued) franklintempleton.com Annual Report The accompanying notes are an integral part of these financial statements.12 a a Country Shares a Value a a a a a a Common Stocks (continued) Insurance (continued) Prudential plc ........................................ Hong Kong 1,246,605 $14,066,716 28,749,373 Media 0.9% TBS Holdings, Inc. .................................... Japan 371,900 7,895,585 Metals & Mining 4.6% Antofagasta plc ....................................... Chile 714,449 15,278,127 Sumitomo Metal Mining Co. Ltd. .......................... Japan 429,200 12,748,581 Wheaton Precious Metals Corp. .......................... Brazil 268,100 13,226,941 41,253,649 Oil, Gas & Consumable Fuels 9.9% BP plc .............................................. United Kingdom 6,668,185 39,534,132 Galp Energia SGPS SA, B .............................. Portugal 572,139 8,419,413 Shell plc ............................................ Netherlands 1,223,600 40,058,145 88,011,690 Pharmaceuticals 4.0% AstraZeneca plc ...................................... United Kingdom 151,960 20,500,282 Bayer AG ........................................... Germany 412,239 15,297,762 35,798,044 Professional Services 2.0% Adecco Group AG ..................................... Switzerland 363,802 17,866,534 Semiconductors & Semiconductor Equipment 8.6% Infineon Technologies AG ............................... Germany 661,077 27,612,054 NXP Semiconductors NV ............................... China 73,066 16,781,799 Taiwan Semiconductor Manufacturing Co. Ltd. ............... Taiwan 1,669,000 32,006,184 76,400,037 Technology Hardware, Storage & Peripherals 5.6% Samsung Electronics Co. Ltd. ............................ South Korea 825,657 49,845,400 Total Common Stocks (Cost $640,055,005) ..................................... 820,804,664 Short Term Investments 7.7% a a Country Shares a Value a a a Money Market Funds 7.7% e,fInstitutional Fiduciary Trust - Money Market Portfolio, 5.034% .... United States 68,636,979 68,636,979 Total Money Market Funds (Cost $68,636,979) .................................. 68,636,979 Total Short Term Investments (Cost $68,636,979) ................................ 68,636,979 a Total Investments (Cost $708,691,984) 99.7% ................................... $889,441,643 Other Assets, less Liabilities 0.3% ............................................. 2,952,803 Net Assets 100.0% ........................................................... $892,394,446 aa a See Abbreviations on page 24."
+      }
+    ],
+    "instructions": "Answer the question. When document evidence is supplied, use only that evidence. When no document evidence is supplied, answer only from your existing knowledge and do not claim or imply document support. If the available basis does not adequately support an answer, return status='insufficient_evidence' and answer=null. Cite only supplied 1-based physical PDF page numbers; when no document evidence is supplied, cited_pages must be empty. Return one object matching response_schema.",
+    "question": "How many distinct industry sectors are listed in the fund's detailed investment holdings table?",
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "answer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cited_pages": {
+          "items": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "answerable",
+            "insufficient_evidence"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "answer",
+        "cited_pages",
+        "status"
+      ],
+      "type": "object"
+    }
+  },
+  "question_id": "urnuuid83d3c72c-a70d-422f-9c0b-992de5e5770e::q5",
+  "schema_version": 1
+}

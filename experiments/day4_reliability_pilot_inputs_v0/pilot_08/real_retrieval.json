@@ -1,0 +1,60 @@
+{
+  "condition": "real_retrieval",
+  "doc_id": "urnuuid926889a0-ba73-457e-95d5-7b767e414d43",
+  "evidence_pages": [
+    18,
+    27,
+    36
+  ],
+  "model_input": {
+    "evidence": [
+      {
+        "page": 18,
+        "text": "Page 5/9 Safety Data Sheet acc. to OSHA HCS Printing date 03/23/2017 Reviewed on 02/03/2016 Trade name: His-Binding Buffer (Contd. of page 4) 44.0 · Flammability (solid, gaseous): Not applicable. · Ignition temperature: Decomposition temperature: Not determined. · Auto igniting: Product is not selfigniting. · Danger of explosion: Product does not present an explosion hazard. · Explosion limits: Lower: Not Applicable Upper: Not Applicable · Vapor pressure: Not determined. · Density: Not determined. · Relative density Not determined. · Vapor density Not determined. · Evaporation rate Not determined. · Solubility in / Miscibility with Water: Not miscible or difficult to mix. · Partition coefficient (n-octanol/water): Not determined. · Viscosity: Dynamic: Not determined. Kinematic: Not determined. · Solvent content: Organic solvents: 0.0 % VOC content: 0.0 g/l / 0.00 lb/gl · Other information No further relevant information available. 10 Stability and reactivity · Reactivity No further relevant information available. · Chemical stability · Thermal decomposition / conditions to be avoided: No decomposition if used according to specifications. · Possibility of hazardous reactions No dangerous reactions known. · Conditions to avoid No further relevant information available. · Incompatible materials: No further relevant information available. · Hazardous decomposition products: No dangerous decomposition products known. US (Contd. on page 6)"
+      },
+      {
+        "page": 27,
+        "text": "Page 5/9 Safety Data Sheet acc. to OSHA HCS Printing date 03/23/2017 Reviewed on 02/03/2016 Trade name: His-Wash Buffer (Contd. of page 4) 44.0 · Flammability (solid, gaseous): Not applicable. · Ignition temperature: Decomposition temperature: Not determined. · Auto igniting: Product is not selfigniting. · Danger of explosion: Product does not present an explosion hazard. · Explosion limits: Lower: Not Applicable Upper: Not Applicable · Vapor pressure: Not determined. · Density: Not determined. · Relative density Not determined. · Vapor density Not determined. · Evaporation rate Not determined. · Solubility in / Miscibility with Water: Not miscible or difficult to mix. · Partition coefficient (n-octanol/water): Not determined. · Viscosity: Dynamic: Not determined. Kinematic: Not determined. · Solvent content: Organic solvents: 0.0 % VOC content: 0.0 g/l / 0.00 lb/gl Solids content: 2.0 % · Other information No further relevant information available. 10 Stability and reactivity · Reactivity No further relevant information available. · Chemical stability · Thermal decomposition / conditions to be avoided: No decomposition if used according to specifications. · Possibility of hazardous reactions No dangerous reactions known. · Conditions to avoid No further relevant information available. · Incompatible materials: No further relevant information available. · Hazardous decomposition products: No dangerous decomposition products known. US (Contd. on page 6)"
+      },
+      {
+        "page": 36,
+        "text": "Page 5/9 Safety Data Sheet acc. to OSHA HCS Printing date 03/23/2017 Reviewed on 02/04/2016 Trade name: His-Elution Buffer (Contd. of page 4) 44.0 · Flammability (solid, gaseous): Not applicable. · Ignition temperature: Decomposition temperature: Not determined. · Auto igniting: Product is not selfigniting. · Danger of explosion: Product does not present an explosion hazard. · Explosion limits: Lower: Not Applicable Upper: Not Applicable · Vapor pressure: Not determined. · Density: Not determined. · Relative density Not determined. · Vapor density Not determined. · Evaporation rate Not determined. · Solubility in / Miscibility with Water: Not miscible or difficult to mix. · Partition coefficient (n-octanol/water): Not determined. · Viscosity: Dynamic: Not determined. Kinematic: Not determined. · Solvent content: Organic solvents: 0.0 % VOC content: 0.0 g/l / 0.00 lb/gl Solids content: 42.0 % · Other information No further relevant information available. 10 Stability and reactivity · Reactivity No further relevant information available. · Chemical stability · Thermal decomposition / conditions to be avoided: No decomposition if used according to specifications. · Possibility of hazardous reactions No dangerous reactions known. · Conditions to avoid No further relevant information available. · Incompatible materials: No further relevant information available. · Hazardous decomposition products: No dangerous decomposition products known. US (Contd. on page 6)"
+      }
+    ],
+    "instructions": "Answer the question. When document evidence is supplied, use only that evidence. When no document evidence is supplied, answer only from your existing knowledge and do not claim or imply document support. If the available basis does not adequately support an answer, return status='insufficient_evidence' and answer=null. Cite only supplied 1-based physical PDF page numbers; when no document evidence is supplied, cited_pages must be empty. Return one object matching response_schema.",
+    "question": "Both products' safety data sheets describe water solubility/miscibility. Do the two products share the same characterization for their solubility in water?",
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "answer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cited_pages": {
+          "items": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "answerable",
+            "insufficient_evidence"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "answer",
+        "cited_pages",
+        "status"
+      ],
+      "type": "object"
+    }
+  },
+  "question_id": "urnuuid926889a0-ba73-457e-95d5-7b767e414d43::q3",
+  "schema_version": 1
+}

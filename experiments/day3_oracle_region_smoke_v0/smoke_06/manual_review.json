@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "status": "confirmed_with_context_limitation",
+  "review_date": "2026-09-04",
+  "reviewer": "user",
+  "question_id": "urnuuid111476ed-6700-4be2-85cc-3fc17696167e::q3",
+  "checks": {
+    "e1_page_21_personal_care_label_visible": true,
+    "e1_page_21_value_10_8_visible": true,
+    "e2_page_55_total_row_visible": true,
+    "e2_page_55_value_287_4_visible": true,
+    "e2_female_total_column_header_visible": false
+  },
+  "review_note": "The strict benchmark bbox for e2 contains the Total row and numeric values but does not contain the table's column headers. Do not expand the crop without recording a separate contextual-region intervention."
+}

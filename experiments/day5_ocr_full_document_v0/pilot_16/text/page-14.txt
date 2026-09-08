@@ -1,0 +1,51 @@
+KEI-P88-1204.QR9
+September 17, 1991
+
+TABLE 2a
+SUMMARY OF LABORATORY ANALYSES
+WATER
+Sample Tetrachloro- 1,1-Dichloro- 1,1,1-Trichloro- cChloro-
+Date Well # ethene ethane ethane methane
+
+8/15/91 MW2 ND ND ND ND
+
+MW3 NOT SAMPLED DUE TO FREE PRODUCT
+
+Mw4 3.6 ND ND ND
+
+MW6 1.2 ND ND ND
+5/24/91 MW1 4.6 ND ND ND
+
+MW2 ND ND ND ND
+
+MW3 ND ND ND ND
+
+Mw4 4.1 2.5 3.9 ND
+
+MWS 0.89 ND ND ND
+
+MW6 0.88 ND ND 5.6
+11/06/90 MWL 4.8 ND ND ND
+
+MW2 ND ND ND ND
+
+MW3 ND ND ND ND
+
+Mw4 2.9 ND ND ND
+
+MW5 0.76 ND ND ND
+
+MW6 1.2 ND ND ND
+4/25/89 MWis* 3.3 ND ND ND
+
+MW2 0.68 ND ND ND
+
+MW3 1.0 ND ND ND
+
+NOTE: All EPA method 8010 constituents were non-detectable, except for those
+shown in the above table.
+
+* Trichloroethene was detected at 0.55 ppb.
+ND = Non-detectable.
+
+Results in parts per billion (ppb), unless otherwise indicated.

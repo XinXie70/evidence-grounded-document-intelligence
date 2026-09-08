@@ -1,0 +1,12 @@
+{
+  "cache_write_input_multiplier": 1.25,
+  "cached_input_usd_per_million": 0.2,
+  "currency": "USD",
+  "input_usd_per_million": 2.0,
+  "model": "gpt-5.6-terra",
+  "observed_date": "2026-09-02",
+  "output_usd_per_million": 12.0,
+  "pricing_snapshot_id": "openai-gpt-5.6-terra-2026-09-02",
+  "provider": "openai",
+  "source_url": "https://developers.openai.com/api/docs/models/gpt-5.6-terra"
+}

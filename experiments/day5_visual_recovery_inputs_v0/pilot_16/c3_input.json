@@ -1,0 +1,101 @@
+{
+  "condition": "oracle_region",
+  "doc_id": "urnuuid45a0a8e5-e31b-4e74-9663-f27ab82db68f",
+  "evidence_pages": [
+    10,
+    11
+  ],
+  "evidence_regions": [
+    {
+      "bbox": [
+        82,
+        347,
+        1124,
+        1394
+      ],
+      "element_type": "table",
+      "evidence_local_id": "e1",
+      "image_sha256": "7f7b484fa9803da017115cc6d64c23c1843bedea0f410f8690273345dbc96188",
+      "page": 10
+    },
+    {
+      "bbox": [
+        84,
+        378,
+        1129,
+        561
+      ],
+      "element_type": "table",
+      "evidence_local_id": "e2",
+      "image_sha256": "620e102093c0dee07c75914f488731cc89cecc21d6030c9a2ec5b85b1ebe323b",
+      "page": 11
+    }
+  ],
+  "model_input": {
+    "evidence": [
+      {
+        "bbox": [
+          82,
+          347,
+          1124,
+          1394
+        ],
+        "evidence_local_id": "e1",
+        "image_path": "e1_page_0010.png",
+        "image_sha256": "7f7b484fa9803da017115cc6d64c23c1843bedea0f410f8690273345dbc96188",
+        "page": 10,
+        "text": "",
+        "text_scope": "image_only"
+      },
+      {
+        "bbox": [
+          84,
+          378,
+          1129,
+          561
+        ],
+        "evidence_local_id": "e2",
+        "image_path": "e2_page_0011.png",
+        "image_sha256": "620e102093c0dee07c75914f488731cc89cecc21d6030c9a2ec5b85b1ebe323b",
+        "page": 11,
+        "text": "",
+        "text_scope": "image_only"
+      }
+    ],
+    "instructions": "Answer the question. When document evidence is supplied, use only that evidence. When no document evidence is supplied, answer only from your existing knowledge and do not claim or imply document support. If the available basis does not adequately support an answer, return status='insufficient_evidence' and answer=null. Cite only supplied 1-based physical PDF page numbers; when no document evidence is supplied, cited_pages must be empty. Return one object matching response_schema.",
+    "question": "For well MW3, what is the difference in depth to water (in feet) between the earliest monitoring date and the latest monitoring date recorded in the monitoring data summary?",
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "answer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cited_pages": {
+          "items": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "answerable",
+            "insufficient_evidence"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "answer",
+        "cited_pages",
+        "status"
+      ],
+      "type": "object"
+    }
+  },
+  "question_id": "urnuuid45a0a8e5-e31b-4e74-9663-f27ab82db68f::q5",
+  "schema_version": 1
+}

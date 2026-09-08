@@ -1,0 +1,67 @@
+{
+  "benchmark_path": "data/raw/docscope/benchmark.json",
+  "benchmark_sha256": "ad07c6dfc43e5275ae92b894bf69f151c3dd9467ed79f5b12df904438c5ecb8e",
+  "coordinate_space": "cropbox_pixels_at_144_dpi_top_left_origin",
+  "crops": [
+    {
+      "bbox": [
+        82,
+        347,
+        1124,
+        1394
+      ],
+      "doc_id": "urnuuid45a0a8e5-e31b-4e74-9663-f27ab82db68f",
+      "element_type": "table",
+      "evidence_local_id": "e1",
+      "output_height_pixels": 1047,
+      "output_png": "e1_page_0010.png",
+      "output_png_sha256": "7f7b484fa9803da017115cc6d64c23c1843bedea0f410f8690273345dbc96188",
+      "text_scope": "image_only",
+      "output_width_pixels": 1042,
+      "page": 10,
+      "pixel_crop": [
+        82,
+        347,
+        1124,
+        1394
+      ],
+      "question": "For well MW3, what is the difference in depth to water (in feet) between the earliest monitoring date and the latest monitoring date recorded in the monitoring data summary?",
+      "question_id": "urnuuid45a0a8e5-e31b-4e74-9663-f27ab82db68f::q5"
+    },
+    {
+      "bbox": [
+        84,
+        378,
+        1129,
+        561
+      ],
+      "doc_id": "urnuuid45a0a8e5-e31b-4e74-9663-f27ab82db68f",
+      "element_type": "table",
+      "evidence_local_id": "e2",
+      "output_height_pixels": 183,
+      "output_png": "e2_page_0011.png",
+      "output_png_sha256": "620e102093c0dee07c75914f488731cc89cecc21d6030c9a2ec5b85b1ebe323b",
+      "text_scope": "image_only",
+      "output_width_pixels": 1045,
+      "page": 11,
+      "pixel_crop": [
+        84,
+        378,
+        1129,
+        561
+      ],
+      "question": "For well MW3, what is the difference in depth to water (in feet) between the earliest monitoring date and the latest monitoring date recorded in the monitoring data summary?",
+      "question_id": "urnuuid45a0a8e5-e31b-4e74-9663-f27ab82db68f::q5"
+    }
+  ],
+  "doc_id": "urnuuid45a0a8e5-e31b-4e74-9663-f27ab82db68f",
+  "question": "For well MW3, what is the difference in depth to water (in feet) between the earliest monitoring date and the latest monitoring date recorded in the monitoring data summary?",
+  "question_id": "urnuuid45a0a8e5-e31b-4e74-9663-f27ab82db68f::q5",
+  "render_dpi": 144,
+  "rounding_rule": "floor x1/y1 and ceil x2/y2",
+  "schema_version": 1,
+  "source_pdf": "data/raw/docscope/pdfs/urnuuid45a0a8e5-e31b-4e74-9663-f27ab82db68f.pdf",
+  "source_pdf_sha256": "6c3ed949adcb4addd48bd30be4021eeda0cfaf6953adb06dce99ffed275d7e05",
+  "status": "manual_review_required",
+  "use_pdf_cropbox": true
+}

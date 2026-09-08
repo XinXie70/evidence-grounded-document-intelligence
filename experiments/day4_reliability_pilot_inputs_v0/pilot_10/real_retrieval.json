@@ -1,0 +1,60 @@
+{
+  "condition": "real_retrieval",
+  "doc_id": "urnuuidd0ba82b9-f6c5-4b9a-a1a7-abcbffc5aeae",
+  "evidence_pages": [
+    34,
+    50,
+    21
+  ],
+  "model_input": {
+    "evidence": [
+      {
+        "page": 34,
+        "text": "- 34 - Candidate No. Shogo Maeda Birthday: January 1, 1957 Number of shares of the Company owned: 0 Shares 2 ■ Biography, position, responsibilities, and status of important concurrent positions July 1981 Japan Equity Analyst at Overseas Investment Advisor Office, Nomura Securities Co., Ltd. Oct. 1985 Investment Banking Group, New York Headquarters, Manufacturers Hanover Trust Company Nov. 1987 Nomura Investment Management Co., Ltd. (currently Nomura Asset Management Co., Ltd.) Sept. 1989 Senior Portfolio Manager, Nomura Investment Management Co., Ltd. Sept. 1994 Head of Japanese Equities, Goldman Sachs Asset Management Co., Ltd. Apr. 2002 Director, Asia-Pacific Equities CIO, and Head of Japan Equities, Goldman Sachs Asset Management Co., Ltd. Jan. 2006 Head of Japan Equities, Schroder Investment Management Limited Dec. 2012 Director and Head of Japan Equities, Schroder Investment Management (Japan) Limited Mar. 2018 Executive Director, The Grew Bancroft Foundation (current position) ＜Status of important concurrent positions＞ Executive Director, The Grew Bancroft Foundation There is no special interest between the candidate and the Company. ■ Reasons for Nomination as a Director Candidate Mr. Maeda has held important positions, such as direct or, in various financial in stitutions, and has a deep expertise in finance in general and capital markets in particular. The Company's stock price has been stagnant for a long period of time, and its total shareholder return (TSR) has been significantly lower than TOPIX on a long-term basis. Although the Company is in an emergent situation as the directors of the Company and its subsidiary were arrested, the Company's communication with investors was insufficient such that appropriate disclosure to investors concerning the investigation into such scandal was delayed. Under these circumstances, as Mr. Maeda has a deep expertise in finance and capital markets, it can be expected that Mr. Maeda can provide useful advice and supervision to the management of the Company, not only for implementation of appropriate M&A and business investment, but also in considering actions for enhancing the corporate value and dialogue with shareholders given that one of the Company's important business challenges is to engage in and/or respond to the future restructuring of the industry. For these reasons, Oasis proposes to appoint Mr. Maeda as a Director. Note: Mr. Shogo Maeda is a candidate for Outside Director."
+      },
+      {
+        "page": 50,
+        "text": "- 50 - Shogo Maeda Birthday: January 1 , 1957 Number of shares of the Company owned: 0 Shares ■Biography, position, responsibilities, and status of important concurrent positions Jul, 1981 Japan Equity Analyst at Overseas Investment Advisor Office, Nomura Securities Co., Ltd. Oct, 1985 Investment Banking Group, New York Headquarter, Manufacturers Hanover Trust Company Nov, 1987 Nomura Investment Management Co., Ltd. (currently Nomura Asset Management Co., Ltd.) Sep, 1989 Senior Portfolio Manager, Nomura Investment Management Co., Ltd. Sep, 1994 Head of Japanese Equities, Goldman Sachs Asset Management Co., Ltd. Apr, 2002 Director, Asia-Pacific Equities CTO, and Head of Japan Equities, Goldman Sachs Asset Management Co., Ltd. Jan, 2006 Head of Japan Equities, Schroder Investment Management Limited Dec, 2012 Director and Head of Japan Equities, Schroder Investment Management (Japan) Limited Mar, 2018 Executive Director, The Grew Bancroft Foundation (current position) < Status of important concurrent positions> Executive Director, The Grew Bancroft Foundation There is no special interest between the candidate and the Company. ■Reasons for Nomination as a Director Candidate Mr. Maeda has held important positions, such as director, in various financial institutions, and has a deep expertise in finance in general and capital markets in particular. The Company's stock price has been stagnant for a long period of time, and its total shareholder return (TSR) has been significantly lower than TOPIX on a long-term basis. Although the Company is in an emergent situation as the directors of the Company and its subsidiary were arrested, the Company' s communication with investors was insufficient such that appropriate disclosure to investors concerning the investigation into such scandal was delayed. Under these circumstances, as Mr. Maeda has a deep expertise in finance and capital markets, it can be expected that Mr. Maeda can provide useful advice and supervision to the management of the Company, not only for implementation of appropriate M&A and business investment, but also in considering actions for enhancing the corporate value and dialogue with shareholders given that one of the Company's important business challenges is to engage in and/or respond to the future restructuring of the industry. For these reasons, Oasis proposes to appoint Mr. Maeda as a Director. Note: Mr. Shogo Maeda is a candidate for Outside Director. (3) Proposal 3 (A) Summary Appointment of Mr. Alexander Dmitrenko as Director (B) Reasoning As given above (C) Biography and other information about the candidate"
+      },
+      {
+        "page": 21,
+        "text": "- 21 - Candidate No. Name (Date of birth) Career summary and positions in the Company, and significant concurrent positions outside the Company Number of the Company’s shares owned 2 Ayako Sano (December 9, 1977) New election Outside Independent Number of years in office at the conclusion of this general meeting of shareholders: - years Attendance at Board of Directors meetings: -/- Attendance at Board of Corporate Auditors meetings: -/- Apr. 2001 Joined Goldman Sachs (Japan) Ltd. (now Goldman Sachs Japan Co., Ltd.) – shares Dec. 2008 Registered as an attorney at law Jan. 2009 Joined Tokyo Nishi Law Office (now TNLAW Legal Professional Corporation) Oct. 2018 Civil Conciliator of the Tokyo District Court Dec. 2018 Representative of Aya Law Office (current post) Mar. 2019 Outside Director of SKYLARK HOLDINGS CO., LTD. (current post) Mar. 2021 Outside Director (Audit &Supervisory Committee Member) of Metaps Inc. (now Metaps Holdings, Inc.) Mar. 2024 Outside Director of Sodick Co., Ltd. (current post) May 2024 Outside Corporate Auditor of CLAS Inc. (current post) [Reasons for nomination] Ms. Sano has a practical background in a securities company and wide-ranging knowledge of corporate legal affairs as an attorney at law, in addition to which she has insights into taxation and experience in defending cases involving economic crimes. As outside Director of other companies she has also been involved in the operation of whistleblowing systems and in the management of a sustainability committee, as well as having experience as the chair of a special committee to investigate proposals for MBOs and delisting. The Company proposes Ms. Sano as a candidate for outside Corporate Auditor because of her knowledge in financial affairs, legal and compliance, and because the Company believes that she is qualified for the position of Corporate Auditor to audit the execution of duties by Directors of the Company. Reason for concluding that the candidate is independent The candidate fulfills the requirements for an independent officer as provided for by the Tokyo Stock Exchange, the independence criteria for outside Directors and outside Corporate Auditors set out by the Company, and also the immaterial criteria for the judgement that the relationship with the Company is unlikely to affect shareholder’s decision concerning the exercise of voting rights, and is thus deemed to have a high degree of independence."
+      }
+    ],
+    "instructions": "Answer the question. When document evidence is supplied, use only that evidence. When no document evidence is supplied, answer only from your existing knowledge and do not claim or imply document support. If the available basis does not adequately support an answer, return status='insufficient_evidence' and answer=null. Cite only supplied 1-based physical PDF page numbers; when no document evidence is supplied, cited_pages must be empty. Return one object matching response_schema.",
+    "question": "Which director candidate held positions at Goldman Sachs?",
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "answer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cited_pages": {
+          "items": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "answerable",
+            "insufficient_evidence"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "answer",
+        "cited_pages",
+        "status"
+      ],
+      "type": "object"
+    }
+  },
+  "question_id": "urnuuidd0ba82b9-f6c5-4b9a-a1a7-abcbffc5aeae::q2",
+  "schema_version": 1
+}

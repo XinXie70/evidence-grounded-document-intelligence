@@ -1,0 +1,41 @@
+{
+  "benchmark_path": "data/raw/docscope/benchmark.json",
+  "benchmark_sha256": "ad07c6dfc43e5275ae92b894bf69f151c3dd9467ed79f5b12df904438c5ecb8e",
+  "coordinate_space": "cropbox_pixels_at_144_dpi_top_left_origin",
+  "crops": [
+    {
+      "bbox": [
+        167.7,
+        68,
+        260.9,
+        447.2
+      ],
+      "doc_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba",
+      "element_type": "table",
+      "evidence_local_id": "e1",
+      "output_height_pixels": 380,
+      "output_png": "e1_page_0014.png",
+      "output_png_sha256": "17591263549832e78c2729cae1c8dcdf6442241aa8e2d6add996fad6dbe9a372",
+      "output_width_pixels": 94,
+      "page": 14,
+      "pixel_crop": [
+        167,
+        68,
+        261,
+        448
+      ],
+      "question": "The bird species registration table in the application form includes a column for tracking how birds are related to one another. What example is given in that column?",
+      "question_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba::q1"
+    }
+  ],
+  "doc_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba",
+  "question": "The bird species registration table in the application form includes a column for tracking how birds are related to one another. What example is given in that column?",
+  "question_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba::q1",
+  "render_dpi": 144,
+  "rounding_rule": "floor x1/y1 and ceil x2/y2",
+  "schema_version": 1,
+  "source_pdf": "data/raw/docscope/pdfs/urnuuida3024dbb-48a6-4849-bb2f-910722e335ba.pdf",
+  "source_pdf_sha256": "4aae9e431f682a938ee3d9af42447cf1b845cb899fa638c5bca43d2093bbcd09",
+  "status": "manual_review_required",
+  "use_pdf_cropbox": true
+}

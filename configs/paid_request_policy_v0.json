@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "effective_date": "2026-09-07",
+  "status": "active",
+  "authorization_source": "user",
+  "currency": "USD",
+  "single_request": {
+    "approved_hard_cap_usd": 1.0,
+    "standing_authorization": true,
+    "budget_reminder_required_before_each_request": true,
+    "additional_per_request_confirmation_required_at_or_below_cap": false,
+    "requests_above_cap_must_be_blocked_before_execution": true
+  },
+  "batch_requests": {
+    "separate_total_budget_required": true,
+    "reason": "A per-request cap does not bound cumulative cost across multiple requests."
+  },
+  "retries": {
+    "default_max_retries": 0,
+    "additional_retry_requires_explicit_scope_or_batch_budget": true
+  },
+  "note": "User authorized future individual API requests with a conservative preflight cost no greater than USD 1.00 without repeated confirmation, while requiring a budget reminder before every paid request."
+}

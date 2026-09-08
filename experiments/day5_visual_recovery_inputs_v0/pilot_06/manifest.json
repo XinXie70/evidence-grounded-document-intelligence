@@ -1,0 +1,42 @@
+{
+  "benchmark_path": "data/raw/docscope/benchmark.json",
+  "benchmark_sha256": "ad07c6dfc43e5275ae92b894bf69f151c3dd9467ed79f5b12df904438c5ecb8e",
+  "coordinate_space": "cropbox_pixels_at_144_dpi_top_left_origin",
+  "crops": [
+    {
+      "bbox": [
+        112,
+        1046,
+        970,
+        1531
+      ],
+      "doc_id": "urnuuidc94c212d-21aa-4dbe-a75f-6d8888002f6a",
+      "element_type": "chart",
+      "evidence_local_id": "e1",
+      "output_height_pixels": 485,
+      "output_png": "e1_page_0030.png",
+      "output_png_sha256": "ad70b5c51f6d295345e13b7f7e6d258495076acb9b0b1e6cfb174a723c0418db",
+      "text_scope": "image_only",
+      "output_width_pixels": 858,
+      "page": 30,
+      "pixel_crop": [
+        112,
+        1046,
+        970,
+        1531
+      ],
+      "question": "In the bar chart showing how frequently residents visited a leisure fortress/venue in the last 12 months, what percentage of adults living in households with dependent children had not visited at all?",
+      "question_id": "urnuuidc94c212d-21aa-4dbe-a75f-6d8888002f6a::q2"
+    }
+  ],
+  "doc_id": "urnuuidc94c212d-21aa-4dbe-a75f-6d8888002f6a",
+  "question": "In the bar chart showing how frequently residents visited a leisure fortress/venue in the last 12 months, what percentage of adults living in households with dependent children had not visited at all?",
+  "question_id": "urnuuidc94c212d-21aa-4dbe-a75f-6d8888002f6a::q2",
+  "render_dpi": 144,
+  "rounding_rule": "floor x1/y1 and ceil x2/y2",
+  "schema_version": 1,
+  "source_pdf": "data/raw/docscope/pdfs/urnuuidc94c212d-21aa-4dbe-a75f-6d8888002f6a.pdf",
+  "source_pdf_sha256": "ac0ee4cd61417e54893a67828a90843d198dac862a767c1727232b1c0867a76e",
+  "status": "manual_review_required",
+  "use_pdf_cropbox": true
+}

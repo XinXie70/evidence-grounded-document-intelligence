@@ -1,0 +1,63 @@
+{
+  "input_path": "experiments/day4_reliability_actual_c2_fixture_v1.json",
+  "input_sha256": "e5eb45861d1262845c5482a35cc22aaff902deb97b545b3efbb6107785c15457",
+  "metrics": {
+    "abstained_count": 1,
+    "answerable_abstention_rate": 0.0,
+    "answered_count": 2,
+    "appropriate_abstention_rate_on_insufficient_context": null,
+    "benchmark_task_accuracy": 1.0,
+    "contextual_reliability_accuracy": 0.6666666666666666,
+    "coverage": 0.6666666666666666,
+    "grounded_selective_risk": 0.5,
+    "outcome_counts": {
+      "correct_abstention": 1,
+      "correct_answer_incomplete_grounding": 1,
+      "grounded_success": 1
+    },
+    "over_abstention_rate_on_sufficient_answerable": 0.0,
+    "question_count": 3,
+    "selective_risk": 0.0,
+    "strict_grounded_task_accuracy": 0.6666666666666666,
+    "unanswerable_false_answer_rate": 0.0
+  },
+  "records": [
+    {
+      "answer_correct": true,
+      "answered": true,
+      "benchmark_is_answerable": true,
+      "benchmark_task_correct": true,
+      "contextual_reliability_correct": true,
+      "evidence_sufficient": true,
+      "grounded_correct": true,
+      "outcome": "grounded_success",
+      "question_id": "smoke_01::oracle_page",
+      "strict_grounded_task_correct": true
+    },
+    {
+      "answer_correct": true,
+      "answered": true,
+      "benchmark_is_answerable": true,
+      "benchmark_task_correct": true,
+      "contextual_reliability_correct": false,
+      "evidence_sufficient": true,
+      "grounded_correct": false,
+      "outcome": "correct_answer_incomplete_grounding",
+      "question_id": "smoke_03::oracle_page",
+      "strict_grounded_task_correct": false
+    },
+    {
+      "answer_correct": null,
+      "answered": false,
+      "benchmark_is_answerable": false,
+      "benchmark_task_correct": true,
+      "contextual_reliability_correct": true,
+      "evidence_sufficient": null,
+      "grounded_correct": null,
+      "outcome": "correct_abstention",
+      "question_id": "smoke_10::oracle_page_reused",
+      "strict_grounded_task_correct": true
+    }
+  ],
+  "schema_version": 1
+}

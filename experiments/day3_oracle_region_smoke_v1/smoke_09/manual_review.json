@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "status": "confirmed",
+  "review_date": "2026-09-04",
+  "reviewer": "user",
+  "question_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba::q1",
+  "evidence_local_id": "e1",
+  "page": 14,
+  "output_png": "e1_page_0014_upright.png",
+  "output_png_sha256": "7c94c32609a7a0ee688a95f60df9ab32f49732088bc15d1d5b07b6591e5b3e06",
+  "checks": {
+    "upright_reading_orientation": true,
+    "heading_fully_visible": true,
+    "example_fully_visible": true,
+    "content_matches_v0_crop": true
+  },
+  "note": "User confirmed that the upright crop fully displays Bloodline/Relation Information and Example: (father of #11 and #12)."
+}

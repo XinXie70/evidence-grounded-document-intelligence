@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "experiment_id": "day5_pilot16_query_token_dedup_ablation_v0",
+  "question_id": "urnuuid45a0a8e5-e31b-4e74-9663-f27ab82db68f::q5",
+  "corpus": "experiments/day5_ocr_full_document_v0/pilot_16/page_records_ocr.jsonl",
+  "bm25": {
+    "k1": 1.2,
+    "b": 0.75,
+    "top_k": 10
+  },
+  "gold_evidence_pages": [
+    10,
+    11
+  ],
+  "control_repeated_query_tokens": {
+    "top_10_pages": [
+      6,
+      5,
+      7,
+      3,
+      4,
+      11,
+      1,
+      2,
+      8,
+      14
+    ],
+    "gold_page_ranks": {
+      "10": 11,
+      "11": 6
+    },
+    "any_evidence_recall_at_10": 1.0,
+    "complete_evidence_recall_at_10": 0.0
+  },
+  "deduplicated_query_tokens": {
+    "rule": "Tokenize with the frozen v0 tokenizer, then retain only the first occurrence of each token while preserving order.",
+    "tokens": [
+      "for",
+      "well",
+      "mw3",
+      "what",
+      "is",
+      "the",
+      "difference",
+      "in",
+      "depth",
+      "to",
+      "water",
+      "feet",
+      "between",
+      "earliest",
+      "monitoring",
+      "date",
+      "and",
+      "latest",
+      "recorded",
+      "data",
+      "summary"
+    ],
+    "top_10_pages": [
+      6,
+      5,
+      7,
+      11,
+      4,
+      3,
+      1,
+      8,
+      10,
+      2
+    ],
+    "gold_page_ranks": {
+      "10": 9,
+      "11": 4
+    },
+    "gold_page_scores": {
+      "10": 13.184351446701411,
+      "11": 16.77880977857352
+    },
+    "any_evidence_recall_at_10": 1.0,
+    "complete_evidence_recall_at_10": 1.0
+  },
+  "interpretation": "Removing only repeated query-token counts recovers both gold pages within Top-10 for pilot16, supporting the observed repeated-token amplification hypothesis. Incorrect page 6 remains rank 1, so repetition is not the entire ranking failure.",
+  "decision": "Do not replace frozen BM25 v0 based on one question. Evaluate this deterministic, label-free query variant on a broader development slice before adoption.",
+  "paid_api_cost_usd": 0.0
+}

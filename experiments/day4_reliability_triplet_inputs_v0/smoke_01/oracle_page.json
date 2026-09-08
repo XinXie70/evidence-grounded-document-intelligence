@@ -1,0 +1,50 @@
+{
+  "condition": "oracle_page",
+  "doc_id": "urnuuid0812e9ac-6f30-4624-9c78-6f4176467918",
+  "evidence_pages": [
+    12
+  ],
+  "model_input": {
+    "evidence": [
+      {
+        "page": 12,
+        "text": "11 behaviour that reveals a past, present or future physical or mental health status; administrative documents that reveal health status such as medical certificates, forms concerning sick leave or the reimbursement of medical expenses; inherited characteristics or genetic data. • Sex life: For example, information about a research participant's sexual activity, relationships, sexual orientation, or sexual proclivities. • Biometric information: The information that results from specific technical processing relating to the physical, physiological, or behavioural characteristics of a research participant, such as facial images or dactyloscopic or genetic data when it is linked with other personal information to identify a data subject. • Criminal behaviour of a data subject relating to the alleged commission of an offence or proceedings relating to an alleged offence (Criminal convictions are not special personal information.) The personal information of a child also has extra requirements under POPIA. POPIA defines a child as anyone under the age of 18 who is not legally competent to take any action or decision for themselves without the assistance of a competent person. Make sure to indicate if you use the personal information of a child. 3.2. Privacy impact assessments Your research institution will have a Personal Information Impact Assessment (PIIA) in place that you need to complete to ensure that you manage the risk to research participants appropriately by including appropriate safeguards. Read more about the PIIA in section 4.4 and ask your research organisation if you do not know how to access the PIIA. 3.3. Having a legal justification POPIA provides only six legal grounds for processing personal information, and at least one must apply for the processing to be lawful. There are stricter justifications if you are processing special personal information or the personal information of a child. What does POPIA say? Section 11 says that personal information can be processed if the: • data subject consents; • processing is necessary in terms of a contract; • processing complies with an obligation imposed by law on the responsible party; • processing protects a legitimate interest of the data subject;"
+      }
+    ],
+    "instructions": "Answer the question. When document evidence is supplied, use only that evidence. When no document evidence is supplied, answer only from your existing knowledge and do not claim or imply document support. If the available basis does not adequately support an answer, return status='insufficient_evidence' and answer=null. Cite only supplied 1-based physical PDF page numbers; when no document evidence is supplied, cited_pages must be empty. Return one object matching response_schema.",
+    "question": "What specific age threshold does the document define for distinguishing between a child and an adult research participant under POPIA?",
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "answer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cited_pages": {
+          "items": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "answerable",
+            "insufficient_evidence"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "answer",
+        "cited_pages",
+        "status"
+      ],
+      "type": "object"
+    }
+  },
+  "question_id": "urnuuid0812e9ac-6f30-4624-9c78-6f4176467918::q2",
+  "schema_version": 1
+}

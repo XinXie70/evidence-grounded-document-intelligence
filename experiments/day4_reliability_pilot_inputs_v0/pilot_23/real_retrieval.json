@@ -1,0 +1,60 @@
+{
+  "condition": "real_retrieval",
+  "doc_id": "urnuuide13d8fae-e453-48a9-9996-7397adbecbc9",
+  "evidence_pages": [
+    3,
+    5,
+    10
+  ],
+  "model_input": {
+    "evidence": [
+      {
+        "page": 3,
+        "text": "The University of New Hampshire InterOperability Laboratory Bridge Functions Consortium Virtual Local Area Network (VLAN) Interoperability Test Suite iii MODIFICATION RECORD Version Date Editor(s) Comments 2.0 2004-07-20 Brandon Barry Curtis Simonson Complete revision of test suite. Resource requirements have increased, but configuration time has decreased as a result. The tests, based on IEEE Std. 802.1Q-2003, are more rigorous. The suite does not contain tests for protocol based VLAN classification, but this will be added if there is sufficient interest. 2.1 2004-11-29 Corey Hill Curtis Simonson Fixed typographical and miscellaneous errors. Updated test results. 2.2 2005-01-20 Tyler Marcotte Format Modification"
+      },
+      {
+        "page": 5,
+        "text": "The University of New Hampshire InterOperability Laboratory Bridge Functions Consortium Virtual Local Area Network (VLAN) Interoperability Test Suite v INTRODUCTION The University of New Hampshire’s InterOperability Laboratory (IOL) is an institution designed to improve the interoperability of standards based products by providing an environment where a product can be tested against other implementations of a standard. This suite of tests has been developed to help implementers evaluate the functionality of their IEEE 802.1Q-2003 VLAN capable products. The operation of Virtual Local Area Networks (VLANs) provides for the creation of multiple, logically separated, “virtual” LANs within the bounds of a single Bridged LAN. Frames associated with a VLAN are not eligible for transmission on any other VLAN. Each VLAN is a separate broadcast domain. This limits the effect of multicast and broadcast traffic on the total network load. The tagging mechanism provides a means of maintaining a frame's “priority level” for quality of service (QOS) purposes, further enhancing the availability of network resources. This test suite has been designed based on the set of definitions, principles, and requirements that pertain to IEEE Std. 802.1Q-2003. The test suite is designed to help determine whether or not the DUT will behave in accordance with the standard during normal operation. These tests do not determine whether the DUT conforms to IEEE Std. 802.1Q-2003, nor are they designed as conformance tests. Rather, they pr ovide one method to isolate problems within a VLAN aware device that will affect interopera bility. Successful completion of all tests contained in this suite does not guarantee that the tested device will operate with other VLAN aware devices. However, combined with satisf actory completion of conformance testing, these tests provide a reasonable level of confidence that the DUT will function well in most VLAN environments."
+      },
+      {
+        "page": 10,
+        "text": "The University of New Hampshire InterOperability Laboratory Bridge Functions Consortium Virtual Local Area Network (VLAN) Interoperability Test Suite x TEST ORGANIZATION This document organizes tests by group based on relate d test methodology or goals. Each group begins with a brief set of comments pertaining to all tests w ithin that group. This is followed by a series of description blocks; each block describes a single test. The format of the description block is as follows: Test Label: The test label and title comprise the first line of the test block. The test label is the concatenation of the short test suite name, group number, and the test number within the group, separated by periods. The test number is the group number and the test number, also separated by a period. So, test label VLAN.io.1.2 refers to the second test of the first test group in the VLAN Interoperabilty suite. The test number is 1.2. Purpose: The Purpose is a short statement describing what the test attempts to achieve. It is usually phrased as a simple assertion of the feature or capability to be tested. References: The References section lists cross-re ferences to the specifications and documentation that might be helpful in understanding and evaluating the test and results. Resource Requirements: The Resource Requirements section specifies the software, hardware, and test equipment that will be needed to perfo rm the test. The Discussion is a general discussion of the test and relevant section of the specification, including any assumptions made in the design or implementation of the test as well as known limitations. Discussion: The Discussion is a general discussion of the test and relevant section of the specification, including any assumptions made in the design or implementation of the test as well as known limitations. Test Layout: This diagram shows how the Test Systems, DUT, and any other Devices used should be connected for this test. Elements of the Procedure may change the Layout. Procedure: This section of the test description contai ns the step-by-step instructions for carrying out the test. These steps incl ude such things as enabling interfaces, disconnecting links between devices, and sending MAC frames from a Test Station. The test procedure also cues th e tester to make observations, which are interpreted in accordance with the observable results given for that test part. Observable Results: This section lists observable results that can be examined by the tester to verify that the DUT is operating properly. When multiple observable results are possible, this section provides a short discussion on how to interpret them. The determination of a PASS or FAIL for each test is usually based on how the behavior of the DUT compares to the results described in this section. Possible Problems: This section contains a description of known issues with the test procedure, which may affect test results in certain situations."
+      }
+    ],
+    "instructions": "Answer the question. When document evidence is supplied, use only that evidence. When no document evidence is supplied, answer only from your existing knowledge and do not claim or imply document support. If the available basis does not adequately support an answer, return status='insufficient_evidence' and answer=null. Cite only supplied 1-based physical PDF page numbers; when no document evidence is supplied, cited_pages must be empty. Return one object matching response_schema.",
+    "question": "According to the document, how does the protocol-based VLAN classification method interact with the trunk link configuration during testing?",
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "answer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cited_pages": {
+          "items": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "answerable",
+            "insufficient_evidence"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "answer",
+        "cited_pages",
+        "status"
+      ],
+      "type": "object"
+    }
+  },
+  "question_id": "urnuuide13d8fae-e453-48a9-9996-7397adbecbc9::q1",
+  "schema_version": 1
+}

@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "status": "confirmed",
+  "review_date": "2026-09-04",
+  "reviewer": "user",
+  "question_id": "urnuuid111476ed-6700-4be2-85cc-3fc17696167e::q3",
+  "checks": {
+    "e1_males_header_and_personal_care_10_8_visible": true,
+    "e1_type_of_activity_header_visible": true,
+    "e2_minutes_unit_visible": true,
+    "e2_females_total_header_chain_visible": true,
+    "e2_total_value_287_4_visible": true,
+    "images_are_upright_and_legible": true
+  },
+  "note": "User confirmed that e1 shows Type of activity and the Males -> Personal care -> 10.8 relation, and that e2 clearly expresses minutes and Females -> Total -> 287.4."
+}

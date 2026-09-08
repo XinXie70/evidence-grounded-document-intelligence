@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "doc_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba",
+  "recoveries": [
+    {
+      "page": 14,
+      "text_path": "experiments/day5_r2_orientation_diagnostic_v0/pilot_17_page_14/page-0014-rotated-180.txt",
+      "selection_path": "experiments/day5_r2_orientation_diagnostic_v0/pilot_17_page_14/selection.json"
+    }
+  ],
+  "uses_gold_or_answer_labels": false
+}

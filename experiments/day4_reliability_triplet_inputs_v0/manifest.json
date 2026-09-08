@@ -1,0 +1,302 @@
+{
+  "case_count": 10,
+  "cases": [
+    {
+      "case_id": "smoke_01",
+      "closed_book": {
+        "evidence_characters": 0,
+        "pages": [],
+        "path": "experiments/day4_reliability_triplet_inputs_v0/smoke_01/closed_book.json",
+        "sha256": "2995092c1fc8368388e1cb1cc1a74b7e3381301c465d98dd2f8c78cdca081c0c"
+      },
+      "oracle_page": {
+        "evidence_characters": 2244,
+        "pages": [
+          12
+        ],
+        "path": "experiments/day4_reliability_triplet_inputs_v0/smoke_01/oracle_page.json",
+        "sha256": "e6274dd7cae48c18adddac6688258f831d7b652817679a52e22c1aa86ae3e415"
+      },
+      "question_id": "urnuuid0812e9ac-6f30-4624-9c78-6f4176467918::q2",
+      "real_retrieval": {
+        "evidence_characters": 6135,
+        "pages": [
+          12,
+          18,
+          47
+        ],
+        "path": "experiments/day4_reliability_triplet_inputs_v0/smoke_01/real_retrieval.json",
+        "sha256": "28982b92ad06859d4a3181f00dc73269f40fb70a2997e2f2e701ecc08a2d853c"
+      }
+    },
+    {
+      "case_id": "smoke_02",
+      "closed_book": {
+        "evidence_characters": 0,
+        "pages": [],
+        "path": "experiments/day4_reliability_triplet_inputs_v0/smoke_02/closed_book.json",
+        "sha256": "75ce63ddefcb7d73bc176e4b5ed11741cd6aee4d0cd679eb2f9fdf389ad658e4"
+      },
+      "oracle_page": {
+        "evidence_characters": 6719,
+        "pages": [
+          72,
+          77
+        ],
+        "path": "experiments/day4_reliability_triplet_inputs_v0/smoke_02/oracle_page.json",
+        "sha256": "a98e9fbf6b6280df6c461b1044b93a60a3c9f4775c2437a3e1c069aca75b1450"
+      },
+      "question_id": "urnuuid113144ee-53bb-4f43-9d8f-0c9e823fa25d::q2",
+      "real_retrieval": {
+        "evidence_characters": 10788,
+        "pages": [
+          72,
+          77,
+          76
+        ],
+        "path": "experiments/day4_reliability_triplet_inputs_v0/smoke_02/real_retrieval.json",
+        "sha256": "956bb240d747d49683fcafec6611c711d94f46aad3313238b2ebf720dd5287b3"
+      }
+    },
+    {
+      "case_id": "smoke_03",
+      "closed_book": {
+        "evidence_characters": 0,
+        "pages": [],
+        "path": "experiments/day4_reliability_triplet_inputs_v0/smoke_03/closed_book.json",
+        "sha256": "d920b387e980d808aa4fc4cce71b064ccb0589cbce03c9f94ccb6e68aed46d7b"
+      },
+      "oracle_page": {
+        "evidence_characters": 3117,
+        "pages": [
+          31,
+          40
+        ],
+        "path": "experiments/day4_reliability_triplet_inputs_v0/smoke_03/oracle_page.json",
+        "sha256": "d669f9090d4c18984ce97c1967b6da1b1c684bbe7ba200dd88b06250af6dc849"
+      },
+      "question_id": "urnuuidad6e69ed-3343-4297-85d8-96b02e6bd925::q1",
+      "real_retrieval": {
+        "evidence_characters": 4519,
+        "pages": [
+          31,
+          9,
+          3
+        ],
+        "path": "experiments/day4_reliability_triplet_inputs_v0/smoke_03/real_retrieval.json",
+        "sha256": "38de5dd55b8467d3351e0644ec0bcbb6e821a754f289cdc7b74720eefe365bde"
+      }
+    },
+    {
+      "case_id": "smoke_04",
+      "closed_book": {
+        "evidence_characters": 0,
+        "pages": [],
+        "path": "experiments/day4_reliability_triplet_inputs_v0/smoke_04/closed_book.json",
+        "sha256": "d529d7c9032c9e4bb046d8886fa5644badd03998a0578a5dd53701cabb09b530"
+      },
+      "oracle_page": {
+        "evidence_characters": 2311,
+        "pages": [
+          71
+        ],
+        "path": "experiments/day4_reliability_triplet_inputs_v0/smoke_04/oracle_page.json",
+        "sha256": "5ef38c02d46db9c08925af6384b84811de7122c0cb6b6377394f1839031d689a"
+      },
+      "question_id": "urnuuid0a20b83c-2af0-4503-9220-c63470cdd214::q3",
+      "real_retrieval": {
+        "evidence_characters": 5836,
+        "pages": [
+          24,
+          30,
+          56
+        ],
+        "path": "experiments/day4_reliability_triplet_inputs_v0/smoke_04/real_retrieval.json",
+        "sha256": "519d1e46eae6472e0cafd7a6717f4d265cc526059ef6e32943c4dbb04a3f6b4e"
+      }
+    },
+    {
+      "case_id": "smoke_05",
+      "closed_book": {
+        "evidence_characters": 0,
+        "pages": [],
+        "path": "experiments/day4_reliability_triplet_inputs_v0/smoke_05/closed_book.json",
+        "sha256": "1bbc2735c1561095e03b80a85cacb2aec7cba8a20b3afc3c51affd251de37d0e"
+      },
+      "oracle_page": {
+        "evidence_characters": 1440,
+        "pages": [
+          11
+        ],
+        "path": "experiments/day4_reliability_triplet_inputs_v0/smoke_05/oracle_page.json",
+        "sha256": "289deb86b17588f8406a4eb46d4ab8540e216ed0500bb842a8742d34e1097e12"
+      },
+      "question_id": "urnuuid1c0499a9-36ad-4968-bf6f-d86fcd55e596::q2",
+      "real_retrieval": {
+        "evidence_characters": 6567,
+        "pages": [
+          11,
+          10,
+          15
+        ],
+        "path": "experiments/day4_reliability_triplet_inputs_v0/smoke_05/real_retrieval.json",
+        "sha256": "c45ff13d869c5c983e7c72f2f7f5bb1a3d45fe52c019c3878f451f2589825e99"
+      }
+    },
+    {
+      "case_id": "smoke_06",
+      "closed_book": {
+        "evidence_characters": 0,
+        "pages": [],
+        "path": "experiments/day4_reliability_triplet_inputs_v0/smoke_06/closed_book.json",
+        "sha256": "7959d60c1b6f4c502543442e3b6a0b9f810bdc769149862aeeb5d98631b96b2a"
+      },
+      "oracle_page": {
+        "evidence_characters": 2137,
+        "pages": [
+          21,
+          55
+        ],
+        "path": "experiments/day4_reliability_triplet_inputs_v0/smoke_06/oracle_page.json",
+        "sha256": "86f76014f47a6b7f8d31c7b44b097fcc570ca79a5795a74353f944e6a8da6446"
+      },
+      "question_id": "urnuuid111476ed-6700-4be2-85cc-3fc17696167e::q3",
+      "real_retrieval": {
+        "evidence_characters": 11651,
+        "pages": [
+          9,
+          10,
+          7
+        ],
+        "path": "experiments/day4_reliability_triplet_inputs_v0/smoke_06/real_retrieval.json",
+        "sha256": "ed2afca21d8cceea8ae295de54e0e157a5c60a07a547c836c1f46e8fa3de4992"
+      }
+    },
+    {
+      "case_id": "smoke_07",
+      "closed_book": {
+        "evidence_characters": 0,
+        "pages": [],
+        "path": "experiments/day4_reliability_triplet_inputs_v0/smoke_07/closed_book.json",
+        "sha256": "7da82c6e3d29cfd4e0b331c504194bcbb2d086ee24dcea58f1532b62421faf50"
+      },
+      "oracle_page": {
+        "evidence_characters": 354,
+        "pages": [
+          31
+        ],
+        "path": "experiments/day4_reliability_triplet_inputs_v0/smoke_07/oracle_page.json",
+        "sha256": "598d6eb7b49c74a09a45d6733b0baedadf74fe484ef9f61b4a86e2fe7a3a830e"
+      },
+      "question_id": "urnuuid2ec9537c-589c-47f0-81ae-8e02e2d85414::q2",
+      "real_retrieval": {
+        "evidence_characters": 3973,
+        "pages": [
+          31,
+          17,
+          2
+        ],
+        "path": "experiments/day4_reliability_triplet_inputs_v0/smoke_07/real_retrieval.json",
+        "sha256": "31e8dcb9c2a5974598281f738c1b88a0f7d9092b32a341f8717acf485008a432"
+      }
+    },
+    {
+      "case_id": "smoke_08",
+      "closed_book": {
+        "evidence_characters": 0,
+        "pages": [],
+        "path": "experiments/day4_reliability_triplet_inputs_v0/smoke_08/closed_book.json",
+        "sha256": "54d136513a0f0f202856a3e857bad98f2abe9b7804073af9006d7efded966741"
+      },
+      "oracle_page": {
+        "evidence_characters": 15122,
+        "pages": [
+          30,
+          31,
+          34,
+          35,
+          38,
+          40
+        ],
+        "path": "experiments/day4_reliability_triplet_inputs_v0/smoke_08/oracle_page.json",
+        "sha256": "05c54f6ab84550d0f6af60171a8b0e5c65f8aca54cf6821c494e1ea2f7a98498"
+      },
+      "question_id": "urnuuid0d4da810-0b76-4979-a774-0f8bd6fae742::q1",
+      "real_retrieval": {
+        "evidence_characters": 7599,
+        "pages": [
+          4,
+          10,
+          21
+        ],
+        "path": "experiments/day4_reliability_triplet_inputs_v0/smoke_08/real_retrieval.json",
+        "sha256": "33b434d9bcab9c9f2296de8398c235e4da73022dd308746f2a372b68fb080365"
+      }
+    },
+    {
+      "case_id": "smoke_09",
+      "closed_book": {
+        "evidence_characters": 0,
+        "pages": [],
+        "path": "experiments/day4_reliability_triplet_inputs_v0/smoke_09/closed_book.json",
+        "sha256": "12f5a4b207c96b393b0f5ecd31404002e5754afb87c1c2199a478c34ff309958"
+      },
+      "oracle_page": {
+        "evidence_characters": 0,
+        "pages": [
+          14
+        ],
+        "path": "experiments/day4_reliability_triplet_inputs_v0/smoke_09/oracle_page.json",
+        "sha256": "b272fe371fe125594b5c599f028bc8b138f09fda15d91d1f356a666ea1fa6df6"
+      },
+      "question_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba::q1",
+      "real_retrieval": {
+        "evidence_characters": 0,
+        "pages": [
+          1,
+          2,
+          3
+        ],
+        "path": "experiments/day4_reliability_triplet_inputs_v0/smoke_09/real_retrieval.json",
+        "sha256": "9fcec669832d8de9c7719227106bfaa67e82bb88448043f959ae3bc123186060"
+      }
+    },
+    {
+      "case_id": "smoke_10",
+      "closed_book": {
+        "evidence_characters": 0,
+        "pages": [],
+        "path": "experiments/day4_reliability_triplet_inputs_v0/smoke_10/closed_book.json",
+        "sha256": "4129fd082918a55c8fcb5c9af617497c7dbaada800d01dc390bdefbadcfd47e0"
+      },
+      "oracle_page": {
+        "evidence_characters": 0,
+        "pages": [],
+        "path": "experiments/day4_reliability_triplet_inputs_v0/smoke_10/oracle_page.json",
+        "sha256": "b9b247121b8d4d37dbc0cb423c0744ee10cc5e5da6e6add8df801ab1f1c1e83b"
+      },
+      "question_id": "urnuuid425f7a17-aa57-4cca-b56e-612fe270751d::q6",
+      "real_retrieval": {
+        "evidence_characters": 18420,
+        "pages": [
+          5,
+          3,
+          4
+        ],
+        "path": "experiments/day4_reliability_triplet_inputs_v0/smoke_10/real_retrieval.json",
+        "sha256": "d1a2effec0790d42e760aee570cf2938ec867521f935780e45ae1e57aca71496"
+      }
+    }
+  ],
+  "conditions": [
+    "closed_book",
+    "real_retrieval",
+    "oracle_page"
+  ],
+  "input_file_count": 30,
+  "paid_request_sent": false,
+  "retrieval_results_sha256": "8dd53c91a53d517065e36609d984dca8c798b4fe9cba72aaeb5fe2dd4b5793c7",
+  "schema_version": 1,
+  "selection_sha256": "2c384755f1c3c33089af450ab571f70e049ac0dc46178bc56ef373ea253b536c",
+  "split_manifest_sha256": "e76154d9eb743994c732faf7282323423357c1f282103594aadd2a5ddff9fd10"
+}

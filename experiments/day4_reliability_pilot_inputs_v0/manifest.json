@@ -1,0 +1,716 @@
+{
+  "case_count": 24,
+  "cases": [
+    {
+      "closed_book": {
+        "evidence_characters": 0,
+        "pages": [],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_01/closed_book.json",
+        "sha256": "b2e5b7e0df4cc3c792fa7376c7e51b9b88cbf1b254c7a1d7fa0b11923f680bbc"
+      },
+      "oracle_page": {
+        "evidence_characters": 1304,
+        "pages": [
+          11
+        ],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_01/oracle_page.json",
+        "sha256": "f2238afefc7afe519d2a155efa49ce938aecbb02c1e853fc75e4beb9f737d67a"
+      },
+      "pilot_id": "pilot_01",
+      "question_id": "urnuuid4873f4f3-f4eb-4931-97f5-ae4f1951f07e::q1",
+      "real_retrieval": {
+        "evidence_characters": 5318,
+        "pages": [
+          34,
+          26,
+          11
+        ],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_01/real_retrieval.json",
+        "sha256": "c4b7face2658cca5c67f89ca82706099cb186007ee7789f0224d14ba57134b9b"
+      }
+    },
+    {
+      "closed_book": {
+        "evidence_characters": 0,
+        "pages": [],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_02/closed_book.json",
+        "sha256": "8b858aafb2dea4f268915b8e422c5081aeda0475712548a8ca97e3abdf000934"
+      },
+      "oracle_page": {
+        "evidence_characters": 5587,
+        "pages": [
+          9,
+          10
+        ],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_02/oracle_page.json",
+        "sha256": "bf07026c60f27a2bc92fe39e254f90c3695cbcc4f2f7bbce0ecd7238becc5ab6"
+      },
+      "pilot_id": "pilot_02",
+      "question_id": "urnuuid77b8c272-7717-468a-9c12-b41257db91d9::q2",
+      "real_retrieval": {
+        "evidence_characters": 8337,
+        "pages": [
+          10,
+          9,
+          11
+        ],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_02/real_retrieval.json",
+        "sha256": "69cd62277c2f532710af7180ca3ec6e4da5404599846f2ee8c189d2de675145d"
+      }
+    },
+    {
+      "closed_book": {
+        "evidence_characters": 0,
+        "pages": [],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_03/closed_book.json",
+        "sha256": "e75198608eb864cf8e772173cbdf4b9120239d58893c8a434fb0caf9cf80778b"
+      },
+      "oracle_page": {
+        "evidence_characters": 648,
+        "pages": [
+          32
+        ],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_03/oracle_page.json",
+        "sha256": "13087f7672a977ff930b1b6eb9b0cecea92a59bebafc02245aa08ad90a310b95"
+      },
+      "pilot_id": "pilot_03",
+      "question_id": "urnuuid44ff3ab7-6cd7-40f9-8abc-28680be05c68::q3",
+      "real_retrieval": {
+        "evidence_characters": 4530,
+        "pages": [
+          32,
+          10,
+          13
+        ],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_03/real_retrieval.json",
+        "sha256": "2fa86a4cb6626e8066691de22fc3557eb32a8210279005d968ebd3020a1bc64f"
+      }
+    },
+    {
+      "closed_book": {
+        "evidence_characters": 0,
+        "pages": [],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_04/closed_book.json",
+        "sha256": "a5a70527f0b9d7a88b632d4ff29b032b67e9c8bbf04bf4057cc05931991dc103"
+      },
+      "oracle_page": {
+        "evidence_characters": 2385,
+        "pages": [
+          5,
+          7
+        ],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_04/oracle_page.json",
+        "sha256": "fec5991fec84f02242ccc8bddd56c0f468a7c691cdd4a6995f076e1e03a80adb"
+      },
+      "pilot_id": "pilot_04",
+      "question_id": "urnuuid6977f498-b814-42ae-85db-4adaf7a88c9f::q2",
+      "real_retrieval": {
+        "evidence_characters": 3541,
+        "pages": [
+          7,
+          9,
+          5
+        ],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_04/real_retrieval.json",
+        "sha256": "d7afd9000fb76e6f2caea63d59b86a01f3f028a53963ddd63ea5fa2c1919243c"
+      }
+    },
+    {
+      "closed_book": {
+        "evidence_characters": 0,
+        "pages": [],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_05/closed_book.json",
+        "sha256": "32e4f0eb9a6b585e8b0ec2a489fa0add217f5b19b6e0c983878f1caea4b889f5"
+      },
+      "oracle_page": {
+        "evidence_characters": 5819,
+        "pages": [
+          5,
+          6
+        ],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_05/oracle_page.json",
+        "sha256": "e58ebac4a19b98ffde6a17deff67bb3da132bb9a906723475ae03932b38ecdc2"
+      },
+      "pilot_id": "pilot_05",
+      "question_id": "urnuuidb98e815e-2094-448a-bd43-d2e0ca7a8e25::q3",
+      "real_retrieval": {
+        "evidence_characters": 9628,
+        "pages": [
+          6,
+          26,
+          5
+        ],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_05/real_retrieval.json",
+        "sha256": "2482c7bfcb0b0f58b42e1103fa48fa0ff58d5e48b2c3cfafccbec79dd2d0ac9f"
+      }
+    },
+    {
+      "closed_book": {
+        "evidence_characters": 0,
+        "pages": [],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_06/closed_book.json",
+        "sha256": "b1aff155c51a2b1e66ccb6b12ff9435f51c5ae26ea85e30d786dd646802ed733"
+      },
+      "oracle_page": {
+        "evidence_characters": 1906,
+        "pages": [
+          30
+        ],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_06/oracle_page.json",
+        "sha256": "22101b9dc8554e3544184a4da8e27e0247638e4b117b5012a8e54d77c91fe244"
+      },
+      "pilot_id": "pilot_06",
+      "question_id": "urnuuidc94c212d-21aa-4dbe-a75f-6d8888002f6a::q2",
+      "real_retrieval": {
+        "evidence_characters": 5427,
+        "pages": [
+          31,
+          30,
+          8
+        ],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_06/real_retrieval.json",
+        "sha256": "370c0f8d3f78d1ec1d7b28c1f7df812ffd3350367997fbd0b1ff8c8a2bcee3b5"
+      }
+    },
+    {
+      "closed_book": {
+        "evidence_characters": 0,
+        "pages": [],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_07/closed_book.json",
+        "sha256": "1ec184ea8e1f988fb33cf1e9286a5639a79a6b6421ccfd0a71d35a1ec0e51f4b"
+      },
+      "oracle_page": {
+        "evidence_characters": 3472,
+        "pages": [
+          11,
+          12
+        ],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_07/oracle_page.json",
+        "sha256": "f0b3bf31c7fa9c38b404877e25878e0abaa8f7b6c07ad37c3b877b3166a31139"
+      },
+      "pilot_id": "pilot_07",
+      "question_id": "urnuuid7fbb918e-acda-4053-9c23-c16621876e15::q1",
+      "real_retrieval": {
+        "evidence_characters": 5244,
+        "pages": [
+          23,
+          6,
+          12
+        ],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_07/real_retrieval.json",
+        "sha256": "6d53cb3059f22615909ba50c435515f933f8b3adcb2a4b44f4591031aaa140f3"
+      }
+    },
+    {
+      "closed_book": {
+        "evidence_characters": 0,
+        "pages": [],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_08/closed_book.json",
+        "sha256": "74c81961235e76d67268cb3caa868b7e67cc57df26c782e7b44b3d820baa4a6f"
+      },
+      "oracle_page": {
+        "evidence_characters": 5480,
+        "pages": [
+          2,
+          7,
+          14,
+          18
+        ],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_08/oracle_page.json",
+        "sha256": "08b5669321af4af9175a2a845b9a0571744256f053edf26c9b4116be922b976b"
+      },
+      "pilot_id": "pilot_08",
+      "question_id": "urnuuid926889a0-ba73-457e-95d5-7b767e414d43::q3",
+      "real_retrieval": {
+        "evidence_characters": 4413,
+        "pages": [
+          18,
+          27,
+          36
+        ],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_08/real_retrieval.json",
+        "sha256": "294d534913d885f01dcd147c1e2f84d418697132a0298629427fc3e89b5aae2a"
+      }
+    },
+    {
+      "closed_book": {
+        "evidence_characters": 0,
+        "pages": [],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_09/closed_book.json",
+        "sha256": "bfdc2898f225758c83349d9753be43d2d4e0b1348d2feb17356f81f94a53a94a"
+      },
+      "oracle_page": {
+        "evidence_characters": 10372,
+        "pages": [
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_09/oracle_page.json",
+        "sha256": "103418188def5d3c65a4ac5fa1536ec87138fd54c1788d69af1eb332fb343194"
+      },
+      "pilot_id": "pilot_09",
+      "question_id": "urnuuid425f7a17-aa57-4cca-b56e-612fe270751d::q5",
+      "real_retrieval": {
+        "evidence_characters": 11497,
+        "pages": [
+          8,
+          14,
+          1
+        ],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_09/real_retrieval.json",
+        "sha256": "245f9a33387490620226174a45861051bfd607448e310cfa0e59a9fdfe9e2954"
+      }
+    },
+    {
+      "closed_book": {
+        "evidence_characters": 0,
+        "pages": [],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_10/closed_book.json",
+        "sha256": "3e9220aeaae73e1bcc8913e3424546d85b2c71636bde96a4d467355450a340d8"
+      },
+      "oracle_page": {
+        "evidence_characters": 5330,
+        "pages": [
+          16,
+          34
+        ],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_10/oracle_page.json",
+        "sha256": "d6adb6fd6898f6c413e08ac4d398de471e08389a2a8e83dc732dc14341b76915"
+      },
+      "pilot_id": "pilot_10",
+      "question_id": "urnuuidd0ba82b9-f6c5-4b9a-a1a7-abcbffc5aeae::q2",
+      "real_retrieval": {
+        "evidence_characters": 7526,
+        "pages": [
+          34,
+          50,
+          21
+        ],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_10/real_retrieval.json",
+        "sha256": "1249db3f95c74cd9ecaa8d191f9a774d52b14f06229905023270a1f0108f21ef"
+      }
+    },
+    {
+      "closed_book": {
+        "evidence_characters": 0,
+        "pages": [],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_11/closed_book.json",
+        "sha256": "d9b10df488a0651bb4dc85944f933f9440b4fe49e338a9988b49a36654181a0a"
+      },
+      "oracle_page": {
+        "evidence_characters": 1948,
+        "pages": [
+          1,
+          5
+        ],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_11/oracle_page.json",
+        "sha256": "603890ef3dd7293c1c8c7a652c4e2188ac4ef39def52da966cdffa093691daa0"
+      },
+      "pilot_id": "pilot_11",
+      "question_id": "urnuuid181bfd7d-8bf2-4f0a-95e3-1201ac3321aa::q1",
+      "real_retrieval": {
+        "evidence_characters": 5777,
+        "pages": [
+          5,
+          28,
+          3
+        ],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_11/real_retrieval.json",
+        "sha256": "01fe7428ef4a5386b53aa1c161b49ae956f2ead8a248387f35ac55a0fce17095"
+      }
+    },
+    {
+      "closed_book": {
+        "evidence_characters": 0,
+        "pages": [],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_12/closed_book.json",
+        "sha256": "e6e8701389baf3426da2ad0004ae11b9866531086b41b99d6b251e81b371400d"
+      },
+      "oracle_page": {
+        "evidence_characters": 2190,
+        "pages": [
+          10,
+          11
+        ],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_12/oracle_page.json",
+        "sha256": "7b2260b9fa55e09f278275c7a2fae82421198690bbde1d5e78a85caea95b9df7"
+      },
+      "pilot_id": "pilot_12",
+      "question_id": "urnuuid395c19a8-ceda-45ec-854e-2316a9138c74::q2",
+      "real_retrieval": {
+        "evidence_characters": 9186,
+        "pages": [
+          10,
+          9,
+          23
+        ],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_12/real_retrieval.json",
+        "sha256": "018f46ff3277b286d585fbd04819e7cade0f75f92ed0b92464e2da0d5690393b"
+      }
+    },
+    {
+      "closed_book": {
+        "evidence_characters": 0,
+        "pages": [],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_13/closed_book.json",
+        "sha256": "3da815388db030b7a9b5a336ee16e64a05c34fc8a353a138414b8f54b389e073"
+      },
+      "oracle_page": {
+        "evidence_characters": 5751,
+        "pages": [
+          13,
+          14
+        ],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_13/oracle_page.json",
+        "sha256": "6d4501491d915b5c014cf8704a34ee46d14570946fc4d9b51ed9fe31393649d1"
+      },
+      "pilot_id": "pilot_13",
+      "question_id": "urnuuid83d3c72c-a70d-422f-9c0b-992de5e5770e::q5",
+      "real_retrieval": {
+        "evidence_characters": 12784,
+        "pages": [
+          4,
+          5,
+          9
+        ],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_13/real_retrieval.json",
+        "sha256": "f5c1ef5079dace01c2b1ccbceb9ea1164842568b0d23be07671f156941edf880"
+      }
+    },
+    {
+      "closed_book": {
+        "evidence_characters": 0,
+        "pages": [],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_14/closed_book.json",
+        "sha256": "fbdd8d1c96ef6b073ef85dfc8547405ff2b1d9cf4ae6e19f80bfebe003abfaf1"
+      },
+      "oracle_page": {
+        "evidence_characters": 35134,
+        "pages": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          20,
+          21,
+          22,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          32,
+          33
+        ],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_14/oracle_page.json",
+        "sha256": "eaf14c5bbb2d551ff9763e57268ce745e95979bf549fb74fa18d3be31629d41b"
+      },
+      "pilot_id": "pilot_14",
+      "question_id": "urnuuid881f7d70-7e7b-4b1a-90a9-3d837a1a8299::q3",
+      "real_retrieval": {
+        "evidence_characters": 6716,
+        "pages": [
+          9,
+          4,
+          8
+        ],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_14/real_retrieval.json",
+        "sha256": "4d595f133f5c29eeaf90ead6699ba24d43847b53563cd15f93ea4bd9c5bb68e2"
+      }
+    },
+    {
+      "closed_book": {
+        "evidence_characters": 0,
+        "pages": [],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_15/closed_book.json",
+        "sha256": "40abe2540272a7e957b2004c811b924a4ecb405ea99fea74850b5bff712bef7e"
+      },
+      "oracle_page": {
+        "evidence_characters": 1390,
+        "pages": [
+          50
+        ],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_15/oracle_page.json",
+        "sha256": "6979bd9223c54488ac15ea47bea240cbfd6197acf10f8e85c23161d83247547b"
+      },
+      "pilot_id": "pilot_15",
+      "question_id": "urnuuid469c17b6-9e4f-4706-bc89-0e1814820dae::q5",
+      "real_retrieval": {
+        "evidence_characters": 3599,
+        "pages": [
+          46,
+          54,
+          52
+        ],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_15/real_retrieval.json",
+        "sha256": "ac03f19bac5cf772a0f25078827f540e14730fd8acffd43ad80b1c6363155899"
+      }
+    },
+    {
+      "closed_book": {
+        "evidence_characters": 0,
+        "pages": [],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_16/closed_book.json",
+        "sha256": "587c9913984c9afc1fdc01592e8f11c38c29ff7fa101ae95e87c375abd46937a"
+      },
+      "oracle_page": {
+        "evidence_characters": 0,
+        "pages": [
+          10,
+          11
+        ],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_16/oracle_page.json",
+        "sha256": "342ee220a1d799dea4f2835288c4d173653186a0f07d84deb216428cfd1b7b4e"
+      },
+      "pilot_id": "pilot_16",
+      "question_id": "urnuuid45a0a8e5-e31b-4e74-9663-f27ab82db68f::q5",
+      "real_retrieval": {
+        "evidence_characters": 0,
+        "pages": [
+          1,
+          2,
+          3
+        ],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_16/real_retrieval.json",
+        "sha256": "2b8f8b6f821e4ef5001247e8d5adba122667107c2eb2d58b987896710c38e760"
+      }
+    },
+    {
+      "closed_book": {
+        "evidence_characters": 0,
+        "pages": [],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_17/closed_book.json",
+        "sha256": "1b9780af448a0aced6c47bc5f31dacd461b3f5851c6bc8a8c9b8495e6774f742"
+      },
+      "oracle_page": {
+        "evidence_characters": 0,
+        "pages": [
+          12
+        ],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_17/oracle_page.json",
+        "sha256": "c0786b096661d9d9c9534341703e8739dac13e3adfd82b9f14f8051567d1fc34"
+      },
+      "pilot_id": "pilot_17",
+      "question_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba::q3",
+      "real_retrieval": {
+        "evidence_characters": 0,
+        "pages": [
+          1,
+          2,
+          3
+        ],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_17/real_retrieval.json",
+        "sha256": "af83f7dc89f24b9477143e3bd206014d1b6a18520d94e5969bb115a527add4bd"
+      }
+    },
+    {
+      "closed_book": {
+        "evidence_characters": 0,
+        "pages": [],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_18/closed_book.json",
+        "sha256": "09d90574ee1843c2a76b6f0d03890cd806e11b679e2252c0b6acd59f47177d0c"
+      },
+      "oracle_page": {
+        "evidence_characters": 7716,
+        "pages": [
+          1,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_18/oracle_page.json",
+        "sha256": "495c11a08794d73d4e91ffffc1f7fb5b73e958e170aea2726705a8bc3d685f61"
+      },
+      "pilot_id": "pilot_18",
+      "question_id": "urnuuid808e4631-8567-495d-a904-0c702dbe784e::q3",
+      "real_retrieval": {
+        "evidence_characters": 8133,
+        "pages": [
+          36,
+          23,
+          34
+        ],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_18/real_retrieval.json",
+        "sha256": "276464c359d378dbc6fef2b230c7e3b07ba80b54ba6367cf4e46940d29c6ae5a"
+      }
+    },
+    {
+      "closed_book": {
+        "evidence_characters": 0,
+        "pages": [],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_19/closed_book.json",
+        "sha256": "a1531c494bda46ac8d9e0eabd057a6ffb05ec975bde89184aa8b1c7d0d476bb8"
+      },
+      "oracle_page": {
+        "evidence_characters": 0,
+        "pages": [],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_19/oracle_page.json",
+        "sha256": "21e69a8b841dd0d013c94fe4b53a921abb0ee71aefa2cc15eaa2457c1cd0398b"
+      },
+      "pilot_id": "pilot_19",
+      "question_id": "urnuuid3897fb73-c645-46be-a22f-4b94595d33e1::q2",
+      "real_retrieval": {
+        "evidence_characters": 8637,
+        "pages": [
+          27,
+          12,
+          23
+        ],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_19/real_retrieval.json",
+        "sha256": "85936b22609cd6b97ea49d90f22d66d2fb51472fc2c8cd617a5bcba2eae6158d"
+      }
+    },
+    {
+      "closed_book": {
+        "evidence_characters": 0,
+        "pages": [],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_20/closed_book.json",
+        "sha256": "29ad4d1a41b174f04eeeccf4b26f5a2138b72606576ce98216405ce8f4e910d1"
+      },
+      "oracle_page": {
+        "evidence_characters": 0,
+        "pages": [],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_20/oracle_page.json",
+        "sha256": "78a3c2980c87c07a37c63872227d1dda5ab47d319baf1ff3959424eef0501b56"
+      },
+      "pilot_id": "pilot_20",
+      "question_id": "urnuuid8f2628d5-89b1-4143-bb0f-623743d738bf::q5",
+      "real_retrieval": {
+        "evidence_characters": 5648,
+        "pages": [
+          26,
+          31,
+          32
+        ],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_20/real_retrieval.json",
+        "sha256": "d690b5d3d8ec6df35eeec1b4dfb7a970ea785f10ebbc6ff95e0efc40d44dda17"
+      }
+    },
+    {
+      "closed_book": {
+        "evidence_characters": 0,
+        "pages": [],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_21/closed_book.json",
+        "sha256": "ba6c224a208ac50d8d0b60ffcbcd33cd973e638416cb4e87afad3e57ac0263b4"
+      },
+      "oracle_page": {
+        "evidence_characters": 0,
+        "pages": [],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_21/oracle_page.json",
+        "sha256": "5398e029354252f6be6f6da5e5f9159314f08b9639607be1e65dfafbed778012"
+      },
+      "pilot_id": "pilot_21",
+      "question_id": "urnuuid0d4da810-0b76-4979-a774-0f8bd6fae742::q3",
+      "real_retrieval": {
+        "evidence_characters": 7121,
+        "pages": [
+          35,
+          33,
+          36
+        ],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_21/real_retrieval.json",
+        "sha256": "a89a0568f35b3b344c058e194851d94c67324336f746770afc6693144a0d20d2"
+      }
+    },
+    {
+      "closed_book": {
+        "evidence_characters": 0,
+        "pages": [],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_22/closed_book.json",
+        "sha256": "8951032ad5828689f3947263368205769a5529977290ff6eee2b535f8ad1c19e"
+      },
+      "oracle_page": {
+        "evidence_characters": 0,
+        "pages": [],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_22/oracle_page.json",
+        "sha256": "6dfb0b653f1f2789459fc376f7986b6855f56c2f06c4969d2c390e0b385ff45a"
+      },
+      "pilot_id": "pilot_22",
+      "question_id": "urnuuida994f1b4-401e-453b-9f52-149c44f35c82::q5",
+      "real_retrieval": {
+        "evidence_characters": 13589,
+        "pages": [
+          2,
+          59,
+          10
+        ],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_22/real_retrieval.json",
+        "sha256": "31699f89a1dac15d2e1e9d5578e840a42a4fbee7cf5c694558ffc3760c756b80"
+      }
+    },
+    {
+      "closed_book": {
+        "evidence_characters": 0,
+        "pages": [],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_23/closed_book.json",
+        "sha256": "51fd66dc490ee97d2bac8b0ed7b339e0ea4e029a202d4a18d0d08b3cff889cd5"
+      },
+      "oracle_page": {
+        "evidence_characters": 0,
+        "pages": [],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_23/oracle_page.json",
+        "sha256": "7eebf740f595f1be9bae0b7cfe49ec8c38a2dcac22fe189c74e24575673576dc"
+      },
+      "pilot_id": "pilot_23",
+      "question_id": "urnuuide13d8fae-e453-48a9-9996-7397adbecbc9::q1",
+      "real_retrieval": {
+        "evidence_characters": 5642,
+        "pages": [
+          3,
+          5,
+          10
+        ],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_23/real_retrieval.json",
+        "sha256": "a662686ac44bccc358e3228f1939168ece5c8a2cd6737667701b81fe0ad9ec38"
+      }
+    },
+    {
+      "closed_book": {
+        "evidence_characters": 0,
+        "pages": [],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_24/closed_book.json",
+        "sha256": "bf8660667e2b9a7fde20349fb1892b1720551340e4a6db63ca97f26160094048"
+      },
+      "oracle_page": {
+        "evidence_characters": 0,
+        "pages": [],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_24/oracle_page.json",
+        "sha256": "92616806594fd1620845bf9425604664f51b6c16d0f0a9a9501060b9d88228ef"
+      },
+      "pilot_id": "pilot_24",
+      "question_id": "urnuuid113144ee-53bb-4f43-9d8f-0c9e823fa25d::q3",
+      "real_retrieval": {
+        "evidence_characters": 11569,
+        "pages": [
+          72,
+          73,
+          76
+        ],
+        "path": "experiments/day4_reliability_pilot_inputs_v0/pilot_24/real_retrieval.json",
+        "sha256": "35e55589f705757f681b7390e28bc111b5eef8d6ba1b330c4f15a76656f33143"
+      }
+    }
+  ],
+  "conditions": [
+    "closed_book",
+    "real_retrieval",
+    "oracle_page"
+  ],
+  "input_file_count": 72,
+  "paid_request_sent": false,
+  "retrieval_results_sha256": "8dd53c91a53d517065e36609d984dca8c798b4fe9cba72aaeb5fe2dd4b5793c7",
+  "schema_version": 1,
+  "selection_sha256": "d289d651b415145fa822b4c631300b1c6fdcf2558217b330b2c0eb496262e862",
+  "split_manifest_sha256": "e76154d9eb743994c732faf7282323423357c1f282103594aadd2a5ddff9fd10",
+  "status": "offline_inputs_ready"
+}

@@ -1,0 +1,29 @@
+{
+  "annotation_file": "benchmark.json",
+  "canonical_url": "https://huggingface.co/datasets/MiliLab/DocScope/tree/4326db57d779829a44e46849fed0ebbe782f2e16",
+  "dataset": "DocScope",
+  "licence": {
+    "annotations": "CC BY-NC-SA 4.0",
+    "note": "Individual PDFs retain source copyright; non-commercial research use; do not redistribute.",
+    "pdf_collection_source": "FinePDFs / ODC-By 1.0"
+  },
+  "notice_sha256": "d5e8e7509c8be6865d931e32a9f5d3125e807704293b9232a318780f8e08bd87",
+  "observed": {
+    "pdfs": 273,
+    "questions": 1124,
+    "splits": {
+      "dev": 394,
+      "test": 730
+    }
+  },
+  "official_code": {
+    "repository": "https://github.com/MiliLab/DocScope",
+    "revision": "ac0de26b050d4f51de0407c45b5cf3fdf245e1bd"
+  },
+  "pdf_directory": "pdfs/",
+  "pinned_on": "2026-08-27",
+  "repository": "MiliLab/DocScope",
+  "repository_type": "dataset",
+  "revision": "4326db57d779829a44e46849fed0ebbe782f2e16",
+  "schema_version": 1
+}

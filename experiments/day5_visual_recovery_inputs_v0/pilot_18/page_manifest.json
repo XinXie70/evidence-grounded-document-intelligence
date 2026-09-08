@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "status": "manual_review_confirmed",
+  "condition": "oracle_region",
+  "intervention": "image_only_full_oracle_pages_to_avoid_bbox_count_leakage",
+  "question_id": "urnuuid808e4631-8567-495d-a904-0c702dbe784e::q3",
+  "doc_id": "urnuuid808e4631-8567-495d-a904-0c702dbe784e",
+  "question": "How many distinct stacked bar charts appear across the entire document?",
+  "render_dpi": 144,
+  "coordinate_space": "cropbox_pixels_at_144_dpi_top_left_origin",
+  "source_pdf": "data/raw/docscope/pdfs/urnuuid808e4631-8567-495d-a904-0c702dbe784e.pdf",
+  "source_pdf_sha256": "410e164068e5e3e946607c6405e94414a21609d915978efc5f2636e82d23f05b",
+  "crops": [
+    {"evidence_local_id": "page_1", "page": 1, "bbox": [0, 0, 1224, 1584], "element_type": "full_page", "output_png": "page_images/page_0001.png", "output_png_sha256": "3cb08a7d9d825b0558cdfdf8bc41b46f4aa8111439e0601332d6c359aaa13c69", "text_scope": "image_only"},
+    {"evidence_local_id": "page_4", "page": 4, "bbox": [0, 0, 1224, 1584], "element_type": "full_page", "output_png": "page_images/page_0004.png", "output_png_sha256": "b0bf2504a93b5b620937caad4eee54aca5bf68c1c4dcbaf61ed62c521f9fb49a", "text_scope": "image_only"},
+    {"evidence_local_id": "page_5", "page": 5, "bbox": [0, 0, 1224, 1584], "element_type": "full_page", "output_png": "page_images/page_0005.png", "output_png_sha256": "40f39c4c5daabb9801c5bd30126fd259ee5fedb99d146bd6d18130130d9852aa", "text_scope": "image_only"},
+    {"evidence_local_id": "page_6", "page": 6, "bbox": [0, 0, 1224, 1584], "element_type": "full_page", "output_png": "page_images/page_0006.png", "output_png_sha256": "d57fd1b99a80ff0c140cb90d2f1627b493dc4a5899871883a3770ec0f7e088a2", "text_scope": "image_only"},
+    {"evidence_local_id": "page_7", "page": 7, "bbox": [0, 0, 1224, 1584], "element_type": "full_page", "output_png": "page_images/page_0007.png", "output_png_sha256": "0ab6ef619cd272332aaa665c9825c6c1ab83ebc2a12429bf7083b62dfd96c571", "text_scope": "image_only"},
+    {"evidence_local_id": "page_8", "page": 8, "bbox": [0, 0, 1224, 1584], "element_type": "full_page", "output_png": "page_images/page_0008.png", "output_png_sha256": "1e4650814aca1c13ff1a2f3fc8248bcb4a775cbe14da8be2811b18ddbe72aa7a", "text_scope": "image_only"}
+  ]
+}

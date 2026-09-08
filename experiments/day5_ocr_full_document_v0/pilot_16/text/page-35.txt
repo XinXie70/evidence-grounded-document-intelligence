@@ -1,0 +1,43 @@
+LY) SEQUOIA ANALYTICAL
+
+1900 Bates Avenue e Suite LM e Concord, California 94520
+Uy (415) 686-9600 © FAX (415) 686-9689
+
+prealian Engineering, Inc.
+‘P.O. Box 996
+
+enicia, CA 94510
+‘Attention: Mardo Kaprealian, P.E. QC Sample Group: 1080879-81
+
+Reported: Aug 30, 1991
+
+QUALITY CONTROL DATA REPORT
+
+ANALYTE Trichloro- Chloro- Chloro-
+1,1-Dichloroethene ethene benzene Benzene Toluene benzene (PID)
+Method: EPA 8010 EPA 8010 EPA 8010 EPA 8010 EPA 8010 EPA 8010
+Analyst: SL St SL SL st SL
+Reporting Units: ppb ppb ppb ppb ppb ppb
+Date Analyzed: Aug 28, 1991 Aug 28, 1991 Aug 28, 1901 Aug 28, 1991 Aug 28, 1991 Aug 28, 1991
+QC Sample #: 108-0879 108-0879 108-0879 108-0879 108-0879 108-0879
+Sample Conc.: N.D. N.D. N.D. N.D. N.D. N.D.
+Spike Conc.
+Added: 10 10 10 10 10 10
+Conc. Matrix
+Spike: 86 9.5 " 95 8.4 9.2
+Matrix Spike
+% Recovery: 86 95 110 95 84 92
+Conc. Matrix
+Spike Dup.: 9.6 9.8 11 9.8 8.7 9.2
+Matrix Spike
+Duplicate
+% Recovery: 96 98 110 98 87 92
+Relative
+% Difference: WY 3.4 0 31 35 0
+Laboratory blank contained the following analytes © None Detected
+SEQUOIA ANALYTICAL % Recovery Conc of MS - Cone of Sample x 100
+\ } | Le ; 1 Spike Conc. Added
+| - | = Odd ‘ _” {Relative % Difterence Conc of MS - Cone of MSD x 100
+Julia R. Malerstein - (Conc of MS + Conc of MSD) /2
+
+Project Manager 1080879 KE] <12>

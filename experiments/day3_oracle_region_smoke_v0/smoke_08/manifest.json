@@ -1,0 +1,173 @@
+{
+  "benchmark_path": "data/raw/docscope/benchmark.json",
+  "benchmark_sha256": "ad07c6dfc43e5275ae92b894bf69f151c3dd9467ed79f5b12df904438c5ecb8e",
+  "coordinate_space": "cropbox_pixels_at_144_dpi_top_left_origin",
+  "crops": [
+    {
+      "bbox": [
+        494,
+        194,
+        905,
+        318
+      ],
+      "doc_id": "urnuuid0d4da810-0b76-4979-a774-0f8bd6fae742",
+      "element_type": "doc_title",
+      "evidence_local_id": "e1",
+      "text_scope": "crop_intersection",
+      "intersecting_text": "chapter 5:\nbbbbbuuuuuiiiiillllldddddiiiiinnnnnggggg-----iiiiinnnnnttttteeeeegggggrrrrraaaaattttteeeeeddddd dddddeeeeesssssiiiiigggggnnnnn:::::\nbbbbbuuuuuiiiiillllldddddiiiiinnnnnggggg aaaaasssss sssssooooolllllaaaaarrrrr cccccooooolllllllllleeeeeccccctttttooooorrrrr",
+      "output_height_pixels": 124,
+      "output_png": "e1_page_0030.png",
+      "output_png_sha256": "0d8b5e8a98b5da43fc146d3d793ba2225aeef53b92320c7373d2ab071a211d53",
+      "output_width_pixels": 411,
+      "page": 30,
+      "pixel_crop": [
+        494,
+        194,
+        905,
+        318
+      ],
+      "question": "How many photographs of actual houses (not architectural diagrams or illustrations) appear across the entire chapter on building-integrated design?",
+      "question_id": "urnuuid0d4da810-0b76-4979-a774-0f8bd6fae742::q1"
+    },
+    {
+      "bbox": [
+        557,
+        1122,
+        1070,
+        1481
+      ],
+      "doc_id": "urnuuid0d4da810-0b76-4979-a774-0f8bd6fae742",
+      "element_type": "image",
+      "evidence_local_id": "e2",
+      "text_scope": "crop_intersection",
+      "intersecting_text": "",
+      "output_height_pixels": 359,
+      "output_png": "e2_page_0031.png",
+      "output_png_sha256": "3a554f64f228425c91f7298cca654491949e137ea6638fea101852c541c7ebff",
+      "output_width_pixels": 513,
+      "page": 31,
+      "pixel_crop": [
+        557,
+        1122,
+        1070,
+        1481
+      ],
+      "question": "How many photographs of actual houses (not architectural diagrams or illustrations) appear across the entire chapter on building-integrated design?",
+      "question_id": "urnuuid0d4da810-0b76-4979-a774-0f8bd6fae742::q1"
+    },
+    {
+      "bbox": [
+        523,
+        114,
+        989,
+        427
+      ],
+      "doc_id": "urnuuid0d4da810-0b76-4979-a774-0f8bd6fae742",
+      "element_type": "image",
+      "evidence_local_id": "e3",
+      "text_scope": "crop_intersection",
+      "intersecting_text": "",
+      "output_height_pixels": 313,
+      "output_png": "e3_page_0034.png",
+      "output_png_sha256": "da9e28c6da022643d4952619ba5a8f76b85914b4fad7febf8af90a01e3dae6c4",
+      "output_width_pixels": 466,
+      "page": 34,
+      "pixel_crop": [
+        523,
+        114,
+        989,
+        427
+      ],
+      "question": "How many photographs of actual houses (not architectural diagrams or illustrations) appear across the entire chapter on building-integrated design?",
+      "question_id": "urnuuid0d4da810-0b76-4979-a774-0f8bd6fae742::q1"
+    },
+    {
+      "bbox": [
+        627,
+        1144,
+        1058,
+        1424
+      ],
+      "doc_id": "urnuuid0d4da810-0b76-4979-a774-0f8bd6fae742",
+      "element_type": "image",
+      "evidence_local_id": "e4",
+      "text_scope": "crop_intersection",
+      "intersecting_text": "",
+      "output_height_pixels": 280,
+      "output_png": "e4_page_0035.png",
+      "output_png_sha256": "5bc55f5d9f34377d4f4faeff79215a0a373697faabf4e6119277301751ae2d47",
+      "output_width_pixels": 431,
+      "page": 35,
+      "pixel_crop": [
+        627,
+        1144,
+        1058,
+        1424
+      ],
+      "question": "How many photographs of actual houses (not architectural diagrams or illustrations) appear across the entire chapter on building-integrated design?",
+      "question_id": "urnuuid0d4da810-0b76-4979-a774-0f8bd6fae742::q1"
+    },
+    {
+      "bbox": [
+        464,
+        1065,
+        983,
+        1406
+      ],
+      "doc_id": "urnuuid0d4da810-0b76-4979-a774-0f8bd6fae742",
+      "element_type": "image",
+      "evidence_local_id": "e5",
+      "text_scope": "crop_intersection",
+      "intersecting_text": "",
+      "output_height_pixels": 341,
+      "output_png": "e5_page_0038.png",
+      "output_png_sha256": "f1da23d08a18daee2db9c03dc48573aac38eeadea12403ff833112b0d656b50b",
+      "output_width_pixels": 519,
+      "page": 38,
+      "pixel_crop": [
+        464,
+        1065,
+        983,
+        1406
+      ],
+      "question": "How many photographs of actual houses (not architectural diagrams or illustrations) appear across the entire chapter on building-integrated design?",
+      "question_id": "urnuuid0d4da810-0b76-4979-a774-0f8bd6fae742::q1"
+    },
+    {
+      "bbox": [
+        136,
+        132,
+        718,
+        332
+      ],
+      "doc_id": "urnuuid0d4da810-0b76-4979-a774-0f8bd6fae742",
+      "element_type": "chart",
+      "evidence_local_id": "e6",
+      "text_scope": "crop_intersection",
+      "intersecting_text": "6\nchapter 6:\ncccccooooonnnnnsssssuuuuummmmmeeeeerrrrr tttttiiiiipppppsssss",
+      "output_height_pixels": 200,
+      "output_png": "e6_page_0040.png",
+      "output_png_sha256": "931882e3f0a48e74f1136f805efba04737102f4a7d7def2e2c66306396097dde",
+      "output_width_pixels": 582,
+      "page": 40,
+      "pixel_crop": [
+        136,
+        132,
+        718,
+        332
+      ],
+      "question": "How many photographs of actual houses (not architectural diagrams or illustrations) appear across the entire chapter on building-integrated design?",
+      "question_id": "urnuuid0d4da810-0b76-4979-a774-0f8bd6fae742::q1"
+    }
+  ],
+  "doc_id": "urnuuid0d4da810-0b76-4979-a774-0f8bd6fae742",
+  "question": "How many photographs of actual houses (not architectural diagrams or illustrations) appear across the entire chapter on building-integrated design?",
+  "question_id": "urnuuid0d4da810-0b76-4979-a774-0f8bd6fae742::q1",
+  "render_dpi": 144,
+  "rounding_rule": "floor x1/y1 and ceil x2/y2",
+  "schema_version": 1,
+  "source_pdf": "data/raw/docscope/pdfs/urnuuid0d4da810-0b76-4979-a774-0f8bd6fae742.pdf",
+  "source_pdf_sha256": "e02ec57ddb4b6de42345d47f21a92579d38f63bc173884857415bfcc484faefd",
+  "status": "manual_review_required",
+  "use_pdf_cropbox": true
+}

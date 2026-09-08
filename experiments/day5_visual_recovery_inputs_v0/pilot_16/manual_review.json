@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "status": "confirmed",
+  "review_date": "2026-09-07",
+  "reviewer": "user",
+  "question_id": "urnuuid45a0a8e5-e31b-4e74-9663-f27ab82db68f::q5",
+  "checks": {
+    "correct_pages": true,
+    "well_mw3_visible": true,
+    "date_labels_visible": true,
+    "depth_to_water_column_visible": true,
+    "earliest_value_visible": true,
+    "latest_value_visible": true,
+    "crops_complete_enough_for_question": true
+  },
+  "user_observations": {
+    "latest_date": "1991-08-15",
+    "latest_depth_to_water_feet": 17.77,
+    "earliest_date": "1991-06-14",
+    "earliest_depth_to_water_feet": 16.72,
+    "computed_difference_feet": 1.05
+  },
+  "reviewed_crops": [
+    {
+      "evidence_local_id": "e1",
+      "page": 10,
+      "output_png": "e1_page_0010.png",
+      "output_png_sha256": "7f7b484fa9803da017115cc6d64c23c1843bedea0f410f8690273345dbc96188"
+    },
+    {
+      "evidence_local_id": "e2",
+      "page": 11,
+      "output_png": "e2_page_0011.png",
+      "output_png_sha256": "620e102093c0dee07c75914f488731cc89cecc21d6030c9a2ec5b85b1ebe323b"
+    }
+  ],
+  "note": "User confirmed the two visual regions contain the earliest and latest MW3 depth-to-water observations and manually computed a 1.05-foot difference."
+}

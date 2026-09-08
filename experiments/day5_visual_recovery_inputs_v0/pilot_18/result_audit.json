@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "audit_date": "2026-09-07",
+  "question_id": "urnuuid808e4631-8567-495d-a904-0c702dbe784e::q3",
+  "benchmark_answer": "13",
+  "manual_page_review": "confirmed_after_definition_clarification",
+  "document_page_count": 42,
+  "comparison": {
+    "c2_oracle_page_text": {
+      "result_path": "results/day4_reliability_pilot_v0/pilot_18/oracle_page.json",
+      "result_sha256": "9e61c90ad19e9e50c28ce33e23b36f8a030237ffce7beb8adaa9f37c471ee1fe",
+      "evidence_pages": [1, 4, 5, 6, 7, 8],
+      "status": "answerable",
+      "answer": "12 distinct stacked bar charts appear across the document.",
+      "answer_correct": false,
+      "validation_valid": true
+    },
+    "c3_oracle_visual_pages_image_only": {
+      "result_path": "results/day5_visual_recovery_v0/pilot_18/c3_image_only_full_pages.json",
+      "result_sha256": "08522885ad1dd57f27e66a05408eef052b263f300180080474b896069ff2e894",
+      "evidence_pages": [1, 4, 5, 6, 7, 8],
+      "supplied_page_count": 6,
+      "omitted_page_count": 36,
+      "status": "insufficient_evidence",
+      "answer": null,
+      "answer_correct": null,
+      "validation_valid": true,
+      "recorded_estimated_cost_usd": 0.037224,
+      "approved_cap_usd": 0.03,
+      "retries": 0
+    }
+  },
+  "input_design": {
+    "thirteen_individual_bbox_images_rejected": true,
+    "reason": "One image per benchmark chart would leak the answer through input image count.",
+    "six_positive_oracle_pages_used": true
+  },
+  "failure_attribution": "global_query_requires_negative_document_coverage",
+  "interpretation": "The question asks for an exhaustive count across a 42-page document, but both C2 and C3 supplied only the six pages containing annotated positive chart evidence. C3 abstention is appropriate under the evidence-only instruction because 36 omitted pages could contain additional charts. This run does not establish whether the model can visually count the 13 annotated charts.",
+  "human_review_note": "The user initially counted all 18 bar-chart panels, then confirmed 13 stacked-bar panels after grouped and single-series charts were excluded.",
+  "next_gate": "Do not rerun until hard cost-cap enforcement exists and a non-leaking, document-complete visual evidence design is specified."
+}

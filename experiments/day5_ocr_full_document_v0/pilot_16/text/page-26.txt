@@ -1,0 +1,27 @@
+CaN SEQUOIA ANALYTICAL
+
+1900 Bates Avenue e Suite LM e Concord, California 94520
+(415) 686-9600 ® FAX (475) 686-9689
+
+=Kaprealian Engineering, Inc. Client Project ID: Unocal, 1300 Davis St., San Leandro
+/:P.O. Box 996
+
+enicia, CA $4510
+ion: acs G : 1080879-81
+
+QUALITY CONTROL DATA REPORT
+
+SURROGATE
+Method: —EPA8015/8020 EPA8015/8020  EPA8015/8020 EPA8015/8020
+Analyst: RH/JF RH/JF RH/SF RH/JF
+Reporting Units: yg/t pg/L ug/L ug/L
+Date Analyzed: Aug 23, 1991 Aug 23, 1991 Aug 23, 1991 Aug 23, 1991
+Sample #: 108-0879 AB 108-0880 AB 108-0881 AB Blank
+Surrogate
+% Recovery: 80 90 82 98
+SEQUOIA ANALYTICAL % Recovery. Conc of MS - Conc of Sample x 100
+t Dvd { I Spike Conc Added
+So “GL was (om Relative % Difference Conc of MS -Conc of MSD x 100
+‘Julia R Malerstein (Conc of MS + Conc of MSD) /2
+
+“Prpiect Manager 1080878 KEI <3>

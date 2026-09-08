@@ -1,0 +1,60 @@
+{
+  "condition": "real_retrieval",
+  "doc_id": "urnuuid0a20b83c-2af0-4503-9220-c63470cdd214",
+  "evidence_pages": [
+    24,
+    30,
+    56
+  ],
+  "model_input": {
+    "evidence": [
+      {
+        "page": 24,
+        "text": "12 Safe and Supported is underpinned by a Theory of Change explaining how and why we expect change to occur for children, young people and families, including parents and carers, across all priority groups over the next 10 years. The Safe and Supported Theory of Change outlines: • our starting point, which recognises the strengths of children, young people and families, and describes the issue Safe and Supported seeks to address • the key enablers we need in place to facilitate change • what Safe and Supported will do to create change, which is described below in the actions (see page 23) • The change (i.e. outcomes) Safe and Supported aims to achieve, which is described below in the Outcomes Framework (see page 20). It is recognised that First Nations people have a unique starting point and journey under Safe and Supported. This is outlined in the Aboriginal and Torres Strait Islander Theory of Change, which can be found on page 9 of the Aboriginal and Torres Strait Islander First Action Plan. A summary diagram of the Safe and Supported Theory of Change is on page 14. The full Story of Change that underpins Safe and Supported is at Appendix B."
+      },
+      {
+        "page": 30,
+        "text": "18 The high-level Outcomes Framework, on page 20, outlines the outcomes Safe and Supported aims to achieve for all priority groups over its 10-year life span. This includes changes we wish to see in the lives of children, young people and families, including parents and carers (child and family-level outcomes), as well as changes in the design and delivery of the services and systems they use (system-level outcomes). The outcomes were informed by the priorities raised by children, young people, parents and carers, and advocates through various consultations. There are 2 tiers of outcomes – 10-Year Outcomes, with Sub-outcomes under each that show the smaller changes needed to achieve them. Outcomes are grouped by focus area, although it is recognised some may overlap. There are also several outcomes that require collaborating with areas outside the direct remit of Safe and Supported. These are called ‘interface outcomes’ and focus on addressing the social determinants of child safety and wellbeing. It is recognised that there are specific changes Safe and Supported needs to achieve in order to address Focus Area 2 (which relates to Target 12 under Closing the Gap) and realise the rights of First Nations children, young people and families under the United Nations Declaration on the Rights of Indigenous Peoples. These outcomes are outlined in the Aboriginal and Torres Strait Islander Outcomes Framework, which can be found on page 18 of the Aboriginal and Torres Strait Islander First Action Plan. Each activity under this Action Plan will contribute to achieving one or more of the outcomes in the Safe and Supported Outcomes Framework. Activities have been mapped to the relevant 10-Year Outcomes and Sub-outcomes in the What will we do? (Actions and Activities) section starting from page 23. Some of these actions will also contribute to outcomes under the Aboriginal and Torres Strait Islander Outcomes Framework. Measuring progress towards the outcomes will be important over the next 10 years. However, the outcomes are ambitious and deal with complex issues, meaning it may take time to see clear signs of change. The Monitoring and Evaluation Strategy outlines how we will measure success for all outcomes and monitor progress towards the goal of Safe and Supported (see page 47 for details)."
+      },
+      {
+        "page": 56,
+        "text": "44 Governance Different bodies or groups serve different governance purposes. Some perform a high-level oversight role, tracking the progress of Safe and Supported and changing its direction if necessary. Others will be directly involved in the day-to-day management of certain actions. All will have a role in engaging with external groups and keeping key stakeholders involved through ongoing consultation. Governance arrangements are shown on page 46. These aim to streamline interaction and support alignment between the Aboriginal and Torres Strait Islander First Action Plan and this Action Plan. The Terms of Reference, agreed to by all Safe and Supported parties, clarify roles and responsibilities and how the bodies interact. The governance structure will also deliver on Priority Reform 1 of Closing the Gap by supporting genuine partnerships and shared decision-making between Australian governments and Aboriginal and Torres Strait Islander people through a formal agreement. Shared decision-making across the governance structure is outlined in the Aboriginal and Torres Strait Islander First Action Plan. The National Coalition, established by Families Australia, is the non-government collective group that promoted and advised on delivery of the first National Framework, including the need for a stronger governance role for Aboriginal and Torres Strait Islander leaders. This is now realised under Safe and Supported. The Leadership Group is one of the 4 parties to Safe and Supported, along with the National Coalition, the Australian Government and state and territory governments. The key Safe and Supported governance bodies are described below. Community Services Ministers (CSM) and Children and Families Secretaries (CAFS) CSM and CAFS comprise ministerial representatives of statutory child protection and family support portfolios and senior officials from relevant government departments. The Leadership Group will partner with Australian, state and territory governments through these forums to share decision-making for Safe and Supported. These forums will also engage with ministers responsible for other portfolios, including education, health, disability, adult and youth justice, housing, employment, Indigenous affairs and family safety to influence improved social determinants’ outcomes for children and families."
+      }
+    ],
+    "instructions": "Answer the question. When document evidence is supplied, use only that evidence. When no document evidence is supplied, answer only from your existing knowledge and do not claim or imply document support. If the available basis does not adequately support an answer, return status='insufficient_evidence' and answer=null. Cite only supplied 1-based physical PDF page numbers; when no document evidence is supplied, cited_pages must be empty. Return one object matching response_schema.",
+    "question": "Which focus area is described as depending on progress across all the others?",
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "answer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cited_pages": {
+          "items": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "answerable",
+            "insufficient_evidence"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "answer",
+        "cited_pages",
+        "status"
+      ],
+      "type": "object"
+    }
+  },
+  "question_id": "urnuuid0a20b83c-2af0-4503-9220-c63470cdd214::q3",
+  "schema_version": 1
+}

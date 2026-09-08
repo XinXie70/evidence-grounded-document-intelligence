@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "experiment_id": "day3_grounded_reasoning_c3_smoke_v1",
+  "question_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba::q1",
+  "condition": "oracle_region",
+  "intervention": "rotate_oracle_region_clockwise_90_degrees",
+  "planned_requests": 1,
+  "max_retries": 0,
+  "model": "gpt-5.6-terra",
+  "image": {
+    "width_px": 380,
+    "height_px": 94,
+    "detail": "original",
+    "estimated_billable_input_tokens": 44
+  },
+  "pricing_snapshot_id": "openai-gpt-5.6-terra-2026-09-02",
+  "prior_comparable_call_actual_estimated_cost_usd": 0.001532,
+  "conservative_bound": {
+    "input_tokens_including_image": 512,
+    "output_tokens": 512,
+    "total_cost_usd": 0.007424
+  },
+  "execution_cap_usd": 0.01,
+  "user_authorized_cap_usd": 0.01,
+  "paid_execution_approved": true,
+  "execution": {
+    "status": "completed",
+    "request_count": 1,
+    "retries": 0,
+    "input_tokens": 238,
+    "output_tokens": 36,
+    "total_tokens": 274,
+    "actual_estimated_cost_usd": 0.000908,
+    "within_execution_cap": true
+  },
+  "notes": [
+    "Rotation swaps width and height but leaves the 32-pixel patch count unchanged at 36 before the model multiplier.",
+    "This is one request with no automatic retries.",
+    "The user explicitly approved this separate C3-v1 orientation request up to USD 0.01."
+  ]
+}

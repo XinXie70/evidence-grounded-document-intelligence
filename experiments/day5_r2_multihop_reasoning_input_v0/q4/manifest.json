@@ -1,0 +1,87 @@
+{
+  "corpus_path": "experiments/day5_ocr_full_document_v0/pilot_16/page_records_ocr.jsonl",
+  "corpus_sha256": "f9843e37e1029bb21f3be4b73457823beca17b4f7bd566cd8523f50ea044cc32",
+  "evidence_pages": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    18,
+    19,
+    20,
+    12,
+    13,
+    14
+  ],
+  "input_path": "experiments/day5_r2_multihop_reasoning_input_v0/q4/real_retrieval.json",
+  "input_sha256": "674974a494c8cf5ad836ff1030f4d5f6fc19465745928d2d73a85bd3b0898780",
+  "layout_text_pages": [
+    {
+      "page": 3,
+      "path": "experiments/day5_ocr_full_document_v0/pilot_16/text/page-03.txt",
+      "sha256": "230ea7e450eebcc74578940a314e18fef61dfdfe924b3d2b0c4a317877befa20"
+    },
+    {
+      "page": 4,
+      "path": "experiments/day5_ocr_full_document_v0/pilot_16/text/page-04.txt",
+      "sha256": "e4194216b1b7de7e5888fb55e186a3c857b5acb404963e57ae081dd135aa6ddb"
+    },
+    {
+      "page": 5,
+      "path": "experiments/day5_ocr_full_document_v0/pilot_16/text/page-05.txt",
+      "sha256": "701fdd31048fb1eb2a40cbd8ec4a7d07b73f3729801c213f7a7de459e91840e9"
+    },
+    {
+      "page": 6,
+      "path": "experiments/day5_ocr_full_document_v0/pilot_16/text/page-06.txt",
+      "sha256": "68efbac26ec337b52efc658250fb4e5ac3dceb3437838423fce6db9710f8f247"
+    },
+    {
+      "page": 7,
+      "path": "experiments/day5_ocr_full_document_v0/pilot_16/text/page-07.txt",
+      "sha256": "0b2d4495525fb0cc6c668a65121750fb970899504fbee8a9f7481b3ccdc90593"
+    },
+    {
+      "page": 8,
+      "path": "experiments/day5_ocr_full_document_v0/pilot_16/text/page-08.txt",
+      "sha256": "e4414dde39d18abd00faba4aca90eef54d441b5b5b05fb0a84afbfb9f00d38e7"
+    },
+    {
+      "page": 18,
+      "path": "experiments/day5_ocr_full_document_v0/pilot_16/text/page-18.txt",
+      "sha256": "cc08e84be1404ad7198fb1f1b21b5cc571602c380573e984a1b3368708000591"
+    },
+    {
+      "page": 19,
+      "path": "experiments/day5_ocr_full_document_v0/pilot_16/text/page-19.txt",
+      "sha256": "4eb5d7d0765220ea4277b45460525fe47d92503c2133ac5708f64f921643b092"
+    },
+    {
+      "page": 20,
+      "path": "experiments/day5_ocr_full_document_v0/pilot_16/text/page-20.txt",
+      "sha256": "39562cec57c80474ab5f996e08afb06e7053febb2e23c7533b4f7f26aa3a552b"
+    },
+    {
+      "page": 12,
+      "path": "experiments/day5_ocr_full_document_v0/pilot_16/text/page-12.txt",
+      "sha256": "6f0eeb37c4bac7f3d34fe5b656aa6e6a9e0427f5265763d1d221345aef04e75d"
+    },
+    {
+      "page": 13,
+      "path": "experiments/day5_ocr_full_document_v0/pilot_16/text/page-13.txt",
+      "sha256": "73946defa43f808b54b43c8047a734cf9e480facca8e718df53bf0ebe5eda398"
+    },
+    {
+      "page": 14,
+      "path": "experiments/day5_ocr_full_document_v0/pilot_16/text/page-14.txt",
+      "sha256": "f719a3c9d9ac002cc5075f776553ebddab83b59087b82e038c5ba6b3fd62fe0f"
+    }
+  ],
+  "question_id": "urnuuid45a0a8e5-e31b-4e74-9663-f27ab82db68f::q4",
+  "retrieval_evaluation_path": "experiments/day5_r2_multihop_clause_expansion_evaluation_v0.json",
+  "retrieval_evaluation_sha256": "25a29059b9ded015edfbc64b8eddadc6b60eb6fc2cbffaccf20e2459e9fba122",
+  "schema_version": 1,
+  "uses_gold_or_answer_labels": false
+}

@@ -1,0 +1,13 @@
+{
+  "api": "openai_responses",
+  "endpoint_mode": "v1/responses",
+  "experiment_id": "day5_r2_multipage_candidate_v0",
+  "max_output_tokens": 512,
+  "max_retries": 0,
+  "model": "gpt-5.6-terra",
+  "pricing_snapshot_path": "openai_gpt_5_6_terra_pricing_2026-09-02.json",
+  "provider": "openai",
+  "reasoning_effort": "low",
+  "selection_status": "pilot_16 end-to-end R2 candidate with deduplicated query tokens, Top-10 retrieval, and layout-preserved OCR context",
+  "store": false
+}

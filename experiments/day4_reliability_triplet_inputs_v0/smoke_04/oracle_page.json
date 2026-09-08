@@ -1,0 +1,50 @@
+{
+  "condition": "oracle_page",
+  "doc_id": "urnuuid0a20b83c-2af0-4503-9220-c63470cdd214",
+  "evidence_pages": [
+    71
+  ],
+  "model_input": {
+    "evidence": [
+      {
+        "page": 71,
+        "text": "59 Box 3: The priority groups under Safe and Supported Safe and Supported has a particular focus on 4 priority groups where evidence indicates collective effort is needed to reduce their overrepresentation in child protection systems: • Children and families with multiple and complex needs • Aboriginal and Torres Strait Islander children and young people experiencing disadvantage or who are vulnerable • Children and young people and/or parents/carers with disability, experiencing disadvantage or who are vulnerable • Children and young people who have experienced abuse and/or neglect, including children in out-of-home care or leaving care. It is recognised that these groups are not mutually exclusive. See Safe and Supported for more details on the 4 priority groups. 10-Year Outcomes under Safe and Supported • S1(a) – Child and Family Level: Children and young people grow up in safe and nurturing homes, supported by strong families and communities. • S1(b) – System Level: Systems and services prioritise resourcing, strengthening and supporting families to stay safe together. Focus Area 2: Addressing the over-representation of Aboriginal and Torres Strait Islander children in child protection systems. All Australian governments have committed to working together, in partnership with Aboriginal and Torres Strait Islander peoples, to reduce the over representation of Aboriginal and Torres Strait Islander children and young people in child protection systems under Target 12 of the National Agreement on Closing the Gap (National Agreement). This includes a commitment to progressive systems transformation that has Aboriginal and Torres Strait Islander self-determination at its centre. This goal is the primary objective of Focus Area 2. The unique story of change for Aboriginal and Torres Strait Islander peoples under Safe and Supported, which includes explaining how we aim to achieve this goal, can be found in the Aboriginal and Torres Strait Islander Theory of Change. The Aboriginal and Torres Strait Islander Outcomes Framework outlines the key changes Aboriginal and Torres Strait Islander people, communities and organisations wish to see Safe and Supported achieve. It is important to note that the achievement of Focus Area 2 will require efforts across the other 3 focus areas."
+      }
+    ],
+    "instructions": "Answer the question. When document evidence is supplied, use only that evidence. When no document evidence is supplied, answer only from your existing knowledge and do not claim or imply document support. If the available basis does not adequately support an answer, return status='insufficient_evidence' and answer=null. Cite only supplied 1-based physical PDF page numbers; when no document evidence is supplied, cited_pages must be empty. Return one object matching response_schema.",
+    "question": "Which focus area is described as depending on progress across all the others?",
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "answer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cited_pages": {
+          "items": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "answerable",
+            "insufficient_evidence"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "answer",
+        "cited_pages",
+        "status"
+      ],
+      "type": "object"
+    }
+  },
+  "question_id": "urnuuid0a20b83c-2af0-4503-9220-c63470cdd214::q3",
+  "schema_version": 1
+}

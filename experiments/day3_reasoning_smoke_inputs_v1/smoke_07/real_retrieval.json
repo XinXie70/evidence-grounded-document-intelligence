@@ -1,0 +1,60 @@
+{
+  "condition": "real_retrieval",
+  "doc_id": "urnuuid2ec9537c-589c-47f0-81ae-8e02e2d85414",
+  "evidence_pages": [
+    31,
+    17,
+    2
+  ],
+  "model_input": {
+    "evidence": [
+      {
+        "page": 31,
+        "text": "Cost of deposits & Yield on advances Cost of Deposits and Yield on Advances 11.00 10.85 11.32 12.82 13.46 13.04 12.47 13.56 8.37 13.49 13.43 13.28 31 6.08 5.75 5.95 7.23 7.98 7.73 6.94 8.11 8.44 8.24 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 Sep-14 Spread between cost of deposits and yield on advances of our bank maintained in the last 10 years"
+      },
+      {
+        "page": 17,
+        "text": "A well experienced and strong Board (1/2) Name Profile Mr. S. Balasubramanian, Chairman (Non-Executive) He holds a Master degree in Mathematics, CAIIB and PGDFM and h as 40 years of experience in the banking industry. He joined City Union Bank in 1971 as a pr obationary officer and was associated with the Bank in various capacities. In 2005 he wa s appointed as the Chairman & CEO of our Bank and thereafter, in 2009 he was appointed as the Managing Director and CEO. From May 2011, appointed as Non-Executive Chairman of the Bank. Dr. N. Kamakodi, MD & CEO He is a Bachelor of Technology, MBA, CAIIB and Ph.D. in e-Bank ing. He joined the Bank as DGM in the year 2003 was elevated to the post of GM in 2005 and la ter as Executive Director in 2006. He has excellent academic background and also acquire d hands on experience on the overall operations of the Bank. He was reappointed as MD & CEO of the Bank for a further period of three years up to April 2017. He is a well known Industrialist in South India . He is the Chairman & Managing Director of 17 Mr. R.G. Chandramogan, Director He is a well known Industrialist in South India . He is the Chairman & Managing Director of Hatsun Agro Product Limited which is the largest procurer of milk in the Private Sector in the country. He is a member in Screening Cum Implementation Group – Secondary Agriculture and Working Group on Animal Husbandary & Dairying, both constit uted by Planning Commission, Government of India. He is also a member in National Agricult ure constituted by Confederation of Indian Industry. Mr. T.K. Ramkumar, Director He is a graduate in Commerce and Law specialized in Banking la w, Company law and Intellectual Property Rights. He is one of the leading Lawye rs in Chennai. Justice (Retd.) S.R. Singaravelu, Director He is a former Judge of High Court of Madras and High Court of Orissa. He has vast experience of 36 years in the Judiciary where he has held various positions."
+      },
+      {
+        "page": 2,
+        "text": "Disclaimer No representation or warranty, express or implied is made as to, and no reliance should be placed on the fairness, accurac y, completeness or correctness of such information or opinions contained herein. The information contained in this prese ntation is only current as of its date. Certain statements made in thi s presentation may not be based on historical information or facts and may be “forward looking statements”, including those relating to the bank’s general business plan’s and strategy, its future financial condition and growth prospects and future developments in the industry and regulatory environment. A ctual results may differ materially from these forward -looking statements due to a number of factors, including future changes or 2 results may differ materially from these forward -looking statements due to a number of factors, including future changes or developments in the bank’s business, its competitive environment and political, economic, legal and social conditions in India. This communication is for general information purpose only , without regard to specific objectives, financial situati ons and needs of any particular person. This presentation does not c onstitute an offer or invitation to purchase or subscribe fo r any shares in the bank and neither any part of it shall form the bas is of or be relied upon in connection with any contract or commitment whatsoever. The bank may alter, modify or otherw ise change in any manner the content of this presentation, without obligation to notify any person of such revisions or changes. This presentation should not be copied and/or disseminated in any manner."
+      }
+    ],
+    "instructions": "Answer the question using only the supplied document evidence. If the evidence does not adequately support an answer, return status='insufficient_evidence' and answer=null. Cite only supplied 1-based physical PDF page numbers. Return one object matching response_schema.",
+    "question": "What is the spread, in percentage points, between the yield on advances and the cost of deposits for Sep-14?",
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "answer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cited_pages": {
+          "items": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "answerable",
+            "insufficient_evidence"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "answer",
+        "cited_pages",
+        "status"
+      ],
+      "type": "object"
+    }
+  },
+  "question_id": "urnuuid2ec9537c-589c-47f0-81ae-8e02e2d85414::q2",
+  "schema_version": 1
+}

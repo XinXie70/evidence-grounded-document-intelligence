@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "experiment_id": "day6_r3_short_global_phrase_fix_v1",
+  "date": "2026-09-08",
+  "split": "development_tune",
+  "observed_failure_question_id": "urnuuidaea65aa9-007b-4752-98e5-0374bbdf4023::q3",
+  "observed_phrase": "across the document",
+  "before": {
+    "routing_policy": "r0-r3-v0",
+    "route": "r1_local_visual",
+    "reason": "question_explicitly_mentions_visual_structure"
+  },
+  "after": {
+    "routing_policy": "r0-r3-v1",
+    "route": "r3_document_global",
+    "reason": "question_requires_document_complete_coverage"
+  },
+  "new_signal": {
+    "regular_expression": "\\bacross\\s+the\\s+document\\b",
+    "case_sensitive": false,
+    "uses_gold_or_answer_labels": false,
+    "priority": "document_global_over_all_local_or_scanned_routes"
+  },
+  "change_control": {
+    "v0_file_modified": false,
+    "new_versioned_module": "src/egdi/visual_routing_v1.py",
+    "frozen_r2_v2_artifacts_must_remain_checksum_identical": true
+  },
+  "development_tune_population_regression": {
+    "question_count": 256,
+    "changed_question_count": 3,
+    "unexpected_changed_question_count": 0,
+    "before_route_counts": {
+      "r0_text": 178,
+      "r1_local_visual": 64,
+      "r2_scanned_document": 9,
+      "r3_document_global": 5
+    },
+    "after_route_counts": {
+      "r0_text": 176,
+      "r1_local_visual": 63,
+      "r2_scanned_document": 9,
+      "r3_document_global": 8
+    },
+    "changed_questions": [
+      {
+        "question_id": "urnuuid881f7d70-7e7b-4b1a-90a9-3d837a1a8299::q2",
+        "before": "r0_text",
+        "after": "r3_document_global",
+        "manual_semantic_check": "requires counting QR-code competition divider sections across the document"
+      },
+      {
+        "question_id": "urnuuidaea65aa9-007b-4752-98e5-0374bbdf4023::q3",
+        "before": "r1_local_visual",
+        "after": "r3_document_global",
+        "manual_semantic_check": "requires counting every location displaying a total-assets figure across the document"
+      },
+      {
+        "question_id": "urnuuidb98e815e-2094-448a-bd43-d2e0ca7a8e25::q1",
+        "before": "r0_text",
+        "after": "r3_document_global",
+        "manual_semantic_check": "requires counting named personal case studies across the document"
+      }
+    ]
+  },
+  "expected_reliability_behavior": "Use a separately frozen document-complete method or abstain; do not claim an exhaustive answer from local Top-K pages.",
+  "api_cost_usd": 0.0,
+  "data_boundary": {
+    "calibration_labels_used": false,
+    "locked_test_accessed": false
+  }
+}

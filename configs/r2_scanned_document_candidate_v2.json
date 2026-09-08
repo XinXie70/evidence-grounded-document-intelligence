@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "status": "tune_candidate",
+  "route": "r2_scanned_document",
+  "trigger": "document_has_zero_native_text_pages",
+  "ocr": {
+    "tool": "tesseract",
+    "version": "5.5.3",
+    "render_dpi": 200,
+    "language": "eng",
+    "oem": 1,
+    "psm": 3,
+    "orientation_recovery": {
+      "trigger_metric": "original_orientation_mean_word_confidence",
+      "trigger_operator": "less_than",
+      "trigger_threshold": 40.0,
+      "retry_rotations_degrees_clockwise": [
+        90,
+        180,
+        270
+      ],
+      "selection_metric": "recognized_word_confidence_mass"
+    }
+  },
+  "retrieval": {
+    "base_method": "page_bm25_anchor_centered_window_sum",
+    "k1": 1.2,
+    "b": 0.75,
+    "query_token_policy": "deduplicate_preserve_order",
+    "seed_top_k": 10,
+    "window_width_pages": 3,
+    "base_window_count": 3,
+    "explicit_multihop": {
+      "clause_separator": "—",
+      "maximum_supplemental_windows": 1,
+      "supplement_overlap_policy": "fully_non_overlapping_with_selected_pages"
+    },
+    "minimum_reasoning_pages": 9,
+    "maximum_reasoning_pages": 12
+  },
+  "reasoning_context": {
+    "representation": "orientation_recovered_layout_preserved_ocr_text"
+  },
+  "evaluation_scope": {
+    "allowed_split": "development_tune",
+    "locked_test_access": false
+  },
+  "uses_gold_or_answer_labels": false,
+  "observed_tune_results": {
+    "question_count": 9,
+    "any_evidence_recall": 1.0,
+    "complete_evidence_recall": 1.0,
+    "macro_page_recall": 1.0,
+    "mean_reasoning_pages": 9.333333333333334,
+    "maximum_reasoning_pages": 12,
+    "multihop_q4_grounded_answer_correct": true
+  },
+  "selection_basis": [
+    "orientation recovery moved the upside-down bird evidence page from outside Top-10 to rank 1 without changing the other eight question rankings",
+    "three centered windows matched adjacent expansion at 8 of 9 complete-evidence questions with fewer pages",
+    "one label-free explicit-clause supplemental window recovered all three groundwater q4 evidence pages",
+    "the unchanged reasoning model then answered Davis Street and cited exactly pages 12, 13, and 19"
+  ],
+  "limitation": "All thresholds and retrieval choices were selected on nine development-tune R2 questions and require unchanged held-out validation."
+}

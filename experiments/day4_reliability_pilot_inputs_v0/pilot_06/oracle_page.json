@@ -1,0 +1,50 @@
+{
+  "condition": "oracle_page",
+  "doc_id": "urnuuidc94c212d-21aa-4dbe-a75f-6d8888002f6a",
+  "evidence_pages": [
+    30
+  ],
+  "model_input": {
+    "evidence": [
+      {
+        "page": 30,
+        "text": "7 - Facilities 30 Closure of Victoria Avenue The Transport and Technical Services department has typically been asked for permission to close Victoria Avenue five times a year for events in recent years. Nearly nine in ten (87%) adults felt that this current number of closures was either ‘quite’ or ‘very’ acceptable, one in ten (10%) thought it was ‘not very’ acceptable, and a small proportion (3%) that it was ‘not at all’ acceptable. In terms of whether people would find additional cl osures of Victoria Avenue acceptable, around four -fifths (84%) felt that closing it for one additional day each year for events would be either ‘very’ or ‘quite’ acceptable, and seven in ten (71%) felt that closing it for two additional days each year for events would be acceptable at some level (see Table 7.3 for full results). Table 7.3 Acceptability of road closures of Victoria Avenue for events Very acceptable Quite acceptable Not very acceptable Not at all acceptable Total How acceptable are the current numbers of road closures of Victoria Avenue for events? 34 53 10 3 100 How acceptable would closing Victoria Avenue for 1 additional day each year for events be? 33 51 11 5 100 How acceptable would closing Victoria Avenue for 2 additional days each year for events be? 28 43 19 10 100 Fort Regent Over two-fifths of adults (44%) had not visited Fort Regent in the previous 12 months. A quarter (25%) had visited just once or twice in the preceding 12 months, and around one in six (15%) visited the Fort monthly or more often over the previous year. Figure 7.2 “Approximately how often have you been to Fort Regent in the last 12 months?” 55% 20% 44% 23% 30% 25% 12% 24% 15% 11% 5% 9%15%10% Adults living in a household with no dependent children Adults living in a household with dependent children All adults Weekly or more often Monthly Several times Once or twice Not at all in the last 12 months"
+      }
+    ],
+    "instructions": "Answer the question. When document evidence is supplied, use only that evidence. When no document evidence is supplied, answer only from your existing knowledge and do not claim or imply document support. If the available basis does not adequately support an answer, return status='insufficient_evidence' and answer=null. Cite only supplied 1-based physical PDF page numbers; when no document evidence is supplied, cited_pages must be empty. Return one object matching response_schema.",
+    "question": "In the bar chart showing how frequently residents visited a leisure fortress/venue in the last 12 months, what percentage of adults living in households with dependent children had not visited at all?",
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "answer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cited_pages": {
+          "items": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "answerable",
+            "insufficient_evidence"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "answer",
+        "cited_pages",
+        "status"
+      ],
+      "type": "object"
+    }
+  },
+  "question_id": "urnuuidc94c212d-21aa-4dbe-a75f-6d8888002f6a::q2",
+  "schema_version": 1
+}

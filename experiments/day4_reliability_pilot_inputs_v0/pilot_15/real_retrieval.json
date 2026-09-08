@@ -1,0 +1,60 @@
+{
+  "condition": "real_retrieval",
+  "doc_id": "urnuuid469c17b6-9e4f-4706-bc89-0e1814820dae",
+  "evidence_pages": [
+    46,
+    54,
+    52
+  ],
+  "model_input": {
+    "evidence": [
+      {
+        "page": 46,
+        "text": "KV-700/1000/3000/5000 CPU Direct GP-Pro EX Device/PLC Connection Manual 46 6 Supported Device The range of supported device addresses is shown in the table below. Please note that the actual supported range for devices varies depending on the external device that is used. Please check the actual range in the external device manual. 6.1 KV-700 Series : This address can be specified as system data area. Device Bit Address Word Address 32 bits Remarks Input Relay 00000 - 59915 000 - 599Output Relay Internal Auxiliary Relay Control Relay CR0000 - CR3915 CR00 - CR39 Timer (Contact) T000 - T511 ------ -Counter (Contact) C000 - C511 ------ High-speed Counter Comparator (Contact) CTC0 - CTC3 ------ *1 *1 Write disable Timer (Setting Value) ------ TS000 - TS511 *2 *2 32-bit device Counter (Setting Value) ------ CS000 - CS511 *2 Timer (Current Value) ------ TC000 - TC511 *2 Counter (Current Value) ------ CC000 - CC511 *2 Data Memory ------ DM00000 - DM39999 Temporary Data Memory ------ TM000 - TM511 Control Memory ------ CM0000 - CM3999 Digital Trimmer ------ TRM0 - TRM7 *2 High-speed Counter (Current Value) ------ CTH0 - CTH1 *2 High-speed Counter Comparator (Setting Value) ------ CTC0 - CTC3 *2 • When connecting KV-700 Series, use settings within the device address ranges above. • If you try to access device a ddresses supported only by the KV-1000 Series devices, the following error messages display: \"Error has been responded for device read command (Error Code(02)[(0x02)]\" or \"Error has been responded for device write command (Error Code(02)[(0x02)]\"."
+      },
+      {
+        "page": 54,
+        "text": "KV-700/1000/3000/5000 CPU Direct GP-Pro EX Device/PLC Connection Manual 54 7.3 KV-3000/5000 Series Device Device Name Device Code (HEX) Address Code Input Relay R 0080 Word AddressOutput Relay Internal Auxiliary Relay Link Relay B 008B Word Address Internal Auxiliary Relay MR 0082 Word Address Latch Relay LR 0084 Word Address Control Relay CR 008A Word Address Work Relay VB 008C Word Address Timer (Setting Value) TS 0062 Double Word Address Counter (Setting Value) CS 0063 Double Word Address Timer (Current Value) TC 0060 Double Word Address Counter (Current Value) CC 0061 Double Word Address Data Memory DM 0000 Word Address Extension Data Memory EM 0010 Word Address File Register Current Bank FM 0011 Word Address Serial Number System ZF 0012 Word Address Temporary Data Memory TM 0001 Word Address Control Memory CM 0002 Word Address Link Register W 0013 Word Address Work Memory VM 0014 Word Address Index Register Z 0067 Double Word Address Digital Trimmer TRM 0064 Double Word Address High-speed Counter (Current Value) CTH 0065 Double Word Address High-speed Counter Comparator (Setting Value) CTC 0066 Double Word Address"
+      },
+      {
+        "page": 52,
+        "text": "KV-700/1000/3000/5000 CPU Direct GP-Pro EX Device/PLC Connection Manual 52 7 Device Code and Address Code Use device code and address code if you select \"Device Type & Address\" for the address type in Data displays. 7.1 KV-700 Series Device Device Name Device Code (HEX) Address Code Input Relay ------ 0080 Word AddressOutput Relay Internal Auxiliary Relay Control Relay CR 008A Word Address Timer (Setting Value) TS 0062 Double Word Address Counter (Setting Value) CS 0063 Double Word Address Timer (Current Value) TC 0060 Double Word Address Counter (Current Value) CC 0061 Double Word Address Data Memory DM 0000 Word Address Temporary Data Memory TM 0001 Word Address Control Memory CM 0002 Word Address Digital Trimmer TRM 0064 Double Word Address High-speed Counter (Current Value) CTH 0065 Double Word Address High-speed Counter Comparator (Setting Value) CTC 0066 Double Word Address"
+      }
+    ],
+    "instructions": "Answer the question. When document evidence is supplied, use only that evidence. When no document evidence is supplied, answer only from your existing knowledge and do not claim or imply document support. If the available basis does not adequately support an answer, return status='insufficient_evidence' and answer=null. Cite only supplied 1-based physical PDF page numbers; when no document evidence is supplied, cited_pages must be empty. Return one object matching response_schema.",
+    "question": "What is the word address range for the device type called 'Work Relay' that has a bit address range?",
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "answer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cited_pages": {
+          "items": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "answerable",
+            "insufficient_evidence"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "answer",
+        "cited_pages",
+        "status"
+      ],
+      "type": "object"
+    }
+  },
+  "question_id": "urnuuid469c17b6-9e4f-4706-bc89-0e1814820dae::q5",
+  "schema_version": 1
+}

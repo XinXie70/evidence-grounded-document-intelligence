@@ -1,0 +1,13 @@
+{
+  "canonical_request_sha256": "686bd5890f6d8eadce3b7e9b44989294051a69c0493ff1c9350bd1a8c71518da",
+  "closed_book_input_path": "experiments/day4_reliability_triplet_inputs_v0/smoke_10/closed_book.json",
+  "closed_book_input_sha256": "4129fd082918a55c8fcb5c9af617497c7dbaada800d01dc390bdefbadcfd47e0",
+  "decision": "Execute the empty-context request once and reuse its immutable response for C0 and C2 evaluation. Do not issue a duplicate paid request.",
+  "incremental_oracle_page_call_count": 0,
+  "model_visible_requests_byte_identical": true,
+  "oracle_page_input_path": "experiments/day4_reliability_triplet_inputs_v0/smoke_10/oracle_page.json",
+  "oracle_page_input_sha256": "b9b247121b8d4d37dbc0cb423c0744ee10cc5e5da6e6add8df801ab1f1c1e83b",
+  "question_id": "urnuuid425f7a17-aa57-4cca-b56e-612fe270751d::q6",
+  "reason": "The benchmark marks the question unanswerable, so Oracle Page has empty evidence. Condition metadata is outside model_input and is not sent to the model.",
+  "schema_version": 1
+}

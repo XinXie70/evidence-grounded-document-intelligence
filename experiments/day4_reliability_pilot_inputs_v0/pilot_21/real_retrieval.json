@@ -1,0 +1,60 @@
+{
+  "condition": "real_retrieval",
+  "doc_id": "urnuuid0d4da810-0b76-4979-a774-0f8bd6fae742",
+  "evidence_pages": [
+    35,
+    33,
+    36
+  ],
+  "model_input": {
+    "evidence": [
+      {
+        "page": 35,
+        "text": "33 Montana Solar House — An Introduction to Solar Design With direct-gain systems, the thermal storage mass tends to be thinner and more widely distributed in the living space than with other passive systems. This allows an even distri- bution of heat throughout the room or rooms but requires some thought about how the living space will be used. Do not cover a significant amount of the thermal storage area with carpet or other materials that reduce storage capacity. Select and arrange furnishings carefully so they do not interfere with solar collection, storage, and distribution. This house in Longmont, Colorado, uses a Trombé wall and direct-gain The Challenge of Movable Insulation “Dramatic improvement in solar heat gain occurs with the addition of R-3, movable, night insulation. Note that there are several practical and operational problems associated with building a movable insulation system that will achieve an R-3 level of insulation. Research has shown that it is very difficult to get an adequate seal around the edges of a movable insulation panel or curtain. Unwanted air leaks and circulation will drastically reduce the effective insulation value of the system. Data on very thick panels and curtains (R-12 to R-20) show effective insulation values of only R-2 to R-5. It is difficult to build a movable insulation system having an effec- tive insulating value of more than R-3 to R-5. During a cold night, moist air from the living space that leaks into the cavity between the window and the insulating curtain will condense and sometimes freeze. This water may cause the window sill or the insulation to deteriorate. The movable insula- tion may not move if it is frozen along its edges. The designer should consider the effects of condensation. If an (inside) movable insulation system is in place during a sunny day, the space between the insulation and the glazing will reach high temperatures. These high temperatures may damage the insulation and the glazing sealants, and may even cause the glazing to break. The designer should account for these situations.” —Montana Solar Data Manual 1985 Edition"
+      },
+      {
+        "page": 33,
+        "text": "31 Montana Solar House — An Introduction to Solar Design Passive solar presents many design chal- lenges. The problems of how to insulate windows at night night, how to integrate large glass areas in designs that are attractive- -a major portion of the housing market--and how to inexpensively incorporate thermal mass must be addressed if passive solar design is to be widely used. A successful passive solar design will reduce energy costs and provide occupant comfort. These objec- tives require a thorough understanding of passive solar design principles and careful design. Direct-Gain Systems Direct-gain systems allow sunlight into the living area of a home through large sections of south- facing glass. Direct gain can be the most cost-effective of all passive designs because the heat produced by sunlight hitting the walls, floors, and other objects does not have to be transferred to another part of the house. However, the surface area of south-facing windows and the capacity of internal thermal storage “The crux of the passive solar design issue is to select a passive solar collector glazing system that will provide a net gain of heat and to provide adequate heat storage so that the maximum inside temperatures during clear days are not uncomfortable. Passive solar heating systems will need special glazing or movable insulation (to control heat loss) if they are to achieve efficient performance in midwinter. If large areas of glass are used, the heat storage system must be carefully designed and ad- equately sized to prevent overheating. The same glass that collects heat efficiently during the day will lose large amounts of heat during the night in cold weather. During a sunny, winter day in Montana, a south-facing window will gain heat for about five hours and lose heat for the other 19 hours! On a cloudy day the window will lose heat for 24 hours a day. The designer must weigh the solar gains against the added heat losses to arrive at a sensible passive solar design that will give a net gain of energy.” North Carolina Solar Center Illustration"
+      },
+      {
+        "page": 36,
+        "text": "34 Montana Solar House — An Introduction to Solar Design Indirect-Gain Systems Some problems of direct-gain systems often can be solved by using indirect methods of solar heating. As the name implies, indirect-gain systems do not admit sunlight directly into the living area. Instead, south-facing glass is placed in front of a massive wall that absorbs, stores, and transfers heat into the house. This approach has significant aesthetic ramifications and will be difficult to adapt to traditional house designs. One of the most commonly used indirect gain systems is the Trombé wall named after its inventor, French scientist Felix Trombé. A Trombé wall usually is built of solid ma- sonry—concrete, solid block, or brick—and is painted black or covered with a selective coating on the outside to absorb and transfer much of the heat to the living quarters. A sheet of glass or plastic covers the outside of the wall to trap additional heat. Heat is distributed from the Trombé wall to the house in two ways. During the day, air trapped between the wall and the glass gathers heat and enters the room through vents at the top. Cool household air is drawn between the wall and glass through floor-level vents, where the cycle repeats itself as long as sunlight strikes the wall. Heat also is gradually conducted through the Trombé wall and reaches the living area near the end of the day. In a 12-inch wall, heat travels from between the wall and glass to the living area in about eight hours. This cycle plays nicely to your advantage. Sunlight striking a living room Trombé wall between 10 A.M. and 3 P.M. is released inside as heat between 6 P.M. and 11 P.M. In a bed- room, you probably would prefer a 16-inch wall with an 11-hour heat-release cycle. To prevent nighttime heat loss, you must close the vents along the Trombé wall after sunset, usually by hand. Solar designers have found that people often forget about the vents, wasting the heat that is stored along the wall. You can avoid this problem by build- ing the Trombé wall without vents as long as the air space between the glass and masonry is vented or shaded in the summer. If daytime heat is needed in the adjacent room, win- dows incorporated into the wall will help heat the room. An added benefit of a sealed Trombé wall is that household dust cannot get into the space between the wall and glass. Moveable insulation or double glazing also is advisable for Trombé walls. Isolated-Gain Systems Unlike direct-gain and indirect-gain systems, isolated-gain passive designs capture solar radiation in an area thermally separated from the living space. Isolated-gain systems allow for the collection and storage components to function somewhat independently of the house itself, while heat can be drawn from them as needed. A sunspace or solarium is the most common type of isolated-gain system. The sunspace has much greater flexibility in"
+      }
+    ],
+    "instructions": "Answer the question. When document evidence is supplied, use only that evidence. When no document evidence is supplied, answer only from your existing knowledge and do not claim or imply document support. If the available basis does not adequately support an answer, return status='insufficient_evidence' and answer=null. Cite only supplied 1-based physical PDF page numbers; when no document evidence is supplied, cited_pages must be empty. Return one object matching response_schema.",
+    "question": "What specific R-value does the document recommend for movable insulation systems used with Trombé walls?",
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "answer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cited_pages": {
+          "items": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "answerable",
+            "insufficient_evidence"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "answer",
+        "cited_pages",
+        "status"
+      ],
+      "type": "object"
+    }
+  },
+  "question_id": "urnuuid0d4da810-0b76-4979-a774-0f8bd6fae742::q3",
+  "schema_version": 1
+}

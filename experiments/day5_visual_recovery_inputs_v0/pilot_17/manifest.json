@@ -1,0 +1,192 @@
+{
+  "benchmark_path": "data/raw/docscope/benchmark.json",
+  "benchmark_sha256": "ad07c6dfc43e5275ae92b894bf69f151c3dd9467ed79f5b12df904438c5ecb8e",
+  "coordinate_space": "cropbox_pixels_at_144_dpi_top_left_origin",
+  "crops": [
+    {
+      "bbox": [
+        58,
+        332,
+        284,
+        355
+      ],
+      "doc_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba",
+      "element_type": "paragraph_title",
+      "evidence_local_id": "e1",
+      "output_height_pixels": 23,
+      "output_png": "e1_page_0012.png",
+      "output_png_sha256": "feba8545d4c075c5a98fae88a5ba1f22bd0f975be7c08037f796261e6413171c",
+      "text_scope": "image_only",
+      "output_width_pixels": 226,
+      "page": 12,
+      "pixel_crop": [
+        58,
+        332,
+        284,
+        355
+      ],
+      "question": "How many specific items are listed in the section describing enhancements that are still being worked on?",
+      "question_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba::q3"
+    },
+    {
+      "bbox": [
+        57,
+        365,
+        676,
+        477
+      ],
+      "doc_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba",
+      "element_type": "text",
+      "evidence_local_id": "e2",
+      "output_height_pixels": 112,
+      "output_png": "e2_page_0012.png",
+      "output_png_sha256": "c7938856fe1b226aef9b06fe67e70600302fa4b200b50d1b9bcabfe1205032dd",
+      "text_scope": "image_only",
+      "output_width_pixels": 619,
+      "page": 12,
+      "pixel_crop": [
+        57,
+        365,
+        676,
+        477
+      ],
+      "question": "How many specific items are listed in the section describing enhancements that are still being worked on?",
+      "question_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba::q3"
+    },
+    {
+      "bbox": [
+        96,
+        486,
+        650,
+        509
+      ],
+      "doc_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba",
+      "element_type": "text",
+      "evidence_local_id": "e3",
+      "output_height_pixels": 23,
+      "output_png": "e3_page_0012.png",
+      "output_png_sha256": "4460c486562b41862625f305076c932865ac53fd8165bbb8d090c0808af16f03",
+      "text_scope": "image_only",
+      "output_width_pixels": 554,
+      "page": 12,
+      "pixel_crop": [
+        96,
+        486,
+        650,
+        509
+      ],
+      "question": "How many specific items are listed in the section describing enhancements that are still being worked on?",
+      "question_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba::q3"
+    },
+    {
+      "bbox": [
+        96,
+        512,
+        575,
+        533
+      ],
+      "doc_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba",
+      "element_type": "text",
+      "evidence_local_id": "e4",
+      "output_height_pixels": 21,
+      "output_png": "e4_page_0012.png",
+      "output_png_sha256": "63321618ea2561816e2d4032bdb6d8948fec461c5c05e110f7d49a51660a154d",
+      "text_scope": "image_only",
+      "output_width_pixels": 479,
+      "page": 12,
+      "pixel_crop": [
+        96,
+        512,
+        575,
+        533
+      ],
+      "question": "How many specific items are listed in the section describing enhancements that are still being worked on?",
+      "question_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba::q3"
+    },
+    {
+      "bbox": [
+        96,
+        536,
+        490,
+        557
+      ],
+      "doc_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba",
+      "element_type": "text",
+      "evidence_local_id": "e5",
+      "output_height_pixels": 21,
+      "output_png": "e5_page_0012.png",
+      "output_png_sha256": "e934c3fc1caf4d7074adf7c4c1e72aacb7157aa698ce392ce610705e4741e4b3",
+      "text_scope": "image_only",
+      "output_width_pixels": 394,
+      "page": 12,
+      "pixel_crop": [
+        96,
+        536,
+        490,
+        557
+      ],
+      "question": "How many specific items are listed in the section describing enhancements that are still being worked on?",
+      "question_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba::q3"
+    },
+    {
+      "bbox": [
+        96,
+        561,
+        422,
+        581
+      ],
+      "doc_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba",
+      "element_type": "text",
+      "evidence_local_id": "e6",
+      "output_height_pixels": 20,
+      "output_png": "e6_page_0012.png",
+      "output_png_sha256": "023f8c9064740ade8cbff95d951543f2aca946bd4b90601fb6511286c52b6391",
+      "text_scope": "image_only",
+      "output_width_pixels": 326,
+      "page": 12,
+      "pixel_crop": [
+        96,
+        561,
+        422,
+        581
+      ],
+      "question": "How many specific items are listed in the section describing enhancements that are still being worked on?",
+      "question_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba::q3"
+    },
+    {
+      "bbox": [
+        97,
+        585,
+        220,
+        605
+      ],
+      "doc_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba",
+      "element_type": "text",
+      "evidence_local_id": "e7",
+      "output_height_pixels": 20,
+      "output_png": "e7_page_0012.png",
+      "output_png_sha256": "3f3a8ac68498d0b1de9f49e68e326b5e03cc616dd3f9ec8b9df78ca300494aeb",
+      "text_scope": "image_only",
+      "output_width_pixels": 123,
+      "page": 12,
+      "pixel_crop": [
+        97,
+        585,
+        220,
+        605
+      ],
+      "question": "How many specific items are listed in the section describing enhancements that are still being worked on?",
+      "question_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba::q3"
+    }
+  ],
+  "doc_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba",
+  "question": "How many specific items are listed in the section describing enhancements that are still being worked on?",
+  "question_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba::q3",
+  "render_dpi": 144,
+  "rounding_rule": "floor x1/y1 and ceil x2/y2",
+  "schema_version": 1,
+  "source_pdf": "data/raw/docscope/pdfs/urnuuida3024dbb-48a6-4849-bb2f-910722e335ba.pdf",
+  "source_pdf_sha256": "4aae9e431f682a938ee3d9af42447cf1b845cb899fa638c5bca43d2093bbcd09",
+  "status": "manual_review_required",
+  "use_pdf_cropbox": true
+}

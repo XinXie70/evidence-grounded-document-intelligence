@@ -1,0 +1,18 @@
+[
+  {
+    "answer": "18 years",
+    "answer_correct": true,
+    "benchmark_is_answerable": true,
+    "evidence_sufficient": true,
+    "grounded_correct": true,
+    "question_id": "smoke_01::real_retrieval",
+    "response_status": "answerable"
+  },
+  {
+    "answer": null,
+    "benchmark_is_answerable": true,
+    "evidence_sufficient": false,
+    "question_id": "smoke_03::real_retrieval",
+    "response_status": "insufficient_evidence"
+  }
+]

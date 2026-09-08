@@ -1,0 +1,55 @@
+{
+  "condition": "oracle_page",
+  "doc_id": "urnuuidd0ba82b9-f6c5-4b9a-a1a7-abcbffc5aeae",
+  "evidence_pages": [
+    16,
+    34
+  ],
+  "model_input": {
+    "evidence": [
+      {
+        "page": 16,
+        "text": "- 16 - Candidate No. Name (Date of birth) Career summary, positions and responsibilities in the Company, and significant concurrent positions outside the Company Number of the Company’s shares owned 10 Nobumichi Hattori (December 25, 1957) New election Outside Independent Number of years in office at the conclusion of this general meeting of shareholders: - years Attendance at Board of Directors meetings: -/- Apr. 1981 Joined Nissan Motor Co., Ltd. – shares June 1989 Joined New York Headquarters of Goldman Sachs & Co. Nov. 1998 Managing Director of Goldman Sachs (Japan) Ltd. (now Goldman Sachs Japan Co., Ltd.) Oct. 2003 Visiting Associate Professor of School of International Corporate Strategy of Hitotsubashi University June 2005 Outside Director of Miraka Holdings, Inc. (now H.U. Group Holdings, Inc.) Nov. 2005 Outside Director of FAST RETAILING CO., LTD. (current post) Oct. 2006 Visiting Professor of School of International Corporate Strategy of Hitotsubashi University Apr. 2009 Visiting Professor of Graduate School of Finance, Accounting and Law (now Graduate School of Business and Finance) of Waseda University (current post) Mar. 2015 Outside Corporate Auditor of Frontier Management Inc. June 2015 Outside Director of Hakuhodo DY Holdings Inc. (current post) July 2016 Special Guest Professor of Graduate School of Business Administration of Keio University Apr. 2017 Guest Professor of Graduate School of Business Administration of Keio University (current post) [Reasons for nomination and overview of expected roles] Having gained experience in the supervision of the M&A advisory business at a major U.S. investment bank, Mr. Hattori is currently engaged in teaching M&A, corporate valuation, and other concepts at a graduate institute of education, and is well-versed in corporate valuation in the capital markets. In addition, his experience as an outside Director at other listed companies has given him a deep knowledge of corporate management in the retail industry and other areas. The Company proposes Mr. Hattori as a candidate for outside Director because it believes that his knowledge in financial affairs makes him qualified for the position of a Director who performs the function of supervising the decision making of the Company’s management policies and corporate strategies and the execution of business. Reason for concluding that the candidate is independent The candidate fulfills the requirements for an independent officer as provided for by the Tokyo Stock Exchange, the independence criteria for outside Directors and outside Corporate Auditors set out by the Company, and also the immaterial criteria for the judgement that the relationship with the Company is unlikely to affect shareholder’s decision concerning the exercise of voting rights, and is thus deemed to have a high degree of independence."
+      },
+      {
+        "page": 34,
+        "text": "- 34 - Candidate No. Shogo Maeda Birthday: January 1, 1957 Number of shares of the Company owned: 0 Shares 2 ■ Biography, position, responsibilities, and status of important concurrent positions July 1981 Japan Equity Analyst at Overseas Investment Advisor Office, Nomura Securities Co., Ltd. Oct. 1985 Investment Banking Group, New York Headquarters, Manufacturers Hanover Trust Company Nov. 1987 Nomura Investment Management Co., Ltd. (currently Nomura Asset Management Co., Ltd.) Sept. 1989 Senior Portfolio Manager, Nomura Investment Management Co., Ltd. Sept. 1994 Head of Japanese Equities, Goldman Sachs Asset Management Co., Ltd. Apr. 2002 Director, Asia-Pacific Equities CIO, and Head of Japan Equities, Goldman Sachs Asset Management Co., Ltd. Jan. 2006 Head of Japan Equities, Schroder Investment Management Limited Dec. 2012 Director and Head of Japan Equities, Schroder Investment Management (Japan) Limited Mar. 2018 Executive Director, The Grew Bancroft Foundation (current position) ＜Status of important concurrent positions＞ Executive Director, The Grew Bancroft Foundation There is no special interest between the candidate and the Company. ■ Reasons for Nomination as a Director Candidate Mr. Maeda has held important positions, such as direct or, in various financial in stitutions, and has a deep expertise in finance in general and capital markets in particular. The Company's stock price has been stagnant for a long period of time, and its total shareholder return (TSR) has been significantly lower than TOPIX on a long-term basis. Although the Company is in an emergent situation as the directors of the Company and its subsidiary were arrested, the Company's communication with investors was insufficient such that appropriate disclosure to investors concerning the investigation into such scandal was delayed. Under these circumstances, as Mr. Maeda has a deep expertise in finance and capital markets, it can be expected that Mr. Maeda can provide useful advice and supervision to the management of the Company, not only for implementation of appropriate M&A and business investment, but also in considering actions for enhancing the corporate value and dialogue with shareholders given that one of the Company's important business challenges is to engage in and/or respond to the future restructuring of the industry. For these reasons, Oasis proposes to appoint Mr. Maeda as a Director. Note: Mr. Shogo Maeda is a candidate for Outside Director."
+      }
+    ],
+    "instructions": "Answer the question. When document evidence is supplied, use only that evidence. When no document evidence is supplied, answer only from your existing knowledge and do not claim or imply document support. If the available basis does not adequately support an answer, return status='insufficient_evidence' and answer=null. Cite only supplied 1-based physical PDF page numbers; when no document evidence is supplied, cited_pages must be empty. Return one object matching response_schema.",
+    "question": "Which director candidate held positions at Goldman Sachs?",
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "answer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cited_pages": {
+          "items": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "answerable",
+            "insufficient_evidence"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "answer",
+        "cited_pages",
+        "status"
+      ],
+      "type": "object"
+    }
+  },
+  "question_id": "urnuuidd0ba82b9-f6c5-4b9a-a1a7-abcbffc5aeae::q2",
+  "schema_version": 1
+}

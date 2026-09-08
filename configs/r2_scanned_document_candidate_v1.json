@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "status": "tune_candidate",
+  "route": "r2_scanned_document",
+  "trigger": "document_has_zero_native_text_pages",
+  "ocr": {
+    "tool": "tesseract",
+    "version": "5.5.3",
+    "render_dpi": 200,
+    "language": "eng",
+    "oem": 1,
+    "psm": 3,
+    "orientation_recovery": {
+      "trigger_metric": "original_orientation_mean_word_confidence",
+      "trigger_operator": "less_than",
+      "trigger_threshold": 40.0,
+      "retry_rotations_degrees_clockwise": [
+        90,
+        180,
+        270
+      ],
+      "selection_metric": "recognized_word_confidence_mass"
+    }
+  },
+  "retrieval": {
+    "method": "page_bm25_anchor_centered_window_sum",
+    "k1": 1.2,
+    "b": 0.75,
+    "query_token_policy": "deduplicate_preserve_order",
+    "seed_top_k": 10,
+    "window_width_pages": 3,
+    "selected_window_count": 3,
+    "overlap_policy": "greedy_non_overlapping",
+    "maximum_reasoning_pages": 9
+  },
+  "reasoning_context": {
+    "representation": "orientation_recovered_layout_preserved_ocr_text"
+  },
+  "evaluation_scope": {
+    "allowed_split": "development_tune",
+    "locked_test_access": false
+  },
+  "uses_gold_or_answer_labels": false,
+  "selection_basis": [
+    "the label-free confidence trigger selected only the observed upside-down page among 57 unique R2 candidate pages",
+    "orientation recovery moved bird-registration physical page 14 from outside Top-10 to rank 1 without changing the other eight question rankings",
+    "orientation recovery plus three centered three-page windows matched adjacent expansion at 8 of 9 complete-evidence questions while reducing mean context from 16.44 to 9 pages"
+  ],
+  "known_failure": "groundwater q4 retrieves the site-map page but misses laboratory-analysis pages 12 and 13 required for multi-hop identification"
+}

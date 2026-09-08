@@ -1,0 +1,18 @@
+{
+  "action": "build_full_document_ocr_corpus",
+  "corpus_kind": null,
+  "execute_ocr_requested": false,
+  "route_decision": {
+    "document_page_count": 51,
+    "matched_signal": "zero_native_text_pages",
+    "nonempty_page_count": 0,
+    "reason": "document_has_zero_native_text_pages",
+    "route": "r2_scanned_document",
+    "schema_version": 1,
+    "text_coverage_ratio": 0.0,
+    "uses_gold_or_answer_labels": false
+  },
+  "schema_version": 1,
+  "status": "ocr_required",
+  "uses_gold_or_answer_labels": false
+}

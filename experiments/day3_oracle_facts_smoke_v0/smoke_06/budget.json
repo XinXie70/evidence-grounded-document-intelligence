@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "experiment_id": "day3_grounded_reasoning_c4_facts_smoke_v0",
+  "question_id": "urnuuid111476ed-6700-4be2-85cc-3fc17696167e::q3",
+  "condition": "oracle_facts",
+  "planned_requests": 1,
+  "max_retries": 0,
+  "model": "gpt-5.6-terra",
+  "pricing_snapshot_id": "openai-gpt-5.6-terra-2026-09-02",
+  "conservative_bound": {
+    "input_tokens": 512,
+    "output_tokens": 512,
+    "input_cost_usd_with_cache_write_multiplier": 0.00128,
+    "output_cost_usd": 0.006144,
+    "total_cost_usd": 0.007424
+  },
+  "execution_cap_usd": 0.01,
+  "user_authorized_cap_usd": 0.01,
+  "paid_execution_approved": true,
+  "execution": {
+    "status": "completed",
+    "request_count": 1,
+    "retries": 0,
+    "input_tokens": 216,
+    "output_tokens": 128,
+    "total_tokens": 344,
+    "actual_estimated_cost_usd": 0.001968,
+    "within_execution_cap": true
+  },
+  "notes": [
+    "The model receives two benchmark facts with source page numbers but not the benchmark answer.",
+    "This is one text-only request with no automatic retries.",
+    "The user explicitly approved this separate smoke06 C4 Oracle Facts request up to USD 0.01."
+  ]
+}

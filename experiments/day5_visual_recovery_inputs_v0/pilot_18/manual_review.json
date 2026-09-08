@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "status": "confirmed",
+  "review_date": "2026-09-07",
+  "reviewer": "user",
+  "question_id": "urnuuid808e4631-8567-495d-a904-0c702dbe784e::q3",
+  "checks": {
+    "all_relevant_pages_visible": true,
+    "chart_boundaries_visible": true,
+    "stacked_versus_grouped_bars_distinguishable": true,
+    "pages_complete_enough_for_question": true
+  },
+  "user_observations": {
+    "initial_all_bar_chart_count": 18,
+    "confirmed_stacked_bar_chart_counts_by_page": {
+      "1": 1,
+      "4": 3,
+      "5": 3,
+      "6": 3,
+      "7": 1,
+      "8": 2
+    },
+    "confirmed_total_stacked_bar_charts": 13,
+    "correction_reason": "The initial count included grouped and single-series bar charts; only vertically stacked multi-segment charts satisfy the question."
+  },
+  "input_design_review": {
+    "thirteen_individual_bbox_images_rejected": true,
+    "reason": "Supplying one image per benchmark chart would leak the answer through the number of input images.",
+    "six_full_page_images_confirmed": true
+  },
+  "note": "User confirmed 13 stacked bar charts after distinguishing stacked charts from grouped or single-series bar charts."
+}

@@ -1,0 +1,252 @@
+{
+  "already_executed_pair_count": 1,
+  "condition_pair": [
+    "real_retrieval",
+    "oracle_page"
+  ],
+  "document_count": 10,
+  "notes": [
+    "This is a deliberately stratified integration sample, not a random or representative performance sample.",
+    "No aggregate model-performance conclusion may be drawn from these ten questions.",
+    "The existing first pair is retained to avoid spending money to repeat an already successful integration call.",
+    "The text-layer-missing and image cases audit the current text-only page representation; they are not substitutes for the later visual Oracle Page condition."
+  ],
+  "question_count": 10,
+  "questions": [
+    {
+      "answerability": "answerable",
+      "case_id": "smoke_01",
+      "doc_id": "urnuuid0812e9ac-6f30-4624-9c78-6f4176467918",
+      "evidence_types": [
+        "text"
+      ],
+      "gold_pages": [
+        12
+      ],
+      "gold_text_status": "ok",
+      "page_span": "single",
+      "question": "What specific age threshold does the document define for distinguishing between a child and an adult research participant under POPIA?",
+      "question_id": "urnuuid0812e9ac-6f30-4624-9c78-6f4176467918::q2",
+      "rationale": "Already executed first pair; single-page text control with complete Top-3 retrieval.",
+      "real_retrieval_top3_pages": [
+        12,
+        18,
+        47
+      ],
+      "top3_gold_coverage": "complete"
+    },
+    {
+      "answerability": "answerable",
+      "case_id": "smoke_02",
+      "doc_id": "urnuuid113144ee-53bb-4f43-9d8f-0c9e823fa25d",
+      "evidence_types": [
+        "text"
+      ],
+      "gold_pages": [
+        72,
+        77
+      ],
+      "gold_text_status": "ok",
+      "page_span": "multi",
+      "question": "Using the BMI formula described in the section on adult body mass index, what would be the BMI of the adolescent girl mentioned in the section discussing the Rohrer Index, given her weight and height? Round to one decimal place.",
+      "question_id": "urnuuid113144ee-53bb-4f43-9d8f-0c9e823fa25d::q2",
+      "rationale": "Multi-page text and arithmetic control with complete Top-3 retrieval.",
+      "real_retrieval_top3_pages": [
+        72,
+        77,
+        76
+      ],
+      "top3_gold_coverage": "complete"
+    },
+    {
+      "answerability": "answerable",
+      "case_id": "smoke_03",
+      "doc_id": "urnuuidad6e69ed-3343-4297-85d8-96b02e6bd925",
+      "evidence_types": [
+        "text"
+      ],
+      "gold_pages": [
+        31,
+        40
+      ],
+      "gold_text_status": "ok",
+      "page_span": "multi",
+      "question": "The organization that donated $350,000 (listed among the major donors on the fundraising page) also appears in the list of thanked organizations, dioceses, and parishes. In which city and state is that organization located according to the organizational thank-you list?",
+      "question_id": "urnuuidad6e69ed-3343-4297-85d8-96b02e6bd925::q1",
+      "rationale": "Multi-page entity linking with only one of two gold pages in Top-3.",
+      "real_retrieval_top3_pages": [
+        31,
+        9,
+        3
+      ],
+      "top3_gold_coverage": "partial"
+    },
+    {
+      "answerability": "answerable",
+      "case_id": "smoke_04",
+      "doc_id": "urnuuid0a20b83c-2af0-4503-9220-c63470cdd214",
+      "evidence_types": [
+        "paragraph_title",
+        "text"
+      ],
+      "gold_pages": [
+        71
+      ],
+      "gold_text_status": "ok",
+      "page_span": "single",
+      "question": "Which focus area is described as depending on progress across all the others?",
+      "question_id": "urnuuid0a20b83c-2af0-4503-9220-c63470cdd214::q3",
+      "rationale": "Known semantic-paraphrase BM25 miss despite an intact text layer.",
+      "real_retrieval_top3_pages": [
+        24,
+        30,
+        56
+      ],
+      "top3_gold_coverage": "none"
+    },
+    {
+      "answerability": "answerable",
+      "case_id": "smoke_05",
+      "doc_id": "urnuuid1c0499a9-36ad-4968-bf6f-d86fcd55e596",
+      "evidence_types": [
+        "table"
+      ],
+      "gold_pages": [
+        11
+      ],
+      "gold_text_status": "ok",
+      "page_span": "single",
+      "question": "What is the starting span length for the Number Span Test: Backward?",
+      "question_id": "urnuuid1c0499a9-36ad-4968-bf6f-d86fcd55e596::q2",
+      "rationale": "Single-page table control with the gold page ranked first.",
+      "real_retrieval_top3_pages": [
+        11,
+        10,
+        15
+      ],
+      "top3_gold_coverage": "complete"
+    },
+    {
+      "answerability": "answerable",
+      "case_id": "smoke_06",
+      "doc_id": "urnuuid111476ed-6700-4be2-85cc-3fc17696167e",
+      "evidence_types": [
+        "table"
+      ],
+      "gold_pages": [
+        21,
+        55
+      ],
+      "gold_text_status": "ok",
+      "page_span": "multi",
+      "question": "According to the weekday main-activity table by sex, how many more hours do males spend on personal care than females spend on housework and family care?",
+      "question_id": "urnuuid111476ed-6700-4be2-85cc-3fc17696167e::q3",
+      "rationale": "Multi-page table arithmetic with no gold page in Top-3.",
+      "real_retrieval_top3_pages": [
+        9,
+        10,
+        7
+      ],
+      "top3_gold_coverage": "none"
+    },
+    {
+      "answerability": "answerable",
+      "case_id": "smoke_07",
+      "doc_id": "urnuuid2ec9537c-589c-47f0-81ae-8e02e2d85414",
+      "evidence_types": [
+        "chart"
+      ],
+      "gold_pages": [
+        31
+      ],
+      "gold_text_status": "ok",
+      "page_span": "single",
+      "question": "What is the spread, in percentage points, between the yield on advances and the cost of deposits for Sep-14?",
+      "question_id": "urnuuid2ec9537c-589c-47f0-81ae-8e02e2d85414::q2",
+      "rationale": "Single-page chart case with the gold page ranked first.",
+      "real_retrieval_top3_pages": [
+        31,
+        17,
+        2
+      ],
+      "top3_gold_coverage": "complete"
+    },
+    {
+      "answerability": "answerable",
+      "case_id": "smoke_08",
+      "doc_id": "urnuuid0d4da810-0b76-4979-a774-0f8bd6fae742",
+      "evidence_types": [
+        "chart",
+        "doc_title",
+        "image"
+      ],
+      "gold_pages": [
+        30,
+        31,
+        34,
+        35,
+        38,
+        40
+      ],
+      "gold_text_status": "ok",
+      "page_span": "multi",
+      "question": "How many photographs of actual houses (not architectural diagrams or illustrations) appear across the entire chapter on building-integrated design?",
+      "question_id": "urnuuid0d4da810-0b76-4979-a774-0f8bd6fae742::q1",
+      "rationale": "Global visual counting case that text-only BM25 cannot represent adequately.",
+      "real_retrieval_top3_pages": [
+        4,
+        10,
+        21
+      ],
+      "top3_gold_coverage": "none"
+    },
+    {
+      "answerability": "answerable",
+      "case_id": "smoke_09",
+      "doc_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba",
+      "evidence_types": [
+        "table"
+      ],
+      "gold_pages": [
+        14
+      ],
+      "gold_text_status": "text_layer_missing",
+      "page_span": "single",
+      "question": "The bird species registration table in the application form includes a column for tracking how birds are related to one another. What example is given in that column?",
+      "question_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba::q1",
+      "rationale": "Scanned table case whose gold page has no machine-readable text layer.",
+      "real_retrieval_top3_pages": [
+        1,
+        2,
+        3
+      ],
+      "top3_gold_coverage": "none"
+    },
+    {
+      "answerability": "unanswerable",
+      "case_id": "smoke_10",
+      "doc_id": "urnuuid425f7a17-aa57-4cca-b56e-612fe270751d",
+      "evidence_types": [
+        "text"
+      ],
+      "gold_pages": [],
+      "gold_text_status": "not_applicable",
+      "page_span": "not_applicable",
+      "question": "What was the effective tax rate applied to the Mongbwalu project's estimated cash flow projections over the first three years of production?",
+      "question_id": "urnuuid425f7a17-aa57-4cca-b56e-612fe270751d::q6",
+      "rationale": "Unanswerable reliability case where BM25 retrieves closely related pages that may tempt an unsupported answer; Oracle context must be empty.",
+      "real_retrieval_top3_pages": [
+        5,
+        3,
+        4
+      ],
+      "top3_gold_coverage": "not_applicable"
+    }
+  ],
+  "retrieval_configuration_sha256": "891554561a80bff0c4b26ee33a7dffe3a147bc0d073a944732255f4674c4a6fb",
+  "schema_version": 1,
+  "selection_method": "manual stratification over observed development_tune BM25 Top-3 coverage, evidence modality, page span, text-layer status, and answerability",
+  "split": "development_tune",
+  "status": "frozen_for_smoke_v1",
+  "top_k": 3
+}

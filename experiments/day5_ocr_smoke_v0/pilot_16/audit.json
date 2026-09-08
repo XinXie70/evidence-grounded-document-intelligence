@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "experiment_id": "day5_ocr_smoke_v0_pilot16_page10",
+  "purpose": "Test whether a deterministic local OCR baseline can recover query-relevant terms from one page whose native PDF text layer was insufficient.",
+  "scope": {
+    "pilot_id": "pilot_16",
+    "physical_page": 10,
+    "input_image": "experiments/day5_visual_recovery_inputs_v0/pilot_16/e1_page_0010.png",
+    "input_sha256": "7f7b484fa9803da017115cc6d64c23c1843bedea0f410f8690273345dbc96188"
+  },
+  "ocr": {
+    "engine": "tesseract",
+    "version": "5.5.3",
+    "language": "eng",
+    "oem": 1,
+    "psm": 3,
+    "output_text": "experiments/day5_ocr_smoke_v0/pilot_16/page_0010_psm3.txt",
+    "output_sha256": "595b69a17fa169ecdaf8ff1b09684550500d68c3f9d7603cae94a68140893c7a"
+  },
+  "observations": {
+    "recovered_terms": [
+      "MW3",
+      "August 15, 1991",
+      "17.77"
+    ],
+    "table_structure_fully_preserved": false,
+    "visible_noise_present": true
+  },
+  "conclusion": "Pass for retrieval-oriented OCR smoke testing: the relevant well identifier, date, and numeric value were recovered. This does not establish perfect table reconstruction or final-answer accuracy.",
+  "paid_api_cost_usd": 0.0
+}

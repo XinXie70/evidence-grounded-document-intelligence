@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "cached_input_tokens": {"minimum": 0, "type": "integer"},
+    "context_ids": {"items": {"type": "string"}, "type": "array"},
+    "estimated_cost": {"minimum": 0, "type": "number"},
+    "endpoint_mode": {"minLength": 1, "type": "string"},
+    "experiment_id": {"minLength": 1, "type": "string"},
+    "input_tokens": {"minimum": 0, "type": "integer"},
+    "latency_ms": {"minimum": 0, "type": "number"},
+    "model_snapshot": {"minLength": 1, "type": "string"},
+    "output_tokens": {"minimum": 0, "type": "integer"},
+    "pricing_snapshot_id": {"minLength": 1, "type": "string"},
+    "prompt_sha256": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+    "provider": {"minLength": 1, "type": "string"},
+    "question_id": {"minLength": 1, "type": "string"},
+    "request_date_utc": {"format": "date-time", "type": "string"},
+    "retries": {"minimum": 0, "type": "integer"},
+    "role": {"enum": ["answer_generation", "judge"]},
+    "status": {"enum": ["ok", "error", "skipped"]}
+  },
+  "required": [
+    "experiment_id", "question_id", "provider", "model_snapshot", "endpoint_mode", "request_date_utc",
+    "input_tokens", "output_tokens", "cached_input_tokens", "latency_ms", "retries",
+    "status", "estimated_cost", "pricing_snapshot_id", "prompt_sha256", "context_ids", "role"
+  ],
+  "title": "EGDI experiment call log",
+  "type": "object"
+}

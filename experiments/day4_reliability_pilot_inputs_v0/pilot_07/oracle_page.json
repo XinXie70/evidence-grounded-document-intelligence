@@ -1,0 +1,55 @@
+{
+  "condition": "oracle_page",
+  "doc_id": "urnuuid7fbb918e-acda-4053-9c23-c16621876e15",
+  "evidence_pages": [
+    11,
+    12
+  ],
+  "model_input": {
+    "evidence": [
+      {
+        "page": 11,
+        "text": "11 CHINA: COTTON IMPORTS & ENDING STOCKS CHINA: COTTON PRODUCTION & MILL USE ICAC TTU 0 5,000 10,000 15,000 20,000 25,000 30,000 35,000 40,000 45,000 50,000 55,000 60,000 65,000 70,000 2014/15 2015/16 2016/17 2017/18 2018/19 2019/20 2020/21 2021/22 2022/23 2023/24 2024/25 2025/26 2026/27 2027/28 2028/29 2029/30 2030/31 2031/32 2032/33 2033/34 1,000 bales Imports Ending Stocks 0 5,000 10,000 15,000 20,000 25,000 30,000 35,000 40,000 45,000 2014/15 2015/16 2016/17 2017/18 2018/19 2019/20 2020/21 2021/22 2022/23 2023/24 2024/25 2025/26 2026/27 2027/28 2028/29 2029/30 2030/31 2031/32 2032/33 2033/34 1,000 bales Production Mill Use ▪ Following a remarkable reduction (down by 10%) in 2023/24, cotton production is projected to grow steadily with an average growth rate of 1.3% per year, picking up 3.7 million bales over the projection period. China will remain as the major cotton producer and account for 24% of world production. ▪ Being the largest supplier of textile and apparel products to the world, China’s mill use is estimated at 37.4 million bales in 2024/25. As uncertainties about the world economic condition continues over the projection period, its growth rate is projected to grow moderately at an average rate of 1.2% per year, maintaining its share of world mill use at 32%. ▪ As China seeking to replenish its national cotton reserve system, year 2023/24 marked significant upward movements for both ending stocks (7%) and imports (93%). From 2024/25 onward, stocks in China are anticipated to drop steadily (2.7% on average) and reach 30.4 million bales at the end of the projection period. ▪ As its cotton spinning capacity is expected to maintain over the projection period, China’s cotton imports is forecast to remain a moderate average of about 9.5 million bales of imports per year through 2033/34."
+      },
+      {
+        "page": 12,
+        "text": "ICAC TTU12 ▪ Sustained growth in the cotton textile industry is projected to increase cotton mill use in India, remaining as the second largest cotton-spinning country (about 21% of the world total). It is expected to grow at an average of 1.1% over the next ten years, reaching 26.7 million bales by 2033/34. However, there are some indications that India is increasing its investment in cotton mills which may lead to a higher growth rate in mill use in the out years of this projection. ▪ Exports of cotton will be limited due to India’s cotton mill use increases in the next 10 year, with an average of 2.6 million bales (about 5% of the world total). ▪ Cotton mill use in Bangladesh for 2024/25 is projected to rise 1.8% to 7.9 million bales from previous year. In the long run, a moderate growth rate of 1.1% is forecast through 2033/34, sustaining its position as one of the major textile spinning countries in the world (7% of the world total). ▪ With low production, most of the cotton mill use will be sourced from imports. U.S. cotton accounts for about 5% of its total imports. BANGLADESH: COTTON MILL USE & IMPORTS INDIA: COTTON MILL USE & EXPORTS 0 5,000 10,000 15,000 20,000 25,000 30,000 2014/15 2015/16 2016/17 2017/18 2018/19 2019/20 2020/21 2021/22 2022/23 2023/24 2024/25 2025/26 2026/27 2027/28 2028/29 2029/30 2030/31 2031/32 2032/33 2033/34 Mill Use Exports 1,000 bales 0 1,000 2,000 3,000 4,000 5,000 6,000 7,000 8,000 9,000 10,000 2014/15 2015/16 2016/17 2017/18 2018/19 2019/20 2020/21 2021/22 2022/23 2023/24 2024/25 2025/26 2026/27 2027/28 2028/29 2029/30 2030/31 2031/32 2032/33 2033/34 Mill Use Imports 1,000 bales"
+      }
+    ],
+    "instructions": "Answer the question. When document evidence is supplied, use only that evidence. When no document evidence is supplied, answer only from your existing knowledge and do not claim or imply document support. If the available basis does not adequately support an answer, return status='insufficient_evidence' and answer=null. Cite only supplied 1-based physical PDF page numbers; when no document evidence is supplied, cited_pages must be empty. Return one object matching response_schema.",
+    "question": "According to the document, what is the difference in the projected long-term average annual growth rate of cotton mill use between China and India over the next ten years?",
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "answer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cited_pages": {
+          "items": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "answerable",
+            "insufficient_evidence"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "answer",
+        "cited_pages",
+        "status"
+      ],
+      "type": "object"
+    }
+  },
+  "question_id": "urnuuid7fbb918e-acda-4053-9c23-c16621876e15::q1",
+  "schema_version": 1
+}

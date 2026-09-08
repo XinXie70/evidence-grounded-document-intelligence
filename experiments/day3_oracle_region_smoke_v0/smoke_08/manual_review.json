@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "status": "confirmed",
+  "review_date": "2026-09-04",
+  "reviewer": "user",
+  "question_id": "urnuuid0d4da810-0b76-4979-a774-0f8bd6fae742::q1",
+  "checks": {
+    "e1_is_chapter_5_boundary_not_house_photo": true,
+    "e2_is_actual_house_exterior_photo": true,
+    "e3_is_actual_house_exterior_photo": true,
+    "e4_is_actual_house_exterior_photo": true,
+    "e5_is_actual_house_interior_photo": true,
+    "e6_is_chapter_6_boundary_not_house_photo": true,
+    "e6_contains_unrelated_non_house_graphic": true,
+    "four_actual_house_photographs_visible_in_total": true
+  },
+  "note": "User confirmed that e1 contains meaningless boxes and lines, e2-e5 are four actual-house photographs, and e6 contains meaningless title boxes plus an image unrelated to houses."
+}

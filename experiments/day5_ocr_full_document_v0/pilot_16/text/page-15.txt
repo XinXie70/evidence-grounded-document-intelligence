@@ -1,0 +1,46 @@
+KEI-P88-1204.QR9
+September 17, 1991
+
+TABLE 3
+SUMMARY OF LABORATORY ANALYSES
+SOIL
+Sample Depth TPH as TPH as Ethy1l-
+
+Number (feet) Diesel Gasoline Benzene Toluene Xylenes benzene ‘OG
+
+(Collected on August 16, 1989)
+
+MW4 5.0 -- 3.3 ND ND 0.11 ND <50
+Mw4 10.0 -- ND ND ND ND ND <50
+MW4 15.0 -- ND ND ND ND ND <50
+MWwW4 19.0 -- ND ND ND ND ND <50
+MW5 5.0 -~ ND ND ND ND ND <50
+MWS 10.0 -- ND ND ND ND ND <50
+MWS 15.0 -- ND ND ND ND ND <50
+MWS 20.0 -- 20 ND ND ND ND <50
+MWS 22.0 -- ND ND ND ND ND <50
+MW6 5.0 -- ND ND ND ND ND <50
+MW6 10.0 -- ND ND ND ND ND <50
+MW6 15.0 ~-- ND ND ND ND ND <50
+MW6 20.0 -- ND ND ND ND ND <50
+
+(Collected on May 11, 1989)
+
+SWA 16.5 21 -- -- -- -— -- 850
+SWB 16.5 18 -- -— -- -- -- 580
+Swe 16.5 26 -- -- -- -— ~~ 680
+SWD 16.5 16 -- -— -- -- -- 170
+
+(Collected on April 17, 1989)
+
+MW 5.0 ND 4.0 ND ND ND ND ND
+MW1 10.0 ND ND ND ND ND ND ND
+MW1 15.0 ND ND ND ND ND ND ND
+MW1 17.0 ND ND ND ND ND ND 31
+MWw2 * 5.0 ND ND ND ND ND ND 31
+MW2* 10.0 ND 1.1 ND ND ND ND 60
+MW2* 15.0 ND ND ND ND ND ND 71
+MW3 5.0 ND ND ND ND ND ND ND
+Mw3 10.0 ND 1.1 ND ND ND ND ND
+MW3 15.0 ND 1.2 ND ND ND ND 32
+MW3 17.0 ND 6.2 ND 0.21 0.42 ND 180

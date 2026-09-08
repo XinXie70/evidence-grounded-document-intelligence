@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "experiment_id": "day6_r1_residual_failure_taxonomy_v0",
+  "date": "2026-09-08",
+  "split": "development_tune",
+  "evaluated_policy": "BM25 Top 10 plus radius-two neighbours of the top three pages, with the frozen garbled-text OCR fallback",
+  "residual_failure_count": 7,
+  "categories": [
+    {
+      "category": "dispersed_multihop_composition",
+      "count": 3,
+      "question_ids": [
+        "urnuuid111476ed-6700-4be2-85cc-3fc17696167e::q3",
+        "urnuuid5bab2d9e-8fe9-42cc-bc0a-9714a65f35bc::q1",
+        "urnuuidd53ccef7-60ba-43a8-81a9-bf14619772b9::q2"
+      ],
+      "observed_structure": "The question requires two semantically distinct sources followed by subtraction, intersection, or entity-to-fee mapping.",
+      "why_neighbours_are_insufficient": "The missing source is separated from the retrieved source and is not reliably adjacent to a top-ranked page."
+    },
+    {
+      "category": "section_or_repeated_table_coverage",
+      "count": 3,
+      "question_ids": [
+        "urnuuid469c17b6-9e4f-4706-bc89-0e1814820dae::q3",
+        "urnuuid83d3c72c-a70d-422f-9c0b-992de5e5770e::q5",
+        "urnuuid8e6bc3d1-f1eb-4728-8ca0-d5ed63f6814f::q1"
+      ],
+      "observed_structure": "The required visual evidence spans a repeated table sequence or an entire named chapter section.",
+      "why_neighbours_are_insufficient": "The page range extends beyond a fixed radius around only the three highest BM25 pages."
+    },
+    {
+      "category": "missed_document_global_route",
+      "count": 1,
+      "question_ids": [
+        "urnuuidaea65aa9-007b-4752-98e5-0374bbdf4023::q3"
+      ],
+      "observed_structure": "The wording says 'across the document' and asks how many separate locations contain the figure.",
+      "why_neighbours_are_insufficient": "A bounded local candidate set cannot establish an exhaustive count over omitted pages.",
+      "router_gap": "The v0 global patterns recognize 'across the entire document' but not the shorter phrase 'across the document'."
+    }
+  ],
+  "label_boundary": {
+    "questions_and_candidate_pages_used_for_diagnosis": true,
+    "gold_page_distribution_used_for_development_tune_failure_attribution": true,
+    "gold_answer_text_used": false,
+    "calibration_labels_used": false,
+    "locked_test_accessed": false
+  },
+  "api_cost_usd": 0.0,
+  "decisions": [
+    "Do not keep increasing one universal neighbour radius.",
+    "Add the observed 'across the document' wording to a versioned R3 routing policy without modifying the frozen R2 v2 artifacts.",
+    "Test a bounded section-span candidate for repeated or chapter-wide tables.",
+    "Use the dispersed multi-hop failures as the evidence for a later clause-aware or dense-retrieval comparison."
+  ]
+}

@@ -1,0 +1,53 @@
+. SEQUOIA ANALYTICAL
+
+1900 Bates Avenue e Suite LM e Concord, California 94520
+Uy (415) 686-9600 ® FAX (415) 686-9689
+
+“Kaprealian Engineering, Inc.
+=P.O. Box 996
+
+‘Benicia, CA 94510
+
+{ttention: Mardo Kaprealian, P.E. QC Sample Grou
+
+Client Project ID: Unoca!, 1300 Davis St., San Leandro
+
+: 1080879-81
+
+QUALITY CONTROL DATA REPORT
+
+ANALYTE
+
+Qit & Grease
+
+Method: SM5520 B&F
+Analyst: — D. Newcomb
+Reporting Units: mg/L
+Date Analyzed: Aug 27, 1991
+QC Sample #: 082191M
+
+Sample Conc.: N.D.
+Spike Conc.
+Added: 100
+
+Conc. Matrix
+
+Spike: 97
+Matrix Spike
+% Recovery: 97
+
+Conc. Matrix
+
+Spike Dup.: 96
+Matrix Spike
+Duplicate
+% Recovery: 96
+Relative
+% Difference: 1.0
+SEQUOIA ANALYTICAL | % Recovery Cone of MS - Cone of Sample x 100
+fying Ff Spike Conc Added
+\ I ma “ Aa K ST elative % Difference Conc of MS -Conc of MSD x 100
+_ Julia R. Malerstein (Cone of MS. + Conc of MSD) /2
+
+! Project Manager 1080879 KEI <8>
+. é

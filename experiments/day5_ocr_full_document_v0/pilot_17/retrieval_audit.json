@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "experiment_id": "day5_pilot17_full_document_ocr_retrieval_v0",
+  "question_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba::q3",
+  "question": "How many specific items are listed in the section describing enhancements that are still being worked on?",
+  "source": {
+    "pdf": "data/raw/docscope/pdfs/urnuuida3024dbb-48a6-4849-bb2f-910722e335ba.pdf",
+    "pdf_sha256": "4aae9e431f682a938ee3d9af42447cf1b845cb899fa638c5bca43d2093bbcd09",
+    "page_count": 51
+  },
+  "rendering": {
+    "engine": "pdftoppm",
+    "version": "26.05.0",
+    "dpi": 200,
+    "format": "png",
+    "rendered_page_count": 51
+  },
+  "ocr": {
+    "engine": "tesseract",
+    "version": "5.5.3",
+    "language": "eng",
+    "oem": 1,
+    "psm": 3,
+    "ocr_page_count": 51,
+    "nonempty_ocr_page_count": 51
+  },
+  "page_records": {
+    "path": "experiments/day5_ocr_full_document_v0/pilot_17/page_records_ocr.jsonl",
+    "sha256": "4b99fcb1baad65d82efea74339976239af3ba2caa7161af217d7183ee7ca3d78",
+    "record_count": 51,
+    "status_counts": {
+      "ok": 51,
+      "low_text": 0,
+      "text_layer_missing": 0
+    }
+  },
+  "gold_evidence_pages": [
+    12
+  ],
+  "native_text_control": {
+    "top_3_pages": [
+      1,
+      2,
+      3
+    ],
+    "top_1_score": 0.0,
+    "gold_page_retrieved_at_10": false
+  },
+  "ocr_retrieval": {
+    "retain_repetitions": {
+      "top_10_pages": [
+        12,
+        10,
+        30,
+        28,
+        31,
+        5,
+        9,
+        16,
+        25,
+        22
+      ],
+      "gold_page_rank": 1,
+      "gold_page_score": 16.458741404724304
+    },
+    "deduplicate_preserve_order": {
+      "top_10_pages": [
+        12,
+        10,
+        30,
+        28,
+        31,
+        5,
+        16,
+        9,
+        25,
+        22
+      ],
+      "gold_page_rank": 1,
+      "gold_page_score": 15.706421088690831
+    }
+  },
+  "conclusion": "Label-free full-document OCR changes pilot17 from zero-signal retrieval to ranking the single gold page first under both query-token policies.",
+  "causal_interpretation": "OCR is the decisive intervention for this case. Query-token deduplication is neither necessary nor harmful to the gold-page rank here.",
+  "cross_case_interpretation": "Pilot16 and pilot17 jointly support full-document OCR as an R2 scanned-document representation route. Pilot16 retains a multi-page lexical-ranking failure after OCR, whereas pilot17 is fully recovered at rank 1.",
+  "scope_note": "Gold evidence page 12 was used only after ranking for evaluation. No answer-generation API call was made.",
+  "paid_api_cost_usd": 0.0
+}

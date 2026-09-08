@@ -1,0 +1,117 @@
+TROUBLESHOOTING TIPS
+
+32
+
+Troubleshooting tips ... Before you schedule service
+
+Problem
+
+Possible Cause
+
+What To Do
+
+“Probe” appears in the
+display.
+
+This is reminding you to enter a probe
+temperature after plugging in the probe.
+
+Enter a probe temperature.
+
+Probe actual temperature is
+not stable while charger is
+inserted
+
+Electrical noise is impacting the signal.
+
+Probe should be charged before cooking. Do not leave probe
+plugged in while cooking.
+
+My precision probe
+JXSOUSV1 won't pair
+
+Existing precision probes are not compatible
+with new precision features.
+
+Connect a model compatible precision probe.
+
+My precision probe is not
+accurately maintaining low
+temperatures
+
+The pot size, pot set-up, and/or burner size
+you are using may be unsuitable to hold low
+temperatures.
+
+Remove the lid, use a larger diameter pot, or use a smaller
+burner. Please keep your unit connected and install upcoming
+updates to improve performance.
+
+Pan won't pair or activate
+when tapping handle
+
+Tapping force is too light.
+
+Double tap the pan with firm taps (or knock) on the black
+plastic endcap.
+
+Battery in pan is low or dead.
+
+Replace AAA battery, installing with positive end out of handle.
+
+Using different pan hardware.
+
+Check that your pan has a black endcap that unscrews from
+the end of the handle. Pans with an oval module reading
+"Hestan Cue" will not work with Café appliances.
+
+Experiencing performance
+or minor technical issues
+including seeing 20F or 100F
+as set temperature
+
+Old unit or pan software.
+
+Connect your unit to the Café app and update unit software.
+Connect your unit and pan to the Hestan Smart Cooking app
+and update pan software.
+
+The unit cancelled my
+precision cooking mode
+
+Battery in device is low or dead.
+
+Replace AAA battery in pan, or charge probe.
+
+Old unit or pan software.
+
+Connect your unit to the Café app and update unit software.
+Connect your unit and pan to the Hestan Smart Cooking app
+and update pan software.
+
+Your precision cooking device has gone out
+of range.
+
+Your precision cooking device had a
+computation malfunction.
+
+This could indicate a problem with the device. If the problem
+persists, please contact the device manufacturer.
+
+The unit lost communication with your
+precision cooking device.
+
+This could indicate a problem with the device or the unit.
+If the problem persists, please contact the device or unit
+manufacturer.
+
+Some cooking techniques and set
+temperatures in combination may trigger a
+fault in the temperature sensing algorithm.
+
+Re-start the precision cooking mode and if problem persists
+under the same conditions but is not consistent in other use
+cases, contact the unit manufacturer.
+
+49-2000233 Rev. 2
+

@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "audit_date": "2026-09-07",
+  "question_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba::q3",
+  "benchmark_answer": "5",
+  "manual_crop_review": "confirmed_after_recheck",
+  "comparison": {
+    "c2_oracle_page_text": {
+      "result_path": "results/day4_reliability_pilot_v0/pilot_17/oracle_page.json",
+      "result_sha256": "97f1fd3c43e655da301a296c04c125794649eacb81bd6592498e9f31a620048f",
+      "evidence_pages": [12],
+      "native_page_texts_empty": true,
+      "status": "insufficient_evidence",
+      "answer": null,
+      "answer_correct": null,
+      "validation_valid": true
+    },
+    "c3_oracle_region_image_only": {
+      "result_path": "results/day5_visual_recovery_v0/pilot_17/c3_image_only.json",
+      "result_sha256": "3d5e8e5ff4e10460e28c38096e25a1f4db53a408267a6fbf418f6dab79e619ea",
+      "evidence_pages": [12],
+      "status": "answerable",
+      "answer": "5",
+      "answer_correct": true,
+      "cited_pages": [12],
+      "validation_valid": true,
+      "actual_cost_usd": 0.001562,
+      "approved_cap_usd": 0.02,
+      "retries": 0
+    }
+  },
+  "single_variable_intervention": "Replace the empty native-text evidence page with seven manually confirmed benchmark-bbox images covering the section title, explanatory paragraph, and five bullet items while holding the question, physical evidence page, model, reasoning effort, response schema, and zero-retry policy fixed.",
+  "failure_attribution": "representation_failure_missing_text_layer_and_list_structure",
+  "interpretation": "C2 had the correct physical page but no usable native text. Image-only C3 distinguished contextual regions from list items, counted five bullets rather than seven images, and recovered the benchmark-supported answer.",
+  "human_review_note": "The user initially counted four items and then confirmed five after rechecking the short final item, showing that fragmented region presentation can itself create a counting risk.",
+  "scope_note": "This is causal evidence for pilot_17 only and does not yet establish a general visual-routing policy."
+}

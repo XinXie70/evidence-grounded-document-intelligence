@@ -1,0 +1,37 @@
+{
+  "already_completed_calls": 2,
+  "budget_scope": "remaining text-only C1 Real Retrieval and C2 Oracle Page smoke calls",
+  "cache_write_assumption": "all estimated input tokens billed at 1.25 times uncached input rate",
+  "config_sha256": "8f432c690b329bfa1668bacf1a13e21bf356e4e1c847b33a58267238b1036073",
+  "conservative_cost_estimate_usd": 0.218144,
+  "conservative_input_token_estimate": 43021,
+  "currency": "USD",
+  "excluded_costs": [
+    "C0 closed-book",
+    "C3 Oracle Region",
+    "C4 Oracle Fact",
+    "visual page-image inputs",
+    "answer or grounding judge calls",
+    "pilot or full-development calls"
+  ],
+  "approved_hard_cap_usd": 1.0,
+  "approval_date": "2026-09-02",
+  "approval_scope": "Only the remaining 18 text-only paired smoke calls already frozen in the selection manifest.",
+  "input_estimation_rule": "ceil(canonical OpenAI request characters / 3) for each pending call",
+  "input_manifest_sha256": "1cae0d98c5835dbaaae3ce6b772c79854f9e8b0b7f227ec628168344150a9f69",
+  "max_output_tokens_per_call": 512,
+  "maximum_total_output_tokens": 9216,
+  "notes": [
+    "This is deliberately conservative: the first two successful outputs used only 76 and 79 tokens.",
+    "The user explicitly approved a USD 1.00 hard cap for this frozen smoke scope.",
+    "Every call still requires the existing exact per-call cost acknowledgement guard.",
+    "The image and text-layer-missing cases currently audit the text-only page adapter and are not the later visual Oracle Page experiment."
+  ],
+  "pending_call_count": 18,
+  "pricing_snapshot_id": "openai-gpt-5.6-terra-2026-09-02",
+  "pricing_snapshot_sha256": "780141590ae0e00b191d7878c3681c9cd1953ee0ac166f72cbffdaeb44ed6595",
+  "recommended_cap_usd": 0.25,
+  "schema_version": 1,
+  "selection_sha256": "2c384755f1c3c33089af450ab571f70e049ac0dc46178bc56ef373ea253b536c",
+  "status": "approved"
+}

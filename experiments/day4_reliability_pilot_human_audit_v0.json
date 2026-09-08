@@ -1,0 +1,363 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "selection_sha256": "d289d651b415145fa822b4c631300b1c6fdcf2558217b330b2c0eb496262e862",
+  "result_progress_sha256": "e1ac5300f4f65a36963868ff1d48b0a98efefc7bacb891aad8e0f49cfa2f801b",
+  "audit_method": "Human review against the benchmark answer and supplied evidence; decisions are recorded only after explicit user confirmation.",
+  "completed_pilot_count": 24,
+  "pending_pilot_count": 0,
+  "pilots": [
+    {
+      "pilot_id": "pilot_01",
+      "question_id": "urnuuid4873f4f3-f4eb-4931-97f5-ae4f1951f07e::q1",
+      "benchmark_is_answerable": true,
+      "benchmark_answer": "Green Bond",
+      "user_confirmed": true,
+      "conditions": {
+        "closed_book": {
+          "response_status": "insufficient_evidence",
+          "answer": null,
+          "evidence_sufficient": false,
+          "answer_correct": null,
+          "grounded_correct": null,
+          "outcome": "appropriate_abstention_given_context"
+        },
+        "real_retrieval": {
+          "response_status": "answerable",
+          "answer": "Green Bond funds had the highest positive inflows in YTD 2024, at USD 1.7 billion.",
+          "evidence_sufficient": true,
+          "answer_correct": true,
+          "grounded_correct": true,
+          "outcome": "grounded_success"
+        },
+        "oracle_page": {
+          "response_status": "answerable",
+          "answer": "Green Bond funds had the highest positive inflows in YTD 2024, at USD 1.7 billion.",
+          "evidence_sufficient": true,
+          "answer_correct": true,
+          "grounded_correct": true,
+          "outcome": "grounded_success"
+        }
+      }
+    },
+    {
+      "pilot_id": "pilot_02",
+      "question_id": "urnuuid77b8c272-7717-468a-9c12-b41257db91d9::q2",
+      "benchmark_is_answerable": true,
+      "benchmark_answer": "0.07",
+      "user_confirmed": true,
+      "conditions": {
+        "closed_book": {
+          "response_status": "insufficient_evidence",
+          "answer": null,
+          "evidence_sufficient": false,
+          "answer_correct": null,
+          "grounded_correct": null,
+          "outcome": "appropriate_abstention_given_context"
+        },
+        "real_retrieval": {
+          "response_status": "answerable",
+          "answer": "The children’s home language support factor could improve to .69, while the teachers’ school language support factor could improve to .76. The difference is .07.",
+          "evidence_sufficient": true,
+          "answer_correct": true,
+          "grounded_correct": true,
+          "outcome": "grounded_success"
+        },
+        "oracle_page": {
+          "response_status": "answerable",
+          "answer": "The children’s home language support alpha would improve to .69, while the teachers’ school language support alpha would improve to .76. The difference is .07.",
+          "evidence_sufficient": true,
+          "answer_correct": true,
+          "grounded_correct": false,
+          "outcome": "correct_answer_incomplete_grounding",
+          "audit_note": "The response cited page 10 only; .69 is supported by page 9 and .76 by page 10."
+        }
+      }
+    },
+    {
+      "pilot_id": "pilot_03",
+      "question_id": "urnuuid44ff3ab7-6cd7-40f9-8abc-28680be05c68::q3",
+      "benchmark_is_answerable": true,
+      "benchmark_answer": "6.0%",
+      "user_confirmed": true,
+      "conditions": {
+        "closed_book": {
+          "response_status": "insufficient_evidence",
+          "answer": null,
+          "evidence_sufficient": false,
+          "answer_correct": null,
+          "grounded_correct": null,
+          "outcome": "appropriate_abstention_given_context"
+        },
+        "real_retrieval": {
+          "response_status": "answerable",
+          "answer": "6.0%",
+          "evidence_sufficient": true,
+          "answer_correct": true,
+          "grounded_correct": true,
+          "outcome": "grounded_success"
+        },
+        "oracle_page": {
+          "response_status": "answerable",
+          "answer": "6.0%",
+          "evidence_sufficient": true,
+          "answer_correct": true,
+          "grounded_correct": true,
+          "outcome": "grounded_success"
+        }
+      }
+    },
+    {
+      "pilot_id": "pilot_04",
+      "question_id": "urnuuid6977f498-b814-42ae-85db-4adaf7a88c9f::q2",
+      "benchmark_is_answerable": true,
+      "benchmark_answer": "1728",
+      "user_confirmed": true,
+      "conditions": {
+        "closed_book": {"response_status": "insufficient_evidence", "answer": null, "evidence_sufficient": false, "answer_correct": null, "grounded_correct": null, "outcome": "appropriate_abstention_given_context"},
+        "real_retrieval": {"response_status": "answerable", "answer": "The grand total for full-time male students exceeded that for full-time female students by 1,728 students (3,685 minus 1,957).", "evidence_sufficient": true, "answer_correct": true, "grounded_correct": true, "outcome": "grounded_success"},
+        "oracle_page": {"response_status": "answerable", "answer": "The difference is 1,728 students (3,685 male minus 1,957 female).", "evidence_sufficient": true, "answer_correct": true, "grounded_correct": true, "outcome": "grounded_success"}
+      }
+    },
+    {
+      "pilot_id": "pilot_05",
+      "question_id": "urnuuidb98e815e-2094-448a-bd43-d2e0ca7a8e25::q3",
+      "benchmark_is_answerable": true,
+      "benchmark_answer": "£15,124,917",
+      "user_confirmed": true,
+      "conditions": {
+        "closed_book": {"response_status": "insufficient_evidence", "answer": null, "evidence_sufficient": false, "answer_correct": null, "grounded_correct": null, "outcome": "appropriate_abstention_given_context"},
+        "real_retrieval": {"response_status": "answerable", "answer": "More than £15 million per year (estimated at £15,124,917).", "evidence_sufficient": true, "answer_correct": true, "grounded_correct": false, "outcome": "correct_answer_incomplete_grounding", "audit_note": "The response cited page 6 only; page 5 connects the gang-targeting case study to Victim Support and page 6 supplies the amount."},
+        "oracle_page": {"response_status": "answerable", "answer": "More than £15 million per year (estimated at £15,124,917).", "evidence_sufficient": true, "answer_correct": true, "grounded_correct": false, "outcome": "correct_answer_incomplete_grounding", "audit_note": "The response cited page 6 only; page 5 connects the gang-targeting case study to Victim Support and page 6 supplies the amount."}
+      }
+    },
+    {
+      "pilot_id": "pilot_06",
+      "question_id": "urnuuidc94c212d-21aa-4dbe-a75f-6d8888002f6a::q2",
+      "benchmark_is_answerable": true,
+      "benchmark_answer": "20%",
+      "user_confirmed": true,
+      "conditions": {
+        "closed_book": {"response_status": "insufficient_evidence", "answer": null, "evidence_sufficient": false, "answer_correct": null, "grounded_correct": null, "outcome": "appropriate_abstention_given_context"},
+        "real_retrieval": {"response_status": "answerable", "answer": "20%", "evidence_sufficient": true, "answer_correct": true, "grounded_correct": true, "outcome": "grounded_success"},
+        "oracle_page": {"response_status": "answerable", "answer": "30%", "evidence_sufficient": true, "answer_correct": false, "grounded_correct": false, "outcome": "incorrect_answer", "audit_note": "The correct page was supplied, but the extracted chart text interleaves percentages and category labels; the response selected the wrong adjacent value."}
+      }
+    },
+    {
+      "pilot_id": "pilot_07",
+      "question_id": "urnuuid7fbb918e-acda-4053-9c23-c16621876e15::q1",
+      "benchmark_is_answerable": true,
+      "benchmark_answer": "0.1%",
+      "user_confirmed": true,
+      "conditions": {
+        "closed_book": {"response_status": "insufficient_evidence", "answer": null, "evidence_sufficient": false, "answer_correct": null, "grounded_correct": null, "outcome": "appropriate_abstention_given_context"},
+        "real_retrieval": {"response_status": "insufficient_evidence", "answer": null, "evidence_sufficient": false, "answer_correct": null, "grounded_correct": null, "outcome": "appropriate_abstention_given_context", "audit_note": "Only one of the two comparison pages was retrieved."},
+        "oracle_page": {"response_status": "answerable", "answer": "China’s projected long-term average annual cotton mill-use growth rate is 1.2%, versus India’s 1.1%, a difference of 0.1 percentage point per year in China’s favor.", "evidence_sufficient": true, "answer_correct": true, "grounded_correct": true, "outcome": "grounded_success"}
+      }
+    },
+    {
+      "pilot_id": "pilot_08",
+      "question_id": "urnuuid926889a0-ba73-457e-95d5-7b767e414d43::q3",
+      "benchmark_is_answerable": true,
+      "benchmark_answer": "yes",
+      "user_confirmed": true,
+      "conditions": {
+        "closed_book": {"response_status": "insufficient_evidence", "answer": null, "evidence_sufficient": false, "answer_correct": null, "grounded_correct": null, "outcome": "appropriate_abstention_given_context"},
+        "real_retrieval": {"response_status": "answerable", "answer": "Yes. Both products are characterized as “not miscible or difficult to mix” with water.", "evidence_sufficient": false, "answer_correct": true, "grounded_correct": false, "outcome": "correct_answer_incomplete_grounding", "audit_note": "The retrieved pages identify His-Binding, His-Wash, and His-Elution products, but omit the target His-Affinity Gel; the yes answer is correct but unsupported for both target products."},
+        "oracle_page": {"response_status": "answerable", "answer": "Yes. Both His-Affinity Gel and His-Binding Buffer are characterized as “Not miscible or difficult to mix” with water.", "evidence_sufficient": true, "answer_correct": true, "grounded_correct": true, "outcome": "grounded_success"}
+      }
+    },
+    {
+      "pilot_id": "pilot_09",
+      "question_id": "urnuuid425f7a17-aa57-4cca-b56e-612fe270751d::q5",
+      "benchmark_is_answerable": true,
+      "benchmark_answer": "There are 5 primary group financial statement tables in the report.",
+      "user_confirmed": true,
+      "conditions": {
+        "closed_book": {"response_status": "insufficient_evidence", "answer": null, "evidence_sufficient": false, "answer_correct": null, "grounded_correct": null, "outcome": "appropriate_abstention_given_context"},
+        "real_retrieval": {"response_status": "insufficient_evidence", "answer": null, "evidence_sufficient": false, "answer_correct": null, "grounded_correct": null, "outcome": "appropriate_abstention_given_context", "audit_note": "Only the first financial-statement table page was retrieved, so the complete count could not be established."},
+        "oracle_page": {"response_status": "answerable", "answer": "5", "evidence_sufficient": true, "answer_correct": true, "grounded_correct": true, "outcome": "grounded_success"}
+      }
+    },
+    {
+      "pilot_id": "pilot_10",
+      "question_id": "urnuuidd0ba82b9-f6c5-4b9a-a1a7-abcbffc5aeae::q2",
+      "benchmark_is_answerable": true,
+      "benchmark_answer": "Nobumichi Hattori and Shogo Maeda",
+      "user_confirmed": true,
+      "conditions": {
+        "closed_book": {"response_status": "insufficient_evidence", "answer": null, "evidence_sufficient": false, "answer_correct": null, "grounded_correct": null, "outcome": "appropriate_abstention_given_context"},
+        "real_retrieval": {"response_status": "answerable", "answer": "Shogo Maeda held positions at Goldman Sachs Asset Management Co., Ltd., including Head of Japanese Equities and later Director, Asia-Pacific Equities CIO/CTO and Head of Japan Equities. Ayako Sano also joined Goldman Sachs (Japan) Ltd. in April 2001.", "evidence_sufficient": false, "answer_correct": false, "grounded_correct": false, "outcome": "incorrect_answer", "audit_note": "The response omitted Nobumichi Hattori and added Ayako Sano; the retrieved context lacked gold page 16."},
+        "oracle_page": {"response_status": "answerable", "answer": "Nobumichi Hattori and Shogo Maeda held positions at Goldman Sachs.", "evidence_sufficient": true, "answer_correct": true, "grounded_correct": true, "outcome": "grounded_success"}
+      }
+    },
+    {
+      "pilot_id": "pilot_11",
+      "question_id": "urnuuid181bfd7d-8bf2-4f0a-95e3-1201ac3321aa::q1",
+      "benchmark_is_answerable": true,
+      "benchmark_answer": "\"Added multi-range information\", \"Added new function information including COOL\", and \"LLC Name Change\"",
+      "user_confirmed": true,
+      "conditions": {
+        "closed_book": {"response_status": "insufficient_evidence", "answer": null, "evidence_sufficient": false, "answer_correct": null, "grounded_correct": null, "outcome": "appropriate_abstention_given_context"},
+        "real_retrieval": {"response_status": "answerable", "answer": "For part number B15444400A, the listed revision descriptions are: Added multi-range information; Added new function information including COOL; and LLC Name Change.", "evidence_sufficient": true, "answer_correct": true, "grounded_correct": false, "outcome": "correct_answer_incomplete_grounding", "audit_note": "The response cited page 5 only; retrieved page 3 identifies B15444400A as this guide's part number."},
+        "oracle_page": {"response_status": "answerable", "answer": "For part number B15444400A, the revision descriptions are: Added multi-range information; Added new function information including COOL; and LLC Name Change.", "evidence_sufficient": true, "answer_correct": true, "grounded_correct": false, "outcome": "correct_answer_incomplete_grounding", "audit_note": "The response cited page 5 only; Oracle page 1 identifies B15444400A as this guide's part number."}
+      }
+    },
+    {
+      "pilot_id": "pilot_12",
+      "question_id": "urnuuid395c19a8-ceda-45ec-854e-2316a9138c74::q2",
+      "benchmark_is_answerable": true,
+      "benchmark_answer": "55.9%",
+      "user_confirmed": true,
+      "conditions": {
+        "closed_book": {"response_status": "insufficient_evidence", "answer": null, "evidence_sufficient": false, "answer_correct": null, "grounded_correct": null, "outcome": "appropriate_abstention_given_context"},
+        "real_retrieval": {"response_status": "insufficient_evidence", "answer": null, "evidence_sufficient": false, "answer_correct": null, "grounded_correct": null, "outcome": "appropriate_abstention_given_context", "audit_note": "The retrieved context omitted page 11, which contains the requested CFC Plus Waiver percentage."},
+        "oracle_page": {"response_status": "answerable", "answer": "55.9%", "evidence_sufficient": true, "answer_correct": true, "grounded_correct": true, "outcome": "grounded_success"}
+      }
+    },
+    {
+      "pilot_id": "pilot_13",
+      "question_id": "urnuuid83d3c72c-a70d-422f-9c0b-992de5e5770e::q5",
+      "benchmark_is_answerable": true,
+      "benchmark_answer": "22",
+      "user_confirmed": true,
+      "conditions": {
+        "closed_book": {"response_status": "insufficient_evidence", "answer": null, "evidence_sufficient": false, "answer_correct": null, "grounded_correct": null, "outcome": "appropriate_abstention_given_context"},
+        "real_retrieval": {"response_status": "insufficient_evidence", "answer": null, "evidence_sufficient": false, "answer_correct": null, "grounded_correct": null, "outcome": "appropriate_abstention_given_context"},
+        "oracle_page": {"response_status": "answerable", "answer": "22 distinct industry sectors.", "evidence_sufficient": true, "answer_correct": true, "grounded_correct": true, "outcome": "grounded_success"}
+      }
+    },
+    {
+      "pilot_id": "pilot_14",
+      "question_id": "urnuuid881f7d70-7e7b-4b1a-90a9-3d837a1a8299::q3",
+      "benchmark_is_answerable": true,
+      "benchmark_answer": "19",
+      "user_confirmed": true,
+      "conditions": {
+        "closed_book": {"response_status": "insufficient_evidence", "answer": null, "evidence_sufficient": false, "answer_correct": null, "grounded_correct": null, "outcome": "appropriate_abstention_given_context"},
+        "real_retrieval": {"response_status": "insufficient_evidence", "answer": null, "evidence_sufficient": false, "answer_correct": null, "grounded_correct": null, "outcome": "appropriate_abstention_given_context"},
+        "oracle_page": {"response_status": "answerable", "answer": "19 competition categories require exactly 4 photos to be uploaded online.", "evidence_sufficient": true, "answer_correct": true, "grounded_correct": true, "outcome": "grounded_success"}
+      }
+    },
+    {
+      "pilot_id": "pilot_15",
+      "question_id": "urnuuid469c17b6-9e4f-4706-bc89-0e1814820dae::q5",
+      "benchmark_is_answerable": true,
+      "benchmark_answer": "VB000 - VB3FF",
+      "user_confirmed": true,
+      "conditions": {
+        "closed_book": {"response_status": "insufficient_evidence", "answer": null, "evidence_sufficient": false, "answer_correct": null, "grounded_correct": null, "outcome": "appropriate_abstention_given_context"},
+        "real_retrieval": {"response_status": "insufficient_evidence", "answer": null, "evidence_sufficient": false, "answer_correct": null, "grounded_correct": null, "outcome": "appropriate_abstention_given_context"},
+        "oracle_page": {"response_status": "answerable", "answer": "VB000 - VB3FF", "evidence_sufficient": true, "answer_correct": true, "grounded_correct": true, "outcome": "grounded_success"}
+      }
+    },
+    {
+      "pilot_id": "pilot_16",
+      "question_id": "urnuuid45a0a8e5-e31b-4e74-9663-f27ab82db68f::q5",
+      "benchmark_is_answerable": true,
+      "benchmark_answer": "1.05 feet",
+      "user_confirmed": true,
+      "conditions": {
+        "closed_book": {"response_status": "insufficient_evidence", "answer": null, "evidence_sufficient": false, "answer_correct": null, "grounded_correct": null, "outcome": "appropriate_abstention_given_context"},
+        "real_retrieval": {"response_status": "insufficient_evidence", "answer": null, "evidence_sufficient": false, "answer_correct": null, "grounded_correct": null, "outcome": "appropriate_abstention_given_context"},
+        "oracle_page": {"response_status": "insufficient_evidence", "answer": null, "evidence_sufficient": false, "answer_correct": null, "grounded_correct": null, "outcome": "appropriate_abstention_given_context", "audit_note": "The correct Oracle pages were supplied, but their pypdf text fields were empty."}
+      }
+    },
+    {
+      "pilot_id": "pilot_17",
+      "question_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba::q3",
+      "benchmark_is_answerable": true,
+      "benchmark_answer": "5",
+      "user_confirmed": true,
+      "conditions": {
+        "closed_book": {"response_status": "insufficient_evidence", "answer": null, "evidence_sufficient": false, "answer_correct": null, "grounded_correct": null, "outcome": "appropriate_abstention_given_context"},
+        "real_retrieval": {"response_status": "insufficient_evidence", "answer": null, "evidence_sufficient": false, "answer_correct": null, "grounded_correct": null, "outcome": "appropriate_abstention_given_context"},
+        "oracle_page": {"response_status": "insufficient_evidence", "answer": null, "evidence_sufficient": false, "answer_correct": null, "grounded_correct": null, "outcome": "appropriate_abstention_given_context", "audit_note": "The correct Oracle page was supplied, but its pypdf text field was empty."}
+      }
+    },
+    {
+      "pilot_id": "pilot_18",
+      "question_id": "urnuuid808e4631-8567-495d-a904-0c702dbe784e::q3",
+      "benchmark_is_answerable": true,
+      "benchmark_answer": "13",
+      "user_confirmed": true,
+      "conditions": {
+        "closed_book": {"response_status": "insufficient_evidence", "answer": null, "evidence_sufficient": false, "answer_correct": null, "grounded_correct": null, "outcome": "appropriate_abstention_given_context"},
+        "real_retrieval": {"response_status": "insufficient_evidence", "answer": null, "evidence_sufficient": false, "answer_correct": null, "grounded_correct": null, "outcome": "appropriate_abstention_given_context"},
+        "oracle_page": {"response_status": "answerable", "answer": "12 distinct stacked bar charts appear across the document.", "evidence_sufficient": false, "answer_correct": false, "grounded_correct": false, "outcome": "incorrect_answer", "audit_note": "Visual inspection confirmed 13 charts across the gold regions. Linear pypdf text did not preserve stacked-chart boundaries, and the model answered 12."}
+      }
+    },
+    {
+      "pilot_id": "pilot_19",
+      "question_id": "urnuuid3897fb73-c645-46be-a22f-4b94595d33e1::q2",
+      "benchmark_is_answerable": false,
+      "benchmark_answer": null,
+      "user_confirmed": true,
+      "conditions": {
+        "closed_book": {"response_status": "insufficient_evidence", "answer": null, "evidence_sufficient": null, "answer_correct": null, "grounded_correct": null, "outcome": "correct_abstention", "response_contract_valid": true},
+        "real_retrieval": {"response_status": "insufficient_evidence", "answer": null, "evidence_sufficient": null, "answer_correct": null, "grounded_correct": null, "outcome": "correct_abstention", "response_contract_valid": false, "audit_note": "Semantically abstained, but cited page 27 despite status=insufficient_evidence."},
+        "oracle_page": {"response_status": "insufficient_evidence", "answer": null, "evidence_sufficient": null, "answer_correct": null, "grounded_correct": null, "outcome": "correct_abstention", "response_contract_valid": true}
+      }
+    },
+    {
+      "pilot_id": "pilot_20",
+      "question_id": "urnuuid8f2628d5-89b1-4143-bb0f-623743d738bf::q5",
+      "benchmark_is_answerable": false,
+      "benchmark_answer": null,
+      "user_confirmed": true,
+      "conditions": {
+        "closed_book": {"response_status": "insufficient_evidence", "answer": null, "evidence_sufficient": null, "answer_correct": null, "grounded_correct": null, "outcome": "correct_abstention", "response_contract_valid": true},
+        "real_retrieval": {"response_status": "answerable", "answer": "The Articles change did not affect the 2008 reconciliation of movements in shareholders’ funds. It only required the Company to give a transferee reasons if it refused to register a share transfer, following Companies Act 2006 provisions effective from April 2008. The reconciliation instead records the year’s loss, share-capital increase, treasury purchases/cancellations, dividends, and share-issue/conversion expenses, resulting in closing shareholders’ funds of £55.136 million.", "evidence_sufficient": null, "answer_correct": false, "grounded_correct": false, "outcome": "false_answer_on_unanswerable", "response_contract_valid": true},
+        "oracle_page": {"response_status": "insufficient_evidence", "answer": null, "evidence_sufficient": null, "answer_correct": null, "grounded_correct": null, "outcome": "correct_abstention", "response_contract_valid": true}
+      }
+    },
+    {
+      "pilot_id": "pilot_21",
+      "question_id": "urnuuid0d4da810-0b76-4979-a774-0f8bd6fae742::q3",
+      "benchmark_is_answerable": false,
+      "benchmark_answer": null,
+      "user_confirmed": true,
+      "conditions": {
+        "closed_book": {"response_status": "insufficient_evidence", "answer": null, "evidence_sufficient": null, "answer_correct": null, "grounded_correct": null, "outcome": "correct_abstention", "response_contract_valid": true},
+        "real_retrieval": {"response_status": "answerable", "answer": "The document recommends an effective R-3 level for movable night insulation. It notes that achieving more than about R-3 to R-5 effective insulation is difficult in practice because of edge air leakage and circulation.", "evidence_sufficient": null, "answer_correct": false, "grounded_correct": false, "outcome": "false_answer_on_unanswerable", "response_contract_valid": true},
+        "oracle_page": {"response_status": "insufficient_evidence", "answer": null, "evidence_sufficient": null, "answer_correct": null, "grounded_correct": null, "outcome": "correct_abstention", "response_contract_valid": true}
+      }
+    },
+    {
+      "pilot_id": "pilot_22",
+      "question_id": "urnuuida994f1b4-401e-453b-9f52-149c44f35c82::q5",
+      "benchmark_is_answerable": false,
+      "benchmark_answer": null,
+      "user_confirmed": true,
+      "conditions": {
+        "closed_book": {"response_status": "insufficient_evidence", "answer": null, "evidence_sufficient": null, "answer_correct": null, "grounded_correct": null, "outcome": "correct_abstention", "response_contract_valid": true},
+        "real_retrieval": {"response_status": "insufficient_evidence", "answer": null, "evidence_sufficient": null, "answer_correct": null, "grounded_correct": null, "outcome": "correct_abstention", "response_contract_valid": true},
+        "oracle_page": {"response_status": "insufficient_evidence", "answer": null, "evidence_sufficient": null, "answer_correct": null, "grounded_correct": null, "outcome": "correct_abstention", "response_contract_valid": true}
+      }
+    },
+    {
+      "pilot_id": "pilot_23",
+      "question_id": "urnuuide13d8fae-e453-48a9-9996-7397adbecbc9::q1",
+      "benchmark_is_answerable": false,
+      "benchmark_answer": null,
+      "user_confirmed": true,
+      "conditions": {
+        "closed_book": {"response_status": "insufficient_evidence", "answer": null, "evidence_sufficient": null, "answer_correct": null, "grounded_correct": null, "outcome": "correct_abstention", "response_contract_valid": true},
+        "real_retrieval": {"response_status": "insufficient_evidence", "answer": null, "evidence_sufficient": null, "answer_correct": null, "grounded_correct": null, "outcome": "correct_abstention", "response_contract_valid": false, "audit_note": "Semantically abstained, but cited page 3 despite status=insufficient_evidence."},
+        "oracle_page": {"response_status": "insufficient_evidence", "answer": null, "evidence_sufficient": null, "answer_correct": null, "grounded_correct": null, "outcome": "correct_abstention", "response_contract_valid": true}
+      }
+    },
+    {
+      "pilot_id": "pilot_24",
+      "question_id": "urnuuid113144ee-53bb-4f43-9d8f-0c9e823fa25d::q3",
+      "benchmark_is_answerable": false,
+      "benchmark_answer": null,
+      "user_confirmed": true,
+      "conditions": {
+        "closed_book": {"response_status": "insufficient_evidence", "answer": null, "evidence_sufficient": null, "answer_correct": null, "grounded_correct": null, "outcome": "correct_abstention", "response_contract_valid": true},
+        "real_retrieval": {"response_status": "answerable", "answer": "The document states the Collins et al. (2000) Cormic Index (SH/S percentage) correction formula as:\n\n- Male BMI = 0.78 × (SH/S) − 18.43\n- Female BMI = 1.19 × (SH/S) − 40.34", "evidence_sufficient": null, "answer_correct": false, "grounded_correct": false, "outcome": "false_answer_on_unanswerable", "response_contract_valid": true},
+        "oracle_page": {"response_status": "insufficient_evidence", "answer": null, "evidence_sufficient": null, "answer_correct": null, "grounded_correct": null, "outcome": "correct_abstention", "response_contract_valid": true}
+      }
+    }
+  ]
+}

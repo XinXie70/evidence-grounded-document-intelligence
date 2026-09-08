@@ -1,0 +1,109 @@
+Sabbath Mode
+
+The Sabbath mode feature complies with standards set forth by Star K. Some of these standards that will be noticed
+by the consumer include the disabling of tones, disabling of oven lights, and delays of about 30 seconds to one
+minute on display changes. Only continuous baking or timed baking is allowed in the Sabbath mode. Cooking in the
+Sabbath mode is a two-step process, first the Sabbath mode must be set and then the bake mode must be set.
+
+Setting the Sabbath Mode
+
+Press the Settings pad, select Sabbath, and select
+Turn on. A single bracket “]’ will appear in the display
+indicating that the Sabbath mode is set. The clock will not
+be displayed. Continuous bake or timed bake can now be
+programmed.
+
+Starting a Continuous Bake
+
+1. Press the Bake pad. (For double ovens, this operates
+the upper oven. If desiring to use Lower Oven, press
+Lower Oven and then Bake.)
+
+2. If the desired temperature is 350F, press Start/
+Enter. If a different cooking temperature is desired,
+use the 1 through 5 number pads to select a preset
+cooking temperature, then press Start/Enter. Refer
+to the graphic below to determine which pad sets the
+desired cooking temperature.
+
+After a delay, a second bracket “] [“ will appear in the
+
+display indicating that the oven is baking.
+
+Temperature (°F) 1 2 3
+
+200 250 300
+Time (hours) 4 5 6
+325 400 2h
+2.5h 3h 3.5h
+Lock 0 Start_
+Controls Enter
+Hold 3 Sec Wake
+
+4h
+
+1 = 200° F, 2 = 250° F, 3 = 300° F, 4 = 325° F, 5 = 400° F
+
+6 = 2 hours, 7 = 2.5 hours, 8 = 3 hours, 9 = 3.5 hours, 0 = 4 hours
+
+49-2000233 Rev. 2
+
+Adjusting the Temperature
+
+1. Press Bake (or press Lower Oven and then Bake for
+lower oven in a double oven unit), use the 1 through
+5 number pads to select a different preset cooking
+temperature, and press Start/Enter.
+
+2. Since no feedback is given during temperature
+change, an oven thermometer can be used to confirm
+temperature changes.
+
+Starting a Timed Bake
+
+1. Press the Bake pad.
+
+2. If the desired temperature is 350F, use the 6 through
+0 number pads to select a cooking time. If a cooking
+temperature other than 350F is desired, use the 1
+through 5 number pads to select a preset cooking
+temperature, then select the cooking time. Refer to
+the graphic on this page to determine which pad sets
+the desired cooking temperature and cooking time.
+
+3. Press Start/Enter.
+
+After a delay, a second bracket “] [“ will appear in the
+
+display indicating that the oven is baking. When the cook
+
+time expires, the display will change back to a single
+bracket “]’ indicating that the oven is no longer baking.
+
+No tone will sound when the cook time is complete.
+
+Exit the Sabbath Mode
+
+Exiting the Sabbath mode should be done after the
+
+Sabbath is over.
+
+1. Press Cancel/Off to end any bake mode that may be
+running.
+
+2. Press and hold Settings pad until Sabbath Mode off
+is displayed.
+
+Sabbath Mode Power Outage Note
+
+If a power outage occurs while the oven is in Sabbath
+Mode, the unit will return to Sabbath Mode when power
+is restored, however the oven will return to the off state
+even if it was in the middle of a bake cycle when the
+power outage occurred.
+
+AONVY AHL ONISN
+
+spol yyeqqes
+
+17

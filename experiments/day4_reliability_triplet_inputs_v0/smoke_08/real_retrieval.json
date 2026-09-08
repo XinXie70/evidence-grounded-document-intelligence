@@ -1,0 +1,60 @@
+{
+  "condition": "real_retrieval",
+  "doc_id": "urnuuid0d4da810-0b76-4979-a774-0f8bd6fae742",
+  "evidence_pages": [
+    4,
+    10,
+    21
+  ],
+  "model_input": {
+    "evidence": [
+      {
+        "page": 4,
+        "text": "2 Montana Solar House — An Introduction to Solar Design About This Publication This is not a technical guide for designing or installing your solar systems. For that information, we recommend that you consult an experienced architect, solar house designer, or solar electric system dealer (“photovoltaic installer”) who will have detailed technical specifications and other information. Passive solar homes in particular require careful design analysis to provide optimum energy performance and acceptable comfort conditions. A number of useful references are included in Chapter 7. Many solar energy systems are a substantial investment and, as with any investment, careful planning will help ensure that you make the right decisions. In this first chapter we make a case for solar houses in Montana and describe the basic steps in the solar design process. Chapter 2 explains how to evaluate your building site for solar energy. Solar electric systems are described in Chapter 3. Solar water-heating systems are explained in Chapter 4. Chapter 5 discusses climate-responsive or building-integrated design. Chapter 6 suggests useful consumer tips and Chapter 7 lists useful references. The Case for Solar Homes The sun has been recognized throughout history as the giver of life on earth. It has played pivotal spiritual and functional roles in human development. The har- nessing of fossil fuels in the last century allowed technological advances that created more comfortable lifestyles. With the widespread use of electricity for lighting in the early 1900s, we began to ignore the sun when designing our buildings. Now at the beginning of a new millineum we have, in large part, lost contact with the natural world. We are recognizing the widespread environmental degradation that has resulted from our dependence on non-renewable energy sources. The design and construction of a new home is a unique and exciting opportunity. A home usually represents the single greatest investment most people make. The decisions made in the design of a new house will define the basic nature of the house for its life. This original house design will determine its durability, energy usage patterns, comfort, and marketability. There are many reasons why more and more people in all regions of the country are including solar energy in their new homes. The following are several reasons why solar makes sense for your new home. Your site, lifestyle, and budget will determine which approaches are most appropriate for you. energy Costsenergy Costsenergy Costsenergy Costsenergy Costs The United States imports more than half of its oil. This makes energy prices susceptible to international conflicts and political decisions. Energy shortages and environmental degradation Tepees, circular tents used by Native Americans of Montana, reflect the spiritual significance of the natural world. The entrance to the lodge was placed to the east, the direction from which the sun rises."
+      },
+      {
+        "page": 10,
+        "text": "Montana Solar House — An Introduction to Solar Design 8 Fig.1: Two coordinates are needed to locate the position of the sun in the sky. They are called the altitude and azimuth (also called the bearing angle). The last chapter introduced solar electric, solar water heating, and building-integrated solar design strategies. Regardless of the solar features selected, careful evaluation and use of the site is required for a successful solar design. Topography, vegetation, surrounding buildings, and views have a significant impact on the solar features that are appropriate for a new house. A relatively open view of the sky to the south of your house is required, at least during the months when you plan to use the sun. As a general rule, the solar collector area, whether window or roof, should be unshaded from 9 A.M. until 3 P.M. during the heating season for space heating and year- round for solar electric and water-heating systems. The basic concepts of how the sun moves in the sky on a seasonal and daily basis are illustrated in the following diagrams. Understanding azimuth and altitude angles, illustrated in Figure 1, will help in evaluating solar potential. solar potential: evaluating yoursolar potential: evaluating yoursolar potential: evaluating yoursolar potential: evaluating yoursolar potential: evaluating your site for solarsite for solarsite for solarsite for solarsite for solar 2 chapter 2:"
+      },
+      {
+        "page": 21,
+        "text": "Montana Solar House — An Introduction to Solar Design 19 system to provide back-up power in case of a utility power outage. Batteries add value to your system, but at a higher price. How much electricity will your PV system generate? Net metering allows you to be paid the retail electric rate for power generated by your system. This is a bargain since the utility pays about one-third the retail rate for wholesale power. A rough rule of thumb is that a one-kilowatt system will produce about 1,500 kilowatt-hours each year. Keep in mind that actual energy production will depend on a range of factors that include your geographic location, the angle and orientation of your system, the quality of the components of your system, and the quality of the installation. Consider asking for a written estimate of the average annual energy production from the PV system installer. However, you should realize that even if an estimate is accurate for an average year, actual electricity production will fluctuate from year to year due to natural variations in weather and climate. How much does a PV system cost? There is no single answer. The price of your system will depend on a number of factors, including whether the home is under construction or whether the PV is integrated into the roof or mounted on top of an existing roof. Price also varies depending on the manufacturer, retailer, and installer. An installer who is busy may charge more for the system than one who is not. The size of your system may be the most significant factor in any equation measuring costs against benefits. A 2-kilowatt system that will offset the needs of a very energy-efficient home may cost $20,000 to $24,000 installed, or $10 to $12 per watt. At the high end, a 5-kilowatt system that will offset the energy needs of many conventional homes may cost $40,000 to $50,000 installed, or $8 to $10 per watt. These prices, of course, are just rough estimates. Your costs will depend on the way your system is configured, your equipment options, and other factors. Your local PV installers can provide you with estimates or bids. Solar Electric Installations The quantity of solar energy collected depends on the angle at which the direct sunlight strikes the collector surface. The altitude and the azimuth must be considered. The Montana Solar Data Manual solar tables provide information for various tilt angles of south-facing surfaces and approximate correction factors for azimuth angles of 45 degrees and 90 degrees. Tables for several Montana cities are included at the end of this guide. The area necessary for a PV system is based on the efficiency of the photovoltaic modules you purchase. Commonly, residential systems require 80 to 100 square feet of area per kilowatt of capacity. If your location limits the physical size of your system, you may want to install a system that uses more efficient PV modules. Some roofing materials are simpler and cheaper to work with. Some PV system installers will not mount a solar array over wood shingles or shakes. Typically, composition shingles are easiest to work with, and slate is the most difficult. Ask your PV installer how the PV system affects your roof warranty."
+      }
+    ],
+    "instructions": "Answer the question. When document evidence is supplied, use only that evidence. When no document evidence is supplied, answer only from your existing knowledge and do not claim or imply document support. If the available basis does not adequately support an answer, return status='insufficient_evidence' and answer=null. Cite only supplied 1-based physical PDF page numbers; when no document evidence is supplied, cited_pages must be empty. Return one object matching response_schema.",
+    "question": "How many photographs of actual houses (not architectural diagrams or illustrations) appear across the entire chapter on building-integrated design?",
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "answer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cited_pages": {
+          "items": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "answerable",
+            "insufficient_evidence"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "answer",
+        "cited_pages",
+        "status"
+      ],
+      "type": "object"
+    }
+  },
+  "question_id": "urnuuid0d4da810-0b76-4979-a774-0f8bd6fae742::q1",
+  "schema_version": 1
+}

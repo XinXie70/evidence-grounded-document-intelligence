@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "route": "r2_scanned_document",
+  "trigger": "document_has_zero_native_text_pages",
+  "ocr": {
+    "tool": "tesseract",
+    "version": "5.5.3",
+    "render_dpi": 200,
+    "language": "eng",
+    "oem": 1,
+    "psm": 3
+  },
+  "retrieval": {
+    "method": "page_bm25",
+    "k1": 1.2,
+    "b": 0.75,
+    "query_token_policy": "deduplicate_preserve_order",
+    "top_k": 10
+  },
+  "reasoning_context": {
+    "representation": "layout_preserved_ocr_text"
+  },
+  "evaluation_scope": {
+    "allowed_split": "development_tune",
+    "locked_test_access": false
+  },
+  "selection_basis": [
+    "pilot_17 layout preservation changed the same OCR-C1 answer from 4 to the correct 5",
+    "pilot_16 query deduplication recovered both required pages within Top-10",
+    "the query-dedup candidate improved complete recall at 10 by 3.35 percentage points on 239 eligible development-tune questions",
+    "pilot_16 then produced the correct grounded multi-page answer of 1.05 feet"
+  ]
+}

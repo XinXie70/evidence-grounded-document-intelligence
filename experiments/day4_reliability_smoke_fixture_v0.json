@@ -1,0 +1,40 @@
+[
+  {
+    "question_id": "smoke_10::oracle_page",
+    "benchmark_is_answerable": false,
+    "response_status": "insufficient_evidence",
+    "answer": null
+  },
+  {
+    "question_id": "smoke_03::real_retrieval",
+    "benchmark_is_answerable": true,
+    "evidence_sufficient": false,
+    "response_status": "insufficient_evidence",
+    "answer": null
+  },
+  {
+    "question_id": "smoke_06::oracle_region_context",
+    "benchmark_is_answerable": true,
+    "evidence_sufficient": true,
+    "response_status": "insufficient_evidence",
+    "answer": null
+  },
+  {
+    "question_id": "smoke_08::oracle_region",
+    "benchmark_is_answerable": true,
+    "evidence_sufficient": true,
+    "response_status": "answerable",
+    "answer": "4",
+    "answer_correct": true,
+    "grounded_correct": false
+  },
+  {
+    "question_id": "smoke_06::oracle_facts",
+    "benchmark_is_answerable": true,
+    "evidence_sufficient": true,
+    "response_status": "answerable",
+    "answer": "6.01 hours",
+    "answer_correct": true,
+    "grounded_correct": true
+  }
+]

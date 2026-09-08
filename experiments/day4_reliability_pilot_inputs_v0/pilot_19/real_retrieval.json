@@ -1,0 +1,60 @@
+{
+  "condition": "real_retrieval",
+  "doc_id": "urnuuid3897fb73-c645-46be-a22f-4b94595d33e1",
+  "evidence_pages": [
+    27,
+    12,
+    23
+  ],
+  "model_input": {
+    "evidence": [
+      {
+        "page": 27,
+        "text": "Guide to engaging and working with youth volunteers | 2024 27 New South Wales Reporting obligations that apply to all adults • Under the Crimes Act 1900 (NSW) (NSW Crimes ACT), a person 18 years or over (an adult) who knows, believes or reasonably ought to know that a child abuse offence has been committed against another person, that they have information that might be of material assistance in securing the apprehension of the offender or the prosecution or conviction of the offender for the offence, must bring that information to the attention of a member of the NSW Police Force as soon as it is practicable to do so. • A person is guilty of an offence punishable by a maximum penalty of two years' imprisonment (if the maximum penalty for the child abuse offence is less than five years' imprisonment) or five years' imprisonment (if the maximum penalty for the child abuse offence i s five years' imprisonment or more) if they fail to bring that information to the attention of a member of the NSW Police Force as soon as it is practicable to do so. • A person is not guilty of an offence if they have a reasonable excuse for not reporting the suspected abuse . Examples of a reasonable excuse include: – the person believes on reasonable grounds that the information is already known to the police , or – the person has reasonable grounds to fear for their safety or the safety of another person (other than the suspected offender) (see section 316A of the NSW Crimes Act for the full list of relevant exceptions). • This reporting obligation applies to all adults in your organisation if they reasonably believe any child (including a youth volunteer) has been a victim of a sexual offence. Reporting obligations that apply to certain people • Under the Children and Young Persons (Care and Protection) Act 1998 (NSW) (NSW Child Protection Act ), certain persons have a duty to report if a child (a person under the age of 16) or young person (a person aged 16 or above but under the age of 18) at risk of significant harm. This includes a person who delivers or holds a management position in healthcare, welfare, education, children's services, residential services or law enforcement, either wholly or partly to children. It also applies to individuals in religious ministry , those providing religious-based activities to child ren or young persons, or a registered psychologist . If these individuals have reasonable grounds to suspect that a child or young person is at risk of ‘significant harm’ and those grounds arise during the course of, or from the person's work, they have an obligation to report this, as soon as practicable, to the Secretary of the Department of Communities and Justice ( Secretary). Significant harm includes where: – the child or young person’s basic physical or psychological needs are not being met, including medical care – the child or young person’s is living in a household where there have been incidents of domestic violence and the child is at risk of serious physical or psychological harm , or – a parent or other caregiver has behaved in such a way towards the child or young person that the child or young person has suffered or is at risk of suffering serious psychological harm (see section 23 of the NSW Child Protection Act for a full list of the circumstances if which a child or young is at risk of significant harm )."
+      },
+      {
+        "page": 12,
+        "text": "Guide to engaging and working with youth volunteers | 2024 12 Work conditions for youth volunteers Each state and territory has legislation setting out the specific legal obligations that apply to the working conditions of children. Generally, legal obligations that apply to the working conditions of children : • set out the time of day that a child is permitted to work (generally not before 6am or after 10pm, but may differ between jurisdictions) • set out the maximum hours per week a child is permitted to work • require that any work not interfere with a child's participation in education or training, and • set standards of working condition for children (for example, engaging in light work or work that is not harmful to the child's physical, mental or emotional wellbeing) Caution While the Australian Capital Territory, New South Wales, Northern Territory, South Australia, Tasmania, Queensland and Western Australia have ‘harmonised’ their WHS laws by enacting similar legislation, based on an agreed ‘model’ WHS Act, there are differences betwe en the states and territories. Victoria has not adopted the model WHS Act and has retained its own Occupational Health and Safety legislation. Always consult the relevant legislation in the applicable state or territory. For further information about WHS laws see: • part 4 of our National Volunteer Guide which sets out the laws that regulate health and safety in the workplace in all states and territories • our guide to community organisations and work health and safety laws • guidance on employing young workers published by the Fair Work Ombudsman Caution State and territory laws that regulate health and safety in the workplace are not summarised in this guide. For more information about these laws see our National Volunteering Guide. Note While many of these obligations apply to child employment only (as opposed to volunteering), as a matter of best practice, your organisation should use these obligations as a guide when engaging youth volunteers."
+      },
+      {
+        "page": 23,
+        "text": "Guide to engaging and working with youth volunteers | 2024 23 Although Australian organisations are not legally required to adopt them, the National Principles are considered best practice for fostering child safety and wellbeing culture and practice. The current position in each of state and territory is summarised below. Victoria In Victoria, organisations that engage youth volunteers (or provide services to children) must comply with the Victorian Child Safe Standards (Standards) as set out in the Child Wellbeing and Safety Act 2005 (Vic). The Standards can be accessed on the Victorian Commission for Children and Young People’s ( Commission) website. ACT The ACT endorsed the National Principles in February 2019 and, from 1 August 2024, implemented a Child Safe Standards Scheme . New South Wales In New South Wales, agencies delivering services to children and young people must comply with Child Safe Standards adopted by the New South Wales Government. The Office of the Children’s Guardian has responsibility to implement the Standards. Northern Territory In the Northern Territory, with the exception of schools, the National Principles are not mandatory. Queensland The Child Safe Organisations Bill passed by the Queensland Parliament in September 2024 mandates 10 child safe standards . The child safe standards come into effect from 1 October 2025 through a staged approach, with all child safe organisations required to comply with the Child Safe Standards by 1 April 2026. South Australia In South Australia, certain organisations must provide child safe environments and comply with the requirements under the Children and Young People (Safety) Act 2017 (SA) and the Child Safety (Prohibited Persons) Act 2016 (SA). These organisations must: • have a child safe environments policy in place • meet working with children check obligations, and • lodge a child safe environments compliance statement, which should all cover youth volunteers The Department of Human Services (DHS) has adopted the National Principles as well as state-informed policy. The DHS assists organisations in creating Child Safe policies and oversees the Child Safe Environments Program . Tasmania On 1 January 2024, Tasmania’s Child and Youth Safe Standards came into effect under the Child and Youth Safe Organisations Act 2023 (Tas). These standards align with the Federal Government’s National Principles. If your organisation engages with children and young people, it could be legally required to comply with the Standards. T he Child and Youth Safe Organisations Act 2023 (Tas) sets out who must comply with the Standards and includes: • certain entities that provide accommodation or residential services , child care or child- minding services, child protection services or out -of-home care, educational services , health services, justice or detention services , or transport services specifically for children • certain religious community service s and religious entities, disability service providers , and certain clubs, associations and cadet organisation s • entities that provide coaching or tuition service s to children or commercial services to children, and • certain entities operating as Neighbourhood House s"
+      }
+    ],
+    "instructions": "Answer the question. When document evidence is supplied, use only that evidence. When no document evidence is supplied, answer only from your existing knowledge and do not claim or imply document support. If the available basis does not adequately support an answer, return status='insufficient_evidence' and answer=null. Cite only supplied 1-based physical PDF page numbers; when no document evidence is supplied, cited_pages must be empty. Return one object matching response_schema.",
+    "question": "According to this document, what is the fine amount for each incident of sexual offenses against children in New South Wales that has not been disclosed?",
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "answer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cited_pages": {
+          "items": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "answerable",
+            "insufficient_evidence"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "answer",
+        "cited_pages",
+        "status"
+      ],
+      "type": "object"
+    }
+  },
+  "question_id": "urnuuid3897fb73-c645-46be-a22f-4b94595d33e1::q2",
+  "schema_version": 1
+}

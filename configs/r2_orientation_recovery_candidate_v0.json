@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "status": "diagnostic_candidate",
+  "route": "r2_scanned_document",
+  "trigger_scope": "retrieved_candidate_pages_with_suspect_ocr_orientation",
+  "trigger": {
+    "metric": "original_orientation_mean_word_confidence",
+    "operator": "less_than",
+    "threshold": 40.0,
+    "threshold_selection_scope": "development_tune_r2_adjacent_expansion_unique_candidate_pages",
+    "audit_candidate_page_count": 57,
+    "audit_triggered_page_count": 1
+  },
+  "rotations_degrees_clockwise": [
+    0,
+    90,
+    180,
+    270
+  ],
+  "selection_metric": "recognized_word_confidence_mass",
+  "tie_break": "mean_confidence_then_word_count_then_prefer_original_orientation",
+  "ocr_engine": "tesseract_5.5.3",
+  "application_policy": "retry_only_triggered_pages_then_select_highest_confidence_mass",
+  "uses_gold_or_answer_labels": false
+}

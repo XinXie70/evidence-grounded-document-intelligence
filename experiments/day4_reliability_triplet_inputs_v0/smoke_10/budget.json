@@ -1,0 +1,29 @@
+{
+  "approval_date": "2026-09-04",
+  "approval_status": "approved",
+  "approved_hard_cap_usd": 0.04,
+  "actual_cost_usd": 0.01221,
+  "actual_input_tokens": 4482,
+  "actual_output_tokens": 92,
+  "logical_conditions": 3,
+  "paid_call_count": 2,
+  "conditions": [
+    "closed_book_and_oracle_page_shared_request",
+    "real_retrieval"
+  ],
+  "config_path": "configs/reasoning_smoke_c0_v0.json",
+  "config_sha256": "bc84ff001e5fbdc0b4ed4b3ca96df88798607632de2eb4b8eca385c99d719234",
+  "conservative_cost_estimate_usd": 0.030783,
+  "currency": "USD",
+  "execution_status": "complete_within_budget",
+  "maximum_output_tokens_per_call": 512,
+  "pricing_snapshot_id": "openai-gpt-5.6-terra-2026-09-02",
+  "question_id": "urnuuid425f7a17-aa57-4cca-b56e-612fe270751d::q6",
+  "request_costs": {
+    "closed_book_and_oracle_page_shared_request": 0.007599,
+    "oracle_page_incremental_cost": 0.0,
+    "real_retrieval": 0.023184
+  },
+  "schema_version": 1,
+  "scope": "two paid requests representing the three logical C0-C1-C2 conditions for unanswerable smoke_10"
+}

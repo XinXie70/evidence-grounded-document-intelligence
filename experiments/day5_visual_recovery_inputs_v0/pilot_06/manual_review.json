@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "status": "confirmed",
+  "review_date": "2026-09-07",
+  "reviewer": "user",
+  "question_id": "urnuuidc94c212d-21aa-4dbe-a75f-6d8888002f6a::q2",
+  "evidence_local_id": "e1",
+  "page": 30,
+  "output_png": "e1_page_0030.png",
+  "output_png_sha256": "ad70b5c51f6d295345e13b7f7e6d258495076acb9b0b1e6cfb174a723c0418db",
+  "checks": {
+    "bar_group_labels_visible": true,
+    "legend_and_color_mapping_visible": true,
+    "percentage_labels_visible": true,
+    "crop_complete_enough_for_question": true
+  },
+  "user_observed_answer": "20%",
+  "note": "User confirmed that all three bar groups, the legend-to-color mapping, and the percentage labels are clearly visible; the visually supported answer is 20%."
+}

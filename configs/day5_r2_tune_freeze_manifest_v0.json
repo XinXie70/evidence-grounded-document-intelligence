@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "freeze_id": "day5_r2_tune_candidate_v2",
+  "freeze_date": "2026-09-08",
+  "status": "frozen_before_development_calibration",
+  "scope": "r2_scanned_document_route_on_development_tune",
+  "data_boundary": {
+    "split_manifest": {
+      "path": "data/manifests/split_manifest.json",
+      "sha256": "e76154d9eb743994c732faf7282323423357c1f282103594aadd2a5ddff9fd10"
+    },
+    "development_tune": {
+      "question_count": 256,
+      "document_count": 82,
+      "use": "architecture_and_threshold_development"
+    },
+    "development_calibration": {
+      "question_count": 132,
+      "document_count": 35,
+      "use_so_far": "split_metadata_only"
+    },
+    "locked_test": {
+      "question_count": 730,
+      "document_count": 156,
+      "modelling_access": "not_authorized",
+      "guard": "active"
+    },
+    "day1_integrity_exception": "All split metadata were read during the protocol-authorized deterministic Day 1 integrity audit; locked-test contents were not used for modelling choices."
+  },
+  "frozen_configuration": [
+    {
+      "path": "configs/r2_scanned_document_candidate_v2.json",
+      "sha256": "1b4ad31924f858b17031a16fb39aa1d51c21048b7b4991d721cc8f0f1e546dad"
+    },
+    {
+      "path": "configs/reasoning_r2_multihop_q4_v0.json",
+      "sha256": "7a46c135e5cacc5cc930e6a689e983d8a731aae0779bae00ed70753f0fdbddb6"
+    },
+    {
+      "path": "configs/r2_ocr_registry_orientation_recovered_v0.json",
+      "sha256": "9ceb1a824ba793a8a85dbb6904c09bd704561a561dc0cf4d8d6137cd073e6e60"
+    }
+  ],
+  "frozen_code": [
+    {
+      "path": "src/egdi/visual_routing.py",
+      "sha256": "f3e6c9dabfda4ea15460b6d273cfef54978b2ea758e6ada7fec8dc19b54a9e07"
+    },
+    {
+      "path": "src/egdi/retrieval_preparation.py",
+      "sha256": "a705c6034168ed39aa00224f4e2f88b161d93de281ee897d269bcdaddb3d1999"
+    },
+    {
+      "path": "src/egdi/ocr_orientation.py",
+      "sha256": "ddeb6dda5662c3e41d5d573a46ea5f1c849cf4746e9492765e4ef12608beba40"
+    },
+    {
+      "path": "src/egdi/orientation_corpus.py",
+      "sha256": "cbf4ad42203c1890bce60c4fe99d78a7900ddde10dae73eaf61e08023ed337be"
+    },
+    {
+      "path": "src/egdi/page_window.py",
+      "sha256": "efbf513193b82dfe845544ef2115117688ce659dbc4161c7d260749dc05b8d17"
+    },
+    {
+      "path": "src/egdi/multihop_windows.py",
+      "sha256": "6f85864c1d264a2dcf74c3c3309a49c5ffcd690128c507991f73eb827fac953b"
+    },
+    {
+      "path": "src/egdi/reasoning_api.py",
+      "sha256": "f0e8e9137ae63dd497781b1955385cc665f502e3ff003e212abd3f962a95eb12"
+    }
+  ],
+  "frozen_evidence": [
+    {
+      "path": "experiments/day5_r2_multihop_clause_expansion_evaluation_v0.json",
+      "sha256": "25a29059b9ded015edfbc64b8eddadc6b60eb6fc2cbffaccf20e2459e9fba122",
+      "role": "nine-question_tune_retrieval_evaluation"
+    },
+    {
+      "path": "results/day5_r2_multihop_q4_v0/real_retrieval.json",
+      "sha256": "a3e2d1c17ada27c80f97319720ce3f5dbac19cc60ec4a243f444b9913cce0cdd",
+      "role": "end_to_end_multihop_grounded_reasoning_smoke"
+    }
+  ],
+  "observed_tune_metrics": {
+    "r2_question_count": 9,
+    "any_evidence_recall": 1.0,
+    "complete_evidence_recall": 1.0,
+    "macro_page_recall": 1.0,
+    "mean_reasoning_pages": 9.333333333333334,
+    "maximum_reasoning_pages": 12,
+    "q4_grounded_correct": true
+  },
+  "test_suite_at_freeze": {
+    "command": "PYTHONPATH=src .venv/bin/python -m unittest discover -s tests",
+    "tests_run": 154,
+    "status": "passed"
+  },
+  "change_control": {
+    "calibration_policy": "Run this frozen candidate without modification. Do not use calibration failures to overwrite v2 or tune its thresholds.",
+    "future_change_policy": "Any later architecture change must create a new version, document its data basis, and cannot reuse the same calibration results as an unbiased validation.",
+    "locked_test_policy": "Remain locked until the complete system, prompt, retrieval configuration, thresholds, evaluator, and monetary cap are frozen."
+  },
+  "next_gate": "development_calibration_preflight"
+}

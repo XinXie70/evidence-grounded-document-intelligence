@@ -1,0 +1,14 @@
+{
+  "api": "openai_responses",
+  "endpoint_mode": "v1/responses",
+  "experiment_id": "day5_visual_recovery_pilot17_v0",
+  "image_detail": "original",
+  "max_output_tokens": 512,
+  "max_retries": 0,
+  "model": "gpt-5.6-terra",
+  "pricing_snapshot_path": "openai_gpt_5_6_terra_pricing_2026-09-02.json",
+  "provider": "openai",
+  "reasoning_effort": "low",
+  "selection_status": "failure-driven pilot17 missing-text list-count recovery; seven benchmark bboxes manually reviewed; image-only C3 intervention; one paid request proposed; zero retries; USD 0.02 cap",
+  "store": false
+}

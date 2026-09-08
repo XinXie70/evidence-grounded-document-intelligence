@@ -1,0 +1,43 @@
+{
+  "case_id": "smoke_01",
+  "condition": "closed_book",
+  "context_supplied": false,
+  "interpretation": "In the prompt-matched triplet, C0 abstained without document context, while C1 Real Retrieval and C2 Oracle Page both produced grounded correct answers at the 18-year threshold. For this case, document evidence added observable answerability and BM25 Top-3 was sufficient. This one case is not evidence that the full benchmark is uncontaminated.",
+  "manual_outcome": "closed_book_abstention",
+  "model_answer": null,
+  "model_status": "insufficient_evidence",
+  "question_id": "urnuuid0812e9ac-6f30-4624-9c78-6f4176467918::q2",
+  "result_path": "results/day4_closed_book_smoke_v0/smoke_01.json",
+  "result_sha256": "07d8233918cbbeaa54463940b03c4403caa8034f70439e49ed4958ebef2a7f5a",
+  "schema_version": 1,
+  "matched_conditions": {
+    "closed_book": {
+      "answer_correct": false,
+      "cost_usd": 0.000708,
+      "response_status": "insufficient_evidence",
+      "result_path": "results/day4_closed_book_smoke_v0/smoke_01.json",
+      "result_sha256": "07d8233918cbbeaa54463940b03c4403caa8034f70439e49ed4958ebef2a7f5a"
+    },
+    "oracle_page": {
+      "answer_correct": true,
+      "cited_pages": [12],
+      "cost_usd": 0.002106,
+      "grounded_correct": true,
+      "response_status": "answerable",
+      "result_path": "results/day4_closed_book_smoke_v0/smoke_01_oracle_page.json",
+      "result_sha256": "a373dd950fb297e83540ab1c5e30c057828829e9f4f2a0713d5df47e6c0be217"
+    },
+    "real_retrieval": {
+      "answer_correct": true,
+      "cited_pages": [12, 47],
+      "cost_usd": 0.004467,
+      "grounded_correct": true,
+      "response_status": "answerable",
+      "result_path": "results/day4_closed_book_smoke_v0/smoke_01_real_retrieval.json",
+      "result_sha256": "9490765a3616eeab475d503f5d5cce7035a44bdf4d00faf8af88b55770e08413"
+    }
+  },
+  "strict_prompt_matched_contrast_complete": true,
+  "triplet_actual_cost_usd": 0.007281,
+  "validation_passed": true
+}

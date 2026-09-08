@@ -1,0 +1,60 @@
+{
+  "condition": "real_retrieval",
+  "doc_id": "urnuuid881f7d70-7e7b-4b1a-90a9-3d837a1a8299",
+  "evidence_pages": [
+    9,
+    4,
+    8
+  ],
+  "model_input": {
+    "evidence": [
+      {
+        "page": 9,
+        "text": "OMC COMPETITION GUIDEBOOK 2025 OMC Copyright © All right Reserved -2025 Page 9 of 45 Version 10 January-1- 2025 OMC Jury Groups for the OMC World Championship: The OMC jury is made up of up to 8 members: 5 professional jurors from OMC and 3 jurors from countries with competitors in the World Championship. The OMC competition committee can choose qualified jurors who don’t have competitors in the event. Here’s how scoring works: If a juror’s score is for a competitor from their own country, that score is replaced with the average of the other jurors’ scores. Any violations will result in \" Red Cards,\" as explained on page 8. In case of a tie, the Jury President’s score will decide the winner (see Jury Guidebook page 15 for details). OMC Jury Selection: Only organizations official trainers have attended the 2025 OMC GLOBAL SYMPOSIUM in Milano. Those trainers may be privileged to possible judge in the 2025 OMC World Championship. OMC committee to make the final decision. Countries with multiple organizations? OMC will select the Juror from the organization who has most competitors registered. OMC Jurors Online Photo Link: It is forbidden for Jurors to share or post photos on social received fr om OMC. If this is the case. The Juror concerned will be disqualified permanently by OMC. Competitor Citizenship and Residency: Competitors can compete either for their country of residency or for their country of origin of their respective country organization. Canceling or Rescheduling of Competitions OMC reserves the right to cancel or reschedule any competition deemed necessary in it s sole and exclusive discretion. If OMC cancels a competition, OMC will reimburse the registration fees of the cancel test to the competitors. Competitors who cancel their participation after the deadline will not be refunded. OMC Competition Advisory Board: The OMC advisory board at its own discretion may disqualify any entries made by a participant, if the competitor has committed a detrimental act before or during the championship. OMC General Instructions for Competitions: All tests can be entered Individual or as combination, a competitor can register to compete on individual and team tests of the same section. However, the countries’ t eams will be formed only from those national competitors who have registered in the combination’s categories. Brushing or wet the Hair: Competitors before lining-up in the holding area must brush or wet their Model /MH Hair according to the rules. Mirror Numbers: The competitors’ mirror Numbers will be distributed in the competitors holding area. Once this has being accomplished the concerned competitors will follow the OMC competition directors who will escort them to their mirror number"
+      },
+      {
+        "page": 4,
+        "text": "OMC COMPETITION GUIDEBOOK 2025 OMC Copyright © All right Reserved -2025 Page 4 of 45 Version 10 January-1- 2025 2024 OMC WORLD CHAMPIONSHIPS The Combination Tests can be entered individually or as combinations. OMC TEAM WORLD CUP Teams are selected only from combinations Categories. If fewer than 3 teams, OMC will award only individual medals. ALL LADIES CATEGORIES INCLUDE COLOR & STYLES CREATIVE CUP - MH FASHION CUP - MH PRESTIGE CUP- MH Test 1- Creative Style Test 1- Open Wave Test 1- Prestige Gala Test 2- Hair by Night Test 2-Romantic Bridal Test 2-Prestige Bridal INDIVIDUAL TESTS MH Progressive Cut Creative Hair Color & Style Hollywood Glamour LM (pre done) SENIOR GENTS’ HAIR SECTION CLASSIC CUP - MH Test 1- Fade Cut Test 2- Classic Cut FASHION CUP - MH Test 1- Curly Cut Test 2- Street Cut BARBER CUP- MH Test1- Fade Cut Test 2- Low Skin Fade Cut INDIVIDUAL TESTS Creative Style MH Full Fashion LM (pre done) JUNIOR RISING STAR AWARD INDIVIDUAL MH Gents MH Curly Cut Street Cut Ladies MH Open Wave Romantic Bridal AESTHETICS INDIVIDUAL TESTS ONSITE LM Bridal Makeup Creative Eyes Makeup ONLINE PHOTOGRAPH LM Stage Makeup Smoky Eyes Makeup Fantasy Eyelashes Eyebrows Shaping & Tinting ONLINE NAIL INDIVIDUAL TEST LM Salon Manicure Design Nail Painting in Box"
+      },
+      {
+        "page": 8,
+        "text": "OMC COMPETITION GUIDEBOOK 2025 OMC Copyright © All right Reserved -2025 Page 8 of 45 Version 10 January-1- 2025 OMC Team World Cup - only from combinations tests. Competitors registration files: To: register go to www.omchairworld.com The registration must include all personal information’s of the compet itors. The official Country organizations must provide their competitors with OMC country’s online registration code. After the registration deadline, OMC will send to each country organization the complete list for them to confirm. The organization will have 3 days to confirm. If no reply is received withing the 3 days OMC consider that their country competitors registrati on list is approved. OMC Automatic Team Selection Each competitor must register and pay (online) in the concerned categories. OMC Team World Cup: The top 3 competitors with the highest accumulated points in the concerned combinations categories will automatically form the country team. The team can consist of competitors from different organizations within the country. The teams are considered as countries' nat ional teams, not as organizations' teams. All other OMC international championships are carried out on an individual basis. OMC Team World Cup - only from combinations tests. The OMC team world Cup will be awarded only if there are 3 or more teams. If there are less than 3 teams OMC will award only individual medals. OMC World Champion Title Awarded only to the Senior Competitors. Less than 10 Competitors in a tests OMC has the right to cancel the competition. Sr. Competitors Minimum Age 16 Years + All competitors must be 16 years + to compete in OMC Championships. Junior Rising Star Award - Min.16 Max. 23 years, excluding the 24th. birthday. It is forbidden for any competitor to compete simultaneously in different sections. A competitor can only compete in one Section: Hair section: Ladies or Gents SR. or JR. Aesthetics or Nail section Sr. or Jr. it is forbidden to cross over sections in the same championship. A competitor can only choose to compete in one (1) section per each championship. Juniors are considered a section. Furthermore, juniors’ competitors that compete in the Sr. Category 1 time, he - she cannot go back to compete in the Jr. section again. OMC Registration-Term & Conditions A competitor by signing the OMC term and conditions, automatically abide that their creative work presented on their Model or Mannequin Head in the competition arena as well their photos summited in the online competitions, automatically become the property and copyright of OMC and OMC HAIRWORLD. OMC and OMC HAIRWORD and the host country / fair company shall not be liable for any damage."
+      }
+    ],
+    "instructions": "Answer the question. When document evidence is supplied, use only that evidence. When no document evidence is supplied, answer only from your existing knowledge and do not claim or imply document support. If the available basis does not adequately support an answer, return status='insufficient_evidence' and answer=null. Cite only supplied 1-based physical PDF page numbers; when no document evidence is supplied, cited_pages must be empty. Return one object matching response_schema.",
+    "question": "How many competition categories in the document require exactly 4 photos to be uploaded online?",
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "answer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cited_pages": {
+          "items": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "answerable",
+            "insufficient_evidence"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "answer",
+        "cited_pages",
+        "status"
+      ],
+      "type": "object"
+    }
+  },
+  "question_id": "urnuuid881f7d70-7e7b-4b1a-90a9-3d837a1a8299::q3",
+  "schema_version": 1
+}

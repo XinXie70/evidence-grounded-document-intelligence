@@ -1,0 +1,12 @@
+{
+  "duplicate_question_id_count": 0,
+  "evidence_page_range_error_count": 0,
+  "evidence_region_count": 4482,
+  "fact_count": 5613,
+  "malformed_bbox_count": 0,
+  "malformed_bboxes": [],
+  "orphan_fact_link_count": 0,
+  "orphan_fact_links": [],
+  "question_count": 1124,
+  "schema_version": 1
+}

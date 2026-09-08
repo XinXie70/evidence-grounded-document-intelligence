@@ -1,0 +1,693 @@
+{
+  "document_count": 24,
+  "excluded_smoke_question_count": 10,
+  "question_count": 24,
+  "questions": [
+    {
+      "bm25_top1_score": 15.170349667164691,
+      "bm25_top1_top2_margin": 0.018623107260113514,
+      "bm25_top3_pages": [
+        34,
+        26,
+        11
+      ],
+      "doc_id": "urnuuid4873f4f3-f4eb-4931-97f5-ae4f1951f07e",
+      "evidence_bucket": "text",
+      "evidence_type": "text",
+      "gold_text_status": "ok",
+      "kind": "answerable",
+      "oracle_pages": [
+        11
+      ],
+      "page_span": "single",
+      "pilot_id": "pilot_01",
+      "question": "According to the chart showing annual fund flows into global climate funds by category, which climate strategy category had the highest positive inflows in YTD 2024?",
+      "question_id": "urnuuid4873f4f3-f4eb-4931-97f5-ae4f1951f07e::q1",
+      "retrieval_band": "complete",
+      "slot_id": "c_text_single",
+      "top3_extraction_status_counts": {
+        "low_text": 0,
+        "ok": 3,
+        "text_layer_missing": 0
+      }
+    },
+    {
+      "bm25_top1_score": 34.69569385189274,
+      "bm25_top1_top2_margin": 9.594511251726743,
+      "bm25_top3_pages": [
+        10,
+        9,
+        11
+      ],
+      "doc_id": "urnuuid77b8c272-7717-468a-9c12-b41257db91d9",
+      "evidence_bucket": "text",
+      "evidence_type": "text",
+      "gold_text_status": "ok",
+      "kind": "answerable",
+      "oracle_pages": [
+        9,
+        10
+      ],
+      "page_span": "multi",
+      "pilot_id": "pilot_02",
+      "question": "In the Mauritian language support study, what is the difference between the potential improved Cronbach's alpha values (if one item were removed) for the children's home language support factor and the teachers' school language support factor?",
+      "question_id": "urnuuid77b8c272-7717-468a-9c12-b41257db91d9::q2",
+      "retrieval_band": "complete",
+      "slot_id": "c_text_multi",
+      "top3_extraction_status_counts": {
+        "low_text": 0,
+        "ok": 3,
+        "text_layer_missing": 0
+      }
+    },
+    {
+      "bm25_top1_score": 33.0284949748829,
+      "bm25_top1_top2_margin": 19.247734048629283,
+      "bm25_top3_pages": [
+        32,
+        10,
+        13
+      ],
+      "doc_id": "urnuuid44ff3ab7-6cd7-40f9-8abc-28680be05c68",
+      "evidence_bucket": "table",
+      "evidence_type": "table",
+      "gold_text_status": "ok",
+      "kind": "answerable",
+      "oracle_pages": [
+        32
+      ],
+      "page_span": "single",
+      "pilot_id": "pilot_03",
+      "question": "In the table showing R&D and SG&A expenses, what is the 9-month FY2021 R&D expense ratio to revenue?",
+      "question_id": "urnuuid44ff3ab7-6cd7-40f9-8abc-28680be05c68::q3",
+      "retrieval_band": "complete",
+      "slot_id": "c_table_single",
+      "top3_extraction_status_counts": {
+        "low_text": 0,
+        "ok": 3,
+        "text_layer_missing": 0
+      }
+    },
+    {
+      "bm25_top1_score": 33.344708664040354,
+      "bm25_top1_top2_margin": 0.31289967336471136,
+      "bm25_top3_pages": [
+        7,
+        9,
+        5
+      ],
+      "doc_id": "urnuuid6977f498-b814-42ae-85db-4adaf7a88c9f",
+      "evidence_bucket": "table",
+      "evidence_type": "table",
+      "gold_text_status": "ok",
+      "kind": "answerable",
+      "oracle_pages": [
+        5,
+        7
+      ],
+      "page_span": "multi",
+      "pilot_id": "pilot_04",
+      "question": "What is the difference between the grand total of full-time female Bachelor's and 1st Professional degree students and the grand total of full-time male Bachelor's and 1st Professional degree students?",
+      "question_id": "urnuuid6977f498-b814-42ae-85db-4adaf7a88c9f::q2",
+      "retrieval_band": "complete",
+      "slot_id": "c_table_multi",
+      "top3_extraction_status_counts": {
+        "low_text": 0,
+        "ok": 3,
+        "text_layer_missing": 0
+      }
+    },
+    {
+      "bm25_top1_score": 21.28751751034356,
+      "bm25_top1_top2_margin": 6.870483080700218,
+      "bm25_top3_pages": [
+        6,
+        26,
+        5
+      ],
+      "doc_id": "urnuuidb98e815e-2094-448a-bd43-d2e0ca7a8e25",
+      "evidence_bucket": "mixed",
+      "evidence_type": "mixed",
+      "gold_text_status": "ok",
+      "kind": "answerable",
+      "oracle_pages": [
+        5,
+        6
+      ],
+      "page_span": "multi",
+      "pilot_id": "pilot_05",
+      "question": "According to the section about volunteering, what is the estimated total monetary value of volunteers' working time per year for the organization featured in the teenager's gang-targeting case study?",
+      "question_id": "urnuuidb98e815e-2094-448a-bd43-d2e0ca7a8e25::q3",
+      "retrieval_band": "complete",
+      "slot_id": "c_mixed_multi",
+      "top3_extraction_status_counts": {
+        "low_text": 0,
+        "ok": 3,
+        "text_layer_missing": 0
+      }
+    },
+    {
+      "bm25_top1_score": 33.115893492504014,
+      "bm25_top1_top2_margin": 2.8537134390388523,
+      "bm25_top3_pages": [
+        31,
+        30,
+        8
+      ],
+      "doc_id": "urnuuidc94c212d-21aa-4dbe-a75f-6d8888002f6a",
+      "evidence_bucket": "visual",
+      "evidence_type": "chart",
+      "gold_text_status": "ok",
+      "kind": "answerable",
+      "oracle_pages": [
+        30
+      ],
+      "page_span": "single",
+      "pilot_id": "pilot_06",
+      "question": "In the bar chart showing how frequently residents visited a leisure fortress/venue in the last 12 months, what percentage of adults living in households with dependent children had not visited at all?",
+      "question_id": "urnuuidc94c212d-21aa-4dbe-a75f-6d8888002f6a::q2",
+      "retrieval_band": "complete",
+      "slot_id": "c_visual_single",
+      "top3_extraction_status_counts": {
+        "low_text": 0,
+        "ok": 3,
+        "text_layer_missing": 0
+      }
+    },
+    {
+      "bm25_top1_score": 34.55216740076047,
+      "bm25_top1_top2_margin": 1.2617565497632413,
+      "bm25_top3_pages": [
+        23,
+        6,
+        12
+      ],
+      "doc_id": "urnuuid7fbb918e-acda-4053-9c23-c16621876e15",
+      "evidence_bucket": "text",
+      "evidence_type": "text",
+      "gold_text_status": "ok",
+      "kind": "answerable",
+      "oracle_pages": [
+        11,
+        12
+      ],
+      "page_span": "multi",
+      "pilot_id": "pilot_07",
+      "question": "According to the document, what is the difference in the projected long-term average annual growth rate of cotton mill use between China and India over the next ten years?",
+      "question_id": "urnuuid7fbb918e-acda-4053-9c23-c16621876e15::q1",
+      "retrieval_band": "partial",
+      "slot_id": "p_text_multi_1",
+      "top3_extraction_status_counts": {
+        "low_text": 0,
+        "ok": 3,
+        "text_layer_missing": 0
+      }
+    },
+    {
+      "bm25_top1_score": 16.050199348024062,
+      "bm25_top1_top2_margin": 0.09600086497617966,
+      "bm25_top3_pages": [
+        18,
+        27,
+        36
+      ],
+      "doc_id": "urnuuid926889a0-ba73-457e-95d5-7b767e414d43",
+      "evidence_bucket": "text",
+      "evidence_type": "text",
+      "gold_text_status": "ok",
+      "kind": "answerable",
+      "oracle_pages": [
+        2,
+        7,
+        14,
+        18
+      ],
+      "page_span": "multi",
+      "pilot_id": "pilot_08",
+      "question": "Both products' safety data sheets describe water solubility/miscibility. Do the two products share the same characterization for their solubility in water?",
+      "question_id": "urnuuid926889a0-ba73-457e-95d5-7b767e414d43::q3",
+      "retrieval_band": "partial",
+      "slot_id": "p_text_multi_2",
+      "top3_extraction_status_counts": {
+        "low_text": 0,
+        "ok": 3,
+        "text_layer_missing": 0
+      }
+    },
+    {
+      "bm25_top1_score": 5.935757965194259,
+      "bm25_top1_top2_margin": 0.6091615880604895,
+      "bm25_top3_pages": [
+        8,
+        14,
+        1
+      ],
+      "doc_id": "urnuuid425f7a17-aa57-4cca-b56e-612fe270751d",
+      "evidence_bucket": "table",
+      "evidence_type": "table",
+      "gold_text_status": "ok",
+      "kind": "answerable",
+      "oracle_pages": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "page_span": "multi",
+      "pilot_id": "pilot_09",
+      "question": "How many primary group financial statement tables appear in the report?",
+      "question_id": "urnuuid425f7a17-aa57-4cca-b56e-612fe270751d::q5",
+      "retrieval_band": "partial",
+      "slot_id": "p_table_multi_1",
+      "top3_extraction_status_counts": {
+        "low_text": 0,
+        "ok": 3,
+        "text_layer_missing": 0
+      }
+    },
+    {
+      "bm25_top1_score": 12.322360127516054,
+      "bm25_top1_top2_margin": 0.12718645914993765,
+      "bm25_top3_pages": [
+        34,
+        50,
+        21
+      ],
+      "doc_id": "urnuuidd0ba82b9-f6c5-4b9a-a1a7-abcbffc5aeae",
+      "evidence_bucket": "table",
+      "evidence_type": "table",
+      "gold_text_status": "ok",
+      "kind": "answerable",
+      "oracle_pages": [
+        16,
+        34
+      ],
+      "page_span": "multi",
+      "pilot_id": "pilot_10",
+      "question": "Which director candidate held positions at Goldman Sachs?",
+      "question_id": "urnuuidd0ba82b9-f6c5-4b9a-a1a7-abcbffc5aeae::q2",
+      "retrieval_band": "partial",
+      "slot_id": "p_table_multi_2",
+      "top3_extraction_status_counts": {
+        "low_text": 0,
+        "ok": 3,
+        "text_layer_missing": 0
+      }
+    },
+    {
+      "bm25_top1_score": 19.131191590295046,
+      "bm25_top1_top2_margin": 8.367868350812802,
+      "bm25_top3_pages": [
+        5,
+        28,
+        3
+      ],
+      "doc_id": "urnuuid181bfd7d-8bf2-4f0a-95e3-1201ac3321aa",
+      "evidence_bucket": "mixed",
+      "evidence_type": "mixed",
+      "gold_text_status": "low_text",
+      "kind": "answerable",
+      "oracle_pages": [
+        1,
+        5
+      ],
+      "page_span": "multi",
+      "pilot_id": "pilot_11",
+      "question": "Which revision descriptions are listed for this guide’s part number in the Publication Revision History?",
+      "question_id": "urnuuid181bfd7d-8bf2-4f0a-95e3-1201ac3321aa::q1",
+      "retrieval_band": "partial",
+      "slot_id": "p_mixed_multi_low",
+      "top3_extraction_status_counts": {
+        "low_text": 0,
+        "ok": 3,
+        "text_layer_missing": 0
+      }
+    },
+    {
+      "bm25_top1_score": 36.46306220464667,
+      "bm25_top1_top2_margin": 3.3554878228217575,
+      "bm25_top3_pages": [
+        10,
+        9,
+        23
+      ],
+      "doc_id": "urnuuid395c19a8-ceda-45ec-854e-2316a9138c74",
+      "evidence_bucket": "visual",
+      "evidence_type": "chart",
+      "gold_text_status": "ok",
+      "kind": "answerable",
+      "oracle_pages": [
+        10,
+        11
+      ],
+      "page_span": "multi",
+      "pilot_id": "pilot_12",
+      "question": "What is the CFC Plus Waiver percentage of participants giving the highest score for the composite measure that received the lowest mean score across all programs (CFC All)?",
+      "question_id": "urnuuid395c19a8-ceda-45ec-854e-2316a9138c74::q2",
+      "retrieval_band": "partial",
+      "slot_id": "p_visual_multi",
+      "top3_extraction_status_counts": {
+        "low_text": 0,
+        "ok": 3,
+        "text_layer_missing": 0
+      }
+    },
+    {
+      "bm25_top1_score": 11.458244752494894,
+      "bm25_top1_top2_margin": 0.03559370657576544,
+      "bm25_top3_pages": [
+        4,
+        5,
+        9
+      ],
+      "doc_id": "urnuuid83d3c72c-a70d-422f-9c0b-992de5e5770e",
+      "evidence_bucket": "text",
+      "evidence_type": "text",
+      "gold_text_status": "ok",
+      "kind": "answerable",
+      "oracle_pages": [
+        13,
+        14
+      ],
+      "page_span": "multi",
+      "pilot_id": "pilot_13",
+      "question": "How many distinct industry sectors are listed in the fund's detailed investment holdings table?",
+      "question_id": "urnuuid83d3c72c-a70d-422f-9c0b-992de5e5770e::q5",
+      "retrieval_band": "none",
+      "slot_id": "n_text_multi_1",
+      "top3_extraction_status_counts": {
+        "low_text": 0,
+        "ok": 3,
+        "text_layer_missing": 0
+      }
+    },
+    {
+      "bm25_top1_score": 5.881886749869944,
+      "bm25_top1_top2_margin": 1.4872122697849113,
+      "bm25_top3_pages": [
+        9,
+        4,
+        8
+      ],
+      "doc_id": "urnuuid881f7d70-7e7b-4b1a-90a9-3d837a1a8299",
+      "evidence_bucket": "text",
+      "evidence_type": "text",
+      "gold_text_status": "ok",
+      "kind": "answerable",
+      "oracle_pages": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        20,
+        21,
+        22,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        32,
+        33
+      ],
+      "page_span": "multi",
+      "pilot_id": "pilot_14",
+      "question": "How many competition categories in the document require exactly 4 photos to be uploaded online?",
+      "question_id": "urnuuid881f7d70-7e7b-4b1a-90a9-3d837a1a8299::q3",
+      "retrieval_band": "none",
+      "slot_id": "n_text_multi_2",
+      "top3_extraction_status_counts": {
+        "low_text": 0,
+        "ok": 3,
+        "text_layer_missing": 0
+      }
+    },
+    {
+      "bm25_top1_score": 30.421151634215633,
+      "bm25_top1_top2_margin": 11.854316590518678,
+      "bm25_top3_pages": [
+        46,
+        54,
+        52
+      ],
+      "doc_id": "urnuuid469c17b6-9e4f-4706-bc89-0e1814820dae",
+      "evidence_bucket": "table",
+      "evidence_type": "table",
+      "gold_text_status": "ok",
+      "kind": "answerable",
+      "oracle_pages": [
+        50
+      ],
+      "page_span": "single",
+      "pilot_id": "pilot_15",
+      "question": "What is the word address range for the device type called 'Work Relay' that has a bit address range?",
+      "question_id": "urnuuid469c17b6-9e4f-4706-bc89-0e1814820dae::q5",
+      "retrieval_band": "none",
+      "slot_id": "n_table_single",
+      "top3_extraction_status_counts": {
+        "low_text": 0,
+        "ok": 3,
+        "text_layer_missing": 0
+      }
+    },
+    {
+      "bm25_top1_score": 0.0,
+      "bm25_top1_top2_margin": 0.0,
+      "bm25_top3_pages": [
+        1,
+        2,
+        3
+      ],
+      "doc_id": "urnuuid45a0a8e5-e31b-4e74-9663-f27ab82db68f",
+      "evidence_bucket": "table",
+      "evidence_type": "table",
+      "gold_text_status": "text_layer_missing",
+      "kind": "answerable",
+      "oracle_pages": [
+        10,
+        11
+      ],
+      "page_span": "multi",
+      "pilot_id": "pilot_16",
+      "question": "For well MW3, what is the difference in depth to water (in feet) between the earliest monitoring date and the latest monitoring date recorded in the monitoring data summary?",
+      "question_id": "urnuuid45a0a8e5-e31b-4e74-9663-f27ab82db68f::q5",
+      "retrieval_band": "none",
+      "slot_id": "n_table_multi_missing",
+      "top3_extraction_status_counts": {
+        "low_text": 0,
+        "ok": 0,
+        "text_layer_missing": 3
+      }
+    },
+    {
+      "bm25_top1_score": 0.0,
+      "bm25_top1_top2_margin": 0.0,
+      "bm25_top3_pages": [
+        1,
+        2,
+        3
+      ],
+      "doc_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba",
+      "evidence_bucket": "mixed",
+      "evidence_type": "mixed",
+      "gold_text_status": "text_layer_missing",
+      "kind": "answerable",
+      "oracle_pages": [
+        12
+      ],
+      "page_span": "single",
+      "pilot_id": "pilot_17",
+      "question": "How many specific items are listed in the section describing enhancements that are still being worked on?",
+      "question_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba::q3",
+      "retrieval_band": "none",
+      "slot_id": "n_mixed_single_missing",
+      "top3_extraction_status_counts": {
+        "low_text": 0,
+        "ok": 0,
+        "text_layer_missing": 3
+      }
+    },
+    {
+      "bm25_top1_score": 2.6167938853175827,
+      "bm25_top1_top2_margin": 0.09417427793496458,
+      "bm25_top3_pages": [
+        36,
+        23,
+        34
+      ],
+      "doc_id": "urnuuid808e4631-8567-495d-a904-0c702dbe784e",
+      "evidence_bucket": "visual",
+      "evidence_type": "chart",
+      "gold_text_status": "ok",
+      "kind": "answerable",
+      "oracle_pages": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "page_span": "multi",
+      "pilot_id": "pilot_18",
+      "question": "How many distinct stacked bar charts appear across the entire document?",
+      "question_id": "urnuuid808e4631-8567-495d-a904-0c702dbe784e::q3",
+      "retrieval_band": "none",
+      "slot_id": "n_visual_multi",
+      "top3_extraction_status_counts": {
+        "low_text": 0,
+        "ok": 3,
+        "text_layer_missing": 0
+      }
+    },
+    {
+      "bm25_signal_band": "low",
+      "bm25_top1_score": 14.356110666636352,
+      "bm25_top1_top2_margin": 0.06958960181311014,
+      "bm25_top3_pages": [
+        27,
+        12,
+        23
+      ],
+      "doc_id": "urnuuid3897fb73-c645-46be-a22f-4b94595d33e1",
+      "kind": "unanswerable",
+      "oracle_pages": [],
+      "pilot_id": "pilot_19",
+      "question": "According to this document, what is the fine amount for each incident of sexual offenses against children in New South Wales that has not been disclosed?",
+      "question_id": "urnuuid3897fb73-c645-46be-a22f-4b94595d33e1::q2",
+      "slot_id": "u_low_1",
+      "top3_extraction_status_counts": {
+        "low_text": 0,
+        "ok": 3,
+        "text_layer_missing": 0
+      }
+    },
+    {
+      "bm25_signal_band": "low",
+      "bm25_top1_score": 13.801407939889023,
+      "bm25_top1_top2_margin": 0.6281626486085639,
+      "bm25_top3_pages": [
+        26,
+        31,
+        32
+      ],
+      "doc_id": "urnuuid8f2628d5-89b1-4143-bb0f-623743d738bf",
+      "kind": "unanswerable",
+      "oracle_pages": [],
+      "pilot_id": "pilot_20",
+      "question": "How did the change in the Company's Articles of Association regarding share transfers impact the reconciliation of movements in shareholders' funds for 2008?",
+      "question_id": "urnuuid8f2628d5-89b1-4143-bb0f-623743d738bf::q5",
+      "slot_id": "u_low_2",
+      "top3_extraction_status_counts": {
+        "low_text": 0,
+        "ok": 3,
+        "text_layer_missing": 0
+      }
+    },
+    {
+      "bm25_signal_band": "mid",
+      "bm25_top1_score": 22.139611711187722,
+      "bm25_top1_top2_margin": 12.694721896068614,
+      "bm25_top3_pages": [
+        35,
+        33,
+        36
+      ],
+      "doc_id": "urnuuid0d4da810-0b76-4979-a774-0f8bd6fae742",
+      "kind": "unanswerable",
+      "oracle_pages": [],
+      "pilot_id": "pilot_21",
+      "question": "What specific R-value does the document recommend for movable insulation systems used with Trombé walls?",
+      "question_id": "urnuuid0d4da810-0b76-4979-a774-0f8bd6fae742::q3",
+      "slot_id": "u_mid_1",
+      "top3_extraction_status_counts": {
+        "low_text": 0,
+        "ok": 3,
+        "text_layer_missing": 0
+      }
+    },
+    {
+      "bm25_signal_band": "mid",
+      "bm25_top1_score": 20.889789533881444,
+      "bm25_top1_top2_margin": 2.0161485680439775,
+      "bm25_top3_pages": [
+        2,
+        59,
+        10
+      ],
+      "doc_id": "urnuuida994f1b4-401e-453b-9f52-149c44f35c82",
+      "kind": "unanswerable",
+      "oracle_pages": [],
+      "pilot_id": "pilot_22",
+      "question": "How does the Timer RC's PWM output configuration affect the DTC transfer activation timing as described in the document?",
+      "question_id": "urnuuida994f1b4-401e-453b-9f52-149c44f35c82::q5",
+      "slot_id": "u_mid_2",
+      "top3_extraction_status_counts": {
+        "low_text": 0,
+        "ok": 3,
+        "text_layer_missing": 0
+      }
+    },
+    {
+      "bm25_signal_band": "mid",
+      "bm25_top1_score": 18.806935019961646,
+      "bm25_top1_top2_margin": 4.095601279757853,
+      "bm25_top3_pages": [
+        3,
+        5,
+        10
+      ],
+      "doc_id": "urnuuide13d8fae-e453-48a9-9996-7397adbecbc9",
+      "kind": "unanswerable",
+      "oracle_pages": [],
+      "pilot_id": "pilot_23",
+      "question": "According to the document, how does the protocol-based VLAN classification method interact with the trunk link configuration during testing?",
+      "question_id": "urnuuide13d8fae-e453-48a9-9996-7397adbecbc9::q1",
+      "slot_id": "u_mid_3",
+      "top3_extraction_status_counts": {
+        "low_text": 0,
+        "ok": 3,
+        "text_layer_missing": 0
+      }
+    },
+    {
+      "bm25_signal_band": "high",
+      "bm25_top1_score": 45.92401738538427,
+      "bm25_top1_top2_margin": 6.988950659836007,
+      "bm25_top3_pages": [
+        72,
+        73,
+        76
+      ],
+      "doc_id": "urnuuid113144ee-53bb-4f43-9d8f-0c9e823fa25d",
+      "kind": "unanswerable",
+      "oracle_pages": [],
+      "pilot_id": "pilot_24",
+      "question": "What BMI correction formula does Collins et al. (2000) recommend for standardizing BMI using the Cormic Index in children?",
+      "question_id": "urnuuid113144ee-53bb-4f43-9d8f-0c9e823fa25d::q3",
+      "slot_id": "u_high_1",
+      "top3_extraction_status_counts": {
+        "low_text": 0,
+        "ok": 3,
+        "text_layer_missing": 0
+      }
+    }
+  ],
+  "schema_version": 1,
+  "seed": "day4-reliability-pilot-v0-2026-09-04",
+  "source_sha256": {
+    "confidence_features": "f8969c5cbbd074641d59be009638342b06f69f9cd7fbf1051dbec99fd234de74",
+    "protocol": "f73f8cc71bdf5cb134890f4c465e583eaa1beecbd8d078360ffde96567089dc1",
+    "retrieval_results": "8dd53c91a53d517065e36609d984dca8c798b4fe9cba72aaeb5fe2dd4b5793c7",
+    "smoke_selection": "2c384755f1c3c33089af450ab571f70e049ac0dc46178bc56ef373ea253b536c",
+    "split_manifest": "e76154d9eb743994c732faf7282323423357c1f282103594aadd2a5ddff9fd10"
+  },
+  "split": "development_tune",
+  "status": "frozen_for_reliability_pilot_v0"
+}

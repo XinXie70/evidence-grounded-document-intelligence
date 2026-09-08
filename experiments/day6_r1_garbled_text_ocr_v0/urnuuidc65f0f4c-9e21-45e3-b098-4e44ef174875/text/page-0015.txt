@@ -1,0 +1,129 @@
+Options
+
+The options pad opens up a menu of more cooking modes when the oven is off. It opens a menu with additional features
+if a cooking mode is already in process. You can exit the menu at any time by pressing the Options pad again.
+
+You must first select a mode (bake, convection bake, convection roast) and then select Options to get to the
+
+following functions.
+
+Cook Time
+
+Counts down cooking time and turns off the oven when
+the cooking time is complete. Select a desired cooking
+mode. Use the number pads to program a baking
+temperature. Press the Options pad and select Cook
+Time. Use the number pad to program cook time in hours
+and minutes. Then press Start/Enter. This can only
+
+be used with Bake, Convection Bake, and Convection
+Roast.
+
+Delay Time
+
+Delays when the oven will turn on. Use this to set a
+
+time when you want the oven to start. Select a desired
+cooking mode. Use the number pad to program a baking
+temperature. Press the Options pad and select Delay
+Time. Use the number pads to program the time of day
+for the oven to turn on, and then press Start/Enter. Delay
+Time is not available with all modes.
+
+Settings
+
+NOTE: When using the Delay Time feature, foods that
+spoil easily — such as milk, eggs, fish, stuffing, poultry,
+and port — should not be allowed to sit for more than
+
+1 hour before or after cooking. Room temperature
+promotes the growth of harmful bacteria. Be sure that the
+oven light is off because heat from the bulb will speed
+harmful bacteria growth.
+
+Oven Probe (Lower Oven Only)
+
+NOTE: Only accessible through traditional and
+convection cooking modes.
+
+Monitors internal food temperature and turns the oven
+
+off when the food reaches the programmed temperature.
+Insert the probe, press the desired cooking mode, and
+program the probe temperature. See the Cooking Modes
+Section for more information. The probe can only be used
+with Bake, Convection Bake, and Convection Roast.
+
+The Options and Settings pads open up more detailed menus in the display that allow access to additional
+functions. For each you select the function in the display using the associated number pad. You can exit at
+
+any time by pressing the Options or Settings pad again.
+
+WiFi Connect and Remote Enable
+
+Your oven is designed to provide you with two-way
+communication between your appliance and smart
+device. By using the WiFi Connect features, you will
+be able to control essential oven operations such as
+temperature settings, timers and cooking modes using
+your smartphone or tablet.*
+
+Select Settings then Wifi - follow the instructions on your
+oven display and phone app. It is necessary to turn on
+WiFi before using Remote Enable on your oven.
+
+Connecting your WiFi Connect Enabled Oven
+
+What you will need
+
+Your Café oven uses your existing home WiFi network
+to communicate between the appliance and your smart
+device. In order to setup your Café oven, you will need
+to gather some information:
+
+1. Each Café oven has a connected appliance
+information label that includes an Appliance Network
+Name and Password. These are the two important
+details that you will need to connect to the appliance.
+The label is typically located inside the door of the
+oven or drawer.
+
+* Compatible Apple or Android devices and home WiFi network required.
+
+49-2000233 Rev. 2
+
+Connected Appliance Information
+FCC: ZKJ-WCATA001 Network: GE_XXXXXX_XXXX
+IC: 10229A-WCATA001 Password: XXXXXXXX
+MAC ID: XX - XX - XX - XX - XX - XX PT. NO. 229C6272G001-0
+
+Sample Label
+
+2. Have your smart phone or tablet ready with the ability
+to access the internet and download apps.
+
+3. You will need to know the password of your home
+WiFi router. Have this password ready while you are
+setting up your Café oven.
+
+Connect your Café oven
+
+1. On your smart phone or tablet visit
+cafeappliances.com/connect to learn more about
+connected appliance features and to download the
+appropriate app.
+
+2. Follow the app onscreen instructions to connect your
+Café oven.
+
+3. Once the process is complete, the connection light
+located on your Café oven display will stay on solid
+and the app will confirm you are connected.
+
+AONVY AHL ONISN
+
+Weg / suondo :
+
+s6ul
+
+15

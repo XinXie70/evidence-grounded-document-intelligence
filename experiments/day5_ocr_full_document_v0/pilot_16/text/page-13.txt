@@ -1,0 +1,41 @@
+KET-P88-1204.OR9
+September 17, 1991
+
+TABLE 2 (Continued)
+SUMMARY OF LABORATORY ANALYSES
+
+WATER
+
+Sample TPH as TPH as Ethyl- TOG
+
+Date Well # Diesel Gasoline Benzene Toluene Xylenes benzene (ppm)
+2/23/90 MW1 ND ND ND ND ND ND ND
+MW2 ND 44 ND ND ND ND ND
+MW3 350 ND 0.32 ND ND ND 1.3
+Mw4 ND ND ND ND ND ND ND
+MW5 ND ND ND ND ND ND ND
+MW6 ND ND ND ND ND ND ND
+11/21/89 MW1 ND ND ND ND ND ND 8.9
+MW2 ND 43 ND 0.51 ND ND 1.6
+MW3 110 1,900 ND ND ND ND 3.8
+MW4 ND ND ND ND ND ND ND
+MW5 70 ND ND ND ND ND ND
+MW6 ND ND ND ND ND ND ND
+8/11/89 MW1 ND ND ND ND ND ND ND
+& MW2 ND ND ND 0.39 ND ND ND
+8/29/89 MW3 860 3,200 73 140 240 35 ND
+MW4 120 ND ND ND ND ND ND
+MW5 100 ND ND 0.94 ND 0.30 ND
+MW6 ND ND ND ND ND ND ND
+4/25/89 MW1 100 ND 0.31 ND ND ND --
+MW2 ND 32 0.35 ND ND ND 7
+MW3 5,700 56 ND ND 0.49 0.31 -+-
+
+Detection
+
+Limits 50 30 0.3 0.3 0.3 0.3 5.6
+
+~~ Indicates analysis not performed.
+ND = Non-detectable.
+
+Results in parts per billion (ppb), unless otherwise indicated.

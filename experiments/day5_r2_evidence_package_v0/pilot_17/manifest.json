@@ -1,0 +1,11 @@
+{
+  "evidence_package_sha256": "eaca1fae51d83bd2fea7496ea27530ab9d536f58fd3ea24658874842ffc38776",
+  "evidence_pages": [
+    12,
+    10,
+    30
+  ],
+  "question_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba::q3",
+  "real_retrieval_sha256": "6c03905a0d3b31809e21069732d327775bcd8456695dbcb66d96ae01b316b8cb",
+  "schema_version": 1
+}

@@ -1,0 +1,1936 @@
+{
+  "character_measure": "non-whitespace Unicode code points",
+  "document_extraction_failure_count": 0,
+  "document_extraction_failures": [],
+  "gold_evidence_pages": {
+    "low_text_pages": 79,
+    "questions_with_any_low_text_evidence_page": 55,
+    "questions_with_any_missing_text_evidence_page": 34,
+    "text_layer_missing_pages": 43,
+    "unique_page_count": 2235
+  },
+  "low_text_pages": 914,
+  "low_text_rate": 0.06522049379192237,
+  "parser": "pypdf 6.10.0 PdfReader(strict=False).pages[].extract_text()",
+  "per_document": [
+    {
+      "doc_id": "urnuuid00588fd1-b7d1-41dc-9131-7832d01dc6b3",
+      "low_text_pages": 7,
+      "page_count": 96,
+      "text_layer_missing_pages": 7,
+      "total_non_whitespace_chars": 138801
+    },
+    {
+      "doc_id": "urnuuid006bc6dc-e3fc-4894-aff5-587f7e5c3d1f",
+      "low_text_pages": 0,
+      "page_count": 39,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 91539
+    },
+    {
+      "doc_id": "urnuuid0127a863-a287-43f6-8592-bd4031fd5b16",
+      "low_text_pages": 1,
+      "page_count": 38,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 98679
+    },
+    {
+      "doc_id": "urnuuid01f11c82-e373-4172-876b-01b085e89f4d",
+      "low_text_pages": 0,
+      "page_count": 48,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 41926
+    },
+    {
+      "doc_id": "urnuuid04f26807-1adf-4a07-a6db-bc44d976f82e",
+      "low_text_pages": 1,
+      "page_count": 47,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 85807
+    },
+    {
+      "doc_id": "urnuuid0812e9ac-6f30-4624-9c78-6f4176467918",
+      "low_text_pages": 0,
+      "page_count": 53,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 91508
+    },
+    {
+      "doc_id": "urnuuid095ae01d-7861-4099-a18f-3ac0e88b43da",
+      "low_text_pages": 3,
+      "page_count": 48,
+      "text_layer_missing_pages": 2,
+      "total_non_whitespace_chars": 80731
+    },
+    {
+      "doc_id": "urnuuid0a20b83c-2af0-4503-9220-c63470cdd214",
+      "low_text_pages": 19,
+      "page_count": 88,
+      "text_layer_missing_pages": 12,
+      "total_non_whitespace_chars": 124247
+    },
+    {
+      "doc_id": "urnuuid0ae534d4-5392-451c-a35c-2f6e9ade6fee",
+      "low_text_pages": 2,
+      "page_count": 42,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 66652
+    },
+    {
+      "doc_id": "urnuuid0ce4a457-e19e-4a3e-9856-31c8ec39cc0a",
+      "low_text_pages": 0,
+      "page_count": 50,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 25324
+    },
+    {
+      "doc_id": "urnuuid0d38ab5d-dd76-4b4a-b9e0-e3b33499b0d8",
+      "low_text_pages": 1,
+      "page_count": 50,
+      "text_layer_missing_pages": 1,
+      "total_non_whitespace_chars": 52209
+    },
+    {
+      "doc_id": "urnuuid0d4da810-0b76-4979-a774-0f8bd6fae742",
+      "low_text_pages": 0,
+      "page_count": 44,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 81777
+    },
+    {
+      "doc_id": "urnuuid0ed32f1a-716d-40e7-8405-2fb8e759dc33",
+      "low_text_pages": 0,
+      "page_count": 47,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 37842
+    },
+    {
+      "doc_id": "urnuuid0f5d7a73-b0b9-49e8-a04e-89f2a02132fe",
+      "low_text_pages": 2,
+      "page_count": 52,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 37952
+    },
+    {
+      "doc_id": "urnuuid106b90a4-acbe-433d-bd61-c23e4645e4e2",
+      "low_text_pages": 5,
+      "page_count": 40,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 30512
+    },
+    {
+      "doc_id": "urnuuid111476ed-6700-4be2-85cc-3fc17696167e",
+      "low_text_pages": 4,
+      "page_count": 64,
+      "text_layer_missing_pages": 2,
+      "total_non_whitespace_chars": 69280
+    },
+    {
+      "doc_id": "urnuuid113144ee-53bb-4f43-9d8f-0c9e823fa25d",
+      "low_text_pages": 1,
+      "page_count": 92,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 180193
+    },
+    {
+      "doc_id": "urnuuid13a35a8e-7ab7-41ec-ad37-42b01cdf12b2",
+      "low_text_pages": 0,
+      "page_count": 36,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 52417
+    },
+    {
+      "doc_id": "urnuuid158825e5-cefb-4dd9-ba7b-6870982fffe3",
+      "low_text_pages": 1,
+      "page_count": 41,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 63126
+    },
+    {
+      "doc_id": "urnuuid1643a589-96a2-4dd0-bc2f-6f7adef286ce",
+      "low_text_pages": 0,
+      "page_count": 50,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 66906
+    },
+    {
+      "doc_id": "urnuuid17ea40f4-bf32-416a-8fdd-afebdbeb2ff7",
+      "low_text_pages": 0,
+      "page_count": 38,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 105092
+    },
+    {
+      "doc_id": "urnuuid181bfd7d-8bf2-4f0a-95e3-1201ac3321aa",
+      "low_text_pages": 5,
+      "page_count": 48,
+      "text_layer_missing_pages": 2,
+      "total_non_whitespace_chars": 43057
+    },
+    {
+      "doc_id": "urnuuid1afa47e1-6675-4314-a68c-26dbc3f19428",
+      "low_text_pages": 0,
+      "page_count": 36,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 62858
+    },
+    {
+      "doc_id": "urnuuid1c0499a9-36ad-4968-bf6f-d86fcd55e596",
+      "low_text_pages": 2,
+      "page_count": 40,
+      "text_layer_missing_pages": 2,
+      "total_non_whitespace_chars": 42182
+    },
+    {
+      "doc_id": "urnuuid1c60441a-56f0-490d-982a-d108d3291da3",
+      "low_text_pages": 1,
+      "page_count": 36,
+      "text_layer_missing_pages": 1,
+      "total_non_whitespace_chars": 129450
+    },
+    {
+      "doc_id": "urnuuid1db4ecfc-47e2-41a3-bb9b-4c6793e3fa32",
+      "low_text_pages": 0,
+      "page_count": 42,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 42032
+    },
+    {
+      "doc_id": "urnuuid201560a1-6b3f-4428-a5de-fc1559d40288",
+      "low_text_pages": 3,
+      "page_count": 55,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 98211
+    },
+    {
+      "doc_id": "urnuuid211a9d2e-9afe-4806-a64d-532c47436475",
+      "low_text_pages": 2,
+      "page_count": 93,
+      "text_layer_missing_pages": 1,
+      "total_non_whitespace_chars": 115894
+    },
+    {
+      "doc_id": "urnuuid21a6463d-14ee-4b18-a7e7-42d6fd82d858",
+      "low_text_pages": 0,
+      "page_count": 36,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 52472
+    },
+    {
+      "doc_id": "urnuuid23ff4687-c707-4ab1-bfd6-8700c927504c",
+      "low_text_pages": 10,
+      "page_count": 48,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 31591
+    },
+    {
+      "doc_id": "urnuuid268128cc-0a4d-4c60-9707-9f33a8f0714d",
+      "low_text_pages": 1,
+      "page_count": 47,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 54554
+    },
+    {
+      "doc_id": "urnuuid27ed2f89-1cad-470f-a5d8-44cbb99d7286",
+      "low_text_pages": 6,
+      "page_count": 35,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 18141
+    },
+    {
+      "doc_id": "urnuuid280bfe54-b444-461c-aea3-2c084f80cdea",
+      "low_text_pages": 0,
+      "page_count": 77,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 139272
+    },
+    {
+      "doc_id": "urnuuid283c1865-3705-4ac8-842b-c382d7d61fd1",
+      "low_text_pages": 0,
+      "page_count": 36,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 78051
+    },
+    {
+      "doc_id": "urnuuid29cddbed-26b7-4470-8025-6fda3188aaae",
+      "low_text_pages": 0,
+      "page_count": 42,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 107997
+    },
+    {
+      "doc_id": "urnuuid2b0802d3-bd05-4526-b4fa-f97545282b04",
+      "low_text_pages": 1,
+      "page_count": 38,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 23985
+    },
+    {
+      "doc_id": "urnuuid2b9ec679-e86f-4f0c-b62f-b38c15fda460",
+      "low_text_pages": 0,
+      "page_count": 40,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 40893
+    },
+    {
+      "doc_id": "urnuuid2c02d3eb-adad-410a-8a0f-8474eacbb883",
+      "low_text_pages": 0,
+      "page_count": 39,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 101401
+    },
+    {
+      "doc_id": "urnuuid2d9cc034-4c7b-4466-8b1a-859f2e584f4d",
+      "low_text_pages": 11,
+      "page_count": 60,
+      "text_layer_missing_pages": 11,
+      "total_non_whitespace_chars": 58450
+    },
+    {
+      "doc_id": "urnuuid2ec9537c-589c-47f0-81ae-8e02e2d85414",
+      "low_text_pages": 9,
+      "page_count": 42,
+      "text_layer_missing_pages": 4,
+      "total_non_whitespace_chars": 20977
+    },
+    {
+      "doc_id": "urnuuid2f22e0f8-37ac-47df-9b1c-b3cb6d806304",
+      "low_text_pages": 0,
+      "page_count": 67,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 66347
+    },
+    {
+      "doc_id": "urnuuid302544c5-a977-4310-a8f8-33b6f91180fb",
+      "low_text_pages": 1,
+      "page_count": 40,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 47521
+    },
+    {
+      "doc_id": "urnuuid32099fc9-b717-41f2-b708-dc079b66b305",
+      "low_text_pages": 0,
+      "page_count": 87,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 183672
+    },
+    {
+      "doc_id": "urnuuid322d3124-66df-4287-89c7-686355412fff",
+      "low_text_pages": 5,
+      "page_count": 38,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 25894
+    },
+    {
+      "doc_id": "urnuuid34bfbf08-2976-42b8-b882-5350ad5b83e5",
+      "low_text_pages": 0,
+      "page_count": 37,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 63920
+    },
+    {
+      "doc_id": "urnuuid354912a2-dc35-45b7-bb64-93324a215bca",
+      "low_text_pages": 1,
+      "page_count": 49,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 103407
+    },
+    {
+      "doc_id": "urnuuid3578bc83-e2ca-49d1-8fdd-e812ce92d2f8",
+      "low_text_pages": 0,
+      "page_count": 45,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 46746
+    },
+    {
+      "doc_id": "urnuuid358bea29-95fa-4e27-9584-4b1565d82e01",
+      "low_text_pages": 2,
+      "page_count": 44,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 33428
+    },
+    {
+      "doc_id": "urnuuid35fcd1ee-c2ad-45af-bd62-a5e05035ce3c",
+      "low_text_pages": 1,
+      "page_count": 38,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 36802
+    },
+    {
+      "doc_id": "urnuuid36014fba-c303-4447-935d-6058c5137075",
+      "low_text_pages": 2,
+      "page_count": 52,
+      "text_layer_missing_pages": 2,
+      "total_non_whitespace_chars": 63402
+    },
+    {
+      "doc_id": "urnuuid36495cf3-5cb1-4b38-8cfe-1d693872b598",
+      "low_text_pages": 0,
+      "page_count": 53,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 114389
+    },
+    {
+      "doc_id": "urnuuid375e2626-1ca6-4414-8030-33aae21bf26a",
+      "low_text_pages": 0,
+      "page_count": 35,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 40250
+    },
+    {
+      "doc_id": "urnuuid3897fb73-c645-46be-a22f-4b94595d33e1",
+      "low_text_pages": 6,
+      "page_count": 36,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 59415
+    },
+    {
+      "doc_id": "urnuuid38f64288-801b-4a01-b228-8c98e35b5b9b",
+      "low_text_pages": 8,
+      "page_count": 42,
+      "text_layer_missing_pages": 6,
+      "total_non_whitespace_chars": 39145
+    },
+    {
+      "doc_id": "urnuuid395c19a8-ceda-45ec-854e-2316a9138c74",
+      "low_text_pages": 0,
+      "page_count": 71,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 85384
+    },
+    {
+      "doc_id": "urnuuid39f20d22-8e0c-48b6-84d8-737ecd7e5bc9",
+      "low_text_pages": 9,
+      "page_count": 60,
+      "text_layer_missing_pages": 4,
+      "total_non_whitespace_chars": 101135
+    },
+    {
+      "doc_id": "urnuuid3a8634c5-69b8-475f-9665-f6d5138e23d8",
+      "low_text_pages": 3,
+      "page_count": 42,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 68639
+    },
+    {
+      "doc_id": "urnuuid3b41084d-08fc-4651-9811-40b8115dc96c",
+      "low_text_pages": 0,
+      "page_count": 53,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 83324
+    },
+    {
+      "doc_id": "urnuuid3cd11194-e95b-4768-8757-aba530acd92a",
+      "low_text_pages": 46,
+      "page_count": 46,
+      "text_layer_missing_pages": 46,
+      "total_non_whitespace_chars": 0
+    },
+    {
+      "doc_id": "urnuuid3cf74d49-81b2-4dc5-b2a2-0dfd88443710",
+      "low_text_pages": 3,
+      "page_count": 60,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 69453
+    },
+    {
+      "doc_id": "urnuuid3d531608-d043-4fd6-86a0-891d284bc9e2",
+      "low_text_pages": 0,
+      "page_count": 51,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 80509
+    },
+    {
+      "doc_id": "urnuuid3e5a4a72-44e5-4967-93a1-10e78079f243",
+      "low_text_pages": 1,
+      "page_count": 68,
+      "text_layer_missing_pages": 1,
+      "total_non_whitespace_chars": 143631
+    },
+    {
+      "doc_id": "urnuuid3e64e67a-feb4-482a-bec9-e47c1553a826",
+      "low_text_pages": 9,
+      "page_count": 48,
+      "text_layer_missing_pages": 2,
+      "total_non_whitespace_chars": 18629
+    },
+    {
+      "doc_id": "urnuuid3e87b523-d0fe-4eed-a244-56eb62f970f7",
+      "low_text_pages": 0,
+      "page_count": 61,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 99038
+    },
+    {
+      "doc_id": "urnuuid3eba148e-0756-4cd8-aa9a-0eac0c9da6f8",
+      "low_text_pages": 5,
+      "page_count": 36,
+      "text_layer_missing_pages": 2,
+      "total_non_whitespace_chars": 22923
+    },
+    {
+      "doc_id": "urnuuid41b36393-8bfd-4c94-bd6f-8dc3a85721de",
+      "low_text_pages": 2,
+      "page_count": 54,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 40683
+    },
+    {
+      "doc_id": "urnuuid425f7a17-aa57-4cca-b56e-612fe270751d",
+      "low_text_pages": 2,
+      "page_count": 36,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 94941
+    },
+    {
+      "doc_id": "urnuuid42d553ad-d2e0-45de-b0a3-b164ea985ef0",
+      "low_text_pages": 3,
+      "page_count": 39,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 39255
+    },
+    {
+      "doc_id": "urnuuid43789628-4758-4a83-acae-db4709873d89",
+      "low_text_pages": 4,
+      "page_count": 94,
+      "text_layer_missing_pages": 1,
+      "total_non_whitespace_chars": 133820
+    },
+    {
+      "doc_id": "urnuuid43cbe342-5d96-4a0c-b2f5-4aee95a56f15",
+      "low_text_pages": 1,
+      "page_count": 39,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 48663
+    },
+    {
+      "doc_id": "urnuuid44ff3ab7-6cd7-40f9-8abc-28680be05c68",
+      "low_text_pages": 4,
+      "page_count": 36,
+      "text_layer_missing_pages": 1,
+      "total_non_whitespace_chars": 27076
+    },
+    {
+      "doc_id": "urnuuid45a0a8e5-e31b-4e74-9663-f27ab82db68f",
+      "low_text_pages": 37,
+      "page_count": 37,
+      "text_layer_missing_pages": 37,
+      "total_non_whitespace_chars": 0
+    },
+    {
+      "doc_id": "urnuuid4627f37d-2b7b-46fd-9c3a-063a87c8cc11",
+      "low_text_pages": 1,
+      "page_count": 45,
+      "text_layer_missing_pages": 1,
+      "total_non_whitespace_chars": 81964
+    },
+    {
+      "doc_id": "urnuuid46462835-78ad-4a70-9594-dcd5bfc4efa4",
+      "low_text_pages": 3,
+      "page_count": 45,
+      "text_layer_missing_pages": 1,
+      "total_non_whitespace_chars": 40843
+    },
+    {
+      "doc_id": "urnuuid469c17b6-9e4f-4706-bc89-0e1814820dae",
+      "low_text_pages": 1,
+      "page_count": 56,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 44539
+    },
+    {
+      "doc_id": "urnuuid4873f4f3-f4eb-4931-97f5-ae4f1951f07e",
+      "low_text_pages": 8,
+      "page_count": 46,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 59269
+    },
+    {
+      "doc_id": "urnuuid48b5c16d-7b5b-499f-8fa2-0c048132ea0a",
+      "low_text_pages": 0,
+      "page_count": 37,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 31528
+    },
+    {
+      "doc_id": "urnuuid4981d66d-6198-48bd-8d58-d845e70df9bd",
+      "low_text_pages": 2,
+      "page_count": 36,
+      "text_layer_missing_pages": 1,
+      "total_non_whitespace_chars": 33763
+    },
+    {
+      "doc_id": "urnuuid4b972574-3326-43b7-92d9-cd3355cd91a9",
+      "low_text_pages": 0,
+      "page_count": 35,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 39278
+    },
+    {
+      "doc_id": "urnuuid4d5e3b65-753d-4526-8fb8-4a11c3e0d687",
+      "low_text_pages": 0,
+      "page_count": 35,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 78911
+    },
+    {
+      "doc_id": "urnuuid4fb71a91-50a9-4a41-8947-264e38e5c23f",
+      "low_text_pages": 8,
+      "page_count": 64,
+      "text_layer_missing_pages": 3,
+      "total_non_whitespace_chars": 130745
+    },
+    {
+      "doc_id": "urnuuid51407c0a-c1aa-450f-aef0-2994f175a110",
+      "low_text_pages": 0,
+      "page_count": 40,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 268822
+    },
+    {
+      "doc_id": "urnuuid518b9270-ecfd-40f2-a76f-6e8bbe3531ae",
+      "low_text_pages": 9,
+      "page_count": 66,
+      "text_layer_missing_pages": 8,
+      "total_non_whitespace_chars": 106334
+    },
+    {
+      "doc_id": "urnuuid51d9b11e-f164-411a-bf8e-05bb3646d1d1",
+      "low_text_pages": 7,
+      "page_count": 43,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 9797
+    },
+    {
+      "doc_id": "urnuuid55442c4a-d2e4-4444-b6c3-1efb2ac69048",
+      "low_text_pages": 1,
+      "page_count": 70,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 121755
+    },
+    {
+      "doc_id": "urnuuid5588c10c-c820-4b53-a5db-3d30c81e02d5",
+      "low_text_pages": 0,
+      "page_count": 42,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 85567
+    },
+    {
+      "doc_id": "urnuuid560c4b17-1bf5-4ff3-a362-acf4ed7b56ab",
+      "low_text_pages": 0,
+      "page_count": 54,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 41818
+    },
+    {
+      "doc_id": "urnuuid56bee4fc-f6cd-4d3f-b2b8-dd02153b8ded",
+      "low_text_pages": 1,
+      "page_count": 43,
+      "text_layer_missing_pages": 1,
+      "total_non_whitespace_chars": 84417
+    },
+    {
+      "doc_id": "urnuuid56e8d9a8-11ba-414a-83ea-87e35851761f",
+      "low_text_pages": 0,
+      "page_count": 74,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 143651
+    },
+    {
+      "doc_id": "urnuuid583e1689-449e-4b31-a140-fe8424951467",
+      "low_text_pages": 2,
+      "page_count": 56,
+      "text_layer_missing_pages": 1,
+      "total_non_whitespace_chars": 74556
+    },
+    {
+      "doc_id": "urnuuid58857e11-82b0-4d36-a53c-aaddfe925afc",
+      "low_text_pages": 12,
+      "page_count": 52,
+      "text_layer_missing_pages": 10,
+      "total_non_whitespace_chars": 62435
+    },
+    {
+      "doc_id": "urnuuid58d0253c-d427-4953-8d68-035c32eea04a",
+      "low_text_pages": 0,
+      "page_count": 39,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 55948
+    },
+    {
+      "doc_id": "urnuuid59143da0-75ed-4ab5-94f0-80706b1c5b63",
+      "low_text_pages": 3,
+      "page_count": 42,
+      "text_layer_missing_pages": 1,
+      "total_non_whitespace_chars": 73106
+    },
+    {
+      "doc_id": "urnuuid595c1c5b-2987-4dc4-8ad6-49812f92355c",
+      "low_text_pages": 0,
+      "page_count": 44,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 52430
+    },
+    {
+      "doc_id": "urnuuid5a25cdf1-f3de-4fa4-a833-2aaac1b9827a",
+      "low_text_pages": 1,
+      "page_count": 85,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 93441
+    },
+    {
+      "doc_id": "urnuuid5bab2d9e-8fe9-42cc-bc0a-9714a65f35bc",
+      "low_text_pages": 0,
+      "page_count": 63,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 79004
+    },
+    {
+      "doc_id": "urnuuid5bf7b23d-8fe3-462a-a898-5b0aada5d538",
+      "low_text_pages": 37,
+      "page_count": 37,
+      "text_layer_missing_pages": 37,
+      "total_non_whitespace_chars": 0
+    },
+    {
+      "doc_id": "urnuuid5cabdb9e-ec4a-485f-a850-9f8a5c061e53",
+      "low_text_pages": 0,
+      "page_count": 71,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 116425
+    },
+    {
+      "doc_id": "urnuuid5d2089e7-0fa1-4a02-b2ae-a1ff58430ebc",
+      "low_text_pages": 1,
+      "page_count": 45,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 99033
+    },
+    {
+      "doc_id": "urnuuid5d830d63-b46d-4a21-8803-3a0179bf9acd",
+      "low_text_pages": 4,
+      "page_count": 37,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 58680
+    },
+    {
+      "doc_id": "urnuuid5e0c9f4a-9909-4183-83b8-7136a0e221b5",
+      "low_text_pages": 0,
+      "page_count": 38,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 133708
+    },
+    {
+      "doc_id": "urnuuid5e23ce22-69cd-47d6-a2d0-b00ec4716a7c",
+      "low_text_pages": 3,
+      "page_count": 62,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 110536
+    },
+    {
+      "doc_id": "urnuuid5eab7cf1-08c8-4f0b-96b3-b52c56dd1c64",
+      "low_text_pages": 1,
+      "page_count": 36,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 30002
+    },
+    {
+      "doc_id": "urnuuid6077653b-0f10-4b43-ab85-4a8ec2d858e3",
+      "low_text_pages": 1,
+      "page_count": 42,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 70432
+    },
+    {
+      "doc_id": "urnuuid609ec19e-fc07-48eb-a135-803ee65e3eaa",
+      "low_text_pages": 6,
+      "page_count": 54,
+      "text_layer_missing_pages": 5,
+      "total_non_whitespace_chars": 47255
+    },
+    {
+      "doc_id": "urnuuid61523ed6-d61e-4d31-9461-a6034095278c",
+      "low_text_pages": 0,
+      "page_count": 40,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 71452
+    },
+    {
+      "doc_id": "urnuuid6252cf86-0320-404e-84e7-ccfa22eb133e",
+      "low_text_pages": 7,
+      "page_count": 54,
+      "text_layer_missing_pages": 6,
+      "total_non_whitespace_chars": 50328
+    },
+    {
+      "doc_id": "urnuuid62b0b2d8-85f8-46a7-b50e-70ed54d16930",
+      "low_text_pages": 4,
+      "page_count": 67,
+      "text_layer_missing_pages": 1,
+      "total_non_whitespace_chars": 84480
+    },
+    {
+      "doc_id": "urnuuid62ffb7c3-f0e0-498e-8fca-9025c3b056e6",
+      "low_text_pages": 10,
+      "page_count": 64,
+      "text_layer_missing_pages": 8,
+      "total_non_whitespace_chars": 23634
+    },
+    {
+      "doc_id": "urnuuid638ad8b0-526c-4bd5-881b-971285235007",
+      "low_text_pages": 0,
+      "page_count": 81,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 53643
+    },
+    {
+      "doc_id": "urnuuid639be4d2-f282-4a14-b1cc-462d1be0da28",
+      "low_text_pages": 0,
+      "page_count": 41,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 60574
+    },
+    {
+      "doc_id": "urnuuid64e69d67-e42f-429e-9f31-87c2fad1571f",
+      "low_text_pages": 0,
+      "page_count": 43,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 79354
+    },
+    {
+      "doc_id": "urnuuid654ae1c6-a936-4b45-8c3f-95b14ba397ac",
+      "low_text_pages": 2,
+      "page_count": 52,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 38974
+    },
+    {
+      "doc_id": "urnuuid65649674-1902-4bca-b5e6-2efea003dbe4",
+      "low_text_pages": 1,
+      "page_count": 36,
+      "text_layer_missing_pages": 1,
+      "total_non_whitespace_chars": 56463
+    },
+    {
+      "doc_id": "urnuuid65f2c0f5-7c27-4bd8-af3b-0de9708fd509",
+      "low_text_pages": 0,
+      "page_count": 38,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 64424
+    },
+    {
+      "doc_id": "urnuuid65f3099f-87a0-4a43-8c07-c04398c11c3b",
+      "low_text_pages": 0,
+      "page_count": 59,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 71545
+    },
+    {
+      "doc_id": "urnuuid666eb687-52cd-4aa6-868e-30609ec055d3",
+      "low_text_pages": 0,
+      "page_count": 40,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 19052
+    },
+    {
+      "doc_id": "urnuuid66d41dfa-db77-40dd-98e7-c414076eec28",
+      "low_text_pages": 3,
+      "page_count": 36,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 43284
+    },
+    {
+      "doc_id": "urnuuid676f9118-5897-444c-afd3-1b21392841df",
+      "low_text_pages": 0,
+      "page_count": 63,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 106601
+    },
+    {
+      "doc_id": "urnuuid6816fde7-b452-4ba3-9c5b-e1f35791afdc",
+      "low_text_pages": 4,
+      "page_count": 72,
+      "text_layer_missing_pages": 4,
+      "total_non_whitespace_chars": 72487
+    },
+    {
+      "doc_id": "urnuuid6977f498-b814-42ae-85db-4adaf7a88c9f",
+      "low_text_pages": 0,
+      "page_count": 38,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 34269
+    },
+    {
+      "doc_id": "urnuuid699cd316-f6bb-4794-9763-758b08bd720c",
+      "low_text_pages": 0,
+      "page_count": 57,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 68598
+    },
+    {
+      "doc_id": "urnuuid69d3b77c-0765-4d67-8b3e-3f0df8fe0502",
+      "low_text_pages": 0,
+      "page_count": 53,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 121912
+    },
+    {
+      "doc_id": "urnuuid6a555f41-46a1-49d3-9166-1894af190eef",
+      "low_text_pages": 4,
+      "page_count": 36,
+      "text_layer_missing_pages": 2,
+      "total_non_whitespace_chars": 30379
+    },
+    {
+      "doc_id": "urnuuid6aa9661c-717a-4e79-a8dc-62467652b795",
+      "low_text_pages": 7,
+      "page_count": 54,
+      "text_layer_missing_pages": 5,
+      "total_non_whitespace_chars": 79499
+    },
+    {
+      "doc_id": "urnuuid6bb055c4-a65b-4083-a5c7-8f662ddc52d6",
+      "low_text_pages": 0,
+      "page_count": 41,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 70815
+    },
+    {
+      "doc_id": "urnuuid6bc271d8-fbcc-4d56-83bd-f3fc77d9cedf",
+      "low_text_pages": 0,
+      "page_count": 47,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 55091
+    },
+    {
+      "doc_id": "urnuuid6cc7d331-b5ae-4bad-9688-ea5efeac5d44",
+      "low_text_pages": 0,
+      "page_count": 46,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 58283
+    },
+    {
+      "doc_id": "urnuuid6d3275ab-3703-4e25-a1ba-ffcae53cac78",
+      "low_text_pages": 3,
+      "page_count": 45,
+      "text_layer_missing_pages": 1,
+      "total_non_whitespace_chars": 74925
+    },
+    {
+      "doc_id": "urnuuid6d857b5a-b8a9-4ef7-bd1f-484d2e786ed3",
+      "low_text_pages": 8,
+      "page_count": 68,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 60230
+    },
+    {
+      "doc_id": "urnuuid71e55e72-39a3-41a8-a047-9f25a6e3fd8a",
+      "low_text_pages": 2,
+      "page_count": 63,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 28438
+    },
+    {
+      "doc_id": "urnuuid7255c617-9721-4911-8a20-7c78fd9be03c",
+      "low_text_pages": 2,
+      "page_count": 86,
+      "text_layer_missing_pages": 1,
+      "total_non_whitespace_chars": 75955
+    },
+    {
+      "doc_id": "urnuuid72b9f46a-cdfc-4e58-8e30-4c0678f4ea07",
+      "low_text_pages": 3,
+      "page_count": 73,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 50930
+    },
+    {
+      "doc_id": "urnuuid72e89e2e-f89d-4cb9-a0d8-2eecfd0cb3c0",
+      "low_text_pages": 2,
+      "page_count": 54,
+      "text_layer_missing_pages": 2,
+      "total_non_whitespace_chars": 67700
+    },
+    {
+      "doc_id": "urnuuid7422ac04-d2e1-41fe-b32c-7bba2aa1f7c4",
+      "low_text_pages": 0,
+      "page_count": 38,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 33581
+    },
+    {
+      "doc_id": "urnuuid74c0fcad-b357-4009-9c51-6bd663d48ed7",
+      "low_text_pages": 0,
+      "page_count": 64,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 88526
+    },
+    {
+      "doc_id": "urnuuid74d91bf8-5da2-4fd1-8406-8b4b42bdc34d",
+      "low_text_pages": 0,
+      "page_count": 40,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 75670
+    },
+    {
+      "doc_id": "urnuuid764c6801-6e56-4345-b986-d3eb0add39be",
+      "low_text_pages": 0,
+      "page_count": 38,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 55823
+    },
+    {
+      "doc_id": "urnuuid765b571c-e028-4e3a-b90c-e6a1900519e7",
+      "low_text_pages": 4,
+      "page_count": 76,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 141547
+    },
+    {
+      "doc_id": "urnuuid770b5a59-3a40-4655-9dfb-e5ae78eedfd8",
+      "low_text_pages": 2,
+      "page_count": 86,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 75610
+    },
+    {
+      "doc_id": "urnuuid7729a34b-fa21-4db9-ae9f-d1c153c04be6",
+      "low_text_pages": 3,
+      "page_count": 41,
+      "text_layer_missing_pages": 1,
+      "total_non_whitespace_chars": 46347
+    },
+    {
+      "doc_id": "urnuuid77b8c272-7717-468a-9c12-b41257db91d9",
+      "low_text_pages": 0,
+      "page_count": 53,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 76405
+    },
+    {
+      "doc_id": "urnuuid79836dec-1082-4f8b-80bd-257a3d683d7a",
+      "low_text_pages": 1,
+      "page_count": 41,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 41179
+    },
+    {
+      "doc_id": "urnuuid7a1b44f9-d613-43df-9736-3411077c5aa8",
+      "low_text_pages": 1,
+      "page_count": 74,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 106266
+    },
+    {
+      "doc_id": "urnuuid7a5eb4b5-9535-4a34-b886-f468b8bfe4fe",
+      "low_text_pages": 2,
+      "page_count": 43,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 30454
+    },
+    {
+      "doc_id": "urnuuid7ca21298-e2b8-46be-8f3b-8c7a604a3b9b",
+      "low_text_pages": 2,
+      "page_count": 72,
+      "text_layer_missing_pages": 1,
+      "total_non_whitespace_chars": 109728
+    },
+    {
+      "doc_id": "urnuuid7d6053f8-654c-459a-8307-a59bd59d04f2",
+      "low_text_pages": 0,
+      "page_count": 36,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 52125
+    },
+    {
+      "doc_id": "urnuuid7d81b868-ea02-40a7-8ea5-63635180eff2",
+      "low_text_pages": 2,
+      "page_count": 40,
+      "text_layer_missing_pages": 1,
+      "total_non_whitespace_chars": 59552
+    },
+    {
+      "doc_id": "urnuuid7fbb918e-acda-4053-9c23-c16621876e15",
+      "low_text_pages": 5,
+      "page_count": 40,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 43352
+    },
+    {
+      "doc_id": "urnuuid7fd367d3-8661-418f-95cf-c7343135ba57",
+      "low_text_pages": 4,
+      "page_count": 48,
+      "text_layer_missing_pages": 4,
+      "total_non_whitespace_chars": 90518
+    },
+    {
+      "doc_id": "urnuuid8026e4cd-9993-4d10-94fd-4071d4534409",
+      "low_text_pages": 0,
+      "page_count": 40,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 45111
+    },
+    {
+      "doc_id": "urnuuid808e4631-8567-495d-a904-0c702dbe784e",
+      "low_text_pages": 1,
+      "page_count": 42,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 65917
+    },
+    {
+      "doc_id": "urnuuid809cf56a-a0d6-42b1-b572-de30c9b74725",
+      "low_text_pages": 4,
+      "page_count": 50,
+      "text_layer_missing_pages": 1,
+      "total_non_whitespace_chars": 20028
+    },
+    {
+      "doc_id": "urnuuid80d1df85-ea58-4cc0-9d68-2de0d967017f",
+      "low_text_pages": 0,
+      "page_count": 38,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 62507
+    },
+    {
+      "doc_id": "urnuuid81bba891-febe-4a45-a548-9a796b24041f",
+      "low_text_pages": 4,
+      "page_count": 36,
+      "text_layer_missing_pages": 1,
+      "total_non_whitespace_chars": 15182
+    },
+    {
+      "doc_id": "urnuuid81c3a606-9343-4da8-9d9c-10a3483d02b4",
+      "low_text_pages": 3,
+      "page_count": 44,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 65361
+    },
+    {
+      "doc_id": "urnuuid82912351-aa8e-4c4b-9fb7-2368a9fd4184",
+      "low_text_pages": 1,
+      "page_count": 39,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 43069
+    },
+    {
+      "doc_id": "urnuuid83d3c72c-a70d-422f-9c0b-992de5e5770e",
+      "low_text_pages": 3,
+      "page_count": 36,
+      "text_layer_missing_pages": 1,
+      "total_non_whitespace_chars": 78968
+    },
+    {
+      "doc_id": "urnuuid849987d3-60d5-4132-a8cf-a7215b09d42e",
+      "low_text_pages": 0,
+      "page_count": 43,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 123299
+    },
+    {
+      "doc_id": "urnuuid849ccf2f-0c8f-492d-9806-8523663fe955",
+      "low_text_pages": 6,
+      "page_count": 46,
+      "text_layer_missing_pages": 1,
+      "total_non_whitespace_chars": 187562
+    },
+    {
+      "doc_id": "urnuuid85d80085-4ef6-410c-9058-13b889c6b670",
+      "low_text_pages": 0,
+      "page_count": 45,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 68464
+    },
+    {
+      "doc_id": "urnuuid86958cfc-f0ca-4a27-af55-4166bdd88761",
+      "low_text_pages": 2,
+      "page_count": 45,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 44955
+    },
+    {
+      "doc_id": "urnuuid87393f32-bf54-4ceb-9903-54ebf93c3f45",
+      "low_text_pages": 1,
+      "page_count": 58,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 65853
+    },
+    {
+      "doc_id": "urnuuid8807b60b-9f80-412b-b819-d93ffaa3007c",
+      "low_text_pages": 0,
+      "page_count": 49,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 137022
+    },
+    {
+      "doc_id": "urnuuid881f7d70-7e7b-4b1a-90a9-3d837a1a8299",
+      "low_text_pages": 3,
+      "page_count": 45,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 56867
+    },
+    {
+      "doc_id": "urnuuid88cd48a7-fc7f-4d05-bbdc-dde71ef2e3b6",
+      "low_text_pages": 0,
+      "page_count": 51,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 92914
+    },
+    {
+      "doc_id": "urnuuid89c49054-697f-4d07-82ab-483e899329de",
+      "low_text_pages": 1,
+      "page_count": 42,
+      "text_layer_missing_pages": 1,
+      "total_non_whitespace_chars": 101613
+    },
+    {
+      "doc_id": "urnuuid8a390982-14e5-4b52-882d-e0cf9677c173",
+      "low_text_pages": 24,
+      "page_count": 88,
+      "text_layer_missing_pages": 11,
+      "total_non_whitespace_chars": 114460
+    },
+    {
+      "doc_id": "urnuuid8aae3893-934e-426b-b2fd-ad4947507e96",
+      "low_text_pages": 2,
+      "page_count": 52,
+      "text_layer_missing_pages": 1,
+      "total_non_whitespace_chars": 39548
+    },
+    {
+      "doc_id": "urnuuid8b728669-7b8e-443b-8151-bbf94a69c172",
+      "low_text_pages": 0,
+      "page_count": 61,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 83912
+    },
+    {
+      "doc_id": "urnuuid8b738551-8305-404f-b3c4-ede81b776885",
+      "low_text_pages": 0,
+      "page_count": 37,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 58036
+    },
+    {
+      "doc_id": "urnuuid8e6bc3d1-f1eb-4728-8ca0-d5ed63f6814f",
+      "low_text_pages": 0,
+      "page_count": 46,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 40056
+    },
+    {
+      "doc_id": "urnuuid8e7e87b0-f622-4fee-9dff-c0d91427ca95",
+      "low_text_pages": 8,
+      "page_count": 72,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 86013
+    },
+    {
+      "doc_id": "urnuuid8f2628d5-89b1-4143-bb0f-623743d738bf",
+      "low_text_pages": 1,
+      "page_count": 35,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 94346
+    },
+    {
+      "doc_id": "urnuuid8f8f98a5-ee9a-4e12-a490-7cda781aab39",
+      "low_text_pages": 12,
+      "page_count": 70,
+      "text_layer_missing_pages": 4,
+      "total_non_whitespace_chars": 36004
+    },
+    {
+      "doc_id": "urnuuid905e4a38-1795-4869-947d-b9a45ca604b1",
+      "low_text_pages": 0,
+      "page_count": 42,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 73290
+    },
+    {
+      "doc_id": "urnuuid90e0d5c1-a5e9-40ab-a5e9-a2b999b448a6",
+      "low_text_pages": 5,
+      "page_count": 48,
+      "text_layer_missing_pages": 3,
+      "total_non_whitespace_chars": 46760
+    },
+    {
+      "doc_id": "urnuuid91006ad9-704a-415a-9685-0b20e9a776e4",
+      "low_text_pages": 2,
+      "page_count": 49,
+      "text_layer_missing_pages": 1,
+      "total_non_whitespace_chars": 74913
+    },
+    {
+      "doc_id": "urnuuid9144e47d-4fb9-4505-8763-a18ecd3f8d03",
+      "low_text_pages": 1,
+      "page_count": 52,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 102468
+    },
+    {
+      "doc_id": "urnuuid922a78ce-4781-49e4-b9d2-b213b1042f55",
+      "low_text_pages": 7,
+      "page_count": 36,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 25617
+    },
+    {
+      "doc_id": "urnuuid926889a0-ba73-457e-95d5-7b767e414d43",
+      "low_text_pages": 0,
+      "page_count": 40,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 57120
+    },
+    {
+      "doc_id": "urnuuid928d683b-bb5d-452e-9200-2768e9754def",
+      "low_text_pages": 0,
+      "page_count": 40,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 83853
+    },
+    {
+      "doc_id": "urnuuid93e24c3f-a873-4264-b12a-8fd23415be29",
+      "low_text_pages": 1,
+      "page_count": 60,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 105524
+    },
+    {
+      "doc_id": "urnuuid94c75c61-f06c-4c9b-b284-6defa9b7c08d",
+      "low_text_pages": 0,
+      "page_count": 40,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 72408
+    },
+    {
+      "doc_id": "urnuuid95c43dcd-bf99-45e2-a781-f37e4aace85d",
+      "low_text_pages": 0,
+      "page_count": 46,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 75765
+    },
+    {
+      "doc_id": "urnuuid95ed0505-a468-4299-9498-88abbb8180c3",
+      "low_text_pages": 0,
+      "page_count": 75,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 262359
+    },
+    {
+      "doc_id": "urnuuid96245a13-2e16-4254-a22b-74e70a73dddf",
+      "low_text_pages": 12,
+      "page_count": 72,
+      "text_layer_missing_pages": 5,
+      "total_non_whitespace_chars": 147177
+    },
+    {
+      "doc_id": "urnuuid968d4d8b-8013-4cdf-b23e-5aaf619e4735",
+      "low_text_pages": 0,
+      "page_count": 46,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 43035
+    },
+    {
+      "doc_id": "urnuuid9901087e-a8a7-4c39-a1fa-c2f937ef2ff3",
+      "low_text_pages": 2,
+      "page_count": 42,
+      "text_layer_missing_pages": 1,
+      "total_non_whitespace_chars": 43912
+    },
+    {
+      "doc_id": "urnuuid9a94bde0-c77a-4bd4-9b09-e164c2e696cf",
+      "low_text_pages": 14,
+      "page_count": 57,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 88268
+    },
+    {
+      "doc_id": "urnuuid9aa381ce-9bc9-4310-9472-22173aa8292e",
+      "low_text_pages": 6,
+      "page_count": 100,
+      "text_layer_missing_pages": 2,
+      "total_non_whitespace_chars": 155886
+    },
+    {
+      "doc_id": "urnuuid9ae333a2-ab10-45b7-b35b-5831c14a4569",
+      "low_text_pages": 3,
+      "page_count": 83,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 77398
+    },
+    {
+      "doc_id": "urnuuid9b8c081c-1438-4657-a337-7b6a64eeddfc",
+      "low_text_pages": 1,
+      "page_count": 42,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 62479
+    },
+    {
+      "doc_id": "urnuuid9c06cf25-a9cc-48ac-8d12-69f9aa578ad6",
+      "low_text_pages": 1,
+      "page_count": 56,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 138675
+    },
+    {
+      "doc_id": "urnuuid9c26cd29-d4c0-42c9-ab3b-576febff46aa",
+      "low_text_pages": 0,
+      "page_count": 42,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 87116
+    },
+    {
+      "doc_id": "urnuuid9c816757-7885-4045-b092-79ecba54c3ab",
+      "low_text_pages": 1,
+      "page_count": 36,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 44025
+    },
+    {
+      "doc_id": "urnuuid9ed52d79-6e2f-4b83-a68f-76d6cb748c84",
+      "low_text_pages": 2,
+      "page_count": 36,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 37376
+    },
+    {
+      "doc_id": "urnuuid9f301ee4-504e-441a-9fb1-062bdcb19f84",
+      "low_text_pages": 2,
+      "page_count": 39,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 32485
+    },
+    {
+      "doc_id": "urnuuid9f4c2d7e-9ae5-448b-88fc-aa6a372bcc76",
+      "low_text_pages": 0,
+      "page_count": 35,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 86041
+    },
+    {
+      "doc_id": "urnuuid9f9e3881-8357-4f25-8ec3-4a8dadc50be2",
+      "low_text_pages": 2,
+      "page_count": 42,
+      "text_layer_missing_pages": 1,
+      "total_non_whitespace_chars": 91969
+    },
+    {
+      "doc_id": "urnuuida1cb72bc-f594-4f88-9ebb-ff885725a4f3",
+      "low_text_pages": 3,
+      "page_count": 41,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 60662
+    },
+    {
+      "doc_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba",
+      "low_text_pages": 51,
+      "page_count": 51,
+      "text_layer_missing_pages": 51,
+      "total_non_whitespace_chars": 0
+    },
+    {
+      "doc_id": "urnuuida4e49a9b-d0b4-4957-a6db-0d3b2e019e12",
+      "low_text_pages": 2,
+      "page_count": 45,
+      "text_layer_missing_pages": 1,
+      "total_non_whitespace_chars": 47488
+    },
+    {
+      "doc_id": "urnuuida540030b-2741-493d-942d-00d995940c70",
+      "low_text_pages": 4,
+      "page_count": 37,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 32172
+    },
+    {
+      "doc_id": "urnuuida6092a6e-5c69-4650-9271-c46bf672a0a7",
+      "low_text_pages": 0,
+      "page_count": 67,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 164803
+    },
+    {
+      "doc_id": "urnuuida6fe7be0-f3bc-4f37-9ce3-a0c0da486ba1",
+      "low_text_pages": 11,
+      "page_count": 48,
+      "text_layer_missing_pages": 9,
+      "total_non_whitespace_chars": 82351
+    },
+    {
+      "doc_id": "urnuuida994f1b4-401e-453b-9f52-149c44f35c82",
+      "low_text_pages": 0,
+      "page_count": 59,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 81531
+    },
+    {
+      "doc_id": "urnuuidaab87e8f-1914-440e-aa3e-9647ed8182cd",
+      "low_text_pages": 3,
+      "page_count": 42,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 113829
+    },
+    {
+      "doc_id": "urnuuidabd0e239-3fca-4e1c-8cb3-8c63fbac8ecd",
+      "low_text_pages": 63,
+      "page_count": 63,
+      "text_layer_missing_pages": 63,
+      "total_non_whitespace_chars": 0
+    },
+    {
+      "doc_id": "urnuuidac9d6584-6888-443a-83ca-f990a333fb92",
+      "low_text_pages": 1,
+      "page_count": 52,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 59189
+    },
+    {
+      "doc_id": "urnuuidacdecc92-34e9-4657-8d75-fb1051db5445",
+      "low_text_pages": 0,
+      "page_count": 42,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 82567
+    },
+    {
+      "doc_id": "urnuuidad6e69ed-3343-4297-85d8-96b02e6bd925",
+      "low_text_pages": 5,
+      "page_count": 44,
+      "text_layer_missing_pages": 4,
+      "total_non_whitespace_chars": 41367
+    },
+    {
+      "doc_id": "urnuuidad95bfa9-3155-413f-900b-36184cb771fe",
+      "low_text_pages": 0,
+      "page_count": 48,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 150851
+    },
+    {
+      "doc_id": "urnuuidadd5ca0e-61b9-4ba6-80b3-68d734d3116e",
+      "low_text_pages": 2,
+      "page_count": 91,
+      "text_layer_missing_pages": 1,
+      "total_non_whitespace_chars": 113173
+    },
+    {
+      "doc_id": "urnuuidade4df77-14c0-4e37-b947-2379b68b0051",
+      "low_text_pages": 0,
+      "page_count": 45,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 57219
+    },
+    {
+      "doc_id": "urnuuidaea65aa9-007b-4752-98e5-0374bbdf4023",
+      "low_text_pages": 1,
+      "page_count": 42,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 104846
+    },
+    {
+      "doc_id": "urnuuidaf9de4eb-bc50-4f4a-96d5-77b85431abbc",
+      "low_text_pages": 0,
+      "page_count": 37,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 38548
+    },
+    {
+      "doc_id": "urnuuidb0fe38c4-d5c3-4890-8e76-52abd88cba8c",
+      "low_text_pages": 27,
+      "page_count": 50,
+      "text_layer_missing_pages": 4,
+      "total_non_whitespace_chars": 29696
+    },
+    {
+      "doc_id": "urnuuidb211decc-a74b-46e1-b0e9-26aa00b594b8",
+      "low_text_pages": 0,
+      "page_count": 79,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 322592
+    },
+    {
+      "doc_id": "urnuuidb41a5973-a1ea-4b62-b7ff-e57c4890f697",
+      "low_text_pages": 1,
+      "page_count": 42,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 85146
+    },
+    {
+      "doc_id": "urnuuidb44da5eb-a389-4ad0-9936-207e17db7dc5",
+      "low_text_pages": 2,
+      "page_count": 64,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 121327
+    },
+    {
+      "doc_id": "urnuuidb54ed4bb-94f7-4cb2-baf5-98fb36736e7a",
+      "low_text_pages": 0,
+      "page_count": 48,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 230814
+    },
+    {
+      "doc_id": "urnuuidb618e36a-e8ef-41b8-aca4-bbb6cb9b6501",
+      "low_text_pages": 12,
+      "page_count": 92,
+      "text_layer_missing_pages": 5,
+      "total_non_whitespace_chars": 55950
+    },
+    {
+      "doc_id": "urnuuidb7ceb1aa-b28f-4328-8346-68394c1bbbab",
+      "low_text_pages": 5,
+      "page_count": 66,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 57648
+    },
+    {
+      "doc_id": "urnuuidb91565e4-d980-4135-b768-9813579f7f02",
+      "low_text_pages": 0,
+      "page_count": 96,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 77283
+    },
+    {
+      "doc_id": "urnuuidb98e815e-2094-448a-bd43-d2e0ca7a8e25",
+      "low_text_pages": 3,
+      "page_count": 58,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 121615
+    },
+    {
+      "doc_id": "urnuuidba133521-08d8-45cf-a967-19e7fec3d012",
+      "low_text_pages": 2,
+      "page_count": 35,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 51050
+    },
+    {
+      "doc_id": "urnuuidbafc64e3-3a54-4ac8-a543-f73d0ccedf80",
+      "low_text_pages": 0,
+      "page_count": 56,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 144061
+    },
+    {
+      "doc_id": "urnuuidbb6e0afd-1168-4ec1-9944-4557a0ad35b9",
+      "low_text_pages": 4,
+      "page_count": 72,
+      "text_layer_missing_pages": 4,
+      "total_non_whitespace_chars": 82351
+    },
+    {
+      "doc_id": "urnuuidbb71f546-e34e-4d17-92cc-1a1b0a0c709e",
+      "low_text_pages": 1,
+      "page_count": 39,
+      "text_layer_missing_pages": 1,
+      "total_non_whitespace_chars": 47129
+    },
+    {
+      "doc_id": "urnuuidbe1b8890-84d2-434a-a376-65745ec19e06",
+      "low_text_pages": 4,
+      "page_count": 40,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 24264
+    },
+    {
+      "doc_id": "urnuuidbf633ee6-28ba-460f-b6c6-fcd694f24284",
+      "low_text_pages": 1,
+      "page_count": 36,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 83350
+    },
+    {
+      "doc_id": "urnuuidc3906d43-0789-48fe-baea-99cde3d43b81",
+      "low_text_pages": 4,
+      "page_count": 42,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 53551
+    },
+    {
+      "doc_id": "urnuuidc49d2805-0e0d-4217-bcce-5203fcd7a23d",
+      "low_text_pages": 0,
+      "page_count": 58,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 69731
+    },
+    {
+      "doc_id": "urnuuidc4b17440-9c10-4abe-bcf4-5179463e4b88",
+      "low_text_pages": 0,
+      "page_count": 51,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 60032
+    },
+    {
+      "doc_id": "urnuuidc65f0f4c-9e21-45e3-b098-4e44ef174875",
+      "low_text_pages": 1,
+      "page_count": 36,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 94969
+    },
+    {
+      "doc_id": "urnuuidc7f9fcde-0d4d-4a5b-bf21-486f5c8c1d40",
+      "low_text_pages": 0,
+      "page_count": 69,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 145626
+    },
+    {
+      "doc_id": "urnuuidc815220c-11da-4bce-9d49-b49318b3a98c",
+      "low_text_pages": 1,
+      "page_count": 53,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 78003
+    },
+    {
+      "doc_id": "urnuuidc8b1663a-c19f-414b-81f7-27c62ac1369b",
+      "low_text_pages": 1,
+      "page_count": 53,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 105466
+    },
+    {
+      "doc_id": "urnuuidc8d5ab1c-66b9-4ecc-ab2b-8c59015f6320",
+      "low_text_pages": 0,
+      "page_count": 35,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 76881
+    },
+    {
+      "doc_id": "urnuuidc94c212d-21aa-4dbe-a75f-6d8888002f6a",
+      "low_text_pages": 2,
+      "page_count": 50,
+      "text_layer_missing_pages": 1,
+      "total_non_whitespace_chars": 70379
+    },
+    {
+      "doc_id": "urnuuidc9bde3ba-d6f1-4286-bcf7-82f4ed178bdd",
+      "low_text_pages": 8,
+      "page_count": 46,
+      "text_layer_missing_pages": 3,
+      "total_non_whitespace_chars": 14901
+    },
+    {
+      "doc_id": "urnuuidcbd83f73-cfd2-449d-9c02-c59d92134b65",
+      "low_text_pages": 2,
+      "page_count": 83,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 26381
+    },
+    {
+      "doc_id": "urnuuidcd802a08-c5e4-4c48-a6b7-067d47eccd55",
+      "low_text_pages": 0,
+      "page_count": 41,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 59672
+    },
+    {
+      "doc_id": "urnuuidcf91752d-4f52-41dd-90d4-c2b41be05e4a",
+      "low_text_pages": 1,
+      "page_count": 68,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 60280
+    },
+    {
+      "doc_id": "urnuuidd0ba82b9-f6c5-4b9a-a1a7-abcbffc5aeae",
+      "low_text_pages": 1,
+      "page_count": 66,
+      "text_layer_missing_pages": 1,
+      "total_non_whitespace_chars": 183681
+    },
+    {
+      "doc_id": "urnuuidd2b0a911-f2cb-4ad3-85df-a7fa0390a556",
+      "low_text_pages": 8,
+      "page_count": 90,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 107425
+    },
+    {
+      "doc_id": "urnuuidd2c18778-1614-449c-bcf5-db5496e09891",
+      "low_text_pages": 0,
+      "page_count": 56,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 64753
+    },
+    {
+      "doc_id": "urnuuidd3508951-57d4-4071-ae13-d8e77bcd0c58",
+      "low_text_pages": 0,
+      "page_count": 44,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 34225
+    },
+    {
+      "doc_id": "urnuuidd53ccef7-60ba-43a8-81a9-bf14619772b9",
+      "low_text_pages": 2,
+      "page_count": 36,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 66615
+    },
+    {
+      "doc_id": "urnuuidd961d664-a986-46ef-8ae3-eb321483bac8",
+      "low_text_pages": 0,
+      "page_count": 55,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 87312
+    },
+    {
+      "doc_id": "urnuuidd98a929c-e500-4b77-816b-909b7606b19d",
+      "low_text_pages": 0,
+      "page_count": 41,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 42078
+    },
+    {
+      "doc_id": "urnuuiddbbfc338-0819-4ef2-b5b5-911da0cea447",
+      "low_text_pages": 1,
+      "page_count": 37,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 88084
+    },
+    {
+      "doc_id": "urnuuiddc90fcfb-0098-4c68-aaf6-a3cd6a3da8c2",
+      "low_text_pages": 4,
+      "page_count": 50,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 76589
+    },
+    {
+      "doc_id": "urnuuiddcd89270-b2f5-408f-b545-49bfa9064be7",
+      "low_text_pages": 2,
+      "page_count": 38,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 41655
+    },
+    {
+      "doc_id": "urnuuidddfc724e-3771-44dc-b506-c61c03ffd682",
+      "low_text_pages": 0,
+      "page_count": 35,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 27860
+    },
+    {
+      "doc_id": "urnuuiddf858273-6d47-4829-b92a-965e38a77c5b",
+      "low_text_pages": 6,
+      "page_count": 68,
+      "text_layer_missing_pages": 2,
+      "total_non_whitespace_chars": 67993
+    },
+    {
+      "doc_id": "urnuuiddfa1331d-c4a0-4061-bc4b-97f7241a8be5",
+      "low_text_pages": 0,
+      "page_count": 57,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 69010
+    },
+    {
+      "doc_id": "urnuuiddff66f19-8fe2-4aaa-abe5-63e53d3cc29d",
+      "low_text_pages": 1,
+      "page_count": 47,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 101964
+    },
+    {
+      "doc_id": "urnuuide13d8fae-e453-48a9-9996-7397adbecbc9",
+      "low_text_pages": 0,
+      "page_count": 69,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 67154
+    },
+    {
+      "doc_id": "urnuuide144ea94-6667-4f38-82c7-3ebf8b8edb5c",
+      "low_text_pages": 1,
+      "page_count": 42,
+      "text_layer_missing_pages": 1,
+      "total_non_whitespace_chars": 37091
+    },
+    {
+      "doc_id": "urnuuide1d84784-0c27-432b-86e9-0378d0296cf8",
+      "low_text_pages": 1,
+      "page_count": 82,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 31519
+    },
+    {
+      "doc_id": "urnuuide2916fd0-fcb8-4318-bd65-bea7666aad5c",
+      "low_text_pages": 50,
+      "page_count": 50,
+      "text_layer_missing_pages": 50,
+      "total_non_whitespace_chars": 0
+    },
+    {
+      "doc_id": "urnuuide4c7b14a-d92a-4e0c-875e-6df133aea973",
+      "low_text_pages": 0,
+      "page_count": 100,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 151775
+    },
+    {
+      "doc_id": "urnuuide65bf4ae-ad22-43f0-ae24-8af2af7d22b2",
+      "low_text_pages": 7,
+      "page_count": 42,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 56940
+    },
+    {
+      "doc_id": "urnuuide8da4792-975c-47b0-95d1-1ac61466a602",
+      "low_text_pages": 2,
+      "page_count": 64,
+      "text_layer_missing_pages": 1,
+      "total_non_whitespace_chars": 73812
+    },
+    {
+      "doc_id": "urnuuide933941e-fb2a-445d-902c-848417372326",
+      "low_text_pages": 2,
+      "page_count": 51,
+      "text_layer_missing_pages": 2,
+      "total_non_whitespace_chars": 79483
+    },
+    {
+      "doc_id": "urnuuide94e5825-b232-472d-8825-2c3f0b1124c9",
+      "low_text_pages": 5,
+      "page_count": 92,
+      "text_layer_missing_pages": 5,
+      "total_non_whitespace_chars": 154398
+    },
+    {
+      "doc_id": "urnuuide968c80b-a261-43f6-ab3d-cb886cf36a72",
+      "low_text_pages": 0,
+      "page_count": 38,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 286806
+    },
+    {
+      "doc_id": "urnuuidea39f6d8-18f2-45ee-aa1d-df3dd682fb80",
+      "low_text_pages": 1,
+      "page_count": 57,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 58255
+    },
+    {
+      "doc_id": "urnuuidebf81bcd-5de7-401e-892d-8e462992a63f",
+      "low_text_pages": 0,
+      "page_count": 40,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 132469
+    },
+    {
+      "doc_id": "urnuuideca1a3d7-c948-4070-a9cc-70cebec75379",
+      "low_text_pages": 1,
+      "page_count": 55,
+      "text_layer_missing_pages": 1,
+      "total_non_whitespace_chars": 99686
+    },
+    {
+      "doc_id": "urnuuided359236-d75b-43da-893f-a2cf468b1a19",
+      "low_text_pages": 0,
+      "page_count": 36,
+      "text_layer_missing_pages": 0,
+      "total_non_whitespace_chars": 83345
+    }
+  ],
+  "schema_version": 1,
+  "text_layer_missing_pages": 498,
+  "text_layer_missing_rate": 0.03553589267874982,
+  "thresholds": {
+    "low_text": "<100 chars/page",
+    "text_layer_missing": "<20 chars/page"
+  },
+  "total_pages": 14014
+}

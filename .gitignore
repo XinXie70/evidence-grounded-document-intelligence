@@ -1,0 +1,46 @@
+# Raw and derived data
+data/raw/
+data/downloads/
+data/derived/
+data/**/*.pdf
+data/**/*.parquet
+data/**/*.arrow
+
+# Generated outputs and caches
+results/
+*.jsonl.tmp
+*.cache
+.cache/
+tmp/
+__pycache__/
+*.egg-info/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Models and embeddings
+models/
+checkpoints/
+*.faiss
+*.index
+*.npy
+*.npz
+*.pt
+*.safetensors
+
+# Environments and secrets
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+.tools/
+
+# Reproducible full-document OCR render caches
+experiments/day5_ocr_full_document_v0/**/pages/
+
+# Editors and operating systems
+.DS_Store
+.idea/
+.vscode/settings.json

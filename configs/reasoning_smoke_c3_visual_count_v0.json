@@ -1,0 +1,14 @@
+{
+  "api": "openai_responses",
+  "endpoint_mode": "v1/responses",
+  "experiment_id": "day3_grounded_reasoning_c3_visual_count_smoke_v0",
+  "image_detail": "original",
+  "max_output_tokens": 512,
+  "max_retries": 0,
+  "model": "gpt-5.6-terra",
+  "pricing_snapshot_path": "openai_gpt_5_6_terra_pricing_2026-09-02.json",
+  "provider": "openai",
+  "reasoning_effort": "low",
+  "selection_status": "smoke08 six-region visual classification and count; manually reviewed; one paid request approved; zero retries; USD 0.02 cap",
+  "store": false
+}

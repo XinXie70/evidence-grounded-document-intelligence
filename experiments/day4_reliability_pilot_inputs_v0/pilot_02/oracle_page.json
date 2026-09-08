@@ -1,0 +1,55 @@
+{
+  "condition": "oracle_page",
+  "doc_id": "urnuuid77b8c272-7717-468a-9c12-b41257db91d9",
+  "evidence_pages": [
+    9,
+    10
+  ],
+  "model_input": {
+    "evidence": [
+      {
+        "page": 9,
+        "text": "9 EXAMINATION OF LANGUAGE SUPPORT IN MAURITIUS approached because they will be part of the school system in the future and it was expected that they could give insight in the vision of the MIE towards language support, which determines current practices. Students were approached during class and asked to participate. Headmasters and headmistresses, and students from the MIE gave verbal permission for recording the interviews. Participants could stop at any time during the study. A total of 286 children from grade 5 (n = 144) and grade 6 (n = 142) filled in the questionnaires (138 boys, 147 girls) and they were aged 9 to 11 years (M = 9.90, SD = .68). Based on Western research, children from 7 years onwards should have sufficient cognitive skills to answer questionnaires. Because children’s development may differ in the Mauritian context, children from 9 years onwards were selected to increase reliability (De Leeuw, 2011). Parents’ questionnaires were filled in by 17 parents (4 male, 13 female) and they were aged 26 to 51 years (M = 35.88, SD = 6.35). A total of 23 teachers (5 male, 18 female) from grade 4 (n = 2), grade 5 (n = 8), grade 6 (n = 9) and the holistic class with topics such as music and drama (n = 4) filled in questionnaires. Teachers were aged 20 to 48 years (M = 38.13, SD = 7.52). Interviews were held with 5 headmasters and headmistresses (1 male, 4 female) from private-aided schools and with 4 students from MIE (1 male, 3 female). Finally, 8 observations were held in grade 5 and 6 of which 5 private-aided and 1 public ZEP school. Measuring Instruments The questions from the questionnaires and interviews were based on previous literature study about language support at home and in school (e.g. Aimin, 2013; Baker et al., 2015; Burger, 2010; Gonzalez et al., 2014; Justice et al., 2018; Schmitt et al., 2012; Zauche et al., 2016). Questionnaires for children and teachers contained questions about both the home and school environment. In the analysis, questions were separated and considered as two different questionnaires. Parents’ and children’s questionnaires were translated to French for better understanding. Language support at home. Questionnaire children. Language support at home was measured with children’s questionnaires (see Appendix C). A 5-point Likert scale questionnaire was used to answer 6 questions about children’s perceived language support at home. Children had to select 1 out of 5 smileys which ranged from a mad smiley: “I do not agree at all”, to a happy smiley: “I agree completely”. Moreover, answering options measured the degree of language support: 1) low; 2) low/medium; 3) medium; 4) medium/high and; 5) high. Cronbach’s alpha for the 6-item “language support at home” factor for children was .64. This could be considered questionable; the alpha would increase to .69 if item 1 were"
+      },
+      {
+        "page": 10,
+        "text": "10 EXAMINATION OF LANGUAGE SUPPORT IN MAURITIUS removed. Consequently, this item was dropped from the questionnaire to increase reliability. All subsequent analyses were based on children’s responses to the remaining 5 items. Questionnaire parents. Further, language support at home was measured with parents’ questionnaires (see Appendix D). The questionnaire consisted of 2 open questions to investigate whether parents supported language skills and if yes, how they did this, and if not, why not. In addition, parents were asked whether they undertook specific activities to support language skills, and if yes, to explain these activities. In addition, a 4-point Likert scale was used to answer 6 questions about parents’ language support at home. Answering options were: 1) never or hardly ever; 2) monthly; 3) weekly; 4) and daily or almost daily. These options measured the degree of language support: 1) low; 2) low/medium; 3) medium/high; and 4) high. Cronbach’s alpha for the 6-item “language support at home” factor for parents was .72. Although this could be considered adequate for research purposes, the alpha would increase to .78 if item 5 were removed. Consequently, this item was dropped from the questionnaire to increase reliability. All subsequent analyses were based on parents’ responses to the remaining 5 items. Language support in school. Questionnaire teachers. Language support in school was measured with teachers’ questionnaires (see Appendix E). The questionnaire consisted of 3 open questions to investigate whether teachers 1) supported language skills and 2) supported peer conversations, and if yes, how they did this, and if not, why not. In addition, teachers were asked whether they undertook specific activities to support language skills, and if yes, to explain these activities. In addition, a 5-point Likert scale was used to answer 12 questions about teachers’ language support in school. Answering options were: 1) strongly disagree; 2) disagree; 3) neither agree nor disagree; 4) agree; and 5) strongly agree. These options measured the degree of language support: 1) low; 2) low/medium; 3) medium; 4) medium/high; and 5) high. Cronbach’s alpha for the 12-item “language support in school” factor for teachers was .69 Although this could be considered adequate for research purposes, the alpha would increase to .76 if item 10 were removed. Consequently, this item was dropped from the questionnaire to increase reliability. All subsequent analyses were based on teachers’ responses to the remaining 11 items. Questionnaire children. Further, language support in school was measured with children’s questionnaires (see Appendix C). A 5-point Likert scale questionnaire was used to"
+      }
+    ],
+    "instructions": "Answer the question. When document evidence is supplied, use only that evidence. When no document evidence is supplied, answer only from your existing knowledge and do not claim or imply document support. If the available basis does not adequately support an answer, return status='insufficient_evidence' and answer=null. Cite only supplied 1-based physical PDF page numbers; when no document evidence is supplied, cited_pages must be empty. Return one object matching response_schema.",
+    "question": "In the Mauritian language support study, what is the difference between the potential improved Cronbach's alpha values (if one item were removed) for the children's home language support factor and the teachers' school language support factor?",
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "answer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cited_pages": {
+          "items": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "answerable",
+            "insufficient_evidence"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "answer",
+        "cited_pages",
+        "status"
+      ],
+      "type": "object"
+    }
+  },
+  "question_id": "urnuuid77b8c272-7717-468a-9c12-b41257db91d9::q2",
+  "schema_version": 1
+}

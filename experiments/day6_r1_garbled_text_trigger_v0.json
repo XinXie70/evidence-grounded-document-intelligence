@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "experiment_id": "day6_r1_garbled_text_trigger_v0",
+  "date": "2026-09-08",
+  "split": "development_tune",
+  "observed_failure": "One 36-page PDF exposes many text objects, but embedded-font decoding turns visible English into strings such as '2YHQ 3UREH', making BM25 lexical matching ineffective.",
+  "signal": {
+    "name": "unicode_control_character_ratio",
+    "denominator": "non_whitespace_characters_in_native_page_records",
+    "operator": "greater_than",
+    "threshold": 0.05,
+    "uses_gold_or_answer_labels": false
+  },
+  "tune_distribution": {
+    "failure_document_ratio": 0.1982962861565353,
+    "next_highest_document_ratio": 0.005224297195100115,
+    "documents_above_threshold": 1,
+    "development_tune_document_count": 82
+  },
+  "policy_scope": "For an R1 local-visual question, this signal marks native text as unusable for page discovery and permits deterministic OCR text recovery before page retrieval.",
+  "execution": {
+    "ocr_run": false,
+    "api_request_sent": false,
+    "api_cost_usd": 0.0
+  },
+  "data_boundary": {
+    "calibration_labels_used": false,
+    "locked_test_accessed": false
+  },
+  "next_test": "Apply the frozen detector to the tune R1 population, generate OCR only for the flagged document, and measure whether its two observed R1 page-discovery failures are recovered."
+}

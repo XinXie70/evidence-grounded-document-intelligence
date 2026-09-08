@@ -1,0 +1,60 @@
+{
+  "condition": "real_retrieval",
+  "doc_id": "urnuuid8f2628d5-89b1-4143-bb0f-623743d738bf",
+  "evidence_pages": [
+    26,
+    31,
+    32
+  ],
+  "model_input": {
+    "evidence": [
+      {
+        "page": 26,
+        "text": "2008 2007 AA Revenue Capital Total Revenue Capital Total £’000 £’000 £’000 £’000 £’000 £’000 Unrealised (losses)/gains on investments – (8,894) (8,894) – 1,093 1,093 Realised (losses)/gains on investments – (808) (808) – 873 873 Income 2,255 – 2,255 2,569 – 2,569 Recoverable VAT 266 1,038 1,304 ––– Investment management fee (405) (1,215) (1,620) (457) (1,371) (1,828) Other expenses (362) – (362) (481) – (481) Profit/(loss) on ordinary activities before taxation 1,754 (9,879) (8,125) 1,631 595 2,226 Taxation on ordinary activities (433) 433 – (371) 371 – Profit/(loss) on ordinary activities after taxation 1,321 (9,446) (8,125) 1,260 966 2,226 Return per ordinary share: Basic 2.44p (17.43p) (14.99p) ––– Reconciliation of Movements in Shareholders’ Funds For the Year ended 31 December 2008 2008 2007 2007 2007 A A Ordinary Ordinary C shares shares shares Total £’000 £’000 £’000 £’000 Opening shareholders’ funds 65,221 42,321 24,227 66,548 (Loss)/profit for the year (8,125) 302 1,924 2,226 Increase in share capital in issue 1,118 680 1,696 2,376 Purchase of shares for Treasury or cancellation (1,398) (759) – (759) Dividends paid (1,629) (3,698) (1,472) (5,170) Expenses of share issue and conversion of share premium (51) – –– Closing shareholders’ funds 55,136 38,846 26,375 65,221 24 Income Statement For the Year ended 31 December 2008"
+      },
+      {
+        "page": 31,
+        "text": "7 Notice of board meetings Under the Current Articles, when a director is abroad he can request that notice of directors’ meetings are sent to him at a specified address and if he does not do so he is not entitled to receive notice while he is away. This provision has been removed, as modern communications mean that there may be no particular obstacle to giving notice to a director who is abroad. It has been replaced with a more general provision that a director is treated as having waived his entitlement to notice, unless he supplies the Company with the information necessary to ensure that he receives notice of a meeting before it takes place. 8 Directors’ indemnities and loans to fund expenditure The Companies Act 2006 has in some areas widened the scope of the powers of a company to indemnify directors and to fund expenditure incurred in connection with certain actions against directors. The existing exemption allowing a company to provide money for the purpose of funding a director’s defence in court proceedings now expressly covers regulatory proceedings and applies to associated companies. 9 Share transfers Under the Current Articles, the Company is not obliged to give any reason for refusing to register a transfer of shares. Provisions of the Companies Act which came into force in April 2008 require a company to give the transferee reasons for refusal, and the New Articles have been amended accordingly. 10 Execution of deeds It is now possible for a company to execute a deed in the presence of a single director, provided a witness attests the signature and the New Articles reflect this. 11 General Generally the opportunity has been taken to bring clearer language into the New Articles and in some areas to conform the language of the New Articles. 29 Explanatory notes of principal changes to the Company’s Articles of Association"
+      },
+      {
+        "page": 32,
+        "text": "Shareholder Helpline Tel: 0870 703 0137 (Calls charged at national rate). The Shareholder Helpline is available on UK business days between Monday and Friday, 8.30 am to 5 pm. The helpline contains automated self-service functionality which is available 24 hours a day, 7 days a week. Using your Shareholder Reference Number which is available on your share certificate or dividend tax voucher, our self-service functionality will enable you achieve the following things: Automated Functions – confirm the latest share price – confirm your current share holding balance – confirm payment history – order a Change of Address, Dividend Bank Mandate or Stock Transfer Form e-mail : web.queries@computershare.co.uk Enquiries Shareholders should contact the following regarding queries : Basic contact details, ie change of address, joining the DRIP queries re: share and tax certificates and bank mandate forms: Computershare (Company Registrar) www-uk.computershare.com/investor Investors who hold ordinary shares in their own name can check their holdings on our Registrar’s website www-uk.computershare.com. Please note that to access this facility investors will need to quote the reference number shown on their share certificate. Alternatively, by registering for the Investors’ Centre facility on Computershare’s website, investors can view details of all their holdings for which Computershare is Registrar, as well as access additional facilities and documentation. Please see www.investorcentre.co.uk for further information. For information on asset allocations, dividend policies, investment process, DRIP mechanism, share price movements, the share price discount and selling shares : ISIS EP LLP (the Investment Manager) at www.isisep.com e-mail : michael.probin@isisep.com ; paul.forster@isisep.com ; margaret.barff@isisep.com Tel: Michael Probin 020 7506 5796; Paul Forster 020 7506 5652; Margaret Barff 020 7506 5630. The Baronsmead website ( www.baronsmeadvcts.co.uk) links to helpful sites, contains details of the team and some case studies of investments. Shareholder communication The Board has a policy of regular and open communication with shareholders based around quarterly statutory reporting. Electronic communication has been introduced following new legislation in the 2006 Companies Act and the Baronsmead website is available at www.baronsmeadvcts.co.uk. 30 Shareholder Information and Contact Details"
+      }
+    ],
+    "instructions": "Answer the question. When document evidence is supplied, use only that evidence. When no document evidence is supplied, answer only from your existing knowledge and do not claim or imply document support. If the available basis does not adequately support an answer, return status='insufficient_evidence' and answer=null. Cite only supplied 1-based physical PDF page numbers; when no document evidence is supplied, cited_pages must be empty. Return one object matching response_schema.",
+    "question": "How did the change in the Company's Articles of Association regarding share transfers impact the reconciliation of movements in shareholders' funds for 2008?",
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "answer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cited_pages": {
+          "items": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "answerable",
+            "insufficient_evidence"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "answer",
+        "cited_pages",
+        "status"
+      ],
+      "type": "object"
+    }
+  },
+  "question_id": "urnuuid8f2628d5-89b1-4143-bb0f-623743d738bf::q5",
+  "schema_version": 1
+}

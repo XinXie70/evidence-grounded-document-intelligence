@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "audit_date": "2026-09-07",
+  "question_id": "urnuuidc94c212d-21aa-4dbe-a75f-6d8888002f6a::q2",
+  "benchmark_answer": "20%",
+  "manual_crop_review": "confirmed",
+  "comparison": {
+    "c2_oracle_page_text": {
+      "result_path": "results/day4_reliability_pilot_v0/pilot_06/oracle_page.json",
+      "result_sha256": "80d51168f421464ea47487aa7fdd526162ab3661877f9b6da566725c9c2ac90a",
+      "evidence_pages": [30],
+      "answer": "30%",
+      "answer_correct": false,
+      "validation_valid": true
+    },
+    "c3_oracle_region_image_only": {
+      "result_path": "results/day5_visual_recovery_v0/pilot_06/c3_image_only.json",
+      "result_sha256": "3d6cc25096cd3a2ca986a53b7d8b404422756122165372d2aff35fa0c8f2b1ad",
+      "evidence_pages": [30],
+      "answer": "20%",
+      "answer_correct": true,
+      "cited_pages": [30],
+      "validation_valid": true,
+      "actual_cost_usd": 0.001844,
+      "approved_cap_usd": 0.01,
+      "retries": 0
+    }
+  },
+  "single_variable_intervention": "Replace the linearized full-page native text with the manually confirmed benchmark-bbox chart image while holding the question, physical evidence page, model, reasoning effort, response schema, and zero-retry policy fixed.",
+  "failure_attribution": "representation_failure_chart_spatial_mapping",
+  "interpretation": "The correct page was already supplied in C2, but linearized chart text lost the association between household group, legend category, and percentage. The image-only C3 condition restored that association and recovered the benchmark-supported answer.",
+  "scope_note": "This is causal evidence for pilot_06 only; it does not yet establish recovery rates across other visual failures."
+}

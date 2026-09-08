@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "status": "ablation",
+  "route": "r2_scanned_document",
+  "input": {
+    "retrieval_method": "page_bm25",
+    "seed_top_k": 10
+  },
+  "expansion": {
+    "radius": 1,
+    "order_per_seed": [
+      "seed",
+      "previous_page",
+      "next_page"
+    ],
+    "boundary_policy": "drop_out_of_document_pages",
+    "duplicate_policy": "preserve_first_occurrence"
+  },
+  "role": "candidate_generation_only",
+  "reasoning_context_policy": "not_decided_by_this_ablation",
+  "uses_gold_or_answer_labels": false
+}

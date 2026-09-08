@@ -1,0 +1,8 @@
+Ground Water Depth to Product Water Product
+
+Elevation Water Thickness Purged Purged
+Well No. (feet) (feet) (feet) Sheen (gallons) {qgallons)
+
+{Monitored on June 14, 1991)
+
+Mw3 83.31 16.72 0 Yes 55 (¢]

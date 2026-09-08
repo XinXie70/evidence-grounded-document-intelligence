@@ -1,0 +1,65 @@
+{
+  "benchmark_path": "data/raw/docscope/benchmark.json",
+  "benchmark_sha256": "ad07c6dfc43e5275ae92b894bf69f151c3dd9467ed79f5b12df904438c5ecb8e",
+  "coordinate_space": "cropbox_pixels_at_144_dpi_top_left_origin",
+  "crops": [
+    {
+      "bbox": [
+        96.7,
+        218.3,
+        686.7,
+        261
+      ],
+      "doc_id": "urnuuid111476ed-6700-4be2-85cc-3fc17696167e",
+      "element_type": "table",
+      "evidence_local_id": "e1",
+      "output_height_pixels": 43,
+      "output_png": "e1_page_0021.png",
+      "output_png_sha256": "333d62a8799cfe0af7522eba8faf8e2685e5382fedf7269b9b9469042874a192",
+      "output_width_pixels": 591,
+      "page": 21,
+      "pixel_crop": [
+        96,
+        218,
+        687,
+        261
+      ],
+      "question": "According to the weekday main-activity table by sex, how many more hours do males spend on personal care than females spend on housework and family care?",
+      "question_id": "urnuuid111476ed-6700-4be2-85cc-3fc17696167e::q3"
+    },
+    {
+      "bbox": [
+        85.7,
+        526.5,
+        1096.9,
+        568.1
+      ],
+      "doc_id": "urnuuid111476ed-6700-4be2-85cc-3fc17696167e",
+      "element_type": "table",
+      "evidence_local_id": "e2",
+      "output_height_pixels": 43,
+      "output_png": "e2_page_0055.png",
+      "output_png_sha256": "ebc95c7b770504c07b5530a6063529479ee72dcdf3111f19c81552cab5c7704c",
+      "output_width_pixels": 1012,
+      "page": 55,
+      "pixel_crop": [
+        85,
+        526,
+        1097,
+        569
+      ],
+      "question": "According to the weekday main-activity table by sex, how many more hours do males spend on personal care than females spend on housework and family care?",
+      "question_id": "urnuuid111476ed-6700-4be2-85cc-3fc17696167e::q3"
+    }
+  ],
+  "doc_id": "urnuuid111476ed-6700-4be2-85cc-3fc17696167e",
+  "question": "According to the weekday main-activity table by sex, how many more hours do males spend on personal care than females spend on housework and family care?",
+  "question_id": "urnuuid111476ed-6700-4be2-85cc-3fc17696167e::q3",
+  "render_dpi": 144,
+  "rounding_rule": "floor x1/y1 and ceil x2/y2",
+  "schema_version": 1,
+  "source_pdf": "data/raw/docscope/pdfs/urnuuid111476ed-6700-4be2-85cc-3fc17696167e.pdf",
+  "source_pdf_sha256": "1d2b754b8cefb08de728bf40ac6078ea02b3064a5ba8164d2a078fe154ce402d",
+  "status": "manual_review_required",
+  "use_pdf_cropbox": true
+}

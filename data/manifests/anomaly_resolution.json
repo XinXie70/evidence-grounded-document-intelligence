@@ -1,0 +1,15 @@
+{
+  "answerable_zero_evidence": {
+    "answer_metrics": "retain_with_audit_flag_and_report_sensitivity_with_and_without",
+    "decision": "exclude_from_evidence_retrieval_metrics",
+    "observed_answer": "0",
+    "question_id": "urnuuidbf633ee6-28ba-460f-b6c6-fcd694f24284::q2",
+    "reason": "released answerable record has no gold evidence"
+  },
+  "schema_version": 1,
+  "zero_evidence_question_ids": [
+    "urnuuid8a390982-14e5-4b52-882d-e0cf9677c173::q7",
+    "urnuuidbf633ee6-28ba-460f-b6c6-fcd694f24284::q2"
+  ],
+  "zero_evidence_record_count": 2
+}

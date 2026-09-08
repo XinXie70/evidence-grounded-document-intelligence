@@ -1,0 +1,34 @@
+{
+  "case_id": "smoke_10",
+  "conditions": {
+    "closed_book": {
+      "cost_usd": 0.000714,
+      "outcome": "correct_abstention",
+      "response_status": "insufficient_evidence",
+      "result_path": "results/day4_reliability_triplet_v0/smoke_10/closed_book.json",
+      "result_sha256": "8ddf6c79cacf411f4c9c107e9c99545991df48c75d4aaceccb27755feefa65bd"
+    },
+    "oracle_page": {
+      "incremental_cost_usd": 0.0,
+      "outcome": "correct_abstention",
+      "response_reused": true,
+      "response_status": "insufficient_evidence",
+      "reused_from_condition": "closed_book",
+      "reused_result_path": "results/day4_reliability_triplet_v0/smoke_10/closed_book.json",
+      "shared_canonical_request_sha256": "686bd5890f6d8eadce3b7e9b44989294051a69c0493ff1c9350bd1a8c71518da"
+    },
+    "real_retrieval": {
+      "cost_usd": 0.011496,
+      "outcome": "correct_abstention",
+      "response_status": "insufficient_evidence",
+      "result_path": "results/day4_reliability_triplet_v0/smoke_10/real_retrieval.json",
+      "result_sha256": "aea6da031bf3c2a938981d4b95e3a0a1ae60d8e3d09b3625fb6ff14797ef9c53"
+    }
+  },
+  "interpretation": "The benchmark marks the question unanswerable. The shared empty-context C0/C2 request abstained, and C1 also abstained despite receiving tempting related pages. No unsupported tax rate was synthesized in this case.",
+  "question_id": "urnuuid425f7a17-aa57-4cca-b56e-612fe270751d::q6",
+  "schema_version": 1,
+  "total_paid_call_count": 2,
+  "total_paid_cost_usd": 0.01221,
+  "validation_passed_all_executed_requests": true
+}

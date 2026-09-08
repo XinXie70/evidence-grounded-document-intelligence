@@ -1,0 +1,39 @@
+{
+  "approval_date": "2026-09-04",
+  "approval_status": "approved",
+  "approved_hard_cap_usd": 0.03,
+  "actual_cost_usd": 0.006573,
+  "actual_input_tokens": 1968,
+  "actual_output_tokens": 163,
+  "call_count": 2,
+  "conditions": [
+    "real_retrieval",
+    "oracle_page"
+  ],
+  "config_path": "configs/reasoning_smoke_c0_v0.json",
+  "config_sha256": "bc84ff001e5fbdc0b4ed4b3ca96df88798607632de2eb4b8eca385c99d719234",
+  "conservative_cost_estimate_usd": 0.022248,
+  "currency": "USD",
+  "inputs": [
+    {
+      "condition": "real_retrieval",
+      "conservative_cost_estimate_usd": 0.012779,
+      "conservative_input_tokens": 2654,
+      "path": "experiments/day4_c0_input_smoke_v0/smoke_01/real_retrieval.json",
+      "sha256": "28982b92ad06859d4a3181f00dc73269f40fb70a2997e2f2e701ecc08a2d853c"
+    },
+    {
+      "condition": "oracle_page",
+      "conservative_cost_estimate_usd": 0.009469,
+      "conservative_input_tokens": 1330,
+      "path": "experiments/day4_c0_input_smoke_v0/smoke_01/oracle_page.json",
+      "sha256": "e6274dd7cae48c18adddac6688258f831d7b652817679a52e22c1aa86ae3e415"
+    }
+  ],
+  "maximum_output_tokens_per_call": 512,
+  "execution_status": "complete_within_budget",
+  "pricing_snapshot_id": "openai-gpt-5.6-terra-2026-09-02",
+  "question_id": "urnuuid0812e9ac-6f30-4624-9c78-6f4176467918::q2",
+  "schema_version": 1,
+  "scope": "two matched control calls needed to complete the smoke_01 C0-C1-C2 prompt-matched contrast"
+}

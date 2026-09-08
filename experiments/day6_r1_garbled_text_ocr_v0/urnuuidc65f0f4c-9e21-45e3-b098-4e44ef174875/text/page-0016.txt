@@ -1,0 +1,132 @@
+Setti
+
+USING THE RANGE
+
+ings
+
+16
+
+Settings (Cont.)
+
+WiFi Connect and Remote Enable (cont.)
+
+4. If the connection light does not turn on or is blinking,
+follow the instructions on the app to reconnect. If issues
+continue, please visit cafeappliances.com/connect and
+ask for assistance regarding oven wireless connectivity.
+
+To connect additional smart devices, repeat steps 1 and 2.
+
+Note that any changes or modifications to the remote
+enable device installed on this oven that are not
+expressly approved by the manufacturer could void the
+user’s authority to operate the equipment.
+
+REMOTE STARTING YOUR OVEN =
+
+To be able to start the oven remotely once connected to
+WiFi, select Turn Remote On/Off and the @ icon will turn
+on in the display. The oven can now be remotely started
+with a connected device. The Micon must be lit to start the
+oven remotely. The W icon is not required to change the
+oven temperature while it is running, set a timer or to turn
+the oven off from the phone app while the icon shows it
+is Wifi Connected.
+
+After using the oven, remember to verify that the @ icon
+is lit if you wish to start the oven remotely in the future.
+
+NOTE: Foods that spoil easily—such as milk, eggs, fish,
+stuffings, poultry and pork—should not be allowed to
+
+sit for more than 1 hour before or after cooking. Room
+temperature promotes the growth of harmful bacteria. Be
+sure that the oven light is off because heat from the bulb
+will speed harmful bacteria growth.
+
+Clock
+
+This setting sets the oven clock time. Press the Settings
+pad and select Clock. Select Set Clock and follow the
+instructions to set the clock. This feature also specifies
+how the time of day will be displayed. You can select a
+standard 12-hour clock (12H), 24-hour military time display
+(24H), or no clock displayed (Off). Press the Settings pad,
+select Set Clock and select either 12/24 hr or On/Off.
+
+Bluetooth® - Chef Connect
+
+This is a pairing feature for use with other compatible
+Chef Connect enabled products like an over-the-
+range microwave oven or range hood. To pair those
+products to the range Press the Settings pad and select
+Bluetooth®. Select Pair and follow the corresponding
+instructions included with the mating Chef Connect
+enabled product. The range will cancel pairing mode
+after two minutes if no mating device is detected. Select
+Remove to confirm product is paired or to un-pair from
+range. The Precision Cooking Probe can also be paired
+using the Bluetooth® feature.
+
+Auto Conv (Auto Conversion)
+
+When using Convection Bake and Convection Roast
+cooking, Auto Recipe Conversion will automatically
+convert the regular baking temperatures entered to
+convection bake cooking temperatures when turned
+
+on. Note that this option does not convert convection
+bake cooking times, it only converts temperatures. This
+feature may be turned On or Off. Select Settings, Auto
+Conversion is 5th option and shows up on first display of
+settings, and Auto Conversion then follow the prompts
+to turn this feature on or off.
+
+Auto Off
+
+This feature shuts the oven down after 12 hours of
+continuous operation. It may be enabled or disabled.
+Select Settings, More, and Auto Off to turn this feature
+on or off.
+
+Sound
+
+You can adjust the volume and type of alert your appliance
+uses. Select Settings, More, and Sound. Follow prompts
+for making volume adjustments or for changing between
+continuous and single alert tones. A continuous setting
+
+will continue to sound a tone until a button on the control
+is pressed. The oven tone volume can be adjusted. The
+control will sound the oven tone at the new volume level
+each time the sound level is changed.
+
+F/C (Fahrenheit or Celsius)
+
+The oven control is set to use Fahrenheit temperatures
+(F), but you can change it to use Celsius temperatures
+(C). Select Settings, More, and FI/C to alter between
+temperature scales displayed.
+
+Adjust the Oven temperature
+
+This feature allows the oven baking and convection
+baking temperature to be adjusted up to 35°F hotter
+
+or down to 35°F cooler. Use this feature if you believe
+your oven temperature is too hot or too cold and wish to
+change it. This adjustment affects Bake and Convection
+Bake modes. Does not change Proof or Cleaning modes.
+Select Settings and Oven Adjust to add More Heat
+
+or Less Heat and then press Save. (For double ovens
+use the Upper Oven or Lower Oven menu selection
+corresponding to the oven to be adjusted.)
+
+Oven Info
+
+Select Settings, More, and Oven Info to turn this
+feature on or off. This setting displays Model Number and
+Software Version.
+
+49-2000233 Rev. 2

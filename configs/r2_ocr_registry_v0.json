@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "documents": [
+    {
+      "doc_id": "urnuuid45a0a8e5-e31b-4e74-9663-f27ab82db68f",
+      "page_count": 37,
+      "corpus_path": "experiments/day5_ocr_full_document_v0/pilot_16/page_records_ocr.jsonl",
+      "corpus_sha256": "f9843e37e1029bb21f3be4b73457823beca17b4f7bd566cd8523f50ea044cc32",
+      "layout_text_dir": "experiments/day5_ocr_full_document_v0/pilot_16/text",
+      "verification_artifact": "experiments/day5_ocr_full_document_v0/pilot_16/retrieval_audit.json"
+    },
+    {
+      "doc_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba",
+      "page_count": 51,
+      "corpus_path": "experiments/day5_ocr_full_document_v0/pilot_17_builder_validation_v1/page_records.jsonl",
+      "corpus_sha256": "4b99fcb1baad65d82efea74339976239af3ba2caa7161af217d7183ee7ca3d78",
+      "layout_text_dir": "experiments/day5_ocr_full_document_v0/pilot_17_builder_validation_v1/text",
+      "verification_artifact": "experiments/day5_ocr_full_document_v0/pilot_17_builder_validation_v1/manifest.json"
+    }
+  ]
+}

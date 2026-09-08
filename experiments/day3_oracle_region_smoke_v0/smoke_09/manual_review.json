@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "status": "confirmed",
+  "review_date": "2026-09-04",
+  "reviewer": "user",
+  "question_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba::q1",
+  "evidence_local_id": "e1",
+  "page": 14,
+  "output_png": "e1_page_0014.png",
+  "output_png_sha256": "17591263549832e78c2729cae1c8dcdf6442241aa8e2d6add996fad6dbe9a372",
+  "checks": {
+    "correct_page": true,
+    "correct_region": true,
+    "target_column_heading_visible": true,
+    "example_text_visible": true,
+    "crop_complete_enough_for_question": true
+  },
+  "note": "User confirmed that the formal crop fully displays the Bloodline/Relation Information heading and the example text."
+}

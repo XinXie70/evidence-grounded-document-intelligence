@@ -1,0 +1,46 @@
+SEQUOIA ANALYTICAL
+
+1900 Bates Avenue e Suite LM e Concord, California 94520
+(415) 686-9600 ® FAX (415) 686-9689
+
+P.O. Box 996
+
+Benicia, CA 94510
+tention: Mardo Kaprealian, P.E. QC Sample Group: 1080879-81 Reported: Aug 30, 1991
+
+QUALITY CONTROL DATA REPORT
+
+ANALYTE Ethy!-
+Benzene Toluene Benzene Xylenes
+Method: EPA8015/8020 EPA8015/8020  EPAB015/8020 EPA8015/8020
+Analyst: RH/JF RH/JF RH/JF RH/JF
+Reporting Units: ug/L ug/L ug/L ug/L
+Date Analyzed: Aug 23, 1991 Aug 23, 1991 Aug 23, 1991 Aug 23, 1991
+QC Sample #: 108-0586 108-0586 108-0586 108-0586
+Sampie Conc.: ND. ND. NLD. ND.
+Spike Conc.
+Added: 20 20 20 60
+Cone. Matrix
+Spike: 22 20 22 71
+Matrix Spike
+% Recovery: 110 100 110 120
+
+Conc. Matrix
+
+Spike Dup.: 21 19 20 67
+Matrix Spike
+Duplicate
+% Recovery: 110 95 100 110
+Relative
+% Difference: 47 6.1 95 58
+
+Laboratory blank contained the following analytes | None Detected
+
+SEQUOIA ANALYTICA % Recovery Cone of MS -Conc of Sample x 100
+\ } . {.. Spike Conc Added
+xp | uf on
+
+, Relative % Difference Cone of MS - Conc, of MSD x 100
+
+(ou ia R Malérstein Tone of MS + Conc of MSD)/2
+\ Project Manager 1080879 KEI <2>

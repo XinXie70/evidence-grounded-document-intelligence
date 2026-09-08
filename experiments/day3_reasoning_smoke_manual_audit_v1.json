@@ -1,0 +1,293 @@
+{
+  "approved_scope_cost_estimate_usd": 0.043388,
+  "audit_status": "complete",
+  "completed_call_count_in_approved_scope": 18,
+  "completed_pair_count": 10,
+  "failed_call_count_in_approved_scope": 1,
+  "failed_attempts": [
+    {
+      "case_id": "smoke_07",
+      "condition": "oracle_page",
+      "failure_path": "results/day3_reasoning_smoke_v1/smoke_07/oracle_page.failure-20260902T081402889754Z.json",
+      "failure_type": "empty_or_non_json_api_output",
+      "manual_note": "The paid request reached the API, but the old runner discarded response usage when local JSON parsing failed. This historical attempt's cost is therefore unknown rather than zero. The runner is being corrected before any retry."
+    }
+  ],
+  "manual_audits": [
+    {
+      "case_id": "smoke_01",
+      "conditions": {
+        "oracle_page": {
+          "answer_correct": true,
+          "citation_chain_complete": true,
+          "grounded_correct": true,
+          "result_path": "results/day3_reasoning_smoke/oracle_page.json",
+          "result_sha256": "d1472edd216118094926fd96aa8470f18b60282d8c7370f9209f0776eb34b7ee"
+        },
+        "real_retrieval": {
+          "answer_correct": true,
+          "citation_chain_complete": true,
+          "grounded_correct": true,
+          "manual_note": "Page 47 is alternative valid evidence and supports the additional exception clause.",
+          "result_path": "results/day3_reasoning_smoke/real_retrieval.json",
+          "result_sha256": "62faf7541d3c892fbde5436184e9ff7d46560913b889a991a23e247f2f7a6057"
+        }
+      },
+      "paired_classification": "grounded success under both conditions"
+    },
+    {
+      "case_id": "smoke_02",
+      "conditions": {
+        "oracle_page": {
+          "answer_correct": true,
+          "citation_chain_complete": true,
+          "grounded_correct": true,
+          "result_path": "results/day3_reasoning_smoke_v1/smoke_02/oracle_page.json",
+          "result_sha256": "ff551ff1059f5b77d84e3e5a94d8fcb4952e9972511ebb85acf5480832d1673a"
+        },
+        "real_retrieval": {
+          "answer_correct": true,
+          "citation_chain_complete": true,
+          "grounded_correct": true,
+          "manual_note": "The model ignored and did not cite extra page 76.",
+          "result_path": "results/day3_reasoning_smoke_v1/smoke_02/real_retrieval.json",
+          "result_sha256": "5e43c0572d2a6901e572de227fa51c0a057e9f3166f398cfdce7ab6f66646119"
+        }
+      },
+      "paired_classification": "grounded success under both conditions"
+    },
+    {
+      "case_id": "smoke_03",
+      "conditions": {
+        "oracle_page": {
+          "answer_correct": true,
+          "citation_chain_complete": false,
+          "grounded_correct": false,
+          "manual_note": "Page 31 identifies Airbnb as the $350,000 donor; page 40 supplies its location. The answer cites only page 40.",
+          "missing_required_citation_pages": [
+            31
+          ],
+          "result_path": "results/day3_reasoning_smoke_v1/smoke_03/oracle_page.json",
+          "result_sha256": "061de9a556919cdcb93d6e3263c7ec85ebc10bf0e00260003b701702b25b95bd"
+        },
+        "real_retrieval": {
+          "answer_correct": false,
+          "citation_chain_complete": false,
+          "grounded_correct": false,
+          "manual_note": "BM25 supplied donor-identification page 31 but omitted location page 40. Pages 9 and 3 contain no alternative location evidence. The model appropriately abstained instead of guessing.",
+          "reliability_behavior_given_context": "appropriate_abstention",
+          "result_path": "results/day3_reasoning_smoke_v1/smoke_03/real_retrieval.json",
+          "result_sha256": "622a4038f965afb8569cd88a646341e2bc7f6e91d0025ea71e84af6fa790f3f7"
+        }
+      },
+      "paired_classification": "strong retrieval-associated answer-loss candidate; formal confirmed-retrieval-failure label awaits the frozen C3 contrast"
+    },
+    {
+      "case_id": "smoke_04",
+      "conditions": {
+        "oracle_page": {
+          "answer_correct": true,
+          "citation_chain_complete": true,
+          "grounded_correct": true,
+          "result_path": "results/day3_reasoning_smoke_v1/smoke_04/oracle_page.json",
+          "result_sha256": "41469b43087af7845738e96d7a786da6edbf2d309a17f4c135e4ca997e877615"
+        },
+        "real_retrieval": {
+          "answer_correct": false,
+          "citation_chain_complete": false,
+          "grounded_correct": false,
+          "manual_note": "Pages 24, 30, and 56 discuss related concepts but do not state that Focus Area 2 requires efforts across the other three focus areas. The model appropriately abstained.",
+          "reliability_behavior_given_context": "appropriate_abstention",
+          "result_path": "results/day3_reasoning_smoke_v1/smoke_04/real_retrieval.json",
+          "result_sha256": "6bc46f5e4f3013a68efd3a6b06b130ce328c380b231c0627b798dc688dd7f489"
+        }
+      },
+      "paired_classification": "BM25 semantic-paraphrase retrieval-associated answer loss; formal confirmed-retrieval-failure label awaits the frozen C3 contrast"
+    },
+    {
+      "case_id": "smoke_05",
+      "conditions": {
+        "oracle_page": {
+          "answer_correct": true,
+          "citation_chain_complete": true,
+          "grounded_correct": true,
+          "manual_note": "The flattened pypdf text retained enough table association to identify the starting span length as 2.",
+          "result_path": "results/day3_reasoning_smoke_v1/smoke_05/oracle_page.json",
+          "result_sha256": "127b6f0173c36a95859093e2b0ec82b6ac15cda58b9276571394826f45c486ff"
+        },
+        "real_retrieval": {
+          "answer_correct": true,
+          "citation_chain_complete": true,
+          "grounded_correct": true,
+          "manual_note": "The model cited only gold page 11 and ignored extra pages 10 and 15.",
+          "result_path": "results/day3_reasoning_smoke_v1/smoke_05/real_retrieval.json",
+          "result_sha256": "b94b421276a298a5ab446b1fde4e0c8c30c62f45d645f05ff479ebfc842252cb"
+        }
+      },
+      "paired_classification": "text-extracted table grounded success under both conditions"
+    },
+    {
+      "case_id": "smoke_06",
+      "conditions": {
+        "oracle_page": {
+          "answer_correct_strict_benchmark": false,
+          "answer_semantically_close": true,
+          "citation_chain_complete": false,
+          "grounded_correct": false,
+          "manual_note": "The model used rounded values on page 21 to produce 6.0 hours and cited only page 21. The benchmark chain uses 10.8 hours from page 21 and 287.4 minutes from page 55, yielding 6.01 hours.",
+          "missing_required_citation_pages": [
+            55
+          ],
+          "result_path": "results/day3_reasoning_smoke_v1/smoke_06/oracle_page.json",
+          "result_sha256": "28a4bf506fd18cdc9157100082059cbc8ad5347b163e05ccd9443179d5024cb8"
+        },
+        "oracle_region_context": {
+          "answer_correct": false,
+          "citation_chain_complete": false,
+          "grounded_correct": false,
+          "manual_note": "The manually verified contextual table regions supply the two exact values and their headers, but the model returned insufficient_evidence. This is over-abstention under sufficient evidence.",
+          "reliability_behavior_given_context": "over_abstention",
+          "result_path": "results/day3_oracle_region_context_smoke_v0/smoke_06.json",
+          "result_sha256": "da40736ec3a5849468f38233d80870bda5b9191d7884e896d90927807911bd48"
+        },
+        "oracle_facts": {
+          "answer_correct": true,
+          "citation_chain_complete": true,
+          "grounded_correct": true,
+          "manual_note": "With the two source facts normalized as text but without the final answer, the model correctly converted 287.4 minutes to 4.79 hours, subtracted it from 10.8 hours, returned 6.01 hours, and cited pages 21 and 55.",
+          "result_path": "results/day3_oracle_facts_smoke_v0/smoke_06.json",
+          "result_sha256": "e19effccace915f9cf33f2bba68a02ccfa263af7e6f20f65775188df27d1b749"
+        },
+        "real_retrieval": {
+          "answer_correct": false,
+          "citation_chain_complete": false,
+          "grounded_correct": false,
+          "manual_note": "Pages 7, 9, and 10 contain broad time-use summaries but not the two exact benchmark facts. The model appropriately abstained.",
+          "reliability_behavior_given_context": "appropriate_abstention",
+          "result_path": "results/day3_reasoning_smoke_v1/smoke_06/real_retrieval.json",
+          "result_sha256": "ec9ecc63534966acdf1c343bcc6e7716cee212ca67f2c72a831808c0a63c0845"
+        }
+      },
+      "paired_classification": "C1 retrieval failure plus C2 rounded single-page answer; contextual C3 over-abstains despite sufficient table evidence; C4 succeeds exactly, localizing the residual bottleneck to table perception/cross-region association or table-conditioned over-abstention rather than arithmetic reasoning"
+    },
+    {
+      "case_id": "smoke_07",
+      "conditions": {
+        "oracle_page": {
+          "answer_correct": true,
+          "citation_chain_complete": true,
+          "grounded_correct": true,
+          "manual_note": "The answer exactly matches the benchmark: 13.28% yield on advances minus 8.24% cost of deposits equals 5.04 percentage points. The flattened chart text was sufficient on the successful retry.",
+          "result_path": "results/day3_reasoning_smoke_v1/smoke_07/oracle_page.json",
+          "result_sha256": "2e1c1a3c58dfd3d3b9efa91585fa570999a56644b7613fb8cd42ed438f0b0a30"
+        },
+        "real_retrieval": {
+          "answer_correct": true,
+          "citation_chain_complete": true,
+          "grounded_correct": true,
+          "manual_note": "BM25 ranked gold page 31 first. The model answered exactly and cited only page 31, ignoring distractor pages 17 and 2.",
+          "result_path": "results/day3_reasoning_smoke_v1/smoke_07/real_retrieval.json",
+          "result_sha256": "b0aee4e6ae4d46a56df7ca9ef080c57b95558f9a84403fb62cc4302eb6dadc23"
+        }
+      },
+      "paired_classification": "flattened-chart grounded success under both conditions"
+    },
+    {
+      "case_id": "smoke_08",
+      "conditions": {
+        "oracle_page": {
+          "answer_correct": false,
+          "citation_chain_complete": false,
+          "grounded_correct": false,
+          "manual_note": "The benchmark answer requires counting photographs across six gold pages. The current Oracle Page adapter supplied only pypdf text, not page pixels, so the model appropriately returned insufficient_evidence rather than guessing.",
+          "reliability_behavior_given_context": "appropriate_abstention",
+          "representation_failure": "visual_page_content_absent_from_text_only_adapter",
+          "result_path": "results/day3_reasoning_smoke_v1/smoke_08/oracle_page.json",
+          "result_sha256": "ee21c1358af741d0e8220ebe68c79dbeabebd0a507f6072966c0950f161045b4"
+        },
+        "oracle_region": {
+          "answer_correct": true,
+          "visual_classification_correct": true,
+          "citation_chain_complete": false,
+          "grounded_correct": false,
+          "manual_note": "The model correctly counted four actual-house photographs and cited their pages, but omitted chapter-boundary pages 30 and 40 required to support the phrase across the entire chapter.",
+          "missing_required_citation_pages": [30, 40],
+          "result_path": "results/day3_oracle_region_smoke_v0/smoke_08.json",
+          "result_sha256": "02ebc0a196da14be487a47145a3442458096b206d18d9ac067cf068bb3586bc4"
+        },
+        "real_retrieval": {
+          "answer_correct": false,
+          "citation_chain_complete": false,
+          "grounded_correct": false,
+          "manual_note": "BM25 supplied pages 4, 10, and 21, none of the six gold pages. The text-only model appropriately abstained rather than guessing a visual count.",
+          "reliability_behavior_given_context": "appropriate_abstention",
+          "result_path": "results/day3_reasoning_smoke_v1/smoke_08/real_retrieval.json",
+          "result_sha256": "afe8d29be2e9338eb1f5096aa095d2eb38a166421e28aff1d44e5fedeb319a9b"
+        }
+      },
+      "paired_classification": "visual Oracle restores the correct count and confirms a representation bottleneck, while BM25 misses all gold pages; strict grounded success still fails because the model omits chapter-boundary citations"
+    },
+    {
+      "case_id": "smoke_09",
+      "conditions": {
+        "oracle_page": {
+          "answer_correct": false,
+          "citation_chain_complete": false,
+          "grounded_correct": false,
+          "manual_note": "Oracle supplied the correct physical page 14, but pypdf extracted an empty text string from the scanned table. The model appropriately returned insufficient_evidence.",
+          "reliability_behavior_given_context": "appropriate_abstention",
+          "representation_failure": "scanned_gold_page_has_no_machine_readable_text_layer",
+          "result_path": "results/day3_reasoning_smoke_v1/smoke_09/oracle_page.json",
+          "result_sha256": "16b66eb46c2eb24ad0c7ce30d0e7a017ccfd04dc6558e97f5b09cf299cd07b41"
+        },
+        "oracle_region_upright": {
+          "answer_correct": true,
+          "citation_chain_complete": true,
+          "grounded_correct": true,
+          "manual_note": "The visual Oracle supplied the same gold bbox as pixels. The original rotated crop produced #1 instead of #11; rotating that same crop clockwise by 90 degrees produced the exact benchmark answer father of #11 and #12.",
+          "result_path": "results/day3_oracle_region_smoke_v1/smoke_09.json",
+          "result_sha256": "8dfe0e13698bb94a9eda1edfbd7036a85d5fdf6250cc703358ab6c1dc7365a23"
+        },
+        "real_retrieval": {
+          "answer_correct": false,
+          "citation_chain_complete": false,
+          "grounded_correct": false,
+          "manual_note": "BM25 supplied pages 1, 2, and 3 rather than gold page 14; all three extracted texts were empty. The model appropriately returned insufficient_evidence.",
+          "reliability_behavior_given_context": "appropriate_abstention",
+          "result_path": "results/day3_reasoning_smoke_v1/smoke_09/real_retrieval.json",
+          "result_sha256": "f6f2537359ecc1167c3e4ccdcded6da28115f008e96659eadfee4deafef11de7"
+        }
+      },
+      "paired_classification": "confirmed missing-text-layer and orientation-sensitive visual-representation bottlenecks; upright Oracle Region succeeds exactly, while BM25 still misses gold page 14"
+    },
+    {
+      "case_id": "smoke_10",
+      "conditions": {
+        "oracle_page": {
+          "answer_correct": true,
+          "citation_chain_complete": true,
+          "grounded_correct": true,
+          "manual_note": "The benchmark marks the question unanswerable. With the protocol-correct empty Oracle context, the model returned answer=null, no citations, and insufficient_evidence.",
+          "reliability_behavior_given_context": "correct_abstention",
+          "result_path": "results/day3_reasoning_smoke_v1/smoke_10/oracle_page.json",
+          "result_sha256": "753b773b44947a65d22cddeed14199b3965e5719669ff4d29dc3e0f02a78ad9e"
+        },
+        "real_retrieval": {
+          "answer_correct": true,
+          "citation_chain_complete": true,
+          "grounded_correct": true,
+          "manual_note": "BM25 supplied closely related pages about Mongbwalu, cash costs, and a company-level tax-rate change, but none stated the requested project projection tax rate. The model correctly abstained rather than combining unrelated facts.",
+          "reliability_behavior_given_context": "correct_abstention_under_tempting_related_context",
+          "result_path": "results/day3_reasoning_smoke_v1/smoke_10/real_retrieval.json",
+          "result_sha256": "061be912f3e87a1873d65b20fe21b93334e7ef1a2ae19bf76748654792df2d4b"
+        }
+      },
+      "paired_classification": "unanswerable reliability success under both conditions"
+    }
+  ],
+  "known_successful_call_cost_usd": 0.082289,
+  "paid_attempt_count_in_approved_scope": 19,
+  "unresolved_failed_attempt_cost_count": 1,
+  "remaining_approved_call_count": 0,
+  "schema_version": 1
+}

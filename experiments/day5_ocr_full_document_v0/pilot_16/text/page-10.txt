@@ -1,0 +1,50 @@
+KEI-P88-1204.0OR9
+September 17,
+
+1991
+
+Ground Water Depth to Product Water
+Elevation Water Thickness Purged
+Well No. (feet) (feet) (feet) Sheen (gallons)
+(Monitored and Sampled on August 15, 1991)
+MWL 82.47 17.53 oO No 0
+MW2 82.22 18.10 oO No 11
+MW3 82.27% 17.77 0.01 N/A o
+MW4 82.32 17.34 0 No 11
+MW5 82.36 17.96 (8) No 0
+MW6 82.48 18.02 8) No 11
+(Monitored on August 1, 1991)
+MW3 82.35% 17.70 0.02 N/A 55
+(Monitored on July 26, 1991)
+MW1 84.98 15.02 ce) No 0
+MW2 85.23 15.09 0 No 0
+MW3 85.40 14.63 ie) No 55
+MW4 COULD NOT MONITOR - WELL NOT ACCESSIBLE
+MWS 85.10 15.22 0 No 0
+MW6 85.12 15.38 0 No 0
+(Monitored on July 12, 1991)
+MW3 82.81 17.22 ie} Yes 55
+(Monitored on June 28, 1991)
+MW1 83.33 16.67 0) No 0
+MWw2 83.08 17.24 0 No (0)
+MW3 83.10 16.93 ) Yes 55
+MWw4 83.20 16.46 0 No 0
+MW5 83.24 17.08 0 No 0)
+MW6 84.36 16.14 0 No )
+
+TABLE 12
+
+SUMMARY OF MONITORING DATA
+
+Product
+Purged
+
+(gallons)
+
+eo0oFoo
+
+<1 02
+
+oo°0
+
+Qo0o0000

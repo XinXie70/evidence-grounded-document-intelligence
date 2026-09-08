@@ -1,0 +1,63 @@
+{
+  "input_path": "experiments/day4_reliability_actual_c1_fixture_v1.json",
+  "input_sha256": "ba002e4143e395f24e7c5e59a59903d1f2021b6a1b81e78402b32a5e95ec233e",
+  "metrics": {
+    "abstained_count": 2,
+    "answerable_abstention_rate": 0.5,
+    "answered_count": 1,
+    "appropriate_abstention_rate_on_insufficient_context": 1.0,
+    "benchmark_task_accuracy": 0.6666666666666666,
+    "contextual_reliability_accuracy": 1.0,
+    "coverage": 0.3333333333333333,
+    "grounded_selective_risk": 0.0,
+    "outcome_counts": {
+      "appropriate_abstention_given_context": 1,
+      "correct_abstention": 1,
+      "grounded_success": 1
+    },
+    "over_abstention_rate_on_sufficient_answerable": 0.0,
+    "question_count": 3,
+    "selective_risk": 0.0,
+    "strict_grounded_task_accuracy": 0.6666666666666666,
+    "unanswerable_false_answer_rate": 0.0
+  },
+  "records": [
+    {
+      "answer_correct": true,
+      "answered": true,
+      "benchmark_is_answerable": true,
+      "benchmark_task_correct": true,
+      "contextual_reliability_correct": true,
+      "evidence_sufficient": true,
+      "grounded_correct": true,
+      "outcome": "grounded_success",
+      "question_id": "smoke_01::real_retrieval",
+      "strict_grounded_task_correct": true
+    },
+    {
+      "answer_correct": null,
+      "answered": false,
+      "benchmark_is_answerable": true,
+      "benchmark_task_correct": false,
+      "contextual_reliability_correct": true,
+      "evidence_sufficient": false,
+      "grounded_correct": null,
+      "outcome": "appropriate_abstention_given_context",
+      "question_id": "smoke_03::real_retrieval",
+      "strict_grounded_task_correct": false
+    },
+    {
+      "answer_correct": null,
+      "answered": false,
+      "benchmark_is_answerable": false,
+      "benchmark_task_correct": true,
+      "contextual_reliability_correct": true,
+      "evidence_sufficient": null,
+      "grounded_correct": null,
+      "outcome": "correct_abstention",
+      "question_id": "smoke_10::real_retrieval",
+      "strict_grounded_task_correct": true
+    }
+  ],
+  "schema_version": 1
+}

@@ -1,0 +1,14 @@
+{
+  "b": 0.75,
+  "document_representation": "one normalized PageRecord text field per physical PDF page",
+  "experiment_stage": "failure-driven query-token deduplication ablation on development_tune; no locked-test access",
+  "k1": 1.2,
+  "page_score": "BM25 score of the full page text",
+  "parser": "pypdf==6.10.0 PdfReader(strict=False).pages[].extract_text()",
+  "query_token_policy": "deduplicate_preserve_order",
+  "retrieval_scope": "pages within the question's known PDF document",
+  "schema_version": 1,
+  "text_normalization": "collapse Unicode whitespace only",
+  "tokenizer": "Unicode letters and numbers; casefolded; punctuation/underscore boundaries; keep stopwords; retain only the first occurrence of each query token",
+  "top_ks": [1, 3, 5, 10]
+}

@@ -1,0 +1,42 @@
+{
+  "case_id": "smoke_03",
+  "conditions": {
+    "closed_book": {
+      "answer_correct": false,
+      "cost_usd": 0.000768,
+      "outcome": "closed_book_abstention",
+      "response_status": "insufficient_evidence",
+      "result_path": "results/day4_reliability_triplet_v0/smoke_03/closed_book.json",
+      "result_sha256": "88e7f605f0fc1441138a9f4b23b2ee412be06640495cdab32ecdb754651e30c7"
+    },
+    "oracle_page": {
+      "answer_correct": true,
+      "citation_chain_complete": false,
+      "cited_pages": [40],
+      "cost_usd": 0.002352,
+      "grounded_correct": false,
+      "missing_required_citation_pages": [31],
+      "outcome": "correct_answer_incomplete_grounding",
+      "response_status": "answerable",
+      "result_path": "results/day4_reliability_triplet_v0/smoke_03/oracle_page.json",
+      "result_sha256": "6c3de4cffea59e2f8cd31ac0b36aabc1ed0f1ea13cc20214fae99a04c0979a1e"
+    },
+    "real_retrieval": {
+      "answer_correct": false,
+      "citation_chain_complete": false,
+      "cost_usd": 0.003781,
+      "evidence_sufficient": false,
+      "grounded_correct": false,
+      "outcome": "appropriate_abstention_given_context",
+      "response_status": "insufficient_evidence",
+      "result_path": "results/day4_reliability_triplet_v0/smoke_03/real_retrieval.json",
+      "result_sha256": "932d7f279f9f39189723be50fc2aed3c4d96d262832d2fa73425d15782eedc0a"
+    }
+  },
+  "interpretation": "The prompt-matched triplet confirms retrieval-associated answer loss: C0 abstained; C1 appropriately abstained because BM25 omitted required page 40; C2 restored the correct San Francisco, California answer when pages 31 and 40 were supplied. C2 still omitted page 31 from its citations, so a downstream complete-evidence-chain weakness remains.",
+  "question_id": "urnuuidad6e69ed-3343-4297-85d8-96b02e6bd925::q1",
+  "schema_version": 1,
+  "strict_prompt_matched_contrast_complete": true,
+  "total_cost_usd": 0.006901,
+  "validation_passed_all_conditions": true
+}

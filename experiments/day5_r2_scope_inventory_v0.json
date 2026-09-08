@@ -1,0 +1,85 @@
+{
+  "document_count": 2,
+  "documents": [
+    {
+      "doc_id": "urnuuid45a0a8e5-e31b-4e74-9663-f27ab82db68f",
+      "ocr": {
+        "corpus_path": "experiments/day5_ocr_full_document_v0/pilot_16/page_records_ocr.jsonl",
+        "corpus_sha256": "f9843e37e1029bb21f3be4b73457823beca17b4f7bd566cd8523f50ea044cc32",
+        "layout_text_dir": "experiments/day5_ocr_full_document_v0/pilot_16/text",
+        "verification_artifact": "experiments/day5_ocr_full_document_v0/pilot_16/retrieval_audit.json"
+      },
+      "ocr_status": "available",
+      "page_count": 37,
+      "question_count": 5,
+      "questions": [
+        {
+          "question": "What is the surface elevation of the well that had the highest ground water elevation on August 15, 1991?",
+          "question_id": "urnuuid45a0a8e5-e31b-4e74-9663-f27ab82db68f::q1"
+        },
+        {
+          "question": "Among the wells that showed a 'Yes' for sheen on any monitoring date in the ground water monitoring summary, which also had detectable Benzene readings in the water laboratory analyses on 5/24/91?",
+          "question_id": "urnuuid45a0a8e5-e31b-4e74-9663-f27ab82db68f::q2"
+        },
+        {
+          "question": "In the water laboratory analyses, on which sampling date did MW3 record its highest TPH as Gasoline value?",
+          "question_id": "urnuuid45a0a8e5-e31b-4e74-9663-f27ab82db68f::q3"
+        },
+        {
+          "question": "In the water laboratory analyses data, the well that consistently showed the highest TPH as Gasoline concentrations across multiple sampling dates — on the site vicinity map, which street is it located closest to?",
+          "question_id": "urnuuid45a0a8e5-e31b-4e74-9663-f27ab82db68f::q4"
+        },
+        {
+          "question": "For well MW3, what is the difference in depth to water (in feet) between the earliest monitoring date and the latest monitoring date recorded in the monitoring data summary?",
+          "question_id": "urnuuid45a0a8e5-e31b-4e74-9663-f27ab82db68f::q5"
+        }
+      ]
+    },
+    {
+      "doc_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba",
+      "ocr": {
+        "corpus_path": "experiments/day5_ocr_full_document_v0/pilot_17_builder_validation_v1/page_records.jsonl",
+        "corpus_sha256": "4b99fcb1baad65d82efea74339976239af3ba2caa7161af217d7183ee7ca3d78",
+        "layout_text_dir": "experiments/day5_ocr_full_document_v0/pilot_17_builder_validation_v1/text",
+        "verification_artifact": "experiments/day5_ocr_full_document_v0/pilot_17_builder_validation_v1/manifest.json"
+      },
+      "ocr_status": "available",
+      "page_count": 51,
+      "question_count": 4,
+      "questions": [
+        {
+          "question": "The bird species registration table in the application form includes a column for tracking how birds are related to one another. What example is given in that column?",
+          "question_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba::q1"
+        },
+        {
+          "question": "How many sources for purchasing open split numbered bands are listed in the section describing the tier of the program that lifts the close banding requirement?",
+          "question_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba::q2"
+        },
+        {
+          "question": "How many specific items are listed in the section describing enhancements that are still being worked on?",
+          "question_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba::q3"
+        },
+        {
+          "question": "Which specific bird species are mentioned as being excluded from the breeding conservation program at the time of publication?",
+          "question_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba::q5"
+        }
+      ]
+    }
+  ],
+  "inputs": {
+    "benchmark_sha256": "ad07c6dfc43e5275ae92b894bf69f151c3dd9467ed79f5b12df904438c5ecb8e",
+    "ocr_registry_sha256": "228d388d404727d8879ad08c5efc42954a7b7bbaa07d449273c177bc73212001",
+    "page_manifest_sha256": "634705896e8e796fa15c44b3e22968b0806797ba115cf5b7d3bde9eb7c1c2556",
+    "split_manifest_sha256": "e76154d9eb743994c732faf7282323423357c1f282103594aadd2a5ddff9fd10"
+  },
+  "ocr_available_document_count": 2,
+  "ocr_missing_document_count": 0,
+  "page_count": 88,
+  "question_count": 9,
+  "registered_ocr_artifacts_verified": true,
+  "route": "r2_scanned_document",
+  "schema_version": 1,
+  "split": "development_tune",
+  "trigger": "document_has_zero_native_text_pages",
+  "uses_gold_or_answer_labels": false
+}

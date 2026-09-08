@@ -1,0 +1,60 @@
+{
+  "condition": "real_retrieval",
+  "doc_id": "urnuuidc94c212d-21aa-4dbe-a75f-6d8888002f6a",
+  "evidence_pages": [
+    31,
+    30,
+    8
+  ],
+  "model_input": {
+    "evidence": [
+      {
+        "page": 31,
+        "text": "7 - Facilities 31 Adults with children in their household were more likely to have visited the Fort monthly or more frequently over the previous year – a quarter (26%) of such households did so, compared to just one in ten (11%) of adults living in households without dependent children. One in eight (12%) adults reported holding an ‘Active card’, and around half of this group (47%) visited the Fort at least monthly during the previous year. As Table 7.4 shows two-fifths (40%) of residents who visited the Fort in the previous year had gone to watch a performance by a band, musician or comedian. Three out of ten (29%) had attended the gym and/or fitness classes. Overall, around half of adults who had visited the Fort had used facilities for children (play areas, sports classes or other activities). Table 7.4 “In the last 12 months which of the following facilities have you used at Fort Regent?” Percent (of those who had visited the Fort in previous year) Performances by bands, musicians, comedians 40 Indoor children’s play areas 33 Gym and/or fitness classes 29 Adult sports facilities (e.g. basketball, indoor football, squash, bowls) 23 Children’s sports classes & facilities (e.g. gymnastics, karate, trampolines, basketball, netball, badminton) 11 Other children’s activities or services (including music services) 10 The majority of adults who used the facilities at Fort Regent travelled there by car (78%); most of the remainder went on foot (20%)."
+      },
+      {
+        "page": 30,
+        "text": "7 - Facilities 30 Closure of Victoria Avenue The Transport and Technical Services department has typically been asked for permission to close Victoria Avenue five times a year for events in recent years. Nearly nine in ten (87%) adults felt that this current number of closures was either ‘quite’ or ‘very’ acceptable, one in ten (10%) thought it was ‘not very’ acceptable, and a small proportion (3%) that it was ‘not at all’ acceptable. In terms of whether people would find additional cl osures of Victoria Avenue acceptable, around four -fifths (84%) felt that closing it for one additional day each year for events would be either ‘very’ or ‘quite’ acceptable, and seven in ten (71%) felt that closing it for two additional days each year for events would be acceptable at some level (see Table 7.3 for full results). Table 7.3 Acceptability of road closures of Victoria Avenue for events Very acceptable Quite acceptable Not very acceptable Not at all acceptable Total How acceptable are the current numbers of road closures of Victoria Avenue for events? 34 53 10 3 100 How acceptable would closing Victoria Avenue for 1 additional day each year for events be? 33 51 11 5 100 How acceptable would closing Victoria Avenue for 2 additional days each year for events be? 28 43 19 10 100 Fort Regent Over two-fifths of adults (44%) had not visited Fort Regent in the previous 12 months. A quarter (25%) had visited just once or twice in the preceding 12 months, and around one in six (15%) visited the Fort monthly or more often over the previous year. Figure 7.2 “Approximately how often have you been to Fort Regent in the last 12 months?” 55% 20% 44% 23% 30% 25% 12% 24% 15% 11% 5% 9%15%10% Adults living in a household with no dependent children Adults living in a household with dependent children All adults Weekly or more often Monthly Several times Once or twice Not at all in the last 12 months"
+      },
+      {
+        "page": 8,
+        "text": "Summary 8 CRIME IN JERSEY: Level of concern over different types of crime has continued to reduce. Around one in five adults were ‘fairly’ or ‘very’ worried about being threatened or verbally abused in the street (19%), having their vehicle or property vandalised (18%) or being burgled (17%). FORT REGENT: Over two-fifths of adults (44%) had not visited Fort Regent in the previous 12 months. One in six (15%) visited the Fort monthly or more often during the previous year. Overall, around half of adults who had visited the Fort in the previous year had used facilities for children (play areas, sports classes or other activities); two-fifths (40%) had gone to watch a performance by a band, musician or comedian; and three out of ten (29%) had attended the gym and/or fitness classes. TRAVEL TO WORK: Modes of travelling to work had not changed significantly during the past 5 years with over half (55%) of people using the car to get to work. FLYING OUT OF JERSEY: On average (median), residents took three trips out of Jersey Airport during the previous 12 months (whether for business or leisure). Nearly a fifth (18%) of adults had not flown out of Jersey Airport over the preceding 12 months. JERSEY AIRPORT: Over nine in ten (96%) adults rated their journey experience through Jersey Airport during the previous 12 months to be either ‘very good’ (39%) or ‘good’ (57%). TAKING THE FERRY FROM JERSEY: Two-fifths of adults (41%) had not taken the ferry, either to France or the UK, in the previous 12 months; a quarter (25%) had taken the ferry just once in the preceding year. JERSEY FERRY TERMINAL: Nine in ten (90%) adults rated their journey experience through the ferry terminal over the previous 12 months to be either ‘very good’ (22%) or ‘good’ (68%). ACCESSING TV CHANNELS: Around half of households (54%) watched satellite TV with a monthly subscription on their primary TV set, and an additional 13% watched satellite TV without a monthly subscription. Less than one in twenty households (3%) reported not watching TV in their home."
+      }
+    ],
+    "instructions": "Answer the question. When document evidence is supplied, use only that evidence. When no document evidence is supplied, answer only from your existing knowledge and do not claim or imply document support. If the available basis does not adequately support an answer, return status='insufficient_evidence' and answer=null. Cite only supplied 1-based physical PDF page numbers; when no document evidence is supplied, cited_pages must be empty. Return one object matching response_schema.",
+    "question": "In the bar chart showing how frequently residents visited a leisure fortress/venue in the last 12 months, what percentage of adults living in households with dependent children had not visited at all?",
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "answer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cited_pages": {
+          "items": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "answerable",
+            "insufficient_evidence"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "answer",
+        "cited_pages",
+        "status"
+      ],
+      "type": "object"
+    }
+  },
+  "question_id": "urnuuidc94c212d-21aa-4dbe-a75f-6d8888002f6a::q2",
+  "schema_version": 1
+}

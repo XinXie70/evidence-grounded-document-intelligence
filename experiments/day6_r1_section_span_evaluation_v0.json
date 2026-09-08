@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "experiment_id": "day6_r1_section_span_evaluation_v0",
+  "date": "2026-09-08",
+  "split": "development_tune",
+  "question_count_after_r3_v1_routing": 63,
+  "observed_failure": "Some visual questions require a complete numbered chapter or repeated-table section rather than isolated BM25 pages.",
+  "candidate_policy": {
+    "backbone": "BM25 Top 10 with garbled-text OCR fallback",
+    "neighbour_supplement": "radius two around the top three BM25 pages",
+    "section_scope_signals": [
+      "chapter",
+      "across all listed"
+    ],
+    "section_heading_rule": "Within the first 320 extracted characters of each physical page, detect the physical page number followed by an integer top-level section number and title.",
+    "selection_rule": "Require at least two non-stopword title tokens to occur in the question; choose greatest overlap, then earliest start page.",
+    "section_end_rule": "The page immediately before the next detected top-level section, or document end."
+  },
+  "triggered_questions": [
+    {
+      "question_id": "urnuuid469c17b6-9e4f-4706-bc89-0e1814820dae::q3",
+      "matched_title_tokens": [
+        "device",
+        "supported"
+      ],
+      "selected_section_pages": [
+        46,
+        47,
+        48,
+        49,
+        50,
+        51
+      ],
+      "new_pages_added_to_existing_candidate": [
+        49,
+        50,
+        51
+      ],
+      "complete_evidence_recovered": true
+    },
+    {
+      "question_id": "urnuuid8e6bc3d1-f1eb-4728-8ca0-d5ed63f6814f::q1",
+      "matched_title_tokens": [
+        "cable",
+        "diagram"
+      ],
+      "selected_section_pages": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "new_pages_added_to_existing_candidate": [
+        26,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "complete_evidence_recovered": true
+    }
+  ],
+  "population_result": {
+    "section_trigger_count": 2,
+    "unexpected_section_trigger_count": 0,
+    "before_section_span": {
+      "complete_evidence_question_count": 57,
+      "complete_evidence_recall": 0.9047619047619048
+    },
+    "after_section_span": {
+      "any_evidence_recall": 0.9682539682539683,
+      "complete_evidence_question_count": 59,
+      "complete_evidence_recall": 0.9365079365079365,
+      "macro_page_recall": 0.9523809523809523,
+      "mean_candidate_pages": 15.88888888888889,
+      "maximum_candidate_pages": 23,
+      "incomplete_question_count": 4
+    },
+    "new_failures": 0
+  },
+  "remaining_failure_types": {
+    "dispersed_multihop_composition": 3,
+    "semantic_alias_page_discovery": 1
+  },
+  "label_boundary": {
+    "section_selection_used_gold_labels": false,
+    "gold_pages_used_only_after_candidate_generation_for_tune_scoring": true,
+    "calibration_labels_used": false,
+    "locked_test_accessed": false
+  },
+  "api_cost_usd": 0.0,
+  "decision": "Keep the narrow numbered-section span rule in the R1 candidate. Do not claim it solves unnumbered financial-table aliases or dispersed multi-hop retrieval."
+}

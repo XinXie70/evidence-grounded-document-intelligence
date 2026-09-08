@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "status": "ablation",
+  "route": "r2_scanned_document",
+  "retrieval": {
+    "method": "page_bm25_anchor_centered_window_sum",
+    "k1": 1.2,
+    "b": 0.75,
+    "query_token_policy": "deduplicate_preserve_order",
+    "seed_top_k": 10,
+    "window_width_pages": 3,
+    "window_alignment": "bm25_seed_centered",
+    "selected_window_count": 3,
+    "overlap_policy": "greedy_non_overlapping",
+    "tie_break": "lower_start_page_first"
+  },
+  "maximum_reasoning_pages": 9,
+  "evaluation_scope": "development_tune_r2_inventory",
+  "uses_gold_or_answer_labels": false
+}

@@ -1,0 +1,65 @@
+{
+  "condition": "oracle_page",
+  "doc_id": "urnuuid926889a0-ba73-457e-95d5-7b767e414d43",
+  "evidence_pages": [
+    2,
+    7,
+    14,
+    18
+  ],
+  "model_input": {
+    "evidence": [
+      {
+        "page": 2,
+        "text": "Page 1/12 Safety Data Sheet acc. to OSHA HCS Printing date 03/23/2017 Reviewed on 02/11/2016 44.0 1 Identification · Product identifier · Trade name: His-Affinity Gel · Article number: P2003-2 · Application of the substance / the mixture Laboratory Reagent · Details of the supplier of the safety data sheet · Manufacturer/Supplier: Zymo Research Corp. 17062 Murphy Ave. Irvine, CA 92614 USA Phone: 1-949-679-1190 or 1-888-882-9682 sds@zymoresearch.com · Information department: Product safety department · Emergency telephone number: During normal business hours (8 am to 5 pm Pacific Standard Time): +1 (949) 679 1190 2 Hazard(s) identification · Classification of the substance or mixture  GHS02 Flame Flam. Liq. 3 H226 Flammable liquid and vapor.  GHS08 Health hazard Resp. Sens. 1 H334 May cause allergy or asthma symptoms or breathing difficulties if inhaled.  GHS09 Environment Aquatic Chronic 2 H411 Toxic to aquatic life with long lasting effects.  GHS07 Acute Tox. 4 H302 Harmful if swallowed. Skin Sens. 1 H317 May cause an allergic skin reaction. Aquatic Acute 2 H401 Toxic to aquatic life. · Label elements · GHS label elements The product is classified and labeled according to the Globally Harmonized System (GHS). · Hazard pictograms GHS02, GHS07, GHS08, GHS09 (Contd. on page 2) US"
+      },
+      {
+        "page": 7,
+        "text": "Page 6/12 Safety Data Sheet acc. to OSHA HCS Printing date 03/23/2017 Reviewed on 02/11/2016 Trade name: His-Affinity Gel (Contd. of page 5) 44.0 · Eye protection:  Tightly sealed goggles 9 Physical and chemical properties · Information on basic physical and chemical properties · General Information · Appearance: Form: Suspension Color: Cloudy · Odor: Pungent · Odor threshold: Not determined. · pH-value: Not determined. · Change in condition Melting point/Melting range: Undetermined. Boiling point/Boiling range: Undetermined. · Flash point: >30 °C (>86 °F) · Flammability (solid, gaseous): Not applicable. · Ignition temperature: 425 °C (797 °F) · Decomposition temperature: Not determined. · Auto igniting: Product is not selfigniting. · Danger of explosion: Product is not explosive. However, formation of explosive air/vapor mixtures are possible. · Explosion limits: Lower: 3.5 Vol % Upper: 15.0 Vol % · Vapor pressure at 20 °C (68 °F): 59 hPa (44 mm Hg) · Density: Not determined. · Relative density Not determined. · Vapor density Not determined. · Evaporation rate Not determined. · Solubility in / Miscibility with Water: Not miscible or difficult to mix. · Partition coefficient (n-octanol/water): Not determined. · Viscosity: Dynamic: Not determined. (Contd. on page 7) US"
+      },
+      {
+        "page": 14,
+        "text": "Page 1/9 Safety Data Sheet acc. to OSHA HCS Printing date 03/23/2017 Reviewed on 02/03/2016 44.0 1 Identification · Product identifier · Trade name: His-Binding Buffer · Article number: P2003-3 · Application of the substance / the mixture Laboratory Reagent · Details of the supplier of the safety data sheet · Manufacturer/Supplier: Zymo Research Corp. 17062 Murphy Ave. Irvine, CA 92614 USA Phone: 1-949-679-1190 or 1-888-882-9682 sds@zymoresearch.com · Information department: Product safety department · Emergency telephone number: During normal business hours (8 am to 5 pm Pacific Standard Time): +1 (949) 679 1190 2 Hazard(s) identification · Classification of the substance or mixture  GHS08 Health hazard Repr. 1 H360 May damage fertility or the unborn child.  GHS07 Skin Irrit. 2 H315 Causes skin irritation. Eye Irrit. 2A H319 Causes serious eye irritation. · Label elements · GHS label elements The product is classified and labeled according to the Globally Harmonized System (GHS). · Hazard pictograms GHS07, GHS08 · Signal word Danger · Hazard-determining components of labeling: imidazole · Hazard statements Causes skin irritation. Causes serious eye irritation. May damage fertility or the unborn child. · Precautionary statements Wear protective gloves/protective clothing/eye protection/face protection. Wash thoroughly after handling. Obtain special instructions before use. (Contd. on page 2) US"
+      },
+      {
+        "page": 18,
+        "text": "Page 5/9 Safety Data Sheet acc. to OSHA HCS Printing date 03/23/2017 Reviewed on 02/03/2016 Trade name: His-Binding Buffer (Contd. of page 4) 44.0 · Flammability (solid, gaseous): Not applicable. · Ignition temperature: Decomposition temperature: Not determined. · Auto igniting: Product is not selfigniting. · Danger of explosion: Product does not present an explosion hazard. · Explosion limits: Lower: Not Applicable Upper: Not Applicable · Vapor pressure: Not determined. · Density: Not determined. · Relative density Not determined. · Vapor density Not determined. · Evaporation rate Not determined. · Solubility in / Miscibility with Water: Not miscible or difficult to mix. · Partition coefficient (n-octanol/water): Not determined. · Viscosity: Dynamic: Not determined. Kinematic: Not determined. · Solvent content: Organic solvents: 0.0 % VOC content: 0.0 g/l / 0.00 lb/gl · Other information No further relevant information available. 10 Stability and reactivity · Reactivity No further relevant information available. · Chemical stability · Thermal decomposition / conditions to be avoided: No decomposition if used according to specifications. · Possibility of hazardous reactions No dangerous reactions known. · Conditions to avoid No further relevant information available. · Incompatible materials: No further relevant information available. · Hazardous decomposition products: No dangerous decomposition products known. US (Contd. on page 6)"
+      }
+    ],
+    "instructions": "Answer the question. When document evidence is supplied, use only that evidence. When no document evidence is supplied, answer only from your existing knowledge and do not claim or imply document support. If the available basis does not adequately support an answer, return status='insufficient_evidence' and answer=null. Cite only supplied 1-based physical PDF page numbers; when no document evidence is supplied, cited_pages must be empty. Return one object matching response_schema.",
+    "question": "Both products' safety data sheets describe water solubility/miscibility. Do the two products share the same characterization for their solubility in water?",
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "answer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cited_pages": {
+          "items": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "answerable",
+            "insufficient_evidence"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "answer",
+        "cited_pages",
+        "status"
+      ],
+      "type": "object"
+    }
+  },
+  "question_id": "urnuuid926889a0-ba73-457e-95d5-7b767e414d43::q3",
+  "schema_version": 1
+}

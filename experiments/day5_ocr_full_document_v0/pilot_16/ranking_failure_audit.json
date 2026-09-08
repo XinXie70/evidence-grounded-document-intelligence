@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "experiment_id": "day5_pilot16_ocr_bm25_ranking_failure_audit_v0",
+  "question_id": "urnuuid45a0a8e5-e31b-4e74-9663-f27ab82db68f::q5",
+  "comparison_pages": {
+    "incorrect_top_page": 6,
+    "gold_pages": [
+      10,
+      11
+    ]
+  },
+  "observed_ranking": {
+    "6": {
+      "rank": 1,
+      "score": 28.70784760188693,
+      "page_tokens": 419
+    },
+    "10": {
+      "rank": 11,
+      "score": 15.275496345468651,
+      "page_tokens": 227
+    },
+    "11": {
+      "rank": 6,
+      "score": 21.929196989807092,
+      "page_tokens": 97
+    }
+  },
+  "key_score_observations": {
+    "page_6_the_contribution": 4.955361459021182,
+    "page_6_in_contribution": 4.171249954290637,
+    "page_6_the_plus_in_contribution": 9.126611413311818,
+    "query_the_count": 4,
+    "query_in_count": 3,
+    "query_monitoring_count": 3
+  },
+  "manual_text_observations": [
+    "Incorrect page 6 is fluent prose containing repeated question vocabulary including water, depth, feet, monitoring, dates, and function words.",
+    "Gold pages 10 and 11 are OCR-linearized tables containing MW3, dates, measurements, and the heading SUMMARY OF MONITORING DATA.",
+    "The reasoning concepts earliest, latest, and difference do not occur literally on the gold table pages; they must be inferred by comparing dates and subtracting values.",
+    "Repeated query tokens are scored repeatedly by the frozen BM25 v0 implementation, amplifying common prose words such as the and in."
+  ],
+  "failure_classification": "OCR representation recovery succeeded, followed by a lexical ranking and multi-page evidence completeness failure caused by prose-table mismatch, repeated generic query terms, and implicit comparative reasoning.",
+  "decision": "Keep BM25 v0 unchanged as the frozen baseline. Any query-token filtering, semantic retrieval, table-aware retrieval, or multi-stage retrieval must be introduced as a separately named ablation and evaluated beyond this single case.",
+  "paid_api_cost_usd": 0.0
+}

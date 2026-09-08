@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "experiment_id": "day5_pilot16_oracle_ocr_retrieval_ablation_v0",
+  "question_id": "urnuuid45a0a8e5-e31b-4e74-9663-f27ab82db68f::q5",
+  "question": "For well MW3, what is the difference in depth to water (in feet) between the earliest monitoring date and the latest monitoring date recorded in the monitoring data summary?",
+  "gold_evidence_pages": [
+    10,
+    11
+  ],
+  "bm25": {
+    "k1": 1.2,
+    "b": 0.75,
+    "top_k": 10
+  },
+  "control_native_text": {
+    "corpus": "data/derived/page_records/urnuuid45a0a8e5-e31b-4e74-9663-f27ab82db68f.jsonl",
+    "corpus_sha256": "d98011e3cbf83649a224e94101e4f753fb8e7cc25cd725ca56026ac3d5921d08",
+    "average_page_tokens": 0.0,
+    "top_3_pages": [
+      1,
+      2,
+      3
+    ],
+    "top_3_scores": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "any_evidence_recall_at_3": 0.0,
+    "complete_evidence_recall_at_3": 0.0
+  },
+  "oracle_ocr_augmented": {
+    "corpus": "experiments/day5_ocr_smoke_v0/pilot_16/page_records_ocr_augmented.jsonl",
+    "corpus_sha256": "bd10e1c9c82956cede438b44ff156bad6b7a3a29b84dec09c4854d31b46fb71b",
+    "ocr_pages": [
+      10,
+      11
+    ],
+    "average_page_tokens": 6.4324324324324325,
+    "top_3_pages": [
+      11,
+      10,
+      1
+    ],
+    "top_3_scores": [
+      8.584145641770872,
+      3.2641369954848765,
+      0.0
+    ],
+    "any_evidence_recall_at_3": 1.0,
+    "complete_evidence_recall_at_3": 1.0
+  },
+  "conclusion": "For pilot16, replacing the missing native text on gold pages 10 and 11 with deterministic Tesseract OCR text changes BM25 from zero-signal retrieval to ranking both evidence pages in the top two.",
+  "causal_interpretation": "The observed retrieval failure is attributable to missing page text representation rather than an inability of the frozen BM25 scorer to rank the question-relevant OCR terms.",
+  "scope_limitation": "This is an Oracle-OCR ablation because benchmark labels identified pages 10 and 11 before OCR. It demonstrates representation recoverability but does not solve label-free page discovery for a fully scanned 37-page document.",
+  "paid_api_cost_usd": 0.0
+}

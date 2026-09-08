@@ -1,0 +1,53 @@
+SEQUOIA ANALYTICAL
+
+1900 Bates Avenue e Suite LM ® Concord, California 94520
+(415) 686-9600 ® FAX (415) 686-9689
+
+roject : Unocal, 1300 Davis St., San Leandro
+
+:P.0. Box 996
+Benicia, CA 94510
+* Attention: Mardo Kaprealian, P.E.
+
+QC Sample Grou
+
+: 108-0880
+
+QUALITY CONTROL DATA REPORT
+
+ANALYTE
+Diesel
+Method: EPA 8015
+Analyst: A Tuzon
+Reporting Units: ug/L
+
+Date Analyzed: Aug 27, 1991
+QC Sample #: BLK082091
+
+Sample Conce.: N.D.
+Spike Conc.
+Added: 300
+Conc. Matrix
+Spike: 250
+Matrix Spike
+% Recovery: 82
+Conc. Matrix
+Spike Dup.: 210
+Matrix Spike
+Duplicate
+% Recovery: 71
+Relative
+% Difference: 14
+
+Laboratory blank contained the following analytes | None Detected
+
+SEQUOIA ANALYTICAL % Recovery Conc of MS - Gonc of Sample x 100
+f Spike Conc Added
+
+bale
+ta Vad y] — Relative % Difference Conc of MS -Conc of MSD. x 100
+
+Jula R. elorsen (Conc of MS + Conc of MSD) /2
+Project Manager 1080879 KET <5>
+
+N

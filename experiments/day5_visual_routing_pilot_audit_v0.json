@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "audit_date": "2026-09-07",
+  "experiment_id": "day5_visual_routing_pilot_audit_v0",
+  "split": "development_tune",
+  "case_count": 24,
+  "paid_request_sent": false,
+  "uses_gold_or_answer_labels_for_routing": false,
+  "route_counts": {
+    "r0_text": 17,
+    "r1_local_visual": 4,
+    "r2_scanned_document": 2,
+    "r3_document_global": 1
+  },
+  "special_route_count": 7,
+  "special_route_rate": 0.2916666666666667,
+  "r1_manual_review": {
+    "reviewer": "user",
+    "review_basis": "question plus rendered full benchmark evidence page; benchmark answer was not used by the router",
+    "status": "all_four_confirmed_visual_structure_required",
+    "records": [
+      {
+        "pilot_id": "pilot_01",
+        "matched_signal": "chart",
+        "evidence_pages_reviewed": [11],
+        "human_judgment": "visual_required"
+      },
+      {
+        "pilot_id": "pilot_03",
+        "matched_signal": "table",
+        "evidence_pages_reviewed": [32],
+        "human_judgment": "visual_required"
+      },
+      {
+        "pilot_id": "pilot_06",
+        "matched_signal": "bar chart",
+        "evidence_pages_reviewed": [30],
+        "human_judgment": "visual_required"
+      },
+      {
+        "pilot_id": "pilot_13",
+        "matched_signal": "table",
+        "evidence_pages_reviewed": [13, 14],
+        "human_judgment": "visual_required"
+      }
+    ]
+  },
+  "r2_audit": {
+    "records": [
+      {
+        "pilot_id": "pilot_16",
+        "document_page_count": 37,
+        "nonempty_page_count": 0
+      },
+      {
+        "pilot_id": "pilot_17",
+        "document_page_count": 51,
+        "nonempty_page_count": 0
+      }
+    ],
+    "conclusion": "BM25 page ordering is uninformative when every page has zero native text"
+  },
+  "r3_audit": {
+    "pilot_id": "pilot_18",
+    "document_page_count": 42,
+    "matched_signal": "across the entire document",
+    "conclusion": "top-k positive pages cannot establish an exhaustive document-wide count"
+  },
+  "interpretation": "The v0 router reserved ordinary text processing for 17 of 24 cases and assigned seven cases to bounded special handling. Human review confirmed visual structure was required in all four R1 cases. This is a small audited pilot, not a routing-accuracy estimate.",
+  "next_gate": "Design a bounded, answer-free visual page-discovery smoke experiment for the two fully scanned R2 documents before adding any production fallback."
+}

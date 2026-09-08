@@ -1,0 +1,209 @@
+{
+  "condition": "oracle_region",
+  "doc_id": "urnuuid808e4631-8567-495d-a904-0c702dbe784e",
+  "evidence_pages": [
+    1,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "evidence_regions": [
+    {
+      "bbox": [
+        0,
+        0,
+        1224,
+        1584
+      ],
+      "element_type": "full_page",
+      "evidence_local_id": "page_1",
+      "image_sha256": "3cb08a7d9d825b0558cdfdf8bc41b46f4aa8111439e0601332d6c359aaa13c69",
+      "page": 1
+    },
+    {
+      "bbox": [
+        0,
+        0,
+        1224,
+        1584
+      ],
+      "element_type": "full_page",
+      "evidence_local_id": "page_4",
+      "image_sha256": "b0bf2504a93b5b620937caad4eee54aca5bf68c1c4dcbaf61ed62c521f9fb49a",
+      "page": 4
+    },
+    {
+      "bbox": [
+        0,
+        0,
+        1224,
+        1584
+      ],
+      "element_type": "full_page",
+      "evidence_local_id": "page_5",
+      "image_sha256": "40f39c4c5daabb9801c5bd30126fd259ee5fedb99d146bd6d18130130d9852aa",
+      "page": 5
+    },
+    {
+      "bbox": [
+        0,
+        0,
+        1224,
+        1584
+      ],
+      "element_type": "full_page",
+      "evidence_local_id": "page_6",
+      "image_sha256": "d57fd1b99a80ff0c140cb90d2f1627b493dc4a5899871883a3770ec0f7e088a2",
+      "page": 6
+    },
+    {
+      "bbox": [
+        0,
+        0,
+        1224,
+        1584
+      ],
+      "element_type": "full_page",
+      "evidence_local_id": "page_7",
+      "image_sha256": "0ab6ef619cd272332aaa665c9825c6c1ab83ebc2a12429bf7083b62dfd96c571",
+      "page": 7
+    },
+    {
+      "bbox": [
+        0,
+        0,
+        1224,
+        1584
+      ],
+      "element_type": "full_page",
+      "evidence_local_id": "page_8",
+      "image_sha256": "1e4650814aca1c13ff1a2f3fc8248bcb4a775cbe14da8be2811b18ddbe72aa7a",
+      "page": 8
+    }
+  ],
+  "model_input": {
+    "evidence": [
+      {
+        "bbox": [
+          0,
+          0,
+          1224,
+          1584
+        ],
+        "evidence_local_id": "page_1",
+        "image_path": "page_images/page_0001.png",
+        "image_sha256": "3cb08a7d9d825b0558cdfdf8bc41b46f4aa8111439e0601332d6c359aaa13c69",
+        "page": 1,
+        "text": "",
+        "text_scope": "image_only"
+      },
+      {
+        "bbox": [
+          0,
+          0,
+          1224,
+          1584
+        ],
+        "evidence_local_id": "page_4",
+        "image_path": "page_images/page_0004.png",
+        "image_sha256": "b0bf2504a93b5b620937caad4eee54aca5bf68c1c4dcbaf61ed62c521f9fb49a",
+        "page": 4,
+        "text": "",
+        "text_scope": "image_only"
+      },
+      {
+        "bbox": [
+          0,
+          0,
+          1224,
+          1584
+        ],
+        "evidence_local_id": "page_5",
+        "image_path": "page_images/page_0005.png",
+        "image_sha256": "40f39c4c5daabb9801c5bd30126fd259ee5fedb99d146bd6d18130130d9852aa",
+        "page": 5,
+        "text": "",
+        "text_scope": "image_only"
+      },
+      {
+        "bbox": [
+          0,
+          0,
+          1224,
+          1584
+        ],
+        "evidence_local_id": "page_6",
+        "image_path": "page_images/page_0006.png",
+        "image_sha256": "d57fd1b99a80ff0c140cb90d2f1627b493dc4a5899871883a3770ec0f7e088a2",
+        "page": 6,
+        "text": "",
+        "text_scope": "image_only"
+      },
+      {
+        "bbox": [
+          0,
+          0,
+          1224,
+          1584
+        ],
+        "evidence_local_id": "page_7",
+        "image_path": "page_images/page_0007.png",
+        "image_sha256": "0ab6ef619cd272332aaa665c9825c6c1ab83ebc2a12429bf7083b62dfd96c571",
+        "page": 7,
+        "text": "",
+        "text_scope": "image_only"
+      },
+      {
+        "bbox": [
+          0,
+          0,
+          1224,
+          1584
+        ],
+        "evidence_local_id": "page_8",
+        "image_path": "page_images/page_0008.png",
+        "image_sha256": "1e4650814aca1c13ff1a2f3fc8248bcb4a775cbe14da8be2811b18ddbe72aa7a",
+        "page": 8,
+        "text": "",
+        "text_scope": "image_only"
+      }
+    ],
+    "instructions": "Answer the question. When document evidence is supplied, use only that evidence. When no document evidence is supplied, answer only from your existing knowledge and do not claim or imply document support. If the available basis does not adequately support an answer, return status='insufficient_evidence' and answer=null. Cite only supplied 1-based physical PDF page numbers; when no document evidence is supplied, cited_pages must be empty. Return one object matching response_schema.",
+    "question": "How many distinct stacked bar charts appear across the entire document?",
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "answer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cited_pages": {
+          "items": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "answerable",
+            "insufficient_evidence"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "answer",
+        "cited_pages",
+        "status"
+      ],
+      "type": "object"
+    }
+  },
+  "question_id": "urnuuid808e4631-8567-495d-a904-0c702dbe784e::q3",
+  "schema_version": 1
+}

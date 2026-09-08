@@ -1,0 +1,55 @@
+{
+  "condition": "oracle_page",
+  "doc_id": "urnuuidb98e815e-2094-448a-bd43-d2e0ca7a8e25",
+  "evidence_pages": [
+    5,
+    6
+  ],
+  "model_input": {
+    "evidence": [
+      {
+        "page": 5,
+        "text": "Michael* Michael was a happy and popular teenager who played football, cricket and basketball, until a notorious gang tried to recruit him. When he refused, Michael became a target for intimidation and violent threats on his way to and from school. On one occasion he was confronted by dozens of masked youths at the school gates. Despite an escort, the intimidation continued and Michael soon became too afraid to attend school. His days were spent at home, growing angry and confused, and he stopped eating. His education suffered but, because he was a victim not an offender, Michael was unable to access help from police and social workers who tackle gang issues. His parents and siblings suffered too, worried for each other and struggling to cope with the situation. That is when Victim Support stepped in. Our caseworker provided a range of practical and emotional support to Michael and his family. She helped rehouse them away from the neighbourhood where the gang was based and found Michael a new school. She helped rebuild Michael’s confidence, taking him out of his home onto the streets gradually so he could feel secure once more. And we helped his family claim compensation from his old school for failing to ensure he could receive an education for nearly two years. Michael has since completed his education, regularly attends a local youth club and hopes to join the Army. He also sits on a safeguarding panel, helping a local authority understand the needs of gang victims. Mum Sharon says: “My husband and I have properly raised our son to know right from wrong. It was painful watching him change: he became withdrawn, even angry, and didn’t want to get out of bed and he stopped eating. And then he stopped going to the school because it could not protect him. “When the situation was at its worst, into our lives walked a Victim Support gang intervention caseworker. I liken her to an angel, a Mary Poppins, who instantly made everything seem so much brighter and better. “From our first meeting, she left a feeling of hope which we’d lost. We finally had someone to give us the support and advice we so desperately needed and deserved. We trusted her and she has never let us down. I really don’t know where we would be without her and Victim Support.” *Name has been changed for anonymity 5Strategic report: Who we are"
+      },
+      {
+        "page": 6,
+        "text": "6 Trustees’ Annual Report 2013/14 We remain as indebted as ever to our volunteers for their ongoing and outstanding commitment to Victim Support and their dedication to supporting victims and witnesses. It is no exaggeration to say that without their efforts the vast majority of the services we provide to victims and witnesses would not be delivered. We believe it is essential that volunteers remain at the heart of everything we do. The gift of their time, energy and experience is compelling proof to victims and witnesses that their community cares. That knowledge alone can put people suffering the trauma of crime on the road to recovery. Because of this we value our volunteers’ views and in early 2014 carried out a comprehensive survey to measure their levels of satisfaction and engagement and to understand the challenges and opportunities that volunteering brings. The survey demonstrated an exceptionally high overall engagement index of 93%, which is an increase of 4% from 2012. This underlines our volunteers’ affinity with Victim Support. In 2013 we worked with the National Citizen Service to deliver workshops to young people about volunteering at Victim Support. As a result, Loughborough and Leeds Universities have set up student-led support services, providing peer support to other students who are victims of crime. Our new peer mentoring projects in schools have enabled young people aged 14 and above to offer support to peers who have been victims of crime. We have introduced a national youth advisory panel giving young people (13+) the opportunity to advise on how best to support young victims and witnesses of crime. Thanks to projects like these, the future of volunteering in our organisation has never been brighter, with nearly a third of volunteers under the age of 34 and almost a fifth under 25. Newer recruits benefit from the immense experience of our long-serving volunteers and specialist volunteers who support victims and witnesses of more serious crimes. The growing diversity of our volunteer base gives us confidence that volunteering is going from strength to strength. What our volunteers contribute We estimate that in terms of equivalent salary costs, the net value of our volunteers’ working time is more than £15 million per year. Yet their true worth to our organisation and society is much broader than financial value. Our volunteers restore people’s faith in human nature and in their communities and their trust in the criminal justice system. They help people find the strength to put their ordeals behind them, and in doing so, ease the burden on services such as health, housing and policing. They give witnesses the confidence to give evidence effectively, ensuring justice is delivered more efficiently. Their contribution is, quite simply, priceless. * Estimates. The hourly rate for volunteers who support victims and witnesses is based on the mean average hourly rate for-full time workers in 2013 as published by the Office for National Statistics (£15.87). The hourly rates for administrative help and governance are taken from the average hourly rate of pay for administrative and senior managerial posts, respectively, within Victim Support. 957,607 hours of volunteers’ time* Our volunteers are valuable £15,124,917 value of volunteers* Volunteering has a strong future under 25s make up nearly a fifth of our volunteers under 34s make up nearly a third of our volunteers Strategic report: Our people"
+      }
+    ],
+    "instructions": "Answer the question. When document evidence is supplied, use only that evidence. When no document evidence is supplied, answer only from your existing knowledge and do not claim or imply document support. If the available basis does not adequately support an answer, return status='insufficient_evidence' and answer=null. Cite only supplied 1-based physical PDF page numbers; when no document evidence is supplied, cited_pages must be empty. Return one object matching response_schema.",
+    "question": "According to the section about volunteering, what is the estimated total monetary value of volunteers' working time per year for the organization featured in the teenager's gang-targeting case study?",
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "answer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cited_pages": {
+          "items": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "answerable",
+            "insufficient_evidence"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "answer",
+        "cited_pages",
+        "status"
+      ],
+      "type": "object"
+    }
+  },
+  "question_id": "urnuuidb98e815e-2094-448a-bd43-d2e0ca7a8e25::q3",
+  "schema_version": 1
+}

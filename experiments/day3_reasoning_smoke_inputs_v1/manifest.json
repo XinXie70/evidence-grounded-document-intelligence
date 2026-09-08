@@ -1,0 +1,237 @@
+{
+  "case_count": 10,
+  "cases": [
+    {
+      "case_id": "smoke_01",
+      "oracle_page": {
+        "evidence_characters": 2244,
+        "pages": [
+          12
+        ],
+        "path": "experiments/day3_reasoning_smoke_inputs_v1/smoke_01/oracle_page.json",
+        "sha256": "a9093e28b7e1e184365f5f8ace5e5492c12ce25d1c1d2e3539ec7c434b19512b"
+      },
+      "question_id": "urnuuid0812e9ac-6f30-4624-9c78-6f4176467918::q2",
+      "real_retrieval": {
+        "evidence_characters": 6135,
+        "pages": [
+          12,
+          18,
+          47
+        ],
+        "path": "experiments/day3_reasoning_smoke_inputs_v1/smoke_01/real_retrieval.json",
+        "sha256": "3702c2409cef7d953e4d15a9be4fe46a4d83429e55f937be1ff0c6afd65696b8"
+      }
+    },
+    {
+      "case_id": "smoke_02",
+      "oracle_page": {
+        "evidence_characters": 6719,
+        "pages": [
+          72,
+          77
+        ],
+        "path": "experiments/day3_reasoning_smoke_inputs_v1/smoke_02/oracle_page.json",
+        "sha256": "bc44fd808c4829523884e923fe6f292cb51f08ebfa27e9aefb07a756eeeeeaed"
+      },
+      "question_id": "urnuuid113144ee-53bb-4f43-9d8f-0c9e823fa25d::q2",
+      "real_retrieval": {
+        "evidence_characters": 10788,
+        "pages": [
+          72,
+          77,
+          76
+        ],
+        "path": "experiments/day3_reasoning_smoke_inputs_v1/smoke_02/real_retrieval.json",
+        "sha256": "a5c05fdc7e09191568cdcc14c439cff8631bf61cfd12e1a8170c1f59451afe5c"
+      }
+    },
+    {
+      "case_id": "smoke_03",
+      "oracle_page": {
+        "evidence_characters": 3117,
+        "pages": [
+          31,
+          40
+        ],
+        "path": "experiments/day3_reasoning_smoke_inputs_v1/smoke_03/oracle_page.json",
+        "sha256": "da54a6cbfb0ee042858c6150a6562ac156c727785f537f595418dfca182d8a6b"
+      },
+      "question_id": "urnuuidad6e69ed-3343-4297-85d8-96b02e6bd925::q1",
+      "real_retrieval": {
+        "evidence_characters": 4519,
+        "pages": [
+          31,
+          9,
+          3
+        ],
+        "path": "experiments/day3_reasoning_smoke_inputs_v1/smoke_03/real_retrieval.json",
+        "sha256": "1880b6a95bff68554ef8bf2eaf0040d86a095cba7592fa68af7ddaaa1d3be37f"
+      }
+    },
+    {
+      "case_id": "smoke_04",
+      "oracle_page": {
+        "evidence_characters": 2311,
+        "pages": [
+          71
+        ],
+        "path": "experiments/day3_reasoning_smoke_inputs_v1/smoke_04/oracle_page.json",
+        "sha256": "70609b9a3da15a1025343fceb7af84ef6919777f993981f6deae0c56839ab6ba"
+      },
+      "question_id": "urnuuid0a20b83c-2af0-4503-9220-c63470cdd214::q3",
+      "real_retrieval": {
+        "evidence_characters": 5836,
+        "pages": [
+          24,
+          30,
+          56
+        ],
+        "path": "experiments/day3_reasoning_smoke_inputs_v1/smoke_04/real_retrieval.json",
+        "sha256": "6ac1756230bbb7bb1e89fc78e2ab288f309186e66dbe788411abb133f1673b1c"
+      }
+    },
+    {
+      "case_id": "smoke_05",
+      "oracle_page": {
+        "evidence_characters": 1440,
+        "pages": [
+          11
+        ],
+        "path": "experiments/day3_reasoning_smoke_inputs_v1/smoke_05/oracle_page.json",
+        "sha256": "dbe24add66ca101593508c783292168e5e2dd6aa38801d79a19bd27c3250b26d"
+      },
+      "question_id": "urnuuid1c0499a9-36ad-4968-bf6f-d86fcd55e596::q2",
+      "real_retrieval": {
+        "evidence_characters": 6567,
+        "pages": [
+          11,
+          10,
+          15
+        ],
+        "path": "experiments/day3_reasoning_smoke_inputs_v1/smoke_05/real_retrieval.json",
+        "sha256": "492fd2a5d4a01fa065830b69222e1fcce1efea83ac3ea37628ab56064e34a4ba"
+      }
+    },
+    {
+      "case_id": "smoke_06",
+      "oracle_page": {
+        "evidence_characters": 2137,
+        "pages": [
+          21,
+          55
+        ],
+        "path": "experiments/day3_reasoning_smoke_inputs_v1/smoke_06/oracle_page.json",
+        "sha256": "9c4f660fc2c51abc3a921aa2706ad24c7b6293bcfe1347044b7578f9c848da35"
+      },
+      "question_id": "urnuuid111476ed-6700-4be2-85cc-3fc17696167e::q3",
+      "real_retrieval": {
+        "evidence_characters": 11651,
+        "pages": [
+          9,
+          10,
+          7
+        ],
+        "path": "experiments/day3_reasoning_smoke_inputs_v1/smoke_06/real_retrieval.json",
+        "sha256": "5f8c2e016bb176230ffe71a0e713f3176adee3ce8cd9a64c98e4345739d702e0"
+      }
+    },
+    {
+      "case_id": "smoke_07",
+      "oracle_page": {
+        "evidence_characters": 354,
+        "pages": [
+          31
+        ],
+        "path": "experiments/day3_reasoning_smoke_inputs_v1/smoke_07/oracle_page.json",
+        "sha256": "294e68672aba0430e161664ca7f36db82f53487a6c69a9d53ac36390935f9dc6"
+      },
+      "question_id": "urnuuid2ec9537c-589c-47f0-81ae-8e02e2d85414::q2",
+      "real_retrieval": {
+        "evidence_characters": 3973,
+        "pages": [
+          31,
+          17,
+          2
+        ],
+        "path": "experiments/day3_reasoning_smoke_inputs_v1/smoke_07/real_retrieval.json",
+        "sha256": "d88af78fbc72a63dc4ab2758e0b9f72ff72821923e9c2e1418c9d393a8c1b0d8"
+      }
+    },
+    {
+      "case_id": "smoke_08",
+      "oracle_page": {
+        "evidence_characters": 15122,
+        "pages": [
+          30,
+          31,
+          34,
+          35,
+          38,
+          40
+        ],
+        "path": "experiments/day3_reasoning_smoke_inputs_v1/smoke_08/oracle_page.json",
+        "sha256": "1f7be933ccbb8f1874370d2b209e2c09cd8aa62453da537adf12dbbd70a8d41b"
+      },
+      "question_id": "urnuuid0d4da810-0b76-4979-a774-0f8bd6fae742::q1",
+      "real_retrieval": {
+        "evidence_characters": 7599,
+        "pages": [
+          4,
+          10,
+          21
+        ],
+        "path": "experiments/day3_reasoning_smoke_inputs_v1/smoke_08/real_retrieval.json",
+        "sha256": "ef06f59122c49a8d6057dbc5ca94e395ca5e5f2ca421ebee7eb38e324767dd97"
+      }
+    },
+    {
+      "case_id": "smoke_09",
+      "oracle_page": {
+        "evidence_characters": 0,
+        "pages": [
+          14
+        ],
+        "path": "experiments/day3_reasoning_smoke_inputs_v1/smoke_09/oracle_page.json",
+        "sha256": "681beaf7b56131463df672e3efb312997813b3bcb5f6cea01bffbc9db428a709"
+      },
+      "question_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba::q1",
+      "real_retrieval": {
+        "evidence_characters": 0,
+        "pages": [
+          1,
+          2,
+          3
+        ],
+        "path": "experiments/day3_reasoning_smoke_inputs_v1/smoke_09/real_retrieval.json",
+        "sha256": "d01b46c3233e8b61ed535f0edbdd032b24a09ddb402bea62c7195f73ac8b8e00"
+      }
+    },
+    {
+      "case_id": "smoke_10",
+      "oracle_page": {
+        "evidence_characters": 0,
+        "pages": [],
+        "path": "experiments/day3_reasoning_smoke_inputs_v1/smoke_10/oracle_page.json",
+        "sha256": "2efff28b51644e1b46b540dd39ee8eeb1ef9f3bf441643b36a1a3ee18861a805"
+      },
+      "question_id": "urnuuid425f7a17-aa57-4cca-b56e-612fe270751d::q6",
+      "real_retrieval": {
+        "evidence_characters": 18420,
+        "pages": [
+          5,
+          3,
+          4
+        ],
+        "path": "experiments/day3_reasoning_smoke_inputs_v1/smoke_10/real_retrieval.json",
+        "sha256": "7e33d37d10f0f9e0d85bf388df6ce996ecd39ba873f99376c9c55901987c4753"
+      }
+    }
+  ],
+  "input_file_count": 20,
+  "paid_request_sent": false,
+  "retrieval_results_sha256": "8dd53c91a53d517065e36609d984dca8c798b4fe9cba72aaeb5fe2dd4b5793c7",
+  "schema_version": 1,
+  "selection_sha256": "2c384755f1c3c33089af450ab571f70e049ac0dc46178bc56ef373ea253b536c",
+  "split_manifest_sha256": "e76154d9eb743994c732faf7282323423357c1f282103594aadd2a5ddff9fd10"
+}

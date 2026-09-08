@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "experiment_id": "day3_grounded_reasoning_c3_context_smoke_v0",
+  "question_id": "urnuuid111476ed-6700-4be2-85cc-3fc17696167e::q3",
+  "condition": "oracle_region_context",
+  "planned_requests": 1,
+  "max_retries": 0,
+  "model": "gpt-5.6-terra",
+  "estimated_image_input_tokens": {
+    "e1_591_by_81_pixels": 69,
+    "e2_1012_by_411_pixels": 500,
+    "total": 569
+  },
+  "pricing_snapshot_id": "openai-gpt-5.6-terra-2026-09-02",
+  "conservative_bound": {
+    "input_tokens_including_images_and_text": 2048,
+    "output_tokens": 512,
+    "input_cost_usd_with_cache_write_multiplier": 0.00512,
+    "output_cost_usd": 0.006144,
+    "total_cost_usd": 0.011264
+  },
+  "execution_cap_usd": 0.02,
+  "user_authorized_cap_usd": 0.02,
+  "paid_execution_approved": true,
+  "execution": {
+    "status": "completed",
+    "request_count": 1,
+    "retries": 0,
+    "input_tokens": 1143,
+    "output_tokens": 84,
+    "total_tokens": 1227,
+    "actual_estimated_cost_usd": 0.003864,
+    "within_execution_cap": true
+  },
+  "notes": [
+    "This is one request with two images and no automatic retries.",
+    "The conservative input allowance includes both images, region-intersection text, prompt, and response schema.",
+    "The user explicitly approved this separate smoke06 contextual-region request up to USD 0.02."
+  ]
+}

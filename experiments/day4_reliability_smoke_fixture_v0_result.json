@@ -1,0 +1,89 @@
+{
+  "input_path": "experiments/day4_reliability_smoke_fixture_v0.json",
+  "input_sha256": "7c24156e1a3d3dcaf6a997649ad4275f8ac9b538124bea482dd844e078a3c015",
+  "metrics": {
+    "abstained_count": 3,
+    "answerable_abstention_rate": 0.5,
+    "answered_count": 2,
+    "appropriate_abstention_rate_on_insufficient_context": 1.0,
+    "benchmark_task_accuracy": 0.6,
+    "contextual_reliability_accuracy": 0.6,
+    "coverage": 0.4,
+    "grounded_selective_risk": 0.5,
+    "outcome_counts": {
+      "appropriate_abstention_given_context": 1,
+      "correct_abstention": 1,
+      "correct_answer_incomplete_grounding": 1,
+      "grounded_success": 1,
+      "over_abstention": 1
+    },
+    "over_abstention_rate_on_sufficient_answerable": 0.3333333333333333,
+    "question_count": 5,
+    "selective_risk": 0.0,
+    "strict_grounded_task_accuracy": 0.4,
+    "unanswerable_false_answer_rate": 0.0
+  },
+  "records": [
+    {
+      "answer_correct": null,
+      "answered": false,
+      "benchmark_is_answerable": false,
+      "benchmark_task_correct": true,
+      "contextual_reliability_correct": true,
+      "evidence_sufficient": null,
+      "grounded_correct": null,
+      "outcome": "correct_abstention",
+      "question_id": "smoke_10::oracle_page",
+      "strict_grounded_task_correct": true
+    },
+    {
+      "answer_correct": null,
+      "answered": false,
+      "benchmark_is_answerable": true,
+      "benchmark_task_correct": false,
+      "contextual_reliability_correct": true,
+      "evidence_sufficient": false,
+      "grounded_correct": null,
+      "outcome": "appropriate_abstention_given_context",
+      "question_id": "smoke_03::real_retrieval",
+      "strict_grounded_task_correct": false
+    },
+    {
+      "answer_correct": null,
+      "answered": false,
+      "benchmark_is_answerable": true,
+      "benchmark_task_correct": false,
+      "contextual_reliability_correct": false,
+      "evidence_sufficient": true,
+      "grounded_correct": null,
+      "outcome": "over_abstention",
+      "question_id": "smoke_06::oracle_region_context",
+      "strict_grounded_task_correct": false
+    },
+    {
+      "answer_correct": true,
+      "answered": true,
+      "benchmark_is_answerable": true,
+      "benchmark_task_correct": true,
+      "contextual_reliability_correct": false,
+      "evidence_sufficient": true,
+      "grounded_correct": false,
+      "outcome": "correct_answer_incomplete_grounding",
+      "question_id": "smoke_08::oracle_region",
+      "strict_grounded_task_correct": false
+    },
+    {
+      "answer_correct": true,
+      "answered": true,
+      "benchmark_is_answerable": true,
+      "benchmark_task_correct": true,
+      "contextual_reliability_correct": true,
+      "evidence_sufficient": true,
+      "grounded_correct": true,
+      "outcome": "grounded_success",
+      "question_id": "smoke_06::oracle_facts",
+      "strict_grounded_task_correct": true
+    }
+  ],
+  "schema_version": 1
+}

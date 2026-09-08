@@ -1,0 +1,64 @@
+{
+  "observed_outcome_count": 6,
+  "outcomes": [
+    {
+      "definition": "Answerable question; answer correct; required evidence chain adequately cited.",
+      "observed": true,
+      "outcome": "grounded_success",
+      "representative_case": "smoke_01::real_retrieval",
+      "result_path": "results/day4_closed_book_smoke_v0/smoke_01_real_retrieval.json",
+      "result_sha256": "9490765a3616eeab475d503f5d5cce7035a44bdf4d00faf8af88b55770e08413"
+    },
+    {
+      "definition": "Answerable question; answer correct; required evidence chain incompletely cited.",
+      "observed": true,
+      "outcome": "correct_answer_incomplete_grounding",
+      "representative_case": "smoke_03::oracle_page",
+      "result_path": "results/day4_reliability_triplet_v0/smoke_03/oracle_page.json",
+      "result_sha256": "6c3de4cffea59e2f8cd31ac0b36aabc1ed0f1ea13cc20214fae99a04c0979a1e"
+    },
+    {
+      "definition": "Answerable question; system issued an incorrect answer.",
+      "observed": true,
+      "outcome": "incorrect_answer",
+      "representative_case": "smoke_09::oracle_region_rotated",
+      "result_path": "results/day3_oracle_region_smoke_v0/smoke_09.json",
+      "result_sha256": "21c6a7319cd0aae90123a145427bc5e00ac4eec1dc9626ae3ac11cb13e4ac5a9"
+    },
+    {
+      "definition": "Answerable question; supplied context was insufficient; system abstained.",
+      "observed": true,
+      "outcome": "appropriate_abstention_given_context",
+      "representative_case": "smoke_03::real_retrieval",
+      "result_path": "results/day4_reliability_triplet_v0/smoke_03/real_retrieval.json",
+      "result_sha256": "932d7f279f9f39189723be50fc2aed3c4d96d262832d2fa73425d15782eedc0a"
+    },
+    {
+      "definition": "Answerable question; supplied context was sufficient; system abstained.",
+      "observed": true,
+      "outcome": "over_abstention",
+      "representative_case": "smoke_06::oracle_region_context",
+      "result_path": "results/day3_oracle_region_context_smoke_v0/smoke_06.json",
+      "result_sha256": "da40736ec3a5849468f38233d80870bda5b9191d7884e896d90927807911bd48"
+    },
+    {
+      "definition": "Benchmark-unanswerable question; system abstained.",
+      "observed": true,
+      "outcome": "correct_abstention",
+      "representative_case": "smoke_10::real_retrieval",
+      "result_path": "results/day4_reliability_triplet_v0/smoke_10/real_retrieval.json",
+      "result_sha256": "aea6da031bf3c2a938981d4b95e3a0a1ae60d8e3d09b3625fb6ff14797ef9c53"
+    },
+    {
+      "definition": "Benchmark-unanswerable question; system issued an answer.",
+      "observed": false,
+      "outcome": "false_answer_on_unanswerable",
+      "representative_case": null,
+      "result_path": null,
+      "result_sha256": null
+    }
+  ],
+  "schema_version": 1,
+  "scope": "Observed diagnostic coverage only; counts are not prevalence estimates.",
+  "unobserved_outcome_count": 1
+}

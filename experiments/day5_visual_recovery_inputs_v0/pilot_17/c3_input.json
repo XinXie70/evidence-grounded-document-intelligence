@@ -1,0 +1,230 @@
+{
+  "condition": "oracle_region",
+  "doc_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba",
+  "evidence_pages": [
+    12
+  ],
+  "evidence_regions": [
+    {
+      "bbox": [
+        58,
+        332,
+        284,
+        355
+      ],
+      "element_type": "paragraph_title",
+      "evidence_local_id": "e1",
+      "image_sha256": "feba8545d4c075c5a98fae88a5ba1f22bd0f975be7c08037f796261e6413171c",
+      "page": 12
+    },
+    {
+      "bbox": [
+        57,
+        365,
+        676,
+        477
+      ],
+      "element_type": "text",
+      "evidence_local_id": "e2",
+      "image_sha256": "c7938856fe1b226aef9b06fe67e70600302fa4b200b50d1b9bcabfe1205032dd",
+      "page": 12
+    },
+    {
+      "bbox": [
+        96,
+        486,
+        650,
+        509
+      ],
+      "element_type": "text",
+      "evidence_local_id": "e3",
+      "image_sha256": "4460c486562b41862625f305076c932865ac53fd8165bbb8d090c0808af16f03",
+      "page": 12
+    },
+    {
+      "bbox": [
+        96,
+        512,
+        575,
+        533
+      ],
+      "element_type": "text",
+      "evidence_local_id": "e4",
+      "image_sha256": "63321618ea2561816e2d4032bdb6d8948fec461c5c05e110f7d49a51660a154d",
+      "page": 12
+    },
+    {
+      "bbox": [
+        96,
+        536,
+        490,
+        557
+      ],
+      "element_type": "text",
+      "evidence_local_id": "e5",
+      "image_sha256": "e934c3fc1caf4d7074adf7c4c1e72aacb7157aa698ce392ce610705e4741e4b3",
+      "page": 12
+    },
+    {
+      "bbox": [
+        96,
+        561,
+        422,
+        581
+      ],
+      "element_type": "text",
+      "evidence_local_id": "e6",
+      "image_sha256": "023f8c9064740ade8cbff95d951543f2aca946bd4b90601fb6511286c52b6391",
+      "page": 12
+    },
+    {
+      "bbox": [
+        97,
+        585,
+        220,
+        605
+      ],
+      "element_type": "text",
+      "evidence_local_id": "e7",
+      "image_sha256": "3f3a8ac68498d0b1de9f49e68e326b5e03cc616dd3f9ec8b9df78ca300494aeb",
+      "page": 12
+    }
+  ],
+  "model_input": {
+    "evidence": [
+      {
+        "bbox": [
+          58,
+          332,
+          284,
+          355
+        ],
+        "evidence_local_id": "e1",
+        "image_path": "e1_page_0012.png",
+        "image_sha256": "feba8545d4c075c5a98fae88a5ba1f22bd0f975be7c08037f796261e6413171c",
+        "page": 12,
+        "text": "",
+        "text_scope": "image_only"
+      },
+      {
+        "bbox": [
+          57,
+          365,
+          676,
+          477
+        ],
+        "evidence_local_id": "e2",
+        "image_path": "e2_page_0012.png",
+        "image_sha256": "c7938856fe1b226aef9b06fe67e70600302fa4b200b50d1b9bcabfe1205032dd",
+        "page": 12,
+        "text": "",
+        "text_scope": "image_only"
+      },
+      {
+        "bbox": [
+          96,
+          486,
+          650,
+          509
+        ],
+        "evidence_local_id": "e3",
+        "image_path": "e3_page_0012.png",
+        "image_sha256": "4460c486562b41862625f305076c932865ac53fd8165bbb8d090c0808af16f03",
+        "page": 12,
+        "text": "",
+        "text_scope": "image_only"
+      },
+      {
+        "bbox": [
+          96,
+          512,
+          575,
+          533
+        ],
+        "evidence_local_id": "e4",
+        "image_path": "e4_page_0012.png",
+        "image_sha256": "63321618ea2561816e2d4032bdb6d8948fec461c5c05e110f7d49a51660a154d",
+        "page": 12,
+        "text": "",
+        "text_scope": "image_only"
+      },
+      {
+        "bbox": [
+          96,
+          536,
+          490,
+          557
+        ],
+        "evidence_local_id": "e5",
+        "image_path": "e5_page_0012.png",
+        "image_sha256": "e934c3fc1caf4d7074adf7c4c1e72aacb7157aa698ce392ce610705e4741e4b3",
+        "page": 12,
+        "text": "",
+        "text_scope": "image_only"
+      },
+      {
+        "bbox": [
+          96,
+          561,
+          422,
+          581
+        ],
+        "evidence_local_id": "e6",
+        "image_path": "e6_page_0012.png",
+        "image_sha256": "023f8c9064740ade8cbff95d951543f2aca946bd4b90601fb6511286c52b6391",
+        "page": 12,
+        "text": "",
+        "text_scope": "image_only"
+      },
+      {
+        "bbox": [
+          97,
+          585,
+          220,
+          605
+        ],
+        "evidence_local_id": "e7",
+        "image_path": "e7_page_0012.png",
+        "image_sha256": "3f3a8ac68498d0b1de9f49e68e326b5e03cc616dd3f9ec8b9df78ca300494aeb",
+        "page": 12,
+        "text": "",
+        "text_scope": "image_only"
+      }
+    ],
+    "instructions": "Answer the question. When document evidence is supplied, use only that evidence. When no document evidence is supplied, answer only from your existing knowledge and do not claim or imply document support. If the available basis does not adequately support an answer, return status='insufficient_evidence' and answer=null. Cite only supplied 1-based physical PDF page numbers; when no document evidence is supplied, cited_pages must be empty. Return one object matching response_schema.",
+    "question": "How many specific items are listed in the section describing enhancements that are still being worked on?",
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "answer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cited_pages": {
+          "items": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "answerable",
+            "insufficient_evidence"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "answer",
+        "cited_pages",
+        "status"
+      ],
+      "type": "object"
+    }
+  },
+  "question_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba::q3",
+  "schema_version": 1
+}

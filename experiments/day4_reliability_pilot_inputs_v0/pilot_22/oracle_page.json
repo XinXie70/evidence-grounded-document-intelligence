@@ -1,0 +1,43 @@
+{
+  "condition": "oracle_page",
+  "doc_id": "urnuuida994f1b4-401e-453b-9f52-149c44f35c82",
+  "evidence_pages": [],
+  "model_input": {
+    "evidence": [],
+    "instructions": "Answer the question. When document evidence is supplied, use only that evidence. When no document evidence is supplied, answer only from your existing knowledge and do not claim or imply document support. If the available basis does not adequately support an answer, return status='insufficient_evidence' and answer=null. Cite only supplied 1-based physical PDF page numbers; when no document evidence is supplied, cited_pages must be empty. Return one object matching response_schema.",
+    "question": "How does the Timer RC's PWM output configuration affect the DTC transfer activation timing as described in the document?",
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "answer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cited_pages": {
+          "items": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "answerable",
+            "insufficient_evidence"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "answer",
+        "cited_pages",
+        "status"
+      ],
+      "type": "object"
+    }
+  },
+  "question_id": "urnuuida994f1b4-401e-453b-9f52-149c44f35c82::q5",
+  "schema_version": 1
+}

@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "question_id": "urnuuid45a0a8e5-e31b-4e74-9663-f27ab82db68f::q4",
+  "condition": "real_retrieval",
+  "result_path": "results/day5_r2_multihop_q4_v0/real_retrieval.json",
+  "result_sha256": "a3e2d1c17ada27c80f97319720ce3f5dbac19cc60ec4a243f444b9913cce0cdd",
+  "benchmark_answer": "Davis Street",
+  "model_answer": "MW3 consistently had the highest TPH as gasoline concentrations, and it is located closest to Davis Street.",
+  "gold_evidence_pages": [
+    12,
+    13,
+    19
+  ],
+  "cited_pages": [
+    12,
+    13,
+    19
+  ],
+  "evaluation": {
+    "answer_correct": true,
+    "intermediate_well_identification_correct": true,
+    "citations_exactly_match_gold_pages": true,
+    "answer_supported_by_citations": true,
+    "grounded_correct": true,
+    "outcome": "correct_grounded_answer"
+  },
+  "request": {
+    "model": "gpt-5.6-terra",
+    "input_tokens": 5857,
+    "output_tokens": 95,
+    "total_tokens": 5952,
+    "retries": 0,
+    "actual_cost_usd": 0.015781,
+    "conservative_preflight_usd": 0.0207865,
+    "approved_hard_cap_usd": 1.0
+  },
+  "diagnostic_conclusion": "Complete retrieval of laboratory-table pages 12 and 13 plus site-map page 19 enabled the unchanged reasoning model to identify MW3 and answer Davis Street with the complete gold citation chain. The prior failure was attributable to multi-hop retrieval coverage rather than reasoning inability."
+}

@@ -1,0 +1,29 @@
+KEI-P88~1204.QR9
+September 17, 1991
+
+TABLE 1 (Continued)
+SUMMARY OF MONITORING DATA
+
+Ground Water Depth to Product Water Product
+Elevation Water Thickness Purged Purged
+Well No. (feet) (feet) (feet) Sheen (gallons) (gallons)
+
+(Monitored on June 14, 1991)
+
+MW3 83.31 16.72 0 Yes 55 0
+
+Surface Elevation**
+
+Well # (feet)
+MW1 100.00
+MW2 100.32
+MW3 100.03
+MW4 99.66
+MWS 100.32
+MW6 100.50
+
+* Elevations of ground water corrected using an assumed
+specific gravity of 0.77 for the free product.
+
+** Elevations surveyed assuming well cover MW1 100 feet as
+datum.

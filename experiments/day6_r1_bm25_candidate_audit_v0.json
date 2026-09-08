@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "experiment_id": "day6_r1_bm25_candidate_audit_v0",
+  "date": "2026-09-08",
+  "split": "development_tune",
+  "purpose": "Test whether frozen BM25 candidate pages are sufficient for the proposed local-visual route before any image request is made.",
+  "selection": {
+    "route": "r1_local_visual",
+    "observable_trigger": "question explicitly mentions chart, figure, diagram, graph, image, illustration, map, or table",
+    "eligible_question_count": 64,
+    "excluded_question_count": 0,
+    "distinct_document_count": 39
+  },
+  "retrieval": {
+    "method": "page_bm25",
+    "k1": 1.2,
+    "b": 0.75,
+    "query_token_policy": "deduplicate_preserve_order",
+    "representation": "native_page_text"
+  },
+  "gold_evidence_page_count_distribution": {
+    "1": 30,
+    "2": 29,
+    "3": 2,
+    "4": 2,
+    "7": 1
+  },
+  "metrics": {
+    "3": {
+      "any_evidence_recall": 0.71875,
+      "complete_evidence_recall": 0.46875
+    },
+    "5": {
+      "any_evidence_recall": 0.796875,
+      "complete_evidence_recall": 0.578125
+    },
+    "10": {
+      "any_evidence_recall": 0.90625,
+      "complete_evidence_recall": 0.796875
+    }
+  },
+  "top_10_failures": {
+    "incomplete_evidence_question_count": 13,
+    "zero_evidence_hit_question_count": 6
+  },
+  "label_boundary": {
+    "candidate_generation_used_gold_labels": false,
+    "gold_pages_used_only_after_candidate_generation_for_scoring": true,
+    "calibration_labels_used": false,
+    "locked_test_accessed": false
+  },
+  "decision": "Do not freeze BM25 Top-K page images as the R1 policy yet. Inspect the 13 development-tune completeness failures and test only failure-motivated, bounded candidate-generation changes."
+}

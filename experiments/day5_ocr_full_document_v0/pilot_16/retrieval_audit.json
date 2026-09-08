@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "experiment_id": "day5_pilot16_full_document_ocr_retrieval_v0",
+  "question_id": "urnuuid45a0a8e5-e31b-4e74-9663-f27ab82db68f::q5",
+  "question": "For well MW3, what is the difference in depth to water (in feet) between the earliest monitoring date and the latest monitoring date recorded in the monitoring data summary?",
+  "source": {
+    "pdf": "data/raw/docscope/pdfs/urnuuid45a0a8e5-e31b-4e74-9663-f27ab82db68f.pdf",
+    "pdf_sha256": "6c3ed949adcb4addd48bd30be4021eeda0cfaf6953adb06dce99ffed275d7e05",
+    "page_count": 37
+  },
+  "rendering": {
+    "engine": "pdftoppm",
+    "version": "26.05.0",
+    "dpi": 200,
+    "format": "png",
+    "rendered_page_count": 37
+  },
+  "ocr": {
+    "engine": "tesseract",
+    "version": "5.5.3",
+    "language": "eng",
+    "oem": 1,
+    "psm": 3,
+    "ocr_page_count": 37,
+    "nonempty_ocr_page_count": 37
+  },
+  "page_records": {
+    "path": "experiments/day5_ocr_full_document_v0/pilot_16/page_records_ocr.jsonl",
+    "sha256": "f9843e37e1029bb21f3be4b73457823beca17b4f7bd566cd8523f50ea044cc32",
+    "record_count": 37,
+    "status_counts": {
+      "ok": 37,
+      "low_text": 0,
+      "text_layer_missing": 0
+    }
+  },
+  "retrieval": {
+    "method": "page_bm25_v0",
+    "k1": 1.2,
+    "b": 0.75,
+    "gold_evidence_pages": [
+      10,
+      11
+    ],
+    "top_10_pages": [
+      6,
+      5,
+      7,
+      3,
+      4,
+      11,
+      1,
+      2,
+      8,
+      14
+    ],
+    "gold_page_ranks": {
+      "10": 11,
+      "11": 6
+    },
+    "gold_page_scores": {
+      "10": 15.275496345468651,
+      "11": 21.929196989807092
+    },
+    "any_evidence_recall_at_10": 1.0,
+    "complete_evidence_recall_at_10": 0.0,
+    "complete_evidence_recall_at_11": 1.0
+  },
+  "conclusion": "Full-document Tesseract OCR restores searchable text on all 37 pages without using gold page IDs during retrieval. Frozen BM25 retrieves gold page 11 at rank 6, but gold page 10 is rank 11, so the default Top-10 retrieves some but not all required evidence.",
+  "failure_interpretation": "OCR resolves the missing-text representation failure, but repeated monitoring-table vocabulary across many pages creates a remaining lexical-ranking and multi-page evidence-completeness failure.",
+  "scope_note": "Gold evidence pages are used only after ranking to evaluate retrieval. No answer-generation API call was made.",
+  "paid_api_cost_usd": 0.0
+}

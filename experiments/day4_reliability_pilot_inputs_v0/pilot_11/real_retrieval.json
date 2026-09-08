@@ -1,0 +1,60 @@
+{
+  "condition": "real_retrieval",
+  "doc_id": "urnuuid181bfd7d-8bf2-4f0a-95e3-1201ac3321aa",
+  "evidence_pages": [
+    5,
+    28,
+    3
+  ],
+  "model_input": {
+    "evidence": [
+      {
+        "page": 5,
+        "text": "FCC Notice This device complies with Part 15 of the FCC Rules and the Radio Interference Requirements of the Canadian Department of Communications. Operation is subject to the following conditions: (1) this device may not cause harmful interference, and (2) this device must accept any interference received, including interference that may cause undesired operation. This equipment has been tested and found to comply with the limits for a Class A digital device, pursuant to Part 15 of FCC Rules. These limits are designed to provide reasonable protection against harmful interference when the equipment is operated in a commercial environment. This equipment generates, uses, and can radiate radio frequency energy and, if not installed and used in accordance with the instruction manual, may cause harmful interference to radio communications. Operation of this equipment in a residential area is likely to cause harmful interference in which case the user will be required to correct the interference at his own expense. Publication Revision History Part Number Date Revisions A15444400A 7/00 Added Security Label Information. B15444400A 4/01 Added multi-range information B15444400A 6/06 Added new function information including COOL B15444400A 6/12 LLC Name Change PRECAUTIONS WARNING FOR CONTINUED PROTECTION AGAINST SHOCK HAZARD CONNECT TO PROPERLY GROUNDED OUTLET ONLY. DO NOT REMOVE THE GROUND PRONG. WARNING DISCONNECT ALL POWER TO THIS UNIT BEFORE REMOVING THE FUSE OR SERVICING. READ this manual BEFORE operating or servicing this equipment. FOLLOW these instructions carefully. SAVE this manual for future reference. DO NOT allow untrained personnel to operate, clean, inspect, maintain, service, or tamper with this equipment. ALWAYS DISCONNECT this equipment from the power source before cleaning or performing maintenance. CALL METTLER TOLEDO for parts, information, and service."
+      },
+      {
+        "page": 28,
+        "text": "METTLER TOLEDO Model 8361 User's Guide 2-16 Select the new key for this location or QUIT. Upon selection, the operator is returned to the PLU Edit Screen to continue setup. The programmable keys are listed with their functions. The macro keys (Macro 4-12) can be used to program special function macros including tare changes, discounts, accumulators, etc. Pack Date – The date the product was packed and labeled. Extra Text Number – The number of the Extra Text which goes with that PLU. Grade – The number of the user programmed 0-15 grade descriptions. Label Node Turn/Not Turned – Configuration for label application. Label Format – Assigns a label format to be substituted on the PLU screen. Accumulator – Assigns an alternate accumulator aside from that which is linked through the PLU. This function toggles between Auto, Manual, Rewrap, Combination and Inventory. Graphic (Master) – Assigns number of graphic from the Master. Printer 2 (off/GR/NG) – Allows override of printer 2 by turning it off, selecting a Nutrifact, a linked graphic, a store logo or a Satellite graphic. Print Inhibit – Touch this key to select which fields to inhibit from printing on the label. Bottom Label – This is a toggle key used to command the Model 710 to apply bottom labels to all of the packages in a run. When the key is black, the Model 710 will apply labels to all packages until END RUN is touched. When the key is clear, normal label application occurs. Family Pack – Tare is changed to .1 lb or .1 kg and Price is reduced by $0.10 per unit. Price Reduction – Reduces price by 10%. Rewrap – A product can be rewrapped and placed in the Rewrap accumulator. Macros (4 - 12) – 9 additional macros are available for programming. Sat Graphic Number (Satellite) – Assigns number of satellite graphic. Printer 2 Batch – Allows override of printer 2 to batch out the labels. Turn Label – The Turn Label button is a toggle key used to turn the data label on the package when using an auto-labeler. Not Turned will place the label at the upper right of the package when feed into the labeler in landscape orientation. Turned places the label in the upper right portrait. Alt. Turned (Version 3.0 software or later) places the label at the lower right in landscape orientation. Apply Security Tag (on PLU edit screen 2) – This is a toggle key used to command the Model 703 to apply a security tag to all packages in a run. When the key is black, a security tag will be applied to all packages over .5lbs regardless of security points or PLU setting. When the key is clear, a security tag will be applied only if the PLU record specifies it, or if the package price (unit or total) is over the configured threshold value(s). Reset Security Tag (on PLU edit screen 2) – This button will issue a command to the Model 703 to cause it to rehome the pickup arm of the unit. Demand Mode (on PLU edit screen 2) – Assigns a continuous or finite amount of labels to issue. The Printer must be set up for Stripped Mode to activate Demand Mode."
+      },
+      {
+        "page": 3,
+        "text": "Part / Product Name: Part / Model Number: Date: Provided By: Customer Name: Address: Phone Number: Fax Number: Your comments: Do not write in space below. For METTLER TOLEDO use only. Response (if appropriate) and corrective action taken. METTLER TOLEDO 3861 User's Guide B15444400A METTLER TOLEDO 1900 Polaris Parkway Columbus, Ohio 43240 METTLER TOLEDO® is a registered trademark of Mettler-Toledo, LLC ©2012 Mettler-Toledo, LLC Printed in USA If you have a problem with one of our products or publications, or just a suggestion on how we can serve you better, please fill out this form and send it to the address on the opposite side of this page (U.S. postage paid), or fax it to us at (614) 438-4355. Your feedback will help us to improve product performance, quality, and service. METTLER TOLEDO® Customer Feedback Attention: Retail Quality Manager - MTWR"
+      }
+    ],
+    "instructions": "Answer the question. When document evidence is supplied, use only that evidence. When no document evidence is supplied, answer only from your existing knowledge and do not claim or imply document support. If the available basis does not adequately support an answer, return status='insufficient_evidence' and answer=null. Cite only supplied 1-based physical PDF page numbers; when no document evidence is supplied, cited_pages must be empty. Return one object matching response_schema.",
+    "question": "Which revision descriptions are listed for this guide’s part number in the Publication Revision History?",
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "answer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cited_pages": {
+          "items": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "answerable",
+            "insufficient_evidence"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "answer",
+        "cited_pages",
+        "status"
+      ],
+      "type": "object"
+    }
+  },
+  "question_id": "urnuuid181bfd7d-8bf2-4f0a-95e3-1201ac3321aa::q1",
+  "schema_version": 1
+}

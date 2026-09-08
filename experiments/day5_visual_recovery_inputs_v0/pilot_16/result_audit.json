@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "audit_date": "2026-09-07",
+  "question_id": "urnuuid45a0a8e5-e31b-4e74-9663-f27ab82db68f::q5",
+  "benchmark_answer": "1.05 feet",
+  "manual_crop_review": "confirmed",
+  "comparison": {
+    "c2_oracle_page_text": {
+      "result_path": "results/day4_reliability_pilot_v0/pilot_16/oracle_page.json",
+      "result_sha256": "9009cc3f1ca9d0497aa300830d8e46c9d156a54a4155fec8fad00370712aa923",
+      "evidence_pages": [10, 11],
+      "native_page_texts_empty": true,
+      "status": "insufficient_evidence",
+      "answer": null,
+      "answer_correct": null,
+      "validation_valid": true
+    },
+    "c3_oracle_region_image_only": {
+      "result_path": "results/day5_visual_recovery_v0/pilot_16/c3_image_only.json",
+      "result_sha256": "d127719ccf5278f53e7aac0adeae3c5d1a6926d8f7d73a1f7538162ee214a811",
+      "evidence_pages": [10, 11],
+      "status": "answerable",
+      "answer": "1.05 feet",
+      "answer_correct": true,
+      "cited_pages": [10, 11],
+      "validation_valid": true,
+      "actual_cost_usd": 0.005343,
+      "approved_cap_usd": 0.02,
+      "retries": 0
+    }
+  },
+  "single_variable_intervention": "Replace two empty native-text evidence pages with their manually confirmed benchmark-bbox table images while holding the question, physical evidence pages, model, reasoning effort, response schema, and zero-retry policy fixed.",
+  "failure_attribution": "representation_failure_missing_text_layer",
+  "interpretation": "The benchmark evidence exists visually on the supplied Oracle pages, but pypdf exposes no usable text. Image-only C3 recovered both endpoint measurements, the cross-page subtraction, and both supporting citations.",
+  "scope_note": "This is causal evidence for pilot_16 only; it supports a visual fallback for missing-text evidence but does not yet establish a general routing rule."
+}

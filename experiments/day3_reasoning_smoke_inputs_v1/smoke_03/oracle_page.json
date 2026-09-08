@@ -1,0 +1,55 @@
+{
+  "condition": "oracle_page",
+  "doc_id": "urnuuidad6e69ed-3343-4297-85d8-96b02e6bd925",
+  "evidence_pages": [
+    31,
+    40
+  ],
+  "model_input": {
+    "evidence": [
+      {
+        "page": 31,
+        "text": "The Church of Jesus Christ of Latter-day Saints $181,000 cash assistance grant – Interfaith Refugee & Immigrant Services, Los Angeles, CA 680 clients served through caseworkers, low-bono legal services • 20 legal consultations • 11 applications for individuals’ Employment Authorization Card 10 clients served through household goods and rent Interfaith Refugee & Immigration Service (IRIS) in Los Angeles, CA, welcomed a single parent with her two children to the U.S. The family was supposed to stay with other family members, but a month after arrival they were told they would no longer have living accommodations. With assistance from The Church of Jesus Christ of Latter-day Saints grant, IRIS was able to find an affordable rental place and pay the deposit and first month’s rent. IRIS was also able to purchase essential items for the family to welcome them to a clean and safe space. United Thank Offering $8,152.10 EMM and UTO partnered for a fundraising initiative called the Great EpisGOpal Race. This virtual event offered multiple fun ways—run, bike, swim, hike, paddle board, and more— for individuals to participate and raise funds to support refugee resettlement. Airbnb $350,000 Anonymous $100,000 to support Afghan Special Immigrant Visa (SIV) holders Fundraising $226,698.90 raised for EMM general fund $244,903.74 raised for Afghan Allies Fund $27,421.18 raised for Ukrainian Fund"
+      },
+      {
+        "page": 40,
+        "text": "Mr. Jason Thomas Ms. Nettie F. Thomas Mr. and Mrs. John Thompson Mr. and The Rev. Alan Tjeltveit Mrs. Janice Truitt The Revs. Brian and Amy Turner Mr. Michael Turner Mrs. Patty Turney The Rev. Dcn. Rena and Mr. John Turnham Mr. Charles Twardy Mrs. Doris Tyndall Ms. Teri Utz Ms. Nancy Valenti Dr. Beverly Valtierra Ms. Rita P. Vargas Ms. Jennifer S. Varley The Rev. Daniel Vélez-Rivera Ms. Maria Vindiola Ms. Miriam Waddington The Rev. Michael Wallens Mr. Duane Wallick The Rev. Joy Walton Ms. Nancy Warren Dr. Donald Warsing Mrs. Judith B. Watson The Rev. Will Wauters The Rev. Valerie Webster Ms. Deborah Wehking Mr. Karl Weinrich Mrs. Dorothy Weis Capt. Thomas Wenz Mr. Wilmot F. Wheeler Mrs. Donna K. White Rae E. Whitney Mrs. Jill Whitten Ms. June Wilcox Anne Wilde Mr. James Wiley The Rev. Dr. Joyce Wilkinson Mr. Christopher Willard Dr. Mary Williams Ms. Jane F. Willis Ms. Sharon L. Wilson and Mr. Van Bobbitt Ms. Kolleen Wilwerding Ms. Rebekah Witzke Ms. Beverly Wong Mr. Richard Wood The Rev. Rob Wood Ms. Ellen Woodzell Chia-Rung Yang Ms. Cora Yao Ms. Thyrza D. Zabriskie Ms. Laurie Zant The Rev. Margaret Zeller The Rev. Judy Ziemann Dr. Karl Zimmerer Ms. Margaret Zuccarini Ms. Leslie Zuller Thank You, Organizations, Dioceses, and Parishes Airbnb, San Francisco, CA All Saints Episcopal Church, Concord, NC All Saints Episcopal Church, Heppner, OR All Saints Episcopal Church, Norristown, PA All Saints Parish, Brookline, MA Bruton Parish Church, Williamsburg, VA Calvary Episcopal Church, Summit, NJ Cathedral Church of St Peter, St Petersburg, FL Catoctin Episcopal Parish-Harriet Chapel, Thurmont, MD Charles Schwab Charitable Fund, San Francisco, CA Christ Church Episcopal Cathedral, Lexington, KY"
+      }
+    ],
+    "instructions": "Answer the question using only the supplied document evidence. If the evidence does not adequately support an answer, return status='insufficient_evidence' and answer=null. Cite only supplied 1-based physical PDF page numbers. Return one object matching response_schema.",
+    "question": "The organization that donated $350,000 (listed among the major donors on the fundraising page) also appears in the list of thanked organizations, dioceses, and parishes. In which city and state is that organization located according to the organizational thank-you list?",
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "answer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cited_pages": {
+          "items": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "answerable",
+            "insufficient_evidence"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "answer",
+        "cited_pages",
+        "status"
+      ],
+      "type": "object"
+    }
+  },
+  "question_id": "urnuuidad6e69ed-3343-4297-85d8-96b02e6bd925::q1",
+  "schema_version": 1
+}

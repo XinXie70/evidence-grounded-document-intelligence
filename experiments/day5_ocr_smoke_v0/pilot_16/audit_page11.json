@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "experiment_id": "day5_ocr_smoke_v0_pilot16_page11",
+  "purpose": "Test whether the same deterministic local OCR baseline recovers the second page needed by the pilot16 multi-page question.",
+  "scope": {
+    "pilot_id": "pilot_16",
+    "physical_page": 11,
+    "input_image": "experiments/day5_visual_recovery_inputs_v0/pilot_16/e2_page_0011.png",
+    "input_sha256": "620e102093c0dee07c75914f488731cc89cecc21d6030c9a2ec5b85b1ebe323b"
+  },
+  "ocr": {
+    "engine": "tesseract",
+    "version": "5.5.3",
+    "language": "eng",
+    "oem": 1,
+    "psm": 3,
+    "output_text": "experiments/day5_ocr_smoke_v0/pilot_16/page_0011_psm3.txt",
+    "output_sha256": "c884843530e609378485da025f22b5bdc5a358fdeebb91e56bba22537a6ffd46"
+  },
+  "observations": {
+    "recovered_terms": [
+      "MW3",
+      "June 14, 1991",
+      "16.72"
+    ],
+    "table_structure_fully_preserved": false,
+    "visible_noise_present": true
+  },
+  "conclusion": "Pass for retrieval-oriented OCR smoke testing: the second page's relevant well identifier, date, and value were recovered using exactly the same OCR settings as page 10.",
+  "paid_api_cost_usd": 0.0
+}

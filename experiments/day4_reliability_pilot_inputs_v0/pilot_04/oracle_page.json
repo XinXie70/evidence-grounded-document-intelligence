@@ -1,0 +1,55 @@
+{
+  "condition": "oracle_page",
+  "doc_id": "urnuuid6977f498-b814-42ae-85db-4adaf7a88c9f",
+  "evidence_pages": [
+    5,
+    7
+  ],
+  "model_input": {
+    "evidence": [
+      {
+        "page": 5,
+        "text": "5 CUDO 2009 – Laurentian University Program Bachelor's and 1st Professional Degree Master's Degree Doctoral Degree Full-Time Part-Time Full-Time Part-Time Full-Time Part-Time Other Health Professions 16 2 0 0 0 0 Physical Science 45 11 24 3 4 0 Social Science 263 154 19 15 0 0 Therapy & Rehabilitation 0 0 0 0 0 0 Total: Domestic Enrolment (1) 1,855 537 86 145 32 7 Total: International Enrolment (2) 102 27 12 2 10 0 Grand Total 1,957 564 98 147 42 7 Definition of full-time/part-time status The definition of a full-time student: 1) For undergraduate students: one who registers in at least 22 credits in the regular Winter Session, or in at least 12 credits in either the Fall or Winter terms. 2) For graduate students: the load is equal to the load intent, as declared by the student. The figures above do not necessarily include coop enrolment and work term enrolment. Counts include the federated universities (Thorneloe, Huntington, University of Sudbury, and Laurentian University) as well as the collaboration with Georgian College and St-Lawrence College (BBA only), but they exclude Algoma, Hearst, the Northern Ontario School of medicine, and collaborations with Sault, Northern, Cambrian, and St-Lawrence College (Nursing program). Source: Official Government Enrolment Data"
+      },
+      {
+        "page": 7,
+        "text": "7 CUDO 2009 – Laurentian University Program Bachelor's and 1st Professional Degree Master's Degree Doctoral Degree Full-Time Part-Time Full-Time Part-Time Full-Time Part-Time Total: International Enrolment (2) 71 19 15 2 5 0 Grand Total 3,685 1,503 151 206 42 7 Definition of full-time/part-time status The definition of a full-time student: 1) For undergraduate students: one who registers in at least 22 credits in the regular Winter Session, or in at least 12 credits in either the Fall or Winter terms. 2) For graduate students: the load is equal to the load intent, as declared by the student. The figures above do not necessarily include coop enrolment and work term enrolment. Counts include the federated universities (Thorneloe, Huntington, University of Sudbury, and Laurentian University) as well as the collaboration with Georgian College and St-Lawrence College (BBA only), but they exclude Algoma, Hearst, the Northern Ontario School of medicine, and collaborations with Sault, Northern, Cambrian, and St-Lawrence College (Nursing program). Source: Official Government Enrolment Data"
+      }
+    ],
+    "instructions": "Answer the question. When document evidence is supplied, use only that evidence. When no document evidence is supplied, answer only from your existing knowledge and do not claim or imply document support. If the available basis does not adequately support an answer, return status='insufficient_evidence' and answer=null. Cite only supplied 1-based physical PDF page numbers; when no document evidence is supplied, cited_pages must be empty. Return one object matching response_schema.",
+    "question": "What is the difference between the grand total of full-time female Bachelor's and 1st Professional degree students and the grand total of full-time male Bachelor's and 1st Professional degree students?",
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "answer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cited_pages": {
+          "items": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "answerable",
+            "insufficient_evidence"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "answer",
+        "cited_pages",
+        "status"
+      ],
+      "type": "object"
+    }
+  },
+  "question_id": "urnuuid6977f498-b814-42ae-85db-4adaf7a88c9f::q2",
+  "schema_version": 1
+}

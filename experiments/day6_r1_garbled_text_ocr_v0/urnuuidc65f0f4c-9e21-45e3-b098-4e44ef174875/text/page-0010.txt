@@ -1,0 +1,75 @@
+ing
+
+Cooki
+
+ision
+
+Preci
+
+USING THE RANGE
+
+10
+
+Precision Cooking (Cont.)
+
+Activating a Precision Cooking Device
+
+1. The unit must identify which device you intend to use
+to adjust control parameters appropriately.
+
+2. The display will read “Activate Cookware”, instructing
+you to activate a device to use on the Precision
+Cooking burner.
+
+3. Activation instructions for approved devices are listed
+in the table below.
+
+Supported
+
+Devices How to Activate Control with this App
+Hestan Cue | Firmly double tap the Hestan Cue
+
+fry pan black plastic endcap (by Hestan Smart Cooking)
+Hestan Cue | Firmly double tap the Hestan Cue
+
+pot black plastic endcap (by Hestan Smart Cooking)
+Precision Café Kitchen
+
+Probe Press side button once (by Café)
+
+Precision Cooking Control Modes
+There are two control modes available:
+
+a App Control — the user interacts with an application
+on a smart phone.
+
+a Local Control — the user interacts with the burner to
+set a target temperature and no App use is required.
+
+App Control
+
+After activating your device on your selected burner,
+open the App designed to control the selected device.
+Depending on the device and application, the set
+temperature may be shown in the unit display, in the
+App, or hidden from view. NOTE: Use of Local Control
+mode is blocked upon entering App Control mode.
+
+Local Control
+
+After activating your device on your selected burner,
+rotate the knob to desired temperature. The set
+temperature will be shown in the display. NOTE: Use
+of App Control mode is blocked upon entering Local
+Control mode.
+
+Precision
+Lo Cooking
+
+OFF 4
+
+Precision
+
+Lo ‘Cooking Of
+
+49-2000233 Rev. 2

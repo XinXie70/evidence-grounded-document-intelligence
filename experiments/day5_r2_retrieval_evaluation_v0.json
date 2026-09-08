@@ -1,0 +1,1664 @@
+{
+  "aggregate": {
+    "1": {
+      "macro": {
+        "any_evidence_recall": 0.4444444444444444,
+        "complete_evidence_recall": 0.2222222222222222,
+        "f1": 0.37037037037037035,
+        "ndcg": 0.4444444444444444,
+        "precision": 0.4444444444444444,
+        "recall": 0.3333333333333333,
+        "reciprocal_rank": 0.4444444444444444
+      },
+      "micro": {
+        "f1": 0.30769230769230765,
+        "gold_pages": 17,
+        "precision": 0.4444444444444444,
+        "recall": 0.23529411764705882,
+        "retrieved_slots": 9,
+        "true_positive": 4
+      },
+      "question_count": 9
+    },
+    "10": {
+      "macro": {
+        "any_evidence_recall": 0.8888888888888888,
+        "complete_evidence_recall": 0.5555555555555556,
+        "f1": 0.22131572131572133,
+        "ndcg": 0.5471888908274704,
+        "precision": 0.13333333333333336,
+        "recall": 0.7222222222222222,
+        "reciprocal_rank": 0.5177248677248678
+      },
+      "micro": {
+        "f1": 0.22429906542056074,
+        "gold_pages": 17,
+        "precision": 0.13333333333333333,
+        "recall": 0.7058823529411765,
+        "retrieved_slots": 90,
+        "true_positive": 12
+      },
+      "question_count": 9
+    },
+    "3": {
+      "macro": {
+        "any_evidence_recall": 0.4444444444444444,
+        "complete_evidence_recall": 0.3333333333333333,
+        "f1": 0.24444444444444446,
+        "ndcg": 0.40146079919616207,
+        "precision": 0.18518518518518517,
+        "recall": 0.3888888888888889,
+        "reciprocal_rank": 0.4444444444444444
+      },
+      "micro": {
+        "f1": 0.22727272727272727,
+        "gold_pages": 17,
+        "precision": 0.18518518518518517,
+        "recall": 0.29411764705882354,
+        "retrieved_slots": 27,
+        "true_positive": 5
+      },
+      "question_count": 9
+    },
+    "5": {
+      "macro": {
+        "any_evidence_recall": 0.5555555555555556,
+        "complete_evidence_recall": 0.3333333333333333,
+        "f1": 0.20105820105820107,
+        "ndcg": 0.43080170170422766,
+        "precision": 0.13333333333333336,
+        "recall": 0.4444444444444444,
+        "reciprocal_rank": 0.4722222222222222
+      },
+      "micro": {
+        "f1": 0.19354838709677416,
+        "gold_pages": 17,
+        "precision": 0.13333333333333333,
+        "recall": 0.35294117647058826,
+        "retrieved_slots": 45,
+        "true_positive": 6
+      },
+      "question_count": 9
+    }
+  },
+  "candidate_status": "candidate",
+  "corpus_document_count": 2,
+  "eligible_question_count": 9,
+  "evaluated_document_count": 2,
+  "excluded_question_count": 0,
+  "exclusion_reasons": {},
+  "exclusions": [],
+  "inputs": {
+    "config_sha256": "97230eb4b3d4c0cbcc24457f0ec255075d43d3ff3e0079604b8763a326bb6f04",
+    "corpus_sha256_by_doc": {
+      "urnuuid45a0a8e5-e31b-4e74-9663-f27ab82db68f": "f9843e37e1029bb21f3be4b73457823beca17b4f7bd566cd8523f50ea044cc32",
+      "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba": "4b99fcb1baad65d82efea74339976239af3ba2caa7161af217d7183ee7ca3d78"
+    },
+    "inventory_sha256": "2d5cdcb9d090128f2458fae93d552e3d851e88d5c5639c192da9d431d83d3c1b",
+    "ocr_registry_sha256": "228d388d404727d8879ad08c5efc42954a7b7bbaa07d449273c177bc73212001"
+  },
+  "per_question": [
+    {
+      "doc_id": "urnuuid45a0a8e5-e31b-4e74-9663-f27ab82db68f",
+      "gold_pages": [
+        10,
+        11
+      ],
+      "question": "What is the surface elevation of the well that had the highest ground water elevation on August 15, 1991?",
+      "question_id": "urnuuid45a0a8e5-e31b-4e74-9663-f27ab82db68f::q1",
+      "retrieved_pages": [
+        11,
+        4,
+        5,
+        1,
+        3,
+        6,
+        10,
+        7,
+        8,
+        20
+      ],
+      "scores": {
+        "1": {
+          "any_evidence_recall": 1.0,
+          "complete_evidence_recall": 0.0,
+          "f1": 0.6666666666666666,
+          "gold_count": 2,
+          "k": 1,
+          "ndcg": 1.0,
+          "precision": 1.0,
+          "predicted_count": 1,
+          "recall": 0.5,
+          "reciprocal_rank": 1.0,
+          "true_positive": 1
+        },
+        "10": {
+          "any_evidence_recall": 1.0,
+          "complete_evidence_recall": 1.0,
+          "f1": 0.33333333333333337,
+          "gold_count": 2,
+          "k": 10,
+          "ndcg": 0.8175295903539445,
+          "precision": 0.2,
+          "predicted_count": 10,
+          "recall": 1.0,
+          "reciprocal_rank": 1.0,
+          "true_positive": 2
+        },
+        "3": {
+          "any_evidence_recall": 1.0,
+          "complete_evidence_recall": 0.0,
+          "f1": 0.4,
+          "gold_count": 2,
+          "k": 3,
+          "ndcg": 0.6131471927654584,
+          "precision": 0.3333333333333333,
+          "predicted_count": 3,
+          "recall": 0.5,
+          "reciprocal_rank": 1.0,
+          "true_positive": 1
+        },
+        "5": {
+          "any_evidence_recall": 1.0,
+          "complete_evidence_recall": 0.0,
+          "f1": 0.28571428571428575,
+          "gold_count": 2,
+          "k": 5,
+          "ndcg": 0.6131471927654584,
+          "precision": 0.2,
+          "predicted_count": 5,
+          "recall": 0.5,
+          "reciprocal_rank": 1.0,
+          "true_positive": 1
+        }
+      },
+      "slices": {
+        "evidence_type": "table",
+        "extract_class": "class5",
+        "gold_text_status": "ok",
+        "page_span": "multi"
+      }
+    },
+    {
+      "doc_id": "urnuuid45a0a8e5-e31b-4e74-9663-f27ab82db68f",
+      "gold_pages": [
+        10,
+        11,
+        12
+      ],
+      "question": "Among the wells that showed a 'Yes' for sheen on any monitoring date in the ground water monitoring summary, which also had detectable Benzene readings in the water laboratory analyses on 5/24/91?",
+      "question_id": "urnuuid45a0a8e5-e31b-4e74-9663-f27ab82db68f::q2",
+      "retrieved_pages": [
+        3,
+        5,
+        4,
+        2,
+        7,
+        14,
+        11,
+        10,
+        1,
+        6
+      ],
+      "scores": {
+        "1": {
+          "any_evidence_recall": 0.0,
+          "complete_evidence_recall": 0.0,
+          "f1": 0.0,
+          "gold_count": 3,
+          "k": 1,
+          "ndcg": 0.0,
+          "precision": 0.0,
+          "predicted_count": 1,
+          "recall": 0.0,
+          "reciprocal_rank": 0.0,
+          "true_positive": 0
+        },
+        "10": {
+          "any_evidence_recall": 1.0,
+          "complete_evidence_recall": 0.0,
+          "f1": 0.30769230769230765,
+          "gold_count": 3,
+          "k": 10,
+          "ndcg": 0.3044671974905181,
+          "precision": 0.2,
+          "predicted_count": 10,
+          "recall": 0.6666666666666666,
+          "reciprocal_rank": 0.14285714285714285,
+          "true_positive": 2
+        },
+        "3": {
+          "any_evidence_recall": 0.0,
+          "complete_evidence_recall": 0.0,
+          "f1": 0.0,
+          "gold_count": 3,
+          "k": 3,
+          "ndcg": 0.0,
+          "precision": 0.0,
+          "predicted_count": 3,
+          "recall": 0.0,
+          "reciprocal_rank": 0.0,
+          "true_positive": 0
+        },
+        "5": {
+          "any_evidence_recall": 0.0,
+          "complete_evidence_recall": 0.0,
+          "f1": 0.0,
+          "gold_count": 3,
+          "k": 5,
+          "ndcg": 0.0,
+          "precision": 0.0,
+          "predicted_count": 5,
+          "recall": 0.0,
+          "reciprocal_rank": 0.0,
+          "true_positive": 0
+        }
+      },
+      "slices": {
+        "evidence_type": "table",
+        "extract_class": "class5",
+        "gold_text_status": "ok",
+        "page_span": "multi"
+      }
+    },
+    {
+      "doc_id": "urnuuid45a0a8e5-e31b-4e74-9663-f27ab82db68f",
+      "gold_pages": [
+        12,
+        13
+      ],
+      "question": "In the water laboratory analyses, on which sampling date did MW3 record its highest TPH as Gasoline value?",
+      "question_id": "urnuuid45a0a8e5-e31b-4e74-9663-f27ab82db68f::q3",
+      "retrieved_pages": [
+        3,
+        7,
+        2,
+        4,
+        17,
+        13,
+        37,
+        6,
+        5,
+        1
+      ],
+      "scores": {
+        "1": {
+          "any_evidence_recall": 0.0,
+          "complete_evidence_recall": 0.0,
+          "f1": 0.0,
+          "gold_count": 2,
+          "k": 1,
+          "ndcg": 0.0,
+          "precision": 0.0,
+          "predicted_count": 1,
+          "recall": 0.0,
+          "reciprocal_rank": 0.0,
+          "true_positive": 0
+        },
+        "10": {
+          "any_evidence_recall": 1.0,
+          "complete_evidence_recall": 0.0,
+          "f1": 0.16666666666666669,
+          "gold_count": 2,
+          "k": 10,
+          "ndcg": 0.21840743681816419,
+          "precision": 0.1,
+          "predicted_count": 10,
+          "recall": 0.5,
+          "reciprocal_rank": 0.16666666666666666,
+          "true_positive": 1
+        },
+        "3": {
+          "any_evidence_recall": 0.0,
+          "complete_evidence_recall": 0.0,
+          "f1": 0.0,
+          "gold_count": 2,
+          "k": 3,
+          "ndcg": 0.0,
+          "precision": 0.0,
+          "predicted_count": 3,
+          "recall": 0.0,
+          "reciprocal_rank": 0.0,
+          "true_positive": 0
+        },
+        "5": {
+          "any_evidence_recall": 0.0,
+          "complete_evidence_recall": 0.0,
+          "f1": 0.0,
+          "gold_count": 2,
+          "k": 5,
+          "ndcg": 0.0,
+          "precision": 0.0,
+          "predicted_count": 5,
+          "recall": 0.0,
+          "reciprocal_rank": 0.0,
+          "true_positive": 0
+        }
+      },
+      "slices": {
+        "evidence_type": "table",
+        "extract_class": "class5",
+        "gold_text_status": "ok",
+        "page_span": "multi"
+      }
+    },
+    {
+      "doc_id": "urnuuid45a0a8e5-e31b-4e74-9663-f27ab82db68f",
+      "gold_pages": [
+        12,
+        13,
+        19
+      ],
+      "question": "In the water laboratory analyses data, the well that consistently showed the highest TPH as Gasoline concentrations across multiple sampling dates — on the site vicinity map, which street is it located closest to?",
+      "question_id": "urnuuid45a0a8e5-e31b-4e74-9663-f27ab82db68f::q4",
+      "retrieved_pages": [
+        4,
+        3,
+        5,
+        1,
+        7,
+        2,
+        8,
+        6,
+        9,
+        19
+      ],
+      "scores": {
+        "1": {
+          "any_evidence_recall": 0.0,
+          "complete_evidence_recall": 0.0,
+          "f1": 0.0,
+          "gold_count": 3,
+          "k": 1,
+          "ndcg": 0.0,
+          "precision": 0.0,
+          "predicted_count": 1,
+          "recall": 0.0,
+          "reciprocal_rank": 0.0,
+          "true_positive": 0
+        },
+        "10": {
+          "any_evidence_recall": 1.0,
+          "complete_evidence_recall": 0.0,
+          "f1": 0.15384615384615383,
+          "gold_count": 3,
+          "k": 10,
+          "ndcg": 0.13565197343244778,
+          "precision": 0.1,
+          "predicted_count": 10,
+          "recall": 0.3333333333333333,
+          "reciprocal_rank": 0.1,
+          "true_positive": 1
+        },
+        "3": {
+          "any_evidence_recall": 0.0,
+          "complete_evidence_recall": 0.0,
+          "f1": 0.0,
+          "gold_count": 3,
+          "k": 3,
+          "ndcg": 0.0,
+          "precision": 0.0,
+          "predicted_count": 3,
+          "recall": 0.0,
+          "reciprocal_rank": 0.0,
+          "true_positive": 0
+        },
+        "5": {
+          "any_evidence_recall": 0.0,
+          "complete_evidence_recall": 0.0,
+          "f1": 0.0,
+          "gold_count": 3,
+          "k": 5,
+          "ndcg": 0.0,
+          "precision": 0.0,
+          "predicted_count": 5,
+          "recall": 0.0,
+          "reciprocal_rank": 0.0,
+          "true_positive": 0
+        }
+      },
+      "slices": {
+        "evidence_type": "mixed",
+        "extract_class": "class6",
+        "gold_text_status": "ok",
+        "page_span": "multi"
+      }
+    },
+    {
+      "doc_id": "urnuuid45a0a8e5-e31b-4e74-9663-f27ab82db68f",
+      "gold_pages": [
+        10,
+        11
+      ],
+      "question": "For well MW3, what is the difference in depth to water (in feet) between the earliest monitoring date and the latest monitoring date recorded in the monitoring data summary?",
+      "question_id": "urnuuid45a0a8e5-e31b-4e74-9663-f27ab82db68f::q5",
+      "retrieved_pages": [
+        6,
+        5,
+        7,
+        11,
+        4,
+        3,
+        1,
+        8,
+        10,
+        2
+      ],
+      "scores": {
+        "1": {
+          "any_evidence_recall": 0.0,
+          "complete_evidence_recall": 0.0,
+          "f1": 0.0,
+          "gold_count": 2,
+          "k": 1,
+          "ndcg": 0.0,
+          "precision": 0.0,
+          "predicted_count": 1,
+          "recall": 0.0,
+          "reciprocal_rank": 0.0,
+          "true_positive": 0
+        },
+        "10": {
+          "any_evidence_recall": 1.0,
+          "complete_evidence_recall": 1.0,
+          "f1": 0.33333333333333337,
+          "gold_count": 2,
+          "k": 10,
+          "ndcg": 0.448643819352159,
+          "precision": 0.2,
+          "predicted_count": 10,
+          "recall": 1.0,
+          "reciprocal_rank": 0.25,
+          "true_positive": 2
+        },
+        "3": {
+          "any_evidence_recall": 0.0,
+          "complete_evidence_recall": 0.0,
+          "f1": 0.0,
+          "gold_count": 2,
+          "k": 3,
+          "ndcg": 0.0,
+          "precision": 0.0,
+          "predicted_count": 3,
+          "recall": 0.0,
+          "reciprocal_rank": 0.0,
+          "true_positive": 0
+        },
+        "5": {
+          "any_evidence_recall": 1.0,
+          "complete_evidence_recall": 0.0,
+          "f1": 0.28571428571428575,
+          "gold_count": 2,
+          "k": 5,
+          "ndcg": 0.2640681225725909,
+          "precision": 0.2,
+          "predicted_count": 5,
+          "recall": 0.5,
+          "reciprocal_rank": 0.25,
+          "true_positive": 1
+        }
+      },
+      "slices": {
+        "evidence_type": "table",
+        "extract_class": "class3",
+        "gold_text_status": "ok",
+        "page_span": "multi"
+      }
+    },
+    {
+      "doc_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba",
+      "gold_pages": [
+        14
+      ],
+      "question": "The bird species registration table in the application form includes a column for tracking how birds are related to one another. What example is given in that column?",
+      "question_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba::q1",
+      "retrieved_pages": [
+        11,
+        16,
+        22,
+        13,
+        8,
+        9,
+        20,
+        23,
+        19,
+        49
+      ],
+      "scores": {
+        "1": {
+          "any_evidence_recall": 0.0,
+          "complete_evidence_recall": 0.0,
+          "f1": 0.0,
+          "gold_count": 1,
+          "k": 1,
+          "ndcg": 0.0,
+          "precision": 0.0,
+          "predicted_count": 1,
+          "recall": 0.0,
+          "reciprocal_rank": 0.0,
+          "true_positive": 0
+        },
+        "10": {
+          "any_evidence_recall": 0.0,
+          "complete_evidence_recall": 0.0,
+          "f1": 0.0,
+          "gold_count": 1,
+          "k": 10,
+          "ndcg": 0.0,
+          "precision": 0.0,
+          "predicted_count": 10,
+          "recall": 0.0,
+          "reciprocal_rank": 0.0,
+          "true_positive": 0
+        },
+        "3": {
+          "any_evidence_recall": 0.0,
+          "complete_evidence_recall": 0.0,
+          "f1": 0.0,
+          "gold_count": 1,
+          "k": 3,
+          "ndcg": 0.0,
+          "precision": 0.0,
+          "predicted_count": 3,
+          "recall": 0.0,
+          "reciprocal_rank": 0.0,
+          "true_positive": 0
+        },
+        "5": {
+          "any_evidence_recall": 0.0,
+          "complete_evidence_recall": 0.0,
+          "f1": 0.0,
+          "gold_count": 1,
+          "k": 5,
+          "ndcg": 0.0,
+          "precision": 0.0,
+          "predicted_count": 5,
+          "recall": 0.0,
+          "reciprocal_rank": 0.0,
+          "true_positive": 0
+        }
+      },
+      "slices": {
+        "evidence_type": "table",
+        "extract_class": "class4",
+        "gold_text_status": "ok",
+        "page_span": "single"
+      }
+    },
+    {
+      "doc_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba",
+      "gold_pages": [
+        9
+      ],
+      "question": "How many sources for purchasing open split numbered bands are listed in the section describing the tier of the program that lifts the close banding requirement?",
+      "question_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba::q2",
+      "retrieved_pages": [
+        9,
+        7,
+        10,
+        15,
+        12,
+        31,
+        11,
+        30,
+        16,
+        8
+      ],
+      "scores": {
+        "1": {
+          "any_evidence_recall": 1.0,
+          "complete_evidence_recall": 1.0,
+          "f1": 1.0,
+          "gold_count": 1,
+          "k": 1,
+          "ndcg": 1.0,
+          "precision": 1.0,
+          "predicted_count": 1,
+          "recall": 1.0,
+          "reciprocal_rank": 1.0,
+          "true_positive": 1
+        },
+        "10": {
+          "any_evidence_recall": 1.0,
+          "complete_evidence_recall": 1.0,
+          "f1": 0.18181818181818182,
+          "gold_count": 1,
+          "k": 10,
+          "ndcg": 1.0,
+          "precision": 0.1,
+          "predicted_count": 10,
+          "recall": 1.0,
+          "reciprocal_rank": 1.0,
+          "true_positive": 1
+        },
+        "3": {
+          "any_evidence_recall": 1.0,
+          "complete_evidence_recall": 1.0,
+          "f1": 0.5,
+          "gold_count": 1,
+          "k": 3,
+          "ndcg": 1.0,
+          "precision": 0.3333333333333333,
+          "predicted_count": 3,
+          "recall": 1.0,
+          "reciprocal_rank": 1.0,
+          "true_positive": 1
+        },
+        "5": {
+          "any_evidence_recall": 1.0,
+          "complete_evidence_recall": 1.0,
+          "f1": 0.33333333333333337,
+          "gold_count": 1,
+          "k": 5,
+          "ndcg": 1.0,
+          "precision": 0.2,
+          "predicted_count": 5,
+          "recall": 1.0,
+          "reciprocal_rank": 1.0,
+          "true_positive": 1
+        }
+      },
+      "slices": {
+        "evidence_type": "mixed",
+        "extract_class": "class4",
+        "gold_text_status": "ok",
+        "page_span": "single"
+      }
+    },
+    {
+      "doc_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba",
+      "gold_pages": [
+        12
+      ],
+      "question": "How many specific items are listed in the section describing enhancements that are still being worked on?",
+      "question_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba::q3",
+      "retrieved_pages": [
+        12,
+        10,
+        30,
+        28,
+        31,
+        5,
+        16,
+        9,
+        25,
+        22
+      ],
+      "scores": {
+        "1": {
+          "any_evidence_recall": 1.0,
+          "complete_evidence_recall": 1.0,
+          "f1": 1.0,
+          "gold_count": 1,
+          "k": 1,
+          "ndcg": 1.0,
+          "precision": 1.0,
+          "predicted_count": 1,
+          "recall": 1.0,
+          "reciprocal_rank": 1.0,
+          "true_positive": 1
+        },
+        "10": {
+          "any_evidence_recall": 1.0,
+          "complete_evidence_recall": 1.0,
+          "f1": 0.18181818181818182,
+          "gold_count": 1,
+          "k": 10,
+          "ndcg": 1.0,
+          "precision": 0.1,
+          "predicted_count": 10,
+          "recall": 1.0,
+          "reciprocal_rank": 1.0,
+          "true_positive": 1
+        },
+        "3": {
+          "any_evidence_recall": 1.0,
+          "complete_evidence_recall": 1.0,
+          "f1": 0.5,
+          "gold_count": 1,
+          "k": 3,
+          "ndcg": 1.0,
+          "precision": 0.3333333333333333,
+          "predicted_count": 3,
+          "recall": 1.0,
+          "reciprocal_rank": 1.0,
+          "true_positive": 1
+        },
+        "5": {
+          "any_evidence_recall": 1.0,
+          "complete_evidence_recall": 1.0,
+          "f1": 0.33333333333333337,
+          "gold_count": 1,
+          "k": 5,
+          "ndcg": 1.0,
+          "precision": 0.2,
+          "predicted_count": 5,
+          "recall": 1.0,
+          "reciprocal_rank": 1.0,
+          "true_positive": 1
+        }
+      },
+      "slices": {
+        "evidence_type": "mixed",
+        "extract_class": "class4",
+        "gold_text_status": "ok",
+        "page_span": "single"
+      }
+    },
+    {
+      "doc_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba",
+      "gold_pages": [
+        8,
+        9
+      ],
+      "question": "Which specific bird species are mentioned as being excluded from the breeding conservation program at the time of publication?",
+      "question_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba::q5",
+      "retrieved_pages": [
+        8,
+        9,
+        7,
+        21,
+        10,
+        28,
+        5,
+        11,
+        22,
+        33
+      ],
+      "scores": {
+        "1": {
+          "any_evidence_recall": 1.0,
+          "complete_evidence_recall": 0.0,
+          "f1": 0.6666666666666666,
+          "gold_count": 2,
+          "k": 1,
+          "ndcg": 1.0,
+          "precision": 1.0,
+          "predicted_count": 1,
+          "recall": 0.5,
+          "reciprocal_rank": 1.0,
+          "true_positive": 1
+        },
+        "10": {
+          "any_evidence_recall": 1.0,
+          "complete_evidence_recall": 1.0,
+          "f1": 0.33333333333333337,
+          "gold_count": 2,
+          "k": 10,
+          "ndcg": 1.0,
+          "precision": 0.2,
+          "predicted_count": 10,
+          "recall": 1.0,
+          "reciprocal_rank": 1.0,
+          "true_positive": 2
+        },
+        "3": {
+          "any_evidence_recall": 1.0,
+          "complete_evidence_recall": 1.0,
+          "f1": 0.8,
+          "gold_count": 2,
+          "k": 3,
+          "ndcg": 1.0,
+          "precision": 0.6666666666666666,
+          "predicted_count": 3,
+          "recall": 1.0,
+          "reciprocal_rank": 1.0,
+          "true_positive": 2
+        },
+        "5": {
+          "any_evidence_recall": 1.0,
+          "complete_evidence_recall": 1.0,
+          "f1": 0.5714285714285715,
+          "gold_count": 2,
+          "k": 5,
+          "ndcg": 1.0,
+          "precision": 0.4,
+          "predicted_count": 5,
+          "recall": 1.0,
+          "reciprocal_rank": 1.0,
+          "true_positive": 2
+        }
+      },
+      "slices": {
+        "evidence_type": "text",
+        "extract_class": "class5",
+        "gold_text_status": "ok",
+        "page_span": "multi"
+      }
+    }
+  ],
+  "question_count": 9,
+  "route": "r2_scanned_document",
+  "slices": {
+    "evidence_type": {
+      "mixed": {
+        "1": {
+          "macro": {
+            "any_evidence_recall": 0.6666666666666666,
+            "complete_evidence_recall": 0.6666666666666666,
+            "f1": 0.6666666666666666,
+            "ndcg": 0.6666666666666666,
+            "precision": 0.6666666666666666,
+            "recall": 0.6666666666666666,
+            "reciprocal_rank": 0.6666666666666666
+          },
+          "micro": {
+            "f1": 0.5,
+            "gold_pages": 5,
+            "precision": 0.6666666666666666,
+            "recall": 0.4,
+            "retrieved_slots": 3,
+            "true_positive": 2
+          },
+          "question_count": 3
+        },
+        "10": {
+          "macro": {
+            "any_evidence_recall": 1.0,
+            "complete_evidence_recall": 0.6666666666666666,
+            "f1": 0.1724941724941725,
+            "ndcg": 0.7118839911441492,
+            "precision": 0.10000000000000002,
+            "recall": 0.7777777777777778,
+            "reciprocal_rank": 0.7000000000000001
+          },
+          "micro": {
+            "f1": 0.17142857142857143,
+            "gold_pages": 5,
+            "precision": 0.1,
+            "recall": 0.6,
+            "retrieved_slots": 30,
+            "true_positive": 3
+          },
+          "question_count": 3
+        },
+        "3": {
+          "macro": {
+            "any_evidence_recall": 0.6666666666666666,
+            "complete_evidence_recall": 0.6666666666666666,
+            "f1": 0.3333333333333333,
+            "ndcg": 0.6666666666666666,
+            "precision": 0.2222222222222222,
+            "recall": 0.6666666666666666,
+            "reciprocal_rank": 0.6666666666666666
+          },
+          "micro": {
+            "f1": 0.2857142857142857,
+            "gold_pages": 5,
+            "precision": 0.2222222222222222,
+            "recall": 0.4,
+            "retrieved_slots": 9,
+            "true_positive": 2
+          },
+          "question_count": 3
+        },
+        "5": {
+          "macro": {
+            "any_evidence_recall": 0.6666666666666666,
+            "complete_evidence_recall": 0.6666666666666666,
+            "f1": 0.22222222222222224,
+            "ndcg": 0.6666666666666666,
+            "precision": 0.13333333333333333,
+            "recall": 0.6666666666666666,
+            "reciprocal_rank": 0.6666666666666666
+          },
+          "micro": {
+            "f1": 0.2,
+            "gold_pages": 5,
+            "precision": 0.13333333333333333,
+            "recall": 0.4,
+            "retrieved_slots": 15,
+            "true_positive": 2
+          },
+          "question_count": 3
+        }
+      },
+      "table": {
+        "1": {
+          "macro": {
+            "any_evidence_recall": 0.2,
+            "complete_evidence_recall": 0.0,
+            "f1": 0.13333333333333333,
+            "ndcg": 0.2,
+            "precision": 0.2,
+            "recall": 0.1,
+            "reciprocal_rank": 0.2
+          },
+          "micro": {
+            "f1": 0.13333333333333333,
+            "gold_pages": 10,
+            "precision": 0.2,
+            "recall": 0.1,
+            "retrieved_slots": 5,
+            "true_positive": 1
+          },
+          "question_count": 5
+        },
+        "10": {
+          "macro": {
+            "any_evidence_recall": 0.8,
+            "complete_evidence_recall": 0.4,
+            "f1": 0.2282051282051282,
+            "ndcg": 0.35780960880295715,
+            "precision": 0.14,
+            "recall": 0.6333333333333333,
+            "reciprocal_rank": 0.3119047619047619
+          },
+          "micro": {
+            "f1": 0.23333333333333336,
+            "gold_pages": 10,
+            "precision": 0.14,
+            "recall": 0.7,
+            "retrieved_slots": 50,
+            "true_positive": 7
+          },
+          "question_count": 5
+        },
+        "3": {
+          "macro": {
+            "any_evidence_recall": 0.2,
+            "complete_evidence_recall": 0.0,
+            "f1": 0.08,
+            "ndcg": 0.12262943855309168,
+            "precision": 0.06666666666666667,
+            "recall": 0.1,
+            "reciprocal_rank": 0.2
+          },
+          "micro": {
+            "f1": 0.08,
+            "gold_pages": 10,
+            "precision": 0.06666666666666667,
+            "recall": 0.1,
+            "retrieved_slots": 15,
+            "true_positive": 1
+          },
+          "question_count": 5
+        },
+        "5": {
+          "macro": {
+            "any_evidence_recall": 0.4,
+            "complete_evidence_recall": 0.0,
+            "f1": 0.1142857142857143,
+            "ndcg": 0.17544306306760987,
+            "precision": 0.08,
+            "recall": 0.2,
+            "reciprocal_rank": 0.25
+          },
+          "micro": {
+            "f1": 0.11428571428571428,
+            "gold_pages": 10,
+            "precision": 0.08,
+            "recall": 0.2,
+            "retrieved_slots": 25,
+            "true_positive": 2
+          },
+          "question_count": 5
+        }
+      },
+      "text": {
+        "1": {
+          "macro": {
+            "any_evidence_recall": 1.0,
+            "complete_evidence_recall": 0.0,
+            "f1": 0.6666666666666666,
+            "ndcg": 1.0,
+            "precision": 1.0,
+            "recall": 0.5,
+            "reciprocal_rank": 1.0
+          },
+          "micro": {
+            "f1": 0.6666666666666666,
+            "gold_pages": 2,
+            "precision": 1.0,
+            "recall": 0.5,
+            "retrieved_slots": 1,
+            "true_positive": 1
+          },
+          "question_count": 1
+        },
+        "10": {
+          "macro": {
+            "any_evidence_recall": 1.0,
+            "complete_evidence_recall": 1.0,
+            "f1": 0.33333333333333337,
+            "ndcg": 1.0,
+            "precision": 0.2,
+            "recall": 1.0,
+            "reciprocal_rank": 1.0
+          },
+          "micro": {
+            "f1": 0.33333333333333337,
+            "gold_pages": 2,
+            "precision": 0.2,
+            "recall": 1.0,
+            "retrieved_slots": 10,
+            "true_positive": 2
+          },
+          "question_count": 1
+        },
+        "3": {
+          "macro": {
+            "any_evidence_recall": 1.0,
+            "complete_evidence_recall": 1.0,
+            "f1": 0.8,
+            "ndcg": 1.0,
+            "precision": 0.6666666666666666,
+            "recall": 1.0,
+            "reciprocal_rank": 1.0
+          },
+          "micro": {
+            "f1": 0.8,
+            "gold_pages": 2,
+            "precision": 0.6666666666666666,
+            "recall": 1.0,
+            "retrieved_slots": 3,
+            "true_positive": 2
+          },
+          "question_count": 1
+        },
+        "5": {
+          "macro": {
+            "any_evidence_recall": 1.0,
+            "complete_evidence_recall": 1.0,
+            "f1": 0.5714285714285715,
+            "ndcg": 1.0,
+            "precision": 0.4,
+            "recall": 1.0,
+            "reciprocal_rank": 1.0
+          },
+          "micro": {
+            "f1": 0.5714285714285715,
+            "gold_pages": 2,
+            "precision": 0.4,
+            "recall": 1.0,
+            "retrieved_slots": 5,
+            "true_positive": 2
+          },
+          "question_count": 1
+        }
+      }
+    },
+    "extract_class": {
+      "class3": {
+        "1": {
+          "macro": {
+            "any_evidence_recall": 0.0,
+            "complete_evidence_recall": 0.0,
+            "f1": 0.0,
+            "ndcg": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "reciprocal_rank": 0.0
+          },
+          "micro": {
+            "f1": 0.0,
+            "gold_pages": 2,
+            "precision": 0.0,
+            "recall": 0.0,
+            "retrieved_slots": 1,
+            "true_positive": 0
+          },
+          "question_count": 1
+        },
+        "10": {
+          "macro": {
+            "any_evidence_recall": 1.0,
+            "complete_evidence_recall": 1.0,
+            "f1": 0.33333333333333337,
+            "ndcg": 0.448643819352159,
+            "precision": 0.2,
+            "recall": 1.0,
+            "reciprocal_rank": 0.25
+          },
+          "micro": {
+            "f1": 0.33333333333333337,
+            "gold_pages": 2,
+            "precision": 0.2,
+            "recall": 1.0,
+            "retrieved_slots": 10,
+            "true_positive": 2
+          },
+          "question_count": 1
+        },
+        "3": {
+          "macro": {
+            "any_evidence_recall": 0.0,
+            "complete_evidence_recall": 0.0,
+            "f1": 0.0,
+            "ndcg": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "reciprocal_rank": 0.0
+          },
+          "micro": {
+            "f1": 0.0,
+            "gold_pages": 2,
+            "precision": 0.0,
+            "recall": 0.0,
+            "retrieved_slots": 3,
+            "true_positive": 0
+          },
+          "question_count": 1
+        },
+        "5": {
+          "macro": {
+            "any_evidence_recall": 1.0,
+            "complete_evidence_recall": 0.0,
+            "f1": 0.28571428571428575,
+            "ndcg": 0.2640681225725909,
+            "precision": 0.2,
+            "recall": 0.5,
+            "reciprocal_rank": 0.25
+          },
+          "micro": {
+            "f1": 0.28571428571428575,
+            "gold_pages": 2,
+            "precision": 0.2,
+            "recall": 0.5,
+            "retrieved_slots": 5,
+            "true_positive": 1
+          },
+          "question_count": 1
+        }
+      },
+      "class4": {
+        "1": {
+          "macro": {
+            "any_evidence_recall": 0.6666666666666666,
+            "complete_evidence_recall": 0.6666666666666666,
+            "f1": 0.6666666666666666,
+            "ndcg": 0.6666666666666666,
+            "precision": 0.6666666666666666,
+            "recall": 0.6666666666666666,
+            "reciprocal_rank": 0.6666666666666666
+          },
+          "micro": {
+            "f1": 0.6666666666666666,
+            "gold_pages": 3,
+            "precision": 0.6666666666666666,
+            "recall": 0.6666666666666666,
+            "retrieved_slots": 3,
+            "true_positive": 2
+          },
+          "question_count": 3
+        },
+        "10": {
+          "macro": {
+            "any_evidence_recall": 0.6666666666666666,
+            "complete_evidence_recall": 0.6666666666666666,
+            "f1": 0.12121212121212122,
+            "ndcg": 0.6666666666666666,
+            "precision": 0.06666666666666667,
+            "recall": 0.6666666666666666,
+            "reciprocal_rank": 0.6666666666666666
+          },
+          "micro": {
+            "f1": 0.1212121212121212,
+            "gold_pages": 3,
+            "precision": 0.06666666666666667,
+            "recall": 0.6666666666666666,
+            "retrieved_slots": 30,
+            "true_positive": 2
+          },
+          "question_count": 3
+        },
+        "3": {
+          "macro": {
+            "any_evidence_recall": 0.6666666666666666,
+            "complete_evidence_recall": 0.6666666666666666,
+            "f1": 0.3333333333333333,
+            "ndcg": 0.6666666666666666,
+            "precision": 0.2222222222222222,
+            "recall": 0.6666666666666666,
+            "reciprocal_rank": 0.6666666666666666
+          },
+          "micro": {
+            "f1": 0.3333333333333333,
+            "gold_pages": 3,
+            "precision": 0.2222222222222222,
+            "recall": 0.6666666666666666,
+            "retrieved_slots": 9,
+            "true_positive": 2
+          },
+          "question_count": 3
+        },
+        "5": {
+          "macro": {
+            "any_evidence_recall": 0.6666666666666666,
+            "complete_evidence_recall": 0.6666666666666666,
+            "f1": 0.22222222222222224,
+            "ndcg": 0.6666666666666666,
+            "precision": 0.13333333333333333,
+            "recall": 0.6666666666666666,
+            "reciprocal_rank": 0.6666666666666666
+          },
+          "micro": {
+            "f1": 0.2222222222222222,
+            "gold_pages": 3,
+            "precision": 0.13333333333333333,
+            "recall": 0.6666666666666666,
+            "retrieved_slots": 15,
+            "true_positive": 2
+          },
+          "question_count": 3
+        }
+      },
+      "class5": {
+        "1": {
+          "macro": {
+            "any_evidence_recall": 0.5,
+            "complete_evidence_recall": 0.0,
+            "f1": 0.3333333333333333,
+            "ndcg": 0.5,
+            "precision": 0.5,
+            "recall": 0.25,
+            "reciprocal_rank": 0.5
+          },
+          "micro": {
+            "f1": 0.30769230769230765,
+            "gold_pages": 9,
+            "precision": 0.5,
+            "recall": 0.2222222222222222,
+            "retrieved_slots": 4,
+            "true_positive": 2
+          },
+          "question_count": 4
+        },
+        "10": {
+          "macro": {
+            "any_evidence_recall": 1.0,
+            "complete_evidence_recall": 0.5,
+            "f1": 0.28525641025641024,
+            "ndcg": 0.5851010561656567,
+            "precision": 0.17500000000000002,
+            "recall": 0.7916666666666666,
+            "reciprocal_rank": 0.5773809523809523
+          },
+          "micro": {
+            "f1": 0.2857142857142857,
+            "gold_pages": 9,
+            "precision": 0.175,
+            "recall": 0.7777777777777778,
+            "retrieved_slots": 40,
+            "true_positive": 7
+          },
+          "question_count": 4
+        },
+        "3": {
+          "macro": {
+            "any_evidence_recall": 0.5,
+            "complete_evidence_recall": 0.25,
+            "f1": 0.30000000000000004,
+            "ndcg": 0.4032867981913646,
+            "precision": 0.25,
+            "recall": 0.375,
+            "reciprocal_rank": 0.5
+          },
+          "micro": {
+            "f1": 0.28571428571428575,
+            "gold_pages": 9,
+            "precision": 0.25,
+            "recall": 0.3333333333333333,
+            "retrieved_slots": 12,
+            "true_positive": 3
+          },
+          "question_count": 4
+        },
+        "5": {
+          "macro": {
+            "any_evidence_recall": 0.5,
+            "complete_evidence_recall": 0.25,
+            "f1": 0.2142857142857143,
+            "ndcg": 0.4032867981913646,
+            "precision": 0.15000000000000002,
+            "recall": 0.375,
+            "reciprocal_rank": 0.5
+          },
+          "micro": {
+            "f1": 0.20689655172413793,
+            "gold_pages": 9,
+            "precision": 0.15,
+            "recall": 0.3333333333333333,
+            "retrieved_slots": 20,
+            "true_positive": 3
+          },
+          "question_count": 4
+        }
+      },
+      "class6": {
+        "1": {
+          "macro": {
+            "any_evidence_recall": 0.0,
+            "complete_evidence_recall": 0.0,
+            "f1": 0.0,
+            "ndcg": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "reciprocal_rank": 0.0
+          },
+          "micro": {
+            "f1": 0.0,
+            "gold_pages": 3,
+            "precision": 0.0,
+            "recall": 0.0,
+            "retrieved_slots": 1,
+            "true_positive": 0
+          },
+          "question_count": 1
+        },
+        "10": {
+          "macro": {
+            "any_evidence_recall": 1.0,
+            "complete_evidence_recall": 0.0,
+            "f1": 0.15384615384615383,
+            "ndcg": 0.13565197343244778,
+            "precision": 0.1,
+            "recall": 0.3333333333333333,
+            "reciprocal_rank": 0.1
+          },
+          "micro": {
+            "f1": 0.15384615384615383,
+            "gold_pages": 3,
+            "precision": 0.1,
+            "recall": 0.3333333333333333,
+            "retrieved_slots": 10,
+            "true_positive": 1
+          },
+          "question_count": 1
+        },
+        "3": {
+          "macro": {
+            "any_evidence_recall": 0.0,
+            "complete_evidence_recall": 0.0,
+            "f1": 0.0,
+            "ndcg": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "reciprocal_rank": 0.0
+          },
+          "micro": {
+            "f1": 0.0,
+            "gold_pages": 3,
+            "precision": 0.0,
+            "recall": 0.0,
+            "retrieved_slots": 3,
+            "true_positive": 0
+          },
+          "question_count": 1
+        },
+        "5": {
+          "macro": {
+            "any_evidence_recall": 0.0,
+            "complete_evidence_recall": 0.0,
+            "f1": 0.0,
+            "ndcg": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "reciprocal_rank": 0.0
+          },
+          "micro": {
+            "f1": 0.0,
+            "gold_pages": 3,
+            "precision": 0.0,
+            "recall": 0.0,
+            "retrieved_slots": 5,
+            "true_positive": 0
+          },
+          "question_count": 1
+        }
+      }
+    },
+    "gold_text_status": {
+      "ok": {
+        "1": {
+          "macro": {
+            "any_evidence_recall": 0.4444444444444444,
+            "complete_evidence_recall": 0.2222222222222222,
+            "f1": 0.37037037037037035,
+            "ndcg": 0.4444444444444444,
+            "precision": 0.4444444444444444,
+            "recall": 0.3333333333333333,
+            "reciprocal_rank": 0.4444444444444444
+          },
+          "micro": {
+            "f1": 0.30769230769230765,
+            "gold_pages": 17,
+            "precision": 0.4444444444444444,
+            "recall": 0.23529411764705882,
+            "retrieved_slots": 9,
+            "true_positive": 4
+          },
+          "question_count": 9
+        },
+        "10": {
+          "macro": {
+            "any_evidence_recall": 0.8888888888888888,
+            "complete_evidence_recall": 0.5555555555555556,
+            "f1": 0.22131572131572133,
+            "ndcg": 0.5471888908274704,
+            "precision": 0.13333333333333336,
+            "recall": 0.7222222222222222,
+            "reciprocal_rank": 0.5177248677248678
+          },
+          "micro": {
+            "f1": 0.22429906542056074,
+            "gold_pages": 17,
+            "precision": 0.13333333333333333,
+            "recall": 0.7058823529411765,
+            "retrieved_slots": 90,
+            "true_positive": 12
+          },
+          "question_count": 9
+        },
+        "3": {
+          "macro": {
+            "any_evidence_recall": 0.4444444444444444,
+            "complete_evidence_recall": 0.3333333333333333,
+            "f1": 0.24444444444444446,
+            "ndcg": 0.40146079919616207,
+            "precision": 0.18518518518518517,
+            "recall": 0.3888888888888889,
+            "reciprocal_rank": 0.4444444444444444
+          },
+          "micro": {
+            "f1": 0.22727272727272727,
+            "gold_pages": 17,
+            "precision": 0.18518518518518517,
+            "recall": 0.29411764705882354,
+            "retrieved_slots": 27,
+            "true_positive": 5
+          },
+          "question_count": 9
+        },
+        "5": {
+          "macro": {
+            "any_evidence_recall": 0.5555555555555556,
+            "complete_evidence_recall": 0.3333333333333333,
+            "f1": 0.20105820105820107,
+            "ndcg": 0.43080170170422766,
+            "precision": 0.13333333333333336,
+            "recall": 0.4444444444444444,
+            "reciprocal_rank": 0.4722222222222222
+          },
+          "micro": {
+            "f1": 0.19354838709677416,
+            "gold_pages": 17,
+            "precision": 0.13333333333333333,
+            "recall": 0.35294117647058826,
+            "retrieved_slots": 45,
+            "true_positive": 6
+          },
+          "question_count": 9
+        }
+      }
+    },
+    "page_span": {
+      "multi": {
+        "1": {
+          "macro": {
+            "any_evidence_recall": 0.3333333333333333,
+            "complete_evidence_recall": 0.0,
+            "f1": 0.2222222222222222,
+            "ndcg": 0.3333333333333333,
+            "precision": 0.3333333333333333,
+            "recall": 0.16666666666666666,
+            "reciprocal_rank": 0.3333333333333333
+          },
+          "micro": {
+            "f1": 0.2,
+            "gold_pages": 14,
+            "precision": 0.3333333333333333,
+            "recall": 0.14285714285714285,
+            "retrieved_slots": 6,
+            "true_positive": 2
+          },
+          "question_count": 6
+        },
+        "10": {
+          "macro": {
+            "any_evidence_recall": 1.0,
+            "complete_evidence_recall": 0.5,
+            "f1": 0.27136752136752135,
+            "ndcg": 0.48745000290787227,
+            "precision": 0.16666666666666666,
+            "recall": 0.75,
+            "reciprocal_rank": 0.44325396825396823
+          },
+          "micro": {
+            "f1": 0.2702702702702703,
+            "gold_pages": 14,
+            "precision": 0.16666666666666666,
+            "recall": 0.7142857142857143,
+            "retrieved_slots": 60,
+            "true_positive": 10
+          },
+          "question_count": 6
+        },
+        "3": {
+          "macro": {
+            "any_evidence_recall": 0.3333333333333333,
+            "complete_evidence_recall": 0.16666666666666666,
+            "f1": 0.20000000000000004,
+            "ndcg": 0.26885786546090973,
+            "precision": 0.16666666666666666,
+            "recall": 0.25,
+            "reciprocal_rank": 0.3333333333333333
+          },
+          "micro": {
+            "f1": 0.1875,
+            "gold_pages": 14,
+            "precision": 0.16666666666666666,
+            "recall": 0.21428571428571427,
+            "retrieved_slots": 18,
+            "true_positive": 3
+          },
+          "question_count": 6
+        },
+        "5": {
+          "macro": {
+            "any_evidence_recall": 0.5,
+            "complete_evidence_recall": 0.16666666666666666,
+            "f1": 0.1904761904761905,
+            "ndcg": 0.3128692192230082,
+            "precision": 0.13333333333333333,
+            "recall": 0.3333333333333333,
+            "reciprocal_rank": 0.375
+          },
+          "micro": {
+            "f1": 0.18181818181818182,
+            "gold_pages": 14,
+            "precision": 0.13333333333333333,
+            "recall": 0.2857142857142857,
+            "retrieved_slots": 30,
+            "true_positive": 4
+          },
+          "question_count": 6
+        }
+      },
+      "single": {
+        "1": {
+          "macro": {
+            "any_evidence_recall": 0.6666666666666666,
+            "complete_evidence_recall": 0.6666666666666666,
+            "f1": 0.6666666666666666,
+            "ndcg": 0.6666666666666666,
+            "precision": 0.6666666666666666,
+            "recall": 0.6666666666666666,
+            "reciprocal_rank": 0.6666666666666666
+          },
+          "micro": {
+            "f1": 0.6666666666666666,
+            "gold_pages": 3,
+            "precision": 0.6666666666666666,
+            "recall": 0.6666666666666666,
+            "retrieved_slots": 3,
+            "true_positive": 2
+          },
+          "question_count": 3
+        },
+        "10": {
+          "macro": {
+            "any_evidence_recall": 0.6666666666666666,
+            "complete_evidence_recall": 0.6666666666666666,
+            "f1": 0.12121212121212122,
+            "ndcg": 0.6666666666666666,
+            "precision": 0.06666666666666667,
+            "recall": 0.6666666666666666,
+            "reciprocal_rank": 0.6666666666666666
+          },
+          "micro": {
+            "f1": 0.1212121212121212,
+            "gold_pages": 3,
+            "precision": 0.06666666666666667,
+            "recall": 0.6666666666666666,
+            "retrieved_slots": 30,
+            "true_positive": 2
+          },
+          "question_count": 3
+        },
+        "3": {
+          "macro": {
+            "any_evidence_recall": 0.6666666666666666,
+            "complete_evidence_recall": 0.6666666666666666,
+            "f1": 0.3333333333333333,
+            "ndcg": 0.6666666666666666,
+            "precision": 0.2222222222222222,
+            "recall": 0.6666666666666666,
+            "reciprocal_rank": 0.6666666666666666
+          },
+          "micro": {
+            "f1": 0.3333333333333333,
+            "gold_pages": 3,
+            "precision": 0.2222222222222222,
+            "recall": 0.6666666666666666,
+            "retrieved_slots": 9,
+            "true_positive": 2
+          },
+          "question_count": 3
+        },
+        "5": {
+          "macro": {
+            "any_evidence_recall": 0.6666666666666666,
+            "complete_evidence_recall": 0.6666666666666666,
+            "f1": 0.22222222222222224,
+            "ndcg": 0.6666666666666666,
+            "precision": 0.13333333333333333,
+            "recall": 0.6666666666666666,
+            "reciprocal_rank": 0.6666666666666666
+          },
+          "micro": {
+            "f1": 0.2222222222222222,
+            "gold_pages": 3,
+            "precision": 0.13333333333333333,
+            "recall": 0.6666666666666666,
+            "retrieved_slots": 15,
+            "true_positive": 2
+          },
+          "question_count": 3
+        }
+      }
+    }
+  },
+  "split": "development_tune",
+  "uses_gold_labels_only_after_retrieval": true
+}

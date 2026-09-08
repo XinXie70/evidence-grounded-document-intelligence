@@ -1,0 +1,44 @@
+{
+  "approval_date": "2026-09-04",
+  "approval_status": "approved",
+  "approved_hard_cap_usd": 0.04,
+  "actual_cost_usd": 0.006901,
+  "actual_input_tokens": 2377,
+  "actual_output_tokens": 131,
+  "call_count": 3,
+  "conditions": [
+    "closed_book",
+    "real_retrieval",
+    "oracle_page"
+  ],
+  "config_path": "configs/reasoning_smoke_c0_v0.json",
+  "config_sha256": "bc84ff001e5fbdc0b4ed4b3ca96df88798607632de2eb4b8eca385c99d719234",
+  "conservative_cost_estimate_usd": 0.029584,
+  "currency": "USD",
+  "inputs": [
+    {
+      "condition": "closed_book",
+      "conservative_cost_estimate_usd": 0.007706,
+      "path": "experiments/day4_reliability_triplet_inputs_v0/smoke_03/closed_book.json",
+      "sha256": "d920b387e980d808aa4fc4cce71b064ccb0589cbce03c9f94ccb6e68aed46d7b"
+    },
+    {
+      "condition": "real_retrieval",
+      "conservative_cost_estimate_usd": 0.011544,
+      "path": "experiments/day4_reliability_triplet_inputs_v0/smoke_03/real_retrieval.json",
+      "sha256": "38de5dd55b8467d3351e0644ec0bcbb6e821a754f289cdc7b74720eefe365bde"
+    },
+    {
+      "condition": "oracle_page",
+      "conservative_cost_estimate_usd": 0.010334,
+      "path": "experiments/day4_reliability_triplet_inputs_v0/smoke_03/oracle_page.json",
+      "sha256": "d669f9090d4c18984ce97c1967b6da1b1c684bbe7ba200dd88b06250af6dc849"
+    }
+  ],
+  "maximum_output_tokens_per_call": 512,
+  "execution_status": "complete_within_budget",
+  "pricing_snapshot_id": "openai-gpt-5.6-terra-2026-09-02",
+  "question_id": "urnuuidad6e69ed-3343-4297-85d8-96b02e6bd925::q1",
+  "schema_version": 1,
+  "scope": "three matched C0-C1-C2 calls for retrieval-failure teaching case smoke_03"
+}

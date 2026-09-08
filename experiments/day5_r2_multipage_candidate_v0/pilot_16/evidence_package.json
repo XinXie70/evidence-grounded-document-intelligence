@@ -1,0 +1,159 @@
+{
+  "corpus": {
+    "kind": "ocr_text",
+    "page_count": 37,
+    "path": "experiments/day5_ocr_full_document_v0/pilot_16/page_records_ocr.jsonl",
+    "sha256": "f9843e37e1029bb21f3be4b73457823beca17b4f7bd566cd8523f50ea044cc32"
+  },
+  "doc_id": "urnuuid45a0a8e5-e31b-4e74-9663-f27ab82db68f",
+  "evidence": [
+    {
+      "extraction_status": "ok",
+      "page": 6,
+      "rank": 1,
+      "score": 20.650937395241016,
+      "text": "KEI~P88-1204 .QR9 September 17, 1991 Page 6 bottles, sealed with Teflon-lined screw caps, and stored, on ice, in a cooler until delivery to a state certified laboratory. GEOLOGY AND HYDROLOGY Based on the water level data gathered during the quarter, the ground water flow direction appeared to be predominantly toward the west to west-northwest. The flow direction was approximately due west, with an average hydraulic gradient of approximately 0.002 on August 15, 1991, relatively unchanged from the previous quarter (see the attached Site Plan, Figure 1). However, the flow direction was apparently toward the north on July 26, 1991 (see Figure la), and toward the west-northwest on June 28, 1991 (see Figure 1b). Water levels have fluctuated during the quarter, and show a net decrease in all the wells ranging from 1.27 to 1.36 feet since May 24, 1991. The measured depth to ground water at the site on August 15, 1991, ranged between 17.34 and 18.10 feet below grade. Based on review of regional geologic mapping (U.S. Geological Survey Professional Paper 943 \"Flatland deposits of the San Francisco Bay Region, California - their geology and engineering properties, and their importance to comprehensive planning\", by E.J. Helley and K.R. Lajoie, 1979), the subject site is underlain by coarse-grained alluvium (Qhac). This deposit is described as typically consisting of unconsolidated, moderately sorted, permeable sand and silt at a thickness ranging from less than 10 feet to as much as 50 feet. This unit is assumed to overlie late Pleistocene alluvial fan deposits at depth. However, review of the boring logs previously completed by KEI (EB1 through EB6, and MW1 through MW6) indicate the site is underlain predominantly by silty clay materials to at least the maximum depth explored (33 feet). An apparent intermittent clayey silt bed was encountered at approximately 10 feet below grade, and in one boring (MW1) a clayey sand bed was encountered between depths of about 6 to 10 feet below grade; otherwise, only clay materials were noted to have been encountered. ANALYTICAL RESULTS Ground water samples were analyzed at Sequoia Analytical Laboratory in Concord, California, and were accompanied by properly executed Chain of Custody documentation. The ground water samples from monitoring wells MW2, MW4, and MW6 were analyzed for TPH as gasoline using EPA method 5030 in conjunction with modified 8015, BTX&E using EPA method 8020, TOG using Standard Method 5520B&F, and halogenated volatile organics using EPA method 8010. In addition,"
+    },
+    {
+      "extraction_status": "ok",
+      "page": 5,
+      "rank": 2,
+      "score": 18.25349181817089,
+      "text": "KEI-P88-1204.QR9 September 17, 1991 Page 5 extends to a depth of approximately 28 feet below grade with a water level of 18 feet, as of August 1, 1990. At the time of HSI's investigation (June 7, 1990), the well was plugged with soil and other debris to a depth of about 8 feet below grade. Analytical results of a soil sample collected from the soil plug within the well showed 1.2 ppm of tetrachloroethene. After the well was unplugged, a water sample was collected on September 12, 1990, and showed a level of 33 ppb of tetrachlorcethene. The soil and water samples were not analyzed for petroleum hydrocarbons. In addition to collecting soil and water samples from the ary cleaners' well, HSI also collected soil samples from six soil borings (Al through A5 and HS-B-1), located at the northwest perimeter of the dry cleaners building, as well as six soil samples from beneath the concrete floor inside the building. Tetrachloro- ethene was detected in all soil borings at concentrations ranging from 0.0069 ppm to 0.20 ppm. The October 9, 1990, HSI report concluded that the tetrachloroet- hene soil and ground water contamination detected throughout the site was probably the result of small-scale spillage of tetrachlo- roethene over a long period of time. The HSI report recommended the installation of at least three monitoring wells; however, it does not appear that any further subsurface investigations have been conducted at the site as of March of 1991. RECENT FIELD ACTIVITIES Wells MW1, MW2, MW5, and MW6 were monitored three times during the quarter. Monitoring well MW3 was monitored and purged of 55 gallons of water six times during the quarter. Monitoring well MW4 was monitored twice and sampled once during the quarter. During monitoring, the wells were checked for depth to water and presence of free product and sheen. No free product was observed in any of the wells, except for well MW3, where approximately 0.01 to 0.02 foot of free product was observed on the two most recent monitoring dates. A sheen was observed on three other occasions in well MW3 during the quarter. Sheen was not observed in any of the other wells during the quarter. Monitoring data are summarized in Table 1. Water samples were collected from wells MW2, MW4, and MW6 on August 15, 1991. A ground water sample was not collected from well MW3 due to the presence of free product, and sampling of wells MW1 and MWS have been @iscontinued, as previously recommended. Wells MW2, MW4, and MW6 were each purged of 11 gailons using a surface pump, and samples were then collected using a clean Teflon bailer. The samples were decanted into clean VOA vials and one-liter amber"
+    },
+    {
+      "extraction_status": "ok",
+      "page": 7,
+      "rank": 3,
+      "score": 17.171442222527403,
+      "text": "KEI-P88-1204.QR9 September 17, 1991 Page 7 monitoring well MW4 was analyzed for TPH as diesel using EPA method 3510 in conjunction with modified 8015. Analytical results of the ground water samples collected from monitoring well MW2, MW4, and MW6 indicate non-detectable levels of TPH as gasoline, BTX&E and TOG. Analytical results of the ground water sample collected from monitoring well MW4 indicate non- detectable levels of TPH as diesel. Analytical results of the ground water samples collected from wells MW2, MW4, and MW6 indicate non-detectable levels of all EPA method 8010 constituents, except for tetrachloroethene detected in wells MW4 and MW6 at concentrations of 3.6 ppb and 1.2 ppb, respectively. Results of the water analyses are summarized in Tables 2 and 2a. Copies of the analytical results and Chain of Custody documentation are attached to this report. DISCUSSION AND RECOMMENDATIONS Based on the analytical results collected and evaluated to date, KEI recommends the continuation of the current monitoring and sampling program of the existing wells per KEI's proposal (KEI-P88- 1204.P6) dated July 15, 1991. Based on the levels of contamination detected in well MW3 at the subject Unocal site, and the predominant westward ground water flow direction, KEI has previously recommended the installation of one off-site monitoring well to further define the extent of ground water contamination (work plan/proposal KEI-P88-1204.P6 dated July 15, 1991). KEI did not recommend the use of the “dry cleaner well\" (MW-DC) since the integrity, construction, and precise use of the well is unknown or otherwise unclear. KEI is in the process of obtaining permits for the installation of the proposed off-site well, and expects to complete installation during the next quarter. DISTRIBUTION A copy of this report should be sent to the Mr. Larry Seto of the Alameda County Health Care Services Agency, to the City of San Leandro, and to the Regional Water Quality Control Board, San Francisco Bay Region. LIMITATIONS Environmental changes, either naturally-occurring or artificially- induced, may cause changes in ground water levels and flow paths, thereby changing the extent and concentration of any contaminants."
+    },
+    {
+      "extraction_status": "ok",
+      "page": 11,
+      "rank": 4,
+      "score": 16.77880977857352,
+      "text": "KEI-P88~1204.QR9 September 17, 1991 TABLE 1 (Continued) SUMMARY OF MONITORING DATA Ground Water Depth to Product Water Product Elevation Water Thickness Purged Purged Well No. (feet) (feet) (feet) Sheen (gallons) (gallons) (Monitored on June 14, 1991) MW3 83.31 16.72 0 Yes 55 0 Surface Elevation** Well # (feet) MW1 100.00 MW2 100.32 MW3 100.03 MW4 99.66 MWS 100.32 MW6 100.50 * Elevations of ground water corrected using an assumed specific gravity of 0.77 for the free product. ** Elevations surveyed assuming well cover MW1 100 feet as datum."
+    },
+    {
+      "extraction_status": "ok",
+      "page": 4,
+      "rank": 5,
+      "score": 15.557578720754728,
+      "text": "KEI-P88-1204.0R9 September 17, 1991 Page 4 the water analyses in Table 2. Documentation of well installation protocol, sample collection techniques, and sample results are presented in KEI's report (KEI-P88~-1204.QRi) dated September 27, 1989. Based on the analytical results, KEI recommended a monthly monitoring and quarterly sampling program for all existing wells. The six wells MW1 through MW6 have been monitored monthly and sampled quarterly since August of 1989. A field reconnaissance of the subject site was performed on August 24, 1990, and the reconnaissance revealed the presence of soil borings within the existing asphalt parking area at the adjacent property located southwest of the site (see the attached Site Vicinity Map). KEI has reviewed a report prepared by Applied Geosystems (AGS) of San Jose, California, dated April 30, 1990 (AGS #60004-1), documenting this work. Soil and ground water samples were collected from five borings (Bl through B5) on the adjacent property. Analytical results of soil samples indicated non- detectable levels of petroleum hydrocarbons in all samples, except for 200 ppm of TOG and 0.058 ppm of toluene detected at 16 feet in boring B5, located immediately southwest of Unocal's MW3. Also, tetrachloroethene was detected in borings B2, B3, and B4 at depths of 15 to 17.5 feet below grade at levels ranging from 0.0052 ppm to 0.0460 ppm. TPH as gasoline was detected in water samples collected from borings B2 and B3 at levels of 220 ppb and 50 ppb, respectively; these borings are located near a former dry cleaning operation (see the attached Site Vicinity Map). Also, tetrachloro- ethene (PCE) was detected in the water samples from all five borings at levels ranging from 2.2 ppb to 540 ppb, with the greatest concentrations obtained from borings B2, B3, and B4, which are located near the former dry cleaning operation. Based on a site inspection conducted on December 27, 1990, a well (MW-DC) is present near the former dry cleaner operation (see attached Site Vicinity Map). Communication with Unocal Corporation on January 2, 1991 indicated that this well was not installed at the request of Unocal. A follow-up site visit was conducted by KEI during March, 1991 in an attempt to determine the well owner. None of the adjacent property owners or tenants were aware of the presence of the well and/or who installed the well. KEI subsequently reviewed a report titled \"Report of Subsurface Environmental Conditions\" dated October 9, 1990, which was prepared by Hageman-Schenk, Inc. (HSI) for the current property owner (1335 to 1370 Davis Street). Investigations conducted by HSI indicate that the well was apparently a former water supply well for the dry cleaners located at 1370 Davis Street. The well is six inches in diameter and"
+    },
+    {
+      "extraction_status": "ok",
+      "page": 3,
+      "rank": 6,
+      "score": 14.577053094621707,
+      "text": "KEI-P88-1204.QR9 September 17, 1991 Page 3 rized in Table 3, and water analyses in Tables 2 and 2a. Documen- tation of well installation protocol, sample collection techniques, and sample results are presented in KEI's report (KEI-P88-1204.R2) dated May 16, 1990. On May 11, 1989, at KEI's recommendation, the area surrounding exploratory boring EB6 (shown on the attached Site Plan, Figure 2) was excavated. Four soil samples, labeled SWA, SWB, SWC, and SWD, were collected from the sidewalls of the excavation at a depth of approximately 16.5 feet below grade (six inches above the water table). The samples were analyzed for TPH as diesel and TOG. Analytical results of the soil samples indicated levels of TPH as diesel ranging from 16 ppm to 26 ppm, and levels of TOG ranging from 170 ppm to 850 ppm. Results of the soil analyses are sun- marized in Table 3. Documentation of the excavation investigation protocol, sampling techniques, and sample results are presented in KEI's report (KEI-J88-1204.R4) dated June 15, 1989. Based on the results of the excavation soil samples and ground water contamination levels that had been previously detected in the monitoring wells, KEI recommended installation of three additional monitoring wells. On August 16, 1989, three additional two-inch diameter monitoring wells (designated as MW4, MW5, and MW6 on the attached Site Plan, Figure 1) were installed at the site. The new wells were drilled and completed to total depths of 33 feet below grade. Ground water was encountered at depths of approximately 19.8 to 22 feet below grade during drilling. The new wells (MW4, MWS and MW6) were developed on August 27, 1989 and initially sampled on August 29, 1989. Water and selected soil samples were analyzed by Sequoia Analytical Laboratory in Redwood City, California, for TPH as gasoline, BTX&E, and TOG. In addition, the water samples were analyzed for TPH as diesel. Analytical results of the soil samples collected from the borings for monitoring wells MW4, MW5 and MW6 indicated non- detectable levels of all constituents analyzed, except for soil sample MW4(5), which showed 3.3 ppm of TPH as gasoline and 0.11 ppm of xylenes, and soil sample MW5(20), which showed 20 ppm of TPH as gasoline. Analytical results of water samples collected from MW1, MW2, MW4, MW5, and MW6 indicated non-detectable levels of TPH as gasoline, benzene, TPH as diesel, and TOG, except for MW4 and MWS, which indicated TPH as diesel at concentrations of 120 ppb and 100 ppb, respectively. Analytical results of the water sample collected from MW3 indicated 3,200 ppb of TPH as gasoline, 73 ppb of benzene, 860 ppb of TPH as diesel, and a non-detectable level of TOG. Results of the soil analyses are summarized in Table 3, and"
+    },
+    {
+      "extraction_status": "ok",
+      "page": 1,
+      "rank": 7,
+      "score": 14.100988848519085,
+      "text": "KAPREALIAN ENGINEERING, INC. Consulting Engineers PO. BOX 996 ¢ BENICIA, CA 94510 (707) 746-6915 © (707) 746-6916 * FAX: (707) 746-5581 KEI-P88~-1204.QR9 September 17, 1991 Unocal Corporation 2000 Crow Canyon Place, Suite 400 P.O. Box 5155 San Ramon, California 94583 Attention: Mr. Rick Sisk RE: Quarterly Report Unocal Service Station #2512 1300 Davis Street San Leandro, California Dear Mr. Sisk: This report presents the results of the ninth quarter of monitoring and sampling of the monitoring wells at the referenced site by Kaprealian Engineering, Inc. (KEI), per KEI's proposal (KEI-P88- 1204.P6) Gated July 15, 1991. The wells are currently monitored monthly and sampled on a quarterly basis. This report covers the work performed by KEI from June through August, 1991. SITE DESCRIPTION AND BACKGROUND The subject site is presently used as a gasoline station. The site is situated on gently sloping, westward trending topography, and is located approximately two miles east-northeast of the present shoreline of San Francisco Bay. Also, the site is located approximately 2,000 feet south of San Leandro Creek. A Location Map, Site Vicinity Map, and Site Plans are attached to this report. Per Unocal Corporation's procedure for site divestments, KEI's work at the site began on December 30, 1988, when KEI was asked to install exploratory borings. On January 3, 1989, six exploratory borings, designated as EB1 through EB6 on the attached Site Plan, Figure 2, were drilled at the site. The six borings were drilled to depths ranging from 26.5 to 30 feet below grade, and ground water was encountered at depths ranging from 25 to 26.5 feet beneath the surface, Soil and water samples were analyzed by Sequoia Analytical Laboratory in Redwood City, California. Soil and water samples collected from borings EB2 through EB6 were analyzed for total"
+    },
+    {
+      "extraction_status": "ok",
+      "page": 8,
+      "rank": 8,
+      "score": 13.87731839490104,
+      "text": "KEI-P88-1204.QR9 September 17, 1991 Page 8 Our studies assume that the field and laboratory data are reason- ably representative of the site as a whole, and assume that subsurface conditions are reasonably conducive to interpolation and extrapolation. The results of this study are based on the data obtained from the field and laboratory analyses obtained from a state certified laboratory. We have analyzed this data using what we believe to be currently applicable engineering techniques and principles in the Northern California region. We make no warranty, either expressed or implied, regarding the above, including laboratory analyses, except that our services have been performed in accordance with generally accepted professional principles and practices existing for such work."
+    },
+    {
+      "extraction_status": "ok",
+      "page": 10,
+      "rank": 9,
+      "score": 13.184351446701411,
+      "text": "KEI-P88-1204.0OR9 September 17, 1991 Ground Water Depth to Product Water Elevation Water Thickness Purged Well No. (feet) (feet) (feet) Sheen (gallons) (Monitored and Sampled on August 15, 1991) MWL 82.47 17.53 oO No 0 MW2 82.22 18.10 oO No 11 MW3 82.27% 17.77 0.01 N/A o MW4 82.32 17.34 0 No 11 MW5 82.36 17.96 (8) No 0 MW6 82.48 18.02 8) No 11 (Monitored on August 1, 1991) MW3 82.35% 17.70 0.02 N/A 55 (Monitored on July 26, 1991) MW1 84.98 15.02 ce) No 0 MW2 85.23 15.09 0 No 0 MW3 85.40 14.63 ie) No 55 MW4 COULD NOT MONITOR - WELL NOT ACCESSIBLE MWS 85.10 15.22 0 No 0 MW6 85.12 15.38 0 No 0 (Monitored on July 12, 1991) MW3 82.81 17.22 ie} Yes 55 (Monitored on June 28, 1991) MW1 83.33 16.67 0) No 0 MWw2 83.08 17.24 0 No (0) MW3 83.10 16.93 ) Yes 55 MWw4 83.20 16.46 0 No 0 MW5 83.24 17.08 0 No 0) MW6 84.36 16.14 0 No ) TABLE 12 SUMMARY OF MONITORING DATA Product Purged (gallons) eo0oFoo <1 02 oo°0 Qo0o0000"
+    },
+    {
+      "extraction_status": "ok",
+      "page": 2,
+      "rank": 10,
+      "score": 12.519980605730272,
+      "text": "KEI~P88-1204.QR9 September 17, 1991 Page 2 petroleum hydrocarbons (TPH) as gasoline, and benzene, toluene, xylenes, and ethylbenzene (BTX&E). Soil samples collected from boring EB6 were also analyzed for TPH as diesel and total oil and grease (TOG). Soil and water samples collected from boring EB1 were analyzed for TPH as diesel, BTX&E, TOG, and EPA method 8010 constituents. Analytical results of soil samples collected from borings EB1 through EB6 indicated levels of TPH as gasoline ranging from non- detectable to 73 ppm. Benzene was detected only in samples EB5 (20) and EB6(15) at concentrations of 0.12 ppm and 0.065 ppm, respec- tively. Analytical results of soil samples collected from boring EB6 indicated levels of TPH as diesel ranging from 3 ppm to 160 ppm, and levels of TOG ranging from 130 ppm to 7,800 ppm. Analyti- cal results of the water samples collected from borings EB2, EB3, and EB4 indicated non-detectable levels of TPH as gasoline. Analytical results of the water samples collected from borings EB5 and EB6 indicated levels of TPH as gasoline at concentrations of 340 ppb and 1,500 ppb, respectively. Benzene was detected in water samples collected from borings EB2 and EB6 at concentrations of 8.2 ppb and 1.5 ppb, respectively. Results of the soil analyses are summarized in Table 3, and the water analyses in Table 4. Documentation of the exploratory boring investigation protocol, sample collection techniques, and sample results are presented in KEI's report (KEI-P88-1204.R1) dated February 3, 1989. Based on the results of the exploratory boring investigation, KEI proposed the installation of three monitoring wells. On April 17, 1989, three two-inch diameter monitoring wells (designated as MW1, MW2, and MW3 on the attached Site Plan, Figure 1) were installed at the site. The three wells were drilled and completed to total depths of 33 feet below grade. Ground water was encountered at depths ranging from 17.5 to 18.5 feet below grade. The wells were developed on April 24, 1989, and were initially sampled on April 25, 1989. Water and selected soil samples were analyzed by Sequoia Analytical Laboratory in Redwood City, California, for TPH as gasoline, BTX&E, TPH as diesel, TOG, and purgeable halocarbons. Analytical results of the soil samples collected from MW1, MW2, and MW3 indicated levels of TPH as gasoline ranging from non-detectable to 6.2 ppm, levels of TOG ranging from non-detectable to 180 ppm, and non- detectable levels of benzene, TPH as diesel and EPA method 8010 constituents. Analytical results of water samples collected from MW1, MW2, and MW3 indicated levels of TPH as gasoline ranging from non-detectable to 56 ppb, levels of TPH as diesel ranging from non- detectable to 5,700 ppb, and levels of benzene ranging from non- detectable to 0.35 ppb. Results of the soil analyses are summa-"
+    }
+  ],
+  "evidence_pages": [
+    6,
+    5,
+    7,
+    11,
+    4,
+    3,
+    1,
+    8,
+    10,
+    2
+  ],
+  "question": "For well MW3, what is the difference in depth to water (in feet) between the earliest monitoring date and the latest monitoring date recorded in the monitoring data summary?",
+  "question_id": "urnuuid45a0a8e5-e31b-4e74-9663-f27ab82db68f::q5",
+  "reasoning_context": {
+    "pages": [
+      {
+        "page": 6,
+        "path": "experiments/day5_ocr_full_document_v0/pilot_16/text/page-06.txt",
+        "sha256": "68efbac26ec337b52efc658250fb4e5ac3dceb3437838423fce6db9710f8f247"
+      },
+      {
+        "page": 5,
+        "path": "experiments/day5_ocr_full_document_v0/pilot_16/text/page-05.txt",
+        "sha256": "701fdd31048fb1eb2a40cbd8ec4a7d07b73f3729801c213f7a7de459e91840e9"
+      },
+      {
+        "page": 7,
+        "path": "experiments/day5_ocr_full_document_v0/pilot_16/text/page-07.txt",
+        "sha256": "0b2d4495525fb0cc6c668a65121750fb970899504fbee8a9f7481b3ccdc90593"
+      },
+      {
+        "page": 11,
+        "path": "experiments/day5_ocr_full_document_v0/pilot_16/text/page-11.txt",
+        "sha256": "e302cac7847b255a3cc2be8679f5a0b4a12819fcc9fbca62fd51223b5051694e"
+      },
+      {
+        "page": 4,
+        "path": "experiments/day5_ocr_full_document_v0/pilot_16/text/page-04.txt",
+        "sha256": "e4194216b1b7de7e5888fb55e186a3c857b5acb404963e57ae081dd135aa6ddb"
+      },
+      {
+        "page": 3,
+        "path": "experiments/day5_ocr_full_document_v0/pilot_16/text/page-03.txt",
+        "sha256": "230ea7e450eebcc74578940a314e18fef61dfdfe924b3d2b0c4a317877befa20"
+      },
+      {
+        "page": 1,
+        "path": "experiments/day5_ocr_full_document_v0/pilot_16/text/page-01.txt",
+        "sha256": "a8a6d87a6a6d80f9fbbdc7d2a0193be0b60ae2ce352860860413a32850c78d95"
+      },
+      {
+        "page": 8,
+        "path": "experiments/day5_ocr_full_document_v0/pilot_16/text/page-08.txt",
+        "sha256": "e4414dde39d18abd00faba4aca90eef54d441b5b5b05fb0a84afbfb9f00d38e7"
+      },
+      {
+        "page": 10,
+        "path": "experiments/day5_ocr_full_document_v0/pilot_16/text/page-10.txt",
+        "sha256": "cf4d995a34b9ddafce9a575ed3823f62f8446635690f8aa42448493fc232f460"
+      },
+      {
+        "page": 2,
+        "path": "experiments/day5_ocr_full_document_v0/pilot_16/text/page-02.txt",
+        "sha256": "a2df2a500bf852805ed44ee133ce4d1c1c4fc23955d54a3c0fb2a9bcafce79f7"
+      }
+    ],
+    "representation": "layout_preserved_ocr_text"
+  },
+  "retrieval": {
+    "b": 0.75,
+    "k1": 1.2,
+    "method": "page_bm25",
+    "query_token_policy": "deduplicate_preserve_order",
+    "top_k": 10
+  },
+  "schema_version": 1,
+  "uses_gold_or_answer_labels": false
+}

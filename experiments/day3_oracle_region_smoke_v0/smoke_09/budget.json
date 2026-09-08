@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "experiment_id": "day3_grounded_reasoning_c3_smoke_v0",
+  "question_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba::q1",
+  "condition": "oracle_region",
+  "planned_requests": 1,
+  "max_retries": 0,
+  "model": "gpt-5.6-terra",
+  "image": {
+    "width_px": 94,
+    "height_px": 380,
+    "detail": "original",
+    "patch_size_px": 32,
+    "horizontal_patches": 3,
+    "vertical_patches": 12,
+    "base_patches": 36,
+    "model_multiplier": 1.2,
+    "estimated_billable_input_tokens": 44
+  },
+  "pricing_snapshot_id": "openai-gpt-5.6-terra-2026-09-02",
+  "rates_usd_per_million_tokens": {
+    "input": 2.0,
+    "output": 12.0,
+    "cache_write_input_multiplier": 1.25
+  },
+  "conservative_bound": {
+    "input_tokens_including_image": 512,
+    "output_tokens": 512,
+    "input_cost_usd": 0.00128,
+    "output_cost_usd": 0.006144,
+    "total_cost_usd": 0.007424
+  },
+  "user_authorized_cap_usd": 0.5,
+  "execution_cap_usd": 0.01,
+  "paid_execution_approved": true,
+  "execution": {
+    "status": "completed",
+    "request_count": 1,
+    "retries": 0,
+    "input_tokens": 238,
+    "output_tokens": 88,
+    "total_tokens": 326,
+    "actual_estimated_cost_usd": 0.001532,
+    "within_execution_cap": true
+  },
+  "notes": [
+    "The image estimate is ceil(ceil(94/32) * ceil(380/32) * 1.2) = 44 input tokens.",
+    "The conservative input allowance of 512 tokens includes the image and ample room for prompt and schema text.",
+    "The output bound matches max_output_tokens=512 in configs/reasoning_smoke_c3_v0.json.",
+    "The user explicitly approved one C3 smoke09 visual request up to USD 0.50; the experiment retains the stricter USD 0.01 execution cap."
+  ]
+}

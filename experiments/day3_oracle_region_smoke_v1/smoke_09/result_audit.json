@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "case_id": "smoke_09",
+  "question_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba::q1",
+  "condition": "oracle_region_upright",
+  "audit_status": "complete",
+  "result_path": "results/day3_oracle_region_smoke_v1/smoke_09.json",
+  "result_sha256": "8dfe0e13698bb94a9eda1edfbd7036a85d5fdf6250cc703358ab6c1dc7365a23",
+  "benchmark_answer": "father of #11 and #12",
+  "model_answer": "Example: (father of #11 and #12)",
+  "answer_correct_strict_benchmark": true,
+  "citation_chain_complete": true,
+  "answer_supported_by_cited_region": true,
+  "grounded_correct": true,
+  "paired_with_v0": {
+    "v0_result_path": "results/day3_oracle_region_smoke_v0/smoke_09.json",
+    "v0_model_answer": "Example: “father of #1 and #12.”",
+    "v0_grounded_correct": false,
+    "single_intervention": "rotate_same_region_clockwise_90_degrees"
+  },
+  "classification": "orientation_intervention_restored_exact_visual_transcription",
+  "diagnostic_conclusion": "The missing PDF text layer caused the C2 abstention. Supplying the gold region as pixels restored access to the content, but the rotated v0 crop produced a one-digit transcription error. Making the same crop upright produced the exact benchmark answer, so orientation-sensitive visual perception is the observed bottleneck for this case.",
+  "scope_note": "This is one controlled smoke case and does not establish a population-level benefit."
+}

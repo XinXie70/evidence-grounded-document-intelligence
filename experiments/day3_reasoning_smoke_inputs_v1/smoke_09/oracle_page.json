@@ -1,0 +1,50 @@
+{
+  "condition": "oracle_page",
+  "doc_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba",
+  "evidence_pages": [
+    14
+  ],
+  "model_input": {
+    "evidence": [
+      {
+        "page": 14,
+        "text": ""
+      }
+    ],
+    "instructions": "Answer the question using only the supplied document evidence. If the evidence does not adequately support an answer, return status='insufficient_evidence' and answer=null. Cite only supplied 1-based physical PDF page numbers. Return one object matching response_schema.",
+    "question": "The bird species registration table in the application form includes a column for tracking how birds are related to one another. What example is given in that column?",
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "answer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cited_pages": {
+          "items": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "answerable",
+            "insufficient_evidence"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "answer",
+        "cited_pages",
+        "status"
+      ],
+      "type": "object"
+    }
+  },
+  "question_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba::q1",
+  "schema_version": 1
+}

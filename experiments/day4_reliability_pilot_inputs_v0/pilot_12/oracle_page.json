@@ -1,0 +1,55 @@
+{
+  "condition": "oracle_page",
+  "doc_id": "urnuuid395c19a8-ceda-45ec-854e-2316a9138c74",
+  "evidence_pages": [
+    10,
+    11
+  ],
+  "model_input": {
+    "evidence": [
+      {
+        "page": 10,
+        "text": "8 Figure 1. Composite Measures by Program: Mean Scores (Range 1-4)* *In Figures 1 and 2, “Staff” combines all PCA, ILST, homemaking, life skills coach, and community mentor staff. Figure 2 shows the percentage of participants in each program who gave the most positive answer for each composite item – a nine or ten, on a scale from zero to ten. This method usually highlights any differences across composites and populations more clearly. A greater percentage of CFC Only participants gave the highest score for the composites covering staff communication, transportation to medical appointments, and choosing the services that matter to them compared to CFC Plus Waiver consumers. On the other hand, a smaller percentage of CFC Only participants gave the highest score for the composite care manager/support and planning coach is helpful. 3.2 3.9 3.7 3.6 3.7 3.8 3.8 3.2 3.9 3.7 3.6 3.8 3.8 3.8 3.3 4.0 3.8 3.7 3.4 3.9 3.9 Community inclusion and empowerment Personal safety and respect Transportation to medical appointments Choosing the services that matter to you Case Manager/Support and Planning Coach is helpful Staff listen and communicate well Staff are reliable and helpful CFC Only CFC Plus Waiver CFC All"
+      },
+      {
+        "page": 11,
+        "text": "9 Figure 2. Composite Measures by Program: Percentage with Highest Score ii. Global ratings by program While both groups of CFC participants rated their staff highly, CFC Only participants gave their PCA staff slightly higher mean scores than their CFC Plus Waiver counterparts (Figure 3). Figure 4 presents the percentage of participants in each program who gave their staff the highest rating possible. CFC Only participants were much more likely to give their PCAs and care manager/support and planning coaches the highest rating compared to CFC Plus Waiver participants. 57.4 97.5 68.7 74.8 83.2 89.7 92.1 55.9 97.4 67.2 73.2 83.5 88.3 91.1 62.1 98.1 73.8 79.8 81.1 94.1 95.1 Community inclusion and empowerment Personal safety and respect Transportation to medical appointments Choosing the services that matter to you Case Manager/Support and Planning Coach is helpful Staff listen and communicate well Staff are reliable and helpful CFC Only CFC Plus Waiver CFC All"
+      }
+    ],
+    "instructions": "Answer the question. When document evidence is supplied, use only that evidence. When no document evidence is supplied, answer only from your existing knowledge and do not claim or imply document support. If the available basis does not adequately support an answer, return status='insufficient_evidence' and answer=null. Cite only supplied 1-based physical PDF page numbers; when no document evidence is supplied, cited_pages must be empty. Return one object matching response_schema.",
+    "question": "What is the CFC Plus Waiver percentage of participants giving the highest score for the composite measure that received the lowest mean score across all programs (CFC All)?",
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "answer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cited_pages": {
+          "items": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "answerable",
+            "insufficient_evidence"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "answer",
+        "cited_pages",
+        "status"
+      ],
+      "type": "object"
+    }
+  },
+  "question_id": "urnuuid395c19a8-ceda-45ec-854e-2316a9138c74::q2",
+  "schema_version": 1
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "answer": null,
+    "benchmark_is_answerable": true,
+    "evidence_sufficient": false,
+    "question_id": "smoke_03::real_retrieval",
+    "response_status": "insufficient_evidence"
+  },
+  {
+    "answer": null,
+    "benchmark_is_answerable": true,
+    "evidence_sufficient": true,
+    "question_id": "smoke_06::oracle_region_context",
+    "response_status": "insufficient_evidence"
+  }
+]

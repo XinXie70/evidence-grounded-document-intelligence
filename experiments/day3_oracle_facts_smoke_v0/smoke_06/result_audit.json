@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "case_id": "smoke_06",
+  "question_id": "urnuuid111476ed-6700-4be2-85cc-3fc17696167e::q3",
+  "condition": "oracle_facts",
+  "audit_status": "complete",
+  "result_path": "results/day3_oracle_facts_smoke_v0/smoke_06.json",
+  "result_sha256": "e19effccace915f9cf33f2bba68a02ccfa263af7e6f20f65775188df27d1b749",
+  "benchmark_answer": "6.01 hours",
+  "model_answer": "Males spend 6.01 more hours per weekday on personal care than females spend on housework and family care (10.8 hours minus 287.4 minutes, or 4.79 hours).",
+  "answer_correct_strict_benchmark": true,
+  "citation_chain_complete": true,
+  "cited_pages": [21, 55],
+  "grounded_correct": true,
+  "paired_with_c3_context": {
+    "c3_result_path": "results/day3_oracle_region_context_smoke_v0/smoke_06.json",
+    "c3_status": "insufficient_evidence",
+    "c3_grounded_correct": false
+  },
+  "classification": "fact_oracle_restores_exact_cross_page_calculation",
+  "diagnostic_conclusion": "The model can perform the required minutes-to-hours conversion, subtraction, and two-page citation when the source facts are normalized. Therefore the contextual C3 failure is associated with table perception, cross-region value association, or table-conditioned over-abstention rather than arithmetic inability.",
+  "scope_note": "This is one controlled smoke case and does not establish a population-level effect."
+}
