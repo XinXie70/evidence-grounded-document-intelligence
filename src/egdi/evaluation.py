@@ -5,19 +5,30 @@ from __future__ import annotations
 import argparse
 import json
 from pathlib import Path
-from typing import Any, Sequence
+from typing import Any, Protocol, Sequence
 
 from .access import load_records
 from .bm25 import PageBm25Index
 from .corpus import read_page_records_jsonl
 from .scoring import aggregate_page_scores, score_evidence_pages, scoring_eligibility
+from .text import PageRecord
 
 
 DEFAULT_KS = (1, 3, 5, 10)
 
 
+class RankedPage(Protocol):
+    page: int
+
+
+class PageRetrievalIndex(Protocol):
+    records: Sequence[PageRecord]
+
+    def search(self, query: str, top_k: int) -> Sequence[RankedPage]: ...
+
+
 def evaluate_question(
-    index: PageBm25Index,
+    index: PageRetrievalIndex,
     question_record: dict[str, Any],
     ks: Sequence[int] = DEFAULT_KS,
 ) -> dict[str, Any]:
@@ -36,7 +47,7 @@ def evaluate_question(
         raise ValueError("question must contain pdf.doc_id_str")
     doc_id = pdf["doc_id_str"]
     if any(record.doc_id != doc_id for record in index.records):
-        raise ValueError("BM25 index contains pages from a different document")
+        raise ValueError("retrieval index contains pages from a different document")
 
     gold_pages = sorted({evidence["page"] for evidence in question_record["evidences"]})
     ranking = index.search(question, top_k=max(ks))
@@ -55,7 +66,7 @@ def evaluate_question(
 
 
 def evaluate_document(
-    index: PageBm25Index,
+    index: PageRetrievalIndex,
     question_records: Sequence[dict[str, Any]],
     ks: Sequence[int] = DEFAULT_KS,
 ) -> dict[str, Any]:

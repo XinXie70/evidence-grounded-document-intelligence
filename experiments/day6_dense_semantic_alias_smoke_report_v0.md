@@ -14,7 +14,7 @@ baseline did not place either gold page in its Top-10.
 
 - dense model: `BAAI/bge-small-en-v1.5`
 - revision: `baab320e3049c6c62dd63560765566dd9083985e`
-- within-page chunk size: 256 model tokens
+- within-page chunk size: 256 model-input tokens, including special tokens
 - overlap: 0 tokens
 - chunk-to-page aggregation: maximum chunk score
 - evaluation cutoff: Top-10 physical pages
@@ -22,8 +22,8 @@ baseline did not place either gold page in its Top-10.
 ## Result
 
 BM25 returned pages `4, 5, 9, 24, 33, 19, 10, 12, 11, 29`; neither gold page
-was present. Dense ranked gold page 13 at position 4 and gold page 14 at
-position 6. Therefore BM25 had zero Any- and Complete-Evidence Recall@10 for
+was present. Dense ranked gold page 13 at position 3 and gold page 14 at
+position 4. Therefore BM25 had zero Any- and Complete-Evidence Recall@10 for
 this question, while Dense achieved both Any- and Complete-Evidence Recall@10.
 
 ## Decision

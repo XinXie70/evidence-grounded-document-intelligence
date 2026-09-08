@@ -6,6 +6,7 @@
   "query_instruction": "Represent this sentence for searching relevant passages: ",
   "similarity": "cosine",
   "page_aggregation": "maximum_chunk_score",
+  "chunk_token_definition": "maximum model input length including special tokens",
   "chunk_token_candidates": [256, 512],
   "overlap_token_candidates": [0, 64],
   "top_k_values": [1, 3, 5, 10],

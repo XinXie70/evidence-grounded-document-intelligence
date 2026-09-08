@@ -2,7 +2,7 @@ import unittest
 
 import numpy as np
 
-from egdi.dense import PageDenseIndex
+from egdi.dense import PageDenseIndex, SentenceTransformerBgeEncoder
 from egdi.text import build_page_record
 
 
@@ -32,6 +32,19 @@ class FakeDenseEncoder:
 
     def encode_query(self, query):
         return self._vector(query)
+
+
+class FakeTokenizer:
+    @staticmethod
+    def num_special_tokens_to_add(pair=False):
+        return 2
+
+    def __call__(self, text, **kwargs):
+        return {"input_ids": list(range(len(text.split())))}
+
+    @staticmethod
+    def decode(token_ids, **kwargs):
+        return " ".join(str(token_id) for token_id in token_ids)
 
 
 class PageDenseIndexTests(unittest.TestCase):
@@ -79,6 +92,14 @@ class PageDenseIndexTests(unittest.TestCase):
             self.index.search("query", top_k=0)
         with self.assertRaises(TypeError):
             self.index.search(None, top_k=1)
+
+    def test_real_encoder_reserves_space_for_special_tokens(self):
+        encoder = SentenceTransformerBgeEncoder.__new__(SentenceTransformerBgeEncoder)
+        encoder.tokenizer = FakeTokenizer()
+        chunks = encoder.split_text("a b c d e f g", chunk_tokens=5, overlap_tokens=1)
+        self.assertEqual(chunks, ["0 1 2", "2 3 4", "4 5 6", "6"])
+        with self.assertRaisesRegex(ValueError, "special tokens"):
+            encoder.split_text("a", chunk_tokens=2, overlap_tokens=0)
 
 
 if __name__ == "__main__":

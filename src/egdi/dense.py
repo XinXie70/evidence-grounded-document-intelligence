@@ -170,6 +170,12 @@ class SentenceTransformerBgeEncoder:
         self.tokenizer = self.model.tokenizer
 
     def split_text(self, text: str, chunk_tokens: int, overlap_tokens: int) -> list[str]:
+        special_tokens = self.tokenizer.num_special_tokens_to_add(pair=False)
+        content_tokens = chunk_tokens - special_tokens
+        if content_tokens < 1:
+            raise ValueError("chunk_tokens must leave room for model special tokens")
+        if overlap_tokens >= content_tokens:
+            raise ValueError("overlap_tokens must be smaller than the content token capacity")
         token_ids = self.tokenizer(
             text,
             add_special_tokens=False,
@@ -180,10 +186,10 @@ class SentenceTransformerBgeEncoder:
         )["input_ids"]
         if not token_ids:
             return [""]
-        step = chunk_tokens - overlap_tokens
+        step = content_tokens - overlap_tokens
         return [
             self.tokenizer.decode(
-                token_ids[start : start + chunk_tokens],
+                token_ids[start : start + content_tokens],
                 skip_special_tokens=True,
                 clean_up_tokenization_spaces=True,
             )
