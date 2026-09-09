@@ -186,6 +186,31 @@ Start with these records:
 - [`experiments/day5_visual_recovery_report_v0.md`](experiments/day5_visual_recovery_report_v0.md) — visual fallback diagnosis.
 - [`experiments/day6_generic_comparison_validation_v0/REPORT.md`](experiments/day6_generic_comparison_validation_v0/REPORT.md) — frozen generic comparison validation.
 
+## Limitations
+
+1. **Visual localization is still coarse.** The system can detect that a page contains a table,
+   image, or vector graphics, but it cannot reliably determine which visual region matches the
+   entities, metric, and period named in a question. A preregistered reranker using these generic
+   signals produced no net Complete Evidence Recall improvement on 63 R1 questions.
+2. **Multi-page evidence can remain incomplete.** RRF reaches 77.41% Complete Evidence Recall@10,
+   so some questions still miss at least one required page—often a second operand, unit, table
+   heading, or distant continuation page.
+3. **OCR and flattened layout text can lose relationships.** Scanned, rotated, tabular, and chart
+   pages may preserve the words but lose row/column or label/value alignment. One frozen validation
+   failure retrieved the correct chart pages but associated a value with the wrong flattened label.
+4. **Evaluation is development-scoped.** Headline results come from `development_tune` and clearly
+   identified diagnostic pilots. The bounded R1 gate did not pass, so calibration and the locked
+   test were not executed; no held-out test performance is claimed.
+
+## Future work
+
+A V2 should focus on **question-conditioned visual localization**: use the question to select a
+specific table, chart, or region inside already retrieved pages, while preserving page provenance
+and an explicit abstention path. It should be preregistered on document-isolated development data
+and evaluated once on held-out data after the retrieval, routing, evidence budget, and reliability
+threshold are frozen. Per-question patches, unconstrained full-document vision, and post-hoc
+weight tuning are intentionally excluded.
+
 ## Honest project boundary
 
 This is a portfolio research MVP, not a production document platform. It does not claim that retrieval is solved, that six-case comparison validation estimates population performance, or that visual processing should be used on every page. Its contribution is a measured, failure-driven pipeline that makes retrieval gaps, grounding errors, abstentions, cost, and provenance observable instead of hiding them behind a single answer score.
