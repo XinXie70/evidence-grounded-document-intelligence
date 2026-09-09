@@ -130,6 +130,7 @@ tests/         Deterministic unit and integration tests
 Start with these records:
 
 - [`PORTFOLIO_STATUS.md`](PORTFOLIO_STATUS.md) — completed work, remaining release tasks, stop line, and resume bullets.
+- [`FINAL_EVALUATION_GATE.md`](FINAL_EVALUATION_GATE.md) — why calibration and locked test remain closed, and the one condition for opening them.
 - [`experiments/README.md`](experiments/README.md) — short navigation path through the retained experiment history.
 - [`DATASET_NOTICE.md`](DATASET_NOTICE.md) — benchmark licensing and redistribution boundary.
 - [`PROJECT_PROPOSAL.md`](PROJECT_PROPOSAL.md) — research questions, scope, and completion criteria.
@@ -144,3 +145,9 @@ Start with these records:
 ## Honest project boundary
 
 This is a portfolio research MVP, not a production document platform. It does not claim that retrieval is solved, that six-case comparison validation estimates population performance, or that visual processing should be used on every page. Its contribution is a measured, failure-driven pipeline that makes retrieval gaps, grounding errors, abstentions, cost, and provenance observable instead of hiding them behind a single answer score.
+
+## License
+
+Original project code is available under the [MIT License](LICENSE). Benchmark annotations,
+source PDFs, model outputs, and other third-party artifacts retain their respective terms; see
+the [dataset and artifact notice](DATASET_NOTICE.md).

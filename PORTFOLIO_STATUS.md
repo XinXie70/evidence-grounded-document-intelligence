@@ -44,9 +44,10 @@
       local copies and a verified recovery bundle.
 - [x] Add a benchmark-usage notice and verify public history contains no PNG, JPG, or PDF files.
 - [x] Create a clean portfolio commit and review the Git diff.
-- [ ] Choose a license for the repository's original source code before public release.
-- [ ] Decide whether to run calibration and locked-test evaluation. This is optional for the MVP
-      and must not become another open-ended tuning cycle.
+- [x] Release the repository's original source code under the MIT License while keeping dataset
+      and third-party artifact terms separate.
+- [x] Defer calibration and locked-test execution until a generic R1 visual route is frozen on
+      tune-only evidence; document the one-iteration stop rule.
 
 ## Stop line
 

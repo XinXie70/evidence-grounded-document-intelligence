@@ -15,8 +15,9 @@ This repository's primary benchmark is DocScope, pinned at dataset revision
 See [`data/manifests/source.json`](data/manifests/source.json) for the pinned source, official code
 revision, observed corpus counts, and licensing metadata.
 
-No separate license for the repository's original source code has been declared yet. A public
-release should add one only after the project owner chooses the intended reuse terms.
+The repository's original source code is released under the MIT License. This does not relicense
+DocScope annotations, source PDFs, model outputs, or other third-party material; those remain
+subject to their respective terms.
 
 ## Public release audit
 

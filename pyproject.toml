@@ -3,6 +3,7 @@ name = "evidence-grounded-document-intelligence"
 version = "0.1.0"
 description = "Reproducible evaluation harness for evidence-grounded document intelligence"
 requires-python = ">=3.11"
+license = "MIT"
 dependencies = [
     "openai==3.7.0",
     "pdfplumber==0.11.9",
