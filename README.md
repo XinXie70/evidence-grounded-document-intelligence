@@ -1,5 +1,7 @@
 # Evidence-Grounded Document Intelligence
 
+[English](README.md) | [简体中文](README.zh-CN.md)
+
 A reproducible research system for answering questions over long PDFs **with page-level evidence and an explicit option to abstain**.
 
 ## At a glance
