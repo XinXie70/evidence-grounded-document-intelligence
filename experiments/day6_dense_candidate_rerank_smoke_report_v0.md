@@ -7,21 +7,32 @@ reranks only those candidates using the full question. The top two selected phys
 are then supplied in full to grounded reasoning. Chunking is used only for page scoring;
 partial chunks are not used as reasoning evidence.
 
-The selected pages were:
+Terminology used below:
 
-- POPIA threshold: 12, 17.
-- District population difference: 12, 19.
-- Weekday activity difference: 21, 55.
+- **Dense-reranked Top-2 supplied pages** are the two pages selected from the RRF Top-10 and sent
+  to the reasoner as input.
+- **Benchmark evidence pages** are the DocScope gold pages used only for post-hoc evaluation.
+- **LLM-cited pages** are the subset of supplied pages that the reasoner cited in its answer. A
+  supplied page is not automatically a cited page.
 
-All three selections contained every DocScope gold page for their question.
+| Case | Dense-reranked Top-2 supplied pages | Benchmark evidence pages | LLM-cited pages |
+|---|---|---|---|
+| POPIA threshold | 12, 17 | 12 | 12 |
+| District population difference | 12, 19 | 19 | 19 |
+| Weekday activity difference | 21, 55 | 21, 55 | 21 |
+
+All three Top-2 input sets contained every DocScope evidence page for their question. The first
+two questions required only one benchmark page, so the reasoner cited that supporting page rather
+than both supplied pages. The weekday question required both supplied pages, but the reasoner
+cited only page 21 and ignored the more precise value on page 55.
 
 ## Observed reasoning results
 
-| Case | Strict result | Citation |
+| Case | Strict result | Why |
 |---|---|---|
-| POPIA threshold | correct: 18 years | page 12 |
-| District population difference | correct: 91,330 | page 19 |
-| Weekday activity difference | wrong: 6.0 vs 6.01 | page 21 only |
+| POPIA threshold | correct: 18 years | Gold page 12 was supplied and cited |
+| District population difference | correct: 91,330 | Gold page 19 was supplied and cited |
+| Weekday activity difference | wrong: 6.0 vs 6.01 | Both gold pages were supplied, but only page 21 was used and cited |
 
 All 3/3 responses obeyed the citation/output contract. Strict benchmark accuracy was 2/3.
 The total observed API cost was `$0.011465`.
