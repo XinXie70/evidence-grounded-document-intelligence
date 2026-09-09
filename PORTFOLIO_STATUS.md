@@ -17,7 +17,7 @@
 7. A bounded OCR/visual fallback justified by observed missing-text and layout failures.
 8. A reusable comparison pipeline that extracts grounded facts, performs arithmetic locally,
    validates numeric citations, and preserves abstentions.
-9. Reproducible experiment identities, cost logging, preflight caps, and 286 passing tests.
+9. Reproducible experiment identities, cost logging, preflight caps, and 291 passing tests.
 10. An offline command-line replay that exposes successes and failures without another API call.
 
 ## Frozen headline results
@@ -33,7 +33,7 @@
 | Generic comparison evidence match | 5/6 | frozen six-document validation |
 | Verified citations among answered cases | 5/5 | frozen six-document validation |
 
-## Remaining work before a public GitHub release
+## Completed preparation for a public GitHub release
 
 - [x] Replace the obsolete Day-1 README with the full project story.
 - [x] Add a zero-cost offline result demo.
@@ -64,7 +64,7 @@ specific unchecked release item or test a failure already documented above.
   from 70.71% to 77.41% on 239 document-isolated development questions.
 - Designed Oracle Evidence, citation verification, selective answering, and OCR/visual fallback
   experiments to attribute retrieval, representation, and reasoning failures; shipped immutable
-  experiment records, API cost controls, and 286 automated tests.
+  experiment records, API cost controls, and 291 automated tests.
 
 These bullets deliberately describe development results rather than claiming locked-test or
 production performance.

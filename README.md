@@ -2,6 +2,17 @@
 
 A reproducible research system for answering questions over long PDFs **with page-level evidence and an explicit option to abstain**.
 
+## At a glance
+
+- **273 PDFs / 14,014 pages** validated, checksummed, and split by document.
+- **239 answerable development questions** used for retrieval evaluation.
+- **77.41% Complete Evidence Recall@10** with BM25 + dense reciprocal-rank fusion, up from
+  70.71% for the BM25 baseline.
+- **291 deterministic tests** covering data isolation, retrieval, evidence packaging, grounding,
+  citations, abstention, cost controls, and failure recovery.
+- **Locked test remains untouched**; reported results are development experiments, not inflated
+  final-test claims.
+
 The project studies a practical problem: a language model may be capable of answering a question, but only if the system first finds all required evidence and preserves tables, charts, and page provenance. The core pipeline is therefore:
 
 ```text
@@ -24,6 +35,32 @@ Ordinary document QA often reports only whether the final answer looks correct. 
 3. **Reliability:** does it refuse when the supplied evidence is incomplete?
 
 The primary benchmark is [DocScope](https://huggingface.co/datasets/MiliLab/DocScope), pinned to an immutable revision. Its source PDFs are not redistributed by this repository.
+
+## System architecture
+
+```mermaid
+flowchart LR
+    A[Long PDF] --> B[Page records<br/>text + provenance]
+    B --> C[Text-quality and<br/>visual-route audit]
+    C --> D[BM25 retrieval]
+    C --> E[Dense retrieval]
+    D --> F[RRF candidate fusion]
+    E --> F
+    C -. observed failure only .-> G[Bounded OCR / visual fallback]
+    G --> F
+    F --> H[Evidence package<br/>ranked pages + citations]
+    H --> I[Grounded fact extraction]
+    I --> J[Local comparison / arithmetic]
+    J --> K[Citation and support checks]
+    K --> L{Enough verified evidence?}
+    L -->|yes| M[Answer with page citations]
+    L -->|no| N[Abstain]
+    O[Oracle evidence pages] -. diagnostic comparison .-> H
+```
+
+The Oracle Evidence branch is an experiment, not a production shortcut. It supplies benchmark
+evidence pages to the same reasoning component so retrieval failures can be separated from
+reasoning failures.
 
 ## Current results
 
@@ -52,6 +89,11 @@ The 37.5-point C1-to-C2 accuracy gap identifies evidence retrieval and represent
 ### Failure-driven visual recovery
 
 A bounded page-image fallback recovered **3/3 eligible text-only failures** in a small diagnostic pilot: an unreadable chart, two missing-text pages, and a visually structured list. A global document-count case was deliberately excluded because six selected pages could not prove absence across a 42-page document.
+
+A later tune-only experiment attempted to prioritize RRF candidates using generic table/image/vector
+signals across 63 visual questions. Complete Evidence Recall@3 and @5 did not improve, so the
+reranker was dropped under its preregistered rule. This negative result defines the remaining V2
+problem as question-conditioned visual localization rather than generic page-visual detection.
 
 ### Frozen generic comparison validation
 
