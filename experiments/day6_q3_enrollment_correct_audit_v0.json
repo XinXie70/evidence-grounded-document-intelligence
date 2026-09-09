@@ -1,0 +1,23 @@
+{
+  "check": {
+    "accepted": true,
+    "comparative_direction_correct": true,
+    "expected_direction": "more",
+    "expected_magnitude": "939",
+    "left_operand": "1503",
+    "normalized_unit": "students",
+    "numeric_magnitude_correct": true,
+    "observed_contains_fewer": false,
+    "observed_contains_more": true,
+    "policy_action": "accept",
+    "reason": "consistent",
+    "right_operand": "564",
+    "signed_difference": "939"
+  },
+  "experiment_type": "deterministic_comparison_consistency_audit",
+  "paid_api_used": false,
+  "question_id": "urnuuid6977f498-b814-42ae-85db-4adaf7a88c9f::q3",
+  "result_sha256": "1659b92c33ea3015b6047938a24207692e2212a9fcf01d9cb6d0503a37beb0d2",
+  "schema_version": 1,
+  "selection_sha256": "5f4f71afcbc90ea6bbd672028ef2487c22c0b4b86ca94b583ba269cb8186d69d"
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "question_id": "urnuuid72e89e2e-f89d-4cb9-a0d8-2eecfd0cb3c0::q1",
+  "doc_id": "urnuuid72e89e2e-f89d-4cb9-a0d8-2eecfd0cb3c0",
+  "split": "development_tune",
+  "question": "How much more total interest does the compound interest method accumulate compared to the simple interest method over the same period in the furniture purchase example used to explain borrowing costs?",
+  "retrieval_method": "hybrid_rrf_bm25_dense_v0_top10",
+  "candidate_pages": [50, 49, 51, 48, 33, 32, 43, 16, 15, 35],
+  "uses_gold_answer": false,
+  "uses_gold_evidence_pages": false
+}

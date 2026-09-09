@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "experiment_type": "oracle_page_layout_table_diagnostic",
+  "question_id": "urnuuid111476ed-6700-4be2-85cc-3fc17696167e::q3",
+  "doc_id": "urnuuid111476ed-6700-4be2-85cc-3fc17696167e",
+  "source_pdf": "data/raw/docscope/pdfs/urnuuid111476ed-6700-4be2-85cc-3fc17696167e.pdf",
+  "pages": [21, 55],
+  "configuration": {
+    "extractor": "pdfplumber",
+    "extractor_version": "0.11.9",
+    "vertical_strategy": "text",
+    "horizontal_strategy": "text",
+    "intersection_tolerance": 5,
+    "text_x_tolerance": 2,
+    "text_y_tolerance": 3,
+    "uses_gold_pages_to_isolate_within_page_structure": true,
+    "paid_api_used": false
+  },
+  "observations": [
+    {
+      "page": 21,
+      "default_line_table_count": 0,
+      "text_alignment_table_count": 1,
+      "recovered_fact": {
+        "table": "Distribution of average time spent on main activity per weekday by sex",
+        "unit": "hours",
+        "row": "Personal care",
+        "column_path": ["Males"],
+        "value": "10.8"
+      }
+    },
+    {
+      "page": 55,
+      "default_line_table_count": 2,
+      "text_alignment_table_count": 1,
+      "recovered_fact": {
+        "table": "Distribution of average time spent on housework and family care per weekday by sex and marital status",
+        "unit": "minutes",
+        "row": "Total",
+        "column_path": ["Females", "Total"],
+        "value": "287.4"
+      }
+    }
+  ],
+  "calculation": {
+    "expression": "10.8 - (287.4 / 60)",
+    "result_hours": 6.01
+  },
+  "decision": "The table structure is recoverable from word coordinates. Proceed to a bounded, question-guided table fact selector before considering an LLM request. Do not promote this oracle-page diagnostic as a retrieval method."
+}

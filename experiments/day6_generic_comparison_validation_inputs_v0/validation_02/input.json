@@ -1,0 +1,121 @@
+{
+  "condition": "real_retrieval_fact_extraction",
+  "doc_id": "urnuuid38f64288-801b-4a01-b228-8c98e35b5b9b",
+  "evidence_pages": [
+    23,
+    25,
+    19,
+    16,
+    21,
+    31,
+    39,
+    13,
+    29,
+    22
+  ],
+  "model_input": {
+    "evidence": [
+      {
+        "page": 23,
+        "text": "( 21 / 40 ) 4.5 Connection to the Target System When connecting the M34551T2-MCU board to the target system: Connect the 50-wire normal-pitch cable included with the MCU board to the 50-pin dual-in-line pins on the target system. Following products are required for connection to the target system. (1) 100-wire half-pitch cable (40 cm) (2) PCA4029 pitch converter board (3) 50-wire normal-pitch cable (10 cm) Figure 4.7 depicts the M34551T2-MCU board connected to the target system using the 50-wire normal-pitch cable. Table 4.8 lists the connector signal assignments of the 50-wire normal-pitch cable. Figure 4.8 shows the pin layout of the 50-wire normal-pitch cable. Figure 4.7 Connecting the MCU board to the target system using dual-in-line pins"
+      },
+      {
+        "page": 25,
+        "text": "( 23 / 40 ) Some signals connected to the target system are emulated on the M34551T2-MCU board. For details, see \"Chapter 7. Connection Circuit Diagram\". • Pins connected directly to the target system (6 types, 24 lines) (1) SEG0 - SEG15 (2) COM0 - COM3 (3) CARR (4) D6* (5) D7* (6) VSS • Pins connected to the target system via emulation circuits, etc. (6 types, 20 lines) (1) P00 - P03 (2) P10 - P13 (3) P20 - P23 (4) D0 - D5 (5) RESET * (6) VDD • Pins not connected to the target system (5 types, 5 lines) (1) XIN (2) XOUT (3) CNVSS (4) XCIN * (5) XCOUT * * Not connected to the target system when the sub-clock is selected (switch SW8: \"XC\"). The external clock signal (32.768 kHz) is input to the XCIN pin from the oscillator of the M34551T2- MCU board. And the XCOUT pin is not connected. 4.6 LED Figure 4.9 shows the LED layout of the M34551T2-MCU. The LED lights in green when the power is supplied to the MCU board. Figure 4.9 Layout of the LED"
+      },
+      {
+        "page": 19,
+        "text": "( 17 / 40 ) 4.4 Description of Connectors The M34551T2-MCU board has eight connectors. Table 4.4 lists the functions of these connectors. Figure 4.3 shows the positions of connectors on the MCU board. Table 4.4 Connectors Figure 4.3 Positions of connectors Connects the evaluation MCU bus. Connects the monitor CPU bus. Connects the target system. (100-pin) Connects the external trigger signal. (2-pin) Connects the evaluation board. Connects the oscillator circuit board. (4-pin) Connects PCA7745. Connector J1 J2 J3 J4 J5 J6 J7, J8 Function"
+      },
+      {
+        "page": 16,
+        "text": "( 14 / 40 ) 4.2 Specifications Table 4.1 lists specifications of the M34551T2-MCU. Table 4.1 M34551T2-MCU Specifications Port P20, P21 *2 P10 - P13 P00 - P03 D0 - D5 M34551MX-XXXFP M34555MX-XXXFP M34551E8FP (included) M34555M4-002FP (mounted) Direction Input Input/output Devices used Input: 74HC4066 Input: 74HC541 Output: 74LS06 Output type - N-channel open drain 233 (L) x 135 (W) x 26 (H) mm 5 to 35 °C (non-condensing) M34551T2-MCU *3 100-wire half-pitch cable 50-wire normal-pitch cable External trigger cable PCA4029 M34551E8FP (for replacement) OSC-2 (for changing frequencies) *4 Power code Rubber legs (4 pieces) Applicable MCUs Evaluation MCUs Maximum operating clock frequency Target system voltage Power supply Port emulation Board dimensions Operating temperature Product configuration *1 Operates in the medium-speed mode (instruction clock: f (X IN)/12) immediately after reset termination. *2 Ports P2 0 and P21 are used with both SEG16 and SEG17, and function as output ports when the segment output is selected. *3 \"M34551T-MCU\" is printed on the board. *4 The M34551T2-MCU has an oscillator circuit board OSC-2 (for 4.0 MHz) when shipped from the factory. In addition, it comes with an oscillator circuit board OSC-2, with only a connector J1 mounted. Supplied by the PC4504's internal power supply (+5 V, +12 V) 3 V or 5 V Medium-speed mode*1: 4.0 MHz High-speed mode: 1.0 MHz Medium-speed mode*1: 8.0 MHz High-speed mode: 2.0 MHz XC clock: 32 kHz (using the crystal oscillator on the board) 3 V 5 V 3 V / 5 V"
+      },
+      {
+        "page": 21,
+        "text": "( 19 / 40 ) (2) Connector J4 To use the external trigger signal as event input of trigger breaks or trace points, connect the 2- wire cable (for external trigger signal) included with your M34551T2-MCU board to the connector J4. Connect the black clip of the external trigger cable to GND, and use the white clip for external trigger signal input. Table 4.6 lists the pin assignments of the connector J4. Table 4.6 Pin assignments of connector J4 Figure 4.5 Pin layout of connector J6 (3) Connector J6 The connector J6 is a connector used to connect an oscillator circuit board OSC-2. When changing the frequency of the oscillator, use the OSC-2 oscillator circuit board (only the connector J1 mounted) included. When changing the frequency, the constants depend on the oscillator you use. It's advisable to refer to the values recommended by the manufacturers. Table 4.7 lists the pin assignments of the connector J6. Figure 4.5 shows the pin layout of the connector J6. For the 4 MHz operation with an oscillator board OSC-2, see Figure 4.6. Table 4.7 Pin assignments of connector J6 Pin No. 1 2 Signal TRIG GND Function External trigger signal input GND input Pin No. 1 2 3 4 Signal VCC GND CLK GND Function Power supply GND Clock input GND"
+      },
+      {
+        "page": 31,
+        "text": "( 29 / 40 ) 6. Precautions to Be Taken When Debugging 6.1 Reset The M34551T2-MCU uses 74AC14 for the reset signal input buffer, and electrical characteristics therefore differ from those of an actual chip. Table 6.1 lists the RESET signal input characteristics on the M34551T2-MCU. Table 6.1 RESET signal input characteristics 6.2 System Clock Use the product within the range of MCU specifications and within the frequency range given in Table 6.2 in accordance with power source voltage and operation mode. Table 6.2 Maximum operating frequencies of the M34551T2-MCU Item H-level threshold voltage L-level threshold voltage Hysteresis voltage Symbol VP VN VH Voltage VCC=3.0 V VCC=4.5 V VCC=5.5 V VCC=3.0 V VCC=4.5 V VCC=5.5 V VCC=3.0 V VCC=4.5 V VCC=5.5 V Min. - - - 0.5 V 0.9 V 1.1 V 0.3 V 0.4 V 0.5 V Max. 2.2 V 3.2 V 3.9 V - - - 1.2 V 1.4 V 1.6 V Voltage 3 V 5 V Mode Medium-speed mode High-speed mode Medium-speed mode High-speed mode Maximum operating frequency Up to 4.0 MHz Up to 1.0 MHz Up to 8.0 MHz Up to 2.0 MHz Use components required for the OSC-2 oscillator circuit board (included) if changing frequency in accordance with the target system. For details about the oscillation circuit constants, consult the manufacturer of your oscillator. 6.3 Real-time Capability of Timer Since the clock on the MCU board is active even during emulation, its timer values are modified. Examples: (1) When single-stepping instructions (2) When referencing or modifying registers or the internal RAM"
+      },
+      {
+        "page": 39,
+        "text": "( 37 / 40 ) 7. Connection Circuit Diagram Figure 7.1 shows the M34551T2-MCU connection circuit diagram. This circuit diagram depicts the M34551T2-MCU connection centering on circuits connected to the target system. Emulator control blocks and other similar circuits that are not connected to the target system are omitted in this diagram. Figure 7.1 Connection circuit diagram : Connected to IC23-8. : Control signal"
+      },
+      {
+        "page": 13,
+        "text": "( 11 / 40 ) Item Product name Quantity 1 M34551T2-MCU* 1 1 2 100-wire half-pitch cable (40 cm) 1 3 50-wire normal-pitch cable (10 cm) 1 4 2-wire cable for external trigger signal (50 cm) 1 5 PCA4029 pitch converter board 1 6 M34551E8FP (MCU for replacement)* 2 1 7 OSC-2 oscillator circuit board (J1 connector mounted)* 3 1 8 Power code* 4 1 9 Rubber legs* 4 4 10 M34551T2-MCU English user's manual (this manual) 1 11 M34551T2-MCU Japanese user's manual 1 3. Contents of the M34551T2-MCU Package 3.1 Things to Check When Unpacking Table 3.1 shows the contents of the M34551T2-MCU package. When unpacking your M34551T2- MCU package, check to see that all the following components are included. Table 3.1 Contents of M34551T2-MCU *1 \"M34551T-MCU\" is printed on the board. *2 M34551T2-MCU is shipped from the factory with the M34555M4-002FP mounted as an evaluation MCU. If using with the 4551 Group, replace the evaluation MCU with the M34551E8FP (included). *3 The M34551T2-MCU is equipped with the OSC-2 oscillator circuit board for 4.0 MHz when shipped from the factory. The OSC-2 oscillator circuit board mounted with only J1 connector for clock frequency alteration is included with the product. *4 The power cable and rubber legs are used when using the M34551T2-MCU as an evaluation board. *5 Keep the packaging carton and cushion material of the M34551T2-MCU to transport it for repair or for other purposes in the future. *6 If you find any item missing or faulty, or any suggestion, contact your local distributor. 3.2 Other Necessary Products To bring forward program development on the 4551/4555 Group, the products given below are necessary in addition to those contained in the package above. Get them separately to be ready when necessary. (1) Emulator main unit: PC4504 (2) Emulator debugger: M3T-PD45 (3) Programming adapter: PCA7414 (for M34551E8FP) * An evaluation MCU is not provided for 4555 Group."
+      },
+      {
+        "page": 29,
+        "text": "( 27 / 40 ) 5.4 Switch Settings The PCA7745 board is equipped with switch SW1 for setting the ROM type. Set switch SW1 according to the type of EPROM to be used as shown in Table 5.1. Table 5.1 Setting switch SW1 on PCA7745 5.5 Connection to the Target System For method of connecting the MCU board to the target system when using this product as an evaluation board, refer to \"4.5 Connecting the MCU board to the Target System\". 5.6 Connection to the External Power Source If using the M34551T2-MCU board as an evaluation board, you must supply power from an external source. Use a power source capable of delivering +5 V or +12 V. Table 5.2 gives the pin positions for the external power source input cable. Table 5.2 Pin positions for the external power source input cable 5.7 Turning the Power On After checking connection of the target system and external power source for the evaluation board, turn the target system and external power supply on. And turn on the power to each equipment following the procedure below successively. (1) Turn on the target system. (2) Turn on the external power source for the evaluation board. Also, follow steps (1) and (2) when powering off. (1) Turn off the target system. (2) Turn off the external power source for the evaluation board. Setting 256 512 Device M5M27C2566AK M5M27C512ALK Pin No. 1 2 3 4 Color Red Black White - Function Input (+5 V) GND Input (+12 V) Not used"
+      },
+      {
+        "page": 22,
+        "text": "( 20 / 40 ) Figure 4.6 Schematic circuit diagram of OSC-2 (4.0 MHz)"
+      }
+    ],
+    "instructions": "Use only the supplied document evidence. Extract exactly two ordered numeric facts needed to answer the comparison question. The first fact must correspond to the first quantity named in the question and the second fact to the second quantity. Do not calculate the difference and do not use outside knowledge. Preserve a shared, explicit unit. Cite only physical PDF pages supplied here. If both facts cannot be identified unambiguously, return status insufficient_evidence with an empty facts list.",
+    "question": "How many total pins does the connector that links to the target system have, according to the specifications table listing the product configuration, compared to the number of pins on the connector used for the oscillator circuit board? What is the difference?",
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "facts": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "cited_pages": {
+                "items": {
+                  "type": "integer"
+                },
+                "type": "array"
+              },
+              "label": {
+                "type": "string"
+              },
+              "metric": {
+                "type": "string"
+              },
+              "unit": {
+                "type": "string"
+              },
+              "value": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "label",
+              "metric",
+              "value",
+              "unit",
+              "cited_pages"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "extracted",
+            "insufficient_evidence"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "status",
+        "facts"
+      ],
+      "type": "object"
+    }
+  },
+  "page_records_sha256": "fe30735b0fbdd074e6c61d5bf2937abc88a51c46259d9e8b90d2d0f8c8fc7c61",
+  "paid_api_used": false,
+  "question_id": "urnuuid38f64288-801b-4a01-b228-8c98e35b5b9b::q1",
+  "retrieval_method": "hybrid_rrf_bm25_dense_v0_top10",
+  "schema_version": 1,
+  "source_case_sha256": "9ff6f3645577ff3004f4a12a9b5a81b39a257097cacbb6146b3e6287d3b321cc",
+  "uses_gold_answer": false,
+  "uses_gold_evidence_pages": false
+}

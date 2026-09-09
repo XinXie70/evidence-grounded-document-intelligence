@@ -1,0 +1,121 @@
+{
+  "condition": "real_retrieval_fact_extraction",
+  "doc_id": "urnuuid654ae1c6-a936-4b45-8c3f-95b14ba397ac",
+  "evidence_pages": [
+    3,
+    32,
+    9,
+    44,
+    45,
+    48,
+    47,
+    4,
+    33,
+    49
+  ],
+  "model_input": {
+    "evidence": [
+      {
+        "page": 3,
+        "text": "September 2009 2 Executive Summary Visitor Estimates  Lee County hosted nearly 150,000 visitors staying in paid accommodations during the month of September 2009, and just over 100,000 staying with friends or relatives while visiting the County, for a total of 249,807 visitors.  Total visitation in September 2009 was down slightly from September 2008 (-4.8%), driven by the substantial decrease in those staying with friends and relatives (-32.8%). Visitation among those staying in paid accommodations increased significantly (+37.2%), lessening the overall decline.  More than two-thirds of September 2009 visitors staying in paid accommodations were U.S. residents (71%), a significantly higher proportion than in September 2008 (43%). The prevalence of September visitors from Germany was substantially lower year-over-year (13% vs. 27% September 2008). Lee County also had a lower share of visitors from the United Kingdom (5% vs. 14% September 2008).  Slightly fewer than half of U.S. visitors staying in paid accommodations during September 2009 came from the South (45%), with one-third of those being Florida residents (31%), representing a substantial increase from last September when 33% were from the South and 15% from Florida. Additionally, one-third of September 2009 visitors hailed from the Midwest, 15% from the Northeast, and 4% from the West. Visitor Expenditures  The average per person per day expenditure was $100.27 in September 2009 – an 8.1% decline from September 2008 ($109.12). The September average expenditure was about the same as that in August 2009 ($102.13).  Total visitor expenditures for September 2009 are estimated at $100 million, a 19.6% drop from $124 million in September 2008. Expenditures among those staying in paid accommodations increased 2% from September 2008 to September 2009. However, September 2009 expenditures among those staying with friends and relatives decreased substantially compared to September 2008 (39.4%), due to a decrease in the number of visitors as well as in the average expenditures per person per day."
+      },
+      {
+        "page": 32,
+        "text": "September 2009 31 Visitor Origin and Visitation Estimates Total September Visitation % Visitor Estimates % Change 2008-2009 2008 2009 2008 2009 Paid Accommodations 40% <58%> 104,967 144,042 37.2% Friends/Relatives <60%> 42% 157,472 105,765 -32.8% Total Visitation 262,439 249,807 -4.8% September Visitor Origin – Visitors Staying in Paid Accommodations 2008 2009 2008 2009 United States 43% <71%> 44,855 102,072 127.6% Germany <27%> 13% 28,173 18,813 -33.2% UK <14%> 5% 14,767 7,440 -49.6% Switzerland 1% 3% 947 4,031 325.7% BeNeLux 3% 2% 3,300 3,312 0.4% France 1% 2% 1,485 2,208 48.7% Scandinavia 2% 1% 2,225 1,986 -10.8% Canada 6% 1% 5,914 1,949 -67.1% Ireland 3% 1% 3,300 1,104 -66.5% Other -- 1% -- 1,007 U.S. Region (Paid Accommodations) 2008 2009 2008 2009 Florida 15% <31%> 6,901 31,329 354.0% South (including Florida) 33% 45% 14,664 45,478 210.1% Midwest 37% 34% 16,389 34,361 109.7% Northeast 15% 15% 6,901 15,159 119.7% West 2% 4% 863 4,042 368.4% No Answer 14% 3% 6,038 3,032 -49.8% 2009 Top DMAs (Paid Accommodations) West Palm Beach-Fort Pierce 9% 9,285 Tampa-Saint Petersburg (Sarasota) 8% 8,542 Indianapolis 7% 7,012 New York 7% 6,942 Miami-Fort Lauderdale 6% 5,830 Orlando-Daytona Beach-Melbourne 4% 4,140 Chicago 4% 3,910 Pittsburgh 4% 3,910 Jacksonville 3% 2,966 Philadelphia 3% 2,966"
+      },
+      {
+        "page": 9,
+        "text": "September 2009 8 September 2009 Lee County Snapshot Total Visitor Expenditures 2008 2009 % Change Total Visitor Expenditures $124,431,421 $100,102,794 -19.6% Paid Accommodations $60,026,032 $61,103,839 1.8% Total September Visitation % Visitor Estimates 2008 2009 2008 2009 Paid Accommodations 40% <58%> 104,967 144,042 Friends/Relatives <60%> 42% 157,472 105,765 Total Visitation 262,439 249,807 September Visitor Origin – Visitors Staying in Paid Accommodations % Visitor Estimates 2008 2009 2008 2009 Florida 15% <31%> 6,901 31,329 United States 43% <71%> 44,855 102,072 Germany <27%> 13% 28,173 18,813 UK <14%> 5% 14,767 7,440 Switzerland 1% 3% 947 4,031 BeNeLux 3% 2% 3,300 3,312 France 1% 2% 1,485 2,208 Scandinavia 2% 1% 2,225 1,986 Canada 6% 1% 5,914 1,949 Ireland 3% 1% 3,300 1,104 Other -- 1% -- 1,007 Average Per Person Per Day Expenditures 2008 2009 % Change $109.12 $100.27 -8.1% First-Time/Repeat Visitors to Lee County 2008 2009 First-time <39%> 30% Repeat 61% 67% Average Occupancy Rate Average Daily Rate RevPAR 2008 2009 % Change 2008 2009 % Change 2008 2009 % Change Property Managers Responding 131 138 132 142 131/132 138/142 Hotel/Motel/Resort/B&B 37.2% 38.4% 3.2% $103.02 $91.17 -11.5% $38.28 $35.00 -8.6% Condo/Cottage/Vacation Home 17.0% 20.6% 21.2% $128.25 $131.25 2.3% $21.74 $26.97 24.1% RV Park/Campground 17.2% 29.3% 70.3% $29.37 $39.84 35.7% $5.05 $11.66 130.9% AVERAGE 27.5% 32.0% 16.4% $96.52 $87.11 -9.8% $26.49 $27.91 5.4%"
+      },
+      {
+        "page": 44,
+        "text": "September 2009 43 Total Visitor Expenditures by Spending Category ALL PROPERTIES Staying in Paid Accommodations Visiting Friends and Relatives/ Day Trippers 2008 2009 % Change 2008 2009 % Change TOTAL $60,026,032 $61,103,839 1.8% $64,405,389 $38,998,955 -39.4% Lodging Accommodations $16,516,559 $17,608,327 6.6% $0 $0 -- Shopping $16,016,356 $15,883,623 -0.8% $22,355,768 $13,390,475 -40.1% Food and Beverages $13,692,058 $14,737,030 7.6% $20,210,047 $12,345,251 -38.9% Ground Transportation $4,444,055 $4,433,034 -0.2% $8,392,899 $4,413,601 -47.4% Liquor Purchases $2,650,219 $2,537,326 -4.3% $4,249,152 $2,669,357 -37.2% Sport Fees $1,812,678 $1,532,175 -15.5% $608,238 $981,960 61.4% Historic/Cultural Site Admissions $987,206 $1,112,047 12.6% $2,760,254 $1,260,489 -54.3% Other Sightseeing/Attractions $1,543,834 $1,096,551 -29.0% $1,320,370 $1,090,156 -17.4% Other Evening Entertainment $974,642 $734,526 -24.6% $2,280,115 $1,080,852 -52.6% Popular Events Admissions $547,335 $514,614 -6.0% $983,278 $949,939 -3.4% Gaming $326,819 $402,883 23.3% $536,869 $322,982 -39.8% All Other $514,271 $511,703 -0.5% $708,399 $493,893 -30.3%"
+      },
+      {
+        "page": 45,
+        "text": "September 2009 44 Total Visitor Expenditures by Lodging Type September Total Expenditures by Lodging Type 2008 2009 % Change 2008 2009 TOTAL $124,431,421 $100,102,794 -19.6% 100% 100% Visiting Friends & Relatives/Day Trippers $64,405,389 $38,998,955 -39.4% 52% 39% Paid Accommodations $60,026,032 $61,103,839 1.8% 48% 61% Hotel/Motel/Resort/B&B $42,988,325 $37,485,932 -12.8% 35% 37% Condo/Cottage/Vacation Home $12,886,521 $14,130,536 9.7% 10% 14% RV Park/Campground $4,151,186 $9,487,371 128.5% 3% 9% Expenditures by Lodging Type (Millions) $64.4 $60.0 $39.0 $61.1 $0 $10 $20 $30 $40 $50 $60 $70 VFR/Day Trippers Paid Accommodations 2008 2009 Paid Accommodations Expenditures by Lodging Type (Millions) $12.9 $4.2 $37.5 $14.1 $9.5 $43.0 $0 $10 $20 $30 $40 $50 Hotel/Motel/Resort/B&B Condo/Cottage/Vacation Home RV Park/Campground 2008 2009"
+      },
+      {
+        "page": 48,
+        "text": "September 2009 47 Impact on Household Income for Lee County Residents As stated earlier, in order to produce the output (food, lodging, entertainment, etc.) purchased by visitors, businesses have to employ people. This requires business owners to pay wages and salaries to their employees, and also includes proprietary income for the business owner in some cases. The wages and salaries paid in order to produce what is purchased with visitor expenditures is the household income impact of the visitor expenditures. Direct household income impact includes the direct wages and salaries paid in order to produce the goods and services purchased with the visitor expenditures. Total household income includes the wages and salaries paid in order to produce the goods and services purchased with the visitor expenditures PLUS the wages and salaries necessary to produce the additional output purchased with the recirculation of money in Lee County. F or example, wages brought home by a hotel desk clerk are then used to purchase food and service s for that person and his/her family, leading to additional wages and salaries being paid to others (grocery store employee, utility crews, etc.). Resident Household Income Impact September 2009 $30.742 $50.330 $0 $10 $20 $30 $40 $50 $60 Direct Impact Total Impact Millions $ 2009"
+      },
+      {
+        "page": 47,
+        "text": "September 2009 46 Impact on Jobs for Lee County Residents In order to produce the output (food, lodging, entertainment etc.) purchased by visitors, businesses have to em ploy people. The number of jobs necessary to produce what is purchased with visitor expenditures is the employment impact of the visitor e xpenditures. Direct employment includes the number of employees necessary to produce the direct output purchased w ith the visitor expenditures. Total employment includes the number of employees necessary to produce the direct output purchased with the visitor expenditures PLUS the employees necessary to produce additional output purchased with the recirculation of mo ney in Lee County. For example, wages paid to a hotel desk clerk are then used to purchase food and services for that employee, leading to additional supported jobs (grocery store proprietor, auto mechanic, etc.). Resident Employment Impact September 2009 $1,504 $2,107 $0 $500 $1,000 $1,500 $2,000 $2,500 Direct Impact Total Impact Millions $ 2009"
+      },
+      {
+        "page": 4,
+        "text": "September 2009 3 Total September Visitation % Visitor Estimates % Change 2008-2009 2008 2009 2008 2009 Paid Accommodations 40% <58%> 104,967 144,042 37.2% Friends/Relatives <60%> 42% 157,472 105,765 -32.8% Total Visitation 262,439 249,807 -4.8% September Visitor Origin – Visitors Staying in Paid Accommodations 2008 2009 2008 2009 United States 43% <71%> 44,855 102,072 127.6% Germany <27%> 13% 28,173 18,813 -33.2% UK <14%> 5% 14,767 7,440 -49.6% Switzerland 1% 3% 947 4,031 325.7% BeNeLux 3% 2% 3,300 3,312 0.4% France 1% 2% 1,485 2,208 48.7% Scandinavia 2% 1% 2,225 1,986 -10.8% Canada 6% 1% 5,914 1,949 -67.1% Ireland 3% 1% 3,300 1,104 -66.5% Other -- 1% -- 1,007 -- U.S. Region (Paid Accommodations) 2008 2009 2008 2009 Florida 15% <31%> 6,901 31,329 354.0% South (including Florida) 33% 45% 14,664 45,478 210.1% Midwest 37% 34% 16,389 34,361 109.7% Northeast 15% 15% 6,901 15,159 119.7% West 2% 4% 863 4,042 368.4% No Answer 14% 3% 6,038 3,032 -49.8% 2009 Top DMAs (Paid Accommodations) West Palm Beach-Fort Pierce 9% 9,285 Tampa-Saint Petersburg (Sarasota) 8% 8,542 Indianapolis 7% 7,012 New York 7% 6,942 Miami-Fort Lauderdale 6% 5,830 Orlando-Daytona Beach-Melbourne 4% 4,140 Chicago 4% 3,910 Pittsburgh 4% 3,910 Jacksonville 3% 2,966 Philadelphia 3% 2,966"
+      },
+      {
+        "page": 33,
+        "text": "September 2009 32 Occupancy Data Analysis September 2009 Property managers representing 150 properties in Lee County were interviewed for the September 2009 Occupancy Survey between September 2 and September 29, 2009, a sample considered accurate to plus or minus 7.7 percentage points at the 95% confidence level. Property managers representing 140 properties in Lee County were interviewed for the September 2008 Occupancy Survey between October 1 and October 15, 2008, a sample considered accurate to plus or minus 8.3 percentage points at the 95% confidence level."
+      },
+      {
+        "page": 49,
+        "text": "September 2009 48 Impact on State and Local Government Revenues In producing and selling any goods and services purchased by visitors, both local and state revenues are collected by local and state governments. The gross government revenues accruing to governments as a result of producing the output purchased with visitor expenditures is the government revenue impact. Local government revenue impact is a result of revenues provided to the local (Lee County) government. This includes the bed tax, local property tax, any local-option sales tax, and any operating income for local government agencies. State government revenue impact is a result of revenues provided to the Florida state government. This includes sales tax and any operating income for state government agencies. The following are included in government revenues as appropriate for the local area: gasoline taxes, vehicle licenses and registrations, boat registrations, hunting and fishing licenses, liquor taxes, local and state park user fees, etc. Tax ratios used to calculate these government revenue impacts are adjusted to conform to data reported in State and Local Government Finance Data (SLGF, Bureau of the Census). Local Government Revenues Impact September 2009 $2.460 $5.083 $0 $5 $10 $15 Direct Impact Total Impact Millions $ 2009 State Government Revenues Impact September 2009 $7.191 $10.760 $0 $5 $10 $15 Direct Impact Total Impact Millions $ 2009"
+      }
+    ],
+    "instructions": "Use only the supplied document evidence. Extract exactly two ordered numeric facts needed to answer the comparison question. The first fact must correspond to the first quantity named in the question and the second fact to the second quantity. Do not calculate the difference and do not use outside knowledge. Preserve a shared, explicit unit. Cite only physical PDF pages supplied here. If both facts cannot be identified unambiguously, return status insufficient_evidence with an empty facts list.",
+    "question": "In the table showing total visitation data for September, what is the difference between the 2008 visitor estimate for friends/relatives and the 2009 visitor estimate for paid accommodations?",
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "facts": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "cited_pages": {
+                "items": {
+                  "type": "integer"
+                },
+                "type": "array"
+              },
+              "label": {
+                "type": "string"
+              },
+              "metric": {
+                "type": "string"
+              },
+              "unit": {
+                "type": "string"
+              },
+              "value": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "label",
+              "metric",
+              "value",
+              "unit",
+              "cited_pages"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "extracted",
+            "insufficient_evidence"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "status",
+        "facts"
+      ],
+      "type": "object"
+    }
+  },
+  "page_records_sha256": "5b6d7fd5630ba4eeaabcce97201d9b27ead2bc0571f952dde88c5ffbb495ef65",
+  "paid_api_used": false,
+  "question_id": "urnuuid654ae1c6-a936-4b45-8c3f-95b14ba397ac::q3",
+  "retrieval_method": "hybrid_rrf_bm25_dense_v0_top10",
+  "schema_version": 1,
+  "source_case_sha256": "01fc5c2efe756754c69cbdc791854f25e30b0254132a582137b1c6c1b652f706",
+  "uses_gold_answer": false,
+  "uses_gold_evidence_pages": false
+}

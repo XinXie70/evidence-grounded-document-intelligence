@@ -1,0 +1,14 @@
+{
+  "api": "openai_responses",
+  "approved_hard_cap_usd": 1.0,
+  "endpoint_mode": "v1/responses",
+  "experiment_id": "day6_q3_layout_facts_reasoning_smoke_v0",
+  "max_output_tokens": 512,
+  "max_retries": 0,
+  "model": "gpt-5.6-terra",
+  "pricing_snapshot_path": "openai_gpt_5_6_terra_pricing_2026-09-02.json",
+  "provider": "openai",
+  "reasoning_effort": "low",
+  "selection_status": "one-request q3 causal smoke using automatically selected layout facts; oracle pages only; USD 1 hard cap",
+  "store": false
+}

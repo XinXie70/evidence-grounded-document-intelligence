@@ -1,0 +1,153 @@
+{
+  "case_count": 6,
+  "cases": [
+    {
+      "candidate_pages": [
+        29,
+        36,
+        28,
+        37,
+        20,
+        4,
+        7,
+        13,
+        41,
+        31
+      ],
+      "case_id": "validation_01",
+      "doc_id": "urnuuid181bfd7d-8bf2-4f0a-95e3-1201ac3321aa",
+      "page_records": "data/derived/page_records/urnuuid181bfd7d-8bf2-4f0a-95e3-1201ac3321aa.jsonl",
+      "question": "What is the difference between the ZIP codes in the two mailing addresses shown in the manual?",
+      "question_id": "urnuuid181bfd7d-8bf2-4f0a-95e3-1201ac3321aa::q2",
+      "retrieval_method": "hybrid_rrf_bm25_dense_v0_top10",
+      "uses_gold_answer": false,
+      "uses_gold_evidence_pages": false
+    },
+    {
+      "candidate_pages": [
+        23,
+        25,
+        19,
+        16,
+        21,
+        31,
+        39,
+        13,
+        29,
+        22
+      ],
+      "case_id": "validation_02",
+      "doc_id": "urnuuid38f64288-801b-4a01-b228-8c98e35b5b9b",
+      "page_records": "data/derived/page_records/urnuuid38f64288-801b-4a01-b228-8c98e35b5b9b.jsonl",
+      "question": "How many total pins does the connector that links to the target system have, according to the specifications table listing the product configuration, compared to the number of pins on the connector used for the oscillator circuit board? What is the difference?",
+      "question_id": "urnuuid38f64288-801b-4a01-b228-8c98e35b5b9b::q1",
+      "retrieval_method": "hybrid_rrf_bm25_dense_v0_top10",
+      "uses_gold_answer": false,
+      "uses_gold_evidence_pages": false
+    },
+    {
+      "candidate_pages": [
+        26,
+        6,
+        33,
+        25,
+        19,
+        10,
+        7,
+        8,
+        37,
+        24
+      ],
+      "case_id": "validation_03",
+      "doc_id": "urnuuid3a8634c5-69b8-475f-9665-f6d5138e23d8",
+      "page_records": "data/derived/page_records/urnuuid3a8634c5-69b8-475f-9665-f6d5138e23d8.jsonl",
+      "question": "What is the difference between the NA segment's total revenue in HY 2024 from the segment reconciliation table and the United States revenue in HY 2024 from the geographic revenue breakdown?",
+      "question_id": "urnuuid3a8634c5-69b8-475f-9665-f6d5138e23d8::q2",
+      "retrieval_method": "hybrid_rrf_bm25_dense_v0_top10",
+      "uses_gold_answer": false,
+      "uses_gold_evidence_pages": false
+    },
+    {
+      "candidate_pages": [
+        22,
+        35,
+        3,
+        18,
+        25,
+        23,
+        26,
+        17,
+        24,
+        19
+      ],
+      "case_id": "validation_04",
+      "doc_id": "urnuuid42d553ad-d2e0-45de-b0a3-b164ea985ef0",
+      "page_records": "data/derived/page_records/urnuuid42d553ad-d2e0-45de-b0a3-b164ea985ef0.jsonl",
+      "question": "What is the difference between the induced employment figure for the five counties and the total employment figure for the three South Carolina counties, as shown in the economic impact tables?",
+      "question_id": "urnuuid42d553ad-d2e0-45de-b0a3-b164ea985ef0::q1",
+      "retrieval_method": "hybrid_rrf_bm25_dense_v0_top10",
+      "uses_gold_answer": false,
+      "uses_gold_evidence_pages": false
+    },
+    {
+      "candidate_pages": [
+        23,
+        22,
+        21,
+        18,
+        29,
+        4,
+        5,
+        10,
+        28,
+        13
+      ],
+      "case_id": "validation_05",
+      "doc_id": "urnuuid44ff3ab7-6cd7-40f9-8abc-28680be05c68",
+      "page_records": "data/derived/page_records/urnuuid44ff3ab7-6cd7-40f9-8abc-28680be05c68.jsonl",
+      "question": "In the full-year forecast operating income waterfall chart, what is the difference between the total one-time cost for FY2021 and the FY2021 revised forecast's one-time cost difference shown in the revised-versus-previous forecast waterfall chart?",
+      "question_id": "urnuuid44ff3ab7-6cd7-40f9-8abc-28680be05c68::q2",
+      "retrieval_method": "hybrid_rrf_bm25_dense_v0_top10",
+      "uses_gold_answer": false,
+      "uses_gold_evidence_pages": false
+    },
+    {
+      "candidate_pages": [
+        13,
+        8,
+        12,
+        18,
+        21,
+        14,
+        11,
+        7,
+        2,
+        19
+      ],
+      "case_id": "validation_06",
+      "doc_id": "urnuuid77b8c272-7717-468a-9c12-b41257db91d9",
+      "page_records": "data/derived/page_records/urnuuid77b8c272-7717-468a-9c12-b41257db91d9.jsonl",
+      "question": "In the study on language support in Mauritian schools, what is the difference between the mean score of language support at home as perceived by children and the mean score of language support at home as reported by parents?",
+      "question_id": "urnuuid77b8c272-7717-468a-9c12-b41257db91d9::q1",
+      "retrieval_method": "hybrid_rrf_bm25_dense_v0_top10",
+      "uses_gold_answer": false,
+      "uses_gold_evidence_pages": false
+    }
+  ],
+  "experiment_type": "frozen_generic_comparison_validation_selection",
+  "leakage_controls": {
+    "uses_gold_answer": false,
+    "uses_gold_evidence_pages": false,
+    "uses_retrieval_scores": false,
+    "uses_retrieved_page_order_only": true
+  },
+  "paid_api_used": false,
+  "schema_version": 1,
+  "selection_policy": "lexicographically_first_difference_questions_from_distinct_documents_excluding_all_method_development_documents",
+  "source_sha256": {
+    "protocol": "69d2c9a521aab9941393d8a72180de768c108ba99abca696a9a9d2a8cf9fa791",
+    "retrieval": "c07458da4073f8f10ed9859f89cb547e35aa996979f1279f612fd64a46884b9b",
+    "scope": "98db7feead3c2aa1d8aea380d0779119c85ec1578e2657951c0b19767acf9987"
+  },
+  "split": "development_tune"
+}

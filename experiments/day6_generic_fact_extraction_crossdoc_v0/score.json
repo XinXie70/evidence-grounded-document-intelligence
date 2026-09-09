@@ -1,0 +1,62 @@
+{
+  "benchmark_sha256": "ad07c6dfc43e5275ae92b894bf69f151c3dd9467ed79f5b12df904438c5ecb8e",
+  "cases": [
+    {
+      "answer_match": true,
+      "case_id": "visitation",
+      "complete_evidence_match": false,
+      "gold_evidence_pages": [
+        4
+      ],
+      "gold_magnitude": "13430",
+      "predicted_magnitude": "13430",
+      "predicted_value_pages": [
+        3
+      ],
+      "status": "scored"
+    },
+    {
+      "answer_match": true,
+      "case_id": "faculty",
+      "complete_evidence_match": true,
+      "gold_evidence_pages": [
+        9,
+        15
+      ],
+      "gold_magnitude": "30",
+      "predicted_magnitude": "30",
+      "predicted_value_pages": [
+        9,
+        15
+      ],
+      "status": "scored"
+    },
+    {
+      "answer_match": true,
+      "case_id": "net_assets",
+      "complete_evidence_match": true,
+      "gold_evidence_pages": [
+        22
+      ],
+      "gold_magnitude": "1057264624",
+      "predicted_magnitude": "1057264624",
+      "predicted_value_pages": [
+        22
+      ],
+      "status": "scored"
+    }
+  ],
+  "experiment_type": "posthoc_comparison_generalization_score",
+  "gold_labels_used_only_after_predictions_frozen": true,
+  "paid_api_used": false,
+  "probe_sha256": "4755a4c681b2e0d2ca287183b37c73b63bc2959adba437bd6ec4583f0788c0d3",
+  "schema_version": 1,
+  "split": "development_tune",
+  "summary": {
+    "answer_exact_match_count": 3,
+    "answer_exact_match_rate": 1.0,
+    "case_count": 3,
+    "complete_evidence_match_count": 2,
+    "complete_evidence_match_rate": 0.6666666666666666
+  }
+}

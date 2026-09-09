@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "status": "frozen_before_validation_execution",
+  "validation_case_count": 6,
+  "selection_family": "difference_wording",
+  "selection_order": "ascending_question_id",
+  "one_question_per_document": true,
+  "retrieval_method": "hybrid_rrf_bm25_dense_v0_top10",
+  "fact_extraction_config": "configs/reasoning_comparison_fact_extraction_v0.json",
+  "citation_policy": "preserve_supported_else_earliest_common_physical_page_v0",
+  "method_development_doc_ids": [
+    "urnuuid111476ed-6700-4be2-85cc-3fc17696167e",
+    "urnuuid425f7a17-aa57-4cca-b56e-612fe270751d",
+    "urnuuid45a0a8e5-e31b-4e74-9663-f27ab82db68f",
+    "urnuuid654ae1c6-a936-4b45-8c3f-95b14ba397ac",
+    "urnuuid6977f498-b814-42ae-85db-4adaf7a88c9f",
+    "urnuuid72e89e2e-f89d-4cb9-a0d8-2eecfd0cb3c0",
+    "urnuuid7fbb918e-acda-4053-9c23-c16621876e15",
+    "urnuuid8026e4cd-9993-4d10-94fd-4071d4534409",
+    "urnuuid922a78ce-4781-49e4-b9d2-b213b1042f55",
+    "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba",
+    "urnuuide933941e-fb2a-445d-902c-848417372326"
+  ],
+  "post_validation_change_control": "report all outcomes; do not alter this method based on these six cases"
+}

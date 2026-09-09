@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "experiment_type": "unified_comparison_batch_manifest",
+  "split": "development_tune",
+  "entries": [
+    {"case_id": "layout_time_units", "selection": "experiments/day6_q3_layout_fact_selection_v0.json"},
+    {"case_id": "numbered_list_count", "selection": "experiments/day6_q1_list_count_selection_v1.json"},
+    {"case_id": "continued_enrollment", "selection": "experiments/day6_q3_continued_enrollment_selection_v0.json"},
+    {"case_id": "product_depth", "selection": "experiments/day6_q2_product_depth_selection_v0.json"},
+    {"case_id": "interest_methods", "selection": "experiments/day6_q1_interest_method_selection_v0.json"},
+    {"case_id": "balance_sheet", "selection": "experiments/day6_q4_balance_sheet_selection_v0.json"},
+    {"case_id": "qualified_metric", "selection": "experiments/day6_q3_qualified_metric_selection_v0.json"}
+  ]
+}

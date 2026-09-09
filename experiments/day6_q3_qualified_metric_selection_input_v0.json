@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "question_id": "urnuuid7fbb918e-acda-4053-9c23-c16621876e15::q3",
+  "doc_id": "urnuuid7fbb918e-acda-4053-9c23-c16621876e15",
+  "split": "development_tune",
+  "question": "According to the document, how many million bales higher is China's projected ending stocks at the end of the projection period compared to India's projected average annual cotton exports over the next ten years?",
+  "retrieval_method": "hybrid_rrf_bm25_dense_v0_top10",
+  "candidate_pages": [7, 11, 9, 12, 19, 13, 8, 3, 23, 5],
+  "uses_gold_answer": false,
+  "uses_gold_evidence_pages": false
+}

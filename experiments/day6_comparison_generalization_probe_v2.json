@@ -1,0 +1,84 @@
+{
+  "cases": [
+    {
+      "candidate_pages": [
+        7,
+        5,
+        9,
+        4,
+        6,
+        10,
+        8,
+        2,
+        3,
+        28
+      ],
+      "case_id": "heldout_enrollment_full_time",
+      "doc_id": "urnuuid6977f498-b814-42ae-85db-4adaf7a88c9f",
+      "page_records_sha256": "0f503a5dcdf8aff7832b11d283433d44b03715534f9b06a441c33b2189f22b3e",
+      "question": "What is the difference between the grand total of full-time female Bachelor's and 1st Professional degree students and the grand total of full-time male Bachelor's and 1st Professional degree students?",
+      "question_id": "urnuuid6977f498-b814-42ae-85db-4adaf7a88c9f::q2",
+      "selected_facts": [
+        {
+          "group": "Female",
+          "program": "Bachelor's and 1st Professional Degree",
+          "selection_basis": "question_group_and_column_with_repeated_header_page_continuation",
+          "status": "Full-Time",
+          "table_start_page": 6,
+          "total_page": 7,
+          "unit": "students",
+          "value": "3685"
+        },
+        {
+          "group": "Male",
+          "program": "Bachelor's and 1st Professional Degree",
+          "selection_basis": "question_group_and_column_with_repeated_header_page_continuation",
+          "status": "Full-Time",
+          "table_start_page": 4,
+          "total_page": 5,
+          "unit": "students",
+          "value": "1957"
+        }
+      ],
+      "selector_version": "continued_enrollment_table_v0",
+      "status": "success"
+    },
+    {
+      "candidate_pages": [
+        12,
+        6,
+        23,
+        7,
+        11,
+        3,
+        13,
+        5,
+        9,
+        19
+      ],
+      "case_id": "heldout_cotton_growth_rate",
+      "doc_id": "urnuuid7fbb918e-acda-4053-9c23-c16621876e15",
+      "page_records_sha256": "9f592f58cdd9fcd374710b1f2c2c9a13f1b1f7a078176563a07b99539a462518",
+      "question": "According to the document, what is the difference in the projected long-term average annual growth rate of cotton mill use between China and India over the next ten years?",
+      "question_id": "urnuuid7fbb918e-acda-4053-9c23-c16621876e15::q1",
+      "reason": "question must contain one explicit 'compared to' comparison",
+      "selector_version": "qualified_metric_selector_v0",
+      "status": "unsupported"
+    }
+  ],
+  "experiment_type": "held_out_comparison_generalization_probe",
+  "leakage_controls": {
+    "uses_gold_answer": false,
+    "uses_gold_evidence_pages": false
+  },
+  "manifest_sha256": "31b0ccbadc8a8ecf6d5bf897846b9593b85793d525fe32e602e06eb1eabba068",
+  "schema_version": 1,
+  "split": "development_tune",
+  "summary": {
+    "case_count": 2,
+    "paid_api_used": false,
+    "success_count": 1,
+    "success_rate": 0.5,
+    "unsupported_count": 1
+  }
+}

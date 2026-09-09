@@ -1,0 +1,22 @@
+{
+  "candidate_pages": [
+    23,
+    25,
+    19,
+    16,
+    21,
+    31,
+    39,
+    13,
+    29,
+    22
+  ],
+  "case_id": "validation_02",
+  "doc_id": "urnuuid38f64288-801b-4a01-b228-8c98e35b5b9b",
+  "page_records": "data/derived/page_records/urnuuid38f64288-801b-4a01-b228-8c98e35b5b9b.jsonl",
+  "question": "How many total pins does the connector that links to the target system have, according to the specifications table listing the product configuration, compared to the number of pins on the connector used for the oscillator circuit board? What is the difference?",
+  "question_id": "urnuuid38f64288-801b-4a01-b228-8c98e35b5b9b::q1",
+  "retrieval_method": "hybrid_rrf_bm25_dense_v0_top10",
+  "uses_gold_answer": false,
+  "uses_gold_evidence_pages": false
+}

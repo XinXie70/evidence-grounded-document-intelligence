@@ -1,0 +1,121 @@
+{
+  "condition": "real_retrieval_fact_extraction",
+  "doc_id": "urnuuid44ff3ab7-6cd7-40f9-8abc-28680be05c68",
+  "evidence_pages": [
+    23,
+    22,
+    21,
+    18,
+    29,
+    4,
+    5,
+    10,
+    28,
+    13
+  ],
+  "model_input": {
+    "evidence": [
+      {
+        "page": 23,
+        "text": "220.0 225.0 ±0 +0.3 (3.5) +6.3 (2.0) +4.3 (0.4) ±0 200.0 210.0 220.0 FY2021 (Previous forecast) Healthcare Materials Business Innovation Imaging Difference of Non-recurring cost FX Raw material price Others FY2021 (Revised forecast) 23 (Billions of yen) Operating income +¥5.0 billion ¥109 / US$ ¥132 / € ¥112 / US$ ¥130 / € □ Healthcare: Difference in One-time cost ・Medical systems M&A-related expenses ±0.0 ・Pharmaceuticals (small-molecule) asset reductions (4.0) □ Materials: Difference in One-time cost ・Graphic / inkjet asset reductions (1.0) □ Business innovation: Difference in One-time cost ・Structure strengthening expenses +2.0 ・Rebranding expenses ±0.0 □ Imaging: Difference in One-time cost ・Structure strengthening expenses / others +1.0 □ Corporate: Difference in One-time cost ±0.0 One-time Operating Income Analysis (FY2021 Revised forecast vs Previous forecast)"
+      },
+      {
+        "page": 22,
+        "text": "165.5 225.0+46.5 +21.7 (6.7) +15.9 +24.0 (39.0) +18.8 (15.9) (5.8) 150.0 200.0 250.0 FY2020 Healthcare Materials Business Innovation Imaging FY2020 One-time cost FY2021 One-time cost FX Raw material price Others FY2021 Forecast FY2020 FY2021 Difference □ Healthcare: One-time cost ・Medical systems M&A-related expenses +1.6 (6.0) (4.4) ・Pharmaceuticals (small-molecule) asset reductions 0.0 (4.0) (4.0) □ Materials: One-time cost ・Graphic / inkjet asset reductions +7.3 (9.0) (1.7) □ Business innovation: One-time cost ・Structure strengthening expenses +8.8 (6.0) +2.8 ・Rebranding expenses +6.3 (10.0) (3.7) □ Imaging: One-time cost ・Structure strengthening expenses / others 0.0 (3.0) (3.0) □ Corporate: One-time cost 0.0 (1.0) (1.0) Total +24.0 (39.0) (15.0) (Billions of yen) Operating income +¥59.5 billion ¥112 / US$ ¥130 / € ¥106 / US$ ¥124 / € Operating Income Analysis (FY2021 Full-year forecast vs FY2020 Actual)"
+      },
+      {
+        "page": 21,
+        "text": "120.5 186.5+40.7 +22.5 (6.6) +18.9 (12.0) +17.2 (13.8) (0.9) 100.0 125.0 150.0 175.0 200.0 FY2020 Healthcare Materials Business Innovation Imaging Difference of one-time profit and loss FX Raw material price Others FY2021 (Billions of yen) 21Operating income +¥66.0 billion ¥111 / US$ ¥131 / € ¥106 / US$ ¥123 / €  Healthcare: Difference in one-time cost • Medical systems M&A-related expenses (5.2)  Materials: Difference in one-time cost • Graphic / inkjet asset reductions (4.3)  Business Innovation: Difference in one-time cost • FY2020 Q1-Q3: Structure strengthening expenses +5.2 • FY2020 Q1-Q3 : Rebranding expenses +4.4 • FY2021 Q1-Q3 : Structure strengthening expenses (3.3) • FY2021 Q1-Q3 : Rebranding expenses (6.6)  Imaging: Difference in one-time cost • Structure strengthening expenses / others (2.2) Operating Income Analysis (FY2021 1Q-3Q vs FY2020 1Q-3Q)"
+      },
+      {
+        "page": 18,
+        "text": "18 (Billions of yen) 790.0 790.0 0.0 620.0 620.0 0.0 780.0 770.0 (10.0) 320.0 330.0 10.0 2,510.0 2,510.0 0.0 100.0 100.0 0.0 63.0 63.0 0.0 70.0 67.0 (3.0) 25.0 33.0 8.0 (38.0) (38.0) 0.0 220.0 225.0 5.0 Healthcare Materials Total Corporate Expenses & Eliminations Total Imaging Business Innovation Operating Income FY2021 Revised forecast (announced on Feb. 9, 2022) Imaging Business Innovation Materials FY2021 Revised forecast (announced on Feb. 9, 2022) Healthcare Change from previous forecast Change from previous forecast FY2021 Previous forecast (announced on Nov. 4, 2021) FY2021 Previous forecast (announced on Nov. 4, 2021) Revenue FY2021 Forecast by Operating Segment (as of February 9, 2022)"
+      },
+      {
+        "page": 29,
+        "text": "29 Q3 and 9 Months Earnings: Imaging (Billions of yen) Consumer Imaging 76.0 79.0 3.0 (+3.7%) (1.9) (2.6%) 144.3 173.0 28.7 (+19.8%) 19.4 (+13.4%) Professional Imaging 28.7 32.9 4.2 (+14.9%) 2.4 (+8.5%) 74.3 87.2 12.9 (+17.4%) 8.4 (+11.3%) 104.7 111.9 7.2 (+6.8%) 0.5 (+0.5%) 218.6 260.2 41.6 (+19.0%) 27.8 (+12.7%) Note: After elimination of intersegment transactions (Billions of yen) 16.2 22.3 14.1 34.7 [15.5%] [19.9%] [6.5%] [13.3%] Constant-currency basis FY2020 FY2021 14.9 (2.1 times)20.6 (2.5 times)Imaging Total Revenue FY2020 FY2021 Operating Income [Operating Margin] FY2020 FY2021 Change Constant-currency basis 3.8 Change (+37.0%)6.1 (+23.3%) 9 monthsQ3 9 monthsQ3 Constant-currency basis FY2021 ChangeConstant-currency basis Change FY2020"
+      },
+      {
+        "page": 4,
+        "text": "(Billions of yen) Previous Forecast (announced on Nov. 4, 2022) Revised Forecast (announced on Feb. 9, 2022) Change Segment Breakdown Revenue 2,510.0 2,510.0 - Business Innovation -10.0, Imaging +10.0 Operating Income 220.0 225.0 +5.0 Business Innovation -3.0, Imaging +8.0 Net Income Attributable to FUJIFILM Holdings 175.0 185.0 +10.0 (Billions of yen) FY2021 9 months Change from FY2020 Change from FY2019 Revenue 1,860.9 +18.3% +7.7% Operating Income 186.5 +54.8% +23.0% Net Income Attributable to FUJIFILM Holdings 157.1 +24.2% +30.2% Record high 4 Earnings Highlights for Q3 FY2021 Consolidated Performance for Q1-Q3 (9 Months) FY2021 Full-year Forecast for FY2021 Record high Record high Record high Revenue and profits rose significantly, driven by steady recovery from COVID-19 impact and strong sales in the healthcare, electronic materials and imaging businesses. Achieved highest-ever operating income and quarterly net income attributable to FUJIFILM Holdings reflecting revenue increases in all segments. Operating income and net income attributable to FUJIFILM Holdings were revised upward after reflecting Q3 performance. We aim to achieve record-high operating income and net income attributable to FUJIFILM holdings."
+      },
+      {
+        "page": 5,
+        "text": "Bio CDMO Business Life Sciences Business Key Points for Q3 FY2021 Launch of corporate venture capital LS-CVC in the life sciences field We have established a pool of capital to invest in global bio-ventures that have cutting-edge technologies. Through strategic alliances with investee companies, we will further strengthen the life sciences business and create new businesses. ・ Launch of a new manufacturing facility for cell culture media in Europe We will establish a tri-polar global production structure based in Japan, the U.S. and Europe to strengthen support for customers’ drug discovery / pharmaceutical manufacturing. ・ Establishment of “Innovation & Collaboration Center,” a site offering services for optimizing cell culture media, in China We will provide strong support for customers’ drug discovery / pharmaceutical manufacturing using optimized cell culture media based on local needs to expand the cell culture media business in China. Main advantages to be realized through the acquisition: (1) Comprehensive contract services in the cell therapy field (2) Contract development and manufacturing of cell therapies meeting diverse cellular needs (3) Stronger contract service structure for advanced therapies ・ Acquisition of a cell therapy manufacturing facility from Atara Biotherapeutics, Inc. Making full-scale inroads into the cell therapy contract development and manufacturing business, one of cutting-edge therapy fields. We will accelerate business growth by incorporating the strategic LS-CVC into in-house business development. 5"
+      },
+      {
+        "page": 10,
+        "text": "73.3 88.5 72.6 108.6 242.2 379.6 388.1 576.7 36.2 75.3 0.0 10.0 20.0 30.0 40.0 50.0 60.0 70.0 80.0 90.0 100.0 0.0 100.0 200.0 300.0 400.0 500.0 600.0 FY2020 9 months FY2021 9 months Medical Systems Bio CDMO (13.1%) (9.3%) Medical systems Bio CDMO Life sciences Operating income (margin) Medical systems: Revenue ¥379.6 billion (up 56.7% YoY) • In addition to turning FUJIFILM Healthcare into a consolidated subsidiary, steady demand for ultraportable digital X-ray imaging systems and ultrasound diagnostic devices, both useful for pneumonia diagnosis, and strong sales of endoscopes contributed to a surge in revenue. • PMI is progressing well, such as the integration of manufacturing subsidiaries in Japan and sales subsidiaries in the U.S. of both Fujifilm and FUJIFILM Healthcare Bio CDMO: Revenue ¥108.6 billion (up 49.7% YoY) • Favorable performance of contract process development and manufacturing of biopharmaceuticals and manufacture of drug substances for COVID-19 vaccine candidates at the U.S. site resulted in a surge in revenue. Life sciences*: Revenue ¥88.5 billion (up 20.7% YoY) • In the life sciences business, solid sales of cell culture media for biopharmaceutical manufacturing led to a surge in revenue. • In the consumer healthcare business, favorable sales of the Metabarrier EX and other supplements and steady sales of new cosmetic products contributed to higher revenue. *Life sciences: Disclosure segment consisting of life sciences business (iPS cells, cell culture media, reagents), pharmaceutical business and consumer healthcare business (cosmetics, supplements) Significant year-over-year increase of 48.6% in revenue and a 2.1 times increase in operating income contributed by the consolidation of FUJIFILM Healthcare in the medical systems business in addition to organic growth in all sub-segments. 10 (Billions of yen) FY2020 9 months FY2021 9 months Business Summary: Healthcare"
+      },
+      {
+        "page": 28,
+        "text": "28 Q3 and 9 Months Earnings: Business Innovation (Billions of yen) 125.7 123.8 (1.9) (1.4%) (5.7) (4.3%) 373.7 378.9 5.2 (+1.4%) (6.0) (1.6%) 59.5 60.5 1.0 (+1.6%) (0.4) (0.8%) 175.7 180.2 4.5 (+2.6%) 0.3 (+0.1%) 185.2 184.3 (0.9) (0.4%) (6.1) (3.2%) 549.4 559.1 9.7 (+1.8%) (5.7) (1.0%) Note: After elimination of intersegment transactions (Billions of yen) 17.9 16.7 46.7 42.2 [9.7%] [9.0%] [8.5%] [7.5%] Business Innovation (1.2) (6.8%)(6.9%)(1.2) (6.9) (14.7%)(4.5) (9.6%) 9 months Constant-currency basis ChangeFY2020 FY2021 9 months Q3 Constant-currency basis Change Constant-currency basis FY2020 FY2021 ChangeFY2020 FY2021 Total Revenue Office Solutions Business Solutions Operating Income [Operating Margin] FY2020 FY2021 Change Q3 Constant-currency basis"
+      },
+      {
+        "page": 13,
+        "text": "74.3 87.2 144.3 173.0 218.6 260.2 14.1 34.7 FY2020 9 months FY2021 9 months (13.3%) (6.5%) 13 Performance rose sharply as revenue surged 19.0% year-over-year and operating income increased by 2.5 times year-over-year. This was due to strong sales of newly launched instant photo systems and digital cameras, in addition to a steady sales recovery of color photographic paper as well as broadcast and cinema lens from COVID-19 impact. Consumer imaging: Revenue ¥173.0 billion (up 19.8% YoY) • In addition to the recovery from COVID-19 impact, revenues surged YoY on solid sales of instant photo systems and dry minilabs / materials for retailers in the U.S. • New products launched in 2021 include the instax mini 40 in April, the instax Link WIDE smartphone printer for use with wide-format film in October and a flagship model instax mini Evo in December. All new products were well received in the market and boosted sales. Professional imaging: Revenue ¥87.2 billion (up 17.4% YoY) • Sales of the large-format mirrorless digital camera FUJIFILM GFX100S fared well as it gained a high reputation in the market for realizing the highest resolution of about 100 million pixels. Additionally, the FUJIFILM GFX50S II equipped with 50 million-pixel image sensor was released as a brother model in September 2021, which resulted in the GFX user base expansion. • In November 2021, we launched the FUJIFILM X-T30 II mirrorless digital camera, the latest model of the X Series, which delivers premium image quality despite being compact and lightweight. • Revenue climbed as sales of broadcast and cinema lenses, which had been hit by a drop in demand due to the COVID-19 pandemic, began to pick up. Sales in the monitoring / measurement field, including long-range surveillance cameras and machine vision lenses, also fared well. (Billions of yen) Consumer imaging Professional imaging Operating income (margin) FY2020 9 months FY2021 9 months Business Summary: Imaging"
+      }
+    ],
+    "instructions": "Use only the supplied document evidence. Extract exactly two ordered numeric facts needed to answer the comparison question. The first fact must correspond to the first quantity named in the question and the second fact to the second quantity. Do not calculate the difference and do not use outside knowledge. Preserve a shared, explicit unit. Cite only physical PDF pages supplied here. If both facts cannot be identified unambiguously, return status insufficient_evidence with an empty facts list.",
+    "question": "In the full-year forecast operating income waterfall chart, what is the difference between the total one-time cost for FY2021 and the FY2021 revised forecast's one-time cost difference shown in the revised-versus-previous forecast waterfall chart?",
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "facts": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "cited_pages": {
+                "items": {
+                  "type": "integer"
+                },
+                "type": "array"
+              },
+              "label": {
+                "type": "string"
+              },
+              "metric": {
+                "type": "string"
+              },
+              "unit": {
+                "type": "string"
+              },
+              "value": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "label",
+              "metric",
+              "value",
+              "unit",
+              "cited_pages"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "extracted",
+            "insufficient_evidence"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "status",
+        "facts"
+      ],
+      "type": "object"
+    }
+  },
+  "page_records_sha256": "a9ff894bffd5188d3d360381205361d6f8fd9c37a9a483a521fd75c59af62f0e",
+  "paid_api_used": false,
+  "question_id": "urnuuid44ff3ab7-6cd7-40f9-8abc-28680be05c68::q2",
+  "retrieval_method": "hybrid_rrf_bm25_dense_v0_top10",
+  "schema_version": 1,
+  "source_case_sha256": "5ea7ce46fbef183cf509fdef2988c2967977f0c119e8e2e9c034f9d4d2c85ba2",
+  "uses_gold_answer": false,
+  "uses_gold_evidence_pages": false
+}

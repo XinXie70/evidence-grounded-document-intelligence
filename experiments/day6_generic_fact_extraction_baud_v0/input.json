@@ -1,0 +1,86 @@
+{
+  "condition": "real_retrieval_fact_extraction",
+  "doc_id": "urnuuid922a78ce-4781-49e4-b9d2-b213b1042f55",
+  "evidence_pages": [
+    20,
+    27,
+    24
+  ],
+  "model_input": {
+    "evidence": [
+      {
+        "page": 20,
+        "text": "20 Ethernet/Serial Gateway ETOR 3.3 Serial Port Settings In this tab, serial communication settings of ETOR are made. Values in this tab should be selected in accordance with the devices with serial interfaces in the MODBUS network. If these values are not set in accordance with the MODBUS network, a healthy serial communication will not be performed. Default serial communication settings for ETOR are as follows: Table 3-2 Default Serial Port Settings for ETOR Baud Rate 38400 Stop Bit 1 Parity None Baud Rate: ETOR supports 300, 600, 1200, 2400, 4800, 9600, 19200, 38400, 57600 and 115200 baud rates. Stop Bit: ETOR supports 1 and 2 stop bit. Parity: ETOR supports single parity and double parity modes and modes without parity. Figure 3-5 Serial Port Settings"
+      },
+      {
+        "page": 27,
+        "text": "27 Ethernet/Serial Gateway ETOR Figure 3-11 Client Mode Data Communication Scenario Serial communication parameters of the serial device in master status are as follows: Table 3-5 Mode Serial Communication Settings Baud Rate 57600 Stop Bit 1 Parity None Taking this into account, serial communication and gateway settings of ETOR should be configured as follows: Figure 3-12 Client Mode Communication Example MODBUS ASCII MODBUS ASCII MODBUS TCP MODBUS TCP MODBUS TCP MODBUS TCP ETOR 1 2 3 456 QUERY RESPONSE NETWORK"
+      },
+      {
+        "page": 24,
+        "text": "24 Ethernet/Serial Gateway ETOR Serial communication parameters of the serial device in slave status are as follows: Table 3-4 Server Mode Serial Communication Settings Baud Rate 57600 Stop Bit 1 Parity None 1. MODBUS TCP query created by the software in the computer is sent to the network via Ethernet port. 2. Being connected to the same network, ETOR takes MODBUS TCP from the Ethernet port and converts it to MODBUS RTU query. 3. ETOR forwards the converted query to the serial device via serial port and waits for response until timeout period expires (1 second is assumed to be enough for this scenario). 4. Serial device forwards the data that comes from ETOR and that correspond to MODBUS RTU query to ETOR in the form of MODBUS RTU response from its serial port. ETOR receives the response from its serial port and converts it to MODBUS TCP response. 5. ETOR sends the converted MODBUS TCP response to the network via Ethernet port. 6. Software in the computer notifies the user by using MODBBUS TCP response it had received from the network. Taking this into account, serial communication and gateway settings of ETOR should be configured as follows: Figure 3-9 Server Mode Communication Example 3.4.2 Client Mode While operating in the client mode, ETOR converts MODBUS RTU and MODBUS ASCII queries it had received from the serial port to MODBUS RTU Over MODBUS TCP , TCP and MODBUS ASCII Over MODBUS RTU and TCP queries and forwards them to remote devices connected to the Internet or local area network. It converts the response it had received from the devices to query protocol and sends it to the querying device (master)."
+      }
+    ],
+    "instructions": "Use only the supplied document evidence. Extract exactly two ordered numeric facts needed to answer the comparison question. The first fact must correspond to the first quantity named in the question and the second fact to the second quantity. Do not calculate the difference and do not use outside knowledge. Preserve a shared, explicit unit. Cite only physical PDF pages supplied here. If both facts cannot be identified unambiguously, return status insufficient_evidence with an empty facts list.",
+    "question": "In the server mode communication example, what is the difference between the baud rate used for serial communication and the default serial port baud rate?",
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "facts": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "cited_pages": {
+                "items": {
+                  "type": "integer"
+                },
+                "type": "array"
+              },
+              "label": {
+                "type": "string"
+              },
+              "metric": {
+                "type": "string"
+              },
+              "unit": {
+                "type": "string"
+              },
+              "value": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "label",
+              "metric",
+              "value",
+              "unit",
+              "cited_pages"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "extracted",
+            "insufficient_evidence"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "status",
+        "facts"
+      ],
+      "type": "object"
+    }
+  },
+  "page_records_sha256": "dbc6bbe89fa6bdfa35f6c49ff06bb438064cd7482f929f01b1fcf943c5137313",
+  "paid_api_used": false,
+  "question_id": "urnuuid922a78ce-4781-49e4-b9d2-b213b1042f55::q1",
+  "retrieval_method": "hybrid_rrf_bm25_dense_v0_top3",
+  "schema_version": 1,
+  "source_case_sha256": "db85807ca96203ea7139edcdab04859707fa2970b8fe40568507bd78f1e5f319",
+  "uses_gold_answer": false,
+  "uses_gold_evidence_pages": false
+}

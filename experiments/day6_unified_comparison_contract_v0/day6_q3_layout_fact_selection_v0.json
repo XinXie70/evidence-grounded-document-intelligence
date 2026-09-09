@@ -1,0 +1,66 @@
+{
+  "contract_type": "comparison_evidence",
+  "doc_id": "urnuuid111476ed-6700-4be2-85cc-3fc17696167e",
+  "evaluation_eligibility": {
+    "evidence_retrieval": "ineligible_gold_evidence_pages",
+    "grounded_reasoning": "eligible"
+  },
+  "leakage_controls": {
+    "uses_gold_answer_or_facts": false,
+    "uses_gold_evidence_pages": true
+  },
+  "left": {
+    "label": "Male",
+    "metric": "Personal care",
+    "provenance": {
+      "selection_basis": "row_match; finest_consistent_resolution",
+      "source_type": "layout_table",
+      "supporting_pages": [
+        21
+      ],
+      "value_pages": [
+        21
+      ]
+    },
+    "qualifiers": {
+      "column_path": [
+        "Male"
+      ],
+      "row": "Personal care",
+      "table_title": "Table 5. Distribution of average time spent on main activity per weekday by sex"
+    },
+    "unit": "hours",
+    "value": "10.8"
+  },
+  "operation": "left_minus_right",
+  "paid_api_used": false,
+  "question": "According to the weekday main-activity table by sex, how many more hours do males spend on personal care than females spend on housework and family care?",
+  "question_id": "urnuuid111476ed-6700-4be2-85cc-3fc17696167e::q3",
+  "right": {
+    "label": "Female / Total",
+    "metric": "Total",
+    "provenance": {
+      "selection_basis": "table_scope_total; finest_consistent_resolution",
+      "source_type": "layout_table",
+      "supporting_pages": [
+        55
+      ],
+      "value_pages": [
+        55
+      ]
+    },
+    "qualifiers": {
+      "column_path": [
+        "Female",
+        "Total"
+      ],
+      "row": "Total",
+      "table_title": "Table 40. Distribution of average time spent on housework and family care per weekday by sex and marital status"
+    },
+    "unit": "minutes",
+    "value": "287.4"
+  },
+  "schema_version": 1,
+  "source_selection_sha256": "b7965385f190445404571325eb80e75da5fbf7a973b6d7530dfe8a297a82da48",
+  "source_selector_type": "oracle_page_question_guided_layout_fact_selection"
+}

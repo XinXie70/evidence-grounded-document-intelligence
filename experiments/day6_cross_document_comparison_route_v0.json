@@ -1,0 +1,131 @@
+{
+  "cases": [
+    {
+      "candidate_pages": [
+        3,
+        32,
+        9,
+        44,
+        45,
+        48,
+        47,
+        4,
+        33,
+        49
+      ],
+      "case_id": "crossdoc_visitation_table",
+      "doc_id": "urnuuid654ae1c6-a936-4b45-8c3f-95b14ba397ac",
+      "page_records_sha256": "5b6d7fd5630ba4eeaabcce97201d9b27ead2bc0571f952dde88c5ffbb495ef65",
+      "question": "In the table showing total visitation data for September, what is the difference between the 2008 visitor estimate for friends/relatives and the 2009 visitor estimate for paid accommodations?",
+      "question_id": "urnuuid654ae1c6-a936-4b45-8c3f-95b14ba397ac::q3",
+      "selector_rejections": {
+        "balance_sheet_selector_v0": "question must contain one explicit 'compared to' comparison",
+        "continued_enrollment_table_v1": "question is outside the supported enrolment comparison pattern",
+        "interest_method_selector_v0": "question must contain one explicit 'compared to' comparison",
+        "list_count_selector_v1_excludes_reference_sections": "question must describe two compared articles",
+        "product_dimension_selector_v0": "question must contain one explicit 'less than' comparison",
+        "qualified_metric_selector_v1": "question does not match a supported qualified metric pair"
+      },
+      "status": "unsupported"
+    },
+    {
+      "candidate_pages": [
+        9,
+        12,
+        26,
+        25,
+        27,
+        11,
+        13,
+        15,
+        20,
+        8
+      ],
+      "case_id": "crossdoc_faculty_counts",
+      "doc_id": "urnuuid8026e4cd-9993-4d10-94fd-4071d4534409",
+      "page_records_sha256": "d51ce4285b93400b488b6e09cff100e4beb01b1ca70d51527f48bd4961178782",
+      "question": "What is the difference between the number of permanent faculty members with Ph.D. and the number of faculty who are registered Ph.D. guides?",
+      "question_id": "urnuuid8026e4cd-9993-4d10-94fd-4071d4534409::q4",
+      "selector_rejections": {
+        "balance_sheet_selector_v0": "question must contain one explicit 'compared to' comparison",
+        "continued_enrollment_table_v1": "question is outside the supported enrolment comparison pattern",
+        "interest_method_selector_v0": "question must contain one explicit 'compared to' comparison",
+        "list_count_selector_v1_excludes_reference_sections": "question must describe two compared articles",
+        "product_dimension_selector_v0": "question must contain one explicit 'less than' comparison",
+        "qualified_metric_selector_v1": "question does not match a supported qualified metric pair"
+      },
+      "status": "unsupported"
+    },
+    {
+      "candidate_pages": [
+        20,
+        27,
+        24,
+        23,
+        4,
+        22,
+        3,
+        19,
+        6,
+        26
+      ],
+      "case_id": "crossdoc_baud_rates",
+      "doc_id": "urnuuid922a78ce-4781-49e4-b9d2-b213b1042f55",
+      "page_records_sha256": "dbc6bbe89fa6bdfa35f6c49ff06bb438064cd7482f929f01b1fcf943c5137313",
+      "question": "In the server mode communication example, what is the difference between the baud rate used for serial communication and the default serial port baud rate?",
+      "question_id": "urnuuid922a78ce-4781-49e4-b9d2-b213b1042f55::q1",
+      "selector_rejections": {
+        "balance_sheet_selector_v0": "question must contain one explicit 'compared to' comparison",
+        "continued_enrollment_table_v1": "question is outside the supported enrolment comparison pattern",
+        "interest_method_selector_v0": "question must contain one explicit 'compared to' comparison",
+        "list_count_selector_v1_excludes_reference_sections": "question must describe two compared articles",
+        "product_dimension_selector_v0": "question must contain one explicit 'less than' comparison",
+        "qualified_metric_selector_v1": "question does not match a supported qualified metric pair"
+      },
+      "status": "unsupported"
+    },
+    {
+      "candidate_pages": [
+        32,
+        7,
+        34,
+        29,
+        28,
+        22,
+        33,
+        2,
+        24,
+        45
+      ],
+      "case_id": "crossdoc_net_assets",
+      "doc_id": "urnuuide933941e-fb2a-445d-902c-848417372326",
+      "page_records_sha256": "93bc667d8d61cadd7251e195bb144d69ab62e337caace3bb931e7446569392be",
+      "question": "In the statement listing assets, liabilities, and equity, what is the difference in Net Assets between the year ended 31 December 2019 and the prior year?",
+      "question_id": "urnuuide933941e-fb2a-445d-902c-848417372326::q1",
+      "selector_rejections": {
+        "balance_sheet_selector_v0": "question must contain one explicit 'compared to' comparison",
+        "continued_enrollment_table_v1": "question is outside the supported enrolment comparison pattern",
+        "interest_method_selector_v0": "question must contain one explicit 'compared to' comparison",
+        "list_count_selector_v1_excludes_reference_sections": "question must describe two compared articles",
+        "product_dimension_selector_v0": "question must contain one explicit 'less than' comparison",
+        "qualified_metric_selector_v1": "question does not match a supported qualified metric pair"
+      },
+      "status": "unsupported"
+    }
+  ],
+  "experiment_type": "automatic_comparison_selector_routing",
+  "leakage_controls": {
+    "uses_gold_answer": false,
+    "uses_gold_evidence_pages": false
+  },
+  "manifest_sha256": "055ac0ed33e6a8a5bd75c6d51b0ccd06d046447d770e348b0727ffb059239a16",
+  "schema_version": 1,
+  "split": "development_tune",
+  "summary": {
+    "ambiguous": 0,
+    "case_count": 4,
+    "paid_api_used": false,
+    "success": 0,
+    "unsupported": 4
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "experiment_id": "day6_generic_fact_extraction_crossdoc_v0",
+  "selection_split": "development_tune",
+  "case_count": 3,
+  "cases": [
+    {
+      "case_id": "visitation",
+      "question_id": "urnuuid654ae1c6-a936-4b45-8c3f-95b14ba397ac::q3",
+      "input_path": "experiments/day6_generic_fact_extraction_crossdoc_v0/visitation/input.json",
+      "input_sha256": "695ef9a82c674011a66308b66f210eed520e3c2db84898cfeed848e804b28feb"
+    },
+    {
+      "case_id": "faculty",
+      "question_id": "urnuuid8026e4cd-9993-4d10-94fd-4071d4534409::q4",
+      "input_path": "experiments/day6_generic_fact_extraction_crossdoc_v0/faculty/input.json",
+      "input_sha256": "c29503e7c551e09f4f08c7fc0a80f1d6e9e34b08989ee35268d0f2764aa2d5ba"
+    },
+    {
+      "case_id": "net_assets",
+      "question_id": "urnuuide933941e-fb2a-445d-902c-848417372326::q1",
+      "input_path": "experiments/day6_generic_fact_extraction_crossdoc_v0/net_assets/input.json",
+      "input_sha256": "3f3de7d225f021bdcc5075b832ec6d416d8b77a9f92f7faeff77967ad3e3eada"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "experiment_type": "cross_document_comparison_generalization_manifest",
+  "split": "development_tune",
+  "uses_gold_answer": false,
+  "uses_gold_evidence_pages": false,
+  "retrieval_method": "hybrid_rrf_bm25_dense_v0_top10",
+  "selection_policy": "four previously unused questions from distinct documents with complete RRF Top-10 evidence recall and diverse structures",
+  "cases": [
+    {
+      "case_id": "crossdoc_visitation_table",
+      "question_id": "urnuuid654ae1c6-a936-4b45-8c3f-95b14ba397ac::q3",
+      "doc_id": "urnuuid654ae1c6-a936-4b45-8c3f-95b14ba397ac",
+      "question": "In the table showing total visitation data for September, what is the difference between the 2008 visitor estimate for friends/relatives and the 2009 visitor estimate for paid accommodations?",
+      "candidate_pages": [3, 32, 9, 44, 45, 48, 47, 4, 33, 49],
+      "page_records": "data/derived/page_records/urnuuid654ae1c6-a936-4b45-8c3f-95b14ba397ac.jsonl"
+    },
+    {
+      "case_id": "crossdoc_faculty_counts",
+      "question_id": "urnuuid8026e4cd-9993-4d10-94fd-4071d4534409::q4",
+      "doc_id": "urnuuid8026e4cd-9993-4d10-94fd-4071d4534409",
+      "question": "What is the difference between the number of permanent faculty members with Ph.D. and the number of faculty who are registered Ph.D. guides?",
+      "candidate_pages": [9, 12, 26, 25, 27, 11, 13, 15, 20, 8],
+      "page_records": "data/derived/page_records/urnuuid8026e4cd-9993-4d10-94fd-4071d4534409.jsonl"
+    },
+    {
+      "case_id": "crossdoc_baud_rates",
+      "question_id": "urnuuid922a78ce-4781-49e4-b9d2-b213b1042f55::q1",
+      "doc_id": "urnuuid922a78ce-4781-49e4-b9d2-b213b1042f55",
+      "question": "In the server mode communication example, what is the difference between the baud rate used for serial communication and the default serial port baud rate?",
+      "candidate_pages": [20, 27, 24, 23, 4, 22, 3, 19, 6, 26],
+      "page_records": "data/derived/page_records/urnuuid922a78ce-4781-49e4-b9d2-b213b1042f55.jsonl"
+    },
+    {
+      "case_id": "crossdoc_net_assets",
+      "question_id": "urnuuide933941e-fb2a-445d-902c-848417372326::q1",
+      "doc_id": "urnuuide933941e-fb2a-445d-902c-848417372326",
+      "question": "In the statement listing assets, liabilities, and equity, what is the difference in Net Assets between the year ended 31 December 2019 and the prior year?",
+      "candidate_pages": [32, 7, 34, 29, 28, 22, 33, 2, 24, 45],
+      "page_records": "data/derived/page_records/urnuuide933941e-fb2a-445d-902c-848417372326.jsonl"
+    }
+  ]
+}

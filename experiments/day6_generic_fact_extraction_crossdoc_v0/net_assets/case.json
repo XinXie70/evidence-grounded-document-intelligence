@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "case_id": "crossdoc_net_assets",
+  "question_id": "urnuuide933941e-fb2a-445d-902c-848417372326::q1",
+  "doc_id": "urnuuide933941e-fb2a-445d-902c-848417372326",
+  "question": "In the statement listing assets, liabilities, and equity, what is the difference in Net Assets between the year ended 31 December 2019 and the prior year?",
+  "candidate_pages": [32, 7, 34, 29, 28, 22, 33, 2, 24, 45],
+  "retrieval_method": "hybrid_rrf_bm25_dense_v0_top10",
+  "uses_gold_answer": false,
+  "uses_gold_evidence_pages": false
+}

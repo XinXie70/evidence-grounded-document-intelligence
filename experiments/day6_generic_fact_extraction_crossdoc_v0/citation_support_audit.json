@@ -1,0 +1,157 @@
+{
+  "accepted_count": 2,
+  "case_count": 3,
+  "cases": [
+    {
+      "all_facts_supported_by_citations": false,
+      "case_id": "visitation",
+      "doc_id": "urnuuid654ae1c6-a936-4b45-8c3f-95b14ba397ac",
+      "facts": [
+        {
+          "canonical_value": "157472",
+          "cited_pages": [
+            3
+          ],
+          "fact_index": 0,
+          "label": "2008 visitor estimate for friends/relatives",
+          "reported_value": "157,472",
+          "supported_cited_pages": [],
+          "unsupported_cited_pages": [
+            3
+          ],
+          "value_occurs_on_a_cited_page": false,
+          "value_occurs_on_supplied_pages": [
+            32,
+            9,
+            4
+          ]
+        },
+        {
+          "canonical_value": "144042",
+          "cited_pages": [
+            3
+          ],
+          "fact_index": 1,
+          "label": "2009 visitor estimate for paid accommodations",
+          "reported_value": "144,042",
+          "supported_cited_pages": [],
+          "unsupported_cited_pages": [
+            3
+          ],
+          "value_occurs_on_a_cited_page": false,
+          "value_occurs_on_supplied_pages": [
+            32,
+            9,
+            4
+          ]
+        }
+      ],
+      "input_sha256": "695ef9a82c674011a66308b66f210eed520e3c2db84898cfeed848e804b28feb",
+      "policy_action": "reject_unverified_citations",
+      "question_id": "urnuuid654ae1c6-a936-4b45-8c3f-95b14ba397ac::q3",
+      "result_sha256": "b66fc72380f2ce3df358fa0498888da75be08c7ce0ea2923ccd96bc05db7dace",
+      "uses_benchmark_labels": false
+    },
+    {
+      "all_facts_supported_by_citations": true,
+      "case_id": "faculty",
+      "doc_id": "urnuuid8026e4cd-9993-4d10-94fd-4071d4534409",
+      "facts": [
+        {
+          "canonical_value": "44",
+          "cited_pages": [
+            9
+          ],
+          "fact_index": 0,
+          "label": "Permanent faculty members with Ph.D.",
+          "reported_value": "44",
+          "supported_cited_pages": [
+            9
+          ],
+          "unsupported_cited_pages": [],
+          "value_occurs_on_a_cited_page": true,
+          "value_occurs_on_supplied_pages": [
+            9
+          ]
+        },
+        {
+          "canonical_value": "14",
+          "cited_pages": [
+            15
+          ],
+          "fact_index": 1,
+          "label": "Faculty who are registered Ph.D. guides",
+          "reported_value": "14",
+          "supported_cited_pages": [
+            15
+          ],
+          "unsupported_cited_pages": [],
+          "value_occurs_on_a_cited_page": true,
+          "value_occurs_on_supplied_pages": [
+            26,
+            13,
+            15
+          ]
+        }
+      ],
+      "input_sha256": "c29503e7c551e09f4f08c7fc0a80f1d6e9e34b08989ee35268d0f2764aa2d5ba",
+      "policy_action": "accept",
+      "question_id": "urnuuid8026e4cd-9993-4d10-94fd-4071d4534409::q4",
+      "result_sha256": "9e8af83635e860c181ab69f3cfbd72051a36b9a7f74038f494bb61bfccd8dc17",
+      "uses_benchmark_labels": false
+    },
+    {
+      "all_facts_supported_by_citations": true,
+      "case_id": "net_assets",
+      "doc_id": "urnuuide933941e-fb2a-445d-902c-848417372326",
+      "facts": [
+        {
+          "canonical_value": "34242862393",
+          "cited_pages": [
+            22
+          ],
+          "fact_index": 0,
+          "label": "Net Assets — year ended 31 December 2019",
+          "reported_value": "34,242,862,393",
+          "supported_cited_pages": [
+            22
+          ],
+          "unsupported_cited_pages": [],
+          "value_occurs_on_a_cited_page": true,
+          "value_occurs_on_supplied_pages": [
+            22
+          ]
+        },
+        {
+          "canonical_value": "33185597769",
+          "cited_pages": [
+            22
+          ],
+          "fact_index": 1,
+          "label": "Net Assets — prior year (2018)",
+          "reported_value": "33,185,597,769",
+          "supported_cited_pages": [
+            22
+          ],
+          "unsupported_cited_pages": [],
+          "value_occurs_on_a_cited_page": true,
+          "value_occurs_on_supplied_pages": [
+            22
+          ]
+        }
+      ],
+      "input_sha256": "3f3de7d225f021bdcc5075b832ec6d416d8b77a9f92f7faeff77967ad3e3eada",
+      "policy_action": "accept",
+      "question_id": "urnuuide933941e-fb2a-445d-902c-848417372326::q1",
+      "result_sha256": "bdc74a3dd22c8255b90d997dfca7028cbcb9dc768233b39b25e795fc1e7c5384",
+      "uses_benchmark_labels": false
+    }
+  ],
+  "citation_support_rate": 0.6666666666666666,
+  "experiment_type": "numeric_fact_citation_support_audit",
+  "manifest_sha256": "955967856c7dd485eaba675514c2e55275566b7d68b92e65f0d8da2289ac53fa",
+  "paid_api_used": false,
+  "rejected_count": 1,
+  "schema_version": 1,
+  "uses_benchmark_labels": false
+}

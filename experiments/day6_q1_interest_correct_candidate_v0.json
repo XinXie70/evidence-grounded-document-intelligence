@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "question_id": "urnuuid72e89e2e-f89d-4cb9-a0d8-2eecfd0cb3c0::q1",
+  "source": "deterministic_reliability_test_fixture",
+  "output": {
+    "answer": "Compound interest accumulates 81 dollars more total interest than simple interest.",
+    "status": "answerable"
+  }
+}

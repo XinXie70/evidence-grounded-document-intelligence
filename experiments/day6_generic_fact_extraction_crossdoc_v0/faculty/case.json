@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "case_id": "crossdoc_faculty_counts",
+  "question_id": "urnuuid8026e4cd-9993-4d10-94fd-4071d4534409::q4",
+  "doc_id": "urnuuid8026e4cd-9993-4d10-94fd-4071d4534409",
+  "question": "What is the difference between the number of permanent faculty members with Ph.D. and the number of faculty who are registered Ph.D. guides?",
+  "candidate_pages": [9, 12, 26, 25, 27, 11, 13, 15, 20, 8],
+  "retrieval_method": "hybrid_rrf_bm25_dense_v0_top10",
+  "uses_gold_answer": false,
+  "uses_gold_evidence_pages": false
+}

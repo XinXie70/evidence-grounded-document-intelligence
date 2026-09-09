@@ -1,0 +1,36 @@
+{
+  "candidate_page_count": 10,
+  "doc_id": "urnuuid8f8f98a5-ee9a-4e12-a490-7cda781aab39",
+  "experiment_type": "question_guided_balance_sheet_selection",
+  "input_sha256": "d8c27cba9b11533932fad185754b0748c4859c30437079d8e2832b006ef3136c",
+  "page_records_sha256": "916aadd5aefa3d5a1c2889eb891c7f371c6f12a8d362314c7dcfdb36c134c8e1",
+  "paid_api_used": false,
+  "question": "How much larger is the total assets figure on the credit card subsidiary's balance sheet (the one showing installment accounts receivable) compared to the total assets on the credit company's balance sheet (the one showing loan receivables), both as of June 30, 2007? Answer in billion yen.",
+  "question_id": "urnuuid8f8f98a5-ee9a-4e12-a490-7cda781aab39::q4",
+  "schema_version": 1,
+  "selected_facts": [
+    {
+      "as_of_date": "2007-06-30",
+      "discriminator": "installment_accounts_receivable",
+      "entity": "Rakuten KC",
+      "page": 62,
+      "row": "Total Assets",
+      "selection_basis": "question_discriminator_to_dated_balance_sheet_total_assets",
+      "unit": "billion yen",
+      "value": "336.3"
+    },
+    {
+      "as_of_date": "2007-06-30",
+      "discriminator": "loan_receivables_current_asset_row",
+      "entity": "Rakuten Credit",
+      "page": 66,
+      "row": "Total Assets",
+      "selection_basis": "question_discriminator_to_dated_balance_sheet_total_assets",
+      "unit": "billion yen",
+      "value": "82.7"
+    }
+  ],
+  "selector_version": "balance_sheet_selector_v0",
+  "uses_gold_answer": false,
+  "uses_gold_evidence_pages": false
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "case_id": "crossdoc_visitation_table",
+  "question_id": "urnuuid654ae1c6-a936-4b45-8c3f-95b14ba397ac::q3",
+  "doc_id": "urnuuid654ae1c6-a936-4b45-8c3f-95b14ba397ac",
+  "question": "In the table showing total visitation data for September, what is the difference between the 2008 visitor estimate for friends/relatives and the 2009 visitor estimate for paid accommodations?",
+  "candidate_pages": [3, 32, 9, 44, 45, 48, 47, 4, 33, 49],
+  "retrieval_method": "hybrid_rrf_bm25_dense_v0_top10",
+  "uses_gold_answer": false,
+  "uses_gold_evidence_pages": false
+}

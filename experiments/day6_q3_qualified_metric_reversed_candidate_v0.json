@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "question_id": "urnuuid7fbb918e-acda-4053-9c23-c16621876e15::q3",
+  "source": "deterministic_reliability_test_fixture",
+  "output": {
+    "answer": "China's projected ending stocks are 27.8 million bales lower than India's projected average annual cotton exports.",
+    "status": "answerable"
+  }
+}

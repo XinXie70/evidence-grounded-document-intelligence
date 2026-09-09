@@ -1,0 +1,55 @@
+{
+  "contract_type": "comparison_evidence",
+  "doc_id": "urnuuid66d41dfa-db77-40dd-98e7-c414076eec28",
+  "leakage_controls": {
+    "uses_gold_answer": false,
+    "uses_gold_evidence_pages": false
+  },
+  "left": {
+    "label": "Art.701T",
+    "metric": "Depth (D)",
+    "provenance": {
+      "selection_basis": "question_description_to_product_id_to_explicit_D_specification",
+      "source_type": "product_specification",
+      "supporting_pages": [
+        12,
+        14
+      ],
+      "value_pages": [
+        14
+      ]
+    },
+    "qualifiers": {
+      "descriptor": "The depth dimension of the digital time clock module with four push buttons visible on its front panel is how many millimeters"
+    },
+    "unit": "millimeters",
+    "value": "30"
+  },
+  "operation": "left_minus_right",
+  "paid_api_used": false,
+  "question": "The depth dimension of the digital time clock module with four push buttons visible on its front panel is how many millimeters less than the depth dimension of the 5A unboxed power supply unit?",
+  "question_id": "urnuuid66d41dfa-db77-40dd-98e7-c414076eec28::q2",
+  "right": {
+    "label": "UBPSU5.0",
+    "metric": "Depth (D)",
+    "provenance": {
+      "selection_basis": "question_description_to_product_id_to_explicit_D_specification",
+      "source_type": "product_specification",
+      "supporting_pages": [
+        10,
+        11
+      ],
+      "value_pages": [
+        11
+      ]
+    },
+    "qualifiers": {
+      "descriptor": "the depth dimension of the 5A unboxed power supply unit?"
+    },
+    "unit": "millimeters",
+    "value": "40"
+  },
+  "schema_version": 1,
+  "source_selection_sha256": "e49538d477d6294fbc4aa540ae01ef548e61afe4ee7ac643cd9f63e7cce6c6a0",
+  "source_selector_type": "product_dimension_selector_v0"
+}

@@ -1,0 +1,22 @@
+{
+  "candidate_pages": [
+    29,
+    36,
+    28,
+    37,
+    20,
+    4,
+    7,
+    13,
+    41,
+    31
+  ],
+  "case_id": "validation_01",
+  "doc_id": "urnuuid181bfd7d-8bf2-4f0a-95e3-1201ac3321aa",
+  "page_records": "data/derived/page_records/urnuuid181bfd7d-8bf2-4f0a-95e3-1201ac3321aa.jsonl",
+  "question": "What is the difference between the ZIP codes in the two mailing addresses shown in the manual?",
+  "question_id": "urnuuid181bfd7d-8bf2-4f0a-95e3-1201ac3321aa::q2",
+  "retrieval_method": "hybrid_rrf_bm25_dense_v0_top10",
+  "uses_gold_answer": false,
+  "uses_gold_evidence_pages": false
+}

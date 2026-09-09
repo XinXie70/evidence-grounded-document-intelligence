@@ -1,0 +1,22 @@
+{
+  "candidate_pages": [
+    26,
+    6,
+    33,
+    25,
+    19,
+    10,
+    7,
+    8,
+    37,
+    24
+  ],
+  "case_id": "validation_03",
+  "doc_id": "urnuuid3a8634c5-69b8-475f-9665-f6d5138e23d8",
+  "page_records": "data/derived/page_records/urnuuid3a8634c5-69b8-475f-9665-f6d5138e23d8.jsonl",
+  "question": "What is the difference between the NA segment's total revenue in HY 2024 from the segment reconciliation table and the United States revenue in HY 2024 from the geographic revenue breakdown?",
+  "question_id": "urnuuid3a8634c5-69b8-475f-9665-f6d5138e23d8::q2",
+  "retrieval_method": "hybrid_rrf_bm25_dense_v0_top10",
+  "uses_gold_answer": false,
+  "uses_gold_evidence_pages": false
+}

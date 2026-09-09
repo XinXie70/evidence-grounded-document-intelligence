@@ -1,0 +1,23 @@
+{
+  "check": {
+    "accepted": true,
+    "comparative_direction_correct": true,
+    "expected_direction": "more",
+    "expected_magnitude": "253.6",
+    "left_operand": "336.3",
+    "normalized_unit": "billion yen",
+    "numeric_magnitude_correct": true,
+    "observed_contains_fewer": false,
+    "observed_contains_more": true,
+    "policy_action": "accept",
+    "reason": "consistent",
+    "right_operand": "82.7",
+    "signed_difference": "253.6"
+  },
+  "experiment_type": "deterministic_comparison_consistency_audit",
+  "paid_api_used": false,
+  "question_id": "urnuuid8f8f98a5-ee9a-4e12-a490-7cda781aab39::q4",
+  "result_sha256": "61956e85a027bc77d8a1cfc9b509d13e8c47a55a12f93e91c200dc67913d9c51",
+  "schema_version": 1,
+  "selection_sha256": "2b4209a319863ffc147f1d349624f14cbe47620ebcac0406c1330c48c6779bef"
+}

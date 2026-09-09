@@ -1,0 +1,22 @@
+{
+  "candidate_pages": [
+    23,
+    22,
+    21,
+    18,
+    29,
+    4,
+    5,
+    10,
+    28,
+    13
+  ],
+  "case_id": "validation_05",
+  "doc_id": "urnuuid44ff3ab7-6cd7-40f9-8abc-28680be05c68",
+  "page_records": "data/derived/page_records/urnuuid44ff3ab7-6cd7-40f9-8abc-28680be05c68.jsonl",
+  "question": "In the full-year forecast operating income waterfall chart, what is the difference between the total one-time cost for FY2021 and the FY2021 revised forecast's one-time cost difference shown in the revised-versus-previous forecast waterfall chart?",
+  "question_id": "urnuuid44ff3ab7-6cd7-40f9-8abc-28680be05c68::q2",
+  "retrieval_method": "hybrid_rrf_bm25_dense_v0_top10",
+  "uses_gold_answer": false,
+  "uses_gold_evidence_pages": false
+}

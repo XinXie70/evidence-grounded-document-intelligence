@@ -1,0 +1,121 @@
+{
+  "condition": "real_retrieval_fact_extraction",
+  "doc_id": "urnuuid181bfd7d-8bf2-4f0a-95e3-1201ac3321aa",
+  "evidence_pages": [
+    29,
+    36,
+    28,
+    37,
+    20,
+    4,
+    7,
+    13,
+    41,
+    31
+  ],
+  "model_input": {
+    "evidence": [
+      {
+        "page": 29,
+        "text": "Chapter 2: Unit Setup PLU Options 2-17 Lot # (on PLU edit screen 2) – This allows the operator to enter a Lot Number for the run; which is used for Country of Origin labeling. The Model 8361 supports two 24 alphanumeric strings that can be placed on the label to identify the product. PLU Options From the Unit Setup screen, touch PLU OPTIONS to enable/disable manual overrides and key functions. Touch the boxes to toggle the condition from YES to NO (yes meaning manual override is allowed) or AVAILABLE to NOT AVAILABLE. Default selections are shown below. If enabled, the key will be “double boxed” as it appears on the PLU Edit Screen to indicate the value can be overridden or the function is available for operation. Touch DOWN to display the second page options. Figure 2-14: PLU Options Screen (Page 1) PLU Options Screen (Page 2)"
+      },
+      {
+        "page": 36,
+        "text": "METTLER TOLEDO Model 8361 User's Guide 3-4 Manual Entries Keys that are \"double boxed\" in the PLU Edit screen are active function keys. Active keys are configured through the Unit Setup, PLU Options screen. In certain situations, a PLU may require an item (such as unit price or tare) to be manually entered. (The \"forced\" values are determined when the PLU is programmed through the Master Editor, see Master Programming Manual.) If a manual entry is forced, the appropriate editing method (numeric keyboard, etc.) will appear, otherwise the user must touch the desired \"double boxed\" item to reach the editing screen. Operations with the PLU Edit Screen By-Weight PLUs If the PLU called is a weighed item, place the item on the platter to issue a label. By- Weight items can be priced in three ways: 1. Priced \"Per Pound\" - Typically weighed items are priced per the pound. The weight multiplied by the unit price equals the total price of the product to the customer. 2. Priced \"Per Fraction of a Pound\" (fractional) - The item may also be priced by the fraction of the pound (where legal and desired). Pricing per 1/4 pound and per 1/2 pound are available. 3. \"Pounds for\" price - The PLU may be sold with a pounds for price (rather than price per pound). (2 pounds for $1.00). Standard Pack PLUs The Standard Pack PLU allows the operator to use the scale for a labeling operation. Generally, the labels indicate the net weight of the item and total price. If the item is a Standard Pack item, enter the weight in ounces (if forced or needs to be changed), set the quantity of labels desired by turning demand mode on and touching the run totals box to enter the amount (default is 1). Touch PRINT to initiate printing of labels. Touch the screen to stop printing early. By-Count PLUs The By-Count PLU allows the operator to use the scale for a labeling operation. If the total weight for the items is needed, a weight field can be configured on the label to print the weight of the items in addition to the By-Count information. If the item is sold By-Count, after adjusting the count (if allowed) and the number of labels, touch PRINT to initiate printing. Touch the screen to stop printing."
+      },
+      {
+        "page": 28,
+        "text": "METTLER TOLEDO Model 8361 User's Guide 2-16 Select the new key for this location or QUIT. Upon selection, the operator is returned to the PLU Edit Screen to continue setup. The programmable keys are listed with their functions. The macro keys (Macro 4-12) can be used to program special function macros including tare changes, discounts, accumulators, etc. Pack Date – The date the product was packed and labeled. Extra Text Number – The number of the Extra Text which goes with that PLU. Grade – The number of the user programmed 0-15 grade descriptions. Label Node Turn/Not Turned – Configuration for label application. Label Format – Assigns a label format to be substituted on the PLU screen. Accumulator – Assigns an alternate accumulator aside from that which is linked through the PLU. This function toggles between Auto, Manual, Rewrap, Combination and Inventory. Graphic (Master) – Assigns number of graphic from the Master. Printer 2 (off/GR/NG) – Allows override of printer 2 by turning it off, selecting a Nutrifact, a linked graphic, a store logo or a Satellite graphic. Print Inhibit – Touch this key to select which fields to inhibit from printing on the label. Bottom Label – This is a toggle key used to command the Model 710 to apply bottom labels to all of the packages in a run. When the key is black, the Model 710 will apply labels to all packages until END RUN is touched. When the key is clear, normal label application occurs. Family Pack – Tare is changed to .1 lb or .1 kg and Price is reduced by $0.10 per unit. Price Reduction – Reduces price by 10%. Rewrap – A product can be rewrapped and placed in the Rewrap accumulator. Macros (4 - 12) – 9 additional macros are available for programming. Sat Graphic Number (Satellite) – Assigns number of satellite graphic. Printer 2 Batch – Allows override of printer 2 to batch out the labels. Turn Label – The Turn Label button is a toggle key used to turn the data label on the package when using an auto-labeler. Not Turned will place the label at the upper right of the package when feed into the labeler in landscape orientation. Turned places the label in the upper right portrait. Alt. Turned (Version 3.0 software or later) places the label at the lower right in landscape orientation. Apply Security Tag (on PLU edit screen 2) – This is a toggle key used to command the Model 703 to apply a security tag to all packages in a run. When the key is black, a security tag will be applied to all packages over .5lbs regardless of security points or PLU setting. When the key is clear, a security tag will be applied only if the PLU record specifies it, or if the package price (unit or total) is over the configured threshold value(s). Reset Security Tag (on PLU edit screen 2) – This button will issue a command to the Model 703 to cause it to rehome the pickup arm of the unit. Demand Mode (on PLU edit screen 2) – Assigns a continuous or finite amount of labels to issue. The Printer must be set up for Stripped Mode to activate Demand Mode."
+      },
+      {
+        "page": 37,
+        "text": "Chapter 3: Operating the Scale Operations with the PLU Edit Screen 3-5 Manual PLUs Manual PLUs may contain description and date information as well as label formats, but generally they do not have pricing information. Most of the items on a Manual PLU can be overridden. If the item is a Manual PLU, a screen will be displayed to select the Pricing Mode. Touch the appropriate selection, then enter the requested data into the numeric keyboard. Adjust the parameters as necessary, then touch PRINT to receive a label. Case Labeling When calling a case label PLU (PLU’s with groups 50-70 assigned, refer to Master Programming Manual), enter the weight of the case up to a maximum of 99.99. When selecting a case label PLU, no totals can be printed and the tare key is inactive. No totals are sent to the master for this type of label. Bottom Labels The APPLY BOTTOM LABEL key is a toggle key used to command the optional Model 710 to apply bottom labels to all of the packages in a run. When the key is black, the Model 710 will apply labels to all packages until END RUN is touched. When the key is clear, normal label application occurs. Security Tags Security Tags can be applied to packages with the Model 703 Security Tagger, either all the time (if the apply security tag key is black) or conditionally based on security setpoints (if the key is clear). Note: The APPLY BOTTOM LABEL key must be configured under PLU SCREEN OPTIONS under UNIT SETUP. Note: the Model 703 must be enabled under SECURITY SETUP under UNIT SETUP."
+      },
+      {
+        "page": 20,
+        "text": "METTLER TOLEDO Model 8361 User's Guide 2-8 Label Quick Reference: Program Label Formats and Printer Setup This section is designed for quick reference on the basic steps for common needs in label formatting. Printer and label functions are set from the PROGRAM LABEL FORMATS and PRINTER SETUP buttons. There are 2 basic steps for label formatting: defining or editing a label format, and assigning that format to one of the 7 slots available for that size. For complete label and printer instructions, refer to the Model 8361 Service Manual. Note: Remember to use the paging keys in all situations where a menu or list is presented. Defaults OK If you want to accept the default label formats for all label sizes do nothing."
+      },
+      {
+        "page": 4,
+        "text": "FOLD THIS FLAP FIRST BUSINESS REPLY MAIL FIRST CLASS PERMIT NO. 414 COLUMBUS, OH POSTAGE WILL BE PAID BY ADDRESSEE Mettler-Toledo, LLC Retail Quality Manager - MTWR P.O. Box 1705 Columbus, OH 43216 USA NO POSTAGE NECESSARY IF MAILED IN THE UNITED STATES Please seal with tape."
+      },
+      {
+        "page": 7,
+        "text": "CONTENTS 1 Introduction .................................................................................................... 1-1 General Description ............................................................................................................. 1-1 Display and Keyboard .......................................................................................................... 1-2 Touchscreen Operation ........................................................................................................ 1-3 Mechanical Controls ............................................................................................................ 1-4 2 Unit Setup ...................................................................................................... 2-1 Unit Setup Screen ............................................................................................................. .. 2-1 Program Presets ............................................................................................................... .. 2-2 Security Setpoints ............................................................................................................ ... 2-6 Change Time/Date ............................................................................................................... 2-7 Label Quick Reference: Program Label Formats and Printer Setup .......................................... 2-8 Defaults OK ........................................................................................................................... 2-8 Assign Different Format ........................................................................................................... 2-9 Custom From Default Format ................................................................................................. 2-10 Custom From Another Custom Format ..................................................................................... 2-10 Custom From Scratch ........................................................................................................... 2-11 Bottom Labels ...................................................................................................................... 2-12 PLU Screen Options ........................................................................................................... 2-13 Program Macros .................................................................................................................. 2-13 Configure PLU Edit Screen ..................................................................................................... 2-15 PLU Options ...................................................................................................................... 2-17 Verify Labels ..................................................................................................................... 2-18 Change Department ........................................................................................................... 2-18 Program Password ............................................................................................................ 2-19 3 Operating the Scale ........................................................................................ 3-1 Numeric Entry Screen .......................................................................................................... 3-1 Preset Entry Screen ............................................................................................................. 3-1 Main Screen Interactive Function Keys .................................................................................. 3-2 PLU Edit Screen ............................................................................................................... ... 3-3 Manual Entries .................................................................................................................... 3-4 Operations with the PLU Edit Screen ..................................................................................... 3-4 By-Weight PLUs ..................................................................................................................... 3-4 Standard Pack PLUs ............................................................................................................... 3-4 By-Count PLUs ....................................................................................................................... 3-4 Manual PLUs ......................................................................................................................... 3-5 Case Labeling ........................................................................................................................ 3-5 Bottom Labels ........................................................................................................................ 3-5 Security Tags ......................................................................................................................... 3-5 Cutting Test .................................................................................................................. ...... 3-6 Before Starting the Test ............................................................................................................ 3-6 Running a Cutting Test ............................................................................................................ 3-6 Country Of Origin Labeling (COOL) ....................................................................................... 3-9 4 Maintenance .................................................................................................. 4-1 External Cleaning ................................................................................................................ 4-1"
+      },
+      {
+        "page": 13,
+        "text": "Chapter 2: Unit Setup Unit Setup Screen 2-1 2 Unit Setup Unit Setup Screen Figure 2-1: Unit Setup Screen Below are details on the most common Operater based functions that may need modified. For complete Unit Setup instructions, refer to the Model 8361 Service Manual. * If no password has been configured, the ENTER PASSWORD screen will be bypassed. The Unit Password has two levels of access: Supervisor or Operator. The Supervisor password allows entry into all of the setup functions. The Operator password allows access only to select functions pre- determined by the Supervisor for “Operator” permission. Disabled functions are indicated by grayed key areas. Note You may be presented with paging keys, as shown below. Use the keys to view all available options.  To Top of List  One Page Up  One Page Down  To Bottom of List Touch the SETUP key to access the Unit Setup Screen. * OR Now the UNIT SETUP Screen will appear."
+      },
+      {
+        "page": 41,
+        "text": "Chapter 3: Operating the Scale Country Of Origin Labeling (COOL) 3-9 Country Of Origin Labeling (COOL) This section describes Country of Origin Labeling (COOL) operation if it is enabled and set up properly on your scale. The COOL Text is normally programmed into the PLU record and this pre-programmed COOL statement will be called up with the PLU record. If allowed, you can over-ride this setting, as described in the following sections. When COOL Text is enabled, the PLU Edit screen will show the programmed default COOL text in the center of the screen, under the product PLU number and description. PLU Edit Screen with COOL Text Enabled If the COOL Text box has a double line around it, the default text can be over-ridden from the PLU Edit screen. If COOL Text is Forced, when you call up a PLU record, you will immediately be shown the COOL Text selection screen as shown below. COOL Text Selection Screen (Standard Mode)"
+      },
+      {
+        "page": 31,
+        "text": "Chapter 2: Unit Setup Program Password 2-19 Figure 2-66: Select Department Screen Program Password Operators can be limited in what Unit funtions they have access to modify and use. To do this the functions need to be password protected. From the UNIT SETUP screen, touch PROGRAM PASSWORD. You must enter a Supervisor password in order to enter an operator password. First enter the Supervisor password (1-9999). Figure 2-77: Change Password Entry Keyboard After entering the supervisor password, you will be asked “Enter/Change Operator Password?” Select YES to enter the operator password, or NO to skip this step. Figure 2-18: Operator Password ENTERING/CHANGING OPERATOR PASSWORD? NO YES"
+      }
+    ],
+    "instructions": "Use only the supplied document evidence. Extract exactly two ordered numeric facts needed to answer the comparison question. The first fact must correspond to the first quantity named in the question and the second fact to the second quantity. Do not calculate the difference and do not use outside knowledge. Preserve a shared, explicit unit. Cite only physical PDF pages supplied here. If both facts cannot be identified unambiguously, return status insufficient_evidence with an empty facts list.",
+    "question": "What is the difference between the ZIP codes in the two mailing addresses shown in the manual?",
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "facts": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "cited_pages": {
+                "items": {
+                  "type": "integer"
+                },
+                "type": "array"
+              },
+              "label": {
+                "type": "string"
+              },
+              "metric": {
+                "type": "string"
+              },
+              "unit": {
+                "type": "string"
+              },
+              "value": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "label",
+              "metric",
+              "value",
+              "unit",
+              "cited_pages"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "extracted",
+            "insufficient_evidence"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "status",
+        "facts"
+      ],
+      "type": "object"
+    }
+  },
+  "page_records_sha256": "3db90b252618f181edba7898dddbbc936ddbd49f4c6304ea38c84123ab1b9f7a",
+  "paid_api_used": false,
+  "question_id": "urnuuid181bfd7d-8bf2-4f0a-95e3-1201ac3321aa::q2",
+  "retrieval_method": "hybrid_rrf_bm25_dense_v0_top10",
+  "schema_version": 1,
+  "source_case_sha256": "ff00bbc6758baa257ed3105550e1866168de45f927161512ccf70ea40dfbd10e",
+  "uses_gold_answer": false,
+  "uses_gold_evidence_pages": false
+}

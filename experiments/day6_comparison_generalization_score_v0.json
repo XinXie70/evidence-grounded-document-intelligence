@@ -1,0 +1,50 @@
+{
+  "benchmark_sha256": "ad07c6dfc43e5275ae92b894bf69f151c3dd9467ed79f5b12df904438c5ecb8e",
+  "cases": [
+    {
+      "answer_match": true,
+      "case_id": "heldout_enrollment_full_time",
+      "complete_evidence_match": true,
+      "gold_evidence_pages": [
+        5,
+        7
+      ],
+      "gold_magnitude": "1728",
+      "predicted_magnitude": "1728",
+      "predicted_value_pages": [
+        5,
+        7
+      ],
+      "status": "scored"
+    },
+    {
+      "answer_match": true,
+      "case_id": "heldout_cotton_growth_rate",
+      "complete_evidence_match": true,
+      "gold_evidence_pages": [
+        11,
+        12
+      ],
+      "gold_magnitude": "0.1",
+      "predicted_magnitude": "0.1",
+      "predicted_value_pages": [
+        11,
+        12
+      ],
+      "status": "scored"
+    }
+  ],
+  "experiment_type": "posthoc_comparison_generalization_score",
+  "gold_labels_used_only_after_predictions_frozen": true,
+  "paid_api_used": false,
+  "probe_sha256": "2c85ab890bca896f939c6128426174c1e924cf4fc9b4ce6fe4cf900025f9090d",
+  "schema_version": 1,
+  "split": "development_tune",
+  "summary": {
+    "answer_exact_match_count": 2,
+    "answer_exact_match_rate": 1.0,
+    "case_count": 2,
+    "complete_evidence_match_count": 2,
+    "complete_evidence_match_rate": 1.0
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "experiment_type": "post_prediction_benchmark_score",
+  "question_id": "urnuuid8f8f98a5-ee9a-4e12-a490-7cda781aab39::q4",
+  "split": "development_tune",
+  "prediction": {
+    "left_entity": "Rakuten KC",
+    "left_total_assets_billion_yen": "336.3",
+    "right_entity": "Rakuten Credit",
+    "right_total_assets_billion_yen": "82.7",
+    "signed_difference_billion_yen": "253.6",
+    "direction": "larger"
+  },
+  "benchmark_answer": "253.6",
+  "answer_normalized_value_and_requested_unit_match": true,
+  "selected_evidence_pages": [62, 66],
+  "benchmark_evidence_pages": [62, 66],
+  "complete_evidence_page_match": true,
+  "labels_opened_only_after_prediction_was_frozen": true,
+  "selection_sha256": "2b4209a319863ffc147f1d349624f14cbe47620ebcac0406c1330c48c6779bef",
+  "consistency_audit_sha256": "5916303b4a6e28b2ba1a423783570917c2eb5a86988ea9f52dd6bdde620e300a",
+  "benchmark_sha256": "ad07c6dfc43e5275ae92b894bf69f151c3dd9467ed79f5b12df904438c5ecb8e",
+  "paid_api_used": false
+}

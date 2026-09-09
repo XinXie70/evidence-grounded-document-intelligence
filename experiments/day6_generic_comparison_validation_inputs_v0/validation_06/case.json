@@ -1,0 +1,22 @@
+{
+  "candidate_pages": [
+    13,
+    8,
+    12,
+    18,
+    21,
+    14,
+    11,
+    7,
+    2,
+    19
+  ],
+  "case_id": "validation_06",
+  "doc_id": "urnuuid77b8c272-7717-468a-9c12-b41257db91d9",
+  "page_records": "data/derived/page_records/urnuuid77b8c272-7717-468a-9c12-b41257db91d9.jsonl",
+  "question": "In the study on language support in Mauritian schools, what is the difference between the mean score of language support at home as perceived by children and the mean score of language support at home as reported by parents?",
+  "question_id": "urnuuid77b8c272-7717-468a-9c12-b41257db91d9::q1",
+  "retrieval_method": "hybrid_rrf_bm25_dense_v0_top10",
+  "uses_gold_answer": false,
+  "uses_gold_evidence_pages": false
+}

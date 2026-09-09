@@ -1,0 +1,45 @@
+{
+  "case_count": 6,
+  "cases": [
+    {
+      "case_id": "validation_01",
+      "input_path": "experiments/day6_generic_comparison_validation_inputs_v0/validation_01/input.json",
+      "input_sha256": "dd3e39492db0f58b7de29f63f729800181e4e1c417cf2dfab543fcc213c4ae78",
+      "question_id": "urnuuid181bfd7d-8bf2-4f0a-95e3-1201ac3321aa::q2"
+    },
+    {
+      "case_id": "validation_02",
+      "input_path": "experiments/day6_generic_comparison_validation_inputs_v0/validation_02/input.json",
+      "input_sha256": "bfe44a790d33e969e0f4b57509a675ea18647e3145e13a150ace6cbbdd27d3a9",
+      "question_id": "urnuuid38f64288-801b-4a01-b228-8c98e35b5b9b::q1"
+    },
+    {
+      "case_id": "validation_03",
+      "input_path": "experiments/day6_generic_comparison_validation_inputs_v0/validation_03/input.json",
+      "input_sha256": "f4fd592484265541a413f4acbfc8b890b33e154361905769c160da6f59f32324",
+      "question_id": "urnuuid3a8634c5-69b8-475f-9665-f6d5138e23d8::q2"
+    },
+    {
+      "case_id": "validation_04",
+      "input_path": "experiments/day6_generic_comparison_validation_inputs_v0/validation_04/input.json",
+      "input_sha256": "bd1def8b0d593853535930dac1a24ad2e458ad6bb52e3970c76ad92db91de9c9",
+      "question_id": "urnuuid42d553ad-d2e0-45de-b0a3-b164ea985ef0::q1"
+    },
+    {
+      "case_id": "validation_05",
+      "input_path": "experiments/day6_generic_comparison_validation_inputs_v0/validation_05/input.json",
+      "input_sha256": "237f236f4f485df29b2f7e1c1b9e1c9193355c71bc090d536b0211dc50de71f0",
+      "question_id": "urnuuid44ff3ab7-6cd7-40f9-8abc-28680be05c68::q2"
+    },
+    {
+      "case_id": "validation_06",
+      "input_path": "experiments/day6_generic_comparison_validation_inputs_v0/validation_06/input.json",
+      "input_sha256": "b494f62ced4f57f37fff2e354647bbcbced2d19d2239ee4c471809d8c738a0ff",
+      "question_id": "urnuuid77b8c272-7717-468a-9c12-b41257db91d9::q1"
+    }
+  ],
+  "experiment_id": "day6_frozen_generic_comparison_validation_v0",
+  "schema_version": 1,
+  "selection_sha256": "738a622f90e181dcb556b1def8fb6fb6e0ea4b26bec9d8de8210fbb273025c25",
+  "selection_split": "development_tune"
+}

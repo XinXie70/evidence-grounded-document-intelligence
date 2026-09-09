@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "question_id": "urnuuida6092a6e-5c69-4650-9271-c46bf672a0a7::q1",
+  "source": "deterministic_reliability_test_fixture",
+  "output": {
+    "answer": "The former article has 5 fewer steps than the latter.",
+    "status": "answerable"
+  }
+}

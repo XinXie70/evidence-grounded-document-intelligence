@@ -1,0 +1,22 @@
+{
+  "check": {
+    "accepted": false,
+    "comparative_direction_correct": false,
+    "expected_direction": "more",
+    "expected_magnitude_hours": "6.01",
+    "left_operand_hours": "10.8",
+    "numeric_magnitude_correct": true,
+    "observed_contains_fewer": true,
+    "observed_contains_more": false,
+    "policy_action": "reject_and_abstain_or_regenerate",
+    "reason": "comparative_polarity_mismatch",
+    "right_operand_hours": "4.79",
+    "signed_difference_hours": "6.01"
+  },
+  "experiment_type": "deterministic_comparison_consistency_audit",
+  "paid_api_used": false,
+  "question_id": "urnuuid111476ed-6700-4be2-85cc-3fc17696167e::q3",
+  "result_sha256": "18b89a64b18cc72da120c62aeb4bb48af5c142e35657c04114b98c84fd054791",
+  "schema_version": 1,
+  "selection_sha256": "b7965385f190445404571325eb80e75da5fbf7a973b6d7530dfe8a297a82da48"
+}

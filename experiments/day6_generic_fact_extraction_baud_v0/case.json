@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "case_id": "crossdoc_baud_rates_top3",
+  "question_id": "urnuuid922a78ce-4781-49e4-b9d2-b213b1042f55::q1",
+  "doc_id": "urnuuid922a78ce-4781-49e4-b9d2-b213b1042f55",
+  "question": "In the server mode communication example, what is the difference between the baud rate used for serial communication and the default serial port baud rate?",
+  "candidate_pages": [20, 27, 24],
+  "retrieval_method": "hybrid_rrf_bm25_dense_v0_top3",
+  "uses_gold_answer": false,
+  "uses_gold_evidence_pages": false
+}

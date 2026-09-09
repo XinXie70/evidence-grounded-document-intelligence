@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "question_id": "urnuuid66d41dfa-db77-40dd-98e7-c414076eec28::q2",
+  "source": "deterministic_reliability_test_fixture",
+  "output": {
+    "answer": "The digital time clock module is 10 millimeters less deep than the 5A unboxed power supply.",
+    "status": "answerable"
+  }
+}

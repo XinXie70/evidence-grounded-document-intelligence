@@ -1,0 +1,187 @@
+{
+  "cases": [
+    {
+      "case_id": "visitation",
+      "citation_repair": {
+        "changes": [
+          {
+            "candidate_support_pages": [
+              32,
+              9,
+              4
+            ],
+            "fact_index": 0,
+            "original_cited_pages": [
+              3
+            ],
+            "repaired_cited_pages": [
+              4
+            ]
+          },
+          {
+            "candidate_support_pages": [
+              32,
+              9,
+              4
+            ],
+            "fact_index": 1,
+            "original_cited_pages": [
+              3
+            ],
+            "repaired_cited_pages": [
+              4
+            ]
+          }
+        ],
+        "policy": "preserve_supported_else_earliest_common_physical_page_v0",
+        "status": "repaired",
+        "used_shared_support_page": true
+      },
+      "deterministic_comparison": {
+        "direction": "more",
+        "left_operand": "157472",
+        "magnitude": "13430",
+        "right_operand": "144042",
+        "signed_difference": "13430",
+        "unit": "visitors"
+      },
+      "doc_id": "urnuuid654ae1c6-a936-4b45-8c3f-95b14ba397ac",
+      "model": "gpt-5.6-terra",
+      "operation": "absolute_difference",
+      "question": "In the table showing total visitation data for September, what is the difference between the 2008 visitor estimate for friends/relatives and the 2009 visitor estimate for paid accommodations?",
+      "question_id": "urnuuid654ae1c6-a936-4b45-8c3f-95b14ba397ac::q3",
+      "selected_facts": [
+        {
+          "cited_pages": [
+            4
+          ],
+          "label": "2008 visitor estimate for friends/relatives",
+          "metric": "Visitor estimate",
+          "selection_basis": "model_extraction_then_numeric_occurrence_citation_repair",
+          "unit": "visitors",
+          "value": "157,472"
+        },
+        {
+          "cited_pages": [
+            4
+          ],
+          "label": "2009 visitor estimate for paid accommodations",
+          "metric": "Visitor estimate",
+          "selection_basis": "model_extraction_then_numeric_occurrence_citation_repair",
+          "unit": "visitors",
+          "value": "144,042"
+        }
+      ],
+      "source_response_id": "resp_03751ff6c60fb6ae016aa0e90e9d7087d088ea667630ee6600",
+      "status": "success"
+    },
+    {
+      "case_id": "faculty",
+      "citation_repair": {
+        "changes": [],
+        "policy": "preserve_supported_else_earliest_common_physical_page_v0",
+        "status": "not_needed"
+      },
+      "deterministic_comparison": {
+        "direction": "more",
+        "left_operand": "44",
+        "magnitude": "30",
+        "right_operand": "14",
+        "signed_difference": "30",
+        "unit": "faculty members"
+      },
+      "doc_id": "urnuuid8026e4cd-9993-4d10-94fd-4071d4534409",
+      "model": "gpt-5.6-terra",
+      "operation": "absolute_difference",
+      "question": "What is the difference between the number of permanent faculty members with Ph.D. and the number of faculty who are registered Ph.D. guides?",
+      "question_id": "urnuuid8026e4cd-9993-4d10-94fd-4071d4534409::q4",
+      "selected_facts": [
+        {
+          "cited_pages": [
+            9
+          ],
+          "label": "Permanent faculty members with Ph.D.",
+          "metric": "number",
+          "selection_basis": "model_extraction_from_label_free_retrieved_pages",
+          "unit": "faculty members",
+          "value": "44"
+        },
+        {
+          "cited_pages": [
+            15
+          ],
+          "label": "Faculty who are registered Ph.D. guides",
+          "metric": "number",
+          "selection_basis": "model_extraction_from_label_free_retrieved_pages",
+          "unit": "faculty members",
+          "value": "14"
+        }
+      ],
+      "source_response_id": "resp_0fc395900590d0cf016aa0ea16e50887d09ca7b046b59be7e3",
+      "status": "success"
+    },
+    {
+      "case_id": "net_assets",
+      "citation_repair": {
+        "changes": [],
+        "policy": "preserve_supported_else_earliest_common_physical_page_v0",
+        "status": "not_needed"
+      },
+      "deterministic_comparison": {
+        "direction": "more",
+        "left_operand": "34242862393",
+        "magnitude": "1057264624",
+        "right_operand": "33185597769",
+        "signed_difference": "1057264624",
+        "unit": "u.shs"
+      },
+      "doc_id": "urnuuide933941e-fb2a-445d-902c-848417372326",
+      "model": "gpt-5.6-terra",
+      "operation": "absolute_difference",
+      "question": "In the statement listing assets, liabilities, and equity, what is the difference in Net Assets between the year ended 31 December 2019 and the prior year?",
+      "question_id": "urnuuide933941e-fb2a-445d-902c-848417372326::q1",
+      "selected_facts": [
+        {
+          "cited_pages": [
+            22
+          ],
+          "label": "Net Assets — year ended 31 December 2019",
+          "metric": "Net Assets",
+          "selection_basis": "model_extraction_from_label_free_retrieved_pages",
+          "unit": "U.SHS",
+          "value": "34,242,862,393"
+        },
+        {
+          "cited_pages": [
+            22
+          ],
+          "label": "Net Assets — prior year (2018)",
+          "metric": "Net Assets",
+          "selection_basis": "model_extraction_from_label_free_retrieved_pages",
+          "unit": "U.SHS",
+          "value": "33,185,597,769"
+        }
+      ],
+      "source_response_id": "resp_0aeedce571670955016aa0ea1caed087d0bd40c7bba3d30b06",
+      "status": "success"
+    }
+  ],
+  "experiment_type": "citation_repaired_model_extracted_comparison_batch",
+  "leakage_controls": {
+    "policy_designed_after_development_failure": true,
+    "runtime_uses_benchmark_labels": false,
+    "uses_gold_answer": false,
+    "uses_gold_evidence_pages": false
+  },
+  "paid_api_used": false,
+  "schema_version": 1,
+  "source_citation_audit_sha256": "199c5002fd67e465b9a5fd1af3a4c403100eccc9101081fb3b8632267adc4ac7",
+  "source_finalized_sha256": "4755a4c681b2e0d2ca287183b37c73b63bc2959adba437bd6ec4583f0788c0d3",
+  "split": "development_tune",
+  "summary": {
+    "case_count": 3,
+    "rejected_case_count": 0,
+    "repaired_case_count": 1,
+    "unchanged_case_count": 2
+  }
+}

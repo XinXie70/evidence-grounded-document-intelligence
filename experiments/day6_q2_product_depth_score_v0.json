@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "experiment_type": "post_prediction_benchmark_score",
+  "question_id": "urnuuid66d41dfa-db77-40dd-98e7-c414076eec28::q2",
+  "split": "development_tune",
+  "prediction": {
+    "left_product": "Art.701T",
+    "left_depth_mm": "30",
+    "right_product": "UBPSU5.0",
+    "right_depth_mm": "40",
+    "signed_difference_mm": "-10",
+    "answer_magnitude_mm": "10",
+    "direction": "less"
+  },
+  "benchmark_answer": "10mm",
+  "answer_numeric_unit_match": true,
+  "raw_string_exact_match_not_claimed": true,
+  "selected_evidence_pages": [10, 11, 12, 14],
+  "benchmark_evidence_pages": [10, 11, 12, 14],
+  "complete_evidence_page_match": true,
+  "labels_opened_only_after_prediction_was_frozen": true,
+  "selection_sha256": "e49538d477d6294fbc4aa540ae01ef548e61afe4ee7ac643cd9f63e7cce6c6a0",
+  "consistency_audit_sha256": "3e76c8f67c1c6ba7268e894a8e9aa093ec68e02e3b5dd4f1125e80cd166296e5",
+  "benchmark_sha256": "ad07c6dfc43e5275ae92b894bf69f151c3dd9467ed79f5b12df904438c5ecb8e",
+  "paid_api_used": false
+}

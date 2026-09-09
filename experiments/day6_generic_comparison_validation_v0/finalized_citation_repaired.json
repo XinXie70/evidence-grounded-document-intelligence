@@ -1,0 +1,266 @@
+{
+  "cases": [
+    {
+      "case_id": "validation_01",
+      "citation_repair": {
+        "changes": [],
+        "policy": "preserve_supported_else_earliest_common_physical_page_v0",
+        "status": "not_applicable_abstained"
+      },
+      "deterministic_comparison": null,
+      "doc_id": "urnuuid181bfd7d-8bf2-4f0a-95e3-1201ac3321aa",
+      "model": "gpt-5.6-terra",
+      "operation": "absolute_difference",
+      "question": "What is the difference between the ZIP codes in the two mailing addresses shown in the manual?",
+      "question_id": "urnuuid181bfd7d-8bf2-4f0a-95e3-1201ac3321aa::q2",
+      "reason": "model_reported_insufficient_evidence",
+      "selected_facts": [],
+      "source_response_id": "resp_0a9075286dbd385f016aa0edfc244c87d0a05198a215ebdc48",
+      "status": "unsupported"
+    },
+    {
+      "case_id": "validation_02",
+      "citation_repair": {
+        "changes": [],
+        "policy": "preserve_supported_else_earliest_common_physical_page_v0",
+        "status": "not_needed"
+      },
+      "deterministic_comparison": {
+        "direction": "more",
+        "left_operand": "100",
+        "magnitude": "96",
+        "right_operand": "4",
+        "signed_difference": "96",
+        "unit": "pins"
+      },
+      "doc_id": "urnuuid38f64288-801b-4a01-b228-8c98e35b5b9b",
+      "model": "gpt-5.6-terra",
+      "operation": "absolute_difference",
+      "question": "How many total pins does the connector that links to the target system have, according to the specifications table listing the product configuration, compared to the number of pins on the connector used for the oscillator circuit board? What is the difference?",
+      "question_id": "urnuuid38f64288-801b-4a01-b228-8c98e35b5b9b::q1",
+      "selected_facts": [
+        {
+          "cited_pages": [
+            19
+          ],
+          "label": "Connector linking to the target system (J3)",
+          "metric": "total pins",
+          "selection_basis": "model_extraction_from_label_free_retrieved_pages",
+          "unit": "pins",
+          "value": "100"
+        },
+        {
+          "cited_pages": [
+            19
+          ],
+          "label": "Connector used for the oscillator circuit board (J6)",
+          "metric": "total pins",
+          "selection_basis": "model_extraction_from_label_free_retrieved_pages",
+          "unit": "pins",
+          "value": "4"
+        }
+      ],
+      "source_response_id": "resp_00f968255e0d8fab016aa0edffaafc87d0a9ba9b9ac08d9639",
+      "status": "success"
+    },
+    {
+      "case_id": "validation_03",
+      "citation_repair": {
+        "changes": [],
+        "policy": "preserve_supported_else_earliest_common_physical_page_v0",
+        "status": "not_needed"
+      },
+      "deterministic_comparison": {
+        "direction": "more",
+        "left_operand": "55242",
+        "magnitude": "403",
+        "right_operand": "54839",
+        "signed_difference": "403",
+        "unit": "keur"
+      },
+      "doc_id": "urnuuid3a8634c5-69b8-475f-9665-f6d5138e23d8",
+      "model": "gpt-5.6-terra",
+      "operation": "absolute_difference",
+      "question": "What is the difference between the NA segment's total revenue in HY 2024 from the segment reconciliation table and the United States revenue in HY 2024 from the geographic revenue breakdown?",
+      "question_id": "urnuuid3a8634c5-69b8-475f-9665-f6d5138e23d8::q2",
+      "selected_facts": [
+        {
+          "cited_pages": [
+            26
+          ],
+          "label": "NA segment total revenue",
+          "metric": "HY 2024 Revenue total",
+          "selection_basis": "model_extraction_from_label_free_retrieved_pages",
+          "unit": "kEUR",
+          "value": "55,242"
+        },
+        {
+          "cited_pages": [
+            26
+          ],
+          "label": "United States revenue",
+          "metric": "HY 2024 geographic revenue breakdown",
+          "selection_basis": "model_extraction_from_label_free_retrieved_pages",
+          "unit": "kEUR",
+          "value": "54,839"
+        }
+      ],
+      "source_response_id": "resp_0a94290c25366b45016aa0ee0491f487d0908e590d698d7a93",
+      "status": "success"
+    },
+    {
+      "case_id": "validation_04",
+      "citation_repair": {
+        "changes": [],
+        "policy": "preserve_supported_else_earliest_common_physical_page_v0",
+        "status": "not_needed"
+      },
+      "deterministic_comparison": {
+        "direction": "fewer",
+        "left_operand": "4485",
+        "magnitude": "5383",
+        "right_operand": "9868",
+        "signed_difference": "-5383",
+        "unit": "jobs"
+      },
+      "doc_id": "urnuuid42d553ad-d2e0-45de-b0a3-b164ea985ef0",
+      "model": "gpt-5.6-terra",
+      "operation": "absolute_difference",
+      "question": "What is the difference between the induced employment figure for the five counties and the total employment figure for the three South Carolina counties, as shown in the economic impact tables?",
+      "question_id": "urnuuid42d553ad-d2e0-45de-b0a3-b164ea985ef0::q1",
+      "selected_facts": [
+        {
+          "cited_pages": [
+            18
+          ],
+          "label": "Five counties — induced employment",
+          "metric": "Employment",
+          "selection_basis": "model_extraction_from_label_free_retrieved_pages",
+          "unit": "jobs",
+          "value": "4,485"
+        },
+        {
+          "cited_pages": [
+            22
+          ],
+          "label": "Three South Carolina counties — total employment",
+          "metric": "Employment",
+          "selection_basis": "model_extraction_from_label_free_retrieved_pages",
+          "unit": "jobs",
+          "value": "9,868"
+        }
+      ],
+      "source_response_id": "resp_0f16f11557d6d1e6016aa0ee075cb887d0bb44008dcbf97533",
+      "status": "success"
+    },
+    {
+      "case_id": "validation_05",
+      "citation_repair": {
+        "changes": [],
+        "policy": "preserve_supported_else_earliest_common_physical_page_v0",
+        "status": "not_needed"
+      },
+      "deterministic_comparison": {
+        "direction": "fewer",
+        "left_operand": "-39",
+        "magnitude": "35.5",
+        "right_operand": "-3.5",
+        "signed_difference": "-35.5",
+        "unit": "billions of yen"
+      },
+      "doc_id": "urnuuid44ff3ab7-6cd7-40f9-8abc-28680be05c68",
+      "model": "gpt-5.6-terra",
+      "operation": "absolute_difference",
+      "question": "In the full-year forecast operating income waterfall chart, what is the difference between the total one-time cost for FY2021 and the FY2021 revised forecast's one-time cost difference shown in the revised-versus-previous forecast waterfall chart?",
+      "question_id": "urnuuid44ff3ab7-6cd7-40f9-8abc-28680be05c68::q2",
+      "selected_facts": [
+        {
+          "cited_pages": [
+            22
+          ],
+          "label": "FY2021 total one-time cost",
+          "metric": "One-time cost",
+          "selection_basis": "model_extraction_from_label_free_retrieved_pages",
+          "unit": "Billions of yen",
+          "value": "(39.0)"
+        },
+        {
+          "cited_pages": [
+            23
+          ],
+          "label": "FY2021 revised forecast versus previous forecast one-time cost difference",
+          "metric": "Difference of non-recurring cost",
+          "selection_basis": "model_extraction_from_label_free_retrieved_pages",
+          "unit": "Billions of yen",
+          "value": "(3.5)"
+        }
+      ],
+      "source_response_id": "resp_018b0aba74a4f89f016aa0ee0b335487d083dfcc72db4d349d",
+      "status": "success"
+    },
+    {
+      "case_id": "validation_06",
+      "citation_repair": {
+        "changes": [],
+        "policy": "preserve_supported_else_earliest_common_physical_page_v0",
+        "status": "not_needed"
+      },
+      "deterministic_comparison": {
+        "direction": "more",
+        "left_operand": "3.15",
+        "magnitude": "0.31",
+        "right_operand": "2.84",
+        "signed_difference": "0.31",
+        "unit": "score (1–5 scale)"
+      },
+      "doc_id": "urnuuid77b8c272-7717-468a-9c12-b41257db91d9",
+      "model": "gpt-5.6-terra",
+      "operation": "absolute_difference",
+      "question": "In the study on language support in Mauritian schools, what is the difference between the mean score of language support at home as perceived by children and the mean score of language support at home as reported by parents?",
+      "question_id": "urnuuid77b8c272-7717-468a-9c12-b41257db91d9::q1",
+      "selected_facts": [
+        {
+          "cited_pages": [
+            13
+          ],
+          "label": "Children’s perceived language support at home",
+          "metric": "Mean score",
+          "selection_basis": "model_extraction_from_label_free_retrieved_pages",
+          "unit": "score (1–5 scale)",
+          "value": "3.15"
+        },
+        {
+          "cited_pages": [
+            12
+          ],
+          "label": "Parents’ reported language support at home",
+          "metric": "Mean score",
+          "selection_basis": "model_extraction_from_label_free_retrieved_pages",
+          "unit": "score (1–5 scale)",
+          "value": "2.84"
+        }
+      ],
+      "source_response_id": "resp_0f8ba06001763f4f016aa0ee9b31ac87d089cf2430364746d1",
+      "status": "success"
+    }
+  ],
+  "experiment_type": "citation_repaired_model_extracted_comparison_batch",
+  "leakage_controls": {
+    "policy_designed_after_development_failure": true,
+    "runtime_uses_benchmark_labels": false,
+    "uses_gold_answer": false,
+    "uses_gold_evidence_pages": false
+  },
+  "paid_api_used": false,
+  "schema_version": 1,
+  "source_citation_audit_sha256": "9ecf01ba77987926779b60c0a48c2e20fe6834cb210aaf3697c88a735a53a484",
+  "source_finalized_sha256": "babd6b285b4aca1694cb2ac29e01ed416f17751256f04ab8f57ee0263e55c768",
+  "split": "development_tune",
+  "summary": {
+    "abstained_case_count": 1,
+    "case_count": 6,
+    "rejected_case_count": 0,
+    "repaired_case_count": 0,
+    "unchanged_case_count": 5
+  }
+}

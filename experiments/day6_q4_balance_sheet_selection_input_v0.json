@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "question_id": "urnuuid8f8f98a5-ee9a-4e12-a490-7cda781aab39::q4",
+  "doc_id": "urnuuid8f8f98a5-ee9a-4e12-a490-7cda781aab39",
+  "split": "development_tune",
+  "question": "How much larger is the total assets figure on the credit card subsidiary's balance sheet (the one showing installment accounts receivable) compared to the total assets on the credit company's balance sheet (the one showing loan receivables), both as of June 30, 2007? Answer in billion yen.",
+  "retrieval_method": "hybrid_rrf_bm25_dense_v0_top10",
+  "candidate_pages": [66, 62, 30, 65, 36, 33, 1, 64, 29, 25],
+  "uses_gold_answer": false,
+  "uses_gold_evidence_pages": false
+}

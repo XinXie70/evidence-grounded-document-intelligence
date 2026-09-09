@@ -14,6 +14,7 @@ from egdi.reasoning_api import (
     preflight_request_budget,
     snapshot_api_response,
     validate_execution_logging_config,
+    validate_comparison_fact_output,
     validate_grounded_output,
     validate_pricing_snapshot,
 )
@@ -165,6 +166,39 @@ class ReasoningApiTests(unittest.TestCase):
         self.assertEqual(result["output"]["answer"], "18")
         self.assertTrue(result["validation"]["valid"])
         self.assertEqual(result["usage"]["total_tokens"], 120)
+
+    def test_validates_comparison_fact_extraction_output(self):
+        output = {
+            "status": "extracted",
+            "facts": [
+                {"label": "server", "metric": "baud rate", "value": "57600",
+                 "unit": "baud", "cited_pages": [24]},
+                {"label": "default", "metric": "baud rate", "value": "38400",
+                 "unit": "baud", "cited_pages": [20]},
+            ],
+        }
+        self.assertTrue(validate_comparison_fact_output(output, [20, 24, 27])["valid"])
+        output["facts"][0]["value"] = "157,472"
+        self.assertTrue(validate_comparison_fact_output(output, [20, 24, 27])["valid"])
+        output["facts"][0]["value"] = "(39.0)"
+        self.assertTrue(validate_comparison_fact_output(output, [20, 24, 27])["valid"])
+        output["facts"][0]["value"] = "15,74,72"
+        self.assertFalse(validate_comparison_fact_output(output, [20, 24, 27])["valid"])
+        output["facts"][0]["value"] = "57600"
+        output["facts"][1]["cited_pages"] = [99]
+        invalid = validate_comparison_fact_output(output, [20, 24, 27])
+        self.assertFalse(invalid["valid"])
+        self.assertFalse(invalid["citations_within_supplied_context"])
+
+    def test_execute_one_dispatches_comparison_fact_validation(self):
+        self.config["output_role"] = "comparison_fact_extraction"
+        client = FakeClient({"status": "extracted", "facts": [
+            {"label": "A", "metric": "m", "value": "10", "unit": "items",
+             "cited_pages": [2]},
+            {"label": "B", "metric": "m", "value": "5", "unit": "items",
+             "cited_pages": [2]}]})
+        result = execute_one(self.record, self.config, client=client)
+        self.assertTrue(result["validation"]["valid"])
 
     def test_empty_output_preserves_response_status_and_usage(self):
         response = SimpleNamespace(

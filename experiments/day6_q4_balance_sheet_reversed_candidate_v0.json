@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "question_id": "urnuuid8f8f98a5-ee9a-4e12-a490-7cda781aab39::q4",
+  "source": "deterministic_reliability_test_fixture",
+  "output": {
+    "answer": "Rakuten KC's total assets are 253.6 billion yen less than Rakuten Credit's.",
+    "status": "answerable"
+  }
+}

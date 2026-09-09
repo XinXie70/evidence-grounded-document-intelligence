@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "experiment_type": "post_prediction_benchmark_score",
+  "question_id": "urnuuid7fbb918e-acda-4053-9c23-c16621876e15::q3",
+  "split": "development_tune",
+  "prediction": {
+    "left_entity_metric": "China cotton ending stocks at end of projection period",
+    "left_value_million_bales": "30.4",
+    "right_entity_metric": "India average cotton exports over next ten years",
+    "right_value_million_bales": "2.6",
+    "signed_difference_million_bales": "27.8",
+    "direction": "higher"
+  },
+  "benchmark_answer": "27.8 million bales",
+  "answer_value_and_unit_match": true,
+  "selected_evidence_pages": [11, 12],
+  "benchmark_evidence_pages": [11, 12],
+  "complete_evidence_page_match": true,
+  "labels_opened_only_after_prediction_was_frozen": true,
+  "selection_sha256": "571b3c3abb472eb45cfcdbb45496234229271659fc53a699d25a9b82550bf147",
+  "consistency_audit_sha256": "7e6d373adffc3d8c7073674760233bc720c9c670e1adae21adadeea4a84e7299",
+  "benchmark_sha256": "ad07c6dfc43e5275ae92b894bf69f151c3dd9467ed79f5b12df904438c5ecb8e",
+  "paid_api_used": false
+}

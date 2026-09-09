@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "experiment_id": "day6_frozen_generic_comparison_validation_v0",
+  "status": "approved_not_started",
+  "approved_hard_cap_usd": 1.0,
+  "unique_paid_request_count": 6,
+  "input_manifest_sha256": "b06ca9ca367aebf3cbd16e78acdd3a63595102f85e4886f80d56b6c4e191e389",
+  "config_sha256": "be6534374de9bd6a7cdd342ba2bd8eb169b7343b5bedfe4e550b28437a6dd8db"
+}

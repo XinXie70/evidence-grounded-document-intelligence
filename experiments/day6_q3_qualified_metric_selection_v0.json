@@ -1,0 +1,36 @@
+{
+  "candidate_page_count": 10,
+  "doc_id": "urnuuid7fbb918e-acda-4053-9c23-c16621876e15",
+  "experiment_type": "question_guided_qualified_metric_selection",
+  "input_sha256": "ab438cd113a65af26292b54e08067aa710af964925346f3d6a7f53054cdbd2dd",
+  "page_records_sha256": "9f592f58cdd9fcd374710b1f2c2c9a13f1b1f7a078176563a07b99539a462518",
+  "paid_api_used": false,
+  "question": "According to the document, how many million bales higher is China's projected ending stocks at the end of the projection period compared to India's projected average annual cotton exports over the next ten years?",
+  "question_id": "urnuuid7fbb918e-acda-4053-9c23-c16621876e15::q3",
+  "schema_version": 1,
+  "selected_facts": [
+    {
+      "entity": "China",
+      "metric": "cotton ending stocks",
+      "page": 11,
+      "selection_basis": "question_entity_metric_statistic_and_time_qualifiers",
+      "statistic": "end value",
+      "time_scope": "end of projection period",
+      "unit": "million bales",
+      "value": "30.4"
+    },
+    {
+      "entity": "India",
+      "metric": "cotton exports",
+      "page": 12,
+      "selection_basis": "question_entity_metric_statistic_and_time_qualifiers",
+      "statistic": "average",
+      "time_scope": "next ten years",
+      "unit": "million bales",
+      "value": "2.6"
+    }
+  ],
+  "selector_version": "qualified_metric_selector_v0",
+  "uses_gold_answer": false,
+  "uses_gold_evidence_pages": false
+}

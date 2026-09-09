@@ -1,0 +1,68 @@
+{
+  "contract_type": "comparison_evidence",
+  "doc_id": "urnuuida6092a6e-5c69-4650-9271-c46bf672a0a7",
+  "leakage_controls": {
+    "uses_gold_answer": false,
+    "uses_gold_evidence_pages": false
+  },
+  "left": {
+    "label": "building resilience",
+    "metric": "numbered list count",
+    "provenance": {
+      "selection_basis": "question_topic_then_contiguous_numbered_sequence",
+      "source_type": "numbered_list",
+      "supporting_pages": [
+        15,
+        16
+      ],
+      "value_pages": [
+        15,
+        16
+      ]
+    },
+    "qualifiers": {
+      "marker_style": "numbered",
+      "observed_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "unit": "steps",
+    "value": "7"
+  },
+  "operation": "left_minus_right",
+  "paid_api_used": false,
+  "question": "Comparing the article about building resilience that lists numbered practices and the article about keys to resilience that describes numbered mental health competencies, how many more steps does the former article have than the latter?",
+  "question_id": "urnuuida6092a6e-5c69-4650-9271-c46bf672a0a7::q1",
+  "right": {
+    "label": "keys to resilience",
+    "metric": "numbered list count",
+    "provenance": {
+      "selection_basis": "question_topic_then_contiguous_numbered_sequence",
+      "source_type": "numbered_list",
+      "supporting_pages": [
+        19
+      ],
+      "value_pages": [
+        19
+      ]
+    },
+    "qualifiers": {
+      "marker_style": "step",
+      "observed_numbers": [
+        1,
+        2
+      ]
+    },
+    "unit": "steps",
+    "value": "2"
+  },
+  "schema_version": 1,
+  "source_selection_sha256": "4b2b29f00d311dfa469249f6d4363d6d76a5adb4be15265c82aa23c28559909e",
+  "source_selector_type": "list_count_selector_v1_excludes_reference_sections"
+}

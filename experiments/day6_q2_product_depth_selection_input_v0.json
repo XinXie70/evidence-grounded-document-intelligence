@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "question_id": "urnuuid66d41dfa-db77-40dd-98e7-c414076eec28::q2",
+  "doc_id": "urnuuid66d41dfa-db77-40dd-98e7-c414076eec28",
+  "split": "development_tune",
+  "question": "The depth dimension of the digital time clock module with four push buttons visible on its front panel is how many millimeters less than the depth dimension of the 5A unboxed power supply unit?",
+  "retrieval_method": "hybrid_rrf_bm25_dense_v0_top10",
+  "candidate_pages": [12, 10, 4, 14, 6, 11, 9, 5, 23, 15],
+  "uses_gold_answer": false,
+  "uses_gold_evidence_pages": false
+}

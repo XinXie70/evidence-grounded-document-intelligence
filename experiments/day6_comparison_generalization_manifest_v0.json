@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "experiment_type": "held_out_comparison_generalization_manifest",
+  "split": "development_tune",
+  "uses_gold_answer": false,
+  "uses_gold_evidence_pages": false,
+  "selection_policy": "same structural family as a developed case, but a question not used to implement that selector",
+  "retrieval_method": "hybrid_rrf_bm25_dense_v0_top10",
+  "cases": [
+    {
+      "case_id": "heldout_enrollment_full_time",
+      "question_id": "urnuuid6977f498-b814-42ae-85db-4adaf7a88c9f::q2",
+      "doc_id": "urnuuid6977f498-b814-42ae-85db-4adaf7a88c9f",
+      "question": "What is the difference between the grand total of full-time female Bachelor's and 1st Professional degree students and the grand total of full-time male Bachelor's and 1st Professional degree students?",
+      "selector_version": "continued_enrollment_table_v0",
+      "candidate_pages": [7, 5, 9, 4, 6, 10, 8, 2, 3, 28],
+      "page_records": "data/derived/page_records/urnuuid6977f498-b814-42ae-85db-4adaf7a88c9f.jsonl"
+    },
+    {
+      "case_id": "heldout_cotton_growth_rate",
+      "question_id": "urnuuid7fbb918e-acda-4053-9c23-c16621876e15::q1",
+      "doc_id": "urnuuid7fbb918e-acda-4053-9c23-c16621876e15",
+      "question": "According to the document, what is the difference in the projected long-term average annual growth rate of cotton mill use between China and India over the next ten years?",
+      "selector_version": "qualified_metric_selector_v0",
+      "candidate_pages": [12, 6, 23, 7, 11, 3, 13, 5, 9, 19],
+      "page_records": "data/derived/page_records/urnuuid7fbb918e-acda-4053-9c23-c16621876e15.jsonl"
+    }
+  ]
+}

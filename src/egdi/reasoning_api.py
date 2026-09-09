@@ -13,6 +13,7 @@ import time
 from typing import Any
 
 from .io import canonical_json_bytes, sha256_file, write_json
+from .comparison_consistency import parse_decimal_value
 
 
 COST_ACKNOWLEDGEMENT = "I_ACKNOWLEDGE_ONE_PAID_REASONING_REQUEST"
@@ -252,6 +253,55 @@ def validate_grounded_output(
     }
 
 
+def validate_comparison_fact_output(
+    parsed: dict[str, Any], supplied_pages: list[int]
+) -> dict[str, Any]:
+    """Validate a two-fact extraction before deterministic arithmetic."""
+    errors: list[str] = []
+    status = parsed.get("status")
+    facts = parsed.get("facts")
+    if not isinstance(facts, list):
+        errors.append("facts is not a list")
+        facts = []
+    if status == "insufficient_evidence":
+        if facts:
+            errors.append("insufficient_evidence must have no facts")
+    elif status == "extracted":
+        if len(facts) != 2:
+            errors.append("extracted output must contain exactly two ordered facts")
+        for index, fact in enumerate(facts):
+            if not isinstance(fact, dict):
+                errors.append(f"fact {index} is not an object")
+                continue
+            for key in ("label", "metric", "value", "unit"):
+                if not isinstance(fact.get(key), str) or not fact[key].strip():
+                    errors.append(f"fact {index}.{key} must be a non-empty string")
+            try:
+                parse_decimal_value(fact.get("value", ""))
+            except (ValueError, TypeError):
+                errors.append(f"fact {index}.value must be a finite decimal string")
+            citations = fact.get("cited_pages")
+            if not isinstance(citations, list) or not citations:
+                errors.append(f"fact {index}.cited_pages must be a non-empty list")
+                continue
+            if any(isinstance(page, bool) or not isinstance(page, int) for page in citations):
+                errors.append(f"fact {index}.cited_pages must contain integers")
+            elif len(citations) != len(set(citations)):
+                errors.append(f"fact {index}.cited_pages contains duplicates")
+            outside = sorted(set(citations) - set(supplied_pages))
+            if outside:
+                errors.append(f"fact {index} cites unsupplied pages: {outside}")
+    else:
+        errors.append("status is invalid")
+    return {
+        "valid": not errors,
+        "citations_within_supplied_context": not any(
+            "unsupplied pages" in error for error in errors
+        ),
+        "errors": errors,
+    }
+
+
 def validate_execution_logging_config(config: dict[str, Any]) -> dict[str, Any]:
     """Validate metadata required for protocol-compliant paid-call logging."""
     required_strings = (
@@ -268,6 +318,9 @@ def validate_execution_logging_config(config: dict[str, Any]) -> dict[str, Any]:
         raise ValueError("config.provider must be 'openai'")
     if config["endpoint_mode"] != "v1/responses":
         raise ValueError("config.endpoint_mode must be 'v1/responses'")
+    output_role = config.get("output_role", "answer_generation")
+    if output_role not in {"answer_generation", "comparison_fact_extraction"}:
+        raise ValueError("config.output_role is invalid")
     max_retries = config.get("max_retries")
     if isinstance(max_retries, bool) or max_retries != 0:
         raise ValueError("config.max_retries must be 0 so retries are exactly observable")
@@ -450,7 +503,7 @@ def build_call_log(
         "pricing_snapshot_id": pricing["pricing_snapshot_id"],
         "prompt_sha256": prompt_sha256,
         "context_ids": context_ids,
-        "role": "answer_generation",
+        "role": config.get("output_role", "answer_generation"),
     }
 
 
@@ -522,10 +575,14 @@ def execute_one(
         "model": response.model,
         "response_id": response.id,
         "output": parsed,
-        "validation": validate_grounded_output(
-            parsed,
-            supplied_pages,
-            allow_uncited_answer=experiment_record.get("condition") == "closed_book",
+        "validation": (
+            validate_comparison_fact_output(parsed, supplied_pages)
+            if config.get("output_role") == "comparison_fact_extraction"
+            else validate_grounded_output(
+                parsed,
+                supplied_pages,
+                allow_uncited_answer=experiment_record.get("condition") == "closed_book",
+            )
         ),
         "usage": usage,
     }

@@ -1,0 +1,204 @@
+{
+  "answerable_question_count": 239,
+  "benchmark_sha256": "ad07c6dfc43e5275ae92b894bf69f151c3dd9467ed79f5b12df904438c5ecb8e",
+  "categories": {
+    "difference_wording": {
+      "count": 31,
+      "questions": [
+        {
+          "question": "According to the population distribution table broken down by district, what is the difference in total population between the most populous and least populous districts?",
+          "question_id": "urnuuid111476ed-6700-4be2-85cc-3fc17696167e::q1"
+        },
+        {
+          "question": "What is the difference between the ZIP codes in the two mailing addresses shown in the manual?",
+          "question_id": "urnuuid181bfd7d-8bf2-4f0a-95e3-1201ac3321aa::q2"
+        },
+        {
+          "question": "How many total pins does the connector that links to the target system have, according to the specifications table listing the product configuration, compared to the number of pins on the connector used for the oscillator circuit board? What is the difference?",
+          "question_id": "urnuuid38f64288-801b-4a01-b228-8c98e35b5b9b::q1"
+        },
+        {
+          "question": "What is the difference between the NA segment's total revenue in HY 2024 from the segment reconciliation table and the United States revenue in HY 2024 from the geographic revenue breakdown?",
+          "question_id": "urnuuid3a8634c5-69b8-475f-9665-f6d5138e23d8::q2"
+        },
+        {
+          "question": "What is the difference between the revenue reported in the group income statement and the total gold income from all geographic segments in the segmental reporting for the quarter ended June 2012?",
+          "question_id": "urnuuid425f7a17-aa57-4cca-b56e-612fe270751d::q1"
+        },
+        {
+          "question": "For the quarter ended June 2012, what is the difference between the basic earnings per ordinary share (in cents) reported in the income statement and the headline earnings per ordinary share reported in the headline earnings note?",
+          "question_id": "urnuuid425f7a17-aa57-4cca-b56e-612fe270751d::q3"
+        },
+        {
+          "question": "What is the difference in total exploration expenditure between the second quarter of 2012 and the same quarter in 2011?",
+          "question_id": "urnuuid425f7a17-aa57-4cca-b56e-612fe270751d::q4"
+        },
+        {
+          "question": "What is the difference between the induced employment figure for the five counties and the total employment figure for the three South Carolina counties, as shown in the economic impact tables?",
+          "question_id": "urnuuid42d553ad-d2e0-45de-b0a3-b164ea985ef0::q1"
+        },
+        {
+          "question": "In the full-year forecast operating income waterfall chart, what is the difference between the total one-time cost for FY2021 and the FY2021 revised forecast's one-time cost difference shown in the revised-versus-previous forecast waterfall chart?",
+          "question_id": "urnuuid44ff3ab7-6cd7-40f9-8abc-28680be05c68::q2"
+        },
+        {
+          "question": "For well MW3, what is the difference in depth to water (in feet) between the earliest monitoring date and the latest monitoring date recorded in the monitoring data summary?",
+          "question_id": "urnuuid45a0a8e5-e31b-4e74-9663-f27ab82db68f::q5"
+        },
+        {
+          "question": "In the table showing total visitation data for September, what is the difference between the 2008 visitor estimate for friends/relatives and the 2009 visitor estimate for paid accommodations?",
+          "question_id": "urnuuid654ae1c6-a936-4b45-8c3f-95b14ba397ac::q3"
+        },
+        {
+          "question": "What is the difference between the grand total of full-time female Bachelor's and 1st Professional degree students and the grand total of full-time male Bachelor's and 1st Professional degree students?",
+          "question_id": "urnuuid6977f498-b814-42ae-85db-4adaf7a88c9f::q2"
+        },
+        {
+          "question": "In the study on language support in Mauritian schools, what is the difference between the mean score of language support at home as perceived by children and the mean score of language support at home as reported by parents?",
+          "question_id": "urnuuid77b8c272-7717-468a-9c12-b41257db91d9::q1"
+        },
+        {
+          "question": "In the Mauritian language support study, what is the difference between the potential improved Cronbach's alpha values (if one item were removed) for the children's home language support factor and the teachers' school language support factor?",
+          "question_id": "urnuuid77b8c272-7717-468a-9c12-b41257db91d9::q2"
+        },
+        {
+          "question": "What is the difference in the percentage of first-time visitors to Lee County between the September monthly snapshot and the calendar year-to-date snapshot for 2012?",
+          "question_id": "urnuuid7a5eb4b5-9535-4a34-b886-f468b8bfe4fe::q1"
+        },
+        {
+          "question": "According to the document, what is the difference in the projected long-term average annual growth rate of cotton mill use between China and India over the next ten years?",
+          "question_id": "urnuuid7fbb918e-acda-4053-9c23-c16621876e15::q1"
+        },
+        {
+          "question": "What is the difference between the projected average annual growth rate of world cotton trade and the projected average annual growth rate of Vietnam's cotton mill use over the projection period?",
+          "question_id": "urnuuid7fbb918e-acda-4053-9c23-c16621876e15::q5"
+        },
+        {
+          "question": "What is the difference in the percentage of ethnic Serbs among Kosovo Serb focus group participants versus the percentage of ethnic Serbs among the Serbia-based focus group participants?",
+          "question_id": "urnuuid7fd367d3-8661-418f-95cf-c7343135ba57::q3"
+        },
+        {
+          "question": "What is the difference between the number of permanent faculty members with Ph.D. and the number of faculty who are registered Ph.D. guides?",
+          "question_id": "urnuuid8026e4cd-9993-4d10-94fd-4071d4534409::q4"
+        },
+        {
+          "question": "In the two junior gents individual haircutting competitions that use mannequin heads from official sponsors, what is the difference in minimum hair length on top between the curly cut and the street cut?",
+          "question_id": "urnuuid881f7d70-7e7b-4b1a-90a9-3d837a1a8299::q1"
+        },
+        {
+          "question": "What is the difference between the basic net asset value per share in 2008 and the basic return per ordinary share in 2008?",
+          "question_id": "urnuuid8f2628d5-89b1-4143-bb0f-623743d738bf::q3"
+        },
+        {
+          "question": "What is the difference between the total consolidated goodwill amortization in 07/Q2 (in million yen) and the consolidated total capital expenditures in 2007 Q2 (converted to million yen)?",
+          "question_id": "urnuuid8f8f98a5-ee9a-4e12-a490-7cda781aab39::q2"
+        },
+        {
+          "question": "What is the difference between the total projected 2027-28 spending for the long-term care program area and the physician services portion of OHIP spending projected for that same year?",
+          "question_id": "urnuuid9144e47d-4fb9-4505-8763-a18ecd3f8d03::q2"
+        },
+        {
+          "question": "In the server mode communication example, what is the difference between the baud rate used for serial communication and the default serial port baud rate?",
+          "question_id": "urnuuid922a78ce-4781-49e4-b9d2-b213b1042f55::q1"
+        },
+        {
+          "question": "In the client mode communication example, the destination IP address shown in the gateway configuration screenshot differs from the default IP address listed in the network defaults table. Comparing the last octets of these two addresses, what is the difference?",
+          "question_id": "urnuuid922a78ce-4781-49e4-b9d2-b213b1042f55::q2"
+        },
+        {
+          "question": "What is the difference between the midpoint daily rate for the administrative program job grade that includes the Principal – Middle School position and the midpoint daily rate for the job grade that includes the Coordinator – Marketing position?",
+          "question_id": "urnuuid9c816757-7885-4045-b092-79ecba54c3ab::q2"
+        },
+        {
+          "question": "What is the difference between the maximum daily rate for the highest-graded administrative program position and the minimum daily rate for the lowest-graded one?",
+          "question_id": "urnuuid9c816757-7885-4045-b092-79ecba54c3ab::q6"
+        },
+        {
+          "question": "What is the difference between the 2019 net loans figure in the collateralization of loans table and the end-of-period total in the impaired loan balances table?",
+          "question_id": "urnuuidaab87e8f-1914-440e-aa3e-9647ed8182cd::q2"
+        },
+        {
+          "question": "Comparing the table showing administrative expenses payable and the table showing administrative expenses incurred, which fee category shows the largest absolute difference between the amount payable and the amount expensed for 2021?",
+          "question_id": "urnuuidd53ccef7-60ba-43a8-81a9-bf14619772b9::q1"
+        },
+        {
+          "question": "In the statement listing assets, liabilities, and equity, what is the difference in Net Assets between the year ended 31 December 2019 and the prior year?",
+          "question_id": "urnuuide933941e-fb2a-445d-902c-848417372326::q1"
+        },
+        {
+          "question": "What is the difference between the 2019 Total Assets and the 2019 Total Reserves as shown in the financial position statement?",
+          "question_id": "urnuuide933941e-fb2a-445d-902c-848417372326::q2"
+        }
+      ]
+    },
+    "directional_compared_to": {
+      "count": 7,
+      "questions": [
+        {
+          "question": "Comparing the waterfall chart showing the quarterly year-over-year operating income analysis with the full-year forecast waterfall chart, by how much more did the FX impact contribute to operating income in the full-year forecast compared to the quarterly comparison?",
+          "question_id": "urnuuid44ff3ab7-6cd7-40f9-8abc-28680be05c68::q1"
+        },
+        {
+          "question": "How many more percentage points do respondents report for the challenge of delivering a seamless holistic customer experience compared to the top challenge in the strategy development and implementation challenges chart?",
+          "question_id": "urnuuid58857e11-82b0-4d36-a53c-aaddfe925afc::q2"
+        },
+        {
+          "question": "How many more part-time female students are enrolled in bachelor's and first professional degree programs compared to part-time male students, according to the gender-specific enrolment tables for Fall 2008?",
+          "question_id": "urnuuid6977f498-b814-42ae-85db-4adaf7a88c9f::q3"
+        },
+        {
+          "question": "How much more total interest does the compound interest method accumulate compared to the simple interest method over the same period in the furniture purchase example used to explain borrowing costs?",
+          "question_id": "urnuuid72e89e2e-f89d-4cb9-a0d8-2eecfd0cb3c0::q1"
+        },
+        {
+          "question": "According to the document, how many million bales higher is China's projected ending stocks at the end of the projection period compared to India's projected average annual cotton exports over the next ten years?",
+          "question_id": "urnuuid7fbb918e-acda-4053-9c23-c16621876e15::q3"
+        },
+        {
+          "question": "How much larger is the total assets figure on the credit card subsidiary's balance sheet (the one showing installment accounts receivable) compared to the total assets on the credit company's balance sheet (the one showing loan receivables), both as of June 30, 2007? Answer in billion yen.",
+          "question_id": "urnuuid8f8f98a5-ee9a-4e12-a490-7cda781aab39::q4"
+        },
+        {
+          "question": "How many more emergency contact categories are listed on the page providing space to record important phone numbers compared to the number of district offices listed on the page with harassment counsellor contact information?",
+          "question_id": "urnuuid9b8c081c-1438-4657-a337-7b6a64eeddfc::q3"
+        }
+      ]
+    },
+    "strict_less_than": {
+      "count": 1,
+      "questions": [
+        {
+          "question": "The depth dimension of the digital time clock module with four push buttons visible on its front panel is how many millimeters less than the depth dimension of the 5A unboxed power supply unit?",
+          "question_id": "urnuuid66d41dfa-db77-40dd-98e7-c414076eec28::q2"
+        }
+      ]
+    },
+    "strict_more_than": {
+      "count": 2,
+      "questions": [
+        {
+          "question": "According to the weekday main-activity table by sex, how many more hours do males spend on personal care than females spend on housework and family care?",
+          "question_id": "urnuuid111476ed-6700-4be2-85cc-3fc17696167e::q3"
+        },
+        {
+          "question": "Comparing the article about building resilience that lists numbered practices and the article about keys to resilience that describes numbered mental health competencies, how many more steps does the former article have than the latter?",
+          "question_id": "urnuuida6092a6e-5c69-4650-9271-c46bf672a0a7::q1"
+        }
+      ]
+    }
+  },
+  "coverage": {
+    "all_comparison_wording_union_count": 41,
+    "all_comparison_wording_union_fraction": 0.17154811715481172,
+    "current_strict_checker_count": 2,
+    "current_strict_checker_fraction": 0.008368200836820083,
+    "safe_directional_extension_candidate_count": 10,
+    "safe_directional_extension_candidate_fraction": 0.04184100418410042
+  },
+  "decision": "Do not present the strict more-than checker as general reliability coverage. Retain it as a failure-driven diagnostic; next test a bounded directional wording extension before considering absolute-difference questions.",
+  "development_tune_question_count": 256,
+  "paid_api_used": false,
+  "schema_version": 1,
+  "split": "development_tune",
+  "split_manifest_sha256": "e76154d9eb743994c732faf7282323423357c1f282103594aadd2a5ddff9fd10"
+}

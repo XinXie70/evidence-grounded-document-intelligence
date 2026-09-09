@@ -5,6 +5,7 @@ description = "Reproducible evaluation harness for evidence-grounded document in
 requires-python = ">=3.11"
 dependencies = [
     "openai==3.7.0",
+    "pdfplumber==0.11.9",
     "pypdf==6.10.0",
     "requests==2.32.5",
     "sentence-transformers==5.1.2",

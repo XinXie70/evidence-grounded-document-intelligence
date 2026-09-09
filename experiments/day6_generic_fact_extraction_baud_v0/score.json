@@ -1,0 +1,34 @@
+{
+  "benchmark_sha256": "ad07c6dfc43e5275ae92b894bf69f151c3dd9467ed79f5b12df904438c5ecb8e",
+  "cases": [
+    {
+      "answer_match": true,
+      "case_id": "crossdoc_baud_rates_top3",
+      "complete_evidence_match": true,
+      "gold_evidence_pages": [
+        20,
+        24
+      ],
+      "gold_magnitude": "19200",
+      "predicted_magnitude": "19200",
+      "predicted_value_pages": [
+        20,
+        24
+      ],
+      "status": "scored"
+    }
+  ],
+  "experiment_type": "posthoc_comparison_generalization_score",
+  "gold_labels_used_only_after_predictions_frozen": true,
+  "paid_api_used": false,
+  "probe_sha256": "3302e82102e5e25728702cde3ecd55eaa998014bd127b58046ee7f0ff7600e70",
+  "schema_version": 1,
+  "split": "development_tune",
+  "summary": {
+    "answer_exact_match_count": 1,
+    "answer_exact_match_rate": 1.0,
+    "case_count": 1,
+    "complete_evidence_match_count": 1,
+    "complete_evidence_match_rate": 1.0
+  }
+}

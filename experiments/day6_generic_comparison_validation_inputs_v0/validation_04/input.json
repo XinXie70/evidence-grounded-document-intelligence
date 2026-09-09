@@ -1,0 +1,121 @@
+{
+  "condition": "real_retrieval_fact_extraction",
+  "doc_id": "urnuuid42d553ad-d2e0-45de-b0a3-b164ea985ef0",
+  "evidence_pages": [
+    22,
+    35,
+    3,
+    18,
+    25,
+    23,
+    26,
+    17,
+    24,
+    19
+  ],
+  "model_input": {
+    "evidence": [
+      {
+        "page": 22,
+        "text": "22 Economic Impact on South Carolina Counties The Savannah River Site’s impact on the local counties of South Carolina (Aiken, Allendale, and Barnwell) goes beyond the number of jobs and the dollars spent in the local economy. The Site has a ripple effect in the local economy as each dollar spent circulates and each employee spends their earnings in the local economy. To estimate the total economic and fiscal impact of the Site on the three South Carolina counties, an economic impact analysis was conducted on the South Carolina county region. This analysis estimates the three types of impacts that were previously calculated for the entire five counties. The information below are estimates of the direct, indirect and induced impacts solely for the (three county) South Carolina region. The total economic impact on this region is the sum of the direct, indirect, and induced effects of the SRS operations. The results of the analysis are summarized below. Employment The Site employs 6,126 workers who reside in either Aiken, Allendale, or Barnwell county. The spending associated with SRS generates a ripple of jobs in various industries. For each job on SRS, an additional 3,743 jobs were created in the three South Carolina counties (see Table 4.9). In all, the Site is responsible for 9,686 jobs in the regional economy, which is 12.1% of the South Carolina counties employment base. Output From the budget, SRS spent $842,326,209 in the South Carolina counties in the form of wages, benefits, and other direct expenditures. This spending by SRS organizations generated an additional $232,227,970 in indirect impact and $242,817,446 in induced effect. The total amount in output is $1,304,785,617, which is 18.5% of the Gross Domestic Product. Table 4.9 Economic Impact on the Three Counties of South Carolina South Carolina Impact Employment Output Direct 6,126 $829,740,201 Indirect 1,833 $232,227,971 Induced 1,910 $242,817,446 Total 9,868 $1,304,785,617 Employment Impact In FY 2020, the SRS workforce consisted of 6,126 highly paid jobs within the three county South Carolina region. The SRS spending created an additional 1,833 jobs resulting from indirect effects, and 1,910 jobs due to induced effects. Tables 4.10, 4.11, and 4.12 indicate the"
+      },
+      {
+        "page": 35,
+        "text": "35 6. Comparison to Previous Reports Previous studies were conducted in 2011 (using 2010 data) and 2017 (using 2016 data). This study used 2020 data to continue to examine the effects on the local economy but also added the impact on just the South Carolina counties and just the Georgia counties. Additionally, this study analyzed expenditures at small businesses and the age profile of the Site. Figure 6.1 compares the economic impact from the three studies, while Figure 6.2 compares the jobs supported by SRS. Overall, the economic impact of the SRS was $2.2 billion in 2020, down from $2.4 million in the previous two studies. The number of jobs supported by the Site also fell from over 23,000 in 2010 to 18,700 in 2016, to just under 16,000 in 2020. Most of the difference between 2016 and 2020 is due to reduced induced effects. Induced effects were about $180 million less in 2020 than in 2016 (see Figure 6.3). Induced jobs were 2,366 fewer. However, the average wage increases in 2020 by about $10,000 to $97,918. Much of this reflects the effects of the COVID-19 pandemic which severely reduced the number of supported jobs in the restaurant industry, health care, and retail (see Table 6.1). Economic growth for 2020 was sluggish in comparison to previous years because of the spread of the COVID-19 virus. Public reaction to the disease, and lock downs, caused a decrease in consumer spending and an associated decrease in jobs. The job multiplier decreased to 1.8 in 2020 from 2.2 in 2016, mostly due to fewer induced jobs in retail, leisure and hospitality, and health care. Figure 6.1 Comparison of Economic Impact"
+      },
+      {
+        "page": 3,
+        "text": "3 Executive Summary The Savannah River Site (SRS, the Site) has been a key economic driver in the surrounding region since its establishment in the early 1950s. The counties most impacted by SRS operations are Aiken, Allendale, and Barnwell counties in South Carolina and Columbia and Richmond counties in Georgia. Although employment has waned over time as its mission has evolved, SRS remains one of the largest employers in the region. As such, the inﬂuence of the Site extends across the entire region as many of the dollars circulating in the regional economy originate from or are related to the Site. The primary purpose of this study is to measure the impact of SRS on the surrounding ﬁve counties and understand how SRS inﬂuenc es the s urrounding communities. Since changing significantly in the 1990s, SRS’s mission has been relatively stable. The outlook for SRS remains steady as the Department of Energy Environmental Management and National Nuclear Security Administration missions continue. Through the stability that SRS provides to the surrounding region there is an impact on small businesses in the area. Thus, a secondary purpose of this study is to provide insights into the possible impact that the Site has on small businesses in the region. A third purpose of this study is to report the age profile of workers on the Site. FISCAL AND ECONOMIC IMPACT The Savannah River Site’s impact on the ﬁve counties goes beyond the number of jobs and the dollars spent in the local economy. The Site has a ripple eﬀect in the local economy as each dollar spent circulates in the local economy and each employee spends their earnings in the local economy. To estimate the total economic and ﬁscal impact of the Site on the ﬁve counties, an economic impact analysis was conducted. The analysis estimates three types of impacts: direct, indirect, and induced. The total economic impact is the sum of the direct, indirect, and induced eﬀects of the SRS operations. The results of the study are summarized below. OUTPUT. SRS organizations spent $1.2 billion in the regional economy in the form of wages, beneﬁts, and other direct expenditures. This spending by SRS organizations generated an additional $1 billion. The total $2.2 billion in output is 10 percent of the Gross Domestic Product. EMPLOYMENT. The Site includes seven organizations that employed 8,639 residents of the ﬁve counties in 2020. The spending associated with the Site generated an additional 7,173 jobs in sectors such as restaurants, real estate, employment services, building services, and retail. In all, the Site supports 15,813 jobs in the regional economy, which is 6.8 percent of the ﬁve counties’ employment base. JOBS AND WAGES. The Site provides a wide range of good jobs for residents in the ﬁve"
+      },
+      {
+        "page": 18,
+        "text": "18 Table 4.1 Economic Impact on the Five Counties Impact Employment Output Direct 8,639 $1,167,054,389 Indirect 2,688 $361,755,517 Induced 4,485 $641,568,213 Total 15,813 $2,170,378,119 Employment Impact In FY 2020, the SRS workforce consisted of 8,639 highly paid jobs within the five counties. SRS spending created an additional 2,688 jobs resulting from indirect effects, and 4,485 jobs due to induced effects. The total impact of employment in the five counties is mainly concentrated in facilities and support services, followed by waste management and remediation services, and investigation and securities services (see Table 4.2). This is not surprising as they represent the three largest employers on the Site - SRNS, SRR, and Centerra. Table 4.2 Total Economic Employment Impact of the Top 10 Industries in Five Counties Impact Total Industry Employment 1 Facilities support services 5,194 2 Waste management and remediation services 2,270 3 Investigation and security services 740 4 Employment services 734 5 Architectural, engineering, and related services 413 6 Limited-service restaurants 337 7 Full-service restaurants 327 8 Hospitals 324 9 Other real estate 282 10 Employment and payroll of federal govt, non-military 254"
+      },
+      {
+        "page": 25,
+        "text": "25 Table 4.15 Induced Economic Impact on the Top 10 Industries in South Carolina Impact Induced Industry Output 1 Owner-occupied dwellings $47,817,069 2 Limited-service restaurants $12,855,780 3 Offices of physicians $11,596,206 4 Hospitals $8,379,503 5 Retail - General merchandise stores $7,486,233 6 Other real estate $6,464,792 7 Retail - Food and beverage stores $6,238,642 8 Full-service restaurants $5,710,803 9 Other local government enterprises $5,413,706 10 Monetary authorities and depository credit intermediation $5,057,085 Fiscal Impact Table 4.16 Tax Revenues Impact County State Federal Total Total (Direct, Indirect, and Induced) ($909,230) $13,867,861 $173,590,797 $184,188,535 Table 4.16 shows the total of the direct, indirect, and induced tax revenues in South Carolina counties for the SRS operations during the year of 2020. The negative revenues for county taxes represent the loss of property tax income because of Federal ownership of the Site. The Federal government does make Payments in Lieu of Taxes (PILT) to the three South Carolina counties that totaled approximately $6.5 million in 2017."
+      },
+      {
+        "page": 23,
+        "text": "23 top ten industries affected by employment impact, both indirect and induced. Table 4.11 shows the industries most impacted by SRS’s indirect spending in the Aiken, Allendale, and Barnwell counties. The total output is focused on services such as, employment, waste management, and architectural engineering and related services. The induced effects support a range of jobs in industries such as restaurants, retail and healthcare. Table 4.10 Total Economic Impact on the Top 10 Industries in South Carolina by Employment Impact Total Industry Employment 1 Facilities support services 3,694 2 Waste management and remediation services 1,611 3 Investigation and security services 460 4 Employment services 455 5 Architectural, engineering, and related services 290 6 Personal and household goods repair and maintenance 210 7 Limited-service restaurants 194 8 Services to buildings 162 9 Full-service restaurants 143 10 Other real estate 141 Table 4.11 Indirect Economic Impact on the Top 10 Industries in South Carolina by Employment Impact Indirect Industry Employment 1 Employment services 434 2 Personal and household goods repair and maintenance 197 3 Services to buildings 135 4 Other real estate 101 5 Waste management and remediation services 80 6 Landscape and horticultural services 61 7 Investigation and security services 54 8 Architectural, engineering, and related services 52 9 Full-service restaurants 50 10 Office administrative services 40"
+      },
+      {
+        "page": 26,
+        "text": "26 Economic Impact on Georgia Counties The Savannah River Site’s local impact on the Georgia counties (Richmond and Columbia) goes beyond the number of jobs and the dollars spent in the local economy. The Site has a ripple effect in the local economy as each dollar spent circulates and each employee spends their earnings in the local economy. To estimate the total economic and fiscal impact of the Site on the Georgia counties, an economic impact analysis was conducted. The analysis estimates three types of impacts: direct, indirect, and induced. The total economic impact is the sum of the direct, indirect, and induced effects of the SRS operations. The results of the analysis are summarized in Table 4.17. Table 4.17 Economic Impact on the Two Georgia Counties Impact Employment Output Direct 2,513 $337,326,827 Indirect 827 $104,178,727 Induced 1,161 $169,342,142 Total 4,501 $610,847,696 Employment The Site employs 2,513 residents of the two county Georgia region in 2020. The SRS spending created an additional 827 jobs resulting from indirect effects, and 1,161 jobs due to induced effects. Thus, for each job at SRS, an additional 1,988 jobs are created in the Georgia counties. In all, the Site is responsible for 4,501 jobs in the regional economy, which is 3.0% of the two county Georgia employment base. Table 4.18 Total Employment Impact on the Top 10 Industries in the Georgia Counties Impact Total Industry Employment 1 Facilities support services 1,503 2 Waste management and remediation services 657 3 Investigation and security services 266 4 Employment services 235 5 Architectural, engineering, and related services 111 6 Full-service restaurants 95 7 Other real estate 89 8 Limited-service restaurants 89 9 Hospitals 88 10 Employment and payroll of federal govt, non-military 78"
+      },
+      {
+        "page": 17,
+        "text": "17 4. Economic Impact on the Local Economy The Savannah River Site’s local impact on the five counties goes beyond the number of jobs and the dollars spent in the local economy. The Site has a ripple effect in the local economy as each dollar spent circulates, and each employee spends their earnings in the local economy. To estimate the total economic and fiscal impact of the Site on the five counties, an economic impact analysis was conducted. The analysis estimates three types of impacts: direct, indirect, and induced. The direct effect is the initial change in expenditures or jobs. These are associated with SRS’s direct expenditures and include the gross industry output, and employment. The indirect effect is the secondary impact of the Site buying goods and services from other local industries, with the cycle of spending working its way through the supply chain. In other words, the indirect effect is associated with SRS organizations spending in the local economy. The induced effect is the response by the local economy that occurs through re-spending of income. These effects arise as SRS workers spend their income at retail, service, and other types of local establishments. This spending boosts revenues and profits at local businesses, which, in turn, leads to more spending by the businesses and their employees. The total economic impact is the sum of the direct, indirect, and induced effects of the SRS operations. Site organization provided spending on wages, fringe benefits and expenditures for fiscal year (FY) 2020 and the economic impact was modelled using IMPLAN for the third quarter of 20201. IMPLAN is based on the input-output economic model. Input-output analysis is a form of economic analysis based on the interdependencies between economic sectors (https://implan.com/application). The results of the analysis are summarized below. Employment The Site includes two federal agencies, one state organization, and four private contractors that employed 11,352 workers as of September 2020, of which 8,639 were residents of the five counties. For each job at SRS, an additional 7,173 jobs were created in the five counties, 2,688 from indirect effects and 4,485 from induced effects (see Table 4.1). In all, the Site is responsible for 15,813 jobs in the regional economy, which is 6.8% of the employment base in the five counties. Output SRS spent $1,184,863,930 in the regional economy in the form of wages, benefits, and other direct expenditures. This spending by SRS organizations generated an additional $1,003,323,730 ($362 million in indirect effects and $642 million in induced effects). The total $2,170,378,118 in output is 10% of the GDP. 1 One organization only reported total Site payroll, fringe benefits and expenditures. The percent other organizations spent on payroll and expenditures in the five counties was applied to this organization’s total expenditures."
+      },
+      {
+        "page": 24,
+        "text": "24 Table 4.12 Induced Economic Impact on the Top 10 Industries in South Carolina by Employment Impact Induced Industry Employment 1 Limited-service restaurants 178 2 Retail - General merchandise stores 100 3 Full-service restaurants 93 4 Retail - Food and beverage stores 84 5 Offices of physicians 76 6 Nursing and community care facilities 61 7 Home health care services 59 8 Personal care services 58 9 Retail - Miscellaneous store retailers 51 10 Individual and family services 48 Table 4.13 Total Economic Impact on the Top 10 Industries in South Carolina Impact Total Industry Output 1 Facilities support services $452,123,962 2 Waste management and remediation services $283,355,802 3 Architectural, engineering, and related services $59,934,459 4 Employment services $56,732,732 5 Investigation and security services $55,680,322 6 Owner-occupied dwellings $47,817,069 7 Employment and payroll of federal govt, non-military $24,299,083 8 Other real estate $22,389,905 9 Limited-service restaurants $14,004,915 10 Other local government enterprises $13,575,168 Table 4.14 Indirect Economic Impact on the Top 10 Industries in South Carolina Impact Indirect Industry Output 1 Employment services $54,051,354 2 Waste management and remediation services $24,844,093 3 Other real estate $15,925,113 4 Architectural, engineering, and related services $12,299,755 5 Other local government enterprises $8,161,462 6 Personal and household goods repair and maintenance $7,045,532 7 Electric power transmission and distribution $6,619,788 8 Investigation and security services $6,087,358 9 Maintenance and repair construction of nonresidential structures $5,821,404 10 Services to buildings $4,536,904"
+      },
+      {
+        "page": 19,
+        "text": "19 Table 4.3 Indirect Impact Employment on the Top 10 Industries in Five Counties Impact Indirect Industry Employment 1 Employment services 657 2 Personal and household goods repair and maintenance 198 3 Other real estate 162 4 Services to buildings 148 5 investigation and security services 112 6 Waste management and remediation services 106 7 Full-service restaurants 93 8 Business support services 83 9 Architectural, engineering, and related services 73 10 All other food and drinking places 73 Table 4.4 Induced Employment Impact on the Top 10 Industries in Five Counties Impact Induced Industry Employment 1 Hospitals 324 2 Limited-service restaurants 315 3 Full-service restaurants 234 4 Retail - General merchandise stores 178 5 Offices of physicians 173 6 Retail - Food and beverage stores 147 7 Other real estate 121 8 Home health care services 115 9 All other food and drinking places 103 10 Personal care services 102 The indirect and the induced employment effects are spread across many economic sectors. Tables 4.3 and 4.4 show the industries that benefit the most from the indirect and induced effects of SRS operations. The indirect effects represent the relationships between SRS organizations and their suppliers. The indirect employment shows the number of jobs that are supported by business-to-business transactions as a result of economic activity generated by SRS and are concentrated in business services. The induced effects support a range of jobs in industries such as restaurants, retail, and healthcare. Output Impact In FY 2020, SRS organizations spent $1.8 billion in wages, fringe benefits, and other expenditures in total, of which $1.2 billion was in the local five counties. The $1.2 billion in direct expenditures led to an additional $362 million in indirect effects and an additional $642 million in induced effects in the local five counties."
+      }
+    ],
+    "instructions": "Use only the supplied document evidence. Extract exactly two ordered numeric facts needed to answer the comparison question. The first fact must correspond to the first quantity named in the question and the second fact to the second quantity. Do not calculate the difference and do not use outside knowledge. Preserve a shared, explicit unit. Cite only physical PDF pages supplied here. If both facts cannot be identified unambiguously, return status insufficient_evidence with an empty facts list.",
+    "question": "What is the difference between the induced employment figure for the five counties and the total employment figure for the three South Carolina counties, as shown in the economic impact tables?",
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "facts": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "cited_pages": {
+                "items": {
+                  "type": "integer"
+                },
+                "type": "array"
+              },
+              "label": {
+                "type": "string"
+              },
+              "metric": {
+                "type": "string"
+              },
+              "unit": {
+                "type": "string"
+              },
+              "value": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "label",
+              "metric",
+              "value",
+              "unit",
+              "cited_pages"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "extracted",
+            "insufficient_evidence"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "status",
+        "facts"
+      ],
+      "type": "object"
+    }
+  },
+  "page_records_sha256": "cdb56e927d6e562fc1b37e5537fc3b92fdf9f649a790158b02cd72aff6e59af4",
+  "paid_api_used": false,
+  "question_id": "urnuuid42d553ad-d2e0-45de-b0a3-b164ea985ef0::q1",
+  "retrieval_method": "hybrid_rrf_bm25_dense_v0_top10",
+  "schema_version": 1,
+  "source_case_sha256": "06411971ba777871284cc7151bda36e2226ff7f88731591e4417f87b642153f8",
+  "uses_gold_answer": false,
+  "uses_gold_evidence_pages": false
+}

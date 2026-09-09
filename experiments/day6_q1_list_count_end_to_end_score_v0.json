@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "experiment_type": "post_prediction_benchmark_score",
+  "question_id": "urnuuida6092a6e-5c69-4650-9271-c46bf672a0a7::q1",
+  "split": "development_tune",
+  "prediction": {
+    "left_count": "7",
+    "right_count": "2",
+    "signed_difference": "5",
+    "direction": "more"
+  },
+  "benchmark_answer": "5",
+  "answer_exact_match": true,
+  "selected_evidence_pages": [15, 16, 19],
+  "benchmark_evidence_pages": [15, 16, 19],
+  "complete_evidence_page_match": true,
+  "labels_opened_only_after_prediction_was_frozen": true,
+  "selection_sha256": "4b2b29f00d311dfa469249f6d4363d6d76a5adb4be15265c82aa23c28559909e",
+  "consistency_audit_sha256": "ad2649d97f7d81f9128bf4d29dc2892639b3b9b8f347963f5e493ca667225e50",
+  "benchmark_sha256": "ad07c6dfc43e5275ae92b894bf69f151c3dd9467ed79f5b12df904438c5ecb8e",
+  "paid_api_used": false
+}

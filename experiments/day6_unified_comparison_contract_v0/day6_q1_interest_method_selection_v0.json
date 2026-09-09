@@ -1,0 +1,49 @@
+{
+  "contract_type": "comparison_evidence",
+  "doc_id": "urnuuid72e89e2e-f89d-4cb9-a0d8-2eecfd0cb3c0",
+  "leakage_controls": {
+    "uses_gold_answer": false,
+    "uses_gold_evidence_pages": false
+  },
+  "left": {
+    "label": "Compound Interest",
+    "metric": "Total Interest",
+    "provenance": {
+      "selection_basis": "question_method_to_definition_scoped_total_interest",
+      "source_type": "worked_example",
+      "supporting_pages": [
+        50
+      ],
+      "value_pages": [
+        50
+      ]
+    },
+    "qualifiers": {},
+    "unit": "dollars",
+    "value": "521"
+  },
+  "operation": "left_minus_right",
+  "paid_api_used": false,
+  "question": "How much more total interest does the compound interest method accumulate compared to the simple interest method over the same period in the furniture purchase example used to explain borrowing costs?",
+  "question_id": "urnuuid72e89e2e-f89d-4cb9-a0d8-2eecfd0cb3c0::q1",
+  "right": {
+    "label": "Simple Interest",
+    "metric": "Total Interest",
+    "provenance": {
+      "selection_basis": "question_method_to_definition_scoped_total_interest",
+      "source_type": "worked_example",
+      "supporting_pages": [
+        49
+      ],
+      "value_pages": [
+        49
+      ]
+    },
+    "qualifiers": {},
+    "unit": "dollars",
+    "value": "440"
+  },
+  "schema_version": 1,
+  "source_selection_sha256": "94fd3698aa48cf68dd0af9b46f11b860e4c82b098647b625c9cdbd4c19d2ae11",
+  "source_selector_type": "interest_method_selector_v0"
+}

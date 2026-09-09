@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "question_id": "urnuuid6977f498-b814-42ae-85db-4adaf7a88c9f::q3",
+  "source": "deterministic_reliability_test_fixture",
+  "output": {
+    "answer": "There are 939 more part-time female students than part-time male students.",
+    "status": "answerable"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "experiment_id": "day6_generic_fact_extraction_crossdoc_v0",
+  "status": "approved_not_started",
+  "approved_hard_cap_usd": 1.0,
+  "unique_paid_request_count": 3,
+  "input_manifest_sha256": "955967856c7dd485eaba675514c2e55275566b7d68b92e65f0d8da2289ac53fa",
+  "config_sha256": "be6534374de9bd6a7cdd342ba2bd8eb169b7343b5bedfe4e550b28437a6dd8db"
+}

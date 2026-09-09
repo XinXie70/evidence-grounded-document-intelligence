@@ -1,0 +1,23 @@
+{
+  "check": {
+    "accepted": true,
+    "comparative_direction_correct": true,
+    "expected_direction": "more",
+    "expected_magnitude": "5",
+    "left_operand": "7",
+    "normalized_unit": "steps",
+    "numeric_magnitude_correct": true,
+    "observed_contains_fewer": false,
+    "observed_contains_more": true,
+    "policy_action": "accept",
+    "reason": "consistent",
+    "right_operand": "2",
+    "signed_difference": "5"
+  },
+  "experiment_type": "deterministic_comparison_consistency_audit",
+  "paid_api_used": false,
+  "question_id": "urnuuida6092a6e-5c69-4650-9271-c46bf672a0a7::q1",
+  "result_sha256": "7dfc45876b5bb5f08779ba3bb20ac31080ee27d2c907e8d6c15ac8d303931140",
+  "schema_version": 1,
+  "selection_sha256": "4b2b29f00d311dfa469249f6d4363d6d76a5adb4be15265c82aa23c28559909e"
+}

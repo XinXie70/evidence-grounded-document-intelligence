@@ -1,0 +1,55 @@
+{
+  "cases": [
+    {
+      "case_id": "crossdoc_baud_rates_top3",
+      "deterministic_comparison": {
+        "direction": "more",
+        "left_operand": "57600",
+        "magnitude": "19200",
+        "right_operand": "38400",
+        "signed_difference": "19200",
+        "unit": "baud"
+      },
+      "doc_id": "urnuuid922a78ce-4781-49e4-b9d2-b213b1042f55",
+      "model": "gpt-5.6-terra",
+      "operation": "absolute_difference",
+      "question": "In the server mode communication example, what is the difference between the baud rate used for serial communication and the default serial port baud rate?",
+      "question_id": "urnuuid922a78ce-4781-49e4-b9d2-b213b1042f55::q1",
+      "selected_facts": [
+        {
+          "cited_pages": [
+            24
+          ],
+          "label": "Server mode serial communication baud rate",
+          "metric": "Baud Rate",
+          "selection_basis": "model_extraction_from_label_free_retrieved_pages",
+          "unit": "baud",
+          "value": "57600"
+        },
+        {
+          "cited_pages": [
+            20
+          ],
+          "label": "Default serial port baud rate",
+          "metric": "Baud Rate",
+          "selection_basis": "model_extraction_from_label_free_retrieved_pages",
+          "unit": "baud",
+          "value": "38400"
+        }
+      ],
+      "source_response_id": "resp_04980faa84b7e0c9016aa0e6748f6887d084314512e8ac8ba5",
+      "status": "success"
+    }
+  ],
+  "experiment_type": "finalized_model_extracted_comparison",
+  "input_sha256": "ce468e640a0d1a6e0cd9859cfe20f4b5ccb17e9f1c0df2af682de886184c4fb6",
+  "leakage_controls": {
+    "uses_gold_answer": false,
+    "uses_gold_evidence_pages": false
+  },
+  "paid_api_used": true,
+  "result_sha256": "ec12aff37f397cd942adf7e9628231f0f4d4835850a08a9eae73afbd4b24b21f",
+  "schema_version": 1,
+  "source_estimated_cost_usd": 0.002762,
+  "split": "development_tune"
+}

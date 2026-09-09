@@ -1,0 +1,100 @@
+{
+  "benchmark_sha256": "ad07c6dfc43e5275ae92b894bf69f151c3dd9467ed79f5b12df904438c5ecb8e",
+  "cases": [
+    {
+      "answer_match": false,
+      "case_id": "validation_01",
+      "complete_evidence_match": false,
+      "status": "unsupported"
+    },
+    {
+      "answer_match": true,
+      "case_id": "validation_02",
+      "complete_evidence_match": true,
+      "gold_evidence_pages": [
+        19
+      ],
+      "gold_magnitude": "96",
+      "predicted_magnitude": "96",
+      "predicted_value_pages": [
+        19
+      ],
+      "status": "scored"
+    },
+    {
+      "answer_match": true,
+      "case_id": "validation_03",
+      "complete_evidence_match": true,
+      "gold_evidence_pages": [
+        26
+      ],
+      "gold_magnitude": "403",
+      "predicted_magnitude": "403",
+      "predicted_value_pages": [
+        26
+      ],
+      "status": "scored"
+    },
+    {
+      "answer_match": true,
+      "case_id": "validation_04",
+      "complete_evidence_match": true,
+      "gold_evidence_pages": [
+        18,
+        22
+      ],
+      "gold_magnitude": "5383",
+      "predicted_magnitude": "5383",
+      "predicted_value_pages": [
+        18,
+        22
+      ],
+      "status": "scored"
+    },
+    {
+      "answer_match": false,
+      "case_id": "validation_05",
+      "complete_evidence_match": true,
+      "gold_evidence_pages": [
+        22,
+        23
+      ],
+      "gold_magnitude": "37.0",
+      "predicted_magnitude": "35.5",
+      "predicted_value_pages": [
+        22,
+        23
+      ],
+      "status": "scored"
+    },
+    {
+      "answer_match": true,
+      "case_id": "validation_06",
+      "complete_evidence_match": true,
+      "gold_evidence_pages": [
+        12,
+        13
+      ],
+      "gold_magnitude": "0.31",
+      "predicted_magnitude": "0.31",
+      "predicted_value_pages": [
+        12,
+        13
+      ],
+      "status": "scored"
+    }
+  ],
+  "experiment_type": "posthoc_comparison_generalization_score",
+  "gold_labels_used_only_after_predictions_frozen": true,
+  "paid_api_used": false,
+  "probe_sha256": "dd21f96e2166269ffb20234ae8f8879eb089ad31cff5a7c0362a944e1d96652b",
+  "schema_version": 1,
+  "split": "development_tune",
+  "summary": {
+    "answer_exact_match_count": 4,
+    "answer_exact_match_rate": 0.6666666666666666,
+    "case_count": 6,
+    "complete_evidence_match_count": 5,
+    "complete_evidence_match_rate": 0.8333333333333334
+  }
+}

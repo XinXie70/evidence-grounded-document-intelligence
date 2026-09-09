@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "experiment_type": "post_prediction_benchmark_score",
+  "question_id": "urnuuid72e89e2e-f89d-4cb9-a0d8-2eecfd0cb3c0::q1",
+  "split": "development_tune",
+  "prediction": {
+    "left_method": "Compound Interest",
+    "left_total_dollars": "521",
+    "right_method": "Simple Interest",
+    "right_total_dollars": "440",
+    "signed_difference_dollars": "81",
+    "direction": "more"
+  },
+  "benchmark_answer": "$81",
+  "answer_normalized_currency_match": true,
+  "raw_string_exact_match_not_claimed": true,
+  "selected_evidence_pages": [49, 50],
+  "benchmark_evidence_pages": [49, 50],
+  "complete_evidence_page_match": true,
+  "labels_opened_only_after_prediction_was_frozen": true,
+  "selection_sha256": "94fd3698aa48cf68dd0af9b46f11b860e4c82b098647b625c9cdbd4c19d2ae11",
+  "consistency_audit_sha256": "0f37f7616a37234ba6526b5a0b75de13d3830857efd543c50518eb50428622f4",
+  "benchmark_sha256": "ad07c6dfc43e5275ae92b894bf69f151c3dd9467ed79f5b12df904438c5ecb8e",
+  "paid_api_used": false
+}

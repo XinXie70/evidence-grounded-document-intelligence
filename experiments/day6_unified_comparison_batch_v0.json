@@ -1,0 +1,521 @@
+{
+  "experiment_type": "unified_comparison_batch",
+  "manifest_sha256": "8b29c9934da7ec5e5ce42e1fe5c81b2bf0d42547d17391599ca85387ec8b5ff6",
+  "records": [
+    {
+      "case_id": "layout_time_units",
+      "contract": {
+        "contract_type": "comparison_evidence",
+        "doc_id": "urnuuid111476ed-6700-4be2-85cc-3fc17696167e",
+        "evaluation_eligibility": {
+          "evidence_retrieval": "ineligible_gold_evidence_pages",
+          "grounded_reasoning": "eligible"
+        },
+        "leakage_controls": {
+          "uses_gold_answer_or_facts": false,
+          "uses_gold_evidence_pages": true
+        },
+        "left": {
+          "label": "Male",
+          "metric": "Personal care",
+          "provenance": {
+            "selection_basis": "row_match; finest_consistent_resolution",
+            "source_type": "layout_table",
+            "supporting_pages": [
+              21
+            ],
+            "value_pages": [
+              21
+            ]
+          },
+          "qualifiers": {
+            "column_path": [
+              "Male"
+            ],
+            "row": "Personal care",
+            "table_title": "Table 5. Distribution of average time spent on main activity per weekday by sex"
+          },
+          "unit": "hours",
+          "value": "10.8"
+        },
+        "operation": "left_minus_right",
+        "question": "According to the weekday main-activity table by sex, how many more hours do males spend on personal care than females spend on housework and family care?",
+        "question_id": "urnuuid111476ed-6700-4be2-85cc-3fc17696167e::q3",
+        "right": {
+          "label": "Female / Total",
+          "metric": "Total",
+          "provenance": {
+            "selection_basis": "table_scope_total; finest_consistent_resolution",
+            "source_type": "layout_table",
+            "supporting_pages": [
+              55
+            ],
+            "value_pages": [
+              55
+            ]
+          },
+          "qualifiers": {
+            "column_path": [
+              "Female",
+              "Total"
+            ],
+            "row": "Total",
+            "table_title": "Table 40. Distribution of average time spent on housework and family care per weekday by sex and marital status"
+          },
+          "unit": "minutes",
+          "value": "287.4"
+        },
+        "schema_version": 1,
+        "source_selector_type": "oracle_page_question_guided_layout_fact_selection"
+      },
+      "deterministic_comparison": {
+        "direction": "more",
+        "left_operand": "10.8",
+        "magnitude": "6.01",
+        "right_operand": "4.79",
+        "signed_difference": "6.01",
+        "unit": "hours"
+      },
+      "source_selection": "experiments/day6_q3_layout_fact_selection_v0.json",
+      "source_selection_sha256": "b7965385f190445404571325eb80e75da5fbf7a973b6d7530dfe8a297a82da48"
+    },
+    {
+      "case_id": "numbered_list_count",
+      "contract": {
+        "contract_type": "comparison_evidence",
+        "doc_id": "urnuuida6092a6e-5c69-4650-9271-c46bf672a0a7",
+        "evaluation_eligibility": {
+          "evidence_retrieval": "eligible",
+          "grounded_reasoning": "eligible"
+        },
+        "leakage_controls": {
+          "uses_gold_answer_or_facts": false,
+          "uses_gold_evidence_pages": false
+        },
+        "left": {
+          "label": "building resilience",
+          "metric": "numbered list count",
+          "provenance": {
+            "selection_basis": "question_topic_then_contiguous_numbered_sequence",
+            "source_type": "numbered_list",
+            "supporting_pages": [
+              15,
+              16
+            ],
+            "value_pages": [
+              15,
+              16
+            ]
+          },
+          "qualifiers": {
+            "marker_style": "numbered",
+            "observed_numbers": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ]
+          },
+          "unit": "steps",
+          "value": "7"
+        },
+        "operation": "left_minus_right",
+        "question": "Comparing the article about building resilience that lists numbered practices and the article about keys to resilience that describes numbered mental health competencies, how many more steps does the former article have than the latter?",
+        "question_id": "urnuuida6092a6e-5c69-4650-9271-c46bf672a0a7::q1",
+        "right": {
+          "label": "keys to resilience",
+          "metric": "numbered list count",
+          "provenance": {
+            "selection_basis": "question_topic_then_contiguous_numbered_sequence",
+            "source_type": "numbered_list",
+            "supporting_pages": [
+              19
+            ],
+            "value_pages": [
+              19
+            ]
+          },
+          "qualifiers": {
+            "marker_style": "step",
+            "observed_numbers": [
+              1,
+              2
+            ]
+          },
+          "unit": "steps",
+          "value": "2"
+        },
+        "schema_version": 1,
+        "source_selector_type": "list_count_selector_v1_excludes_reference_sections"
+      },
+      "deterministic_comparison": {
+        "direction": "more",
+        "left_operand": "7",
+        "magnitude": "5",
+        "right_operand": "2",
+        "signed_difference": "5",
+        "unit": "steps"
+      },
+      "source_selection": "experiments/day6_q1_list_count_selection_v1.json",
+      "source_selection_sha256": "4b2b29f00d311dfa469249f6d4363d6d76a5adb4be15265c82aa23c28559909e"
+    },
+    {
+      "case_id": "continued_enrollment",
+      "contract": {
+        "contract_type": "comparison_evidence",
+        "doc_id": "urnuuid6977f498-b814-42ae-85db-4adaf7a88c9f",
+        "evaluation_eligibility": {
+          "evidence_retrieval": "eligible",
+          "grounded_reasoning": "eligible"
+        },
+        "leakage_controls": {
+          "uses_gold_answer_or_facts": false,
+          "uses_gold_evidence_pages": false
+        },
+        "left": {
+          "label": "Female",
+          "metric": "Part-Time Bachelor's and 1st Professional Degree enrollment",
+          "provenance": {
+            "selection_basis": "question_group_and_column_with_repeated_header_page_continuation",
+            "source_type": "continued_table",
+            "supporting_pages": [
+              6,
+              7
+            ],
+            "value_pages": [
+              7
+            ]
+          },
+          "qualifiers": {
+            "program": "Bachelor's and 1st Professional Degree",
+            "status": "Part-Time"
+          },
+          "unit": "students",
+          "value": "1503"
+        },
+        "operation": "left_minus_right",
+        "question": "How many more part-time female students are enrolled in bachelor's and first professional degree programs compared to part-time male students, according to the gender-specific enrolment tables for Fall 2008?",
+        "question_id": "urnuuid6977f498-b814-42ae-85db-4adaf7a88c9f::q3",
+        "right": {
+          "label": "Male",
+          "metric": "Part-Time Bachelor's and 1st Professional Degree enrollment",
+          "provenance": {
+            "selection_basis": "question_group_and_column_with_repeated_header_page_continuation",
+            "source_type": "continued_table",
+            "supporting_pages": [
+              4,
+              5
+            ],
+            "value_pages": [
+              5
+            ]
+          },
+          "qualifiers": {
+            "program": "Bachelor's and 1st Professional Degree",
+            "status": "Part-Time"
+          },
+          "unit": "students",
+          "value": "564"
+        },
+        "schema_version": 1,
+        "source_selector_type": "continued_enrollment_table_v0"
+      },
+      "deterministic_comparison": {
+        "direction": "more",
+        "left_operand": "1503",
+        "magnitude": "939",
+        "right_operand": "564",
+        "signed_difference": "939",
+        "unit": "students"
+      },
+      "source_selection": "experiments/day6_q3_continued_enrollment_selection_v0.json",
+      "source_selection_sha256": "5f4f71afcbc90ea6bbd672028ef2487c22c0b4b86ca94b583ba269cb8186d69d"
+    },
+    {
+      "case_id": "product_depth",
+      "contract": {
+        "contract_type": "comparison_evidence",
+        "doc_id": "urnuuid66d41dfa-db77-40dd-98e7-c414076eec28",
+        "evaluation_eligibility": {
+          "evidence_retrieval": "eligible",
+          "grounded_reasoning": "eligible"
+        },
+        "leakage_controls": {
+          "uses_gold_answer_or_facts": false,
+          "uses_gold_evidence_pages": false
+        },
+        "left": {
+          "label": "Art.701T",
+          "metric": "Depth (D)",
+          "provenance": {
+            "selection_basis": "question_description_to_product_id_to_explicit_D_specification",
+            "source_type": "product_specification",
+            "supporting_pages": [
+              12,
+              14
+            ],
+            "value_pages": [
+              14
+            ]
+          },
+          "qualifiers": {
+            "descriptor": "The depth dimension of the digital time clock module with four push buttons visible on its front panel is how many millimeters"
+          },
+          "unit": "millimeters",
+          "value": "30"
+        },
+        "operation": "left_minus_right",
+        "question": "The depth dimension of the digital time clock module with four push buttons visible on its front panel is how many millimeters less than the depth dimension of the 5A unboxed power supply unit?",
+        "question_id": "urnuuid66d41dfa-db77-40dd-98e7-c414076eec28::q2",
+        "right": {
+          "label": "UBPSU5.0",
+          "metric": "Depth (D)",
+          "provenance": {
+            "selection_basis": "question_description_to_product_id_to_explicit_D_specification",
+            "source_type": "product_specification",
+            "supporting_pages": [
+              10,
+              11
+            ],
+            "value_pages": [
+              11
+            ]
+          },
+          "qualifiers": {
+            "descriptor": "the depth dimension of the 5A unboxed power supply unit?"
+          },
+          "unit": "millimeters",
+          "value": "40"
+        },
+        "schema_version": 1,
+        "source_selector_type": "product_dimension_selector_v0"
+      },
+      "deterministic_comparison": {
+        "direction": "fewer",
+        "left_operand": "30",
+        "magnitude": "10",
+        "right_operand": "40",
+        "signed_difference": "-10",
+        "unit": "millimeters"
+      },
+      "source_selection": "experiments/day6_q2_product_depth_selection_v0.json",
+      "source_selection_sha256": "e49538d477d6294fbc4aa540ae01ef548e61afe4ee7ac643cd9f63e7cce6c6a0"
+    },
+    {
+      "case_id": "interest_methods",
+      "contract": {
+        "contract_type": "comparison_evidence",
+        "doc_id": "urnuuid72e89e2e-f89d-4cb9-a0d8-2eecfd0cb3c0",
+        "evaluation_eligibility": {
+          "evidence_retrieval": "eligible",
+          "grounded_reasoning": "eligible"
+        },
+        "leakage_controls": {
+          "uses_gold_answer_or_facts": false,
+          "uses_gold_evidence_pages": false
+        },
+        "left": {
+          "label": "Compound Interest",
+          "metric": "Total Interest",
+          "provenance": {
+            "selection_basis": "question_method_to_definition_scoped_total_interest",
+            "source_type": "worked_example",
+            "supporting_pages": [
+              50
+            ],
+            "value_pages": [
+              50
+            ]
+          },
+          "qualifiers": {},
+          "unit": "dollars",
+          "value": "521"
+        },
+        "operation": "left_minus_right",
+        "question": "How much more total interest does the compound interest method accumulate compared to the simple interest method over the same period in the furniture purchase example used to explain borrowing costs?",
+        "question_id": "urnuuid72e89e2e-f89d-4cb9-a0d8-2eecfd0cb3c0::q1",
+        "right": {
+          "label": "Simple Interest",
+          "metric": "Total Interest",
+          "provenance": {
+            "selection_basis": "question_method_to_definition_scoped_total_interest",
+            "source_type": "worked_example",
+            "supporting_pages": [
+              49
+            ],
+            "value_pages": [
+              49
+            ]
+          },
+          "qualifiers": {},
+          "unit": "dollars",
+          "value": "440"
+        },
+        "schema_version": 1,
+        "source_selector_type": "interest_method_selector_v0"
+      },
+      "deterministic_comparison": {
+        "direction": "more",
+        "left_operand": "521",
+        "magnitude": "81",
+        "right_operand": "440",
+        "signed_difference": "81",
+        "unit": "dollars"
+      },
+      "source_selection": "experiments/day6_q1_interest_method_selection_v0.json",
+      "source_selection_sha256": "94fd3698aa48cf68dd0af9b46f11b860e4c82b098647b625c9cdbd4c19d2ae11"
+    },
+    {
+      "case_id": "balance_sheet",
+      "contract": {
+        "contract_type": "comparison_evidence",
+        "doc_id": "urnuuid8f8f98a5-ee9a-4e12-a490-7cda781aab39",
+        "evaluation_eligibility": {
+          "evidence_retrieval": "eligible",
+          "grounded_reasoning": "eligible"
+        },
+        "leakage_controls": {
+          "uses_gold_answer_or_facts": false,
+          "uses_gold_evidence_pages": false
+        },
+        "left": {
+          "label": "Rakuten KC",
+          "metric": "Total Assets",
+          "provenance": {
+            "selection_basis": "question_discriminator_to_dated_balance_sheet_total_assets",
+            "source_type": "balance_sheet",
+            "supporting_pages": [
+              62
+            ],
+            "value_pages": [
+              62
+            ]
+          },
+          "qualifiers": {
+            "as_of_date": "2007-06-30",
+            "discriminator": "installment_accounts_receivable"
+          },
+          "unit": "billion yen",
+          "value": "336.3"
+        },
+        "operation": "left_minus_right",
+        "question": "How much larger is the total assets figure on the credit card subsidiary's balance sheet (the one showing installment accounts receivable) compared to the total assets on the credit company's balance sheet (the one showing loan receivables), both as of June 30, 2007? Answer in billion yen.",
+        "question_id": "urnuuid8f8f98a5-ee9a-4e12-a490-7cda781aab39::q4",
+        "right": {
+          "label": "Rakuten Credit",
+          "metric": "Total Assets",
+          "provenance": {
+            "selection_basis": "question_discriminator_to_dated_balance_sheet_total_assets",
+            "source_type": "balance_sheet",
+            "supporting_pages": [
+              66
+            ],
+            "value_pages": [
+              66
+            ]
+          },
+          "qualifiers": {
+            "as_of_date": "2007-06-30",
+            "discriminator": "loan_receivables_current_asset_row"
+          },
+          "unit": "billion yen",
+          "value": "82.7"
+        },
+        "schema_version": 1,
+        "source_selector_type": "balance_sheet_selector_v0"
+      },
+      "deterministic_comparison": {
+        "direction": "more",
+        "left_operand": "336.3",
+        "magnitude": "253.6",
+        "right_operand": "82.7",
+        "signed_difference": "253.6",
+        "unit": "billion yen"
+      },
+      "source_selection": "experiments/day6_q4_balance_sheet_selection_v0.json",
+      "source_selection_sha256": "2b4209a319863ffc147f1d349624f14cbe47620ebcac0406c1330c48c6779bef"
+    },
+    {
+      "case_id": "qualified_metric",
+      "contract": {
+        "contract_type": "comparison_evidence",
+        "doc_id": "urnuuid7fbb918e-acda-4053-9c23-c16621876e15",
+        "evaluation_eligibility": {
+          "evidence_retrieval": "eligible",
+          "grounded_reasoning": "eligible"
+        },
+        "leakage_controls": {
+          "uses_gold_answer_or_facts": false,
+          "uses_gold_evidence_pages": false
+        },
+        "left": {
+          "label": "China",
+          "metric": "cotton ending stocks",
+          "provenance": {
+            "selection_basis": "question_entity_metric_statistic_and_time_qualifiers",
+            "source_type": "qualified_metric",
+            "supporting_pages": [
+              11
+            ],
+            "value_pages": [
+              11
+            ]
+          },
+          "qualifiers": {
+            "statistic": "end value",
+            "time_scope": "end of projection period"
+          },
+          "unit": "million bales",
+          "value": "30.4"
+        },
+        "operation": "left_minus_right",
+        "question": "According to the document, how many million bales higher is China's projected ending stocks at the end of the projection period compared to India's projected average annual cotton exports over the next ten years?",
+        "question_id": "urnuuid7fbb918e-acda-4053-9c23-c16621876e15::q3",
+        "right": {
+          "label": "India",
+          "metric": "cotton exports",
+          "provenance": {
+            "selection_basis": "question_entity_metric_statistic_and_time_qualifiers",
+            "source_type": "qualified_metric",
+            "supporting_pages": [
+              12
+            ],
+            "value_pages": [
+              12
+            ]
+          },
+          "qualifiers": {
+            "statistic": "average",
+            "time_scope": "next ten years"
+          },
+          "unit": "million bales",
+          "value": "2.6"
+        },
+        "schema_version": 1,
+        "source_selector_type": "qualified_metric_selector_v0"
+      },
+      "deterministic_comparison": {
+        "direction": "more",
+        "left_operand": "30.4",
+        "magnitude": "27.8",
+        "right_operand": "2.6",
+        "signed_difference": "27.8",
+        "unit": "million bales"
+      },
+      "source_selection": "experiments/day6_q3_qualified_metric_selection_v0.json",
+      "source_selection_sha256": "571b3c3abb472eb45cfcdbb45496234229271659fc53a699d25a9b82550bf147"
+    }
+  ],
+  "schema_version": 1,
+  "split": "development_tune",
+  "summary": {
+    "case_count": 7,
+    "evidence_retrieval_eligible_count": 6,
+    "grounded_reasoning_eligible_count": 7,
+    "paid_api_used": false,
+    "processed_count": 7
+  }
+}

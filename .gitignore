@@ -40,6 +40,11 @@ venv/
 # Reproducible full-document OCR render caches
 experiments/day5_ocr_full_document_v0/**/pages/
 
+# Benchmark-derived page renders and crops stay local
+experiments/**/*.png
+experiments/**/*.jpg
+experiments/**/*.jpeg
+
 # Editors and operating systems
 .DS_Store
 .idea/

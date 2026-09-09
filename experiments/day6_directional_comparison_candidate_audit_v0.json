@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "experiment_type": "directional_comparison_candidate_audit",
+  "split": "development_tune",
+  "question_count": 8,
+  "excludes_already_validated_strict_more_than_questions": true,
+  "rrf_top10_complete_evidence_recall": 1.0,
+  "structure_counts": {
+    "table_or_table_plus_text": 4,
+    "chart": 2,
+    "text_or_list": 2
+  },
+  "questions": [
+    {
+      "question_id": "urnuuid44ff3ab7-6cd7-40f9-8abc-28680be05c68::q1",
+      "structure": "chart",
+      "gold_pages": [21, 22],
+      "rrf_complete_at_10": true
+    },
+    {
+      "question_id": "urnuuid58857e11-82b0-4d36-a53c-aaddfe925afc::q2",
+      "structure": "chart",
+      "gold_pages": [37, 45],
+      "rrf_complete_at_10": true
+    },
+    {
+      "question_id": "urnuuid66d41dfa-db77-40dd-98e7-c414076eec28::q2",
+      "structure": "table_or_table_plus_text",
+      "gold_pages": [10, 11, 12, 14],
+      "rrf_complete_at_10": true
+    },
+    {
+      "question_id": "urnuuid6977f498-b814-42ae-85db-4adaf7a88c9f::q3",
+      "structure": "table_or_table_plus_text",
+      "gold_pages": [5, 7],
+      "rrf_complete_at_10": true,
+      "selected_as_next_representative": true
+    },
+    {
+      "question_id": "urnuuid72e89e2e-f89d-4cb9-a0d8-2eecfd0cb3c0::q1",
+      "structure": "table_or_table_plus_text",
+      "gold_pages": [49, 50],
+      "rrf_complete_at_10": true
+    },
+    {
+      "question_id": "urnuuid7fbb918e-acda-4053-9c23-c16621876e15::q3",
+      "structure": "text_or_list",
+      "gold_pages": [11, 12],
+      "rrf_complete_at_10": true
+    },
+    {
+      "question_id": "urnuuid8f8f98a5-ee9a-4e12-a490-7cda781aab39::q4",
+      "structure": "table_or_table_plus_text",
+      "gold_pages": [62, 66],
+      "rrf_complete_at_10": true
+    },
+    {
+      "question_id": "urnuuid9b8c081c-1438-4657-a337-7b6a64eeddfc::q3",
+      "structure": "text_or_list",
+      "gold_pages": [35, 36],
+      "rrf_complete_at_10": true
+    }
+  ],
+  "labels_used_only_for_post_retrieval_diagnostic_classification": true,
+  "labels_must_not_enter_fact_selection_or_reasoning_inputs": true,
+  "benchmark_sha256": "ad07c6dfc43e5275ae92b894bf69f151c3dd9467ed79f5b12df904438c5ecb8e",
+  "paid_api_used": false
+}

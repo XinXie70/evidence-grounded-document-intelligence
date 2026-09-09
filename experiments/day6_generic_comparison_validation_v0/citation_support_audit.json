@@ -1,0 +1,278 @@
+{
+  "abstention_count": 1,
+  "accepted_count": 5,
+  "case_count": 6,
+  "cases": [
+    {
+      "all_facts_supported_by_citations": true,
+      "case_id": "validation_01",
+      "doc_id": "urnuuid181bfd7d-8bf2-4f0a-95e3-1201ac3321aa",
+      "eligible_for_answer_acceptance": false,
+      "extraction_status": "insufficient_evidence",
+      "facts": [],
+      "input_sha256": "dd3e39492db0f58b7de29f63f729800181e4e1c417cf2dfab543fcc213c4ae78",
+      "policy_action": "abstain_no_extracted_facts",
+      "question_id": "urnuuid181bfd7d-8bf2-4f0a-95e3-1201ac3321aa::q2",
+      "result_sha256": "d24f1df038f1b3272d99db86250f282777196440e4fdcff16b5dc0abdcd6ba63",
+      "uses_benchmark_labels": false
+    },
+    {
+      "all_facts_supported_by_citations": true,
+      "case_id": "validation_02",
+      "doc_id": "urnuuid38f64288-801b-4a01-b228-8c98e35b5b9b",
+      "eligible_for_answer_acceptance": true,
+      "extraction_status": "extracted",
+      "facts": [
+        {
+          "canonical_value": "100",
+          "cited_pages": [
+            19
+          ],
+          "fact_index": 0,
+          "label": "Connector linking to the target system (J3)",
+          "reported_value": "100",
+          "supported_cited_pages": [
+            19
+          ],
+          "unsupported_cited_pages": [],
+          "value_occurs_on_a_cited_page": true,
+          "value_occurs_on_supplied_pages": [
+            23,
+            19,
+            16,
+            13
+          ]
+        },
+        {
+          "canonical_value": "4",
+          "cited_pages": [
+            19
+          ],
+          "fact_index": 1,
+          "label": "Connector used for the oscillator circuit board (J6)",
+          "reported_value": "4",
+          "supported_cited_pages": [
+            19
+          ],
+          "unsupported_cited_pages": [],
+          "value_occurs_on_a_cited_page": true,
+          "value_occurs_on_supplied_pages": [
+            19,
+            16,
+            21,
+            31,
+            13,
+            29,
+            22
+          ]
+        }
+      ],
+      "input_sha256": "bfe44a790d33e969e0f4b57509a675ea18647e3145e13a150ace6cbbdd27d3a9",
+      "policy_action": "accept",
+      "question_id": "urnuuid38f64288-801b-4a01-b228-8c98e35b5b9b::q1",
+      "result_sha256": "21769c27511845b99512a9b1467d4dc2f96b2a1d09defefec3205d9c1c091da1",
+      "uses_benchmark_labels": false
+    },
+    {
+      "all_facts_supported_by_citations": true,
+      "case_id": "validation_03",
+      "doc_id": "urnuuid3a8634c5-69b8-475f-9665-f6d5138e23d8",
+      "eligible_for_answer_acceptance": true,
+      "extraction_status": "extracted",
+      "facts": [
+        {
+          "canonical_value": "55242",
+          "cited_pages": [
+            26
+          ],
+          "fact_index": 0,
+          "label": "NA segment total revenue",
+          "reported_value": "55,242",
+          "supported_cited_pages": [
+            26
+          ],
+          "unsupported_cited_pages": [],
+          "value_occurs_on_a_cited_page": true,
+          "value_occurs_on_supplied_pages": [
+            26,
+            33
+          ]
+        },
+        {
+          "canonical_value": "54839",
+          "cited_pages": [
+            26
+          ],
+          "fact_index": 1,
+          "label": "United States revenue",
+          "reported_value": "54,839",
+          "supported_cited_pages": [
+            26
+          ],
+          "unsupported_cited_pages": [],
+          "value_occurs_on_a_cited_page": true,
+          "value_occurs_on_supplied_pages": [
+            26
+          ]
+        }
+      ],
+      "input_sha256": "f4fd592484265541a413f4acbfc8b890b33e154361905769c160da6f59f32324",
+      "policy_action": "accept",
+      "question_id": "urnuuid3a8634c5-69b8-475f-9665-f6d5138e23d8::q2",
+      "result_sha256": "b796ccb6a391afae0a2ea03a76d3090c2b1eb7a1912cb54a4e935f614aa36752",
+      "uses_benchmark_labels": false
+    },
+    {
+      "all_facts_supported_by_citations": true,
+      "case_id": "validation_04",
+      "doc_id": "urnuuid42d553ad-d2e0-45de-b0a3-b164ea985ef0",
+      "eligible_for_answer_acceptance": true,
+      "extraction_status": "extracted",
+      "facts": [
+        {
+          "canonical_value": "4485",
+          "cited_pages": [
+            18
+          ],
+          "fact_index": 0,
+          "label": "Five counties — induced employment",
+          "reported_value": "4,485",
+          "supported_cited_pages": [
+            18
+          ],
+          "unsupported_cited_pages": [],
+          "value_occurs_on_a_cited_page": true,
+          "value_occurs_on_supplied_pages": [
+            18,
+            17
+          ]
+        },
+        {
+          "canonical_value": "9868",
+          "cited_pages": [
+            22
+          ],
+          "fact_index": 1,
+          "label": "Three South Carolina counties — total employment",
+          "reported_value": "9,868",
+          "supported_cited_pages": [
+            22
+          ],
+          "unsupported_cited_pages": [],
+          "value_occurs_on_a_cited_page": true,
+          "value_occurs_on_supplied_pages": [
+            22
+          ]
+        }
+      ],
+      "input_sha256": "bd1def8b0d593853535930dac1a24ad2e458ad6bb52e3970c76ad92db91de9c9",
+      "policy_action": "accept",
+      "question_id": "urnuuid42d553ad-d2e0-45de-b0a3-b164ea985ef0::q1",
+      "result_sha256": "ca64e54a933ec59866539532a355e47fa9c1a895c0a1b7b97c9ff6ef8619305c",
+      "uses_benchmark_labels": false
+    },
+    {
+      "all_facts_supported_by_citations": true,
+      "case_id": "validation_05",
+      "doc_id": "urnuuid44ff3ab7-6cd7-40f9-8abc-28680be05c68",
+      "eligible_for_answer_acceptance": true,
+      "extraction_status": "extracted",
+      "facts": [
+        {
+          "canonical_value": "-39",
+          "cited_pages": [
+            22
+          ],
+          "fact_index": 0,
+          "label": "FY2021 total one-time cost",
+          "reported_value": "(39.0)",
+          "supported_cited_pages": [
+            22
+          ],
+          "unsupported_cited_pages": [],
+          "value_occurs_on_a_cited_page": true,
+          "value_occurs_on_supplied_pages": [
+            22
+          ]
+        },
+        {
+          "canonical_value": "-3.5",
+          "cited_pages": [
+            23
+          ],
+          "fact_index": 1,
+          "label": "FY2021 revised forecast versus previous forecast one-time cost difference",
+          "reported_value": "(3.5)",
+          "supported_cited_pages": [
+            23
+          ],
+          "unsupported_cited_pages": [],
+          "value_occurs_on_a_cited_page": true,
+          "value_occurs_on_supplied_pages": [
+            23
+          ]
+        }
+      ],
+      "input_sha256": "237f236f4f485df29b2f7e1c1b9e1c9193355c71bc090d536b0211dc50de71f0",
+      "policy_action": "accept",
+      "question_id": "urnuuid44ff3ab7-6cd7-40f9-8abc-28680be05c68::q2",
+      "result_sha256": "1a65ca690bbb8e8eb4f2a505366884ee1e001e756120b904283ab1cc9b850a89",
+      "uses_benchmark_labels": false
+    },
+    {
+      "all_facts_supported_by_citations": true,
+      "case_id": "validation_06",
+      "doc_id": "urnuuid77b8c272-7717-468a-9c12-b41257db91d9",
+      "eligible_for_answer_acceptance": true,
+      "extraction_status": "extracted",
+      "facts": [
+        {
+          "canonical_value": "3.15",
+          "cited_pages": [
+            13
+          ],
+          "fact_index": 0,
+          "label": "Children’s perceived language support at home",
+          "reported_value": "3.15",
+          "supported_cited_pages": [
+            13
+          ],
+          "unsupported_cited_pages": [],
+          "value_occurs_on_a_cited_page": true,
+          "value_occurs_on_supplied_pages": [
+            13
+          ]
+        },
+        {
+          "canonical_value": "2.84",
+          "cited_pages": [
+            12
+          ],
+          "fact_index": 1,
+          "label": "Parents’ reported language support at home",
+          "reported_value": "2.84",
+          "supported_cited_pages": [
+            12
+          ],
+          "unsupported_cited_pages": [],
+          "value_occurs_on_a_cited_page": true,
+          "value_occurs_on_supplied_pages": [
+            12
+          ]
+        }
+      ],
+      "input_sha256": "b494f62ced4f57f37fff2e354647bbcbced2d19d2239ee4c471809d8c738a0ff",
+      "policy_action": "accept",
+      "question_id": "urnuuid77b8c272-7717-468a-9c12-b41257db91d9::q1",
+      "result_sha256": "355b29667518d5eb7b8be6ea7ac3f39d9f26ec1445c1aa44e7b12dbec47942d2",
+      "uses_benchmark_labels": false
+    }
+  ],
+  "citation_support_rate": 0.8333333333333334,
+  "experiment_type": "numeric_fact_citation_support_audit",
+  "manifest_sha256": "b06ca9ca367aebf3cbd16e78acdd3a63595102f85e4886f80d56b6c4e191e389",
+  "paid_api_used": false,
+  "rejected_count": 0,
+  "schema_version": 1,
+  "uses_benchmark_labels": false
+}

@@ -1,0 +1,14 @@
+{
+  "api": "openai_responses",
+  "endpoint_mode": "v1/responses",
+  "experiment_id": "day6_generic_comparison_fact_extraction_v0",
+  "max_output_tokens": 384,
+  "max_retries": 0,
+  "model": "gpt-5.6-terra",
+  "output_role": "comparison_fact_extraction",
+  "pricing_snapshot_path": "openai_gpt_5_6_terra_pricing_2026-09-02.json",
+  "provider": "openai",
+  "reasoning_effort": "low",
+  "selection_status": "single cross-document fact-extraction smoke test after deterministic selector routing failed",
+  "store": false
+}

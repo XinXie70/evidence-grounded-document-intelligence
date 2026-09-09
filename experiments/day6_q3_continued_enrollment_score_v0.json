@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "experiment_type": "post_prediction_benchmark_score",
+  "question_id": "urnuuid6977f498-b814-42ae-85db-4adaf7a88c9f::q3",
+  "split": "development_tune",
+  "prediction": {
+    "left_group": "Female",
+    "left_count": "1503",
+    "right_group": "Male",
+    "right_count": "564",
+    "signed_difference": "939",
+    "direction": "more"
+  },
+  "benchmark_answer": "939",
+  "answer_exact_match": true,
+  "selected_value_pages": [5, 7],
+  "supporting_scope_pages": [4, 6],
+  "benchmark_evidence_pages": [5, 7],
+  "complete_evidence_page_match": true,
+  "labels_opened_only_after_prediction_was_frozen": true,
+  "selection_sha256": "5f4f71afcbc90ea6bbd672028ef2487c22c0b4b86ca94b583ba269cb8186d69d",
+  "consistency_audit_sha256": "1024072cc67c5ed5e3474adabf85c1ea499883cd7b79ca34bc0d0ee841ffca74",
+  "benchmark_sha256": "ad07c6dfc43e5275ae92b894bf69f151c3dd9467ed79f5b12df904438c5ecb8e",
+  "paid_api_used": false
+}

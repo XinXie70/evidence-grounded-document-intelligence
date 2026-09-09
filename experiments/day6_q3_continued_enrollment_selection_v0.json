@@ -1,0 +1,36 @@
+{
+  "candidate_page_count": 10,
+  "doc_id": "urnuuid6977f498-b814-42ae-85db-4adaf7a88c9f",
+  "experiment_type": "question_guided_continued_enrollment_table_selection",
+  "input_sha256": "fb03a9388f1bd1b5d29740a094d6c06596dfe48cbc2c23a0a245e6554548ff53",
+  "page_records_sha256": "0f503a5dcdf8aff7832b11d283433d44b03715534f9b06a441c33b2189f22b3e",
+  "paid_api_used": false,
+  "question": "How many more part-time female students are enrolled in bachelor's and first professional degree programs compared to part-time male students, according to the gender-specific enrolment tables for Fall 2008?",
+  "question_id": "urnuuid6977f498-b814-42ae-85db-4adaf7a88c9f::q3",
+  "schema_version": 1,
+  "selected_facts": [
+    {
+      "group": "Female",
+      "program": "Bachelor's and 1st Professional Degree",
+      "selection_basis": "question_group_and_column_with_repeated_header_page_continuation",
+      "status": "Part-Time",
+      "table_start_page": 6,
+      "total_page": 7,
+      "unit": "students",
+      "value": "1503"
+    },
+    {
+      "group": "Male",
+      "program": "Bachelor's and 1st Professional Degree",
+      "selection_basis": "question_group_and_column_with_repeated_header_page_continuation",
+      "status": "Part-Time",
+      "table_start_page": 4,
+      "total_page": 5,
+      "unit": "students",
+      "value": "564"
+    }
+  ],
+  "selector_version": "continued_enrollment_table_v0",
+  "uses_gold_answer": false,
+  "uses_gold_evidence_pages": false
+}

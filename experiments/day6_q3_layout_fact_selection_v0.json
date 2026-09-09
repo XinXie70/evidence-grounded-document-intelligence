@@ -1,0 +1,42 @@
+{
+  "candidate_fact_count": 45,
+  "doc_id": "urnuuid111476ed-6700-4be2-85cc-3fc17696167e",
+  "evidence_pages": [
+    21,
+    55
+  ],
+  "experiment_type": "oracle_page_question_guided_layout_fact_selection",
+  "paid_api_used": false,
+  "question": "According to the weekday main-activity table by sex, how many more hours do males spend on personal care than females spend on housework and family care?",
+  "question_id": "urnuuid111476ed-6700-4be2-85cc-3fc17696167e::q3",
+  "schema_version": 1,
+  "selected_facts": [
+    {
+      "column_path": [
+        "Male"
+      ],
+      "page": 21,
+      "row": "Personal care",
+      "selection_basis": "row_match; finest_consistent_resolution",
+      "table_title": "Table 5. Distribution of average time spent on main activity per weekday by sex",
+      "unit": "hours",
+      "value": "10.8"
+    },
+    {
+      "column_path": [
+        "Female",
+        "Total"
+      ],
+      "page": 55,
+      "row": "Total",
+      "selection_basis": "table_scope_total; finest_consistent_resolution",
+      "table_title": "Table 40. Distribution of average time spent on housework and family care per weekday by sex and marital status",
+      "unit": "minutes",
+      "value": "287.4"
+    }
+  ],
+  "source_input_sha256": "9c4f660fc2c51abc3a921aa2706ad24c7b6293bcfe1347044b7578f9c848da35",
+  "source_pdf_sha256": "1d2b754b8cefb08de728bf40ac6078ea02b3064a5ba8164d2a078fe154ce402d",
+  "uses_gold_answer_or_gold_facts": false,
+  "uses_gold_pages_to_isolate_fact_selection": true
+}

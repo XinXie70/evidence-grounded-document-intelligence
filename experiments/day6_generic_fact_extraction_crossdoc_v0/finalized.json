@@ -1,0 +1,155 @@
+{
+  "cases": [
+    {
+      "case_id": "visitation",
+      "deterministic_comparison": {
+        "direction": "more",
+        "left_operand": "157472",
+        "magnitude": "13430",
+        "right_operand": "144042",
+        "signed_difference": "13430",
+        "unit": "visitors"
+      },
+      "doc_id": "urnuuid654ae1c6-a936-4b45-8c3f-95b14ba397ac",
+      "model": "gpt-5.6-terra",
+      "operation": "absolute_difference",
+      "question": "In the table showing total visitation data for September, what is the difference between the 2008 visitor estimate for friends/relatives and the 2009 visitor estimate for paid accommodations?",
+      "question_id": "urnuuid654ae1c6-a936-4b45-8c3f-95b14ba397ac::q3",
+      "selected_facts": [
+        {
+          "cited_pages": [
+            3
+          ],
+          "label": "2008 visitor estimate for friends/relatives",
+          "metric": "Visitor estimate",
+          "selection_basis": "model_extraction_from_label_free_retrieved_pages",
+          "unit": "visitors",
+          "value": "157,472"
+        },
+        {
+          "cited_pages": [
+            3
+          ],
+          "label": "2009 visitor estimate for paid accommodations",
+          "metric": "Visitor estimate",
+          "selection_basis": "model_extraction_from_label_free_retrieved_pages",
+          "unit": "visitors",
+          "value": "144,042"
+        }
+      ],
+      "source_response_id": "resp_03751ff6c60fb6ae016aa0e90e9d7087d088ea667630ee6600",
+      "status": "success"
+    },
+    {
+      "case_id": "faculty",
+      "deterministic_comparison": {
+        "direction": "more",
+        "left_operand": "44",
+        "magnitude": "30",
+        "right_operand": "14",
+        "signed_difference": "30",
+        "unit": "faculty members"
+      },
+      "doc_id": "urnuuid8026e4cd-9993-4d10-94fd-4071d4534409",
+      "model": "gpt-5.6-terra",
+      "operation": "absolute_difference",
+      "question": "What is the difference between the number of permanent faculty members with Ph.D. and the number of faculty who are registered Ph.D. guides?",
+      "question_id": "urnuuid8026e4cd-9993-4d10-94fd-4071d4534409::q4",
+      "selected_facts": [
+        {
+          "cited_pages": [
+            9
+          ],
+          "label": "Permanent faculty members with Ph.D.",
+          "metric": "number",
+          "selection_basis": "model_extraction_from_label_free_retrieved_pages",
+          "unit": "faculty members",
+          "value": "44"
+        },
+        {
+          "cited_pages": [
+            15
+          ],
+          "label": "Faculty who are registered Ph.D. guides",
+          "metric": "number",
+          "selection_basis": "model_extraction_from_label_free_retrieved_pages",
+          "unit": "faculty members",
+          "value": "14"
+        }
+      ],
+      "source_response_id": "resp_0fc395900590d0cf016aa0ea16e50887d09ca7b046b59be7e3",
+      "status": "success"
+    },
+    {
+      "case_id": "net_assets",
+      "deterministic_comparison": {
+        "direction": "more",
+        "left_operand": "34242862393",
+        "magnitude": "1057264624",
+        "right_operand": "33185597769",
+        "signed_difference": "1057264624",
+        "unit": "u.shs"
+      },
+      "doc_id": "urnuuide933941e-fb2a-445d-902c-848417372326",
+      "model": "gpt-5.6-terra",
+      "operation": "absolute_difference",
+      "question": "In the statement listing assets, liabilities, and equity, what is the difference in Net Assets between the year ended 31 December 2019 and the prior year?",
+      "question_id": "urnuuide933941e-fb2a-445d-902c-848417372326::q1",
+      "selected_facts": [
+        {
+          "cited_pages": [
+            22
+          ],
+          "label": "Net Assets — year ended 31 December 2019",
+          "metric": "Net Assets",
+          "selection_basis": "model_extraction_from_label_free_retrieved_pages",
+          "unit": "U.SHS",
+          "value": "34,242,862,393"
+        },
+        {
+          "cited_pages": [
+            22
+          ],
+          "label": "Net Assets — prior year (2018)",
+          "metric": "Net Assets",
+          "selection_basis": "model_extraction_from_label_free_retrieved_pages",
+          "unit": "U.SHS",
+          "value": "33,185,597,769"
+        }
+      ],
+      "source_response_id": "resp_0aeedce571670955016aa0ea1caed087d0bd40c7bba3d30b06",
+      "status": "success"
+    }
+  ],
+  "experiment_type": "finalized_model_extracted_comparison_batch",
+  "leakage_controls": {
+    "benchmark_loaded_during_finalization": false,
+    "uses_gold_answer": false,
+    "uses_gold_evidence_pages": false
+  },
+  "manifest_sha256": "955967856c7dd485eaba675514c2e55275566b7d68b92e65f0d8da2289ac53fa",
+  "paid_api_used": true,
+  "schema_version": 1,
+  "source_estimated_cost_usd": 0.038158,
+  "source_results": [
+    {
+      "case_id": "visitation",
+      "input_sha256": "695ef9a82c674011a66308b66f210eed520e3c2db84898cfeed848e804b28feb",
+      "result_path": "results/day6_generic_fact_extraction_crossdoc_v0/visitation/result.json",
+      "result_sha256": "b66fc72380f2ce3df358fa0498888da75be08c7ce0ea2923ccd96bc05db7dace"
+    },
+    {
+      "case_id": "faculty",
+      "input_sha256": "c29503e7c551e09f4f08c7fc0a80f1d6e9e34b08989ee35268d0f2764aa2d5ba",
+      "result_path": "results/day6_generic_fact_extraction_crossdoc_v0/faculty/result.json",
+      "result_sha256": "9e8af83635e860c181ab69f3cfbd72051a36b9a7f74038f494bb61bfccd8dc17"
+    },
+    {
+      "case_id": "net_assets",
+      "input_sha256": "3f3de7d225f021bdcc5075b832ec6d416d8b77a9f92f7faeff77967ad3e3eada",
+      "result_path": "results/day6_generic_fact_extraction_crossdoc_v0/net_assets/result.json",
+      "result_sha256": "bdc74a3dd22c8255b90d997dfca7028cbcb9dc768233b39b25e795fc1e7c5384"
+    }
+  ],
+  "split": "development_tune"
+}

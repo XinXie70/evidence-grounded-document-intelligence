@@ -1,0 +1,22 @@
+{
+  "candidate_pages": [
+    22,
+    35,
+    3,
+    18,
+    25,
+    23,
+    26,
+    17,
+    24,
+    19
+  ],
+  "case_id": "validation_04",
+  "doc_id": "urnuuid42d553ad-d2e0-45de-b0a3-b164ea985ef0",
+  "page_records": "data/derived/page_records/urnuuid42d553ad-d2e0-45de-b0a3-b164ea985ef0.jsonl",
+  "question": "What is the difference between the induced employment figure for the five counties and the total employment figure for the three South Carolina counties, as shown in the economic impact tables?",
+  "question_id": "urnuuid42d553ad-d2e0-45de-b0a3-b164ea985ef0::q1",
+  "retrieval_method": "hybrid_rrf_bm25_dense_v0_top10",
+  "uses_gold_answer": false,
+  "uses_gold_evidence_pages": false
+}
