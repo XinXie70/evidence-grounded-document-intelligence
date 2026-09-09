@@ -18,10 +18,9 @@ revision, observed corpus counts, and licensing metadata.
 No separate license for the repository's original source code has been declared yet. A public
 release should add one only after the project owner chooses the intended reuse terms.
 
-## Public-release blocker found during audit
+## Public release audit
 
-The local Git history currently contains 92 benchmark-derived PNG crops/renders (about 27.4 MiB)
-from early visual experiments. They are retained locally for research provenance, but must be
-removed from the public Git history before this repository is pushed. No Git remote is configured
-at the time of this audit. The ignore rules now prevent new experiment images from being added;
-history cleanup is intentionally deferred because it rewrites existing commits.
+The `main` branch tracks no PNG, JPG, or PDF files, and none occur anywhere in its commit history.
+The 92 benchmark crops and rendered pages used during local experiments remain available as
+ignored local files. A complete pre-cleanup repository bundle is retained under the ignored
+`tmp/` directory for local recovery and is not part of a normal public push.

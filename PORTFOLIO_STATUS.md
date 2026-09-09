@@ -38,11 +38,13 @@
 - [x] Replace the obsolete Day-1 README with the full project story.
 - [x] Add a zero-cost offline result demo.
 - [x] Run the full local test suite and secret scan.
-- [ ] Curate the experiment directory so the main path is obvious without deleting provenance.
+- [x] Curate the experiment directory through a main-path index without deleting provenance.
 - [x] Add a compact experiment index and architecture diagram.
-- [ ] Remove 92 benchmark-derived PNGs from Git history before publishing; new images are now ignored.
-- [x] Add a license/benchmark-usage notice and verify raw PDFs are not tracked.
-- [ ] Create one clean portfolio commit and review the Git diff.
+- [x] Remove 92 benchmark page images from the complete `main` history while preserving ignored
+      local copies and a verified recovery bundle.
+- [x] Add a benchmark-usage notice and verify public history contains no PNG, JPG, or PDF files.
+- [x] Create a clean portfolio commit and review the Git diff.
+- [ ] Choose a license for the repository's original source code before public release.
 - [ ] Decide whether to run calibration and locked-test evaluation. This is optional for the MVP
       and must not become another open-ended tuning cycle.
 
