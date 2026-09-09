@@ -1,6 +1,6 @@
 # Final Evaluation Gate
 
-**Decision:** calibration and locked-test execution are deferred.  
+**Decision:** calibration and locked-test execution are closed for the portfolio MVP.
 **Date:** 2026-09-09  
 **Current release status:** credible portfolio MVP; not a final benchmark submission.
 
@@ -33,9 +33,21 @@ threshold has therefore been selected.
 - the frozen six-document generic-comparison validation;
 - deterministic evidence metrics, citation checks, cost logging, and test coverage.
 
-## Single next research gate
+## Bounded R1 gate outcome
 
-Use only `development_tune` observations to define and freeze one generic R1 policy that:
+The single permitted tune-only R1 iteration tested a deterministic visual-layout reranker within
+the frozen RRF Top-10 candidate pool. Complete Evidence Recall did not improve at Top-3 or Top-5:
+two questions were gained and two were lost at each cutoff. The intervention was dropped under
+its preregistered rule.
+
+The experiment demonstrated that generic visual-object presence is too coarse: most candidate
+pages in chart and diagram documents contain some lines, curves, rectangles, or images. A future
+system would need a question-conditioned visual localizer, which is outside the bounded MVP.
+
+## Future research gate
+
+A separately scoped future version may use only `development_tune` observations to define and
+freeze one generic R1 policy that:
 
 1. identifies candidate pages without gold evidence;
 2. produces page or region images deterministically;
@@ -43,13 +55,12 @@ Use only `development_tune` observations to define and freeze one generic R1 pol
 4. has a bounded evidence and token budget;
 5. either supplies adequate visual context or abstains explicitly.
 
-After that policy passes a predeclared tune-only test, calibration may be generated and executed
+Only after that policy passes a predeclared tune-only test may calibration be generated and executed
 once. It may select the abstention threshold but must not change the retriever, router, prompts,
 or evidence packaging. The locked test may run once only after calibration freezes the entire
 system.
 
 ## Stop rule
 
-If a generic R1 policy cannot be frozen within one bounded tune-only iteration, publish the MVP
-without calibration or locked-test claims. Do not add a new agent framework, train a custom model,
-or inspect calibration labels to compensate.
+The bounded iteration did not pass. Publish the MVP without calibration or locked-test claims. Do
+not add a new agent framework, train a custom model, or inspect calibration labels to compensate.

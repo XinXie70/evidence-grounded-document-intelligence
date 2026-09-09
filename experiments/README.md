@@ -75,3 +75,9 @@ Files named `candidate`, `probe`, `selection`, `audit`, or `smoke` are intermedi
 not headline results. A report explicitly marked frozen or selected is the decision record. Failed
 and negative experiments remain in the repository because they explain why the final pipeline has
 its current shape.
+
+## Final bounded R1 result
+
+- [`day7_r1_visual_page_rerank_report_v0.md`](day7_r1_visual_page_rerank_report_v0.md) — binary
+  PDF layout signals did not improve Complete Evidence Recall@3 or @5; the intervention was
+  dropped and the portfolio MVP closed without calibration or locked-test claims.

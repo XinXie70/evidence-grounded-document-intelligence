@@ -1,6 +1,6 @@
 # Portfolio Status and Stop Line
 
-**Status:** research MVP complete; portfolio packaging in progress  
+**Status:** research MVP and portfolio packaging complete
 **Primary benchmark:** DocScope  
 **Development scope used so far:** document-isolated `development_tune`  
 **Locked test status:** untouched for method development
@@ -48,6 +48,8 @@
       and third-party artifact terms separate.
 - [x] Defer calibration and locked-test execution until a generic R1 visual route is frozen on
       tune-only evidence; document the one-iteration stop rule.
+- [x] Run the single bounded R1 iteration, retain its negative result, and close the MVP without
+      calibration or locked-test performance claims.
 
 ## Stop line
 
