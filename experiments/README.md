@@ -3,19 +3,23 @@
 The repository preserves exploratory artifacts for provenance, but the project's main evidence
 can be reviewed through the following short path.
 
-## 1. Data and evaluation foundation
+Historical `dayN` prefixes are immutable experiment-batch identifiers, not claims that each phase
+took one calendar day. They are retained so paths, checksums, and reproduction commands remain
+stable. The index below uses capability-based phases for the public narrative.
+
+## Phase 1 — Data and evaluation foundation
 
 - [`../DAY1_REPORT.md`](../DAY1_REPORT.md) — pinned dataset, PDF validation, document-isolated
   splits, annotation audit, and text-layer audit.
 - [`../DATA_AND_EVAL_PROTOCOL.md`](../DATA_AND_EVAL_PROTOCOL.md) — frozen eligibility, metrics,
   leakage controls, Oracle Evidence design, and cost rules.
 
-## 2. Sparse retrieval baseline
+## Phase 2 — Sparse retrieval baseline
 
 - [`day2_bm25_tune_baseline_report.md`](day2_bm25_tune_baseline_report.md) — page-level BM25 on
   239 answerable development-tune questions; Complete Evidence Recall@10 = 70.71%.
 
-## 3. Grounded reasoning and reliability
+## Phase 3 — Grounded reasoning and reliability
 
 - [`day3_grounded_reasoning_smoke_v1_report.md`](day3_grounded_reasoning_smoke_v1_report.md) —
   initial same-model real-versus-Oracle evidence comparison.
@@ -32,14 +36,14 @@ Condition definitions:
 | C3 | Verified page/region images | Diagnose missing text and lost visual structure |
 | C4 | Manually transcribed evidence facts | Isolate reasoning from visual parsing |
 
-## 4. Failure-driven representation recovery
+## Phase 4 — Failure-driven representation recovery
 
 - [`day5_visual_recovery_report_v0.md`](day5_visual_recovery_report_v0.md) — bounded visual
   recovery for confirmed missing-text and layout failures.
 - [`day5_r2_retrieval_evaluation_report_v0.md`](day5_r2_retrieval_evaluation_report_v0.md) —
   deterministic Tesseract OCR retrieval for documents with no native text layer.
 
-## 5. Dense and hybrid retrieval
+## Phase 5 — Dense and hybrid retrieval
 
 - [`day6_dense_grid_selection_report_v0.md`](day6_dense_grid_selection_report_v0.md) — frozen
   BGE-small 256-token, zero-overlap dense baseline.
@@ -51,7 +55,7 @@ Condition definitions:
   — retained negative result showing that aggressive Top-2 dense reranking discards required
   multi-page evidence.
 
-## 6. Reusable comparison pipeline
+## Phase 6 — Reusable comparison pipeline
 
 - [`day6_generic_fact_extraction_crossdoc_v0/score_citation_repaired_v0.json`](day6_generic_fact_extraction_crossdoc_v0/score_citation_repaired_v0.json)
   — scored method-development cases across document types.
@@ -76,7 +80,7 @@ not headline results. A report explicitly marked frozen or selected is the decis
 and negative experiments remain in the repository because they explain why the final pipeline has
 its current shape.
 
-## Final bounded R1 result
+## Phase 7 — Final ablation and stop decision
 
 - [`day7_r1_visual_page_rerank_report_v0.md`](day7_r1_visual_page_rerank_report_v0.md) — binary
   PDF layout signals did not improve Complete Evidence Recall@3 or @5; the intervention was

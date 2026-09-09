@@ -15,6 +15,21 @@ A reproducible research system for answering questions over long PDFs **with pag
 - **Locked test remains untouched**; reported results are development experiments, not inflated
   final-test claims.
 
+## Development phases
+
+The project was developed over more than two weeks. Tokens such as `day1` and `day6` in historical
+filenames are immutable experiment-batch identifiers created during early development; they do
+**not** represent literal calendar days. They remain unchanged so recorded paths, checksums, and
+reproduction commands stay valid. The public project narrative is organized by capability:
+
+1. **Data Foundation** — source pinning, PDF validation, document-isolated splits, and text audit.
+2. **Evidence Retrieval Baseline** — deterministic page scoring and BM25.
+3. **Grounded Reasoning and Reliability** — real-versus-Oracle evidence and C0/C1/C2 evaluation.
+4. **OCR and Visual Recovery** — failure-triggered handling of missing text and lost layout.
+5. **Dense and Hybrid Retrieval** — BGE embeddings, complementarity analysis, and RRF fusion.
+6. **Generic Comparison Pipeline** — cited fact extraction, local arithmetic, and abstention.
+7. **Final Ablation and Stop Decision** — bounded visual reranking test and the frozen MVP boundary.
+
 The project studies a practical problem: a language model may be capable of answering a question, but only if the system first finds all required evidence and preserves tables, charts, and page provenance. The core pipeline is therefore:
 
 ```text
@@ -179,7 +194,7 @@ Start with these records:
 - [`DATASET_NOTICE.md`](DATASET_NOTICE.md) — benchmark licensing and redistribution boundary.
 - [`PROJECT_PROPOSAL.md`](PROJECT_PROPOSAL.md) — research questions, scope, and completion criteria.
 - [`DATA_AND_EVAL_PROTOCOL.md`](DATA_AND_EVAL_PROTOCOL.md) — split, leakage, metric, and cost rules.
-- [`DAY1_REPORT.md`](DAY1_REPORT.md) — dataset and text-layer acceptance record.
+- [`DAY1_REPORT.md`](DAY1_REPORT.md) — data and text-layer acceptance record (historical batch ID).
 - [`experiments/day2_bm25_tune_baseline_report.md`](experiments/day2_bm25_tune_baseline_report.md) — sparse baseline.
 - [`experiments/day6_hybrid_rrf_tune_report_v0.md`](experiments/day6_hybrid_rrf_tune_report_v0.md) — hybrid retrieval intervention.
 - [`experiments/day4_reliability_pilot_report_v0.md`](experiments/day4_reliability_pilot_report_v0.md) — C0/C1/C2 reliability study.
