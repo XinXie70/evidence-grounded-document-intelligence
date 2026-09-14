@@ -10,8 +10,12 @@ A reproducible research system for answering questions over long PDFs **with pag
 - **239 answerable development questions** used for retrieval evaluation.
 - **77.41% Complete Evidence Recall@10** with BM25 + dense reciprocal-rank fusion, up from
   70.71% for the BM25 baseline.
-- **291 deterministic tests** covering data isolation, retrieval, evidence packaging, grounding,
+- **66.67% Complete Evidence Recall@3** on the 63-question visual slice after question-conditioned
+  visual reranking, up from 55.56% for the same RRF candidates.
+- **376 deterministic tests** covering data isolation, retrieval, evidence packaging, grounding,
   citations, abstention, cost controls, and failure recovery.
+- **132-question document-isolated calibration completed**; the final answer/abstain rule and
+  68-component system manifest are frozen before test access.
 - **Locked test remains untouched**; reported results are development experiments, not inflated
   final-test claims.
 
@@ -28,7 +32,9 @@ reproduction commands stay valid. The public project narrative is organized by c
 4. **OCR and Visual Recovery** — failure-triggered handling of missing text and lost layout.
 5. **Dense and Hybrid Retrieval** — BGE embeddings, complementarity analysis, and RRF fusion.
 6. **Generic Comparison Pipeline** — cited fact extraction, local arithmetic, and abstention.
-7. **Final Ablation and Stop Decision** — bounded visual reranking test and the frozen MVP boundary.
+7. **Question-Conditioned Visual Retrieval** — blind full-slice page reranking and a preregistered keep/drop gate.
+8. **Calibration and Final Freeze** — independent judging, human agreement audit, deterministic
+   selective answering, cost-bounded batch execution, and a one-time locked-test protocol.
 
 The project studies a practical problem: a language model may be capable of answering a question, but only if the system first finds all required evidence and preserves tables, charts, and page provenance. The core pipeline is therefore:
 
@@ -65,7 +71,8 @@ flowchart LR
     E --> F
     C -. observed failure only .-> G[Bounded OCR / visual fallback]
     G --> F
-    F --> H[Evidence package<br/>ranked pages + citations]
+    F --> P[Question-conditioned visual rerank<br/>for routed candidates]
+    P --> H[Evidence package<br/>ranked pages + citations]
     H --> I[Grounded fact extraction]
     I --> J[Local comparison / arithmetic]
     J --> K[Citation and support checks]
@@ -107,10 +114,30 @@ The 37.5-point C1-to-C2 accuracy gap identifies evidence retrieval and represent
 
 A bounded page-image fallback recovered **3/3 eligible text-only failures** in a small diagnostic pilot: an unreadable chart, two missing-text pages, and a visually structured list. A global document-count case was deliberately excluded because six selected pages could not prove absence across a 42-page document.
 
-A later tune-only experiment attempted to prioritize RRF candidates using generic table/image/vector
-signals across 63 visual questions. Complete Evidence Recall@3 and @5 did not improve, so the
-reranker was dropped under its preregistered rule. This negative result defines the remaining V2
-problem as question-conditioned visual localization rather than generic page-visual detection.
+A first tune-only experiment attempted to prioritize RRF candidates using generic table/image/vector
+signals across 63 visual questions. Complete Evidence Recall@3 and @5 did not improve, so that
+candidate was dropped under its preregistered rule.
+
+A subsequent question-conditioned visual retriever was then frozen before scoring. It rendered the
+same RRF Top-10 pages and used a pinned off-the-shelf ColSmol-256M encoder with late interaction—no
+DocScope-specific training or question-ID rules. On the full 63-question R1 tune slice, Complete
+Evidence Recall improved from **35/63 to 42/63 at Top-3** and from **44/63 to 50/63 at Top-5**.
+All preregistered keep/drop checks passed, so this reranker is retained for calibration. These are
+development results; held-out performance remains unmeasured.
+
+### Reliability calibration — 132 questions, 35 unseen development documents
+
+The frozen V1 pipeline was run once on the document-isolated calibration split. Independent
+semantic and evidence-support labels were produced after predictions, with a 50-case human audit:
+task-label agreement was 50/50, and independent support-label agreement was 34/37 among cases the
+reviewer could decide without assistance.
+
+The policy marked 74/132 questions eligible to answer. Those answers had **87.84% task accuracy**
+and **79.73% strict grounded accuracy**, for **56.06% total-question coverage**. The preregistered
+60% coverage target was unattainable because the eligibility gate capped coverage below 60%; the
+corrected threshold therefore retains every eligible answer rather than pretending that confidence
+ranking justified additional rejection. This is reported as a deterministic eligibility gate, not
+as calibrated probability.
 
 ### Frozen generic comparison validation
 
@@ -170,7 +197,8 @@ Paid reasoning experiments require an `OPENAI_API_KEY`, an explicit execution fl
 
 - 273 PDFs and 14,014 pages were validated and checksummed.
 - Splits are isolated by document, not by question.
-- Method development uses `development_tune`; threshold selection is reserved for `development_calibration`.
+- Method development used `development_tune`; the document-isolated `development_calibration`
+  split was used once for judging and threshold selection, not method changes.
 - The locked test loader requires an explicit acknowledgement and is not used by ordinary experiments.
 - Predictions are frozen before benchmark answers and evidence pages are used for post-hoc scoring.
 - Configurations, prompts, inputs, outputs, pricing snapshots, and requests carry SHA-256 identities.
@@ -189,7 +217,7 @@ tests/         Deterministic unit and integration tests
 Start with these records:
 
 - [`PORTFOLIO_STATUS.md`](PORTFOLIO_STATUS.md) — completed work, remaining release tasks, stop line, and resume bullets.
-- [`FINAL_EVALUATION_GATE.md`](FINAL_EVALUATION_GATE.md) — why calibration and locked test remain closed, and the one condition for opening them.
+- [`FINAL_EVALUATION_GATE.md`](FINAL_EVALUATION_GATE.md) — completed calibration, final system freeze, and the remaining authorization gate.
 - [`experiments/README.md`](experiments/README.md) — short navigation path through the retained experiment history.
 - [`DATASET_NOTICE.md`](DATASET_NOTICE.md) — benchmark licensing and redistribution boundary.
 - [`PROJECT_PROPOSAL.md`](PROJECT_PROPOSAL.md) — research questions, scope, and completion criteria.
@@ -199,32 +227,31 @@ Start with these records:
 - [`experiments/day6_hybrid_rrf_tune_report_v0.md`](experiments/day6_hybrid_rrf_tune_report_v0.md) — hybrid retrieval intervention.
 - [`experiments/day4_reliability_pilot_report_v0.md`](experiments/day4_reliability_pilot_report_v0.md) — C0/C1/C2 reliability study.
 - [`experiments/day5_visual_recovery_report_v0.md`](experiments/day5_visual_recovery_report_v0.md) — visual fallback diagnosis.
+- [`experiments/visual_retrieval_v1/REPORT.md`](experiments/visual_retrieval_v1/REPORT.md) — blind question-conditioned visual reranking gate.
 - [`experiments/day6_generic_comparison_validation_v0/REPORT.md`](experiments/day6_generic_comparison_validation_v0/REPORT.md) — frozen generic comparison validation.
 
 ## Limitations
 
-1. **Visual localization is still coarse.** The system can detect that a page contains a table,
-   image, or vector graphics, but it cannot reliably determine which visual region matches the
-   entities, metric, and period named in a question. A preregistered reranker using these generic
-   signals produced no net Complete Evidence Recall improvement on 63 R1 questions.
+1. **Visual retrieval is page-level, not region-grounded.** Question-conditioned visual reranking
+   improved the 63-question R1 tune slice, but it still scores full pages and does not prove which
+   table cell, chart mark, or image region supports an answer. Four Complete@3 questions also
+   regressed despite the positive net result.
 2. **Multi-page evidence can remain incomplete.** RRF reaches 77.41% Complete Evidence Recall@10,
    so some questions still miss at least one required page—often a second operand, unit, table
    heading, or distant continuation page.
 3. **OCR and flattened layout text can lose relationships.** Scanned, rotated, tabular, and chart
    pages may preserve the words but lose row/column or label/value alignment. One frozen validation
    failure retrieved the correct chart pages but associated a value with the wrong flattened label.
-4. **Evaluation is development-scoped.** Headline results come from `development_tune` and clearly
-   identified diagnostic pilots. The bounded R1 gate did not pass, so calibration and the locked
-   test were not executed; no held-out test performance is claimed.
+4. **Final held-out performance remains unknown.** Development and calibration results are now
+   complete, but the one-time locked test has not been opened; no final-test performance is claimed.
 
 ## Future work
 
-A V2 should focus on **question-conditioned visual localization**: use the question to select a
-specific table, chart, or region inside already retrieved pages, while preserving page provenance
-and an explicit abstention path. It should be preregistered on document-isolated development data
-and evaluated once on held-out data after the retrieval, routing, evidence budget, and reliability
-threshold are frozen. Per-question patches, unconstrained full-document vision, and post-hoc
-weight tuning are intentionally excluded.
+The complete V1 system is now frozen. The immediate next step is a separately authorized, one-time
+evaluation on the locked test, followed by bootstrap confidence intervals and honest failure
+reporting without post-test tuning. A later V2 may add
+region-level grounding inside selected pages. Per-question patches, unconstrained full-document
+vision, and post-hoc weight tuning remain intentionally excluded.
 
 ## Honest project boundary
 

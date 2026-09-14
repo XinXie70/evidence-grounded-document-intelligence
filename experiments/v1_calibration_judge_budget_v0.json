@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "status": "approved_not_started",
+  "scope": "74 semantic-answer judgments plus 74 independent cited-evidence support judgments for the frozen 132-question development_calibration predictions",
+  "input_manifest_sha256": "c8f6aa19bfd6e16ca58dfd6e7a17c81a72e09d59f88ce4644c96a6b410ba8105",
+  "semantic_config_sha256": "fe7b7a24317a8eabdbab21462ea66f9399fdc587550cc917e1e8b874a3eaab9a",
+  "support_config_sha256": "08aace78603cf0bb07aa187454b418ba75a0f9173f2139310e25331b8ca0448e",
+  "request_count": 148,
+  "semantic_request_count": 74,
+  "support_request_count": 74,
+  "conservative_cost_estimate_usd": 0.685287,
+  "approved_hard_cap_usd": 1.0,
+  "paid_request_sent": false,
+  "prior_failed_request_reserve_usd": 0.0153828,
+  "support_fallback_config_sha256": "51ceec4d39a622e067de7144799d22da89548862dae8a95ecad4cfe78458bf03",
+  "operational_fallback_requests": {
+    "calibration_026/support": {
+      "reason": "two consecutive max_output_tokens failures with empty structured output",
+      "only_change": "max_output_tokens 192 to 384",
+      "additional_conservative_cost_usd": 0.002304
+    },
+    "calibration_041/support": {
+      "reason": "preserved max_output_tokens failure with truncated JSON",
+      "only_change": "max_output_tokens 192 to 384",
+      "additional_conservative_cost_usd": 0.002304
+    }
+  },
+  "failure_incidents": [
+    {
+      "request": "calibration_026/support",
+      "observed_after_completed_request_count": 33,
+      "failure_type": "empty_or_non_json_structured_output",
+      "response_usage_unavailable": true,
+      "conservative_cost_reserve_usd": 0.0075265
+    },
+    {
+      "request": "calibration_026/support",
+      "observed_after_completed_request_count": 33,
+      "failure_type": "max_output_tokens_with_reasoning_only_and_no_json",
+      "response_usage_unavailable": false,
+      "actual_cost_usd": 0.0025288,
+      "response_id": "resp_0a32324eabb6b83e016aa772ba2e1087d08f7c50913bdf13c7"
+    },
+    {
+      "request": "calibration_041/support",
+      "observed_after_completed_request_count": 51,
+      "failure_type": "max_output_tokens_with_truncated_json",
+      "response_usage_unavailable": false,
+      "actual_cost_usd": 0.0053275,
+      "response_id": "resp_033dea49b57ec9dc016aa77426e85c87d09ec70845c750f83c"
+    }
+  ],
+  "approval": {
+    "approved_by": "user",
+    "approved_date": "2026-09-11",
+    "maximum_usd": 1.0
+  }
+}

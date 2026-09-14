@@ -1,0 +1,300 @@
+{
+  "component_count": 68,
+  "components": {
+    "calibration_decision_evidence": [
+      {
+        "path": "experiments/v1_calibration_confidence_features_v1.json",
+        "sha256": "5f6a6bed8b2de7ebeb8a20d3af50c0dcf9dd831514007515204d626e5813ff49"
+      },
+      {
+        "path": "experiments/v1_calibration_automatic_audit_v1.json",
+        "sha256": "6d0a96085fa5d97fa8289dbe3b6bbbfde883e0034290435b05c90e407347bfce"
+      },
+      {
+        "path": "experiments/v1_calibration_evaluation_v2.json",
+        "sha256": "0f8b16e69826b49fafd21a65613f839393bc3e093494b3e11e120ba035e8d71b"
+      },
+      {
+        "path": "experiments/v1_calibration_human_agreement_report_v1.json",
+        "sha256": "ca5c3bb8e9a3b24e4428adb90265b37ff6ba9e9500abd1ea15dc7bd9aa25d3ae"
+      },
+      {
+        "path": "configs/confidence_threshold_v1_calibration_v0.json",
+        "sha256": "b85024215c7f2b032f8f732662e764aff80352887e40ed1fba3d194f272a612b"
+      }
+    ],
+    "data_identity_and_split": [
+      {
+        "path": "data/manifests/source.json",
+        "sha256": "0cd96b51a81eb48490ccfe4dbc75533fd371608f58463054c8b5d181b4954584"
+      },
+      {
+        "path": "data/manifests/checksums.sha256",
+        "sha256": "1837633a282f981a991c011093d6bdff366552a60c0c81330c88e1e57fca90fa"
+      },
+      {
+        "path": "data/manifests/split_manifest.json",
+        "sha256": "e76154d9eb743994c732faf7282323423357c1f282103594aadd2a5ddff9fd10"
+      }
+    ],
+    "environment": [
+      {
+        "path": "pyproject.toml",
+        "sha256": "caf8e131b7f74a60b8fc48cc8dbce8b73c938170850de78dd88d018c74ff5430"
+      },
+      {
+        "path": "requirements-lock.txt",
+        "sha256": "30214813c554bbfc44d48377bc62d9aab8bcdcd5cb36d80d86068a494c8e9da7"
+      },
+      {
+        "path": "configs/environment_v1_prelocked_v0.json",
+        "sha256": "e73de575d42f64321c6390ee20be2a9078102aaebdf0fa2a088e8e2a9a99cdb9"
+      }
+    ],
+    "evaluation_configs": [
+      {
+        "path": "configs/locked_test_semantic_judge_v0.json",
+        "sha256": "f05a0a6a527ef9ca7e6b743a914d9a6e4175f3d1f14dd9e363e60d142132e08a"
+      },
+      {
+        "path": "configs/locked_test_support_judge_v0.json",
+        "sha256": "a28859fd0c30ebd64e88027d7ffebafb5395dcb25d36be258879542473c4e24d"
+      }
+    ],
+    "evaluation_implementations": [
+      {
+        "path": "src/egdi/reasoning_result_normalize.py",
+        "sha256": "cc0ef3bac4143c8e41f576e20001811d97b6bec0e961d468de64b0e415a98c09"
+      },
+      {
+        "path": "src/egdi/calibration_judge_inputs.py",
+        "sha256": "82fa31373938f85aee56f6f8cdd7d515f6ed48d004a7e9194546faf0b5a93459"
+      },
+      {
+        "path": "src/egdi/calibration_judge.py",
+        "sha256": "fdf1fb24ec8b98737e313623eaec31b562ccff5342da6ff4d91f30e5479c35a0"
+      },
+      {
+        "path": "src/egdi/calibration_judge_batch.py",
+        "sha256": "a9e46f72d8281e1a930728f7a64207d478381027b0d0f1edfa9d0a41df5dd0c6"
+      },
+      {
+        "path": "src/egdi/calibration_score.py",
+        "sha256": "2794efa9f8cfef956c4fed9de94d09efdabfb09eae87e13a216b5f536cfec925"
+      },
+      {
+        "path": "src/egdi/scoring.py",
+        "sha256": "9853fdee44bb7475973da2fbc559831f5def7a30ed9587db0e6f3cbbf6bf7cdf"
+      },
+      {
+        "path": "src/egdi/selective_evaluation.py",
+        "sha256": "ceb27428ae99c9eafede430835833e40554687a8d01985bf0bf2953f33f5ba00"
+      },
+      {
+        "path": "src/egdi/bootstrap_evaluation.py",
+        "sha256": "b40f997459ebba842d5c7503a797ff476aa6aba9ed18bcd4531749fe88ca0eb2"
+      },
+      {
+        "path": "src/egdi/v1_calibration_freeze.py",
+        "sha256": "7e7b9c9613eaf65cac2bef09bd35729732f460dd898423c48990f710ce99a84b"
+      },
+      {
+        "path": "src/egdi/v1_system_freeze.py",
+        "sha256": "55549a7dfbd188aac34adfddabf0d1c8127728ed6caec07083f226ebdafaaf61"
+      }
+    ],
+    "protocols": [
+      {
+        "path": "DATA_AND_EVAL_PROTOCOL.md",
+        "sha256": "f783fe35157d199ec225a723c3e22a64a6d69cbaeb50dba3098818f89ebae47f"
+      },
+      {
+        "path": "V1_COMPLETION_PROTOCOL.md",
+        "sha256": "0d068d368cfbc3919fe46eee6edfe7550cd92603ba6d97912a8fcdd647300910"
+      },
+      {
+        "path": "V1_CALIBRATION_SCORING_PROTOCOL.md",
+        "sha256": "51d210120e3859098e4ffa94bee09c7e135641ec91a4ad1da0f1cd775cc8d685"
+      },
+      {
+        "path": "V1_CALIBRATION_THRESHOLD_CORRECTION.md",
+        "sha256": "1e20417ad2da36d1a4cfd3eaef995d98c54ceb3b49d1949fda60f19d409f0db2"
+      },
+      {
+        "path": "V1_LOCKED_TEST_PROTOCOL.md",
+        "sha256": "a5afb4e442e76e2a672e2bc071956e0aa71b2ccc1d7f010623353eb1eae6187a"
+      }
+    ],
+    "reasoning_confidence_and_cost_configs": [
+      {
+        "path": "configs/reasoning_v1_locked_test_v0.json",
+        "sha256": "6257b743d8444ad3449da8a7ecf8177e29a1238c5cc1db47cb521fac921c553c"
+      },
+      {
+        "path": "configs/confidence_policy_v1_tune_v0.json",
+        "sha256": "d863b01f1d366f861630255513a8cd02033f22f1c25aa9b9bf1fa9911a800fd4"
+      },
+      {
+        "path": "configs/confidence_threshold_v1_calibration_v1.json",
+        "sha256": "e0f46f6457bb07ea6765e101aa284682dc3776b7a81ffc436759e1373da1ef54"
+      },
+      {
+        "path": "configs/openai_gpt_5_6_terra_pricing_2026-09-02.json",
+        "sha256": "780141590ae0e00b191d7878c3681c9cd1953ee0ac166f72cbffdaeb44ed6595"
+      },
+      {
+        "path": "configs/paid_request_policy_v0.json",
+        "sha256": "53bb1a0e65f4b68f5e0cd199d6f1467863e4877f584a1de20a736500847c75d8"
+      }
+    ],
+    "retrieval_and_routing_configs": [
+      {
+        "path": "configs/bm25_page_v0_tune.json",
+        "sha256": "891554561a80bff0c4b26ee33a7dffe3a147bc0d073a944732255f4674c4a6fb"
+      },
+      {
+        "path": "configs/dense_bge_small_en_v1_5_selected_v0.json",
+        "sha256": "c831dcb3beb488c919f4419dcd757235e4bf20db849254297342ef1d41625bca"
+      },
+      {
+        "path": "configs/hybrid_rrf_bm25_dense_v0.json",
+        "sha256": "948c67837f21ecdeccccf83188b110988d3e2e4637ce521916d00a5bae2af038"
+      },
+      {
+        "path": "configs/r2_ocr_registry_calibration_v1.json",
+        "sha256": "1b2151280f986ad56f3d7a4d33f224eab4a097606507f82967530bec1da8854a"
+      },
+      {
+        "path": "experiments/visual_retrieval_v1/runtime_manifest.json",
+        "sha256": "b5d415b0a0dcad6f1e596616d4a8391d63486cf0ef087f327ad529e3516f8265"
+      }
+    ],
+    "runtime_implementations": [
+      {
+        "path": "src/egdi/constants.py",
+        "sha256": "2820f8fb6b30ce85fc7811fd3e79c5d2a284174ec3f7cca879dfc1f042016682"
+      },
+      {
+        "path": "src/egdi/access.py",
+        "sha256": "3a27b536020edf4a26faeb72ee09148b601bc660d89ecc22f62a75bc5874640d"
+      },
+      {
+        "path": "src/egdi/io.py",
+        "sha256": "d2ff9112e037cfbd57d309ea95a3bb89ce78ae49bee68c17ba66ed293421f8ab"
+      },
+      {
+        "path": "src/egdi/text.py",
+        "sha256": "dd7b801db87fb0995e911fc65f0458082189c449072e716b7065c3bbcc33dd4b"
+      },
+      {
+        "path": "src/egdi/corpus.py",
+        "sha256": "7a583d9481bfbd897325ed4709f0465891126134f0ed1b7022fb41cd6e2c1a31"
+      },
+      {
+        "path": "src/egdi/batch_corpus.py",
+        "sha256": "5693748d5717375b420431c9dcaa0223f3c48d38e69b6b0ad273bcca0f89a5d6"
+      },
+      {
+        "path": "src/egdi/evaluation_selection.py",
+        "sha256": "960b9db43fe27b4c0acf4bd33d1a9487234cd1ff199717d0a3d30c2e77a94a87"
+      },
+      {
+        "path": "src/egdi/bm25.py",
+        "sha256": "087beee34aff8c1b42bd11e8529a5349b4e853a7bf561b631505b5b0531cd01f"
+      },
+      {
+        "path": "src/egdi/dense.py",
+        "sha256": "5bbc3b8ca3889ba30ed0a41f60fbfd2ee5aa580eeceabfbc4ce58fb1cb65bf8c"
+      },
+      {
+        "path": "src/egdi/rrf.py",
+        "sha256": "89ca4a8e6d808fdd87676cd5290c68a99cd9fdd82c4910bccf16c572b78c5de2"
+      },
+      {
+        "path": "src/egdi/visual_routing.py",
+        "sha256": "f3e6c9dabfda4ea15460b6d273cfef54978b2ea758e6ada7fec8dc19b54a9e07"
+      },
+      {
+        "path": "src/egdi/visual_routing_v1.py",
+        "sha256": "c57322efabd20516972fe89ccf4fac790f572bc6b47770a37bcca6a8ddd06f04"
+      },
+      {
+        "path": "src/egdi/visual_encoder.py",
+        "sha256": "c592880e915c09c5749cd0885e4289d581bbdfe420548282f85d9655809ac556"
+      },
+      {
+        "path": "src/egdi/visual_multivector.py",
+        "sha256": "db4333685fe1211289ab4707412b876789d3a31bbaf752d8c1b82c239748d809"
+      },
+      {
+        "path": "src/egdi/visual_runtime_manifest.py",
+        "sha256": "34950e35d6a97e6ccd050852d326a463a1e954f1c71b0eb0802cedfd9153e915"
+      },
+      {
+        "path": "src/egdi/visual_retrieval_batch.py",
+        "sha256": "8ef494da838626486f3591c71557ca16d6a19f2365282708439b4d5c17f0e406"
+      },
+      {
+        "path": "src/egdi/ocr_corpus.py",
+        "sha256": "b58e08102f2e7e3d67116cb9ff35416be99babe24c6628ad421c65df52bb6a3d"
+      },
+      {
+        "path": "src/egdi/ocr_orientation.py",
+        "sha256": "ddeb6dda5662c3e41d5d573a46ea5f1c849cf4746e9492765e4ef12608beba40"
+      },
+      {
+        "path": "src/egdi/v1_retrieval_candidates.py",
+        "sha256": "49693b16059a2fa515272205f7cf351ec98ad0433d318c5b826c4e25a0d926c8"
+      },
+      {
+        "path": "src/egdi/v1_reliability_inputs.py",
+        "sha256": "302fac1ab1b676790e7523738c819c1f5062b2a7478a26e1fef05b59e2b11da3"
+      },
+      {
+        "path": "src/egdi/reasoning_api.py",
+        "sha256": "77c07b3aab9514a6bcd8f1b424bb8f75a222683936e682e62f7fca5803ca0eab"
+      },
+      {
+        "path": "src/egdi/v1_reasoning_batch.py",
+        "sha256": "e12c7a328c0bc2337beec81765f1f6f0f60789a821623e552329eea5861d0c40"
+      },
+      {
+        "path": "src/egdi/v1_batch_partition.py",
+        "sha256": "4b2de6482ee2746ce1fa1788c1dedb50a34890236212646d04c319d92d93a921"
+      },
+      {
+        "path": "src/egdi/judge_batch_partition.py",
+        "sha256": "6b4d1612d5d4b762f7ee608e39eed3fb4fbbc1a3f78b1f9abd7f0ba33d02a2a9"
+      },
+      {
+        "path": "src/egdi/confidence_features_v1.py",
+        "sha256": "7113c1540423260dde7eb3309a4a8ecd4a92b879eb9b32b04c0f4ebf9e35619b"
+      },
+      {
+        "path": "src/egdi/confidence_feature_batch.py",
+        "sha256": "f5f2680f9b576ae87bc1cf14092807eba5a895adca8b544743658a753251e35b"
+      },
+      {
+        "path": "src/egdi/confidence_policy_v1.py",
+        "sha256": "1b72a356170fb37b78e690f9dcd49309c429c2a8b6cc61514bfe758a1ddd3edc"
+      },
+      {
+        "path": "src/egdi/selective_decision.py",
+        "sha256": "6846792cf6c2f385fce38c533e416d3bda97243580e048e7d4ca911f1d84f5b3"
+      },
+      {
+        "path": "src/egdi/selective_decision_batch.py",
+        "sha256": "c9d4759e7fa0a541aa03f1ac05af9fb3c8524d2f024d672eaea3556282c1cf1a"
+      },
+      {
+        "path": "src/egdi/locked_test_preflight.py",
+        "sha256": "e641232d081692c20abf850dbbe2fec2e593698b631f459307b7856ca30237e3"
+      }
+    ]
+  },
+  "freeze_spec_sha256": "372555dd9cb2afa72b91fbe1cb8e586686f64f1185266d95e7de7647e6bebd78",
+  "locked_test_accessed": false,
+  "mutation_policy": "Any change to a listed file after this manifest invalidates the V1 locked-test run.",
+  "schema_version": 1,
+  "status": "v1_system_frozen_before_locked_test"
+}

@@ -1,66 +1,39 @@
 # Final Evaluation Gate
 
-**Decision:** calibration and locked-test execution are closed for the portfolio MVP.
-**Date:** 2026-09-09  
-**Current release status:** credible portfolio MVP; not a final benchmark submission.
+**Decision:** V1 is frozen; the locked test remains closed pending explicit one-time authorization.
+**Date:** 2026-09-14
+**Current release status:** calibrated research system; final held-out result not yet measured.
 
-## Why the gate is closed
+## What has been completed
 
-The label-free calibration preflight found 132 questions across 35 documents:
+- The question-conditioned visual retriever passed its preregistered 63-question tune-only gate.
+- The frozen pipeline ran once on 132 questions from 35 document-isolated calibration documents.
+- Automatic semantic/support judging was checked on a 50-case human sample.
+- The final policy answers only when its deterministic eligibility checks pass. Calibration allowed
+  74/132 answers: 87.84% task accuracy and 79.73% strict grounded accuracy among answered cases.
+- A protocol audit caught that the earlier V0 file confused answer retention with total-question
+  coverage. The corrected threshold is 0.3566666666666667 and retains all eligible answers; it is
+  not claimed to be a calibrated probability.
+- 68 runtime, evaluation, configuration, environment, and protocol files are SHA-256 frozen in
+  `experiments/v1_system_freeze_manifest_v1.json`.
+- 376 deterministic tests and the offline preflight pass. All 156 locked-test PDF checksums match;
+  no locked-test result artifact exists and no paid request was made by preflight.
 
-| Frozen route | Questions | Current readiness |
-|---|---:|---|
-| R0 native text | 99 | implemented |
-| R1 local visual structure | 29 | not frozen for unseen batch use |
-| R2 scanned document | 1 | tune candidate frozen |
-| R3 document-global | 3 | conservative abstention boundary available |
+## Remaining gate
 
-The R1 tune diagnostics established that page images can recover missing text and lost
-two-dimensional structure. They did not establish a deterministic, label-free method for locating
-and packaging the relevant visual region for a previously unseen question. Running calibration
-before this route is frozen would measure an incomplete system. Changing R1 after seeing those
-outcomes would misuse calibration as a second tuning split.
+Before setting the locked-test access acknowledgement:
 
-The current BM25 score and margin features are also insufficient as a standalone confidence
-policy: successful and failed tune examples overlap on both signals. No numeric abstention
-threshold has therefore been selected.
+1. create a clean pre-test Git commit and tag;
+2. verify the 68-component freeze manifest again;
+3. confirm API availability and review the first paid-batch estimate;
+4. obtain explicit user authorization for the one-time final evaluation.
 
-## What is already valid to claim
+The exact execution order is frozen in [`V1_LOCKED_TEST_PROTOCOL.md`](V1_LOCKED_TEST_PROTOCOL.md).
+Every paid batch has an independent hard cap of USD 1.00 and is shown to the user before execution.
 
-- document-isolated development results for BM25, dense retrieval, and RRF;
-- the 24-question C0/C1/C2 reliability pilot and its Oracle Evidence gap;
-- the 3/3 eligible visual-recovery diagnostic, explicitly labelled as a small pilot;
-- the frozen six-document generic-comparison validation;
-- deterministic evidence metrics, citation checks, cost logging, and test coverage.
+## No post-test tuning
 
-## Bounded R1 gate outcome
-
-The single permitted tune-only R1 iteration tested a deterministic visual-layout reranker within
-the frozen RRF Top-10 candidate pool. Complete Evidence Recall did not improve at Top-3 or Top-5:
-two questions were gained and two were lost at each cutoff. The intervention was dropped under
-its preregistered rule.
-
-The experiment demonstrated that generic visual-object presence is too coarse: most candidate
-pages in chart and diagram documents contain some lines, curves, rectangles, or images. A future
-system would need a question-conditioned visual localizer, which is outside the bounded MVP.
-
-## Future research gate
-
-A separately scoped future version may use only `development_tune` observations to define and
-freeze one generic R1 policy that:
-
-1. identifies candidate pages without gold evidence;
-2. produces page or region images deterministically;
-3. records reversible page/region provenance;
-4. has a bounded evidence and token budget;
-5. either supplies adequate visual context or abstains explicitly.
-
-Only after that policy passes a predeclared tune-only test may calibration be generated and executed
-once. It may select the abstention threshold but must not change the retriever, router, prompts,
-or evidence packaging. The locked test may run once only after calibration freezes the entire
-system.
-
-## Stop rule
-
-The bounded iteration did not pass. Publish the MVP without calibration or locked-test claims. Do
-not add a new agent framework, train a custom model, or inspect calibration labels to compensate.
+Once opened, locked-test outcomes may be scored, bootstrapped, analyzed, and reported, but they may
+not change V1 retrieval, routing, OCR, visual ranking, prompts, evidence budgets, confidence policy,
+or threshold. Operational retries are allowed only for preserved transport/incomplete-output
+failures and may not depend on whether an answer appears correct.

@@ -1,0 +1,210 @@
+{
+  "component_count": 46,
+  "components": {
+    "calibration_decision_evidence": [
+      {
+        "path": "experiments/v1_calibration_selection_v0.json",
+        "sha256": "dd314c1ff37a71e745956799b05fcd15f9c95d1e286c796aa35b93c404f046f4"
+      },
+      {
+        "path": "experiments/v1_calibration_confidence_features_v1.json",
+        "sha256": "5f6a6bed8b2de7ebeb8a20d3af50c0dcf9dd831514007515204d626e5813ff49"
+      },
+      {
+        "path": "experiments/v1_calibration_automatic_audit_v1.json",
+        "sha256": "6d0a96085fa5d97fa8289dbe3b6bbbfde883e0034290435b05c90e407347bfce"
+      },
+      {
+        "path": "experiments/v1_calibration_evaluation_v2.json",
+        "sha256": "0f8b16e69826b49fafd21a65613f839393bc3e093494b3e11e120ba035e8d71b"
+      },
+      {
+        "path": "experiments/v1_calibration_human_agreement_report_v1.json",
+        "sha256": "ca5c3bb8e9a3b24e4428adb90265b37ff6ba9e9500abd1ea15dc7bd9aa25d3ae"
+      }
+    ],
+    "data_identity_and_split": [
+      {
+        "path": "data/manifests/source.json",
+        "sha256": "0cd96b51a81eb48490ccfe4dbc75533fd371608f58463054c8b5d181b4954584"
+      },
+      {
+        "path": "data/manifests/checksums.sha256",
+        "sha256": "1837633a282f981a991c011093d6bdff366552a60c0c81330c88e1e57fca90fa"
+      },
+      {
+        "path": "data/manifests/split_manifest.json",
+        "sha256": "e76154d9eb743994c732faf7282323423357c1f282103594aadd2a5ddff9fd10"
+      }
+    ],
+    "evaluation_configs": [
+      {
+        "path": "configs/calibration_semantic_judge_v1.json",
+        "sha256": "8fd440caff72d7ddb80f889efd3b81001ae9a0143c5e23c97fa7a944e781e882"
+      },
+      {
+        "path": "configs/calibration_support_judge_v1.json",
+        "sha256": "615d236045f939aa4f2683e97c3e36dcf59c3ec15b5c9066c4ca348d3b72dd47"
+      }
+    ],
+    "evaluation_implementations": [
+      {
+        "path": "src/egdi/reasoning_result_normalize.py",
+        "sha256": "cc0ef3bac4143c8e41f576e20001811d97b6bec0e961d468de64b0e415a98c09"
+      },
+      {
+        "path": "src/egdi/calibration_judge.py",
+        "sha256": "fdf1fb24ec8b98737e313623eaec31b562ccff5342da6ff4d91f30e5479c35a0"
+      },
+      {
+        "path": "src/egdi/calibration_judge_batch.py",
+        "sha256": "889af265a4951fb774b99d7694975bfffdcb33b019801819d1c1f115a85f3277"
+      },
+      {
+        "path": "src/egdi/calibration_score.py",
+        "sha256": "0286e96f04f5e064f3b1c479df5dfeb380f22f3458b040b0ba3d65827f5e763c"
+      },
+      {
+        "path": "src/egdi/selective_evaluation.py",
+        "sha256": "ceb27428ae99c9eafede430835833e40554687a8d01985bf0bf2953f33f5ba00"
+      }
+    ],
+    "protocols": [
+      {
+        "path": "DATA_AND_EVAL_PROTOCOL.md",
+        "sha256": "f783fe35157d199ec225a723c3e22a64a6d69cbaeb50dba3098818f89ebae47f"
+      },
+      {
+        "path": "V1_COMPLETION_PROTOCOL.md",
+        "sha256": "dfdd4170f604fcc9b75604b0de50e0f21f8aaefb1981b34e44e0636edd7ae830"
+      },
+      {
+        "path": "V1_CALIBRATION_SCORING_PROTOCOL.md",
+        "sha256": "befb9cfc91e7c317162b2cc052855e26c311f497222c4464dee849a5c89a1d37"
+      }
+    ],
+    "reasoning_confidence_and_cost_configs": [
+      {
+        "path": "configs/reasoning_v1_calibration_v0.json",
+        "sha256": "cf028717d0838cb8d74567f38f9029143d10f7e138bb5e7d2a898b3acef0cc6f"
+      },
+      {
+        "path": "configs/confidence_policy_v1_tune_v0.json",
+        "sha256": "d863b01f1d366f861630255513a8cd02033f22f1c25aa9b9bf1fa9911a800fd4"
+      },
+      {
+        "path": "configs/confidence_threshold_v1_calibration_v0.json",
+        "sha256": "b85024215c7f2b032f8f732662e764aff80352887e40ed1fba3d194f272a612b"
+      },
+      {
+        "path": "configs/openai_gpt_5_6_terra_pricing_2026-09-02.json",
+        "sha256": "780141590ae0e00b191d7878c3681c9cd1953ee0ac166f72cbffdaeb44ed6595"
+      },
+      {
+        "path": "configs/paid_request_policy_v0.json",
+        "sha256": "53bb1a0e65f4b68f5e0cd199d6f1467863e4877f584a1de20a736500847c75d8"
+      }
+    ],
+    "retrieval_and_routing_configs": [
+      {
+        "path": "configs/bm25_page_v0_tune.json",
+        "sha256": "891554561a80bff0c4b26ee33a7dffe3a147bc0d073a944732255f4674c4a6fb"
+      },
+      {
+        "path": "configs/dense_bge_small_en_v1_5_selected_v0.json",
+        "sha256": "c831dcb3beb488c919f4419dcd757235e4bf20db849254297342ef1d41625bca"
+      },
+      {
+        "path": "configs/hybrid_rrf_bm25_dense_v0.json",
+        "sha256": "948c67837f21ecdeccccf83188b110988d3e2e4637ce521916d00a5bae2af038"
+      },
+      {
+        "path": "configs/r2_ocr_registry_calibration_v1.json",
+        "sha256": "1b2151280f986ad56f3d7a4d33f224eab4a097606507f82967530bec1da8854a"
+      },
+      {
+        "path": "experiments/visual_retrieval_v1/runtime_manifest.json",
+        "sha256": "b5d415b0a0dcad6f1e596616d4a8391d63486cf0ef087f327ad529e3516f8265"
+      }
+    ],
+    "runtime_implementations": [
+      {
+        "path": "src/egdi/text.py",
+        "sha256": "dd7b801db87fb0995e911fc65f0458082189c449072e716b7065c3bbcc33dd4b"
+      },
+      {
+        "path": "src/egdi/bm25.py",
+        "sha256": "087beee34aff8c1b42bd11e8529a5349b4e853a7bf561b631505b5b0531cd01f"
+      },
+      {
+        "path": "src/egdi/dense.py",
+        "sha256": "5bbc3b8ca3889ba30ed0a41f60fbfd2ee5aa580eeceabfbc4ce58fb1cb65bf8c"
+      },
+      {
+        "path": "src/egdi/rrf.py",
+        "sha256": "89ca4a8e6d808fdd87676cd5290c68a99cd9fdd82c4910bccf16c572b78c5de2"
+      },
+      {
+        "path": "src/egdi/visual_routing.py",
+        "sha256": "f3e6c9dabfda4ea15460b6d273cfef54978b2ea758e6ada7fec8dc19b54a9e07"
+      },
+      {
+        "path": "src/egdi/visual_routing_v1.py",
+        "sha256": "c57322efabd20516972fe89ccf4fac790f572bc6b47770a37bcca6a8ddd06f04"
+      },
+      {
+        "path": "src/egdi/visual_encoder.py",
+        "sha256": "c592880e915c09c5749cd0885e4289d581bbdfe420548282f85d9655809ac556"
+      },
+      {
+        "path": "src/egdi/visual_multivector.py",
+        "sha256": "db4333685fe1211289ab4707412b876789d3a31bbaf752d8c1b82c239748d809"
+      },
+      {
+        "path": "src/egdi/visual_retrieval_batch.py",
+        "sha256": "dcd5857f15083fa3390a0be0033f9441432ad104ae44d4a7d07f78c372704f98"
+      },
+      {
+        "path": "src/egdi/ocr_corpus.py",
+        "sha256": "b58e08102f2e7e3d67116cb9ff35416be99babe24c6628ad421c65df52bb6a3d"
+      },
+      {
+        "path": "src/egdi/ocr_orientation.py",
+        "sha256": "ddeb6dda5662c3e41d5d573a46ea5f1c849cf4746e9492765e4ef12608beba40"
+      },
+      {
+        "path": "src/egdi/v1_retrieval_candidates.py",
+        "sha256": "7a7a2e3c6325533c29fcbde07d31e3fd0be24b24bb4b1099a160960b4c88ca69"
+      },
+      {
+        "path": "src/egdi/v1_reliability_inputs.py",
+        "sha256": "7d763a33a6e4d0c2892b8d51ae555132ba4b37aa092c16c65d8bc08920a608ce"
+      },
+      {
+        "path": "src/egdi/reasoning_api.py",
+        "sha256": "77c07b3aab9514a6bcd8f1b424bb8f75a222683936e682e62f7fca5803ca0eab"
+      },
+      {
+        "path": "src/egdi/v1_reasoning_batch.py",
+        "sha256": "0b9d480cc2b3293d6f285412797135dec7dca200f17b5bb065f935c02c23562c"
+      },
+      {
+        "path": "src/egdi/confidence_features_v1.py",
+        "sha256": "7113c1540423260dde7eb3309a4a8ecd4a92b879eb9b32b04c0f4ebf9e35619b"
+      },
+      {
+        "path": "src/egdi/confidence_feature_batch.py",
+        "sha256": "440204e95283465d14158f990973441d449cbebc22ee1bb2d73574800f561435"
+      },
+      {
+        "path": "src/egdi/confidence_policy_v1.py",
+        "sha256": "1b72a356170fb37b78e690f9dcd49309c429c2a8b6cc61514bfe758a1ddd3edc"
+      }
+    ]
+  },
+  "freeze_spec_sha256": "084599bd7b279daa4c95754c2d4b14d8ad7c7efe9d3705d7fcf042ac81ec0dff",
+  "locked_test_accessed": false,
+  "mutation_policy": "Any change to a listed file after this manifest invalidates the V1 locked-test run.",
+  "schema_version": 1,
+  "status": "v1_system_frozen_before_locked_test"
+}

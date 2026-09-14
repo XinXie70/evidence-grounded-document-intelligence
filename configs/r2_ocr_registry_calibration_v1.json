@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "status": "calibration_ocr_registry_frozen_before_reasoning",
+  "documents": [
+    {
+      "doc_id": "urnuuide2916fd0-fcb8-4318-bd65-bea7666aad5c",
+      "page_count": 50,
+      "corpus_path": "data/derived/ocr_calibration_v1/urnuuide2916fd0-fcb8-4318-bd65-bea7666aad5c/page_records.jsonl",
+      "corpus_sha256": "2e4844d1a35e3aef03a0744222b8b46057c2cd8853203f79971928e30ff88fa4",
+      "layout_text_dir": "data/derived/ocr_calibration_v1/urnuuide2916fd0-fcb8-4318-bd65-bea7666aad5c/text",
+      "verification_artifact": "data/derived/ocr_calibration_v1/urnuuide2916fd0-fcb8-4318-bd65-bea7666aad5c/manifest.json",
+      "orientation_audit": "experiments/v1_calibration_r2_orientation_audit_v0.json",
+      "orientation_recovery": "not_triggered"
+    }
+  ],
+  "uses_gold_or_answer_labels": false
+}

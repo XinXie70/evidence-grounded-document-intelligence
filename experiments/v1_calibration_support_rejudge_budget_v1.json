@@ -1,0 +1,25 @@
+{
+  "approval": {
+    "approved_by": "user",
+    "approved_date": "2026-09-14",
+    "instruction": "Do not leave output unbounded; use a generous limit while keeping the total below USD 2.00",
+    "maximum_usd": 2.0
+  },
+  "approved_hard_cap_usd": 2.0,
+  "budget_accounted_cost_usd": 0.3135648,
+  "completed_request_count": 74,
+  "conservative_new_request_cost_usd": 1.152357,
+  "conservative_total_accounted_cost_usd": 1.2565688,
+  "input_manifest_sha256": "38bf51c1f46ad25a047cf646511b0d59989b763a478db482ccb96932b8323c37",
+  "paid_request_sent": false,
+  "prior_accounted_cost_usd": 0.1042118,
+  "request_count": 74,
+  "schema_version": 1,
+  "scope": "Uniform rerun of all 74 calibration support judgments with max_output_tokens=1024; semantic judgments are reused and V0 support outputs are excluded from official scoring",
+  "semantic_config_sha256": "fe7b7a24317a8eabdbab21462ea66f9399fdc587550cc917e1e8b874a3eaab9a",
+  "semantic_request_count": 0,
+  "status": "complete_within_budget",
+  "successful_request_cost_usd": 0.209353,
+  "support_config_sha256": "615d236045f939aa4f2683e97c3e36dcf59c3ec15b5c9066c4ca348d3b72dd47",
+  "support_request_count": 74
+}

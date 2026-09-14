@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "status": "ready_to_hash_before_locked_test",
+  "components": {
+    "protocols": [
+      "DATA_AND_EVAL_PROTOCOL.md",
+      "V1_COMPLETION_PROTOCOL.md",
+      "V1_CALIBRATION_SCORING_PROTOCOL.md"
+    ],
+    "data_identity_and_split": [
+      "data/manifests/source.json",
+      "data/manifests/checksums.sha256",
+      "data/manifests/split_manifest.json"
+    ],
+    "retrieval_and_routing_configs": [
+      "configs/bm25_page_v0_tune.json",
+      "configs/dense_bge_small_en_v1_5_selected_v0.json",
+      "configs/hybrid_rrf_bm25_dense_v0.json",
+      "configs/r2_ocr_registry_calibration_v1.json",
+      "experiments/visual_retrieval_v1/runtime_manifest.json"
+    ],
+    "reasoning_confidence_and_cost_configs": [
+      "configs/reasoning_v1_calibration_v0.json",
+      "configs/confidence_policy_v1_tune_v0.json",
+      "configs/confidence_threshold_v1_calibration_v0.json",
+      "configs/openai_gpt_5_6_terra_pricing_2026-09-02.json",
+      "configs/paid_request_policy_v0.json"
+    ],
+    "evaluation_configs": [
+      "configs/calibration_semantic_judge_v1.json",
+      "configs/calibration_support_judge_v1.json"
+    ],
+    "runtime_implementations": [
+      "src/egdi/text.py",
+      "src/egdi/bm25.py",
+      "src/egdi/dense.py",
+      "src/egdi/rrf.py",
+      "src/egdi/visual_routing.py",
+      "src/egdi/visual_routing_v1.py",
+      "src/egdi/visual_encoder.py",
+      "src/egdi/visual_multivector.py",
+      "src/egdi/visual_retrieval_batch.py",
+      "src/egdi/ocr_corpus.py",
+      "src/egdi/ocr_orientation.py",
+      "src/egdi/v1_retrieval_candidates.py",
+      "src/egdi/v1_reliability_inputs.py",
+      "src/egdi/reasoning_api.py",
+      "src/egdi/v1_reasoning_batch.py",
+      "src/egdi/confidence_features_v1.py",
+      "src/egdi/confidence_feature_batch.py",
+      "src/egdi/confidence_policy_v1.py"
+    ],
+    "evaluation_implementations": [
+      "src/egdi/reasoning_result_normalize.py",
+      "src/egdi/calibration_judge.py",
+      "src/egdi/calibration_judge_batch.py",
+      "src/egdi/calibration_score.py",
+      "src/egdi/selective_evaluation.py"
+    ],
+    "calibration_decision_evidence": [
+      "experiments/v1_calibration_selection_v0.json",
+      "experiments/v1_calibration_confidence_features_v1.json",
+      "experiments/v1_calibration_automatic_audit_v1.json",
+      "experiments/v1_calibration_evaluation_v2.json",
+      "experiments/v1_calibration_human_agreement_report_v1.json"
+    ]
+  }
+}

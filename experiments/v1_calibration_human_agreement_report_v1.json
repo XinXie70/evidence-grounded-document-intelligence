@@ -1,0 +1,100 @@
+{
+  "after_user_accepted_assisted_adjudication": {
+    "exact_pair_agreement": {
+      "agree": 47,
+      "rate": 0.94,
+      "total": 50
+    },
+    "support_judge_agreement": {
+      "agree": 47,
+      "rate": 0.94,
+      "total": 50
+    },
+    "support_label_coverage": {
+      "agree": 50,
+      "rate": 1.0,
+      "total": 50
+    }
+  },
+  "artifacts": {
+    "automatic_audit_sha256": "6d0a96085fa5d97fa8289dbe3b6bbbfde883e0034290435b05c90e407347bfce",
+    "worksheet_sha256": "8f75064c11b53095018879cc2cb650400ec11215fea50c651f418a39d01c865a"
+  },
+  "assisted_audit_numbers": [
+    7,
+    12,
+    14,
+    15,
+    19,
+    20,
+    26,
+    27,
+    34,
+    43,
+    44,
+    47,
+    49
+  ],
+  "case_count": 50,
+  "independent_human_review": {
+    "support_judge_agreement": {
+      "agree": 34,
+      "rate": 0.918918918918919,
+      "total": 37
+    },
+    "support_label_coverage": {
+      "agree": 37,
+      "rate": 0.74,
+      "total": 50
+    },
+    "support_uncertain_count": 13,
+    "task_judge_agreement": {
+      "agree": 50,
+      "rate": 1.0,
+      "total": 50
+    },
+    "task_label_coverage": {
+      "agree": 50,
+      "rate": 1.0,
+      "total": 50
+    }
+  },
+  "independent_support_disagreements": [
+    {
+      "assisted_evidence_supported": null,
+      "audit_number": 5,
+      "automatic_evidence_supported": false,
+      "automatic_task_correct": false,
+      "final_evidence_supported": true,
+      "human_task_correct": false,
+      "independent_human_evidence_supported": true,
+      "pilot_id": "calibration_011",
+      "question_id": "urnuuid201560a1-6b3f-4428-a5de-fc1559d40288::q5"
+    },
+    {
+      "assisted_evidence_supported": null,
+      "audit_number": 6,
+      "automatic_evidence_supported": false,
+      "automatic_task_correct": true,
+      "final_evidence_supported": true,
+      "human_task_correct": true,
+      "independent_human_evidence_supported": true,
+      "pilot_id": "calibration_013",
+      "question_id": "urnuuid201560a1-6b3f-4428-a5de-fc1559d40288::q7"
+    },
+    {
+      "assisted_evidence_supported": null,
+      "audit_number": 35,
+      "automatic_evidence_supported": false,
+      "automatic_task_correct": true,
+      "final_evidence_supported": true,
+      "human_task_correct": true,
+      "independent_human_evidence_supported": true,
+      "pilot_id": "calibration_100",
+      "question_id": "urnuuidac9d6584-6888-443a-83ca-f990a333fb92::q5"
+    }
+  ],
+  "schema_version": 1,
+  "split": "development_calibration",
+  "status": "complete"
+}

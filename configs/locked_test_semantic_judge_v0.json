@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "status": "frozen_before_locked_test",
+  "experiment_id": "v1_locked_test_semantic_judge_v0",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "endpoint_mode": "v1/responses",
+  "reasoning_effort": "low",
+  "temperature_parameter": "omitted_model_default",
+  "max_output_tokens": 1024,
+  "store": false,
+  "max_retries": 0,
+  "pricing_snapshot_path": "openai_gpt_5_6_terra_pricing_2026-09-02.json",
+  "instructions": "Judge whether the candidate answer is factually consistent with the reference answer for the question. Compare meaning, not exact wording. Ignore formatting differences. Allow concise answers and extra explanation only when it does not contradict the reference. Every material component requested by the question must be correct and present; core numbers, entities, dates, names, and relationships must match. Contradictory additions fail. Use only the supplied question and reference answer, without outside knowledge. Return a brief reason and the boolean consistent decision.",
+  "response_schema": {
+    "type": "object",
+    "properties": {
+      "consistent": {"type": "boolean"},
+      "reason": {"type": "string"}
+    },
+    "required": ["consistent", "reason"],
+    "additionalProperties": false
+  }
+}

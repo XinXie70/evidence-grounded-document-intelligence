@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "status": "frozen_on_development_tune_before_calibration",
+  "formula": "0.65 * route_prior + 0.15 * query_token_coverage_ratio + 0.15 * citation_to_evidence_ratio + 0.05 * bm25_dense_agreement_at_10",
+  "weights": {
+    "route_prior": 0.65,
+    "query_token_coverage_ratio": 0.15,
+    "citation_to_evidence_ratio": 0.15,
+    "bm25_dense_agreement_at_10": 0.05
+  },
+  "route_priors": {
+    "r0_text": 0.3333333333333333,
+    "r1_local_visual": 0.8333333333333334,
+    "r2_scanned_document": 0.75,
+    "r3_document_global": 0.5
+  },
+  "route_prior_method": "Beta(1,1) smoothed grounded-success rate among policy-eligible development_tune answers; R3 has no eligible answers and retains the neutral prior.",
+  "missing_values": {
+    "bm25_dense_agreement_at_10": 0.5
+  },
+  "eligibility_rule": "answerable status AND valid response contract AND citations within supplied context AND at least one citation",
+  "tie_break": "descending_confidence_then_question_id",
+  "notes": "All inputs are available at inference time. Benchmark answers, gold pages, answerability labels, and correctness labels are not score inputs. Numeric answer thresholds remain reserved for development_calibration."
+}

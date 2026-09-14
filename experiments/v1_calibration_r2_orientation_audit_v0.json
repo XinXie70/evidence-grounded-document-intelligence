@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "split": "development_calibration",
+  "status": "frozen_trigger_applied_without_labels",
+  "doc_id": "urnuuide2916fd0-fcb8-4318-bd65-bea7666aad5c",
+  "question_id": "urnuuide2916fd0-fcb8-4318-bd65-bea7666aad5c::q1",
+  "candidate_pages": [22, 23, 24, 25, 26, 27, 37, 38, 39],
+  "configuration": {
+    "metric": "tesseract_mean_word_confidence",
+    "trigger": "strictly_less_than",
+    "threshold": 40.0,
+    "retry_angles_degrees": [90, 180, 270]
+  },
+  "original_orientation_mean_word_confidence": {
+    "22": 91.6793,
+    "23": 91.0114,
+    "24": 89.5938,
+    "25": 92.5515,
+    "26": 90.5623,
+    "27": 92.0262,
+    "37": 63.9327,
+    "38": 86.1987,
+    "39": 87.9587
+  },
+  "triggered_pages": [],
+  "selected_orientation_degrees": {},
+  "uses_gold_or_answer_labels": false
+}

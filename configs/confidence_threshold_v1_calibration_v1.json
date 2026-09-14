@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "status": "protocol_corrected_and_frozen_before_locked_test",
+  "split_used_for_threshold_selection": "development_calibration",
+  "locked_test_accessed": false,
+  "supersedes": "configs/confidence_threshold_v1_calibration_v0.json",
+  "correction_record": "V1_CALIBRATION_THRESHOLD_CORRECTION.md",
+  "decision_rule": "answer only if policy_eligible is true and confidence >= threshold; otherwise abstain",
+  "confidence_threshold": 0.3566666666666667,
+  "selected_target_coverage": 0.6,
+  "observed_calibration_operating_point": {
+    "target_coverage": 0.6,
+    "confidence_threshold": 0.3566666666666667,
+    "answered_count": 74,
+    "coverage": 0.5606060606060606,
+    "selective_risk": 0.12162162162162163,
+    "grounded_selective_risk": 0.20270270270270271
+  },
+  "selection_rule": "use the predeclared total-question coverage operating point; do not substitute answer retention for coverage",
+  "diagnostic": {
+    "eligible_answer_count": 74,
+    "question_count": 132,
+    "maximum_attainable_coverage": 0.5606060606060606,
+    "requested_target_attainable": false,
+    "all_predeclared_total_coverage_targets_resolve_to_same_boundary": true,
+    "confidence_ordering_conclusion": "weak; calibration did not justify additional confidence-based rejection beyond the frozen eligibility gate",
+    "claim_boundary": "report as a deterministic eligibility gate with a weak confidence-ordering result, not as calibrated probability"
+  },
+  "artifacts": {
+    "calibration_evaluation_sha256": "0f8b16e69826b49fafd21a65613f839393bc3e093494b3e11e120ba035e8d71b",
+    "human_agreement_sha256": "ca5c3bb8e9a3b24e4428adb90265b37ff6ba9e9500abd1ea15dc7bd9aa25d3ae",
+    "confidence_policy_sha256": "d863b01f1d366f861630255513a8cd02033f22f1c25aa9b9bf1fa9911a800fd4",
+    "superseded_threshold_sha256": "b85024215c7f2b032f8f732662e764aff80352887e40ed1fba3d194f272a612b"
+  }
+}

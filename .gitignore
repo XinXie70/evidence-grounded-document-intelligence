@@ -45,6 +45,26 @@ experiments/**/*.png
 experiments/**/*.jpg
 experiments/**/*.jpeg
 
+# Private benchmark-derived V1 payloads (publish aggregate reports, not source content)
+experiments/v1_calibration_selection*.json
+experiments/v1_calibration_retrieval_candidates*.json
+experiments/v1_calibration_visual_runtime_manifest*.json
+experiments/v1_calibration_reasoning_inputs*/
+experiments/v1_calibration_reasoning_batches*/
+experiments/v1_calibration_judge_inputs*/
+experiments/v1_calibration_*_rejudge_inputs*/
+experiments/v1_calibration_human_audit_selection*.json
+experiments/v1_calibration_human_audit_worksheet*.json
+experiments/v1_calibration_automatic_audit*.json
+experiments/v1_calibration_confidence_features*.json
+experiments/v1_calibration_evaluation*.json
+experiments/v1_confidence_tune_inputs*/
+experiments/v1_confidence_tune_r2_correction_inputs*/
+experiments/v1_confidence_tune_r2_correction_selection*.json
+experiments/visual_retrieval_v1/runtime_manifest.json
+experiments/visual_retrieval_v1/evaluation.json
+experiments/v1_locked_test*/
+
 # Editors and operating systems
 .DS_Store
 .idea/

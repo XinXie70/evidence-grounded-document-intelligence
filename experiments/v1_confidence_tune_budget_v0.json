@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "status": "complete_within_budget",
+  "approval_date": "2026-09-11",
+  "scope": "23 paid current-pipeline real-retrieval requests plus one local R3 abstention on the frozen 24-question development_tune confidence gate",
+  "currency": "USD",
+  "unique_paid_request_count": 23,
+  "local_policy_abstention_count": 1,
+  "model": "gpt-5.6-terra",
+  "reasoning_effort": "low",
+  "maximum_output_tokens_per_call": 512,
+  "approved_hard_cap_usd": 1.0,
+  "input_manifest_sha256": "0bd86ba28ef36609187618666621064fcea758f789e1f793eebce53af2dc80a6",
+  "config_sha256": "238dd01691e1968854ffca25dc688ea558e2dfc8b0d6de3aba573bd6f64612b8",
+  "paid_request_sent": true,
+  "approval_required_before_execution": false,
+  "actual_unique_paid_request_count": 23,
+  "actual_cost_usd": 0.1516405,
+  "remaining_approved_cap_usd": 0.8483595
+}

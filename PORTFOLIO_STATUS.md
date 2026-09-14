@@ -1,9 +1,14 @@
 # Portfolio Status and Stop Line
 
-**Status:** research MVP and portfolio packaging complete
+**Status:** V1 frozen before one-time locked-test evaluation
 **Primary benchmark:** DocScope  
 **Development scope used so far:** document-isolated `development_tune`  
 **Locked test status:** untouched for method development
+
+> The historical MVP was subsequently extended under [`V1_COMPLETION_PROTOCOL.md`](V1_COMPLETION_PROTOCOL.md).
+> Question-conditioned visual retrieval passed its preregistered tune-only gate, calibration was
+> completed once on 132 questions, and the full system is now checksum-frozen. Only the locked-test
+> execution and final reporting remain.
 
 ## What the project now demonstrates
 
@@ -17,8 +22,9 @@
 7. A bounded OCR/visual fallback justified by observed missing-text and layout failures.
 8. A reusable comparison pipeline that extracts grounded facts, performs arithmetic locally,
    validates numeric citations, and preserves abstentions.
-9. Reproducible experiment identities, cost logging, preflight caps, and 291 passing tests.
+9. Reproducible experiment identities, cost logging, per-batch hard caps, and 376 passing tests.
 10. An offline command-line replay that exposes successes and failures without another API call.
+11. A document-isolated 132-question reliability calibration with a frozen answer/abstain rule.
 
 ## Frozen headline results
 
@@ -32,6 +38,9 @@
 | Generic comparison exact match | 4/6 | frozen six-document validation |
 | Generic comparison evidence match | 5/6 | frozen six-document validation |
 | Verified citations among answered cases | 5/5 | frozen six-document validation |
+| Calibration coverage | 74/132 (56.06%) | document-isolated calibration |
+| Calibration selective task accuracy | 65/74 (87.84%) | answered calibration cases |
+| Calibration strict grounded accuracy | 59/74 (79.73%) | answered calibration cases |
 
 ## Completed preparation for a public GitHub release
 
@@ -50,6 +59,10 @@
       tune-only evidence; document the one-iteration stop rule.
 - [x] Run the single bounded R1 iteration, retain its negative result, and close the MVP without
       calibration or locked-test performance claims.
+- [x] Freeze and execute the 132-question calibration pipeline once; audit 50 labels with a human.
+- [x] Correct the coverage/answer-retention protocol mismatch before locked-test access.
+- [x] Freeze 68 system components and pass the offline locked-test preflight.
+- [ ] Create the pre-test Git snapshot and run the one-time locked-test evaluation.
 
 ## Stop line
 
@@ -63,8 +76,8 @@ specific unchecked release item or test a failure already documented above.
   BM25 and BGE dense retrieval with reciprocal-rank fusion; improved Complete Evidence Recall@10
   from 70.71% to 77.41% on 239 document-isolated development questions.
 - Designed Oracle Evidence, citation verification, selective answering, and OCR/visual fallback
-  experiments to attribute retrieval, representation, and reasoning failures; shipped immutable
-  experiment records, API cost controls, and 291 automated tests.
+  experiments to attribute retrieval, representation, and reasoning failures; calibrated the
+  answer/abstain policy on 132 held-out development questions and shipped 376 automated tests.
 
 These bullets deliberately describe development results rather than claiming locked-test or
 production performance.

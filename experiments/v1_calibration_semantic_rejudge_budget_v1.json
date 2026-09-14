@@ -1,0 +1,25 @@
+{
+  "approval": {
+    "approved_by": "user",
+    "approved_date": "2026-09-14",
+    "instruction": "Use a generous output allowance while keeping all calibration judging below USD 2.00",
+    "maximum_usd": 2.0
+  },
+  "approved_hard_cap_usd": 2.0,
+  "budget_accounted_cost_usd": 0.3854328,
+  "completed_request_count": 74,
+  "conservative_new_request_cost_usd": 1.0106845,
+  "conservative_total_accounted_cost_usd": 1.3242493,
+  "input_manifest_sha256": "17ae1ca4b4f52bf2e4754d1880ccea72393b038c16f0bbcbe3dd12c10926941c",
+  "paid_request_sent": false,
+  "prior_accounted_cost_usd": 0.3135648,
+  "request_count": 74,
+  "schema_version": 1,
+  "scope": "Uniform rerun of all 74 calibration semantic judgments with max_output_tokens=1024; V0 semantic outputs remain auditable but are excluded from official scoring",
+  "semantic_config_sha256": "8fd440caff72d7ddb80f889efd3b81001ae9a0143c5e23c97fa7a944e781e882",
+  "semantic_request_count": 74,
+  "status": "complete_within_budget",
+  "successful_request_cost_usd": 0.071868,
+  "support_config_sha256": "615d236045f939aa4f2683e97c3e36dcf59c3ec15b5c9066c4ca348d3b72dd47",
+  "support_request_count": 0
+}

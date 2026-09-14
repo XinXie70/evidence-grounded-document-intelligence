@@ -1,0 +1,494 @@
+{
+  "artifacts": {
+    "audit_sha256": "41e03f49044804a4878b16b28a5a917e8a8605bd705b6d2e859cf5e0b63225d8",
+    "features_sha256": "e456aed0291f2d40312ddb898f04357469d02430dda2f9840833b27646470690",
+    "policy_sha256": "d863b01f1d366f861630255513a8cd02033f22f1c25aa9b9bf1fa9911a800fd4"
+  },
+  "cases": [
+    {
+      "confidence": 0.7240579710144929,
+      "grounded_correct": true,
+      "pilot_id": "pilot_01",
+      "policy_eligible": true,
+      "question_id": "urnuuid4873f4f3-f4eb-4931-97f5-ae4f1951f07e::q1",
+      "task_correct": true
+    },
+    {
+      "confidence": 0.4698809523809524,
+      "grounded_correct": true,
+      "pilot_id": "pilot_02",
+      "policy_eligible": true,
+      "question_id": "urnuuid77b8c272-7717-468a-9c12-b41257db91d9::q2",
+      "task_correct": true
+    },
+    {
+      "confidence": 0.6992982456140352,
+      "grounded_correct": true,
+      "pilot_id": "pilot_03",
+      "policy_eligible": true,
+      "question_id": "urnuuid44ff3ab7-6cd7-40f9-8abc-28680be05c68::q3",
+      "task_correct": true
+    },
+    {
+      "confidence": 0.47219298245614033,
+      "grounded_correct": true,
+      "pilot_id": "pilot_04",
+      "policy_eligible": true,
+      "question_id": "urnuuid6977f498-b814-42ae-85db-4adaf7a88c9f::q2",
+      "task_correct": true
+    },
+    {
+      "confidence": 0.3830952380952381,
+      "grounded_correct": false,
+      "pilot_id": "pilot_05",
+      "policy_eligible": true,
+      "question_id": "urnuuidb98e815e-2094-448a-bd43-d2e0ca7a8e25::q3",
+      "task_correct": true
+    },
+    {
+      "confidence": 0.7304597701149426,
+      "grounded_correct": true,
+      "pilot_id": "pilot_06",
+      "policy_eligible": true,
+      "question_id": "urnuuidc94c212d-21aa-4dbe-a75f-6d8888002f6a::q2",
+      "task_correct": true
+    },
+    {
+      "confidence": 0.3788888888888889,
+      "grounded_correct": false,
+      "pilot_id": "pilot_07",
+      "policy_eligible": false,
+      "question_id": "urnuuid7fbb918e-acda-4053-9c23-c16621876e15::q1",
+      "task_correct": false
+    },
+    {
+      "confidence": 0.455,
+      "grounded_correct": false,
+      "pilot_id": "pilot_08",
+      "policy_eligible": true,
+      "question_id": "urnuuid926889a0-ba73-457e-95d5-7b767e414d43::q3",
+      "task_correct": true
+    },
+    {
+      "confidence": 0.41348484848484846,
+      "grounded_correct": false,
+      "pilot_id": "pilot_09",
+      "policy_eligible": true,
+      "question_id": "urnuuid425f7a17-aa57-4cca-b56e-612fe270751d::q5",
+      "task_correct": false
+    },
+    {
+      "confidence": 0.49166666666666664,
+      "grounded_correct": true,
+      "pilot_id": "pilot_10",
+      "policy_eligible": true,
+      "question_id": "urnuuidd0ba82b9-f6c5-4b9a-a1a7-abcbffc5aeae::q2",
+      "task_correct": true
+    },
+    {
+      "confidence": 0.42666666666666664,
+      "grounded_correct": false,
+      "pilot_id": "pilot_11",
+      "policy_eligible": true,
+      "question_id": "urnuuid181bfd7d-8bf2-4f0a-95e3-1201ac3321aa::q1",
+      "task_correct": false
+    },
+    {
+      "confidence": 0.4243939393939394,
+      "grounded_correct": false,
+      "pilot_id": "pilot_12",
+      "policy_eligible": true,
+      "question_id": "urnuuid395c19a8-ceda-45ec-854e-2316a9138c74::q2",
+      "task_correct": true
+    },
+    {
+      "confidence": 0.7716666666666667,
+      "grounded_correct": true,
+      "pilot_id": "pilot_13",
+      "policy_eligible": true,
+      "question_id": "urnuuid83d3c72c-a70d-422f-9c0b-992de5e5770e::q5",
+      "task_correct": true
+    },
+    {
+      "confidence": 0.37166666666666665,
+      "grounded_correct": false,
+      "pilot_id": "pilot_14",
+      "policy_eligible": false,
+      "question_id": "urnuuid881f7d70-7e7b-4b1a-90a9-3d837a1a8299::q3",
+      "task_correct": false
+    },
+    {
+      "confidence": 0.3829166666666667,
+      "grounded_correct": false,
+      "pilot_id": "pilot_15",
+      "policy_eligible": false,
+      "question_id": "urnuuid469c17b6-9e4f-4706-bc89-0e1814820dae::q5",
+      "task_correct": false
+    },
+    {
+      "confidence": 0.6601190476190476,
+      "grounded_correct": true,
+      "pilot_id": "pilot_16",
+      "policy_eligible": true,
+      "question_id": "urnuuid45a0a8e5-e31b-4e74-9663-f27ab82db68f::q5",
+      "task_correct": true
+    },
+    {
+      "confidence": 0.6697916666666667,
+      "grounded_correct": true,
+      "pilot_id": "pilot_17",
+      "policy_eligible": true,
+      "question_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba::q3",
+      "task_correct": true
+    },
+    {
+      "confidence": 0.35000000000000003,
+      "grounded_correct": false,
+      "pilot_id": "pilot_18",
+      "policy_eligible": false,
+      "question_id": "urnuuid808e4631-8567-495d-a904-0c702dbe784e::q3",
+      "task_correct": false
+    },
+    {
+      "confidence": 0.3505128205128205,
+      "grounded_correct": true,
+      "pilot_id": "pilot_19",
+      "policy_eligible": false,
+      "question_id": "urnuuid3897fb73-c645-46be-a22f-4b94595d33e1::q2",
+      "task_correct": true
+    },
+    {
+      "confidence": 0.35916666666666663,
+      "grounded_correct": true,
+      "pilot_id": "pilot_20",
+      "policy_eligible": false,
+      "question_id": "urnuuid8f2628d5-89b1-4143-bb0f-623743d738bf::q5",
+      "task_correct": true
+    },
+    {
+      "confidence": 0.39979166666666666,
+      "grounded_correct": false,
+      "pilot_id": "pilot_21",
+      "policy_eligible": true,
+      "question_id": "urnuuid0d4da810-0b76-4979-a774-0f8bd6fae742::q3",
+      "task_correct": false
+    },
+    {
+      "confidence": 0.3433333333333333,
+      "grounded_correct": true,
+      "pilot_id": "pilot_22",
+      "policy_eligible": false,
+      "question_id": "urnuuida994f1b4-401e-453b-9f52-149c44f35c82::q5",
+      "task_correct": true
+    },
+    {
+      "confidence": 0.31333333333333335,
+      "grounded_correct": true,
+      "pilot_id": "pilot_23",
+      "policy_eligible": false,
+      "question_id": "urnuuide13d8fae-e453-48a9-9996-7397adbecbc9::q1",
+      "task_correct": true
+    },
+    {
+      "confidence": 0.43833333333333335,
+      "grounded_correct": false,
+      "pilot_id": "pilot_24",
+      "policy_eligible": true,
+      "question_id": "urnuuid113144ee-53bb-4f43-9d8f-0c9e823fa25d::q3",
+      "task_correct": false
+    }
+  ],
+  "grounded_correct_count": 13,
+  "policy_eligible_count": 16,
+  "question_count": 24,
+  "risk_coverage": {
+    "aurc_over_eligible_prefixes": 0.07139839327339327,
+    "curve": [
+      {
+        "answered_count": 1,
+        "confidence": 0.7716666666666667,
+        "coverage": 0.041666666666666664,
+        "grounded_selective_risk": 0.0,
+        "question_id": "urnuuid83d3c72c-a70d-422f-9c0b-992de5e5770e::q5",
+        "rank": 1,
+        "selective_risk": 0.0
+      },
+      {
+        "answered_count": 2,
+        "confidence": 0.7304597701149426,
+        "coverage": 0.08333333333333333,
+        "grounded_selective_risk": 0.0,
+        "question_id": "urnuuidc94c212d-21aa-4dbe-a75f-6d8888002f6a::q2",
+        "rank": 2,
+        "selective_risk": 0.0
+      },
+      {
+        "answered_count": 3,
+        "confidence": 0.7240579710144929,
+        "coverage": 0.125,
+        "grounded_selective_risk": 0.0,
+        "question_id": "urnuuid4873f4f3-f4eb-4931-97f5-ae4f1951f07e::q1",
+        "rank": 3,
+        "selective_risk": 0.0
+      },
+      {
+        "answered_count": 4,
+        "confidence": 0.6992982456140352,
+        "coverage": 0.16666666666666666,
+        "grounded_selective_risk": 0.0,
+        "question_id": "urnuuid44ff3ab7-6cd7-40f9-8abc-28680be05c68::q3",
+        "rank": 4,
+        "selective_risk": 0.0
+      },
+      {
+        "answered_count": 5,
+        "confidence": 0.6697916666666667,
+        "coverage": 0.20833333333333334,
+        "grounded_selective_risk": 0.0,
+        "question_id": "urnuuida3024dbb-48a6-4849-bb2f-910722e335ba::q3",
+        "rank": 5,
+        "selective_risk": 0.0
+      },
+      {
+        "answered_count": 6,
+        "confidence": 0.6601190476190476,
+        "coverage": 0.25,
+        "grounded_selective_risk": 0.0,
+        "question_id": "urnuuid45a0a8e5-e31b-4e74-9663-f27ab82db68f::q5",
+        "rank": 6,
+        "selective_risk": 0.0
+      },
+      {
+        "answered_count": 7,
+        "confidence": 0.49166666666666664,
+        "coverage": 0.2916666666666667,
+        "grounded_selective_risk": 0.0,
+        "question_id": "urnuuidd0ba82b9-f6c5-4b9a-a1a7-abcbffc5aeae::q2",
+        "rank": 7,
+        "selective_risk": 0.0
+      },
+      {
+        "answered_count": 8,
+        "confidence": 0.47219298245614033,
+        "coverage": 0.3333333333333333,
+        "grounded_selective_risk": 0.0,
+        "question_id": "urnuuid6977f498-b814-42ae-85db-4adaf7a88c9f::q2",
+        "rank": 8,
+        "selective_risk": 0.0
+      },
+      {
+        "answered_count": 9,
+        "confidence": 0.4698809523809524,
+        "coverage": 0.375,
+        "grounded_selective_risk": 0.0,
+        "question_id": "urnuuid77b8c272-7717-468a-9c12-b41257db91d9::q2",
+        "rank": 9,
+        "selective_risk": 0.0
+      },
+      {
+        "answered_count": 10,
+        "confidence": 0.455,
+        "coverage": 0.4166666666666667,
+        "grounded_selective_risk": 0.1,
+        "question_id": "urnuuid926889a0-ba73-457e-95d5-7b767e414d43::q3",
+        "rank": 10,
+        "selective_risk": 0.0
+      },
+      {
+        "answered_count": 11,
+        "confidence": 0.43833333333333335,
+        "coverage": 0.4583333333333333,
+        "grounded_selective_risk": 0.18181818181818182,
+        "question_id": "urnuuid113144ee-53bb-4f43-9d8f-0c9e823fa25d::q3",
+        "rank": 11,
+        "selective_risk": 0.09090909090909091
+      },
+      {
+        "answered_count": 12,
+        "confidence": 0.42666666666666664,
+        "coverage": 0.5,
+        "grounded_selective_risk": 0.25,
+        "question_id": "urnuuid181bfd7d-8bf2-4f0a-95e3-1201ac3321aa::q1",
+        "rank": 12,
+        "selective_risk": 0.16666666666666666
+      },
+      {
+        "answered_count": 13,
+        "confidence": 0.4243939393939394,
+        "coverage": 0.5416666666666666,
+        "grounded_selective_risk": 0.3076923076923077,
+        "question_id": "urnuuid395c19a8-ceda-45ec-854e-2316a9138c74::q2",
+        "rank": 13,
+        "selective_risk": 0.15384615384615385
+      },
+      {
+        "answered_count": 14,
+        "confidence": 0.41348484848484846,
+        "coverage": 0.5833333333333334,
+        "grounded_selective_risk": 0.35714285714285715,
+        "question_id": "urnuuid425f7a17-aa57-4cca-b56e-612fe270751d::q5",
+        "rank": 14,
+        "selective_risk": 0.21428571428571427
+      },
+      {
+        "answered_count": 15,
+        "confidence": 0.39979166666666666,
+        "coverage": 0.625,
+        "grounded_selective_risk": 0.4,
+        "question_id": "urnuuid0d4da810-0b76-4979-a774-0f8bd6fae742::q3",
+        "rank": 15,
+        "selective_risk": 0.26666666666666666
+      },
+      {
+        "answered_count": 16,
+        "confidence": 0.3830952380952381,
+        "coverage": 0.6666666666666666,
+        "grounded_selective_risk": 0.4375,
+        "question_id": "urnuuidb98e815e-2094-448a-bd43-d2e0ca7a8e25::q3",
+        "rank": 16,
+        "selective_risk": 0.25
+      }
+    ],
+    "eligible_answer_count": 16,
+    "grounded_aurc_over_eligible_prefixes": 0.12713458416583417,
+    "maximum_coverage": 0.6666666666666666,
+    "operating_points": {
+      "0.6": {
+        "answered_count": 14,
+        "confidence_threshold": 0.41348484848484846,
+        "coverage": 0.5833333333333334,
+        "grounded_selective_risk": 0.35714285714285715,
+        "selective_risk": 0.21428571428571427,
+        "target_coverage": 0.6
+      },
+      "0.8": {
+        "answered_count": 16,
+        "confidence_threshold": 0.3830952380952381,
+        "coverage": 0.6666666666666666,
+        "grounded_selective_risk": 0.4375,
+        "selective_risk": 0.25,
+        "target_coverage": 0.8
+      },
+      "0.9": {
+        "answered_count": 16,
+        "confidence_threshold": 0.3830952380952381,
+        "coverage": 0.6666666666666666,
+        "grounded_selective_risk": 0.4375,
+        "selective_risk": 0.25,
+        "target_coverage": 0.9
+      },
+      "1.0": {
+        "answered_count": 16,
+        "confidence_threshold": 0.3830952380952381,
+        "coverage": 0.6666666666666666,
+        "grounded_selective_risk": 0.4375,
+        "selective_risk": 0.25,
+        "target_coverage": 1.0
+      }
+    },
+    "question_count": 24,
+    "tie_break": "descending_confidence_then_question_id",
+    "tie_groups": [
+      {
+        "confidence": 0.7716666666666667,
+        "cumulative_answered_count": 1,
+        "cumulative_coverage": 0.041666666666666664,
+        "question_count": 1
+      },
+      {
+        "confidence": 0.7304597701149426,
+        "cumulative_answered_count": 2,
+        "cumulative_coverage": 0.08333333333333333,
+        "question_count": 1
+      },
+      {
+        "confidence": 0.7240579710144929,
+        "cumulative_answered_count": 3,
+        "cumulative_coverage": 0.125,
+        "question_count": 1
+      },
+      {
+        "confidence": 0.6992982456140352,
+        "cumulative_answered_count": 4,
+        "cumulative_coverage": 0.16666666666666666,
+        "question_count": 1
+      },
+      {
+        "confidence": 0.6697916666666667,
+        "cumulative_answered_count": 5,
+        "cumulative_coverage": 0.20833333333333334,
+        "question_count": 1
+      },
+      {
+        "confidence": 0.6601190476190476,
+        "cumulative_answered_count": 6,
+        "cumulative_coverage": 0.25,
+        "question_count": 1
+      },
+      {
+        "confidence": 0.49166666666666664,
+        "cumulative_answered_count": 7,
+        "cumulative_coverage": 0.2916666666666667,
+        "question_count": 1
+      },
+      {
+        "confidence": 0.47219298245614033,
+        "cumulative_answered_count": 8,
+        "cumulative_coverage": 0.3333333333333333,
+        "question_count": 1
+      },
+      {
+        "confidence": 0.4698809523809524,
+        "cumulative_answered_count": 9,
+        "cumulative_coverage": 0.375,
+        "question_count": 1
+      },
+      {
+        "confidence": 0.455,
+        "cumulative_answered_count": 10,
+        "cumulative_coverage": 0.4166666666666667,
+        "question_count": 1
+      },
+      {
+        "confidence": 0.43833333333333335,
+        "cumulative_answered_count": 11,
+        "cumulative_coverage": 0.4583333333333333,
+        "question_count": 1
+      },
+      {
+        "confidence": 0.42666666666666664,
+        "cumulative_answered_count": 12,
+        "cumulative_coverage": 0.5,
+        "question_count": 1
+      },
+      {
+        "confidence": 0.4243939393939394,
+        "cumulative_answered_count": 13,
+        "cumulative_coverage": 0.5416666666666666,
+        "question_count": 1
+      },
+      {
+        "confidence": 0.41348484848484846,
+        "cumulative_answered_count": 14,
+        "cumulative_coverage": 0.5833333333333334,
+        "question_count": 1
+      },
+      {
+        "confidence": 0.39979166666666666,
+        "cumulative_answered_count": 15,
+        "cumulative_coverage": 0.625,
+        "question_count": 1
+      },
+      {
+        "confidence": 0.3830952380952381,
+        "cumulative_answered_count": 16,
+        "cumulative_coverage": 0.6666666666666666,
+        "question_count": 1
+      }
+    ]
+  },
+  "schema_version": 1,
+  "split": "development_tune",
+  "status": "development_tune_confidence_gate_evaluated",
+  "task_correct_count": 16
+}

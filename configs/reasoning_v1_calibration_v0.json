@@ -1,0 +1,13 @@
+{
+  "api": "openai_responses",
+  "endpoint_mode": "v1/responses",
+  "experiment_id": "v1_calibration_v0",
+  "max_output_tokens": 512,
+  "max_retries": 0,
+  "model": "gpt-5.6-terra",
+  "pricing_snapshot_path": "openai_gpt_5_6_terra_pricing_2026-09-02.json",
+  "provider": "openai",
+  "reasoning_effort": "low",
+  "selection_status": "frozen 132-question development_calibration current-pipeline evaluation",
+  "store": false
+}

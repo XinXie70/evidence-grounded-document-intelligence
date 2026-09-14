@@ -85,3 +85,17 @@ its current shape.
 - [`day7_r1_visual_page_rerank_report_v0.md`](day7_r1_visual_page_rerank_report_v0.md) — binary
   PDF layout signals did not improve Complete Evidence Recall@3 or @5; the intervention was
   dropped and the portfolio MVP closed without calibration or locked-test claims.
+
+## V1 completion extension — Question-conditioned visual retrieval
+
+- [`visual_retrieval_v1/REPORT.md`](visual_retrieval_v1/REPORT.md) — a later, separately
+  preregistered ColSmol page reranker processed the full 63-question R1 tune slice without labels;
+  Complete Evidence Recall improved by seven questions at Top-3 and six at Top-5, so the candidate
+  passed its keep/drop gate and is retained for calibration.
+
+## V1 calibration and final freeze
+
+- [`V1_CALIBRATION_REPORT.md`](V1_CALIBRATION_REPORT.md) — 132-question reliability calibration,
+  50-case human audit, and the pre-test threshold correction.
+- [`../V1_LOCKED_TEST_PROTOCOL.md`](../V1_LOCKED_TEST_PROTOCOL.md) — frozen one-time final
+  evaluation order, recovery boundary, and per-batch cost rule.

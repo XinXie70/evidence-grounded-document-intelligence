@@ -253,6 +253,23 @@ def validate_grounded_output(
     }
 
 
+def canonicalize_grounded_output(
+    parsed: dict[str, Any],
+) -> tuple[dict[str, Any], list[str]]:
+    """Repair only semantics-preserving output-contract inconsistencies."""
+    normalized = dict(parsed)
+    transformations: list[str] = []
+    if (
+        normalized.get("status") == "insufficient_evidence"
+        and normalized.get("answer") is None
+        and isinstance(normalized.get("cited_pages"), list)
+        and normalized["cited_pages"]
+    ):
+        normalized["cited_pages"] = []
+        transformations.append("cleared_citations_from_insufficient_evidence")
+    return normalized, transformations
+
+
 def validate_comparison_fact_output(
     parsed: dict[str, Any], supplied_pages: list[int]
 ) -> dict[str, Any]:
@@ -564,6 +581,9 @@ def execute_one(
         ) from error
     if not isinstance(parsed, dict):
         raise ValueError("structured model output must be a JSON object")
+    transformations: list[str] = []
+    if config.get("output_role") != "comparison_fact_extraction":
+        parsed, transformations = canonicalize_grounded_output(parsed)
     supplied_pages = list(experiment_record.get("evidence_pages", []))
     usage = response.usage.model_dump() if response.usage is not None else None
     return {
@@ -575,6 +595,10 @@ def execute_one(
         "model": response.model,
         "response_id": response.id,
         "output": parsed,
+        "output_normalization": {
+            "applied": bool(transformations),
+            "transformations": transformations,
+        },
         "validation": (
             validate_comparison_fact_output(parsed, supplied_pages)
             if config.get("output_role") == "comparison_fact_extraction"

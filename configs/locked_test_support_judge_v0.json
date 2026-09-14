@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "status": "frozen_before_locked_test",
+  "experiment_id": "v1_locked_test_support_judge_v0",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "endpoint_mode": "v1/responses",
+  "reasoning_effort": "low",
+  "temperature_parameter": "omitted_model_default",
+  "max_output_tokens": 1024,
+  "store": false,
+  "max_retries": 0,
+  "pricing_snapshot_path": "openai_gpt_5_6_terra_pricing_2026-09-02.json",
+  "instructions": "Judge whether the cited document evidence fully supports every material factual claim needed for the candidate answer to the question. Use only the supplied cited evidence and do not use outside knowledge. Minor wording differences are acceptable. Mark unsupported if a required link, comparison operand, entity identity, number, date, or other material claim is absent or contradicted. Return a brief reason and the boolean supported decision.",
+  "response_schema": {
+    "type": "object",
+    "properties": {
+      "supported": {"type": "boolean"},
+      "reason": {"type": "string"}
+    },
+    "required": ["supported", "reason"],
+    "additionalProperties": false
+  }
+}

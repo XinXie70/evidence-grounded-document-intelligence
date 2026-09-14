@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "status": "ready_to_hash_before_locked_test",
+  "supersedes": "configs/v1_system_freeze_spec_v0.json",
+  "components": {
+    "protocols": [
+      "DATA_AND_EVAL_PROTOCOL.md",
+      "V1_COMPLETION_PROTOCOL.md",
+      "V1_CALIBRATION_SCORING_PROTOCOL.md",
+      "V1_CALIBRATION_THRESHOLD_CORRECTION.md",
+      "V1_LOCKED_TEST_PROTOCOL.md"
+    ],
+    "data_identity_and_split": [
+      "data/manifests/source.json",
+      "data/manifests/checksums.sha256",
+      "data/manifests/split_manifest.json"
+    ],
+    "environment": [
+      "pyproject.toml",
+      "requirements-lock.txt",
+      "configs/environment_v1_prelocked_v0.json"
+    ],
+    "retrieval_and_routing_configs": [
+      "configs/bm25_page_v0_tune.json",
+      "configs/dense_bge_small_en_v1_5_selected_v0.json",
+      "configs/hybrid_rrf_bm25_dense_v0.json",
+      "configs/r2_ocr_registry_calibration_v1.json",
+      "experiments/visual_retrieval_v1/runtime_manifest.json"
+    ],
+    "reasoning_confidence_and_cost_configs": [
+      "configs/reasoning_v1_locked_test_v0.json",
+      "configs/confidence_policy_v1_tune_v0.json",
+      "configs/confidence_threshold_v1_calibration_v1.json",
+      "configs/openai_gpt_5_6_terra_pricing_2026-09-02.json",
+      "configs/paid_request_policy_v0.json"
+    ],
+    "evaluation_configs": [
+      "configs/locked_test_semantic_judge_v0.json",
+      "configs/locked_test_support_judge_v0.json"
+    ],
+    "runtime_implementations": [
+      "src/egdi/constants.py",
+      "src/egdi/access.py",
+      "src/egdi/io.py",
+      "src/egdi/text.py",
+      "src/egdi/corpus.py",
+      "src/egdi/batch_corpus.py",
+      "src/egdi/evaluation_selection.py",
+      "src/egdi/bm25.py",
+      "src/egdi/dense.py",
+      "src/egdi/rrf.py",
+      "src/egdi/visual_routing.py",
+      "src/egdi/visual_routing_v1.py",
+      "src/egdi/visual_encoder.py",
+      "src/egdi/visual_multivector.py",
+      "src/egdi/visual_runtime_manifest.py",
+      "src/egdi/visual_retrieval_batch.py",
+      "src/egdi/ocr_corpus.py",
+      "src/egdi/ocr_orientation.py",
+      "src/egdi/v1_retrieval_candidates.py",
+      "src/egdi/v1_reliability_inputs.py",
+      "src/egdi/reasoning_api.py",
+      "src/egdi/v1_reasoning_batch.py",
+      "src/egdi/v1_batch_partition.py",
+      "src/egdi/judge_batch_partition.py",
+      "src/egdi/confidence_features_v1.py",
+      "src/egdi/confidence_feature_batch.py",
+      "src/egdi/confidence_policy_v1.py",
+      "src/egdi/selective_decision.py",
+      "src/egdi/selective_decision_batch.py",
+      "src/egdi/locked_test_preflight.py"
+    ],
+    "evaluation_implementations": [
+      "src/egdi/reasoning_result_normalize.py",
+      "src/egdi/calibration_judge_inputs.py",
+      "src/egdi/calibration_judge.py",
+      "src/egdi/calibration_judge_batch.py",
+      "src/egdi/calibration_score.py",
+      "src/egdi/scoring.py",
+      "src/egdi/selective_evaluation.py",
+      "src/egdi/bootstrap_evaluation.py",
+      "src/egdi/v1_calibration_freeze.py",
+      "src/egdi/v1_system_freeze.py"
+    ],
+    "calibration_decision_evidence": [
+      "experiments/v1_calibration_confidence_features_v1.json",
+      "experiments/v1_calibration_automatic_audit_v1.json",
+      "experiments/v1_calibration_evaluation_v2.json",
+      "experiments/v1_calibration_human_agreement_report_v1.json",
+      "configs/confidence_threshold_v1_calibration_v0.json"
+    ]
+  }
+}

@@ -5,7 +5,7 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 
-from egdi.access import LockedTestAccessError, load_records
+from egdi.access import LockedTestAccessError, load_records, require_evaluation_split_access
 from egdi.constants import LOCKED_TEST_ACK, LOCKED_TEST_ENV
 
 
@@ -33,7 +33,14 @@ class LockedTestAccessTests(unittest.TestCase):
         with patch.dict(os.environ, {LOCKED_TEST_ENV: LOCKED_TEST_ACK}, clear=True):
             self.assertEqual([record["id"] for record in load_records(self.path, "test")], ["t"])
 
+    def test_evaluation_split_guard_uses_exact_acknowledgement(self):
+        with patch.dict(os.environ, {}, clear=True):
+            require_evaluation_split_access("development_calibration")
+            with self.assertRaises(LockedTestAccessError):
+                require_evaluation_split_access("locked_test")
+        with patch.dict(os.environ, {LOCKED_TEST_ENV: LOCKED_TEST_ACK}, clear=True):
+            require_evaluation_split_access("locked_test")
+
 
 if __name__ == "__main__":
     unittest.main()
-

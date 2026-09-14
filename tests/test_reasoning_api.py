@@ -9,6 +9,7 @@ from egdi.reasoning_api import (
     ResponseProcessingError,
     build_call_log,
     build_openai_request,
+    canonicalize_grounded_output,
     estimate_cost_usd,
     execute_one,
     preflight_request_budget,
@@ -166,6 +167,20 @@ class ReasoningApiTests(unittest.TestCase):
         self.assertEqual(result["output"]["answer"], "18")
         self.assertTrue(result["validation"]["valid"])
         self.assertEqual(result["usage"]["total_tokens"], 120)
+
+    def test_canonicalizes_citations_on_a_semantic_abstention(self):
+        output, transformations = canonicalize_grounded_output(
+            {"answer": None, "cited_pages": [2], "status": "insufficient_evidence"}
+        )
+        self.assertEqual(output["cited_pages"], [])
+        self.assertEqual(transformations, ["cleared_citations_from_insufficient_evidence"])
+        self.assertTrue(validate_grounded_output(output, [2])["valid"])
+
+        answerable, transformations = canonicalize_grounded_output(
+            {"answer": "18", "cited_pages": [2], "status": "answerable"}
+        )
+        self.assertEqual(answerable["cited_pages"], [2])
+        self.assertEqual(transformations, [])
 
     def test_validates_comparison_fact_extraction_output(self):
         output = {

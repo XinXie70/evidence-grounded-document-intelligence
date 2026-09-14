@@ -1,4 +1,4 @@
-"""Safely plan and build Page Record JSONL files for development_tune."""
+"""Safely plan and build Page Record JSONL files for an unlocked development split."""
 
 from __future__ import annotations
 
@@ -8,6 +8,7 @@ from dataclasses import asdict, dataclass
 from pathlib import Path
 from typing import Any, Sequence
 
+from .access import require_evaluation_split_access
 from .corpus import (
     extract_pdf_page_records,
     read_page_records_jsonl,
@@ -52,36 +53,43 @@ def _validate_existing_output(plan: BatchDocumentPlan) -> None:
         raise ValueError(f"existing output pages are not sequential for {plan.doc_id}")
 
 
-def plan_development_tune(
+ALLOWED_SPLITS = {"development_tune", "development_calibration", "locked_test"}
+
+
+def plan_document_split(
     split_manifest_path: Path,
     pdf_audit_path: Path,
     pdf_dir: Path,
     output_dir: Path,
+    split_name: str,
     requested_doc_ids: Sequence[str] | None = None,
 ) -> list[BatchDocumentPlan]:
-    """Build a validated, non-writing plan restricted to development_tune."""
+    """Build a validated, non-writing plan for one guarded evaluation split."""
+    if split_name not in ALLOWED_SPLITS:
+        raise ValueError("unknown evaluation split")
+    require_evaluation_split_access(split_name)
     split_manifest = _read_json_object(split_manifest_path)
-    tune_section = split_manifest.get("development_tune")
-    if not isinstance(tune_section, dict):
-        raise ValueError("split manifest is missing development_tune")
-    tune_ids = tune_section.get("document_ids")
-    if not isinstance(tune_ids, list) or not all(isinstance(value, str) for value in tune_ids):
-        raise ValueError("development_tune.document_ids must be a list of strings")
-    if len(tune_ids) != len(set(tune_ids)):
-        raise ValueError("development_tune contains duplicate document IDs")
-    if tune_section.get("document_count") != len(tune_ids):
-        raise ValueError("development_tune document_count does not match document_ids")
+    target_section = split_manifest.get(split_name)
+    if not isinstance(target_section, dict):
+        raise ValueError(f"split manifest is missing {split_name}")
+    target_ids = target_section.get("document_ids")
+    if not isinstance(target_ids, list) or not all(isinstance(value, str) for value in target_ids):
+        raise ValueError(f"{split_name}.document_ids must be a list of strings")
+    if len(target_ids) != len(set(target_ids)):
+        raise ValueError(f"{split_name} contains duplicate document IDs")
+    if target_section.get("document_count") != len(target_ids):
+        raise ValueError(f"{split_name} document_count does not match document_ids")
 
-    allowed = set(tune_ids)
+    allowed = set(target_ids)
     forbidden: dict[str, str] = {}
-    for split_name in ("development_calibration", "locked_test"):
-        section = split_manifest.get(split_name)
+    for other_split in ({"development_tune", "development_calibration", "locked_test"} - {split_name}):
+        section = split_manifest.get(other_split)
         if not isinstance(section, dict) or not isinstance(section.get("document_ids"), list):
-            raise ValueError(f"split manifest is missing {split_name}.document_ids")
+            raise ValueError(f"split manifest is missing {other_split}.document_ids")
         for doc_id in section["document_ids"]:
-            forbidden[doc_id] = split_name
+            forbidden[doc_id] = other_split
     if allowed & set(forbidden):
-        raise ValueError("development_tune overlaps a forbidden split")
+        raise ValueError(f"{split_name} overlaps another split")
 
     if requested_doc_ids is None:
         selected = sorted(allowed)
@@ -91,7 +99,7 @@ def plan_development_tune(
         rejected = [doc_id for doc_id in requested_doc_ids if doc_id not in allowed]
         if rejected:
             details = [f"{doc_id} ({forbidden.get(doc_id, 'unknown')})" for doc_id in rejected]
-            raise ValueError("requested documents are not development_tune: " + ", ".join(details))
+            raise ValueError(f"requested documents are not {split_name}: " + ", ".join(details))
         selected = sorted(requested_doc_ids)
 
     pdf_audit = _read_json_object(pdf_audit_path)
@@ -111,7 +119,7 @@ def plan_development_tune(
     for doc_id in selected:
         audit = audit_by_id.get(doc_id)
         if audit is None:
-            raise ValueError(f"PDF audit is missing tune document: {doc_id}")
+            raise ValueError(f"PDF audit is missing {split_name} document: {doc_id}")
         expected_pages = audit.get("page_count")
         if isinstance(expected_pages, bool) or not isinstance(expected_pages, int) or expected_pages < 1:
             raise ValueError(f"invalid audited page count for {doc_id}")
@@ -139,12 +147,32 @@ def plan_development_tune(
     return plans
 
 
-def summarize_plan(plans: Sequence[BatchDocumentPlan]) -> dict[str, Any]:
+def plan_development_tune(
+    split_manifest_path: Path,
+    pdf_audit_path: Path,
+    pdf_dir: Path,
+    output_dir: Path,
+    requested_doc_ids: Sequence[str] | None = None,
+) -> list[BatchDocumentPlan]:
+    """Backward-compatible development-tune planner."""
+    return plan_document_split(
+        split_manifest_path,
+        pdf_audit_path,
+        pdf_dir,
+        output_dir,
+        "development_tune",
+        requested_doc_ids,
+    )
+
+
+def summarize_plan(
+    plans: Sequence[BatchDocumentPlan], *, split_name: str = "development_tune"
+) -> dict[str, Any]:
     if not plans:
         raise ValueError("batch plan cannot be empty")
     return {
         "mode": "dry_run",
-        "split": "development_tune",
+        "split": split_name,
         "document_count": len(plans),
         "expected_page_records": sum(plan.expected_pages for plan in plans),
         "verified_existing_documents": sum(
@@ -155,7 +183,9 @@ def summarize_plan(plans: Sequence[BatchDocumentPlan]) -> dict[str, Any]:
     }
 
 
-def execute_plan(plans: Sequence[BatchDocumentPlan]) -> dict[str, Any]:
+def execute_plan(
+    plans: Sequence[BatchDocumentPlan], *, split_name: str = "development_tune"
+) -> dict[str, Any]:
     """Generate only pending outputs, verify all outputs, and return a manifest."""
     if not plans:
         raise ValueError("batch plan cannot be empty")
@@ -196,7 +226,7 @@ def execute_plan(plans: Sequence[BatchDocumentPlan]) -> dict[str, Any]:
 
     return {
         "schema_version": "egdi.page-record-batch.v1",
-        "split": "development_tune",
+        "split": split_name,
         "document_count": len(plans),
         "page_record_count": sum(plan.expected_pages for plan in plans),
         "generated_documents": generated,
@@ -212,24 +242,30 @@ def main() -> None:
     parser.add_argument("--pdf-audit", required=True, type=Path)
     parser.add_argument("--pdf-dir", required=True, type=Path)
     parser.add_argument("--output-dir", required=True, type=Path)
+    parser.add_argument(
+        "--split",
+        choices=sorted(ALLOWED_SPLITS),
+        default="development_tune",
+    )
     parser.add_argument("--doc-id", action="append", dest="doc_ids")
     parser.add_argument("--execute", action="store_true")
     parser.add_argument("--manifest-output", type=Path)
     args = parser.parse_args()
 
-    plans = plan_development_tune(
+    plans = plan_document_split(
         args.split_manifest,
         args.pdf_audit,
         args.pdf_dir,
         args.output_dir,
+        args.split,
         requested_doc_ids=args.doc_ids,
     )
     if not args.execute:
-        print(json.dumps(summarize_plan(plans), indent=2))
+        print(json.dumps(summarize_plan(plans, split_name=args.split), indent=2))
         return
     if args.manifest_output is None:
         parser.error("--manifest-output is required with --execute")
-    manifest = execute_plan(plans)
+    manifest = execute_plan(plans, split_name=args.split)
     write_json(args.manifest_output, manifest)
     print(json.dumps(manifest, indent=2))
 
