@@ -23,15 +23,18 @@ A reproducible research system for answering questions over long PDFs **with pag
   coverage**, **65.14% task accuracy among answered questions**, and **60.55% strict grounded
   accuracy among answered questions**.
 
-## Five-minute reviewer path
+## Project guide
 
-1. Read **At a glance** and the architecture below to understand the problem and system boundary.
-2. Open the [final locked-test report](experiments/V1_LOCKED_TEST_REPORT.md) for held-out results,
-   route diagnostics, confidence intervals, and limitations.
-3. Run `PYTHONPATH=src python -m egdi.portfolio_demo --summary-only` for a zero-cost summary, or
-   omit `--summary-only` to inspect frozen success, abstention, and failure examples.
-4. Use the [experiment index](experiments/README.md) only when reviewing how individual design
-   decisions were reached.
+- **System overview:** start with **At a glance** and the architecture below for the problem,
+  system boundary, and main pipeline.
+- **Final evaluation:** see the
+  [V1 locked-test report](experiments/V1_LOCKED_TEST_REPORT.md) for held-out results, route
+  diagnostics, confidence intervals, and limitations.
+- **Offline demonstration:** run
+  `PYTHONPATH=src python -m egdi.portfolio_demo --summary-only` for the final aggregate results, or
+  omit `--summary-only` to inspect frozen success, abstention, and failure examples.
+- **Experiment provenance:** use the [experiment index](experiments/README.md) to trace individual
+  design decisions and retained negative results.
 
 ## Development phases
 
@@ -259,7 +262,7 @@ src/egdi/      Retrieval, evidence packaging, reasoning, reliability, and evalua
 tests/         Deterministic unit and integration tests
 ```
 
-For deeper inspection after the five-minute path:
+Additional technical records:
 
 - [`PORTFOLIO_STATUS.md`](PORTFOLIO_STATUS.md) — current completion status, headline results, stop line, and resume bullets.
 - [`experiments/README.md`](experiments/README.md) — capability-based navigation through the retained experiment history.

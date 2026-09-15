@@ -20,14 +20,14 @@
   **59.73%**，已回答题任务准确率为 **65.14%**，已回答题严格 Grounded Accuracy 为
   **60.55%**。
 
-## 面试官五分钟阅读路径
+## 项目导览
 
-1. 阅读上方“项目概览”和下方系统架构，理解问题、主流程与项目边界。
-2. 打开 [V1 最终 locked-test 报告](experiments/V1_LOCKED_TEST_REPORT.md)，查看未见数据
-   结果、路线诊断、置信区间与局限性。
-3. 运行 `PYTHONPATH=src python -m egdi.portfolio_demo --summary-only`，零成本查看最终汇总；
-   去掉 `--summary-only` 可继续查看冻结的成功、拒答和错误案例。
-4. 只有需要追溯具体技术决策时，再进入[实验索引](experiments/README.md)。
+- **系统概览**：通过上方“项目概览”和下方系统架构了解问题定义、项目边界与主流程。
+- **最终评测**：通过 [V1 最终 locked-test 报告](experiments/V1_LOCKED_TEST_REPORT.md)
+  查看未见数据结果、路线诊断、置信区间与局限性。
+- **离线演示**：运行 `PYTHONPATH=src python -m egdi.portfolio_demo --summary-only` 查看最终
+  汇总；去掉 `--summary-only` 可继续查看冻结的成功、拒答和错误案例。
+- **实验溯源**：通过[实验索引](experiments/README.md)追溯具体设计决策与保留的负向结果。
 
 ## 开发阶段
 
@@ -243,7 +243,7 @@ src/egdi/      检索、证据封装、推理、可靠性与评测代码
 tests/         确定性单元测试与集成测试
 ```
 
-完成上面的五分钟阅读路径后，可按需深入以下记录：
+其他技术记录：
 
 - [作品集状态与停止线](PORTFOLIO_STATUS.md)
 - [实验索引](experiments/README.md)
