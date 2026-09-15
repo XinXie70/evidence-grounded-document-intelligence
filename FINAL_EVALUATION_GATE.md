@@ -1,8 +1,8 @@
 # Final Evaluation Gate
 
-**Decision:** V1 is frozen; the locked test remains closed pending explicit one-time authorization.
-**Date:** 2026-09-14
-**Current release status:** calibrated research system; final held-out result not yet measured.
+**Decision:** completed record; V1 was frozen before the explicitly authorized one-time locked test.
+**Date:** 2026-09-14 to 2026-09-15
+**Current release status:** evaluated research system with final held-out results; V1 remains immutable.
 
 ## What has been completed
 
@@ -16,20 +16,28 @@
   not claimed to be a calibrated probability.
 - 68 runtime, evaluation, configuration, environment, and protocol files are SHA-256 frozen in
   `experiments/v1_system_freeze_manifest_v1.json`.
-- 376 deterministic tests and the offline preflight pass. All 156 locked-test PDF checksums match;
-  no locked-test result artifact exists and no paid request was made by preflight.
+- 377 deterministic tests and the offline preflight passed. All 156 locked-test PDF checksums
+  matched before access.
+- The frozen system produced 730 final prediction records; all 849 required semantic/support judge
+  results were completed and validated.
+- Final coverage is 59.73%; task accuracy is 42.60% overall and 65.14% among answered questions;
+  strict grounded accuracy is 39.86% overall and 60.55% among answered questions.
+- Question and document-clustered bootstrap intervals were generated with 10,000 replicates.
 
-## Remaining gate
+## Completed gate
 
-Before setting the locked-test access acknowledgement:
+The following prerequisites were completed before or during the authorized evaluation:
 
 1. create a clean pre-test Git commit and tag;
 2. verify the 68-component freeze manifest again;
 3. confirm API availability and review the first paid-batch estimate;
-4. obtain explicit user authorization for the one-time final evaluation.
+4. obtain explicit user authorization for the one-time final evaluation;
+5. preserve operational failures and count them conservatively;
+6. score and report every case without changing V1.
 
 The exact execution order is frozen in [`V1_LOCKED_TEST_PROTOCOL.md`](V1_LOCKED_TEST_PROTOCOL.md).
-Every paid batch has an independent hard cap of USD 1.00 and is shown to the user before execution.
+Every paid batch had an independent hard cap of USD 1.00 and was shown to the user before execution.
+The final results are documented in [`experiments/V1_LOCKED_TEST_REPORT.md`](experiments/V1_LOCKED_TEST_REPORT.md).
 
 ## No post-test tuning
 

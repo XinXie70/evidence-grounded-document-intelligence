@@ -39,22 +39,37 @@ def build_inputs(
             raise ValueError(f"benchmark record missing: {qid}")
         result_path = predictions_dir / pilot_id / "real_retrieval.json"
         result = json.loads(result_path.read_text(encoding="utf-8"))
-        if result.get("question_id") != qid or not result.get("validation", {}).get("valid"):
-            raise ValueError(f"prediction invalid or mismatched: {result_path}")
+        if result.get("question_id") != qid:
+            raise ValueError(f"prediction identity mismatch: {result_path}")
         output = result["output"]
+        prediction_valid = result.get("validation", {}).get("valid") is True
+        operational_failure = isinstance(result.get("operational_failure"), dict)
+        system_failure = operational_failure or not prediction_valid
         answerable = gold["answer"]["is_answerable"]
         reference = gold["answer"]["answer_text"]
         candidate = output["answer"]
         cited_pages = output["cited_pages"]
         reasoning_case = reasoning_cases[qid]
-        semantic = {"mode": "judge"} if answerable and candidate is not None else {
-            "mode": "local",
-            "task_correct": bool(not answerable and candidate is None),
-            "rule": (
-                "gold_unanswerable_and_abstained" if not answerable and candidate is None
-                else "answerability_status_mismatch"
-            ),
-        }
+        if system_failure:
+            semantic = {
+                "mode": "local",
+                "task_correct": False,
+                "rule": (
+                    "operational_failure_counts_as_task_failure"
+                    if operational_failure
+                    else "invalid_prediction_contract_counts_as_task_failure"
+                ),
+            }
+        else:
+            semantic = {"mode": "judge"} if answerable and candidate is not None else {
+                "mode": "local",
+                "task_correct": bool(not answerable and candidate is None),
+                "rule": (
+                    "gold_unanswerable_and_abstained"
+                    if not answerable and candidate is None
+                    else "answerability_status_mismatch"
+                ),
+            }
         semantic_path = None
         if semantic["mode"] == "judge":
             semantic_count += 1
@@ -64,7 +79,18 @@ def build_inputs(
                 "question": gold["question"], "reference_answer": reference,
                 "candidate_answer": candidate,
             })
-        if candidate is None:
+        if system_failure:
+            support = {
+                "mode": "local",
+                "evidence_supported": candidate is None,
+                "rule": (
+                    "operational_failure_no_answer_claim"
+                    if operational_failure and candidate is None
+                    else "invalid_prediction_contract_is_unsupported"
+                ),
+            }
+            support_path = None
+        elif candidate is None:
             support = {"mode": "local", "evidence_supported": True, "rule": "no_answer_claim"}
             support_path = None
         elif not cited_pages:
@@ -87,7 +113,13 @@ def build_inputs(
             "pilot_id": pilot_id, "question_id": qid, "doc_id": selected["doc_id"],
             "route": reasoning_case["route"], "gold_is_answerable": answerable,
             "gold_answer": reference, "gold_pages": gold_pages,
-            "prediction": {"answer": candidate, "status": output["status"], "cited_pages": cited_pages},
+            "prediction": {
+                "answer": candidate,
+                "status": output["status"],
+                "cited_pages": cited_pages,
+                "valid": prediction_valid,
+                "operational_failure": operational_failure,
+            },
             "semantic": semantic,
             "semantic_input": None if semantic_path is None else {"path": str(semantic_path), "sha256": sha256_file(semantic_path)},
             "support": support,

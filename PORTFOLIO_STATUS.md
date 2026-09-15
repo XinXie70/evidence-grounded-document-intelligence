@@ -1,14 +1,14 @@
 # Portfolio Status and Stop Line
 
-**Status:** V1 frozen before one-time locked-test evaluation
+**Status:** V1 frozen, one-time locked-test evaluation complete
 **Primary benchmark:** DocScope  
 **Development scope used so far:** document-isolated `development_tune`  
-**Locked test status:** untouched for method development
+**Locked test status:** evaluated once after freeze; never used for V1 method development
 
 > The historical MVP was subsequently extended under [`V1_COMPLETION_PROTOCOL.md`](V1_COMPLETION_PROTOCOL.md).
 > Question-conditioned visual retrieval passed its preregistered tune-only gate, calibration was
-> completed once on 132 questions, and the full system is now checksum-frozen. Only the locked-test
-> execution and final reporting remain.
+> completed once on 132 questions, and the full system was checksum-frozen before the one-time
+> 730-question locked test. Final point estimates and bootstrap intervals are now reported.
 
 ## What the project now demonstrates
 
@@ -22,9 +22,11 @@
 7. A bounded OCR/visual fallback justified by observed missing-text and layout failures.
 8. A reusable comparison pipeline that extracts grounded facts, performs arithmetic locally,
    validates numeric citations, and preserves abstentions.
-9. Reproducible experiment identities, cost logging, per-batch hard caps, and 376 passing tests.
+9. Reproducible experiment identities, cost logging, per-batch hard caps, and 377 passing tests.
 10. An offline command-line replay that exposes successes and failures without another API call.
 11. A document-isolated 132-question reliability calibration with a frozen answer/abstain rule.
+12. A one-time 730-question locked-test evaluation with independent semantic/support judging and
+    question-level plus document-clustered bootstrap uncertainty.
 
 ## Frozen headline results
 
@@ -41,6 +43,10 @@
 | Calibration coverage | 74/132 (56.06%) | document-isolated calibration |
 | Calibration selective task accuracy | 65/74 (87.84%) | answered calibration cases |
 | Calibration strict grounded accuracy | 59/74 (79.73%) | answered calibration cases |
+| Locked-test coverage | 436/730 (59.73%) | 156 untouched test documents |
+| Locked-test selective task accuracy | 284/436 (65.14%) | answered locked-test cases |
+| Locked-test selective grounded accuracy | 264/436 (60.55%) | answered locked-test cases |
+| Locked-test overall task / grounded accuracy | 42.60% / 39.86% | all 730 questions |
 
 ## Completed preparation for a public GitHub release
 
@@ -62,7 +68,9 @@
 - [x] Freeze and execute the 132-question calibration pipeline once; audit 50 labels with a human.
 - [x] Correct the coverage/answer-retention protocol mismatch before locked-test access.
 - [x] Freeze 68 system components and pass the offline locked-test preflight.
-- [ ] Create the pre-test Git snapshot and run the one-time locked-test evaluation.
+- [x] Create the pre-test Git snapshot and run the one-time locked-test evaluation.
+- [x] Validate all 730 predictions and 849 judge outputs, then report document-clustered bootstrap
+      confidence intervals without post-test tuning.
 
 ## Stop line
 
@@ -75,9 +83,10 @@ specific unchecked release item or test a failure already documented above.
 - Built a reproducible evidence-grounded QA pipeline for 273 long PDFs (14,014 pages), combining
   BM25 and BGE dense retrieval with reciprocal-rank fusion; improved Complete Evidence Recall@10
   from 70.71% to 77.41% on 239 document-isolated development questions.
-- Designed Oracle Evidence, citation verification, selective answering, and OCR/visual fallback
-  experiments to attribute retrieval, representation, and reasoning failures; calibrated the
-  answer/abstain policy on 132 held-out development questions and shipped 376 automated tests.
+- Designed Oracle Evidence, citation verification, selective answering, and bounded OCR/visual
+  recovery to attribute retrieval, representation, and reasoning failures; on a one-time
+  730-question locked test, achieved 65.14% task accuracy and 60.55% grounded accuracy among
+  answered questions at 59.73% coverage.
 
-These bullets deliberately describe development results rather than claiming locked-test or
-production performance.
+These bullets distinguish the development retrieval result from the one-time locked-test result and
+do not claim production readiness.

@@ -64,6 +64,11 @@ experiments/v1_confidence_tune_r2_correction_selection*.json
 experiments/visual_retrieval_v1/runtime_manifest.json
 experiments/visual_retrieval_v1/evaluation.json
 experiments/v1_locked_test*/
+experiments/v1_locked_test*.json
+
+# Personal resume sources and generated portfolio exports are not project artifacts
+resume/
+output/
 
 # Editors and operating systems
 .DS_Store

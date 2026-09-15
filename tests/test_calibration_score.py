@@ -45,6 +45,8 @@ class CalibrationScoreTests(unittest.TestCase):
             )
             self.assertEqual(result["task_correct_count"], 2)
             self.assertEqual(result["grounded_correct_count"], 1)
+            self.assertEqual(result["invalid_prediction_count"], 0)
+            self.assertEqual(result["operational_failure_count"], 0)
             self.assertEqual(result["cases"][0]["page_diagnostics"]["page_f1"], 0.5)
             self.assertIsNone(result["cases"][1]["page_diagnostics"]["page_recall"])
 

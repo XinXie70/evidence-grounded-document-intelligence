@@ -29,6 +29,42 @@ class CalibrationJudgeInputTests(unittest.TestCase):
             self.assertEqual(result["support_judge_request_count"], 1)
             self.assertTrue(result["cases"][1]["semantic"]["task_correct"])
 
+    def test_invalid_and_operational_predictions_fail_without_opening_judges(self):
+        with TemporaryDirectory() as temp:
+            root = Path(temp)
+            prediction_dir = root / "predictions"
+            input_path = root / "reasoning.json"
+            input_path.write_text(json.dumps({"model_input": {"evidence": []}}))
+            selection_questions = []
+            benchmark = []
+            reasoning_cases = []
+            records = (
+                ({"validation": {"valid": False}, "output": {"answer": "claim", "status": "insufficient_evidence", "cited_pages": [1]}}, False),
+                ({"validation": {"valid": True}, "operational_failure": {"failure_class": "incomplete"}, "output": {"answer": None, "status": "insufficient_evidence", "cited_pages": []}}, True),
+            )
+            for index, (record, gold_answerable) in enumerate(records, 1):
+                qid, pilot = f"d::q{index}", f"c{index}"
+                record["question_id"] = qid
+                path = prediction_dir / pilot / "real_retrieval.json"
+                path.parent.mkdir(parents=True)
+                path.write_text(json.dumps(record))
+                selection_questions.append({"question_id": qid, "pilot_id": pilot, "doc_id": "d"})
+                benchmark.append({"id": qid, "question": "Q", "answer": {"is_answerable": gold_answerable, "answer_text": "yes"}, "evidences": []})
+                reasoning_cases.append({"question_id": qid, "route": "r0_text", "reasoning_input": {"path": str(input_path)}})
+            result = build_inputs(
+                {"split": "development_calibration", "questions": selection_questions},
+                benchmark,
+                {"split": "development_calibration", "cases": reasoning_cases},
+                prediction_dir,
+                root / "out",
+            )
+            self.assertEqual(result["semantic_judge_request_count"], 0)
+            self.assertEqual(result["support_judge_request_count"], 0)
+            self.assertFalse(result["cases"][0]["semantic"]["task_correct"])
+            self.assertFalse(result["cases"][0]["support"]["evidence_supported"])
+            self.assertFalse(result["cases"][1]["semantic"]["task_correct"])
+            self.assertTrue(result["cases"][1]["support"]["evidence_supported"])
+
 
 if __name__ == "__main__":
     unittest.main()

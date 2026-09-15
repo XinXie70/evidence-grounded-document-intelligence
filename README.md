@@ -12,12 +12,13 @@ A reproducible research system for answering questions over long PDFs **with pag
   70.71% for the BM25 baseline.
 - **66.67% Complete Evidence Recall@3** on the 63-question visual slice after question-conditioned
   visual reranking, up from 55.56% for the same RRF candidates.
-- **376 deterministic tests** covering data isolation, retrieval, evidence packaging, grounding,
+- **377 deterministic tests** covering data isolation, retrieval, evidence packaging, grounding,
   citations, abstention, cost controls, and failure recovery.
 - **132-question document-isolated calibration completed**; the final answer/abstain rule and
   68-component system manifest are frozen before test access.
-- **Locked test remains untouched**; reported results are development experiments, not inflated
-  final-test claims.
+- **One-time locked test completed:** 730 questions from 156 untouched documents, with **59.73%
+  coverage**, **65.14% task accuracy among answered questions**, and **60.55% strict grounded
+  accuracy among answered questions**.
 
 ## Development phases
 
@@ -33,8 +34,9 @@ reproduction commands stay valid. The public project narrative is organized by c
 5. **Dense and Hybrid Retrieval** — BGE embeddings, complementarity analysis, and RRF fusion.
 6. **Generic Comparison Pipeline** — cited fact extraction, local arithmetic, and abstention.
 7. **Question-Conditioned Visual Retrieval** — blind full-slice page reranking and a preregistered keep/drop gate.
-8. **Calibration and Final Freeze** — independent judging, human agreement audit, deterministic
-   selective answering, cost-bounded batch execution, and a one-time locked-test protocol.
+8. **Calibration, Final Freeze, and Locked Evaluation** — independent judging, human agreement
+   audit, deterministic selective answering, cost-bounded execution, and a one-time locked test
+   with bootstrap uncertainty.
 
 The project studies a practical problem: a language model may be capable of answering a question, but only if the system first finds all required evidence and preserves tables, charts, and page provenance. The core pipeline is therefore:
 
@@ -88,7 +90,9 @@ reasoning failures.
 
 ## Current results
 
-All numbers below are from the document-isolated `development_tune` split or explicitly described diagnostic pilots. The locked test split has not been used for method development.
+Development results below use document-isolated development splits. The final subsection reports
+the one-time evaluation of frozen V1 on the untouched locked test; those results are not used to
+modify V1.
 
 ### Evidence retrieval — 239 answerable questions
 
@@ -122,8 +126,9 @@ A subsequent question-conditioned visual retriever was then frozen before scorin
 same RRF Top-10 pages and used a pinned off-the-shelf ColSmol-256M encoder with late interaction—no
 DocScope-specific training or question-ID rules. On the full 63-question R1 tune slice, Complete
 Evidence Recall improved from **35/63 to 42/63 at Top-3** and from **44/63 to 50/63 at Top-5**.
-All preregistered keep/drop checks passed, so this reranker is retained for calibration. These are
-development results; held-out performance remains unmeasured.
+All preregistered keep/drop checks passed, so this reranker was retained for calibration and the
+frozen final system. These figures remain development results; final end-to-end performance is
+reported separately below.
 
 ### Reliability calibration — 132 questions, 35 unseen development documents
 
@@ -138,6 +143,27 @@ and **79.73% strict grounded accuracy**, for **56.06% total-question coverage**.
 corrected threshold therefore retains every eligible answer rather than pretending that confidence
 ranking justified additional rejection. This is reported as a deterministic eligibility gate, not
 as calibrated probability.
+
+### One-time locked test — 730 questions, 156 untouched documents
+
+The complete frozen V1 system was evaluated once on the locked test. All 730 predictions and all
+849 required semantic/support judgments were included; six preserved API failures and one invalid
+structured prediction were conservatively counted as task failures.
+
+| Metric | Result |
+|---|---:|
+| Coverage | 436/730 (59.73%) |
+| Task accuracy, all questions | 311/730 (42.60%) |
+| Strict grounded accuracy, all questions | 291/730 (39.86%) |
+| Task accuracy among answered questions | 284/436 (65.14%) |
+| Strict grounded accuracy among answered questions | 264/436 (60.55%) |
+| Evidence support among answered questions | 374/436 (85.78%) |
+| Final cited-page complete evidence recall | 38.05% |
+
+Document-clustered bootstrap 95% intervals are **38.29%–46.78%** for overall task accuracy and
+**60.14%–69.96%** for selective task accuracy. The drop from calibration selective task accuracy
+(87.84%) to locked-test selective task accuracy (65.14%) is an honest generalization gap, not a
+result used for post-test tuning. See the [full locked-test report](experiments/V1_LOCKED_TEST_REPORT.md).
 
 ### Frozen generic comparison validation
 
@@ -229,6 +255,8 @@ Start with these records:
 - [`experiments/day5_visual_recovery_report_v0.md`](experiments/day5_visual_recovery_report_v0.md) — visual fallback diagnosis.
 - [`experiments/visual_retrieval_v1/REPORT.md`](experiments/visual_retrieval_v1/REPORT.md) — blind question-conditioned visual reranking gate.
 - [`experiments/day6_generic_comparison_validation_v0/REPORT.md`](experiments/day6_generic_comparison_validation_v0/REPORT.md) — frozen generic comparison validation.
+- [`experiments/V1_LOCKED_TEST_REPORT.md`](experiments/V1_LOCKED_TEST_REPORT.md) — final frozen
+  performance, route diagnostics, bootstrap intervals, and limitations.
 
 ## Limitations
 
@@ -236,22 +264,23 @@ Start with these records:
    improved the 63-question R1 tune slice, but it still scores full pages and does not prove which
    table cell, chart mark, or image region supports an answer. Four Complete@3 questions also
    regressed despite the positive net result.
-2. **Multi-page evidence can remain incomplete.** RRF reaches 77.41% Complete Evidence Recall@10,
-   so some questions still miss at least one required page—often a second operand, unit, table
-   heading, or distant continuation page.
+2. **Multi-page evidence can remain incomplete.** RRF reached 77.41% Complete Evidence Recall@10
+   on development retrieval, while only 38.05% of eligible locked-test questions had every gold
+   page represented in the final citations. These measure different stages, but together show that
+   evidence is lost both during candidate retrieval and later narrowing.
 3. **OCR and flattened layout text can lose relationships.** Scanned, rotated, tabular, and chart
    pages may preserve the words but lose row/column or label/value alignment. One frozen validation
    failure retrieved the correct chart pages but associated a value with the wrong flattened label.
-4. **Final held-out performance remains unknown.** Development and calibration results are now
-   complete, but the one-time locked test has not been opened; no final-test performance is claimed.
+4. **Calibration did not fully generalize.** Locked-test selective task accuracy was 65.14%, down
+   22.70 percentage points from calibration, and the frozen R3 document-global route abstained on
+   all 33 routed questions. V1 is therefore an evaluated research prototype, not production-ready.
 
 ## Future work
 
-The complete V1 system is now frozen. The immediate next step is a separately authorized, one-time
-evaluation on the locked test, followed by bootstrap confidence intervals and honest failure
-reporting without post-test tuning. A later V2 may add
-region-level grounding inside selected pages. Per-question patches, unconstrained full-document
-vision, and post-hoc weight tuning remain intentionally excluded.
+V1 and its locked-test result are now complete and immutable. A later V2 may improve region-level
+grounding, multi-page evidence preservation, document-global reasoning, and confidence calibration
+using development data and a new untouched test set. Per-question patches, unconstrained
+full-document vision, and tuning against this completed locked test remain intentionally excluded.
 
 ## Honest project boundary
 
