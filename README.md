@@ -22,10 +22,9 @@ A reproducible research system for answering questions over long PDFs **with pag
 
 ## Development phases
 
-The project was developed over more than two weeks. Tokens such as `day1` and `day6` in historical
-filenames are immutable experiment-batch identifiers created during early development; they do
-**not** represent literal calendar days. They remain unchanged so recorded paths, checksums, and
-reproduction commands stay valid. The public project narrative is organized by capability:
+Tokens such as `day1` and `day6` in historical filenames identify early experiment batches rather
+than literal calendar days. They remain unchanged to preserve recorded paths, checksums, and
+reproduction commands; the project narrative is organized by capability:
 
 1. **Data Foundation** — source pinning, PDF validation, document-isolated splits, and text audit.
 2. **Evidence Retrieval Baseline** — deterministic page scoring and BM25.
