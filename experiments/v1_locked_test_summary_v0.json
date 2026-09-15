@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "status": "frozen_complete",
+  "split": "locked_test",
+  "document_count": 156,
+  "question_count": 730,
+  "answered_count": 436,
+  "metrics": {
+    "coverage": 0.5972602739726027,
+    "overall_task_accuracy": 0.426027397260274,
+    "overall_grounded_accuracy": 0.39863013698630134,
+    "selective_task_accuracy": 0.6513761467889908,
+    "selective_grounded_accuracy": 0.6055045871559633,
+    "answered_evidence_support_rate": 0.8577981651376146,
+    "complete_evidence_recall": 0.3805309734513274
+  },
+  "evaluation": {
+    "validated_predictions": 730,
+    "semantic_judgments": 413,
+    "support_judgments": 436,
+    "total_model_judgments": 849,
+    "bootstrap_replicates": 10000,
+    "deterministic_tests_at_freeze": 377
+  },
+  "report": "experiments/V1_LOCKED_TEST_REPORT.md"
+}

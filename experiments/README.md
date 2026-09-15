@@ -84,7 +84,8 @@ its current shape.
 
 - [`day7_r1_visual_page_rerank_report_v0.md`](day7_r1_visual_page_rerank_report_v0.md) — binary
   PDF layout signals did not improve Complete Evidence Recall@3 or @5; the intervention was
-  dropped and the portfolio MVP closed without calibration or locked-test claims.
+  dropped and the historical MVP checkpoint closed without calibration or locked-test claims.
+  The separately preregistered V1 completion extension below later reopened development.
 
 ## V1 completion extension — Question-conditioned visual retrieval
 
@@ -99,3 +100,15 @@ its current shape.
   50-case human audit, and the pre-test threshold correction.
 - [`../V1_LOCKED_TEST_PROTOCOL.md`](../V1_LOCKED_TEST_PROTOCOL.md) — frozen one-time final
   evaluation order, recovery boundary, and per-batch cost rule.
+
+## V1 final locked evaluation
+
+- [`V1_LOCKED_TEST_REPORT.md`](V1_LOCKED_TEST_REPORT.md) — final results on 730 questions from
+  156 untouched documents, including route diagnostics, failure accounting, and document-clustered
+  bootstrap confidence intervals.
+- [`v1_locked_test_summary_v0.json`](v1_locked_test_summary_v0.json) — compact public aggregate
+  used by the zero-cost portfolio demo; it contains no question text, PDF content, or per-case
+  prediction output.
+
+The locked-test result is the final V1 estimate. It is reported after the development records above
+and is not used to revise V1 methods or thresholds.

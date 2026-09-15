@@ -1,0 +1,35 @@
+name: Tests
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  deterministic-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements-lock.txt
+
+      - name: Install pinned dependencies and package
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements-lock.txt
+          python -m pip install --no-deps -e .
+
+      - name: Run deterministic test suite
+        env:
+          PYTHONPATH: src
+        run: python -m unittest discover -s tests -v

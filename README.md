@@ -2,6 +2,8 @@
 
 [English](README.md) | [简体中文](README.zh-CN.md)
 
+[![Tests](https://github.com/XinXie70/evidence-grounded-document-intelligence/actions/workflows/tests.yml/badge.svg)](https://github.com/XinXie70/evidence-grounded-document-intelligence/actions/workflows/tests.yml)
+
 A reproducible research system for answering questions over long PDFs **with page-level evidence and an explicit option to abstain**.
 
 ## At a glance
@@ -12,13 +14,24 @@ A reproducible research system for answering questions over long PDFs **with pag
   70.71% for the BM25 baseline.
 - **66.67% Complete Evidence Recall@3** on the 63-question visual slice after question-conditioned
   visual reranking, up from 55.56% for the same RRF candidates.
-- **377 deterministic tests** covering data isolation, retrieval, evidence packaging, grounding,
-  citations, abstention, cost controls, and failure recovery.
+- **379 current deterministic tests** covering data isolation, retrieval, evidence packaging,
+  grounding, citations, abstention, cost controls, failure recovery, and the public demo. The
+  frozen V1 manifest contained 377 tests before locked-test access.
 - **132-question document-isolated calibration completed**; the final answer/abstain rule and
   68-component system manifest are frozen before test access.
 - **One-time locked test completed:** 730 questions from 156 untouched documents, with **59.73%
   coverage**, **65.14% task accuracy among answered questions**, and **60.55% strict grounded
   accuracy among answered questions**.
+
+## Five-minute reviewer path
+
+1. Read **At a glance** and the architecture below to understand the problem and system boundary.
+2. Open the [final locked-test report](experiments/V1_LOCKED_TEST_REPORT.md) for held-out results,
+   route diagnostics, confidence intervals, and limitations.
+3. Run `PYTHONPATH=src python -m egdi.portfolio_demo --summary-only` for a zero-cost summary, or
+   omit `--summary-only` to inspect frozen success, abstention, and failure examples.
+4. Use the [experiment index](experiments/README.md) only when reviewing how individual design
+   decisions were reached.
 
 ## Development phases
 
@@ -33,9 +46,9 @@ reproduction commands; the project narrative is organized by capability:
 5. **Dense and Hybrid Retrieval** — BGE embeddings, complementarity analysis, and RRF fusion.
 6. **Generic Comparison Pipeline** — cited fact extraction, local arithmetic, and abstention.
 7. **Question-Conditioned Visual Retrieval** — blind full-slice page reranking and a preregistered keep/drop gate.
-8. **Calibration, Final Freeze, and Locked Evaluation** — independent judging, human agreement
-   audit, deterministic selective answering, cost-bounded execution, and a one-time locked test
-   with bootstrap uncertainty.
+8. **Calibration, Final Freeze, and Locked Evaluation** — separate frozen semantic/support
+   evaluation, human agreement audit, deterministic selective answering, cost-bounded execution,
+   and a one-time locked test with bootstrap uncertainty.
 
 The project studies a practical problem: a language model may be capable of answering a question, but only if the system first finds all required evidence and preserves tables, charts, and page provenance. The core pipeline is therefore:
 
@@ -131,10 +144,10 @@ reported separately below.
 
 ### Reliability calibration — 132 questions, 35 unseen development documents
 
-The frozen V1 pipeline was run once on the document-isolated calibration split. Independent
-semantic and evidence-support labels were produced after predictions, with a 50-case human audit:
-task-label agreement was 50/50, and independent support-label agreement was 34/37 among cases the
-reviewer could decide without assistance.
+The frozen V1 pipeline was run once on the document-isolated calibration split. Separate frozen
+semantic-correctness and evidence-support judgments were produced after predictions, with a
+50-case human audit: task-label agreement was 50/50, and support-label agreement was 34/37 among
+cases the reviewer could decide without assistance.
 
 The policy marked 74/132 questions eligible to answer. Those answers had **87.84% task accuracy**
 and **79.73% strict grounded accuracy**, for **56.06% total-question coverage**. The preregistered
@@ -185,10 +198,17 @@ The two retained failures are informative: one question abstained because retrie
 
 ## Offline demo
 
-The demo replays the frozen six-case validation in readable form. It makes **no API request, creates no new model output, and costs nothing**.
+The demo first prints the frozen 730-question locked-test summary, then replays six readable
+validation examples. It makes **no API request, creates no new model output, and costs nothing**.
 
 ```bash
 PYTHONPATH=src python -m egdi.portfolio_demo
+```
+
+Print only the final V1 headline metrics:
+
+```bash
+PYTHONPATH=src python -m egdi.portfolio_demo --summary-only
 ```
 
 Inspect one successful, abstained, or failed example:
@@ -239,11 +259,12 @@ src/egdi/      Retrieval, evidence packaging, reasoning, reliability, and evalua
 tests/         Deterministic unit and integration tests
 ```
 
-Start with these records:
+For deeper inspection after the five-minute path:
 
-- [`PORTFOLIO_STATUS.md`](PORTFOLIO_STATUS.md) — completed work, remaining release tasks, stop line, and resume bullets.
-- [`FINAL_EVALUATION_GATE.md`](FINAL_EVALUATION_GATE.md) — completed calibration, final system freeze, and the remaining authorization gate.
-- [`experiments/README.md`](experiments/README.md) — short navigation path through the retained experiment history.
+- [`PORTFOLIO_STATUS.md`](PORTFOLIO_STATUS.md) — current completion status, headline results, stop line, and resume bullets.
+- [`experiments/README.md`](experiments/README.md) — capability-based navigation through the retained experiment history.
+- [`V1_COMPLETION_PROTOCOL.md`](V1_COMPLETION_PROTOCOL.md) — the preregistered path from visual development through final freeze.
+- [`V1_LOCKED_TEST_PROTOCOL.md`](V1_LOCKED_TEST_PROTOCOL.md) — one-time evaluation, recovery, and cost boundaries.
 - [`DATASET_NOTICE.md`](DATASET_NOTICE.md) — benchmark licensing and redistribution boundary.
 - [`PROJECT_PROPOSAL.md`](PROJECT_PROPOSAL.md) — research questions, scope, and completion criteria.
 - [`DATA_AND_EVAL_PROTOCOL.md`](DATA_AND_EVAL_PROTOCOL.md) — split, leakage, metric, and cost rules.

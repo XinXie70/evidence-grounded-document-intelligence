@@ -1,4 +1,4 @@
-"""Human-readable, offline replay of the frozen comparison validation."""
+"""Human-readable, offline summary and replay of frozen portfolio results."""
 
 from __future__ import annotations
 
@@ -13,6 +13,50 @@ DEFAULT_EXPERIMENT_DIR = (
     / "experiments"
     / "day6_generic_comparison_validation_v0"
 )
+DEFAULT_LOCKED_SUMMARY = (
+    Path(__file__).resolve().parents[2]
+    / "experiments"
+    / "v1_locked_test_summary_v0.json"
+)
+
+
+def load_locked_summary(path: Path) -> dict[str, Any]:
+    summary = json.loads(path.read_text(encoding="utf-8"))
+    required = {"document_count", "question_count", "answered_count", "metrics", "evaluation"}
+    missing = sorted(required - summary.keys())
+    if missing:
+        raise ValueError(f"locked-test summary is missing fields: {', '.join(missing)}")
+    return summary
+
+
+def _percent(value: float) -> str:
+    return f"{100 * value:.2f}%"
+
+
+def render_locked_summary(summary: dict[str, Any]) -> str:
+    metrics = summary["metrics"]
+    evaluation = summary["evaluation"]
+    return "\n".join(
+        [
+            "Frozen V1 locked test",
+            f"Scope: {summary['question_count']} questions / "
+            f"{summary['document_count']} unseen documents",
+            f"Coverage: {summary['answered_count']}/{summary['question_count']} "
+            f"({_percent(metrics['coverage'])})",
+            f"Task accuracy among answered questions: "
+            f"{_percent(metrics['selective_task_accuracy'])}",
+            f"Strict grounded accuracy among answered questions: "
+            f"{_percent(metrics['selective_grounded_accuracy'])}",
+            f"Evidence support among answered questions: "
+            f"{_percent(metrics['answered_evidence_support_rate'])}",
+            f"Overall task / grounded accuracy: "
+            f"{_percent(metrics['overall_task_accuracy'])} / "
+            f"{_percent(metrics['overall_grounded_accuracy'])}",
+            f"Evaluation checks: {evaluation['total_model_judgments']} frozen semantic/support "
+            f"judgments, {evaluation['bootstrap_replicates']} bootstrap replicates, "
+            f"{evaluation['deterministic_tests_at_freeze']} deterministic tests at V1 freeze",
+        ]
+    )
 
 
 def load_demo_cases(experiment_dir: Path) -> tuple[list[dict[str, Any]], dict[str, Any]]:
@@ -72,12 +116,18 @@ def render_case(prediction: dict[str, Any], score: dict[str, Any]) -> str:
     return "\n".join(lines)
 
 
-def render_demo(cases: list[dict[str, Any]], summary: dict[str, Any]) -> str:
+def render_demo(
+    cases: list[dict[str, Any]],
+    summary: dict[str, Any],
+    locked_summary: dict[str, Any] | None = None,
+) -> str:
     header = [
-        "Evidence-Grounded Document Intelligence — Frozen Validation Replay",
+        "Evidence-Grounded Document Intelligence — Offline Portfolio Demo",
         "Offline replay: no API call, no new model output, no cost.",
         "",
     ]
+    if locked_summary is not None:
+        header.extend([render_locked_summary(locked_summary), "", "Frozen validation examples", ""])
     body = []
     for case in cases:
         body.extend([render_case(case["prediction"], case["score"]), ""])
@@ -95,15 +145,26 @@ def render_demo(cases: list[dict[str, Any]], summary: dict[str, Any]) -> str:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--experiment-dir", type=Path, default=DEFAULT_EXPERIMENT_DIR)
+    parser.add_argument("--locked-summary", type=Path, default=DEFAULT_LOCKED_SUMMARY)
+    parser.add_argument(
+        "--summary-only",
+        action="store_true",
+        help="Show only the frozen 730-question locked-test summary",
+    )
     parser.add_argument("--case", dest="case_id", help="Show one case, e.g. validation_01")
     args = parser.parse_args()
+
+    locked_summary = load_locked_summary(args.locked_summary)
+    if args.summary_only:
+        print(render_locked_summary(locked_summary))
+        return
 
     cases, summary = load_demo_cases(args.experiment_dir)
     if args.case_id:
         cases = [case for case in cases if case["prediction"]["case_id"] == args.case_id]
         if not cases:
             raise SystemExit(f"unknown case: {args.case_id}")
-    print(render_demo(cases, summary))
+    print(render_demo(cases, summary, locked_summary=locked_summary))
 
 
 if __name__ == "__main__":

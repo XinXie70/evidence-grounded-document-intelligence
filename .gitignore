@@ -65,6 +65,7 @@ experiments/visual_retrieval_v1/runtime_manifest.json
 experiments/visual_retrieval_v1/evaluation.json
 experiments/v1_locked_test*/
 experiments/v1_locked_test*.json
+!experiments/v1_locked_test_summary_v0.json
 
 # Personal resume sources and generated portfolio exports are not project artifacts
 resume/

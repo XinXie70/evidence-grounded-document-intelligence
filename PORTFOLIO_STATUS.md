@@ -22,11 +22,14 @@
 7. A bounded OCR/visual fallback justified by observed missing-text and layout failures.
 8. A reusable comparison pipeline that extracts grounded facts, performs arithmetic locally,
    validates numeric citations, and preserves abstentions.
-9. Reproducible experiment identities, cost logging, per-batch hard caps, and 377 passing tests.
-10. An offline command-line replay that exposes successes and failures without another API call.
+9. Reproducible experiment identities, cost logging, per-batch hard caps, and 379 current passing
+   tests (377 were present in the pre-locked-test frozen manifest).
+10. An offline command-line demo that leads with the frozen 730-question result and then exposes
+    readable successes, abstentions, and failures without another API call.
 11. A document-isolated 132-question reliability calibration with a frozen answer/abstain rule.
-12. A one-time 730-question locked-test evaluation with independent semantic/support judging and
-    question-level plus document-clustered bootstrap uncertainty.
+12. A one-time 730-question locked-test evaluation with separate frozen semantic/support judging,
+    human-audited evaluation criteria, and question-level plus document-clustered bootstrap
+    uncertainty.
 
 ## Frozen headline results
 
@@ -48,7 +51,7 @@
 | Locked-test selective grounded accuracy | 264/436 (60.55%) | answered locked-test cases |
 | Locked-test overall task / grounded accuracy | 42.60% / 39.86% | all 730 questions |
 
-## Completed preparation for a public GitHub release
+## Completed release and evaluation milestones
 
 - [x] Replace the obsolete Day-1 README with the full project story.
 - [x] Add a zero-cost offline result demo.
@@ -63,14 +66,18 @@
       and third-party artifact terms separate.
 - [x] Defer calibration and locked-test execution until a generic R1 visual route is frozen on
       tune-only evidence; document the one-iteration stop rule.
-- [x] Run the single bounded R1 iteration, retain its negative result, and close the MVP without
-      calibration or locked-test performance claims.
+- [x] Run the single bounded R1 iteration, retain its negative result, and close the historical
+      MVP checkpoint without calibration or locked-test performance claims; later reopen work only
+      under the separately preregistered V1 completion protocol.
 - [x] Freeze and execute the 132-question calibration pipeline once; audit 50 labels with a human.
 - [x] Correct the coverage/answer-retention protocol mismatch before locked-test access.
 - [x] Freeze 68 system components and pass the offline locked-test preflight.
 - [x] Create the pre-test Git snapshot and run the one-time locked-test evaluation.
 - [x] Validate all 730 predictions and 849 judge outputs, then report document-clustered bootstrap
       confidence intervals without post-test tuning.
+- [x] Update the zero-cost demo to lead with the final locked-test summary while retaining readable
+      frozen examples.
+- [x] Add a GitHub Actions workflow for the deterministic test suite.
 
 ## Stop line
 

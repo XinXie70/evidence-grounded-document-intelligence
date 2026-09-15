@@ -2,6 +2,8 @@
 
 [English](README.md) | [简体中文](README.zh-CN.md)
 
+[![Tests](https://github.com/XinXie70/evidence-grounded-document-intelligence/actions/workflows/tests.yml/badge.svg)](https://github.com/XinXie70/evidence-grounded-document-intelligence/actions/workflows/tests.yml)
+
 一个面向长 PDF 问答的可复现实验系统：不仅生成答案，还必须提供**页级证据**；证据不足时，系统会明确拒答。
 
 ## 项目概览
@@ -10,12 +12,22 @@
 - 使用 **239 个可回答的开发集问题**评估证据检索。
 - BM25 与 Dense Retrieval 经 RRF 融合后，**Complete Evidence Recall@10 达到 77.41%**，相比 BM25 基线的 70.71% 提升 6.69 个百分点。
 - 在 63 道视觉题上加入问题条件化视觉重排后，**Complete Evidence Recall@3 从 55.56% 提升到 66.67%**。
-- 包含 **377 个确定性测试**，覆盖数据隔离、检索、证据封装、推理、引用、拒答、成本控制与失败恢复。
+- 当前包含 **379 个确定性测试**，覆盖数据隔离、检索、证据封装、推理、引用、拒答、成本
+  控制、失败恢复和公开演示；locked test 访问前冻结的 V1 清单包含 377 项测试。
 - 已在文档隔离的 **132 题 calibration split** 上完成校准；最终回答/拒答规则和包含
   68 个组件的系统清单均在测试集访问前冻结。
 - 已完成一次性 locked test：覆盖 **156 份未见文档、730 道题**；系统覆盖率为
   **59.73%**，已回答题任务准确率为 **65.14%**，已回答题严格 Grounded Accuracy 为
   **60.55%**。
+
+## 面试官五分钟阅读路径
+
+1. 阅读上方“项目概览”和下方系统架构，理解问题、主流程与项目边界。
+2. 打开 [V1 最终 locked-test 报告](experiments/V1_LOCKED_TEST_REPORT.md)，查看未见数据
+   结果、路线诊断、置信区间与局限性。
+3. 运行 `PYTHONPATH=src python -m egdi.portfolio_demo --summary-only`，零成本查看最终汇总；
+   去掉 `--summary-only` 可继续查看冻结的成功、拒答和错误案例。
+4. 只有需要追溯具体技术决策时，再进入[实验索引](experiments/README.md)。
 
 ## 开发阶段
 
@@ -28,8 +40,8 @@
 5. **Dense 与混合检索**：BGE 向量、互补性分析与 RRF 融合。
 6. **通用比较链路**：抽取带引用事实、执行本地计算并支持拒答。
 7. **问题条件化视觉检索**：对完整视觉切片执行盲重排，并按预注册门槛决定保留或放弃。
-8. **校准、最终冻结与锁定评测**：独立裁判、人工一致性审计、确定性选择性回答、费用
-   分批控制，以及带 bootstrap 不确定性的一次性 locked test。
+8. **校准、最终冻结与锁定评测**：冻结后分别进行语义正确性与证据支持评审、人工一致性
+   审计、确定性选择性回答、费用分批控制，以及带 bootstrap 不确定性的一次性 locked test。
 
 ## 为什么做这个项目
 
@@ -120,7 +132,10 @@ C1 与 C2 的任务准确率相差 37.5 个百分点，说明证据检索与表�
 
 ### 4. 可靠性校准：132 道题、35 份未参与开发的文档
 
-冻结后的 V1 流水线在文档隔离的 calibration split 上完整运行一次。预测生成后，系统再独立判断答案语义是否正确、引用证据是否支持答案，并抽取 50 个案例进行人工审计：任务正确性标签达到 50/50 一致；在人可以独立判断的 37 个证据支持案例中，34 个与自动裁判一致。
+冻结后的 V1 流水线在文档隔离的 calibration split 上完整运行一次。预测生成后，系统再以
+两个冻结的评审任务分别判断答案语义是否正确、引用证据是否支持答案，并抽取 50 个案例
+进行人工审计：任务正确性标签达到 50/50 一致；在人可以独立判断的 37 个证据支持案例中，
+34 个与自动评审一致。
 
 最终规则允许回答 74/132 道题，覆盖率为 **56.06%**；这些已回答题的任务准确率为 **87.84%**，严格 Grounded Accuracy 为 **79.73%**。预注册的 60% 覆盖率目标实际不可达到，因为资格硬门槛本身最多只允许回答 56.06%。因此修正后的阈值保留全部合格答案，不把 confidence 分数包装成已经校准的概率，也不凭它额外拒答。
 
@@ -167,10 +182,17 @@ RRF Top-10 -> 提取两个带引用事实 -> 本地计算 -> 引用检查 -> 回
 
 ## 零成本离线演示
 
-该演示只重放冻结的六案例验证结果，**不会调用 API，不会生成新的模型输出，也不会产生费用**。
+该演示先输出冻结的 730 题 locked-test 汇总，再重放六个便于阅读的验证案例；**不会调用
+API，不会生成新的模型输出，也不会产生费用**。
 
 ```bash
 PYTHONPATH=src python -m egdi.portfolio_demo
+```
+
+如果只看最终 V1 核心指标：
+
+```bash
+PYTHONPATH=src python -m egdi.portfolio_demo --summary-only
 ```
 
 分别查看成功、拒答和错误案例：
@@ -221,11 +243,12 @@ src/egdi/      检索、证据封装、推理、可靠性与评测代码
 tests/         确定性单元测试与集成测试
 ```
 
-建议从以下文件开始阅读：
+完成上面的五分钟阅读路径后，可按需深入以下记录：
 
 - [作品集状态与停止线](PORTFOLIO_STATUS.md)
-- [最终评测准入条件](FINAL_EVALUATION_GATE.md)
 - [实验索引](experiments/README.md)
+- [V1 完成协议](V1_COMPLETION_PROTOCOL.md)
+- [V1 locked-test 协议](V1_LOCKED_TEST_PROTOCOL.md)
 - [数据集和第三方内容说明](DATASET_NOTICE.md)
 - [项目提案](PROJECT_PROPOSAL.md)
 - [数据与评测协议](DATA_AND_EVAL_PROTOCOL.md)

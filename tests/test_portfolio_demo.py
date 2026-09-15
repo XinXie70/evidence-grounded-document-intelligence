@@ -2,7 +2,13 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from egdi.portfolio_demo import load_demo_cases, render_case, render_demo
+from egdi.portfolio_demo import (
+    load_demo_cases,
+    load_locked_summary,
+    render_case,
+    render_demo,
+    render_locked_summary,
+)
 
 
 class PortfolioDemoTests(unittest.TestCase):
@@ -57,6 +63,39 @@ class PortfolioDemoTests(unittest.TestCase):
         )
         self.assertIn("Answer exact match: 4/6", rendered)
         self.assertIn("Complete evidence match: 5/6", rendered)
+
+    def test_renders_locked_test_headline_metrics(self):
+        summary = {
+            "document_count": 156,
+            "question_count": 730,
+            "answered_count": 436,
+            "metrics": {
+                "coverage": 436 / 730,
+                "selective_task_accuracy": 284 / 436,
+                "selective_grounded_accuracy": 264 / 436,
+                "answered_evidence_support_rate": 374 / 436,
+                "overall_task_accuracy": 311 / 730,
+                "overall_grounded_accuracy": 291 / 730,
+            },
+            "evaluation": {
+                "total_model_judgments": 849,
+                "bootstrap_replicates": 10000,
+                "deterministic_tests_at_freeze": 377,
+            },
+        }
+        rendered = render_locked_summary(summary)
+        self.assertIn("730 questions / 156 unseen documents", rendered)
+        self.assertIn("Coverage: 436/730 (59.73%)", rendered)
+        self.assertIn("65.14%", rendered)
+        self.assertIn("60.55%", rendered)
+        self.assertIn("849 frozen semantic/support judgments", rendered)
+
+    def test_load_locked_summary_rejects_missing_fields(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "summary.json"
+            path.write_text('{"question_count":730}', encoding="utf-8")
+            with self.assertRaisesRegex(ValueError, "missing fields"):
+                load_locked_summary(path)
 
 
 if __name__ == "__main__":
