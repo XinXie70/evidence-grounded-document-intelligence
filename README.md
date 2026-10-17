@@ -6,6 +6,11 @@
 
 A reproducible research system for answering questions over long PDFs **with page-level evidence and an explicit option to abstain**.
 
+**Version status:** V1 evaluation is complete. V2 is a planned interactive document Agent extension;
+its features and results are not implemented or claimed yet. The
+[V2 technical proposal and progress log (Chinese)](V2_PROPOSAL.md) records scope, prompt engineering,
+tool execution, application milestones, acceptance criteria, and the change process.
+
 ## At a glance
 
 - **273 PDFs / 14,014 pages** validated, checksummed, and split by document.
@@ -35,6 +40,8 @@ A reproducible research system for answering questions over long PDFs **with pag
   omit `--summary-only` to inspect frozen success, abstention, and failure examples.
 - **Experiment provenance:** use the [experiment index](experiments/README.md) to trace individual
   design decisions and retained negative results.
+- **V2 development:** see the [technical proposal and current next step](V2_PROPOSAL.md) for the
+  planned application and Agent extension. Results below describe V1.
 
 ## Development phases
 
@@ -300,10 +307,13 @@ Additional technical records:
 
 ## Future work
 
-V1 and its locked-test result are now complete and immutable. A later V2 may improve region-level
-grounding, multi-page evidence preservation, document-global reasoning, and confidence calibration
-using development data and a new untouched test set. Per-question patches, unconstrained
-full-document vision, and tuning against this completed locked test remain intentionally excluded.
+V1 and its locked-test result are complete and immutable. The current
+[V2 proposal](V2_PROPOSAL.md) prioritizes new-document QA, prompt engineering, bounded Agent tool
+execution, session state, and an application interface, with separate acceptance data. Earlier
+research ideas such as region-level grounding, document-global reasoning, and further confidence
+calibration are deferred candidates, not additional V2 commitments. Per-question patches,
+unconstrained full-document vision, and treating the completed locked test as unseen data remain
+excluded.
 
 ## Honest project boundary
 

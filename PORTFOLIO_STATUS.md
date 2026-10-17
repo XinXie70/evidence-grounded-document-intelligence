@@ -5,6 +5,11 @@
 **Development scope used so far:** document-isolated `development_tune`  
 **Locked test status:** evaluated once after freeze; never used for V1 method development
 
+**V2 status:** proposal established on 2026-10-17; implementation has not started. The
+[V2 proposal and progress log](V2_PROPOSAL.md) is the working entry point for prompt engineering,
+bounded tool execution, session state, and an interactive application. V1 results remain historical
+and are not evidence of V2 performance.
+
 > The historical MVP was subsequently extended under [`V1_COMPLETION_PROTOCOL.md`](V1_COMPLETION_PROTOCOL.md).
 > Question-conditioned visual retrieval passed its preregistered tune-only gate, calibration was
 > completed once on 132 questions, and the full system was checksum-frozen before the one-time
@@ -79,11 +84,13 @@
       frozen examples.
 - [x] Add a GitHub Actions workflow for the deterministic test suite.
 
-## Stop line
+## V1 stop line and V2 scope
 
-The portfolio MVP does **not** require another retriever, a trained custom model, an agent system,
-MCP, multi-agent orchestration, or a frontend. New experiments are allowed only when they close a
-specific unchecked release item or test a failure already documented above.
+The completed V1 portfolio MVP did **not** require another retriever, a trained custom model, an
+agent system, MCP, multi-agent orchestration, or a frontend. Its evaluation results remain frozen.
+Further application and Agent work is now planned separately under [V2_PROPOSAL.md](V2_PROPOSAL.md),
+with explicit milestones, scope limits, learning checks, and a revisable decision log. The original
+V1 stop line does not prohibit the agreed V2 work; V2 does not authorize post-test tuning of V1.
 
 ## Draft resume bullets
 
