@@ -1,4 +1,4 @@
-"""Run B0 / B1 on a development question sample. Dry-run unless --execute is given."""
+"""Run B0 / B1 / A on a development question sample. Dry-run unless --execute is given."""
 
 from __future__ import annotations
 
@@ -9,12 +9,14 @@ from pathlib import Path
 from typing import Any
 
 from egdi.access import load_records
+from egdi.v2.agent import Agent, AgentLimits
 from egdi.v2.baseline import INSTRUCTIONS, PAGE_BUDGETS, render_input, run_baseline
 from egdi.v2.index import DocumentIndex
 from egdi.v2.llm import BudgetExceeded, CostLedger, LlmClient, load_config
 from egdi.v2.tools import MAX_PAGE_CHARS
 
 DEV_SPLITS = ("development_tune", "development_calibration")
+AGENT_TYPICAL_USD = 0.05  # the archived V2 agent averaged about this per question
 ASSUMED_OUTPUT_TOKENS = 600  # reasoning + answer; deliberately generous for the estimate
 CHARS_PER_TOKEN = 4
 
@@ -32,7 +34,7 @@ def estimate_usd(input_chars: int, pricing: dict[str, Any]) -> float:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--system", required=True, choices=sorted(PAGE_BUDGETS))
+    parser.add_argument("--system", required=True, choices=sorted(PAGE_BUDGETS) + ["A"])
     parser.add_argument("--split", default="development_tune", choices=DEV_SPLITS)
     parser.add_argument("--count", type=int, default=30)
     parser.add_argument("--seed", default="v2-dev")
@@ -62,11 +64,16 @@ def main() -> None:
         if doc_id not in documents:
             documents[doc_id] = DocumentIndex.load(root, doc_id)
         document = documents[doc_id]
-        hits = document.search(record["question"], PAGE_BUDGETS[args.system])
-        pages = {h["page"]: document.page_text[h["page"]][:MAX_PAGE_CHARS] for h in hits}
-        estimate += estimate_usd(len(render_input(record["question"], pages)), pricing)
+        if args.system != "A":
+            hits = document.search(record["question"], PAGE_BUDGETS[args.system])
+            pages = {h["page"]: document.page_text[h["page"]][:MAX_PAGE_CHARS] for h in hits}
+            estimate += estimate_usd(len(render_input(record["question"], pages)), pricing)
         plan.append((qid, record, document))
     print(f"{args.system} on {args.split}: {len(plan)} questions to run ({len(done)} already done)")
+    if args.system == "A":
+        limits = AgentLimits()
+        estimate = AGENT_TYPICAL_USD * len(plan)
+        print(f"agent per-question cap ${limits.max_cost_usd:.2f}, so the worst case is ${limits.max_cost_usd * len(plan):.2f}")
     print(f"estimated cost ${estimate:.3f}; hard cap ${args.max_usd:.2f}")
     if not args.execute:
         print("dry run only; add --execute to make paid calls")
@@ -74,11 +81,16 @@ def main() -> None:
 
     ledger = CostLedger(args.max_usd)
     llm = LlmClient(config, pricing, ledger, log_path=args.output_dir / "requests.jsonl")
+    agent = Agent(llm, AgentLimits()) if args.system == "A" else None
     out_path.parent.mkdir(parents=True, exist_ok=True)
     with out_path.open("a", encoding="utf-8") as handle:
         for qid, record, document in plan:
             try:
-                result = run_baseline(args.system, record["question"], document, llm, label=f"{args.system}:{qid}")
+                label = f"{args.system}:{qid}"
+                if agent is not None:
+                    result = agent.run(record["question"], document, label)
+                else:
+                    result = run_baseline(args.system, record["question"], document, llm, label=label)
             except BudgetExceeded as error:
                 print(f"stopped: {error}")
                 break

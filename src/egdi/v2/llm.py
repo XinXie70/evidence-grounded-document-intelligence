@@ -91,6 +91,8 @@ class LlmClient:
         instructions: str,
         tools: list[dict[str, Any]] | None = None,
         text: dict[str, Any] | None = None,
+        tool_choice: Any = None,
+        include: list[str] | None = None,
         max_output_tokens: int | None = None,
     ) -> LlmResult:
         self.ledger.check()
@@ -106,6 +108,10 @@ class LlmClient:
             request["tools"] = tools
         if text:
             request["text"] = text
+        if tool_choice is not None:
+            request["tool_choice"] = tool_choice
+        if include:
+            request["include"] = include
         digest = hashlib.sha256(json.dumps(request, sort_keys=True, default=str).encode()).hexdigest()
         started = time.monotonic()
         try:

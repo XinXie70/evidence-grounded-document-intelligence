@@ -173,4 +173,9 @@ src/egdi/v2/
   - 命令（默认只预估，不发请求）：`PYTHONPATH=src .venv/bin/python -m egdi.v2.eval.run --system B0 --max-usd 0.40`；加 `--execute` 才真正调用
   - 设计：所有请求都经过 `LlmClient`，每次请求前检查费用上限，请求日志写 `results/v2_dev/requests.jsonl`；失败的请求保留记录；超限时整次运行停止，不逐题报错
 
-**下一步：** 作者确认费用上限并提供 `OPENAI_API_KEY` 后运行 B0/B1，读 30 条结果；然后第 4–5 天写 `agent.py`。
+- [ ] 第 4–5 天（进行中）：`agent.py` 骨架完成（LangGraph：`call_model` → `run_tools` → … → `force_finish`），`eval/run.py` 支持 `--system A`；`tests/test_v2_agent.py` 10 条（脚本化假模型）通过；V2 代码共约 1,100 行
+  - 循环规则：每次模型调用前检查 6 次工具 / 累计 30k 输入 token / USD 0.10 / 120 秒 / 10 次模型调用；超限则只给一次“只能调用 finish”的强制回合；强制回合仍不 finish 则记为弃权并标 `error=no_valid_finish`
+  - 未验证：真实 API 下 `store=false` 回传 function_call 与加密推理项的行为（测试只用假模型）；第一次付费只跑 1–2 题冒烟
+  - 费用：Agent 30 题预计约 USD 1.5，单题硬上限 0.10，最坏 3.0，**运行前需作者确认**
+
+**下一步：** 作者运行 B0/B1（见上）；然后 Agent 先冒烟 2 题，再跑 30 题并逐条看工具轨迹。
