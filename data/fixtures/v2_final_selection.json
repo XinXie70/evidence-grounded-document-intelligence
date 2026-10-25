@@ -1,0 +1,12 @@
+{
+  "counts": {
+    "answerable": 343,
+    "answerable_multi_page": 203,
+    "answerable_single_page": 140,
+    "documents": 103,
+    "unanswerable": 27
+  },
+  "question_ids_sha256": "c8ace0b5c6dfded233b02e6a1b1c7e5bdc22654a093e7d43ec539e3cf760f402",
+  "schema_version": 1,
+  "select_py_sha256": "0ed0e805b23d8ea20fb956554d2a399d4906764ed6042900a46468529be41601"
+}
