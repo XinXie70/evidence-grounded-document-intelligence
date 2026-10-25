@@ -27,12 +27,14 @@
 - 所有证据页在 `data/manifests/pdf_audit.json` 中既非 `low_text` 也非 `text_layer_missing`
 - 不可回答题：同一文档池内全部保留，用于检验拒答
 
-**题目池（2026-10-25 粗略计数，尚未套用 V1 的个别排除规则，第 1 天由脚本给出准确数字）：**
+**题目池（第 1 天由 `eval/select.py` 给出的准确数字；最终评测一行仍是粗略计数，冻结后才由脚本重新生成）：**
+
+不可回答题只保留“有入选可回答题的文档”里的（不保留整个划分内的全部）；证据为空的可回答题（2 条异常）不入选。
 
 | 用途 | 来源 | 可回答 | 文档 | 其中跨页 | 不可回答 |
 |---|---|---:|---:|---:|---:|
-| 开发（可反复使用） | `development_tune` | 166 | 66 | 101 | 17 |
-| 验证（冻结前选设置用，少用） | `development_calibration` | 92 | 29 | 62 | 8 |
+| 开发（可反复使用） | `development_tune` | 166 | 66 | 101 | 12 |
+| 验证（冻结前选设置用，少用） | `development_calibration` | 92 | 29 | 62 | 6 |
 | **最终评测（只跑一次）** | `locked_test` 中未被旧 V2 引用的文档 | **345** | **103** | **204** | **33** |
 
 **关于最终评测集的如实说明：** V1 曾在 locked test 上做过一次评测；旧 V2 的实验文件引用过其中 32 份文档（其中 31 份实际跑过任务）。本轮把这 32 份文档整体排除，清单见 `data/fixtures/v2_excluded_locked_test_documents.json`；其余 124 份文档从未用于 V2 开发。报告中称为“**V2 开发未使用的留出集**”，并注明 V1 曾在该划分上评测，不称为完全未见数据。
@@ -154,14 +156,18 @@ src/egdi/v2/
 ## 8. 当前进度
 
 - [x] 2026-10-25：旧 V2 归档到本地 `v2-archive`；从 main 开出 `v2`；建立本方案
-- [ ] 第 1 天：题目选择与冻结
+- [x] 第 1 天：题目选择与冻结（2026-10-25）
+  - 完成：读懂 V1 的 splits / corpus / bm25 / dense / rrf；写 `src/egdi/v2/eval/select.py` 与 `tests/test_v2_select.py`
+  - 命令：`PYTHONPATH=src python3 -m egdi.v2.eval.select`，输出 `data/fixtures/v2_question_sets.json`（拒绝覆盖已有文件）
+  - 结果：开发 166 可回答 / 12 不可回答 / 66 文档；验证 92 / 6 / 29；最终 124 份文档
+  - 决定：不可回答题只取入选文档内的（计划原表 17/8 是整个划分内全部）；最终集只冻结文档清单和 `select.py` 的哈希，题号在最终评测日用 `build_final_question_ids` 生成，之前不读 locked_test 标签
+  - 遗留：最终集准确题数要到最终评测日才知道（粗略估计 345 可回答）
+- [x] 第 2 天：`index.py`、`tools.py` 及单元测试（2026-10-25）
+  - 完成：`src/egdi/v2/index.py`（每份文档的 BM25 + BGE + RRF，每路前 10 页、k=60，snippet 取最相关的 256-token 块前 300 字符）；`src/egdi/v2/tools.py`（3 个工具 + `finish`、JSON schema、`ToolBox` 记录已读页）；`tests/test_v2_tools.py`、`tests/test_v2_index.py`（共 20 条测试，含越界页码、quote 校验、截断后不可引用、引用未读页被拒）
+  - 命令：`PYTHONPATH=src .venv/bin/python -m unittest tests.test_v2_select tests.test_v2_tools tests.test_v2_index`
+  - 冒烟：开发集前 15 题，真实 BGE，前 3 页至少命中一个证据页 11/15、全部证据页 8/15；每份文档建索引约 1–7 秒
+  - 决定：`k` 超出 1–5、一次读超过 3 页都返回结构化错误而不是静默截断；`calculate` 的 quote 对照“模型实际看到的（已截断）文本”；`finish` 只校验引用页是否读过，不比对答案数字
+  - 遗留：tools.py 的 schema 是与厂商无关的 `{name, description, parameters}`，第 3 天的 `llm.py` 负责包成 OpenAI 格式
+- [ ] 第 3 天：`llm.py`、`answer.py`、`baseline.py`；B0/B1 跑 30 道开发题（< USD 0.5，需先确认）
 
-**下一步：** 第 1 天任务。先读 `src/egdi/splits.py`、`corpus.py`、`bm25.py`、`dense.py`、`rrf.py`。
-
-## 9. 完成时应该能独立讲清楚
-
-1. 三个工具的输入输出契约，以及为什么 `calculate` 要求 `quote`
-2. Agent 什么时候继续检索、什么时候停止；超限时发生什么
-3. 为什么主指标把拒答算错；为什么需要 B1
-4. 最终结果的置信区间说明了什么、不能说明什么
-5. 旧 V2 为什么停下来，从中学到了什么
+**下一步：** 第 3 天。先读 V1 的 `reasoning_api.py` 和定价文件，确认调用方式和费用估算，再写 `llm.py`。
