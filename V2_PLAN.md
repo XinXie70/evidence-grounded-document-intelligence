@@ -168,6 +168,9 @@ src/egdi/v2/
   - 冒烟：开发集前 15 题，真实 BGE，前 3 页至少命中一个证据页 11/15、全部证据页 8/15；每份文档建索引约 1–7 秒
   - 决定：`k` 超出 1–5、一次读超过 3 页都返回结构化错误而不是静默截断；`calculate` 的 quote 对照“模型实际看到的（已截断）文本”；`finish` 只校验引用页是否读过，不比对答案数字
   - 遗留：tools.py 的 schema 是与厂商无关的 `{name, description, parameters}`，第 3 天的 `llm.py` 负责包成 OpenAI 格式
-- [ ] 第 3 天：`llm.py`、`answer.py`、`baseline.py`；B0/B1 跑 30 道开发题（< USD 0.5，需先确认）
+- [ ] 第 3 天（进行中）：`llm.py`、`answer.py`、`baseline.py`、`eval/run.py`、`configs/v2_llm.json` 已写好，27 条 V2 测试通过；B0/B1 的 30 题付费运行**等待作者确认费用与 API key**
+  - 预估（真实检索结果 + 每题输出按 600 token 的保守假设）：B0 约 USD 0.33，B1 约 USD 0.44；V1 实测约 0.006 美元/题，预计实际花费 B0 约 0.2、B1 约 0.3
+  - 命令（默认只预估，不发请求）：`PYTHONPATH=src .venv/bin/python -m egdi.v2.eval.run --system B0 --max-usd 0.40`；加 `--execute` 才真正调用
+  - 设计：所有请求都经过 `LlmClient`，每次请求前检查费用上限，请求日志写 `results/v2_dev/requests.jsonl`；失败的请求保留记录；超限时整次运行停止，不逐题报错
 
-**下一步：** 第 3 天。先读 V1 的 `reasoning_api.py` 和定价文件，确认调用方式和费用估算，再写 `llm.py`。
+**下一步：** 作者确认费用上限并提供 `OPENAI_API_KEY` 后运行 B0/B1，读 30 条结果；然后第 4–5 天写 `agent.py`。
