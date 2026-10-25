@@ -46,6 +46,14 @@ def load_final(root: Path) -> tuple[dict[str, dict[str, Any]], list[str]]:
     return records, sorted(pool["answerable_question_ids"] + pool["unanswerable_question_ids"])
 
 
+def failed_result(system: str, error: Exception, cost_usd: float) -> dict[str, Any]:
+    return {
+        "system": system, "final": None, "validation_errors": [], "error": f"{type(error).__name__}: {error}",
+        "stop_reason": "error", "pages_read": [], "tool_calls": 0, "model_calls": 0,
+        "usage": None, "cost_usd": round(cost_usd, 6), "latency_s": 0.0, "trace": [],
+    }
+
+
 def estimate_usd(input_chars: int, pricing: dict[str, Any]) -> float:
     tokens_in = input_chars / CHARS_PER_TOKEN + len(INSTRUCTIONS) / CHARS_PER_TOKEN
     return (tokens_in * pricing["input_usd_per_million"] + ASSUMED_OUTPUT_TOKENS * pricing["output_usd_per_million"]) / 1e6
@@ -111,6 +119,7 @@ def main() -> None:
     out_path.parent.mkdir(parents=True, exist_ok=True)
     with out_path.open("a", encoding="utf-8") as handle:
         for qid, record, document in plan:
+            spent_before = ledger.spent
             try:
                 label = f"{args.system}:{qid}"
                 if agent is not None:
@@ -120,6 +129,8 @@ def main() -> None:
             except BudgetExceeded as error:
                 print(f"stopped: {error}")
                 break
+            except Exception as error:  # same policy as the baselines: a failed question is recorded, counts as wrong, is not retried
+                result = failed_result(args.system, error, ledger.spent - spent_before)
             result.update(
                 question_id=qid,
                 doc_id=record["pdf"]["doc_id_str"],
