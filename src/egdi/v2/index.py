@@ -14,7 +14,7 @@ from egdi.bm25 import PageBm25Index
 from egdi.corpus import read_page_records_jsonl
 from egdi.dense import PageDenseIndex, SentenceTransformerBgeEncoder
 from egdi.rrf import reciprocal_rank_fusion
-from egdi.text import PageRecord, normalize_whitespace
+from egdi.text import PageRecord, normalize_whitespace, tokenize_for_bm25
 
 PAGE_RECORD_DIRS = (
     "data/derived/page_records",
@@ -26,6 +26,7 @@ RRF_DEPTH = 10
 RRF_CONSTANT = 60
 CHUNK_TOKENS = 256
 SNIPPET_CHARS = 300
+SNIPPET_STEP = 50
 
 
 def find_page_records(root: Path, doc_id: str) -> Path:
@@ -55,7 +56,6 @@ class DocumentIndex:
         self.page_count = max(self.page_text)
         self._bm25 = PageBm25Index(records)
         self._dense = PageDenseIndex(records, encoder, chunk_tokens=CHUNK_TOKENS, overlap_tokens=0)
-        self._chunk_text = {(c.page, c.chunk_index): c.text for c in self._dense.chunks}
 
     @classmethod
     def load(cls, root: Path, doc_id: str, encoder: Any | None = None) -> "DocumentIndex":
@@ -67,7 +67,6 @@ class DocumentIndex:
         bm25_pages = [hit.page for hit in self._bm25.search(query, RRF_DEPTH)]
         dense_hits = self._dense.search(query, len(self.records))
         dense_pages = [hit.page for hit in dense_hits[:RRF_DEPTH]]
-        best_chunk = {hit.page: hit.best_chunk_index for hit in dense_hits}
         fused = reciprocal_rank_fusion(
             [bm25_pages, dense_pages], rank_constant=RRF_CONSTANT, top_k=k
         )
@@ -75,11 +74,26 @@ class DocumentIndex:
             {
                 "page": page,
                 "score": round(score, 5),
-                "snippet": self._snippet(page, best_chunk.get(page)),
+                "snippet": self._snippet(page, query),
             }
             for page, score in fused
         ]
 
-    def _snippet(self, page: int, chunk_index: int | None) -> str:
-        text = self._chunk_text.get((page, chunk_index)) if chunk_index is not None else None
-        return normalize_whitespace(text or self.page_text[page])[:SNIPPET_CHARS]
+    def _snippet(self, page: int, query: str) -> str:
+        """The 300-character window of the page that best covers the query's rare terms.
+
+        A page's best dense chunk is ~1,000 characters, so its first 300 often miss the
+        part that matched; the window is chosen from the whole page instead.
+        """
+        text = normalize_whitespace(self.page_text[page])
+        if len(text) <= SNIPPET_CHARS:
+            return text
+        terms = {t: self._bm25._idf(t) for t in set(tokenize_for_bm25(query)) if t in self._bm25.document_frequencies}
+        best_start, best_score = 0, 0.0
+        for start in range(0, len(text) - SNIPPET_CHARS + SNIPPET_STEP, SNIPPET_STEP):
+            window = set(tokenize_for_bm25(text[start : start + SNIPPET_CHARS]))
+            score = sum(weight for term, weight in terms.items() if term in window)
+            if score > best_score:  # strict: ties keep the earliest window
+                best_start, best_score = start, score
+        snippet = text[best_start : best_start + SNIPPET_CHARS]
+        return ("..." if best_start else "") + snippet

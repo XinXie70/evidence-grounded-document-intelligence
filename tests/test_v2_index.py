@@ -48,6 +48,19 @@ class DocumentIndexTests(unittest.TestCase):
             self.assertEqual(set(item), {"page", "score", "snippet"})
             self.assertTrue(0 < len(item["snippet"]) <= 300)
 
+    def test_snippet_is_the_window_around_the_query_terms(self):
+        filler = "lorem ipsum dolor sit amet " * 40
+        records = [
+            build_page_record("doc", 1, filler + " the original appointment date was March 2009 " + filler),
+            build_page_record("doc", 2, "short page about something else"),
+        ]
+        index = DocumentIndex(records, FakeEncoder())
+        top = index.search("original appointment date", 2)
+        snippet = next(r["snippet"] for r in top if r["page"] == 1)
+        self.assertIn("appointment", snippet)
+        self.assertLessEqual(len(snippet), 303)
+        self.assertEqual(next(r["snippet"] for r in top if r["page"] == 2), "short page about something else")
+
     def test_deterministic_and_page_metadata(self):
         self.assertEqual(self.index.search("headcount", 4), self.index.search("headcount", 4))
         self.assertEqual(self.index.page_count, 4)

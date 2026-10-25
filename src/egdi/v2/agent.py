@@ -27,7 +27,8 @@ def build_instructions(limits: "AgentLimits") -> str:
     return (
         "You answer a question about one PDF document by searching and reading it with tools.\n"
         "- search_document finds candidate pages; snippets are only hints, so read_pages before "
-        "relying on a page. If a search misses, try different words; repeating a search returns the same pages.\n"
+        "relying on a page: a snippet is a short excerpt and can miss the relevant part, so read the top-ranked "
+        "pages before ruling them out. If a search misses, try different words; repeating a search returns the same pages.\n"
         "- Questions may need several pages (for example a figure on one page and a definition on "
         "another). Keep going until you have everything the answer needs.\n"
         "- Use calculate for arithmetic, quoting each number exactly from a page you have read.\n"
