@@ -21,9 +21,11 @@ ASSUMED_OUTPUT_TOKENS = 600  # reasoning + answer; deliberately generous for the
 CHARS_PER_TOKEN = 4
 
 
-def sample_question_ids(pool: dict[str, Any], count: int, seed: str) -> list[str]:
-    """Deterministic hash-ordered sample over answerable and unanswerable questions."""
-    ids = pool["answerable_question_ids"] + pool["unanswerable_question_ids"]
+def sample_question_ids(pool: dict[str, Any], count: int, seed: str, subset: str = "mixed") -> list[str]:
+    """Deterministic hash-ordered sample; ``subset="unanswerable"`` draws only unanswerable questions."""
+    ids = list(pool["unanswerable_question_ids"])
+    if subset == "mixed":
+        ids += pool["answerable_question_ids"]
     return sorted(ids, key=lambda qid: hashlib.sha256(f"{seed}:{qid}".encode()).hexdigest())[:count]
 
 
@@ -38,6 +40,7 @@ def main() -> None:
     parser.add_argument("--split", default="development_tune", choices=DEV_SPLITS)
     parser.add_argument("--count", type=int, default=30)
     parser.add_argument("--seed", default="v2-dev")
+    parser.add_argument("--subset", default="mixed", choices=["mixed", "unanswerable"])
     parser.add_argument("--max-usd", type=float, required=True, help="hard cap for this run")
     parser.add_argument("--execute", action="store_true", help="make paid API calls")
     parser.add_argument("--root", type=Path, default=Path("."))
@@ -48,8 +51,9 @@ def main() -> None:
     config, pricing = load_config(root)
     pool = json.loads((root / "data/fixtures/v2_question_sets.json").read_text(encoding="utf-8"))[args.split]
     records = {r["id"]: r for r in load_records(root / "data/raw/docscope/benchmark.json", "dev")}
-    question_ids = sample_question_ids(pool, args.count, args.seed)
-    out_path = args.output_dir / f"{args.split}_{args.seed}_{args.system}.jsonl"
+    question_ids = sample_question_ids(pool, args.count, args.seed, args.subset)
+    tag = args.seed if args.subset == "mixed" else f"{args.seed}-{args.subset}"
+    out_path = args.output_dir / f"{args.split}_{tag}_{args.system}.jsonl"
     done = set()
     if out_path.exists():
         done = {json.loads(line)["question_id"] for line in out_path.read_text(encoding="utf-8").splitlines()}
