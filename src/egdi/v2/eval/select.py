@@ -84,14 +84,37 @@ def question_ids_sha256(question_ids: list[str]) -> str:
     return hashlib.sha256("\n".join(sorted(question_ids)).encode()).hexdigest()
 
 
+def pool_for_documents(
+    records: list[dict[str, Any]], documents: list[str], audit: dict[str, dict[int, dict[str, Any]]]
+) -> dict[str, Any]:
+    wanted = set(documents)
+    return build_pool([r for r in records if r["pdf"]["doc_id_str"] in wanted], audit)
+
+
 def build_final_question_ids(
     benchmark_path: Path, documents: list[str], audit: dict[str, dict[int, dict[str, Any]]]
 ) -> dict[str, Any]:
     """Final-evaluation day only: reads locked-test labels, so it needs the V1 guard."""
     require_evaluation_split_access("locked_test")
-    wanted = set(documents)
-    records = [r for r in load_records(benchmark_path, "test") if r["pdf"]["doc_id_str"] in wanted]
-    return build_pool(records, audit)
+    return pool_for_documents(load_records(benchmark_path, "test"), documents, audit)
+
+
+def record_final_selection(path: Path, pool: dict[str, Any]) -> dict[str, Any]:
+    """Store only counts and a hash of the question ids; verify the hash on every later run."""
+    ids = pool["answerable_question_ids"] + pool["unanswerable_question_ids"]
+    entry = {
+        "schema_version": 1,
+        "counts": pool["counts"],
+        "question_ids_sha256": question_ids_sha256(ids),
+        "select_py_sha256": sha256_file(Path(__file__)),
+    }
+    if path.exists():
+        previous = json.loads(path.read_text(encoding="utf-8"))
+        if previous["question_ids_sha256"] != entry["question_ids_sha256"]:
+            raise RuntimeError("final question set differs from the one recorded earlier")
+        return previous
+    write_json(path, entry)
+    return entry
 
 
 def main() -> None:

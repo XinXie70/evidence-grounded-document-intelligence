@@ -156,6 +156,7 @@ def main() -> None:
     parser.add_argument("--input", action="append", required=True, metavar="SYSTEM=PATH",
                         help="repeatable; a system may have several files")
     parser.add_argument("--output", required=True, type=Path, help="judged rows (jsonl)")
+    parser.add_argument("--split", default="dev", choices=["dev", "final"], help="final reads locked-test labels (needs the V1 acknowledgement)")
     parser.add_argument("--max-usd", type=float, required=True)
     parser.add_argument("--execute", action="store_true")
     parser.add_argument("--root", type=Path, default=Path("."))
@@ -163,7 +164,7 @@ def main() -> None:
     root = args.root
 
     systems = load_system_results(args.input)
-    gold = {r["id"]: r for r in load_records(root / "data/raw/docscope/benchmark.json", "dev")}
+    gold = {r["id"]: r for r in load_records(root / "data/raw/docscope/benchmark.json", "test" if args.split == "final" else "dev")}
     counts = pending_calls(systems, gold)
     print({s: len(r) for s, r in systems.items()}, dict(counts))
     if not args.execute:
