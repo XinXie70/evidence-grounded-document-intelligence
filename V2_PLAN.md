@@ -254,6 +254,14 @@ src/egdi/v2/
   - 事后分析：所有证据页都读到的题上三者准确率几乎相同（83.3% / 81.3% / 84.6%）——优势来自读全证据页的比例（82% / 59% / 45%），不是推理更强；Agent 在不可回答题上只正确拒答 5/27（B1 13/27、B0 12/27），是明确的弱点
   - 花费：作答 B0 2.04 / B1 3.66 / Agent 7.08，评审 2.82，合计 USD 15.60（上限 25）；V2 全部累计约 23.3
   - 事件（已写入报告）：Agent 运行中遇到一次 `APIConnectionError`，该题记为失败（算错、计入花费、不重试）；此后给 `run.py` 补上与基线一致的失败记录（冻结后唯一改动的代码文件）；B1 有 1 题输出无法解析，记为失败
-- [ ] 第 9–10 天：`service/`（FastAPI + SQLite + 演示页）
+- [x] 第 9–10 天：`service/`（FastAPI + SQLite + 演示页）（2026-10-25）
 
-**下一步：** 第 9–10 天。做 `service/`：导入 PDF → 建索引 → 提交问题 → Agent 作答并返回引用页与工具轨迹；演示页展示轨迹。不改冻结的 Agent。
+  - 完成：`src/egdi/v2/service/{store,api}.py`、`ui.html`、`tests/test_v2_service.py`（9 条）；V1 + V2 共 445 条测试通过
+  - 接口：`POST /documents?name=`（原始 PDF 字节，无需 multipart；按 sha256 去重；超过 50MB / 400 页或不是 PDF 则拒绝；缺文字层的页给出警告）、`GET /documents`、`GET /documents/{id}/pages/{n}`、`POST /documents/{id}/questions`（后台运行冻结的 Agent，返回 task_id）、`GET /tasks/{id}`（答案、引用页、完整工具轨迹、费用）、`GET /health`
+  - 安全与成本：仅绑定 127.0.0.1、无认证（本地演示）；服务级总费用上限（默认 USD 5，重启后从 SQLite 累计恢复），超限返回 402；Agent 单题仍受冻结的 USD 0.10 上限约束；服务重启会把未完成任务标记为失败
+  - 已验证：本地启动，上传 42 页真实 PDF 约 0.5 秒，页面渲染与失败提示正常（未设置 `OPENAI_API_KEY` 时提问得到明确报错，未产生费用）；**尚未用真实 API 跑过一次服务端提问**（预计约 USD 0.02–0.05，待作者确认）
+  - 已知局限：任务中途失败时已花的费用不写入 SQLite（只记录成功任务的费用），重启后服务级累计会略低估；只读文字层，扫描件需要 OCR（本轮不做）
+  - 启动：`PYTHONPATH=src .venv/bin/python -m egdi.v2.service.api --max-total-usd 1`，浏览器打开 http://127.0.0.1:8000
+- [ ] 第 11 天：README 首页重写（V1 + V2 一页讲清）、演示录屏；简历条目草稿见 `resume/V2_resume_bullets.md`
+
+**下一步：** 用真实 API 在服务里提 1–3 个问题做端到端确认并截图（需作者确认费用），然后第 11 天重写 README。

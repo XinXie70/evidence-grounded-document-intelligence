@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Document Agent</title>
+<style>
+  :root {
+    --bg: #f6f7f9; --panel: #ffffff; --text: #1b2430; --muted: #5d6877; --line: #dfe3e9;
+    --accent: #17365d; --accent-text: #ffffff; --ok: #1a7f4b; --warn: #a15c00; --bad: #b3261e; --code: #eef1f5;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1419; --panel: #172029; --text: #e6ebf1; --muted: #9aa7b6; --line: #2a3644;
+      --accent: #5b9bd5; --accent-text: #0b1117; --ok: #4cc38a; --warn: #e0a040; --bad: #f2776f; --code: #1f2b37;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.5 -apple-system, "Segoe UI", Roboto, sans-serif; }
+  header { padding: 18px 16px 6px; max-width: 1100px; margin: 0 auto; }
+  h1 { margin: 0; font-size: 20px; }
+  .sub { color: var(--muted); font-size: 13px; margin-top: 2px; }
+  main { max-width: 1100px; margin: 0 auto; padding: 8px 16px 40px; display: grid; gap: 16px; grid-template-columns: 300px 1fr; }
+  @media (max-width: 800px) { main { grid-template-columns: 1fr; } }
+  section { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 14px; }
+  h2 { font-size: 14px; margin: 0 0 10px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+  button { font: inherit; cursor: pointer; border: 1px solid var(--accent); background: var(--accent); color: var(--accent-text); border-radius: 8px; padding: 7px 14px; }
+  button.secondary { background: transparent; color: var(--accent); }
+  button:disabled { opacity: .5; cursor: default; }
+  textarea { width: 100%; font: inherit; color: var(--text); background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 10px; resize: vertical; min-height: 70px; }
+  .docs { list-style: none; margin: 10px 0 0; padding: 0; display: grid; gap: 6px; }
+  .docs button { width: 100%; text-align: left; background: var(--bg); color: var(--text); border: 1px solid var(--line); }
+  .docs button.active { border-color: var(--accent); box-shadow: inset 3px 0 0 var(--accent); }
+  .docs small { display: block; color: var(--muted); }
+  .note { font-size: 13px; color: var(--warn); margin: 8px 0 0; }
+  .muted { color: var(--muted); font-size: 13px; }
+  .badge { display: inline-block; padding: 2px 9px; border-radius: 99px; font-size: 12px; font-weight: 600; border: 1px solid currentColor; }
+  .badge.answered { color: var(--ok); } .badge.insufficient_evidence { color: var(--warn); } .badge.failed { color: var(--bad); } .badge.running, .badge.queued { color: var(--muted); }
+  .card { border: 1px solid var(--line); border-radius: 10px; padding: 12px; margin-top: 12px; }
+  .answer { font-size: 16px; margin: 8px 0; white-space: pre-wrap; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+  .chip { border: 1px solid var(--line); background: var(--code); color: var(--text); border-radius: 6px; padding: 2px 8px; font-size: 12px; }
+  button.chip { cursor: pointer; }
+  .meta { display: flex; flex-wrap: wrap; gap: 14px; color: var(--muted); font-size: 12px; margin-top: 8px; }
+  details { margin-top: 10px; }
+  summary { cursor: pointer; color: var(--accent); font-size: 13px; }
+  .step { border-left: 3px solid var(--line); padding: 2px 0 2px 10px; margin: 8px 0; font-size: 13px; }
+  .step.err { border-color: var(--bad); }
+  .step b { font-family: ui-monospace, Menlo, monospace; }
+  pre { background: var(--code); border-radius: 8px; padding: 10px; overflow: auto; max-height: 320px; white-space: pre-wrap; font-size: 12px; margin: 6px 0 0; }
+  .err-text { color: var(--bad); }
+  .hidden { display: none; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Document Agent</h1>
+  <div class="sub">Upload a PDF, ask a question. The agent searches and reads pages, then answers with page citations or says the evidence is insufficient. Text layers only (no OCR).</div>
+  <div class="sub" id="health"></div>
+</header>
+<main>
+  <section>
+    <h2>Documents</h2>
+    <input type="file" id="file" accept="application/pdf" class="hidden">
+    <button id="upload">Upload PDF</button>
+    <div id="uploadStatus" class="muted"></div>
+    <ul class="docs" id="docs"></ul>
+  </section>
+  <section>
+    <h2 id="docTitle">Ask a question</h2>
+    <div id="docNote" class="note hidden"></div>
+    <textarea id="question" placeholder="Select a document, then ask a question about it" maxlength="1000"></textarea>
+    <div style="margin-top:8px"><button id="ask" disabled>Ask</button></div>
+    <div id="results"></div>
+    <div id="pageView" class="card hidden"></div>
+  </section>
+</main>
+<script>
+const $ = (id) => document.getElementById(id);
+let currentDoc = null;
+const pollers = {};
+
+function el(tag, props = {}, ...children) {
+  const node = document.createElement(tag);
+  Object.assign(node, props);
+  for (const c of children) node.append(c);
+  return node;
+}
+
+async function api(path, options) {
+  const res = await fetch(path, options);
+  const body = await res.json().catch(() => ({}));
+  if (!res.ok) throw new Error(body.detail || res.statusText);
+  return body;
+}
+
+async function refreshHealth() {
+  try {
+    const h = await api('/health');
+    $('health').textContent = `Spent $${h.spent_usd.toFixed(3)} of $${h.cap_usd.toFixed(2)} cap` + (h.api_key_configured ? '' : ' · OPENAI_API_KEY is not set');
+  } catch (e) { $('health').textContent = ''; }
+}
+
+async function loadDocs() {
+  const docs = await api('/documents');
+  const list = $('docs');
+  list.replaceChildren();
+  for (const d of docs) {
+    const b = el('button', { className: d.id === currentDoc?.id ? 'active' : '' }, d.name, el('small', {}, `${d.page_count} pages` + (d.low_text_pages ? ` · ${d.low_text_pages} with little text` : '')));
+    b.onclick = () => selectDoc(d);
+    list.append(el('li', {}, b));
+  }
+}
+
+async function selectDoc(d) {
+  currentDoc = await api(`/documents/${d.id}`);
+  $('docTitle').textContent = currentDoc.name;
+  $('question').placeholder = 'Ask a question about this document';
+  $('ask').disabled = false;
+  const note = $('docNote');
+  note.textContent = currentDoc.warnings.join(' ');
+  note.classList.toggle('hidden', !currentDoc.warnings.length);
+  $('pageView').classList.add('hidden');
+  $('results').replaceChildren();
+  for (const t of (await api(`/documents/${d.id}/tasks`)).reverse()) renderTask(t);
+  loadDocs();
+}
+
+$('upload').onclick = () => $('file').click();
+$('file').onchange = async () => {
+  const file = $('file').files[0];
+  if (!file) return;
+  $('uploadStatus').textContent = `Reading ${file.name}…`;
+  try {
+    const doc = await api(`/documents?name=${encodeURIComponent(file.name)}`, { method: 'POST', headers: { 'Content-Type': 'application/pdf' }, body: await file.arrayBuffer() });
+    $('uploadStatus').textContent = doc.existing ? 'Already uploaded.' : `Added ${doc.page_count} pages.`;
+    await loadDocs();
+    await selectDoc(doc);
+  } catch (e) { $('uploadStatus').textContent = ''; $('uploadStatus').append(el('span', { className: 'err-text' }, e.message)); }
+  $('file').value = '';
+};
+
+$('ask').onclick = async () => {
+  const question = $('question').value.trim();
+  if (!question || !currentDoc) return;
+  $('ask').disabled = true;
+  try {
+    const { task_id } = await api(`/documents/${currentDoc.id}/questions`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ question }) });
+    $('question').value = '';
+    watchTask(task_id);
+  } catch (e) { alert(e.message); }
+  $('ask').disabled = false;
+};
+
+function watchTask(id) {
+  const tick = async () => {
+    const t = await api(`/tasks/${id}`);
+    renderTask(t);
+    refreshHealth();
+    if (t.status === 'queued' || t.status === 'running') pollers[id] = setTimeout(tick, 1000);
+  };
+  tick();
+}
+
+function summarizeStep(step) {
+  if (step.event) return ['note', 'The model replied without calling a tool; it was told to continue.', null, false];
+  const a = step.arguments || {}, r = step.result || {};
+  const failed = !!r.error;
+  let call = step.tool;
+  if (step.tool === 'search_document') call += `(“${a.query}”)`;
+  else if (step.tool === 'read_pages') call += `(${(a.pages || []).join(', ')})`;
+  else if (step.tool === 'calculate') call += `(${a.op}, ${(a.operands || []).length} numbers)`;
+  else if (step.tool === 'finish') call += `(${a.status})`;
+  let out = '';
+  if (failed) out = `${r.error}: ${r.message || ''}`;
+  else if (r.results) out = r.results.map((h) => `p.${h.page}`).join('  ') + (r.duplicate ? '  (repeated search)' : '');
+  else if (r.pages) out = r.pages.map((p) => (p.error ? `p.${p.page} ${p.error}` : `p.${p.page} (${p.chars} chars${p.truncated ? ', truncated' : ''})`)).join('  ');
+  else if (r.expression) out = `${r.expression} = ${r.result}`;
+  else if (r.ok) out = 'accepted';
+  return [call, out, step, failed];
+}
+
+function renderTrace(trace) {
+  const box = el('div');
+  for (const s of trace) {
+    const [call, out, , failed] = summarizeStep(s);
+    const row = el('div', { className: 'step' + (failed ? ' err' : '') });
+    row.append(el('b', {}, call));
+    if (out) row.append(el('div', { className: failed ? 'err-text' : 'muted' }, out));
+    if (s.result && s.result.results) for (const h of s.result.results.slice(0, 5)) row.append(el('div', { className: 'muted' }, `p.${h.page}: ${h.snippet}`));
+    box.append(row);
+  }
+  return box;
+}
+
+function renderTask(t) {
+  let card = document.getElementById(`task-${t.id}`);
+  if (!card) { card = el('div', { className: 'card', id: `task-${t.id}` }); $('results').prepend(card); }
+  card.replaceChildren();
+  card.append(el('div', { className: 'muted' }, 'Question'), el('div', {}, t.question));
+  const r = t.result;
+  const final = r && r.final;
+  const state = t.status === 'done' ? (final ? final.status : 'failed') : t.status;
+  const label = { answered: 'Answered', insufficient_evidence: 'Insufficient evidence', failed: 'Failed', running: 'Working…', queued: 'Queued' }[state] || state;
+  card.append(el('div', { style: 'margin-top:8px' }, el('span', { className: `badge ${state}` }, label)));
+  if (t.status === 'failed' || (t.status === 'done' && r && r.error && !final?.answer && final?.status !== 'insufficient_evidence')) {
+    card.append(el('div', { className: 'err-text' }, t.error || r.error));
+  }
+  if (final && final.status === 'answered') card.append(el('div', { className: 'answer' }, final.answer));
+  if (final && final.status === 'insufficient_evidence') card.append(el('div', { className: 'muted' }, 'The agent did not find enough evidence in the pages it read to answer.'));
+  if (final && final.cited_pages.length) {
+    const chips = el('div', { className: 'chips' }, el('span', { className: 'muted' }, 'Cited pages:'));
+    for (const p of final.cited_pages) { const c = el('button', { className: 'chip' }, `p.${p}`); c.onclick = () => showPage(t.doc_id, p); chips.append(c); }
+    card.append(chips);
+  }
+  if (r) {
+    const m = el('div', { className: 'meta' });
+    for (const text of [`${r.tool_calls} tool calls`, `${r.pages_read.length} pages read`, `${r.latency_s.toFixed(1)} s`, `$${r.cost_usd.toFixed(4)}`, `stopped: ${r.stop_reason}`]) m.append(el('span', {}, text));
+    card.append(m);
+    if (r.trace.length) { const d = el('details', {}, el('summary', {}, `Agent trace (${r.trace.length} steps)`), renderTrace(r.trace)); card.append(d); }
+  }
+}
+
+async function showPage(docId, page) {
+  const box = $('pageView');
+  try {
+    const p = await api(`/documents/${docId}/pages/${page}`);
+    box.replaceChildren(el('div', { className: 'muted' }, `Page ${page} text`), el('pre', {}, p.text || '(no text on this page)'));
+    box.classList.remove('hidden');
+    box.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  } catch (e) { box.textContent = e.message; box.classList.remove('hidden'); }
+}
+
+refreshHealth();
+loadDocs();
+</script>
+</body>
+</html>
