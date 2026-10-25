@@ -259,9 +259,9 @@ src/egdi/v2/
   - 完成：`src/egdi/v2/service/{store,api}.py`、`ui.html`、`tests/test_v2_service.py`（9 条）；V1 + V2 共 445 条测试通过
   - 接口：`POST /documents?name=`（原始 PDF 字节，无需 multipart；按 sha256 去重；超过 50MB / 400 页或不是 PDF 则拒绝；缺文字层的页给出警告）、`GET /documents`、`GET /documents/{id}/pages/{n}`、`POST /documents/{id}/questions`（后台运行冻结的 Agent，返回 task_id）、`GET /tasks/{id}`（答案、引用页、完整工具轨迹、费用）、`GET /health`
   - 安全与成本：仅绑定 127.0.0.1、无认证（本地演示）；服务级总费用上限（默认 USD 5，重启后从 SQLite 累计恢复），超限返回 402；Agent 单题仍受冻结的 USD 0.10 上限约束；服务重启会把未完成任务标记为失败
-  - 已验证：本地启动，上传 42 页真实 PDF 约 0.5 秒，页面渲染与失败提示正常（未设置 `OPENAI_API_KEY` 时提问得到明确报错，未产生费用）；**尚未用真实 API 跑过一次服务端提问**（预计约 USD 0.02–0.05，待作者确认）
+  - 已验证：本地启动，上传 42 页真实 PDF 约 0.5 秒；**用真实 API 端到端提了 3 个问题**（服务上限 USD 0.30，实际花费 USD 0.055）：单页事实题答对并引用第 5 页（USD 0.008）；多页综合题读 7 页、引用 5 页（USD 0.028）；文档里没有的价格题正确拒答（USD 0.019）。页面显示答案、引用页（可点开原文）、完整工具轨迹正常；缺文字层的页有警告；未设置 key 时提问有明确报错
   - 已知局限：任务中途失败时已花的费用不写入 SQLite（只记录成功任务的费用），重启后服务级累计会略低估；只读文字层，扫描件需要 OCR（本轮不做）
   - 启动：`PYTHONPATH=src .venv/bin/python -m egdi.v2.service.api --max-total-usd 1`，浏览器打开 http://127.0.0.1:8000
 - [ ] 第 11 天：README 首页重写（V1 + V2 一页讲清）、演示录屏；简历条目草稿见 `resume/V2_resume_bullets.md`
 
-**下一步：** 用真实 API 在服务里提 1–3 个问题做端到端确认并截图（需作者确认费用），然后第 11 天重写 README。
+**下一步：** 第 11 天。重写 README 首页（V1 + V2 一页讲清，含最终结果表、服务启动方式、诚实的局限）；录屏演示由作者本人完成（需要看屏幕）。

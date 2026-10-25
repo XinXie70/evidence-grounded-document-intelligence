@@ -162,6 +162,13 @@ function watchTask(id) {
   tick();
 }
 
+function answerNode(text) {
+  // Model answers often contain **bold**; build text nodes only (no innerHTML).
+  const node = el('div', { className: 'answer' });
+  text.split(/\*\*(.+?)\*\*/g).forEach((part, i) => node.append(i % 2 ? el('strong', {}, part) : document.createTextNode(part)));
+  return node;
+}
+
 function summarizeStep(step) {
   if (step.event) return ['note', 'The model replied without calling a tool; it was told to continue.', null, false];
   const a = step.arguments || {}, r = step.result || {};
@@ -206,7 +213,7 @@ function renderTask(t) {
   if (t.status === 'failed' || (t.status === 'done' && r && r.error && !final?.answer && final?.status !== 'insufficient_evidence')) {
     card.append(el('div', { className: 'err-text' }, t.error || r.error));
   }
-  if (final && final.status === 'answered') card.append(el('div', { className: 'answer' }, final.answer));
+  if (final && final.status === 'answered') card.append(answerNode(final.answer));
   if (final && final.status === 'insufficient_evidence') card.append(el('div', { className: 'muted' }, 'The agent did not find enough evidence in the pages it read to answer.'));
   if (final && final.cited_pages.length) {
     const chips = el('div', { className: 'chips' }, el('span', { className: 'muted' }, 'Cited pages:'));
