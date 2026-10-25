@@ -26,6 +26,16 @@ class SearchReadTests(unittest.TestCase):
         for bad in ({"query": ""}, {"query": "a", "k": 6}, {"query": "a", "k": 0}, {"query": "a", "k": True}, {}):
             self.assertIn("error", t.execute("search_document", bad), bad)
 
+    def test_repeated_search_is_flagged_and_returns_the_same_pages(self):
+        t = box()
+        first = t.execute("search_document", {"query": "Revenue  2023?", "k": 2})
+        again = t.execute("search_document", {"query": "revenue 2023", "k": 2})
+        self.assertNotIn("duplicate", first)
+        self.assertTrue(again["duplicate"])
+        self.assertEqual(again["results"], first["results"])
+        other = t.execute("search_document", {"query": "revenue 2023", "k": 3})  # different k is a new search
+        self.assertNotIn("duplicate", other)
+
     def test_read_pages_out_of_range_and_limits(self):
         t = box()
         out = t.execute("read_pages", {"pages": [1, 9]})["pages"]

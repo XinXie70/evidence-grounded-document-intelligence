@@ -23,16 +23,21 @@ from .answer import ANSWER_RULES, INSUFFICIENT, normalize_final, validate_final
 from .llm import LlmClient, to_openai_tools
 from .tools import TOOL_SCHEMAS, ToolBox
 
-INSTRUCTIONS = (
-    "You answer a question about one PDF document by searching and reading it with tools.\n"
-    "- search_document finds candidate pages; snippets are only hints, so read_pages before "
-    "relying on a page. If a search misses, rephrase or search for a different part of the question.\n"
-    "- Questions may need several pages (for example a figure on one page and a definition on "
-    "another). Keep going until you have everything the answer needs.\n"
-    "- Use calculate for arithmetic, quoting each number exactly from a page you have read.\n"
-    "- When you have enough, or when after searching the document clearly does not contain the "
-    "answer, call finish. Do not guess.\n" + ANSWER_RULES
-)
+def build_instructions(limits: "AgentLimits") -> str:
+    return (
+        "You answer a question about one PDF document by searching and reading it with tools.\n"
+        "- search_document finds candidate pages; snippets are only hints, so read_pages before "
+        "relying on a page. If a search misses, try different words; repeating a search returns the same pages.\n"
+        "- Questions may need several pages (for example a figure on one page and a definition on "
+        "another). Keep going until you have everything the answer needs.\n"
+        "- Use calculate for arithmetic, quoting each number exactly from a page you have read.\n"
+        f"- You have at most {limits.max_tool_calls} tool calls (search, read and calculate each count; finish does not). "
+        "Every tool result shows tool_calls_remaining. Plan your calls, and issue several in one step only when "
+        "they are independent. Calls beyond the budget are refused.\n"
+        "- When you have enough, or when after searching the document clearly does not contain the "
+        "answer, call finish. Do not guess.\n" + ANSWER_RULES
+    )
+
 
 FORCE_MESSAGE = (
     "Your tool or budget limit has been reached ({reason}). Call finish now: answer from the pages "
@@ -43,11 +48,11 @@ NUDGE_MESSAGE = "Continue with a tool call. When you are done, call finish with 
 
 @dataclass(frozen=True)
 class AgentLimits:
-    max_tool_calls: int = 6
+    max_tool_calls: int = 8  # was 6 in the plan; the one permitted development-time adjustment
     max_input_tokens: int = 30_000  # cumulative over the question's model calls
     max_cost_usd: float = 0.10
     max_seconds: float = 120.0
-    max_model_calls: int = 10
+    max_model_calls: int = 12
 
 
 class AgentState(TypedDict, total=False):
@@ -138,7 +143,7 @@ class Agent:
         reply = self.llm.respond(
             label=f"A:{state['label']}:{state['model_calls'] + 1}",
             input=state["items"],
-            instructions=INSTRUCTIONS,
+            instructions=build_instructions(self.limits),
             tools=tools,
             tool_choice=tool_choice,
             include=["reasoning.encrypted_content"],
@@ -186,7 +191,9 @@ class Agent:
                 calls_used += counts
             else:
                 result = box.execute(call.name, arguments)
-                calls_used += counts
+                calls_used += counts and not result.get("duplicate")
+            if counts:
+                result["tool_calls_remaining"] = max(self.limits.max_tool_calls - calls_used, 0)
             trace.append(_trace_entry(call.name, arguments, result))
             items.append({"type": "function_call_output", "call_id": call.call_id, "output": json.dumps(result, ensure_ascii=False)})
             if call.name == "finish" and result.get("ok"):
@@ -222,5 +229,5 @@ def _trace_entry(name: str, arguments: Any, result: dict[str, Any]) -> dict[str,
     """Compact record of a tool call; page text is summarised rather than stored twice."""
     shown = result
     if name == "read_pages" and "pages" in result:
-        shown = {"pages": [{k: v for k, v in p.items() if k != "text"} | ({"chars": len(p["text"])} if "text" in p else {}) for p in result["pages"]]}
+        shown = result | {"pages": [{k: v for k, v in p.items() if k != "text"} | ({"chars": len(p["text"])} if "text" in p else {}) for p in result["pages"]]}
     return {"tool": name, "arguments": arguments, "result": shown}

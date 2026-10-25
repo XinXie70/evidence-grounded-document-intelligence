@@ -141,6 +141,23 @@ class AgentTests(unittest.TestCase):
                         AgentLimits(max_model_calls=3))
         self.assertEqual(result["stop_reason"], "model_call_limit")
 
+    def test_results_show_remaining_budget_and_duplicates_are_free(self):
+        result, llm = run([
+            [call("search_document", "1", query="revenue")],
+            [call("search_document", "2", query="Revenue")],  # duplicate: not charged
+            [call("read_pages", "3", pages=[1])],
+            [finish("f", pages=(1,))],
+        ], AgentLimits(max_tool_calls=3))
+        remaining = [t["result"]["tool_calls_remaining"] for t in result["trace"] if t.get("tool") != "finish"]
+        self.assertEqual(remaining, [2, 2, 1])
+        self.assertTrue(result["trace"][1]["result"]["duplicate"])
+        self.assertEqual(result["tool_calls"], 2)
+        self.assertEqual(result["stop_reason"], "finished")
+
+    def test_instructions_state_the_tool_budget(self):
+        _, llm = run([[finish("f", status="insufficient_evidence", answer=None, pages=())]], AgentLimits(max_tool_calls=5))
+        self.assertIn("at most 5 tool calls", llm.requests[0]["instructions"])
+
     def test_requests_ask_for_encrypted_reasoning_and_all_tools(self):
         _, llm = run([[finish("f", status="insufficient_evidence", answer="", pages=())]])
         first = llm.requests[0]

@@ -10,6 +10,7 @@ correctness is deliberately not checked here; the evaluation judges that.
 from __future__ import annotations
 
 import math
+import re
 from typing import Any, Protocol
 
 from egdi.text import normalize_whitespace
@@ -130,6 +131,7 @@ class ToolBox:
         self.document = document
         self.max_page_chars = max_page_chars
         self.read_text: dict[int, str] = {}  # page -> text exactly as shown to the model
+        self._searches: dict[tuple[str, int], list[dict[str, Any]]] = {}
         self.final: dict[str, Any] | None = None
 
     @property
@@ -157,7 +159,15 @@ class ToolBox:
             return _error("bad_query", "query must be a non-empty string")
         if not _is_int(k) or not 1 <= k <= MAX_SEARCH_K:
             return _error("bad_k", f"k must be an integer from 1 to {MAX_SEARCH_K}")
-        return {"results": self.document.search(query, k)}
+        key = (" ".join(re.findall(r"\w+", query.lower())), k)
+        if key in self._searches:  # same words again: answer from memory, and do not charge a call
+            return {
+                "results": self._searches[key],
+                "duplicate": True,
+                "note": "this repeats an earlier search and returns the same pages; read those pages or search for something different",
+            }
+        self._searches[key] = self.document.search(query, k)
+        return {"results": self._searches[key]}
 
     def read_pages(self, pages: Any) -> dict[str, Any]:
         if not isinstance(pages, list) or not pages or not all(_is_int(p) for p in pages):
