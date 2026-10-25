@@ -217,4 +217,9 @@ src/egdi/v2/
   - 已知局限（不修）：读对页仍推理/理解错（如 `ed8182cd::q4`）；标准答案有歧义；不可回答题标签噪声
   - 公平性备注：基线 B0/B1 的提示词未调优；Agent 的提示词经过开发期修复。最终报告需写明
 
-**下一步：** 第 7 天。写 `eval/judge.py`（复用 V1 冻结的语义与证据支持评审）和 `eval/report.py`（配对 Bootstrap）；在开发集上跑通；在验证集（`development_calibration`，未用于调参）上确认设置；人工抽 30 条核对评审；冻结（tag `v2-freeze`）并把第 5 节写成最终版。
+- [ ] 第 7 天（进行中）：`eval/judge.py`、`eval/report.py`、`tests/test_v2_judge_report.py` 已写好，**测试尚未运行**（当时 Bash 工具的安全检查暂时不可用）
+  - `judge.py`：提示词与配置直接复用 V1 `locked_test_{semantic,support}_judge_v0.json` 和 `build_judge_request`；计分规则照搬 V1：可回答且作答 → 语义评审；可回答却弃权 → 错；不可回答则弃权为对；系统故障（报错、引用页非法、`no_valid_finish`）→ 错；`grounded_correct = task_correct 且证据被支持`。偏差：证据支持评审只在 `task_correct` 为真时调用（否则 `grounded_correct` 必为假），因此答错的题 `supported` 记为 None；评审结果按（系统，题号，类型）缓存，重跑不重复花钱
+  - `report.py`：任务准确率（全部题为分母，对可回答题弃权算错）、跨页 / 单页 / 不可回答拒答 / 已作答准确率 / 证据支持准确率 / 覆盖率 / 费用 / 延迟 / 工具次数 / 读页数；A−B0、A−B1、B1−B0 的**按文档配对 Bootstrap**（10,000 次，种子沿用 V1），两个系统只比较共同题目
+  - 待办：跑测试 → 评审开发集结果（B0、B1、Agent 第 2 轮）→ 抽 30 条核对评审 → 验证集跑三个系统并评审 → 冻结
+
+**下一步：** 运行第 7 天新增测试；干跑 `judge.py` 估算评审费用；确认预算后评审开发集，再在验证集上确认设置。
