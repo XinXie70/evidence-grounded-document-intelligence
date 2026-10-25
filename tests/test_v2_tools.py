@@ -123,6 +123,13 @@ class FinishTests(unittest.TestCase):
         self.assertEqual(out, {"ok": True})
         self.assertEqual(t.final["status"], "insufficient_evidence")
 
+    def test_insufficient_evidence_accepts_null_answer(self):
+        t = box()
+        out = t.execute("finish", {"status": "insufficient_evidence", "answer": None, "cited_pages": []})
+        self.assertEqual(out, {"ok": True})
+        self.assertIsNone(t.final["answer"])
+        self.assertEqual(t.execute("finish", {"status": "answered", "answer": None, "cited_pages": [1]})["error"], "bad_answer")
+
 
 class SchemaTests(unittest.TestCase):
     def test_schemas_cover_exactly_the_tools(self):

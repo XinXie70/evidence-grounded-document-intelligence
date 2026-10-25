@@ -91,7 +91,7 @@ TOOL_SCHEMAS: list[dict[str, Any]] = [
             "type": "object",
             "properties": {
                 "status": {"type": "string", "enum": ["answered", "insufficient_evidence"]},
-                "answer": {"type": "string"},
+                "answer": {"type": ["string", "null"], "description": "null when status is insufficient_evidence"},
                 "cited_pages": {"type": "array", "items": {"type": "integer"}},
             },
             "required": ["status", "answer", "cited_pages"],
@@ -232,8 +232,10 @@ class ToolBox:
     def finish(self, status: Any, answer: Any, cited_pages: Any) -> dict[str, Any]:
         if status not in ("answered", "insufficient_evidence"):
             return _error("bad_status", "status must be 'answered' or 'insufficient_evidence'")
-        if not isinstance(answer, str) or (status == "answered" and not answer.strip()):
+        if status == "answered" and (not isinstance(answer, str) or not answer.strip()):
             return _error("bad_answer", "an answered task needs a non-empty answer string")
+        if status == "insufficient_evidence" and answer is not None and not isinstance(answer, str):
+            return _error("bad_answer", "answer must be a string or null")
         if not isinstance(cited_pages, list) or not all(_is_int(p) for p in cited_pages):
             return _error("bad_cited_pages", "cited_pages must be a list of integers")
         if status == "answered" and not cited_pages:
@@ -243,7 +245,7 @@ class ToolBox:
             return _error("cited_page_not_read", f"pages {unread} were never read; read them or remove them")
         self.final = {
             "status": status,
-            "answer": answer.strip(),
+            "answer": answer.strip() if isinstance(answer, str) else None,
             "cited_pages": sorted(set(cited_pages)),
         }
         return {"ok": True}

@@ -168,14 +168,14 @@ src/egdi/v2/
   - 冒烟：开发集前 15 题，真实 BGE，前 3 页至少命中一个证据页 11/15、全部证据页 8/15；每份文档建索引约 1–7 秒
   - 决定：`k` 超出 1–5、一次读超过 3 页都返回结构化错误而不是静默截断；`calculate` 的 quote 对照“模型实际看到的（已截断）文本”；`finish` 只校验引用页是否读过，不比对答案数字
   - 遗留：tools.py 的 schema 是与厂商无关的 `{name, description, parameters}`，第 3 天的 `llm.py` 负责包成 OpenAI 格式
-- [ ] 第 3 天（进行中）：`llm.py`、`answer.py`、`baseline.py`、`eval/run.py`、`configs/v2_llm.json` 已写好，27 条 V2 测试通过；B0/B1 的 30 题付费运行**等待作者确认费用与 API key**
-  - 预估（真实检索结果 + 每题输出按 600 token 的保守假设）：B0 约 USD 0.33，B1 约 USD 0.44；V1 实测约 0.006 美元/题，预计实际花费 B0 约 0.2、B1 约 0.3
-  - 命令（默认只预估，不发请求）：`PYTHONPATH=src .venv/bin/python -m egdi.v2.eval.run --system B0 --max-usd 0.40`；加 `--execute` 才真正调用
-  - 设计：所有请求都经过 `LlmClient`，每次请求前检查费用上限，请求日志写 `results/v2_dev/requests.jsonl`；失败的请求保留记录；超限时整次运行停止，不逐题报错
+- [x] 第 3 天（2026-10-25）：`llm.py`、`answer.py`、`baseline.py`、`eval/run.py`、`configs/v2_llm.json`；B0/B1 在 30 道开发题上各跑一次
+- [ ] 第 4–5 天（进行中）：`agent.py`（LangGraph：`call_model` → `run_tools` → … → `force_finish`）完成并在真实 API 下跑通
+  - 抽样：`development_tune` 按哈希固定抽 30 题（29 可回答 + 1 不可回答，其中 18 道跨页），seed `v2-dev`；结果在 `results/v2_dev/`
+  - 费用（实际）：B0 USD 0.159、B1 0.284、Agent 0.477（另有冒烟 2 题 0.045），合计约 0.97，低于预估；每题 B0 0.005 / B1 0.009 / Agent 0.016
+  - 初步观察（人工对照标准答案，不是正式评审，30 题不足以下结论）：大致正确率 B0 20/30、B1 24/30、Agent 24/30。证据页全部被读到的可回答题：B0 19/29、B1 26/29、Agent 22/29。Agent 比 B1 多答对 2 题（含 B1 弃权的那题），少答对 2 题（含一道被过度计算的题）
+  - Agent 行为：平均 3.9 次模型调用、2.8 页已读、8 秒；22 题自行结束，8 题触发工具上限；`bad_answer` 3 次、`tool_budget_exhausted` 3 次（并行调用超限）、`too_many_pages` 1 次
+  - 已修（契约 bug，不影响结论）：共用规则让模型弃权时写 `answer: null`，而 `finish` 的 schema 要求字符串并拒绝 null，导致 3 次正确弃权被记成 `no_valid_finish`。已改为弃权时允许 null，并加测试
+  - 已知局限（暂不修，第 7 节条件不满足）：模型一次要读 4 页被拒（1 题）；并行搜索会一次耗掉多次工具预算（仅 1 份文档观察到）
+  - 样本局限：30 题里只有 1 道不可回答题，拒答能力尚无信息；第 6 天需要补跑全部 12 道开发不可回答题
 
-- [ ] 第 4–5 天（进行中）：`agent.py` 骨架完成（LangGraph：`call_model` → `run_tools` → … → `force_finish`），`eval/run.py` 支持 `--system A`；`tests/test_v2_agent.py` 10 条（脚本化假模型）通过；V2 代码共约 1,100 行
-  - 循环规则：每次模型调用前检查 6 次工具 / 累计 30k 输入 token / USD 0.10 / 120 秒 / 10 次模型调用；超限则只给一次“只能调用 finish”的强制回合；强制回合仍不 finish 则记为弃权并标 `error=no_valid_finish`
-  - 未验证：真实 API 下 `store=false` 回传 function_call 与加密推理项的行为（测试只用假模型）；第一次付费只跑 1–2 题冒烟
-  - 费用：Agent 30 题预计约 USD 1.5，单题硬上限 0.10，最坏 3.0，**运行前需作者确认**
-
-**下一步：** 作者运行 B0/B1（见上）；然后 Agent 先冒烟 2 题，再跑 30 题并逐条看工具轨迹。
+**下一步：** 第 6 天。在 60 道开发题上做失败归类（人工看 Agent 轨迹）；最多 2 轮通用修复。
