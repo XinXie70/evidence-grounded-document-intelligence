@@ -6,27 +6,32 @@
 
 A reproducible research system for answering questions over long PDFs **with page-level evidence and an explicit option to abstain**.
 
-**Version status:** V1 evaluation is complete. V2 is a planned interactive document Agent extension;
-its features and results are not implemented or claimed yet. The
-[V2 technical proposal and progress log (Chinese)](V2_PROPOSAL.md) records scope, prompt engineering,
-tool execution, application milestones, acceptance criteria, and the change process.
+**Version status:** **V1** (retrieve-then-answer, locked-test evaluated) and **V2** (a search-and-read
+agent compared with fixed pipelines, evaluated once on held-out documents after a code freeze) are both
+complete. V2 results are reported in [`experiments/V2_FINAL_REPORT.md`](experiments/V2_FINAL_REPORT.md);
+the plan, rules and progress log are in [`V2_PLAN.md`](V2_PLAN.md) (Chinese).
 
 ## At a glance
 
+- **V2, held-out evaluation (103 documents, 370 questions, run once after freezing the code):** on
+  questions that need several pages, the search-and-read agent reaches **72.4% task accuracy vs 28.1%
+  for a one-shot 3-page pipeline** (+44.3 points, 95% CI [36.3, 52.4]) and 41.9% for a one-shot 6-page
+  pipeline. The gain comes from reading the right pages, not from better reasoning; the agent is
+  **worse at abstaining** and costs 2-3.5x more per question. See [V2](#v2-a-search-and-read-agent-vs-fixed-pipelines).
+- **V1, held-out evaluation (730 questions, 156 documents):** 59.73% coverage, 65.14% task accuracy
+  among answered questions, 60.55% strict grounded accuracy among answered questions.
 - **273 PDFs / 14,014 pages** validated, checksummed, and split by document.
 - **239 answerable development questions** used for retrieval evaluation.
 - **77.41% Complete Evidence Recall@10** with BM25 + dense reciprocal-rank fusion, up from
   70.71% for the BM25 baseline.
 - **66.67% Complete Evidence Recall@3** on the 63-question visual slice after question-conditioned
   visual reranking, up from 55.56% for the same RRF candidates.
-- **379 current deterministic tests** covering data isolation, retrieval, evidence packaging,
-  grounding, citations, abstention, cost controls, failure recovery, and the public demo. The
-  frozen V1 manifest contained 377 tests before locked-test access.
+- **445 deterministic tests** (379 for V1, 66 for V2) covering data isolation, retrieval, evidence
+  packaging, grounding, citations, abstention, cost controls, failure recovery, the agent loop and tools,
+  the judge and bootstrap code, the web service, and the public demo. The frozen V1 manifest contained
+  377 tests before locked-test access.
 - **132-question document-isolated calibration completed**; the final answer/abstain rule and
   68-component system manifest are frozen before test access.
-- **One-time locked test completed:** 730 questions from 156 untouched documents, with **59.73%
-  coverage**, **65.14% task accuracy among answered questions**, and **60.55% strict grounded
-  accuracy among answered questions**.
 
 ## Project guide
 
@@ -40,8 +45,104 @@ tool execution, application milestones, acceptance criteria, and the change proc
   omit `--summary-only` to inspect frozen success, abstention, and failure examples.
 - **Experiment provenance:** use the [experiment index](experiments/README.md) to trace individual
   design decisions and retained negative results.
-- **V2 development:** see the [technical proposal and current next step](V2_PROPOSAL.md) for the
-  planned application and Agent extension. Results below describe V1.
+- **V2 (agent vs fixed pipelines):** read the [V2 section](#v2-a-search-and-read-agent-vs-fixed-pipelines)
+  below, then the [V2 final report](experiments/V2_FINAL_REPORT.md). The sections after it describe V1.
+
+## V2: a search-and-read agent vs fixed pipelines
+
+V1 answers from a fixed set of retrieved pages. V2 asks a narrower, testable question: **on text and
+table questions over long PDFs, does an agent that can search again and read more pages beat a
+pipeline that retrieves once, and what does it cost?**
+
+Three systems share one model (`gpt-5.6-terra`, low reasoning effort), one retrieval index (V1's
+BM25 + BGE + RRF, per document) and one answer format:
+
+| System | What it does |
+|---|---|
+| **B0** | Retrieve once, read the top 3 pages, answer or abstain in one call |
+| **B1** | Same with the top 6 pages, so "searched again" is separated from "just read more" |
+| **A (agent)** | LangGraph loop with `search_document`, `read_pages`, `calculate`, `finish`; at most 8 tool calls, 30k input tokens, $0.10 and 120 s per question, then one forced final turn |
+
+```mermaid
+flowchart LR
+    Q[Question] --> M[Model]
+    M -->|search / read / calculate| T[Tools bound to one document]
+    T --> M
+    M -->|finish: answer + cited pages,<br/>or insufficient evidence| R[Result + full tool trace]
+    L[Limits: tools, tokens, cost, time] -.forces a final turn.-> M
+```
+
+The tool contract keeps the agent honest without judging its answers: `calculate` only accepts numbers
+quoted from pages it has already read, and `finish` only accepts citations to pages it has read.
+Search snippets are the part of a page that best matches the query, repeated searches are free, and
+every tool result shows the remaining budget.
+
+### Final result
+
+370 questions (343 answerable, of which 203 need several pages; 27 unanswerable) over 103 documents
+that V2 development never used. The design, primary comparison and scoring rules were written down in
+[`V2_PLAN.md`](V2_PLAN.md) before the run; the code was frozen at git tag `v2-freeze` with file hashes in
+[`data/fixtures/v2_freeze_manifest.json`](data/fixtures/v2_freeze_manifest.json); the final labels were
+read only after the freeze; each system was run once. Judging reuses V1's frozen semantic and
+evidence-support judges.
+
+| System | Task accuracy | Multi-page (203) | Single-page (140) | Unanswerable abstained (27) | Grounded accuracy | $/question |
+|---|---:|---:|---:|---:|---:|---:|
+| **A (agent)** | **71.9%** | **72.4%** | **81.4%** | 18.5% | **64.6%** | 0.0191 |
+| B1 (6 pages) | 53.5% | 41.9% | 71.4% | 48.1% | 48.6% | 0.0099 |
+| B0 (3 pages) | 44.1% | 28.1% | 67.1% | 44.4% | 39.2% | 0.0055 |
+
+Primary comparison (agent minus B0, multi-page questions, bootstrap over documents, 10,000 resamples):
+**+44.3 points, 95% CI [+36.3, +52.4]**. Against B1: +30.5 points, [+23.1, +38.2]. Task accuracy counts
+an abstention on an answerable question as wrong and a correct abstention on an unanswerable one as right.
+
+### What the result does and does not show
+
+- **The gain is about reading the right pages.** When every gold page was read, all three systems were
+  about equally accurate (83.3% agent, 81.3% B1, 84.6% B0). The agent read every gold page for 82% of
+  answerable questions; B1 for 59%, B0 for 45% (post-hoc analysis, not pre-registered).
+- **The agent is clearly worse at abstaining:** it correctly abstained on 5 of 27 unanswerable questions
+  (B1: 13 of 27). The labels on these questions are noisy and the sample is small, so this is a real
+  weakness of unknown size.
+- **Cost:** about 2x B1 and 3.5x B0 per question; $0.027 per correct answer vs $0.019 (B1).
+- **One run per system:** the intervals reflect which documents were sampled, not run-to-run model variance.
+- **Unequal tuning:** the agent had two rounds of development-time fixes; B0 and B1 prompts were not tuned.
+- **Not a clean unseen set:** V1 was evaluated on this document split, and the judge is the same model
+  family as the systems. One agent request failed on a network error and is counted as a failure.
+- English text and tables only: no OCR, charts or images in V2.
+
+Full tables, incidents and reproduction commands: [`experiments/V2_FINAL_REPORT.md`](experiments/V2_FINAL_REPORT.md).
+
+### Try the demo service
+
+Upload a PDF, ask a question, and see the answer, the cited pages and the agent's tool-by-tool trace.
+The service binds to `127.0.0.1`, has no authentication, and enforces a total spending cap that survives
+restarts.
+
+```bash
+export OPENAI_API_KEY=...   # your own key
+PYTHONPATH=src python -m egdi.v2.service.api --max-total-usd 1
+# then open http://127.0.0.1:8000
+```
+
+The service is a FastAPI app with SQLite storage (`src/egdi/v2/service/`). It reads the text layer only:
+pages without text are flagged, and questions that depend on them are answered as insufficient evidence.
+
+### V2 code map
+
+```text
+src/egdi/v2/index.py     per-document BM25 + dense + RRF retrieval with query-focused snippets
+src/egdi/v2/tools.py     the four tools, their schemas and validation
+src/egdi/v2/agent.py     LangGraph loop, limits and the forced final turn
+src/egdi/v2/baseline.py  B0 / B1
+src/egdi/v2/llm.py       model client, cost ledger with a hard cap, request log
+src/egdi/v2/eval/        question selection, runner, judge, paired document bootstrap report
+src/egdi/v2/service/     FastAPI + SQLite service and demo page
+```
+
+---
+
+*The sections below describe V1.*
 
 ## Development phases
 
@@ -265,12 +366,16 @@ Paid reasoning experiments require an `OPENAI_API_KEY`, an explicit execution fl
 configs/       Frozen experiment and model-call configurations
 data/          Non-content manifests and a synthetic schema fixture
 experiments/   Immutable selections, reports, scores, and failure analyses
-src/egdi/      Retrieval, evidence packaging, reasoning, reliability, and evaluation code
+src/egdi/      Retrieval, evidence packaging, reasoning, reliability, and evaluation code (V1)
+src/egdi/v2/   Search-and-read agent, baselines, evaluation and demo service (V2)
 tests/         Deterministic unit and integration tests
 ```
 
 Additional technical records:
 
+- [`experiments/V2_FINAL_REPORT.md`](experiments/V2_FINAL_REPORT.md) — V2 held-out result, incidents, limitations and reproduction.
+- [`V2_PLAN.md`](V2_PLAN.md) — V2 plan, pre-registered evaluation design, stop rules and daily progress log (Chinese).
+- [`V2_PROPOSAL.md`](V2_PROPOSAL.md) — the original V2 proposal, superseded by the leaner V2 plan above.
 - [`PORTFOLIO_STATUS.md`](PORTFOLIO_STATUS.md) — current completion status, headline results, stop line, and resume bullets.
 - [`experiments/README.md`](experiments/README.md) — capability-based navigation through the retained experiment history.
 - [`V1_COMPLETION_PROTOCOL.md`](V1_COMPLETION_PROTOCOL.md) — the preregistered path from visual development through final freeze.
@@ -290,6 +395,8 @@ Additional technical records:
 
 ## Limitations
 
+These are the **V1** limitations; the V2 caveats are listed in the [V2 section](#what-the-result-does-and-does-not-show).
+
 1. **Visual retrieval is page-level, not region-grounded.** Question-conditioned visual reranking
    improved the 63-question R1 tune slice, but it still scores full pages and does not prove which
    table cell, chart mark, or image region supports an answer. Four Complete@3 questions also
@@ -307,17 +414,23 @@ Additional technical records:
 
 ## Future work
 
-V1 and its locked-test result are complete and immutable. The current
-[V2 proposal](V2_PROPOSAL.md) prioritizes new-document QA, prompt engineering, bounded Agent tool
-execution, session state, and an application interface, with separate acceptance data. Earlier
-research ideas such as region-level grounding, document-global reasoning, and further confidence
-calibration are deferred candidates, not additional V2 commitments. Per-question patches,
-unconstrained full-document vision, and treating the completed locked test as unseen data remain
-excluded.
+V1 and its locked-test result, and V2 and its held-out result, are complete and immutable. The most
+useful next steps, ranked by what the evidence points to:
+
+1. **Make the agent abstain better.** It answers 22 of 27 unanswerable questions in the V2 evaluation.
+   A calibrated stop rule, or a verification step before answering, is the clearest improvement target.
+2. **Cheaper reading.** The advantage comes from reading the right pages; cheaper page selection could
+   keep the accuracy and cut the 2-3.5x cost.
+3. **Scanned and visual documents.** V2 reads text layers only; V1's OCR and visual routes are not wired into the agent.
+4. **Run-to-run variance and an independent judge check.** V2 ran each system once and used the same
+   model family as the judge.
+
+Per-question patches, unconstrained full-document vision, and treating the completed locked test as
+unseen data remain excluded.
 
 ## Honest project boundary
 
-This is a portfolio research MVP, not a production document platform. It does not claim that retrieval is solved, that six-case comparison validation estimates population performance, or that visual processing should be used on every page. Its contribution is a measured, failure-driven pipeline that makes retrieval gaps, grounding errors, abstentions, cost, and provenance observable instead of hiding them behind a single answer score.
+This is a portfolio research MVP, not a production document platform. It does not claim that retrieval is solved, that six-case comparison validation estimates population performance, or that visual processing should be used on every page. Its V2 contribution is a pre-registered, single-run comparison that shows where an agent helps (finding every needed page) and where it does not (abstaining, cost). Its V1 contribution is a measured, failure-driven pipeline that makes retrieval gaps, grounding errors, abstentions, cost, and provenance observable instead of hiding them behind a single answer score.
 
 ## License
 

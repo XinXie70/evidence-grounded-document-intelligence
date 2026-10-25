@@ -5,10 +5,11 @@
 **Development scope used so far:** document-isolated `development_tune`  
 **Locked test status:** evaluated once after freeze; never used for V1 method development
 
-**V2 status:** proposal established on 2026-10-17; implementation has not started. The
-[V2 proposal and progress log](V2_PROPOSAL.md) is the working entry point for prompt engineering,
-bounded tool execution, session state, and an interactive application. V1 results remain historical
-and are not evidence of V2 performance.
+**V2 status:** complete. A search-and-read agent was compared with two fixed retrieval pipelines on 370
+held-out questions over 103 documents (run once after a code freeze, tag `v2-freeze`). Result and
+limitations: [V2 final report](experiments/V2_FINAL_REPORT.md); plan, rules and progress log:
+[V2_PLAN.md](V2_PLAN.md) (the original [V2 proposal](V2_PROPOSAL.md) was superseded by that leaner plan).
+V1 results remain historical and are not evidence of V2 performance.
 
 > The historical MVP was subsequently extended under [`V1_COMPLETION_PROTOCOL.md`](V1_COMPLETION_PROTOCOL.md).
 > Question-conditioned visual retrieval passed its preregistered tune-only gate, calibration was
@@ -27,8 +28,8 @@ and are not evidence of V2 performance.
 7. A bounded OCR/visual fallback justified by observed missing-text and layout failures.
 8. A reusable comparison pipeline that extracts grounded facts, performs arithmetic locally,
    validates numeric citations, and preserves abstentions.
-9. Reproducible experiment identities, cost logging, per-batch hard caps, and 379 current passing
-   tests (377 were present in the pre-locked-test frozen manifest).
+9. Reproducible experiment identities, cost logging, per-batch hard caps, and 445 current passing
+   tests (379 for V1, of which 377 were present in the pre-locked-test frozen manifest; 66 for V2).
 10. An offline command-line demo that leads with the frozen 730-question result and then exposes
     readable successes, abstentions, and failures without another API call.
 11. A document-isolated 132-question reliability calibration with a frozen answer/abstain rule.
@@ -88,9 +89,9 @@ and are not evidence of V2 performance.
 
 The completed V1 portfolio MVP did **not** require another retriever, a trained custom model, an
 agent system, MCP, multi-agent orchestration, or a frontend. Its evaluation results remain frozen.
-Further application and Agent work is now planned separately under [V2_PROPOSAL.md](V2_PROPOSAL.md),
-with explicit milestones, scope limits, learning checks, and a revisable decision log. The original
-V1 stop line does not prohibit the agreed V2 work; V2 does not authorize post-test tuning of V1.
+The Agent and application work was done separately as V2 under [V2_PLAN.md](V2_PLAN.md), with a
+pre-registered comparison and its own stop rules; V2 did not tune V1. MCP, OCR/visual tools in the
+agent, and multi-agent orchestration remain out of scope.
 
 ## Draft resume bullets
 
@@ -101,6 +102,11 @@ V1 stop line does not prohibit the agreed V2 work; V2 does not authorize post-te
   recovery to attribute retrieval, representation, and reasoning failures; on a one-time
   730-question locked test, achieved 65.14% task accuracy and 60.55% grounded accuracy among
   answered questions at 59.73% coverage.
+- Built a LangGraph search-and-read agent with validated tools (numbers must be quoted from pages
+  already read; citations must be pages already read) and ran a pre-registered, single-run comparison
+  against fixed 3-page and 6-page pipelines on 370 held-out questions (103 documents); on multi-page
+  questions the agent reached 72.4% task accuracy vs 28.1% (+44.3 points, 95% document-bootstrap CI
+  [36.3, 52.4]), while being worse at abstaining and 2-3.5x more expensive.
 
-These bullets distinguish the development retrieval result from the one-time locked-test result and
-do not claim production readiness.
+These bullets distinguish the development retrieval result from the held-out results and do not claim
+production readiness.
