@@ -18,6 +18,11 @@ CREATE TABLE IF NOT EXISTS documents (
     low_text_pages INTEGER NOT NULL,
     created_at TEXT NOT NULL
 );
+CREATE TABLE IF NOT EXISTS spend_archive (   -- cost of deleted documents, so the spending cap cannot be reset by deleting
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    amount REAL NOT NULL,
+    created_at TEXT NOT NULL
+);
 CREATE TABLE IF NOT EXISTS tasks (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     doc_id TEXT NOT NULL REFERENCES documents(id),
@@ -112,6 +117,21 @@ class Store:
         rows = self._run("SELECT * FROM tasks WHERE doc_id=? ORDER BY id DESC", (doc_id,), many=True)
         return [_task(r) for r in rows]
 
+    def has_active_tasks(self, doc_id: str) -> bool:
+        row = self._run("SELECT COUNT(*) AS n FROM tasks WHERE doc_id=? AND status IN ('queued','running')", (doc_id,))
+        return row["n"] > 0
+
+    def delete_document(self, doc_id: str) -> None:
+        """Remove a document and its tasks; the money already spent on them stays in the total."""
+        with closing(self._connect()) as db, db:
+            spent = db.execute("SELECT COALESCE(SUM(cost_usd), 0) FROM tasks WHERE doc_id=?", (doc_id,)).fetchone()[0]
+            if spent:
+                db.execute("INSERT INTO spend_archive (amount, created_at) VALUES (?,?)", (spent, _now()))
+            db.execute("DELETE FROM tasks WHERE doc_id=?", (doc_id,))
+            db.execute("DELETE FROM documents WHERE id=?", (doc_id,))
+
     def total_cost(self) -> float:
-        row = self._run("SELECT COALESCE(SUM(cost_usd), 0) AS total FROM tasks")
+        row = self._run(
+            "SELECT (SELECT COALESCE(SUM(cost_usd), 0) FROM tasks) + (SELECT COALESCE(SUM(amount), 0) FROM spend_archive) AS total"
+        )
         return float(row["total"])

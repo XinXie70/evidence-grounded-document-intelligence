@@ -142,6 +142,19 @@ def create_app(
             raise HTTPException(404, "unknown document")
         return {**found, "warnings": _warnings(found)}
 
+    @app.delete("/documents/{doc_id}")
+    def delete_document(doc_id: str) -> dict[str, Any]:
+        if not store.get_document(doc_id):
+            raise HTTPException(404, "unknown document")
+        if store.has_active_tasks(doc_id):
+            raise HTTPException(409, "a question on this document is still running; wait for it to finish")
+        store.delete_document(doc_id)
+        with build_lock:
+            indexes.pop(doc_id, None)
+        (data_dir / "pages" / f"{doc_id}.jsonl").unlink(missing_ok=True)
+        (data_dir / "pdfs" / f"{doc_id}.pdf").unlink(missing_ok=True)
+        return {"deleted": doc_id}
+
     @app.get("/documents/{doc_id}/pages/{page}")
     def page_text(doc_id: str, page: int) -> dict[str, Any]:
         if not store.get_document(doc_id):

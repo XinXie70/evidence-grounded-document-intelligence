@@ -29,6 +29,8 @@
   button:disabled { opacity: .5; cursor: default; }
   textarea { width: 100%; font: inherit; color: var(--text); background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 10px; resize: vertical; min-height: 70px; }
   .docs { list-style: none; margin: 10px 0 0; padding: 0; display: grid; gap: 6px; }
+  .docs li { display: flex; gap: 6px; }
+  .docs button.del { width: auto; flex: none; color: var(--bad); border-color: var(--line); padding: 4px 10px; text-align: center; }
   .docs button { width: 100%; text-align: left; background: var(--bg); color: var(--text); border: 1px solid var(--line); }
   .docs button.active { border-color: var(--accent); box-shadow: inset 3px 0 0 var(--accent); }
   .docs small { display: block; color: var(--muted); }
@@ -108,7 +110,9 @@ async function loadDocs() {
   for (const d of docs) {
     const b = el('button', { className: d.id === currentDoc?.id ? 'active' : '' }, d.name, el('small', {}, `${d.page_count} pages` + (d.low_text_pages ? ` · ${d.low_text_pages} with little text` : '')));
     b.onclick = () => selectDoc(d);
-    list.append(el('li', {}, b));
+    const del = el('button', { className: 'del', title: 'Delete this document and its questions' }, 'Delete');
+    del.onclick = () => deleteDoc(d);
+    list.append(el('li', {}, b, del));
   }
 }
 
@@ -124,6 +128,25 @@ async function selectDoc(d) {
   $('results').replaceChildren();
   for (const t of (await api(`/documents/${d.id}/tasks`)).reverse()) renderTask(t);
   loadDocs();
+}
+
+async function deleteDoc(d) {
+  if (!confirm(`Delete "${d.name}" and all its questions? Money already spent still counts toward the cap.`)) return;
+  try {
+    await api(`/documents/${d.id}`, { method: 'DELETE' });
+  } catch (e) { alert(e.message); return; }
+  if (currentDoc && currentDoc.id === d.id) {
+    currentDoc = null;
+    $('docTitle').textContent = 'Ask a question';
+    $('question').placeholder = 'Select a document, then ask a question about it';
+    $('ask').disabled = true;
+    $('docNote').classList.add('hidden');
+    $('pageView').classList.add('hidden');
+    $('results').replaceChildren();
+  }
+  $('uploadStatus').textContent = '';
+  await loadDocs();
+  refreshHealth();
 }
 
 $('upload').onclick = () => $('file').click();

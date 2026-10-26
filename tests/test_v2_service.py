@@ -187,6 +187,39 @@ class QuestionTests(unittest.TestCase):
             self.assertEqual(restarted.post(f"/documents/{doc_id}/questions", json={"question": "third"}).status_code, 402)
 
 
+class DeleteTests(unittest.TestCase):
+    def test_delete_removes_files_and_questions_but_keeps_the_spend(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            client = build(tmp, lambda ledger, log: ScriptedLlm(ledger))
+            doc_id = upload(client).json()["id"]
+            client.post(f"/documents/{doc_id}/questions", json={"question": "How much did revenue grow?"})
+            spent = client.get("/health").json()["spent_usd"]
+            self.assertGreater(spent, 0)
+            self.assertEqual(client.delete(f"/documents/{doc_id}").json(), {"deleted": doc_id})
+            self.assertEqual(client.get("/documents").json(), [])
+            self.assertEqual(client.get(f"/documents/{doc_id}").status_code, 404)
+            self.assertEqual(client.get("/tasks/1").status_code, 404)
+            self.assertFalse((Path(tmp) / "pages" / f"{doc_id}.jsonl").exists())
+            self.assertFalse((Path(tmp) / "pdfs" / f"{doc_id}.pdf").exists())
+            self.assertAlmostEqual(client.get("/health").json()["spent_usd"], spent)  # cap cannot be reset by deleting
+            restarted = build(tmp, lambda ledger, log: ScriptedLlm(ledger))
+            self.assertAlmostEqual(restarted.get("/health").json()["spent_usd"], spent)
+            again = upload(client).json()  # the same file can be uploaded again from scratch
+            self.assertFalse(again["existing"])
+            self.assertEqual(client.get(f"/documents/{again['id']}/tasks").json(), [])
+
+    def test_delete_unknown_or_busy_document(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            client = build(tmp, lambda ledger, log: ScriptedLlm(ledger))
+            self.assertEqual(client.delete("/documents/nope").status_code, 404)
+            doc_id = upload(client).json()["id"]
+            store = Store(Path(tmp) / "service.sqlite3")
+            task = store.create_task(doc_id, "still running")
+            store.mark_running(task)
+            self.assertEqual(client.delete(f"/documents/{doc_id}").status_code, 409)
+            self.assertEqual(client.get(f"/documents/{doc_id}").status_code, 200)
+
+
 class StoreTests(unittest.TestCase):
     def test_unfinished_tasks_are_marked_failed_on_restart(self):
         with tempfile.TemporaryDirectory() as tmp:
