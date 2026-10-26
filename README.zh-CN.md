@@ -52,6 +52,30 @@ Agent，是否比只检索一次的流程更准？代价是多少？**
 工具契约让 Agent 保持诚实，但不替它判断答案对错：`calculate` 只接受从已读页面原文中引用的数字，`finish` 只接受引用已读过的页。
 搜索结果的 snippet 取整页中与查询最匹配的片段，重复搜索不占预算，每个工具结果都会显示剩余预算。
 
+### 效果演示
+
+下面是演示服务在一份 42 页英文产品手册（含文字层）上的一次真实会话，整个会话花费约 $0.06。每个答案都列出
+引用页（点击可查看该页原文）和 Agent 完整的工具轨迹。
+
+**1. 带引用页的答案，以及它出自的那一页。**
+
+<p align="center"><img src="docs/images/v2_demo_2_answer_with_citation.png" alt="单页问题的答案、引用页和页面原文" width="760"></p>
+
+**2. Agent 的轨迹：** 搜了什么、读了哪些页、何时决定结束。
+
+<p align="center"><img src="docs/images/v2_demo_3_agent_trace.png" alt="展开的 Agent 轨迹：search、read_pages、finish" width="760"></p>
+
+**3. 需要多页的问题：** Agent 读了 8 页，引用其中 5 页。
+
+<p align="center"><img src="docs/images/v2_demo_4_multi_page_answer.png" alt="引用第 4 到 8 页的多页答案" width="760"></p>
+
+**4. 文档回答不了的问题：** 它报告“证据不足”，而不是编造答案。
+
+<p align="center"><img src="docs/images/v2_demo_5_insufficient_evidence.png" alt="证据不足的结果" width="760"></p>
+
+<sub>示例文档为 DocScope 基准中的 XP2i 数字测试压力表操作手册，这里只以简短摘录演示工具效果，不再分发该 PDF。
+上传与删除界面见 [`docs/images/v2_demo_1_upload.png`](docs/images/v2_demo_1_upload.png)。</sub>
+
 ### 最终结果
 
 370 道题（343 道可回答，其中 203 道需要多页；27 道不可回答），来自 V2 开发从未使用过的 103 份文档。设计、主比较与计分规则在运行前

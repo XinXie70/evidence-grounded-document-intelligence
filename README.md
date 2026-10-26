@@ -77,6 +77,32 @@ quoted from pages it has already read, and `finish` only accepts citations to pa
 Search snippets are the part of a page that best matches the query, repeated searches are free, and
 every tool result shows the remaining budget.
 
+### See it work
+
+A real session of the demo service on a 42-page English product manual (text layer); the whole session
+cost about $0.06. Every answer lists its cited pages (click one to read that page) and the agent's
+full tool trace.
+
+**1. A cited answer, and the page it came from.**
+
+<p align="center"><img src="docs/images/v2_demo_2_answer_with_citation.png" alt="Answer to a single-page question with a cited page and the page text" width="760"></p>
+
+**2. The agent's trace:** what it searched, which pages it read, and when it decided to finish.
+
+<p align="center"><img src="docs/images/v2_demo_3_agent_trace.png" alt="Expanded agent trace: search, read_pages, finish" width="760"></p>
+
+**3. A question that needs several pages:** the agent reads 8 pages and cites 5.
+
+<p align="center"><img src="docs/images/v2_demo_4_multi_page_answer.png" alt="Multi-page answer citing pages 4 to 8" width="760"></p>
+
+**4. A question the document cannot answer:** it reports insufficient evidence instead of guessing.
+
+<p align="center"><img src="docs/images/v2_demo_5_insufficient_evidence.png" alt="Insufficient evidence result" width="760"></p>
+
+<sub>The sample is the XP2i digital test gauge operation manual from the DocScope benchmark, shown here
+only as short excerpts to demonstrate the tool; the PDF itself is not redistributed. Upload and delete
+controls: [`docs/images/v2_demo_1_upload.png`](docs/images/v2_demo_1_upload.png).</sub>
+
 ### Final result
 
 370 questions (343 answerable, of which 203 need several pages; 27 unanswerable) over 103 documents
